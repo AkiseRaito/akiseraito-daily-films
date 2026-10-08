@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-10-02 · 第 32 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 10 月 2 日 · 第 32 期 · 已避开往期推荐过的全部 285 部</div>
+  <div>
+    <span class="pill">主题：世纪末以来的十种不安（1997–2023）</span>
+    <span class="pill">全部 1990 年后：最早 1997，六部出自 2018 年以后</span>
+    <span class="pill">六国 / 六种语言：美国 · 丹麦 · 法国 · 德国 · 波兰 · 意大利取景</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-02，会随时间变动，仅供参考。<br>
+  这一期换了个角度：不是按国家或年代排，而是按「这一代人到底在怕什么」排。1997 年《洛城机密》怕的是整座城市都在卖故事，2018 年《寂静之地》怕的是出声就会死，2018 年《对不起，打扰你了》怕的是你必须用别人的声音说话，2023 年《利益区域》怕的是墙那边传来的日常噪音。二十六年的跨度里，「恐惧」这个词的重心一直在往内移动——从外面有一个坏人（《洛城机密》），变成我自己被改造成了另一个人（《对不起，打扰你了》），再变成我所在的这个系统本身（《利益区域》）。<br>
+  结构上有三部是「一个设定撑起整部片」的硬核派：《寂静之地》不许出声、《对不起，打扰你了》必须换一种声音、《太空生活》一艘飞船只飞向黑洞；另外三部是「一个人把自己赌没了」的当代焦虑：《亡命驾驶》《原钻》《钛》。剩下四部各自代表一种路数——新黑色侦探片最后的完整形态（《洛城机密》）、身份冒用的心理惊悚（《天才瑞普利》）、邻里复仇的心理惊悚（《致命礼物》）、以及用声音完成的历史片（《利益区域》）。<br>
+  10 部片名全部为首次出现，无一与往期重复。选片时曾初选《调音师》，比对后发现第 9 期已经推过，已整部替换为《天才瑞普利》。<br>
+  几部口碑明显分裂的片子已如实标注、未做修饰：《钛》（戛纳金棕榈、烂番茄 90%，但豆瓣 7.4 / IMDb 6.6，争议极大）、《原钻》（Metacritic 90 但豆瓣仅 7.5，「太吵」是主要差评）、《太空生活》（烂番茄 82% / Metacritic 76，但豆瓣 6.6 / IMDb 6.1，普通观众大量给出沉闷）、《对不起，打扰你了》（烂番茄 93%，但结尾的急转弯劝退了不少人）。<br>
+  内地公映情况：仅 1 部登过内地大银幕——《寂静之地》2018-05-18（票房超 2 亿）；其余 9 部内地未映，流媒体可看。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>洛城机密</td><td class="qg">悬疑 / 犯罪（美国 · 新黑色）</td><td class="qr">8.3 / 99% / 90</td></tr><tr><td class="qn">02</td><td>天才瑞普利</td><td class="qg">惊悚 / 剧情（美国 · 身份与嫉妒）</td><td class="qr">8.2 / 84% / 76</td></tr><tr><td class="qn">03</td><td>亡命驾驶</td><td class="qg">惊悚 / 犯罪（美国 · 沉默与夜色）</td><td class="qr">7.8 / 93% / 78</td></tr><tr><td class="qn">04</td><td>致命礼物</td><td class="qg">惊悚 / 心理（美澳合拍 · 旧账）</td><td class="qr">7.3 / 92% / 71</td></tr><tr><td class="qn">05</td><td>对不起，打扰你了</td><td class="qg">科幻 / 荒诞惊悚（美国 · 白人声音）</td><td class="qr">7.6 / 93% / 81</td></tr><tr><td class="qn">06</td><td>寂静之地</td><td class="qg">恐怖 / 科幻（美国 · 声音即死亡）</td><td class="qr">7.3 / 96% / 82</td></tr><tr><td class="qn">07</td><td>太空生活</td><td class="qg">科幻 / 身体恐怖（法 · 德 · 英 · 波合拍）</td><td class="qr">6.6 / 82% / 76</td></tr><tr><td class="qn">08</td><td>原钻</td><td class="qg">惊悚 / 犯罪（美国 · 一局接一局）</td><td class="qr">7.5 / 91% / 90</td></tr><tr><td class="qn">09</td><td>钛</td><td class="qg">恐怖 / 身体恐怖（法国 · 金属与肉）</td><td class="qr">7.4 / 90% / 75</td></tr><tr><td class="qn">10</td><td>利益区域</td><td class="qg">剧情 / 历史（美英波德合拍 · 墙的另一边）</td><td class="qr">7.4 / 93% / 92</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/laconf_poster.jpg" alt="洛城机密 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 犯罪（美国 · 新黑色）</span><span class="year">1997 · 美国 · 138 分钟 · 彩色 · 内地未映</span></div>
+        <h2>洛城机密 <span class="en">L.A. Confidential</span></h2>
+        <div class="rates"><span class="rate"><b>8.3</b>豆瓣</span><span class="rate"><b>99%</b>烂番茄</span><span class="rate"><b>90</b>Metacritic</span><span class="rate"><b>8.2</b>IMDb</span></div>
+        <p class="oneline">「有些人宁愿要真相，有些人宁愿要故事。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1950 年代的洛杉矶。三名警察被卷进同一桩咖啡厅枪杀案：埃德·埃克斯利是个靠规矩往上爬的「好警察」，巴德·怀特是个用拳头解决问题的打手，杰克·文森斯则靠给八卦杂志当线人赚外快。三个人各查各的，最后撞进同一张网里——而这张网的上端，连着警局自己。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 70 届奥斯卡拿下最佳女配角（金·贝辛格）与最佳改编剧本，共获九项提名；当年的最佳影片输给了《泰坦尼克号》。</li><li>改编自詹姆斯·艾尔罗伊的同名小说，是他「洛杉矶四部曲」的第三部——他把这座城市写成了全片最大的那个角色。</li><li>柯蒂斯·汉森与编剧布莱恩·海尔格兰德花了两年改剧本，把原著五百多页的三条主线压成 138 分钟，几乎是改编的教科书。</li><li>三个主演当时都不是明星：罗素·克劳还是澳洲新人，盖·皮尔斯刚拍完《沙漠妖姬》，金·贝辛格接的角色几乎没人看好。</li><li>烂番茄 99% / Metacritic 90，是 1990 年代评分最高的犯罪片之一，也是「新黑色」（neo-noir）复兴的标志。</li><li>片中那些八卦杂志、好莱坞派对与「体面」的腐败全有现实原型：1950 年代的洛杉矶警局确实与八卦媒体存在共生关系。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/laconf_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/laconf_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/laconf_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_323.jpg" alt="" loading="lazy">
+                <div class="p-name">柯蒂斯·汉森 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧（1945–2016）。《推动摇篮的手》(1992)《狂野之河》《洛城机密》(1997)《奇迹小子》《8英里》(2002)《偷穿高跟鞋》。他一辈子都在拍「人在体制里怎么变形」，而《洛城机密》是他最完整的一次。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_65.jpg" alt="" loading="lazy"><span>8英里</span></div><div class="wk"><img src="assets/movies/w_11931.jpg" alt="" loading="lazy"><span>偷穿高跟鞋</span></div><div class="wk"><img src="assets/movies/w_11087.jpg" alt="" loading="lazy"><span>推动摇篮的手</span></div><div class="wk"><img src="assets/movies/w_8987.jpg" alt="" loading="lazy"><span>狂野之河</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_934.jpg" alt="" loading="lazy">
+                <div class="p-name">罗素·克劳 <span class="p-role">主演（巴德·怀特）</span></div>
+              </div>
+              <div class="p-note">新西兰裔澳大利亚演员。《洛城机密》《内幕新闻》《角斗士》(2001 奥斯卡影帝)《美丽心灵》《怒海争锋》。本片他演巴德·怀特——一个用拳头讲道理、其实最容易被利用的警察。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_98.jpg" alt="" loading="lazy"><span>角斗士</span></div><div class="wk"><img src="assets/movies/w_453.jpg" alt="" loading="lazy"><span>美丽心灵</span></div><div class="wk"><img src="assets/movies/w_290250.jpg" alt="" loading="lazy"><span>耐撕侦探</span></div><div class="wk"><img src="assets/movies/w_86834.jpg" alt="" loading="lazy"><span>诺亚方舟：创世之旅</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_326.jpg" alt="" loading="lazy">
+                <div class="p-name">金·贝辛格 <span class="p-role">主演（林恩）</span></div>
+              </div>
+              <div class="p-note">美国演员。《蝙蝠侠》《洛城机密》《8英里》《五十度飞》。本片她演林恩——一个被整形成「像某个女明星」的应召女郎，凭此拿下奥斯卡最佳女配角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_65.jpg" alt="" loading="lazy"><span>8英里</span></div><div class="wk"><img src="assets/movies/w_268.jpg" alt="" loading="lazy"><span>蝙蝠侠</span></div><div class="wk"><img src="assets/movies/w_9759.jpg" alt="" loading="lazy"><span>一线声机</span></div><div class="wk"><img src="assets/movies/w_337167.jpg" alt="" loading="lazy"><span>五十度飞</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《洛城机密》讲的是「体面」有多贵。三个警察各有一种活法：埃克斯利用规矩换前途，怀特用暴力换正义感，文森斯用名声换钱。他们互相看不起，直到发现案子背后其实是一台「卖故事」的机器——有人专门制造丑闻，再有人去破案，再由媒体写成头条。轻微剧透：真正的转折是埃克斯利意识到，父亲当年那个英雄故事其实是被包装出来的。于是他做了一个和前面完全相反的选择：不再要故事，要真相。代价是他失去了所有人。结尾那句「有些故事值得讲」的旁白，汉森把它拍成了一句反话——这座城市最不缺的就是好听的故事。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看新黑色电影里最完整的一部的人；喜欢《唐人街》《老无所依》这类「城市本身就是反派」的观众。含暴力、枪战与性暗示议题，节奏偏慢但线索极密。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/ripley_poster.jpg" alt="天才瑞普利 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 剧情（美国 · 身份与嫉妒）</span><span class="year">1999 · 美国 · 139 分钟 · 彩色 · 内地未映</span></div>
+        <h2>天才瑞普利 <span class="en">The Talented Mr. Ripley</span></h2>
+        <div class="rates"><span class="rate"><b>8.2</b>豆瓣</span><span class="rate"><b>84%</b>烂番茄</span><span class="rate"><b>76</b>Metacritic</span><span class="rate"><b>7.3</b>IMDb</span></div>
+        <p class="oneline">「我想成为他。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1950 年代，纽约青年汤姆·瑞普利靠借来的 Princeton 外套混进一场派对，被船王格林利夫误认成儿子的同学，于是被派去意大利把不肯回家的儿子迪基带回来。到了意大利，汤姆没有把迪基带回去——他想成为迪基。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>安东尼·明格拉自编自导，改编自派翠西亚·海史密斯的同名小说（「瑞普利系列」第一部）。</li><li>1999 年奥斯卡五项提名：最佳改编剧本、最佳男配角（裘德·洛）、最佳原创配乐、最佳艺术指导、最佳服装设计。</li><li>马特·达蒙为了演汤姆减重约 12 公斤，还专门学了钢琴；他当年 29 岁，演的却是一个二十出头的年轻人。</li><li>裘德·洛凭迪基一角拿下英国电影学院奖最佳男配角并入围奥斯卡——这是他真正被国际看见的一次。</li><li>全片最美的部分在意大利：明格拉把它拍成一幅可以穿进去的画，越往后越像一件被剥下来的皮。</li><li>豆瓣 8.2 / 烂番茄 84%，是海史密斯小说改编里评价最高的一部；IMDb 7.3 稍低，主要因为节奏偏慢。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/ripley_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/ripley_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/ripley_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2239.jpg" alt="" loading="lazy">
+                <div class="p-name">安东尼·明格拉 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">英美双籍导演、编剧（1954–2008）。《一屋一鬼一情人》(1991)《英国病人》(1997 奥斯卡最佳影片与最佳导演)《天才瑞普利》(1999)《冷山》(2003)。他的电影都关于同一件事：一个人怎么进入另一个人的生活。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_409.jpg" alt="" loading="lazy"><span>英国病人</span></div><div class="wk"><img src="assets/movies/w_2289.jpg" alt="" loading="lazy"><span>冷山</span></div><div class="wk"><img src="assets/movies/w_1253.jpg" alt="" loading="lazy"><span>解构生活</span></div><div class="wk"><img src="assets/movies/w_18317.jpg" alt="" loading="lazy"><span>未了阴阳情</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_9642.jpg" alt="" loading="lazy">
+                <div class="p-name">裘德·洛 <span class="p-role">主演（迪基）</span></div>
+              </div>
+              <div class="p-note">英国演员。《天才瑞普利》《冷山》《大侦探福尔摩斯》《年轻的教宗》。本片他演迪基·格林利夫——一个不需要努力就拥有一切的人，也是汤姆想成为、又必须毁掉的那个人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_10528.jpg" alt="" loading="lazy"><span>大侦探福尔摩斯</span></div><div class="wk"><img src="assets/movies/w_58574.jpg" alt="" loading="lazy"><span>大侦探福尔摩斯2：诡影游戏</span></div><div class="wk"><img src="assets/movies/w_299537.jpg" alt="" loading="lazy"><span>惊奇队长</span></div><div class="wk"><img src="assets/movies/w_853.jpg" alt="" loading="lazy"><span>兵临城下</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_12052.jpg" alt="" loading="lazy">
+                <div class="p-name">格温妮斯·帕特洛 <span class="p-role">主演（玛吉）</span></div>
+              </div>
+              <div class="p-note">美国演员。《艾玛》《莎翁情史》(1999 奥斯卡影后)《天才瑞普利》《钢铁侠》。本片她演玛吉——唯一一个从头到尾觉得「哪里不对」的人，也是全片最接近真相的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_68721.jpg" alt="" loading="lazy"><span>钢铁侠3</span></div><div class="wk"><img src="assets/movies/w_10138.jpg" alt="" loading="lazy"><span>钢铁侠2</span></div><div class="wk"><img src="assets/movies/w_807.jpg" alt="" loading="lazy"><span>七宗罪</span></div><div class="wk"><img src="assets/movies/w_1726.jpg" alt="" loading="lazy"><span>钢铁侠</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《天才瑞普利》最可怕的地方是它让你站在一个骗子这边。汤姆一开始只是个蹭吃蹭喝的小人物，他撒的第一个谎没有任何恶意；等他发现「成为迪基」比「做汤姆」容易得多，就再也停不下来了。明格拉一直在拍「看」：汤姆看迪基跳舞、看他穿他的衣服、看他和玛吉在一起，然后开始模仿。轻微剧透：真正的转折在那条小船上。那不是预谋杀人，是一次被戳穿之后的下意识反应——他杀掉迪基的那一刻，其实是在杀掉「自己成不了他」这件事。之后他活得像一个永远在对口型的演员：穿迪基的衣服、用迪基的签名、替迪基活着。结尾他在船舱的镜子里看着自己，没有人知道他是谁。这是全片最冷的一刀：他得到了一切，也彻底没有了自己。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看一部关于嫉妒与身份的惊悚片的人；喜欢欧洲慢调、以及《消失的爱人》这类心理博弈的观众。含殴打与杀人画面、身份冒用议题，节奏舒缓但压迫感持续。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/drive_poster.jpg" alt="亡命驾驶 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 犯罪（美国 · 沉默与夜色）</span><span class="year">2011 · 美国 · 100 分钟 · 彩色 · 内地未映</span></div>
+        <h2>亡命驾驶 <span class="en">Drive</span></h2>
+        <div class="rates"><span class="rate"><b>7.8</b>豆瓣</span><span class="rate"><b>93%</b>烂番茄</span><span class="rate"><b>78</b>Metacritic</span><span class="rate"><b>7.8</b>IMDb</span></div>
+        <p class="oneline">「我只是个开车的。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一个没有名字的男人（片尾字幕只写 Driver），白天在修车厂做工、给电影做特技替身，晚上给劫匪当逃逸司机，规矩只有一条：五分钟，只管开车。他爱上了隔壁的单亲妈妈艾琳。艾琳的丈夫出狱后欠了一屁股债，他决定为了她破一次自己的规矩。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>尼古拉斯·温丁·雷弗恩凭此片拿下第 64 届戛纳电影节最佳导演。</li><li>改编自詹姆斯·萨利斯 2005 年的同名小说，剧本由《前程似锦的女孩》编剧霍辛·阿米尼执笔。</li><li>瑞恩·高斯林在 100 分钟里说的台词加起来不到 20 分钟，很多场戏只有一个眼神。</li><li>开场那十分钟的车戏全车实拍、没有 CG；导演要的是「让观众觉得自己也在车里等人」。</li><li>配乐由克里夫·马丁内斯操刀，合成器音色加 80 年代欧陆节拍；片尾曲是 &quot;A Real Hero&quot;。</li><li>口碑分裂得很有意思：影评界（烂番茄 93%）把它当成 2010 年代最重要的类型片之一，而豆瓣 7.8、IMDb 7.8——冲着文艺片来的人被沉默劝退，冲着动作片来的人被慢节奏劝退。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/drive_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/drive_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/drive_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_21183.jpg" alt="" loading="lazy">
+                <div class="p-name">尼古拉斯·温丁·雷弗恩 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">丹麦导演。《末路狂奔》三部曲《布朗森》《瓦尔哈拉之崛起》《亡命驾驶》(2011)《唯神能恕》《霓虹恶魔》(2016)。他的电影几乎都是同一个形状：一个沉默的男人走进一个光怪陆离的世界，然后把它烧掉。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_301365.jpg" alt="" loading="lazy"><span>霓虹恶魔</span></div><div class="wk"><img src="assets/movies/w_18533.jpg" alt="" loading="lazy"><span>布朗森</span></div><div class="wk"><img src="assets/movies/w_77987.jpg" alt="" loading="lazy"><span>唯神能恕</span></div><div class="wk"><img src="assets/movies/w_37861.jpg" alt="" loading="lazy"><span>日出英烈祠</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_30614.jpg" alt="" loading="lazy">
+                <div class="p-name">瑞恩·高斯林 <span class="p-role">主演（司机）</span></div>
+              </div>
+              <div class="p-note">加拿大演员。《半个尼尔森》《蓝色情人节》《亡命驾驶》《爱乐之城》《银翼杀手2049》《芭比》。本片他演一个没有名字的司机，全程靠沉默和手势演出，是他最「少」也最被记住的一次表演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_313369.jpg" alt="" loading="lazy"><span>爱乐之城</span></div><div class="wk"><img src="assets/movies/w_335984.jpg" alt="" loading="lazy"><span>银翼杀手2049</span></div><div class="wk"><img src="assets/movies/w_11036.jpg" alt="" loading="lazy"><span>恋恋笔记本</span></div><div class="wk"><img src="assets/movies/w_687163.jpg" alt="" loading="lazy"><span>挽救计划</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_36662.jpg" alt="" loading="lazy">
+                <div class="p-name">凯瑞·穆里根 <span class="p-role">主演（艾琳）</span></div>
+              </div>
+              <div class="p-note">英国演员。《成长教育》《亡命驾驶》《了不起的盖茨比》《前程似锦的女孩》《她说》。本片她演艾琳——一个刚把日子过平静、又被拉回旧生活的单亲妈妈。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_64682.jpg" alt="" loading="lazy"><span>了不起的盖茨比</span></div><div class="wk"><img src="assets/movies/w_582014.jpg" alt="" loading="lazy"><span>前程似锦的女孩</span></div><div class="wk"><img src="assets/movies/w_42188.jpg" alt="" loading="lazy"><span>别让我走</span></div><div class="wk"><img src="assets/movies/w_4348.jpg" alt="" loading="lazy"><span>傲慢与偏见</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《亡命驾驶》是一部关于「规矩」的片。Driver 给自己定的规则（五分钟、不问货、不动手）是他唯一能控制的东西，所以当他为了艾琳破戒的那一刻，结局就已经写好了。轻微剧透：真正的转折在中段那场电梯戏——他第一次当着别人的面做了一件完全不像自己的事，那不是暴力，是一个吻；镜头紧接着切到血。雷弗恩在这里把浪漫和残忍接成了同一个动作。后面所有的暴力都不是复仇，是清理：他要把自己重新塞回那个没有名字的壳里。结尾他开车离开，副驾驶空着，车继续往前开。他不幸福，但他回到了自己的规则里。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「极简 + 极狠」类型片的人；能接受大量静默、暴力突然且不加缓冲的观众。含严重暴力与血腥（爆头、利器），情绪极冷。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/gift_poster.jpg" alt="致命礼物 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 心理（美澳合拍 · 旧账）</span><span class="year">2015 · 美国 / 澳大利亚 · 108 分钟 · 彩色 · 内地未映</span></div>
+        <h2>致命礼物 <span class="en">The Gift</span></h2>
+        <div class="rates"><span class="rate"><b>7.3</b>豆瓣</span><span class="rate"><b>92%</b>烂番茄</span><span class="rate"><b>71</b>Metacritic</span><span class="rate"><b>7.0</b>IMDb</span></div>
+        <p class="oneline">「我只是想跟你们重新认识一下。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>西蒙与罗宾夫妇搬回西蒙的故乡加州，住进一栋大房子。某天在超市遇到西蒙的高中同学戈多，戈多开始不断送礼：一箱酒、几条锦鲤、一盒杯子蛋糕。罗宾觉得不对劲，西蒙只说他是个怪人。直到他们发现，戈多送的每一样东西都对应着一件西蒙不愿提起的旧事。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>乔尔·埃哲顿自编自导自演（他演戈多），这是他的导演处女作。</li><li>杰森·贝特曼此前以喜剧角色（《发展受阻》《恶老板》）闻名，本片是他第一次演「不好笑的混蛋」。</li><li>成本 500 万美元，全球票房超过 5000 万；是 STX Entertainment 发行的第一部电影。</li><li>全片没有一惊一乍的音效，压迫感全部来自「礼貌」——戈多每一次出现都在笑、都在道歉、都在送礼。</li><li>丽贝卡·豪尔演的罗宾是全片的视角人物：她先相信丈夫，再怀疑丈夫，最后发现真正该怕的是自己嫁错了人。</li><li>结尾没有清算，只有一个电话和一句「你从来没有问过我为什么」。这是它和一般复仇惊悚片最大的区别。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/gift_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/gift_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/gift_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_33192.jpg" alt="" loading="lazy">
+                <div class="p-name">乔尔·埃哲顿 <span class="p-role">导演 / 编剧 / 主演</span></div>
+              </div>
+              <div class="p-note">澳大利亚演员、导演、编剧。《勇士》《了不起的盖茨比》《法老与众神》《黑色弥撒》《爱恋》；自导《致命礼物》(2015)《被抹去的男孩》(2018)。本片他既是导演，也是那个一直在送礼物的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_59440.jpg" alt="" loading="lazy"><span>勇士</span></div><div class="wk"><img src="assets/movies/w_64682.jpg" alt="" loading="lazy"><span>了不起的盖茨比</span></div><div class="wk"><img src="assets/movies/w_401981.jpg" alt="" loading="lazy"><span>红雀</span></div><div class="wk"><img src="assets/movies/w_400106.jpg" alt="" loading="lazy"><span>光灵</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_23532.jpg" alt="" loading="lazy">
+                <div class="p-name">杰森·贝特曼 <span class="p-role">主演（西蒙）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《发展受阻》《朱诺》《恶老板》《身份窃贼》《黑钱胜地》。本片他演西蒙——一个体面、成功、却有一段自己从不提起的过去的男人，是他第一次彻底不搞笑。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_269149.jpg" alt="" loading="lazy"><span>疯狂动物城</span></div><div class="wk"><img src="assets/movies/w_51540.jpg" alt="" loading="lazy"><span>恶老板</span></div><div class="wk"><img src="assets/movies/w_445571.jpg" alt="" loading="lazy"><span>游戏之夜</span></div><div class="wk"><img src="assets/movies/w_227159.jpg" alt="" loading="lazy"><span>恶老板2</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_15556.jpg" alt="" loading="lazy">
+                <div class="p-name">丽贝卡·豪尔 <span class="p-role">主演（罗宾）</span></div>
+              </div>
+              <div class="p-note">英国演员。《午夜巴塞罗那》《城中大盗》《钢铁侠3》《致命礼物》《哥斯拉大战金刚》。本片她演罗宾，全片几乎所有判断都由她完成：观众跟着她一步步看清丈夫。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_399566.jpg" alt="" loading="lazy"><span>哥斯拉大战金刚</span></div><div class="wk"><img src="assets/movies/w_823464.jpg" alt="" loading="lazy"><span>哥斯拉大战金刚2：帝国崛起</span></div><div class="wk"><img src="assets/movies/w_68721.jpg" alt="" loading="lazy"><span>钢铁侠3</span></div><div class="wk"><img src="assets/movies/w_1124.jpg" alt="" loading="lazy"><span>致命魔术</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《致命礼物》最难受的不是「有人来报复」，而是「报复是对的」。前半段你以为戈多是那种甩不掉的怪人，中段一个细节翻盘：戈多的外号是西蒙当年带头起的，那场「恶作剧」把一个十几岁的孩子送进了崩溃。剩下的时间，电影一直在问罗宾一件事——你到底嫁了个什么样的人？轻微剧透：结尾那场报复并没有发生。戈多站在门口，让西蒙自己把话说出来，然后转身走掉。真正的惩罚是罗宾站在原地，看着丈夫承认了一切。埃哲顿把整部片拍成了一次礼貌的处刑。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看心理惊悚而不是血腥惊悚的人；喜欢《消失的爱人》《致命诱惑》这类「身边人不简单」的观众。无大尺度血腥，含校园霸凌议题与持续的心理压迫。内地未映。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/sorry_poster.jpg" alt="对不起，打扰你了 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 荒诞惊悚（美国 · 白人声音）</span><span class="year">2018 · 美国 · 112 分钟 · 彩色 · 内地未映</span></div>
+        <h2>对不起，打扰你了 <span class="en">Sorry to Bother You</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>93%</b>烂番茄</span><span class="rate"><b>81</b>Metacritic</span><span class="rate"><b>7.1</b>IMDb</span></div>
+        <p class="oneline">「你得用白人的声音说话。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>奥克兰，卡修斯·格林找不到工作，靠叔叔介绍进了一家电话推销公司。同事告诉他一个秘密：把声音换成「白人声音」，业绩会立刻起飞。他照做了，升职、加薪、搬进好公寓——然后被调进公司顶层的那间办公室，那里正在卖一种别的东西。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>布茨·赖利的导演处女作；他此前是嘻哈乐队 The Coup 的主唱，写了二十年政治说唱。</li><li>2018 年圣丹斯电影节首映后被 Annapurna 买下；成本约 300 万美元，全球票房超过 1800 万。</li><li>「白人声音」的处理是：演员本人说台词，后期由白人演员配音，口型故意对不上——这个刻意的不协调既是笑点也是痛点。</li><li>拉基思·斯坦菲尔德（《逃出绝命镇》《利刃出鞘》）与泰莎·汤普森（《雷神3》《湮灭》）是这部片的两根支柱。</li><li>结尾那二十分钟是近年美国电影里最疯狂的转折之一：它从一部职场讽刺片直接变成身体恐怖片，很多人看到这里才知道自己看了什么。</li><li>口碑：烂番茄 93% / Metacritic 81，影评界几乎一致好评；豆瓣 7.6 / IMDb 7.1，普通观众对最后那场戏的接受度明显更低。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/sorry_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/sorry_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/sorry_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_930526.jpg" alt="" loading="lazy">
+                <div class="p-name">布茨·赖利 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、音乐人。嘻哈组合 The Coup 主唱，2024 年推出剧集《我是处女座》。本片是他的长片处女作，成本极低、想象力极高——他把二十年的政治说唱直接拍成了电影。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1227877.jpg" alt="" loading="lazy"><span>贼爱时尚</span></div><div class="wk"><img src="assets/movies/w_271335.jpg" alt="" loading="lazy"><span>The Coup 精选 DVD</span></div><div class="wk"><img src="assets/movies/w_1614628.jpg" alt="" loading="lazy"><span>Mr. Burns</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1200864.jpg" alt="" loading="lazy">
+                <div class="p-name">凯斯·斯坦菲尔德 <span class="p-role">主演（卡修斯）</span></div>
+              </div>
+              <div class="p-note">美国演员。《冲出康普顿》《逃出绝命镇》《抱歉打扰》《利刃出鞘》《犹大与黑弥赛亚》。本片他演卡修斯——一个为了活下去开始「用别人的声音说话」的年轻人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_473033.jpg" alt="" loading="lazy"><span>原钻</span></div><div class="wk"><img src="assets/movies/w_419430.jpg" alt="" loading="lazy"><span>逃出绝命镇</span></div><div class="wk"><img src="assets/movies/w_351460.jpg" alt="" loading="lazy"><span>死亡笔记</span></div><div class="wk"><img src="assets/movies/w_546554.jpg" alt="" loading="lazy"><span>利刃出鞘</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_62561.jpg" alt="" loading="lazy">
+                <div class="p-name">泰莎·汤普森 <span class="p-role">主演（底特律）</span></div>
+              </div>
+              <div class="p-note">美国演员。《奎迪》系列《雷神3：诸神黄昏》《湮灭》《黑衣人：全球通缉》。本片她演底特律——一个戴着巨型耳环、说话像宣言的街头艺术家，也是全片唯一一直说真话的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_284053.jpg" alt="" loading="lazy"><span>雷神3：诸神黄昏</span></div><div class="wk"><img src="assets/movies/w_479455.jpg" alt="" loading="lazy"><span>黑衣人：全球通缉</span></div><div class="wk"><img src="assets/movies/w_312221.jpg" alt="" loading="lazy"><span>奎迪</span></div><div class="wk"><img src="assets/movies/w_300668.jpg" alt="" loading="lazy"><span>湮灭</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《对不起，打扰你了》前半段是一部很尖的职场喜剧：一个黑人小伙发现只要模仿白人说话就能升职，于是他开始「演」一个自己。赖利的高明之处在于他没让这件事变成道德说教——卡修斯确实赚到了钱，也确实被同事们排挤，这两件事同时成立。轻微剧透：真正的转折在公司顶层。那家公司真正在卖的不是电话服务，而是「把人改造成更适合劳动的东西」。最后二十分钟从讽刺片直接坠进身体恐怖，很多人受不了这个转弯，但赖利要的正是这个：你以为你在看一部喜剧，其实你一直在看一桩正在进行的改造。结尾那群「马人」冲进别墅，是全片唯一一次真正的暴动。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「用科幻设定写阶层与种族」的观众；喜欢《逃出绝命镇》《龙虾》这类荒诞设定的观众。含粗口、暴力与身体恐怖画面，后半段转折很猛。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/quiet_poster.jpg" alt="寂静之地 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 科幻（美国 · 声音即死亡）</span><span class="year">2018 · 美国 · 90 分钟 · 彩色 · 内地 2018-05-18 公映</span></div>
+        <h2>寂静之地 <span class="en">A Quiet Place</span></h2>
+        <div class="rates"><span class="rate"><b>7.3</b>豆瓣</span><span class="rate"><b>96%</b>烂番茄</span><span class="rate"><b>82</b>Metacritic</span><span class="rate"><b>7.5</b>IMDb</span></div>
+        <p class="oneline">「别出声。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>近未来，地球被一种没有眼睛、靠声音捕猎的生物占领。一家五口住在农场里，赤脚走路、用手语对话、沿着铺了沙子的路走。女儿瑞根是聋人，戴着人工耳蜗。母亲伊芙琳又怀孕了。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>约翰·卡拉辛斯基自导自演，成本 1700 万美元，全球票房超过 3.4 亿美元。</li><li>米莉森·西蒙斯本人就是聋人，她坚持在片中用真正的手语演出，也要求角色的耳蜗是真的。</li><li>全片对白极少，声音设计是真正的主角；2019 年获奥斯卡最佳音效剪辑提名。</li><li>内地 2018 年 5 月 18 日公映，拿下超过 2 亿元票房——一部恐怖片在内地拿到这个数字相当少见。</li><li>拍摄地是纽约州北部的一座真实农场，那片玉米地是为了这部片临时种的。</li><li>口碑在国内偏保守（豆瓣 7.3），海外却几乎一片好评（烂番茄 96%）：分歧点在于有人把它当怪物片看，而它其实是一部家庭片。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/quiet_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/quiet_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/quiet_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_17697.jpg" alt="" loading="lazy">
+                <div class="p-name">约翰·卡拉辛斯基 <span class="p-role">导演 / 编剧 / 主演</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《办公室》《危机13小时》《寂静之地》(2018)《寂静之地2》(2021)，并为《超人总动员2》配音。本片他自导自演父亲李——一个为了让孩子活下去什么都愿意做的男人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_300671.jpg" alt="" loading="lazy"><span>危机13小时</span></div><div class="wk"><img src="assets/movies/w_520763.jpg" alt="" loading="lazy"><span>寂静之地2</span></div><div class="wk"><img src="assets/movies/w_1098006.jpg" alt="" loading="lazy"><span>寻秘不老泉</span></div><div class="wk"><img src="assets/movies/w_523777.jpg" alt="" loading="lazy"><span>未来机器城</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1590759.jpg" alt="" loading="lazy">
+                <div class="p-name">诺亚·尤佩 <span class="p-role">主演（马库斯）</span></div>
+              </div>
+              <div class="p-note">英国青年演员。《奇迹男孩》《寂静之地》《宝贝老板》《迷镇凶案》。本片他演大儿子马库斯——一个会害怕、会犯错、但一直护着妹妹的孩子。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_520763.jpg" alt="" loading="lazy"><span>寂静之地2</span></div><div class="wk"><img src="assets/movies/w_406997.jpg" alt="" loading="lazy"><span>奇迹男孩</span></div><div class="wk"><img src="assets/movies/w_359724.jpg" alt="" loading="lazy"><span>极速车王</span></div><div class="wk"><img src="assets/movies/w_395458.jpg" alt="" loading="lazy"><span>迷镇凶案</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1815539.jpg" alt="" loading="lazy">
+                <div class="p-name">米莉森·西蒙斯 <span class="p-role">主演（瑞根）</span></div>
+              </div>
+              <div class="p-note">美国聋人演员。《寂静之地》《寂静之地2》。本片她演女儿瑞根，全片用手语演出；她是这几年最受关注的年轻演员之一，也坚持角色的处境必须是真实的。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_520763.jpg" alt="" loading="lazy"><span>寂静之地2</span></div><div class="wk"><img src="assets/movies/w_383709.jpg" alt="" loading="lazy"><span>寂静中的惊奇</span></div><div class="wk"><img src="assets/movies/w_1084187.jpg" alt="" loading="lazy"><span>美丽猎杀</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《寂静之地》最聪明的地方是：它把恐怖片最廉价的手段（突然的巨响）变成了全片的禁忌。因为角色不能出声，声音本身成了剧情——每一次差点碰到东西，你都会跟着屏住呼吸。轻微剧透：真正的核心不是怪物，是瑞根的耳蜗。父亲一直没能修好它，女儿觉得是自己没用；最后一个镜头里，她把耳蜗对准怪物、把高频啸叫放到最大——这个家里最「残缺」的人，恰恰是唯一能反杀的人。卡拉辛斯基用 90 分钟讲了一件事：一家人如何在不能说话的情况下继续相爱。结尾那句手语「我会保护你」，是这几年恐怖片里少见真的让人鼻子一酸的时刻。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「设定极简、执行极狠」的恐怖片的人；喜欢《它在身后》这类规则型恐怖的观众。含怪物袭击、受伤流血等惊吓画面，紧张度极高。内地 2018 年引进过。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/highlife_poster.jpg" alt="太空生活 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 身体恐怖（法 · 德 · 英 · 波合拍）</span><span class="year">2018 · 法国 / 德国 / 英国 / 波兰 · 110 分钟 · 彩色 · 内地未映</span></div>
+        <h2>太空生活 <span class="en">High Life</span></h2>
+        <div class="rates"><span class="rate"><b>6.6</b>豆瓣</span><span class="rate"><b>82%</b>烂番茄</span><span class="rate"><b>76</b>Metacritic</span><span class="rate"><b>6.1</b>IMDb</span></div>
+        <p class="oneline">「我们都是死刑犯，只是不知道日期。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一艘飞船正朝着一个黑洞飞去，船上是十几个被判死刑的囚犯——他们被送去执行一项「不可能返回」的任务。船上有一间叫 the Box 的房间，用来做人工授精实验。多年之后，飞船上只剩下一个男人和一个女婴。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>克莱尔·德尼的第一部英语片，也是她的第一部科幻片；剧本与让-波尔·法尔戈、作家尼克·莱尔德共同完成。</li><li>灵感来自德尼读到「死刑犯自愿参与太空实验」的设想之后，决定把它拍成一部关于生育与孤独的片。</li><li>罗伯特·帕丁森为了这部片推掉了大片邀约，他说这是他接到过「最不像电影的剧本」。</li><li>全片几乎没有靠对话推进情节，靠的是飞船内部的声音（通风、金属、水）与反复出现的同一段监控画面。</li><li>the Box 那场戏是全片最受争议的一段：德尼把它拍成纯粹的机械过程，没有任何浪漫化处理。</li><li>口碑分裂得很彻底：烂番茄 82% / Metacritic 76，影评界称它是太空类型片的一次重塑；豆瓣 6.6 / IMDb 6.1，普通观众大量给出「沉闷」与「不知所云」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/highlife_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/highlife_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/highlife_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_9888.jpg" alt="" loading="lazy">
+                <div class="p-name">克莱尔·德尼 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">法国导演、编剧。《巧克力》(1988)《军中禁恋》(1999)《35杯朗姆酒》《入侵者》《太空生活》(2018)《正午之星》(2022)。她的电影几乎都在处理身体、欲望与边界，六十岁才第一次拍科幻。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_655.jpg" alt="" loading="lazy"><span>德州巴黎</span></div><div class="wk"><img src="assets/movies/w_144.jpg" alt="" loading="lazy"><span>柏林苍穹下</span></div><div class="wk"><img src="assets/movies/w_1554.jpg" alt="" loading="lazy"><span>不法之徒</span></div><div class="wk"><img src="assets/movies/w_14626.jpg" alt="" loading="lazy"><span>军中禁恋</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1137.jpg" alt="" loading="lazy">
+                <div class="p-name">朱丽叶·比诺什 <span class="p-role">主演（迪布斯）</span></div>
+              </div>
+              <div class="p-note">法国演员。《蓝白红三部曲之蓝》(1993 威尼斯影后)《英国病人》(1997 奥斯卡女配)《浓情巧克力》《锡尔斯玛利亚》《太空生活》。本片她演医生迪布斯——船上唯一掌握那台机器的人，也是全片最危险的角色。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_392.jpg" alt="" loading="lazy"><span>浓情巧克力</span></div><div class="wk"><img src="assets/movies/w_124905.jpg" alt="" loading="lazy"><span>哥斯拉</span></div><div class="wk"><img src="assets/movies/w_108.jpg" alt="" loading="lazy"><span>蓝白红三部曲之蓝</span></div><div class="wk"><img src="assets/movies/w_315837.jpg" alt="" loading="lazy"><span>攻壳机动队</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_37934.jpg" alt="" loading="lazy">
+                <div class="p-name">安德烈·本杰明 <span class="p-role">主演（切尔尼）</span></div>
+              </div>
+              <div class="p-note">美国音乐人、演员，OutKast 成员之一。影视作品《四兄弟》《转轮手枪》《太空生活》。本片他演切尔尼——一个把绝望活成了平静的囚犯，出场不多，但每次都把气氛按住。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_8292.jpg" alt="" loading="lazy"><span>四兄弟</span></div><div class="wk"><img src="assets/movies/w_10851.jpg" alt="" loading="lazy"><span>转轮手枪</span></div><div class="wk"><img src="assets/movies/w_13260.jpg" alt="" loading="lazy"><span>灌篮大帝</span></div><div class="wk"><img src="assets/movies/w_192133.jpg" alt="" loading="lazy"><span>与我同行</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《太空生活》把科幻片最常回避的两件事摆到了台面上：性和排泄。船上的人不是英雄，是一群被判了刑、拿命换一次「可能减刑」的囚犯；他们被关在一个铁盒子里，唯一的研究项目是生育。德尼没有拍太空奇观，她拍的是一具身体在密闭空间里怎么活着。轻微剧透：真正的转折来自那台机器——它不提供安慰，只提供重复。蒙特最后带着女儿靠近黑洞，那不是逃亡，是接受。全片最重的一场戏是父亲给女儿剪头发：一个杀人犯，在做一件完全温柔的事。德尼用一艘飞船写了一件事——人可以在最坏的条件下，仍然选择照顾另一个人。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「太空片还能拍成什么样」的人；喜欢《飞向太空》《潜行者》这类哲学科幻的观众。含性场面、暴力与身体恐怖画面，节奏极慢、叙事断裂。内地未映。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/gems_poster.jpg" alt="原钻 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 犯罪（美国 · 一局接一局）</span><span class="year">2019 · 美国 · 135 分钟 · 彩色 · 内地未映</span></div>
+        <h2>原钻 <span class="en">Uncut Gems</span></h2>
+        <div class="rates"><span class="rate"><b>7.5</b>豆瓣</span><span class="rate"><b>91%</b>烂番茄</span><span class="rate"><b>90</b>Metacritic</span><span class="rate"><b>7.5</b>IMDb</span></div>
+        <p class="oneline">「这就是我赢的方式。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>霍华德·拉特纳是纽约钻石区的一名珠宝商，欠了一屁股债。他从埃塞俄比亚搞到一块罕见的紫水晶原石，认定它能拍出百万美元；与此同时，凯尔特人球星凯文·加内特看上了它。霍华德把石头抵押、拍卖、再抵押，把每一笔钱押在下一场球赛上。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>本·萨弗迪与约书亚·萨弗迪兄弟自编自导自剪，这是他们第一次让大明星主演。</li><li>亚当·桑德勒凭此片横扫多个影评人协会的最佳男主角，却连奥斯卡提名都没拿到，是当年最大的争议之一。</li><li>凯文·加内特本色出演；片中那场关键比赛用的是 2012 年凯尔特人季后赛的真实录像。</li><li>全片 135 分钟几乎没有一场安静的戏——叠加对白、手持跟拍、连续变焦，把焦虑直接拍成了节奏。</li><li>配乐由丹尼尔·洛帕廷（Oneohtrix Point Never）创作，合成器音墙加环境噪音，被很多人列为 2019 年最佳。</li><li>Metacritic 90 分，是 A24 出品里评分最高的一批；豆瓣 7.5 的落差主要来自国内观众对「全程吵闹」的接受度。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/gems_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/gems_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/gems_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_227564.jpg" alt="" loading="lazy">
+                <div class="p-name">本·萨弗迪 <span class="p-role">导演 / 编剧 / 剪辑</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、演员。与弟弟约书亚·萨弗迪合作《天知道有多重》(2014)《好时光》(2017)《原钻》(2019)。他们的电影都在拍同一件事：一个人被自己的决定一路追着跑。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_429200.jpg" alt="" loading="lazy"><span>好时光</span></div><div class="wk"><img src="assets/movies/w_760329.jpg" alt="" loading="lazy"><span>粉碎机</span></div><div class="wk"><img src="assets/movies/w_285024.jpg" alt="" loading="lazy"><span>天知道</span></div><div class="wk"><img src="assets/movies/w_664394.jpg" alt="" loading="lazy"><span>戈德曼诉西尔弗曼（短片）</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_19292.jpg" alt="" loading="lazy">
+                <div class="p-name">亚当·桑德勒 <span class="p-role">主演（霍华德）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片人。《阿呆闯学堂》《初恋50次》《狂野之爱》《原钻》《必胜球探》。本片他演霍华德——一个一辈子都在赌下一把的珠宝商，是他最受认可的一次表演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_257344.jpg" alt="" loading="lazy"><span>像素大战</span></div><div class="wk"><img src="assets/movies/w_1824.jpg" alt="" loading="lazy"><span>初恋50次</span></div><div class="wk"><img src="assets/movies/w_9339.jpg" alt="" loading="lazy"><span>人生遥控器</span></div><div class="wk"><img src="assets/movies/w_38365.jpg" alt="" loading="lazy"><span>长大成人</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2371446.jpg" alt="" loading="lazy">
+                <div class="p-name">朱莉娅·福克斯 <span class="p-role">主演（茱莉亚）</span></div>
+              </div>
+              <div class="p-note">美国演员、艺术家，《原钻》是她的银幕首作。本片她演店员茱莉亚，几乎演活了整个钻石区那种又廉价又滚烫的气氛。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_986097.jpg" alt="" loading="lazy"><span>他</span></div><div class="wk"><img src="assets/movies/w_1140535.jpg" alt="" loading="lazy"><span>感应</span></div><div class="wk"><img src="assets/movies/w_649409.jpg" alt="" loading="lazy"><span>切勿擅动</span></div><div class="wk"><img src="assets/movies/w_1254624.jpg" alt="" loading="lazy"><span>黑夜终至</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《原钻》从头到尾只讲一件事：一个人怎么把每一秒都拿来赌。霍华德不是坏人——他爱家人、会做生意、对员工也不差，问题是他永远觉得下一把就能翻盘。全片最狠的设计是它不给任何一个「赢」的时刻：每一次他刚喘过气，下一个麻烦就推门进来了。轻微剧透：结尾那场，他被逼到绝路、把石头送出去、然后赢了一大笔钱——下一个镜头，讨债的人已经站在玻璃门外。萨弗迪兄弟连让你爽两分钟都不给。最后那颗原石被切开：紫色、红色、绿色，一层一层。那是全片唯一安静的镜头，也是唯一的答案——所有赌徒心里都有一块这样的石头，好看得要命，里面全是杂质。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「焦虑被拍成动作片」的人；能接受 135 分钟不停吵闹、主角毫无可爱之处的观众。含暴力、大量粗口与性内容，紧张度极高。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/titane_poster.jpg" alt="钛 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 身体恐怖（法国 · 金属与肉）</span><span class="year">2021 · 法国 / 比利时 · 108 分钟 · 彩色 · 内地未映</span></div>
+        <h2>钛 <span class="en">Titane</span></h2>
+        <div class="rates"><span class="rate"><b>7.4</b>豆瓣</span><span class="rate"><b>90%</b>烂番茄</span><span class="rate"><b>75</b>Metacritic</span><span class="rate"><b>6.6</b>IMDb</span></div>
+        <p class="oneline">「别碰我。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>阿莱克西娅在一场车祸后颅骨里被植入了一块钛板。成年后她是车展上的舞者，也是一名连环杀手。一次逃亡中，她伪装成一个失踪多年的男孩，被消防队长文森特认作自己的儿子带回队里。而这个身体，正在因为她怀上的东西发生变化。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>朱利亚·迪库诺凭此片拿下第 74 届戛纳金棕榈——史上第二位独立获得金棕榈的女性导演（第一位是《钢琴课》的简·坎皮恩，1993）。</li><li>她的长片处女作《生吃》(2016) 已经在戛纳影评人周拿下费比西奖，本片是第二部。</li><li>文森特·林顿演的消防队长是全片另一个核心：一个靠注射药物维持身体的人，也是唯一一个不问「你是谁」的人。</li><li>阿加莎·罗塞勒首次主演长片，她为这个角色训练了大量肢体动作；片中几乎所有情绪都靠身体而不是台词。</li><li>全片把「车」和「人」焊在一起：开场是车展上的舞蹈，中段有一场人与车的戏，结尾的分娩被拍成机械过程。</li><li>口碑两极得非常彻底：戛纳全场起立、烂番茄 90%，而豆瓣 7.4 / IMDb 6.6，普通观众大量给出「看不懂」和「生理不适」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/titane_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/titane_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/titane_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1392433.jpg" alt="" loading="lazy">
+                <div class="p-name">朱利亚·迪库诺 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">法国导演、编剧。短片《Junior》(2011)，长片《生吃》(2016)《钛》(2021)。她的电影一直在处理身体的边界：吃、切、变、怀孕，以及一个家庭怎么面对正在变形的孩子。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_393519.jpg" alt="" loading="lazy"><span>生吃</span></div><div class="wk"><img src="assets/movies/w_1284460.jpg" alt="" loading="lazy"><span>阿尔法</span></div><div class="wk"><img src="assets/movies/w_307130.jpg" alt="" loading="lazy"><span>少女初长成</span></div><div class="wk"><img src="assets/movies/w_449687.jpg" alt="" loading="lazy"><span>吃（短片）</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5443.jpg" alt="" loading="lazy">
+                <div class="p-name">文森特·林顿 <span class="p-role">主演（文森特）</span></div>
+              </div>
+              <div class="p-note">法国演员。《怒火青春》《职场杀手》(2001 戛纳影帝)《市场法则》《钛》《工会成员》。本片他演文森特——一个往自己身上注射药物、只为留住「父亲」这个形状的消防队长。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_10800.jpg" alt="" loading="lazy"><span>龙战</span></div><div class="wk"><img src="assets/movies/w_329712.jpg" alt="" loading="lazy"><span>市场法则</span></div><div class="wk"><img src="assets/movies/w_14556.jpg" alt="" loading="lazy"><span>为了她</span></div><div class="wk"><img src="assets/movies/w_15712.jpg" alt="" loading="lazy"><span>非法入境</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2418333.jpg" alt="" loading="lazy">
+                <div class="p-name">阿加莎·罗塞勒 <span class="p-role">主演（阿莱克西娅）</span></div>
+              </div>
+              <div class="p-note">法国演员、模特，《钛》是她的银幕首作。她演的阿莱克西娅几乎不靠台词，全靠身体与眼神，是这部片最危险也最迷人的部分。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1140056.jpg" alt="" loading="lazy"><span>金砖香</span></div><div class="wk"><img src="assets/movies/w_1178464.jpg" alt="" loading="lazy"><span>卡桑德尔</span></div><div class="wk"><img src="assets/movies/w_1198142.jpg" alt="" loading="lazy"><span>心灵食谱</span></div><div class="wk"><img src="assets/movies/w_1398460.jpg" alt="" loading="lazy"><span>巴黎重生</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《钛》讲的是「身体不再属于自己」，被推到最极端。阿莱克西娅从一块钛板开始——金属进了她的头，性、暴力、杀戮都从那里长出来。她逃亡时把头发剪掉、把胸部勒平、把鼻子打断，变成另一个人；而她的身体同时在往完全相反的方向走。轻微剧透：真正的转折是文森特。他没有识破她，或者说他选择不识破——他要的是一个儿子，哪怕这个儿子是假的、是坏的、是金属做的。最后那场分娩不是恐怖，是慈悲：一个男人抱着一个钛做的婴儿说「我在这里」。迪库诺把整部片拍成了一次粗暴的接生——血、机油、金属，和一个终于有人接住的怪物。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看法式极端电影在二十一世纪的样子的人；能接受身体恐怖、性与暴力混合画面的观众。含强烈血腥、自残与性场面，生理不适风险高，请斟酌。内地未映。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/zoi_poster.jpg" alt="利益区域 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 历史（美英波德合拍 · 墙的另一边）</span><span class="year">2023 · 美国 / 英国 / 波兰 / 德国 · 105 分钟 · 彩色 · 内地未映</span></div>
+        <h2>利益区域 <span class="en">The Zone of Interest</span></h2>
+        <div class="rates"><span class="rate"><b>7.4</b>豆瓣</span><span class="rate"><b>93%</b>烂番茄</span><span class="rate"><b>92</b>Metacritic</span><span class="rate"><b>7.4</b>IMDb</span></div>
+        <p class="oneline">「墙那边的事，我们不看。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1943 年，奥斯维辛集中营指挥官鲁道夫·霍斯一家就住在集中营隔壁的一栋房子里。妻子海德薇格打理花园、试穿皮草、招待朋友；孩子们在院子里游泳。墙的另一边是焚化炉。全片没有一秒进入集中营内部。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>乔纳森·格雷泽自编自导，改编自马丁·艾米斯的同名小说；他花了近十年做研究和筹备。</li><li>第 96 届奥斯卡拿下最佳国际影片与最佳音效，并入围最佳影片、最佳导演、最佳改编剧本。</li><li>拍摄用的是霍斯故居原址，剧组按史料重建了花园与围墙；摄影机全部固定在房间里，从不越墙。</li><li>声音是本片真正的主角：枪声、犬吠、火车、机械运转，几乎全部是画外音；声音团队整理了一份数百页的清单。</li><li>全片用隐藏机位拍摄，演员常常不知道自己在哪个镜头里——格雷泽在隔壁房间用监视器看戏，不进片场。</li><li>片尾有一段真实画面：今天的奥斯维辛博物馆里，清洁工正在擦展柜。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/zoi_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/zoi_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/zoi_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_66728.jpg" alt="" loading="lazy">
+                <div class="p-name">乔纳森·格雷泽 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">英国导演、编剧。三十年只拍了四部长片：《性感野兽》(2000)《重生》(2004)《皮囊之下》(2013)《利益区域》(2023)，每一部都在换一种观察人的方式。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_97370.jpg" alt="" loading="lazy"><span>皮囊之下</span></div><div class="wk"><img src="assets/movies/w_11826.jpg" alt="" loading="lazy"><span>性感野兽</span></div><div class="wk"><img src="assets/movies/w_10740.jpg" alt="" loading="lazy"><span>重生</span></div><div class="wk"><img src="assets/movies/w_643065.jpg" alt="" loading="lazy"><span>坠落（短片）</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_71374.jpg" alt="" loading="lazy">
+                <div class="p-name">克里斯蒂安·弗里德尔 <span class="p-role">主演（鲁道夫）</span></div>
+              </div>
+              <div class="p-note">德国演员、音乐人。《无耻混蛋》《巴比龙》《巴比伦柏林》《利益区域》。本片他演鲁道夫·霍斯——一个在家里温和、在墙那边下令的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_37903.jpg" alt="" loading="lazy"><span>白丝带</span></div><div class="wk"><img src="assets/movies/w_319337.jpg" alt="" loading="lazy"><span>埃尔塞：差点改变世界的人</span></div><div class="wk"><img src="assets/movies/w_266044.jpg" alt="" loading="lazy"><span>疯狂的爱</span></div><div class="wk"><img src="assets/movies/w_114438.jpg" alt="" loading="lazy"><span>俄罗斯迪斯科</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1856.jpg" alt="" loading="lazy">
+                <div class="p-name">拉尔夫·赫福斯 <span class="p-role">主演（上级官员）</span></div>
+              </div>
+              <div class="p-note">德国演员。《我们的父辈》《同中有异》《利益区域》。本片他演集中营系统里的一名上级官员，出场集中在几场公文处理的戏里，台词不多，压迫感不小。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_8202.jpg" alt="" loading="lazy"><span>魔力女战士</span></div><div class="wk"><img src="assets/movies/w_7459.jpg" alt="" loading="lazy"><span>极速赛车手</span></div><div class="wk"><img src="assets/movies/w_158.jpg" alt="" loading="lazy"><span>敲开天堂的门</span></div><div class="wk"><img src="assets/movies/w_658777.jpg" alt="" loading="lazy"><span>怪胎英雄联盟</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《利益区域》最恐怖的地方是它什么都没拍。你从头到尾没有看到一个集中营内部的镜头——只有一堵墙，和墙那边持续不断的声音。霍斯一家在墙这边讨论菜谱、试衣服、给孩子过生日，声音设计把那些枪响和惨叫变成日常背景。轻微剧透：全片仅有的几次「越界」是几段热成像画面（一个波兰女孩夜里往工地里藏苹果），以及霍斯在楼梯上突然干呕。格雷泽的答案是：不要用影像去再现，因为一再现，观众就能松一口气。真正的处理在声音和「不拍」——你要一直站在那家人的客厅里，一直听着。最后那段现代博物馆的画面把时间拉回今天：清洁工擦玻璃、摆鞋子。恐怖没有结束，它只是换了形式。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「大屠杀题材还能怎么拍」的人；能接受极度克制、几乎没有情节、靠声音推进的观众。无直接暴力画面，但声音与主题的压力极大。内地未映。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-02；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>

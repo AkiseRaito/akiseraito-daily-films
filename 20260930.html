@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-09-30 · 第 30 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 9 月 30 日 · 第 30 期 · 已避开往期推荐过的全部 275 部</div>
+  <div>
+    <span class="pill">主题：近十二年 · 十部当代类型片（2012–2023）</span>
+    <span class="pill">全部 1990 年后：最老 2012，六部出自 2018 年以后</span>
+    <span class="pill">六国 / 六种语言：丹麦 · 美国 · 日本 · 法国 · 中国 · 瑞典</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-09-30，会随时间变动，仅供参考。<br>
+  本期换了个方向：前面几期一直在往回翻影史，这一期全部是「不用补课」的当代片——最早的《狩猎》2012 年，最新的《鬼玩人崛起》2023 年，其中六部是 2018 年之后的作品。它们都不是冷门片，但放在一起会看出一件有意思的事：这十五年，「恐怖」这个词的重心悄悄从「外面有东西」挪到了「身体、家庭与阶层本身有问题」——丹麦小镇的一句童言（《狩猎》）、一个白人家庭对黑人男友的过度热情（《逃出绝命镇》）、一个被彻底接住、于是留了下来的人（《仲夏夜惊魂》）、一个被附身的妈妈（《鬼玩人崛起》）、一座矿区和三个说不出话的阶层（《暴裂无声》）。科幻那一边也一样：多元宇宙最后落在报税单上（《瞬息全宇宙》），太空史诗最后落在「被安排好的救世主」上（《沙丘》）。<br>
+  剩下四部是这十五年最稳的四张牌：《爆裂鼓手》把一场演奏拍成了动作片，《小偷家族》用一家「假亲人」拆掉了血缘神话，《逃出绝命镇》用一个周末讲完了「礼貌」可以有多危险，《燃烧女子的肖像》把「看」这件事拍成了整部电影。<br>
+  10 位导演（托马斯·温特伯格 / 克里斯托弗·史密斯 / 达米恩·查泽雷 / 是枝裕和 / 关家永 / 科拉莉·法尔雅 / 丹尼斯·维伦纽瓦 / 忻钰坤 / 瑟琳·席安玛 / 李·克罗宁）与 30 位主创全部为首次出现，无一与往期重复。<br>
+  几部口碑明显分裂的片子已如实标注、未做修饰：《逃出绝命镇》（豆瓣 7.6 vs 烂番茄 99% / Metacritic 84，影评人压倒性好评、观众分明显更低）、《仲夏夜惊魂》（豆瓣 6.7 vs 烂番茄 83%，观众分仅 63%，被骂得最多的是「猎奇」与节奏）、《瞬息全宇宙》（豆瓣 7.6 vs 烂番茄 94%，国内开局 8.9 一路回落）、《鬼玩人崛起》（豆瓣 6.5 vs 烂番茄 85%，除了血浆几乎不留东西）、《沙丘》（豆瓣 7.8 vs IMDb 8.0，慢节奏在国内一直两极）。<br>
+  内地公映情况：3 部登过内地大银幕——《小偷家族》2018-08-03、《沙丘》2021-10-22、《暴裂无声》2018-04-04；其余 7 部内地未映，流媒体可看。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>狩猎</td><td class="qg">剧情 / 惊悚（丹麦 · 集体暴力）</td><td class="qr">9.1 / 92% / 77</td></tr><tr><td class="qn">02</td><td>逃出绝命镇</td><td class="qg">惊悚 / 恐怖（美国 · 心理恐怖 · 阶层寓言）</td><td class="qr">7.6 / 99% / 84</td></tr><tr><td class="qn">03</td><td>爆裂鼓手</td><td class="qg">剧情 / 心理惊悚（美国 · 音乐题材）</td><td class="qr">8.7 / 94% / 89</td></tr><tr><td class="qn">04</td><td>小偷家族</td><td class="qg">剧情 / 犯罪（日本 · 戛纳金棕榈）</td><td class="qr">8.7 / 99% / 93</td></tr><tr><td class="qn">05</td><td>瞬息全宇宙</td><td class="qg">科幻 / 剧情（美国 · 多元宇宙）</td><td class="qr">7.6 / 94% / 81</td></tr><tr><td class="qn">06</td><td>仲夏夜惊魂</td><td class="qg">恐怖 / 惊悚（美国 / 瑞典 · 白昼恐怖 · 民俗邪教）</td><td class="qr">6.7 / 83% / 72</td></tr><tr><td class="qn">07</td><td>沙丘</td><td class="qg">科幻（美国 / 加拿大 · 太空史诗）</td><td class="qr">7.8 / 83% / 74</td></tr><tr><td class="qn">08</td><td>暴裂无声</td><td class="qg">悬疑 / 犯罪（中国大陆 · 社会派）</td><td class="qr">8.2 / 7.1 / 评审团特别奖</td></tr><tr><td class="qn">09</td><td>燃烧女子的肖像</td><td class="qg">剧情 / 爱情（法国 · 古典）</td><td class="qr">8.7 / 98% / 95</td></tr><tr><td class="qn">10</td><td>鬼玩人崛起</td><td class="qg">恐怖（美国 · 附身 / 身体恐怖）</td><td class="qr">6.5 / 85% / 69</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/hunt_poster.jpg" alt="狩猎 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 惊悚（丹麦 · 集体暴力）</span><span class="year">2012 · 丹麦 / 瑞典 · 115 分钟 · 彩色 · 内地未映</span></div>
+        <h2>狩猎 <span class="en">Jagten / The Hunt</span></h2>
+        <div class="rates"><span class="rate"><b>9.1</b>豆瓣</span><span class="rate"><b>92%</b>烂番茄</span><span class="rate"><b>77</b>Metacritic</span><span class="rate"><b>8.3</b>IMDb</span></div>
+        <p class="oneline">「谎言已经传开了。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>卢卡斯是丹麦小镇上一所幼儿园的老师，离婚、争取儿子抚养权、刚和新同事娜迪亚开始交往，日子正一点点好起来。幼儿园里一个叫卡拉的小女孩喜欢他，送他一颗心、亲了他的嘴，被他婉拒。第二天，卡拉对园长说了一句含混的话。园长按自己的理解把它补完，然后找来了家长。到晚上，整个镇子都知道了。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>麦斯·米科尔森凭此片拿下 2012 年戛纳主竞赛最佳男演员；影片随后入围第 86 届奥斯卡最佳外语片与金球奖。</li><li>温特伯格是「道格玛 95」宣言的共同签署者（成名作《家宴》1998）。本片仍用手持与自然光，但比道格玛时期克制得多——摄影机几乎不介入，只是待在那儿。</li><li>剧本灵感来自一位丹麦精神科医生交给温特伯格的一整袋真实案例资料，他放了十年才读完。编剧是他与托比亚斯·林道赫姆。</li><li>全片没有一个反派：园长、家长、好友西奥、超市店员，每个人都在做他们认为「合理」的判断，这才是它最可怕的地方。</li><li>关键细节：孩子们描述的施暴地点是地下室，而卢卡斯的房子根本没有地下室。这个漏洞本该救他，但它只让大人们修改了说法。</li><li>结尾是圣诞夜教堂里的一场对峙。一年之后狩猎仪式上的那一枪，导演始终没有交代开枪的人是谁——也没有解释为什么没人追查。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/hunt_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/hunt_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/hunt_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4453.jpg" alt="" loading="lazy">
+                <div class="p-name">托马斯·温特伯格 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">丹麦导演，「道格玛 95」宣言的共同签署者。《家宴》(1998) 让他一举成名，《狩猎》(2012) 拿下戛纳主竞赛最佳男演员；此后《远离尘嚣》《库尔斯克》《酒精计划》(2020，奥斯卡最佳国际影片)。他一生拍的都是「体面社会突然露出獠牙」的那一刻。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_580175.jpg" alt="" loading="lazy"><span>酒精计划</span></div><div class="wk"><img src="assets/movies/w_309.jpg" alt="" loading="lazy"><span>家宴</span></div><div class="wk"><img src="assets/movies/w_250734.jpg" alt="" loading="lazy"><span>远离尘嚣</span></div><div class="wk"><img src="assets/movies/w_401200.jpg" alt="" loading="lazy"><span>库尔斯克</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1019.jpg" alt="" loading="lazy">
+                <div class="p-name">麦斯·米科尔森 <span class="p-role">主演（卢卡斯）</span></div>
+              </div>
+              <div class="p-note">丹麦演员，戛纳影帝（《狩猎》）、欧洲电影奖影帝。海外观众熟悉的是《007：大战皇家赌场》的反派切弗、《奇异博士》的卡西利亚斯、剧集《汉尼拔》；丹麦观众熟悉的是他与温特伯格、安德斯·托马斯·詹森长达二十年的合作。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_284052.jpg" alt="" loading="lazy"><span>奇异博士</span></div><div class="wk"><img src="assets/movies/w_36557.jpg" alt="" loading="lazy"><span>007：大战皇家赌场</span></div><div class="wk"><img src="assets/movies/w_580175.jpg" alt="" loading="lazy"><span>酒精计划</span></div><div class="wk"><img src="assets/movies/w_483906.jpg" alt="" loading="lazy"><span>极线杀手</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4457.jpg" alt="" loading="lazy">
+                <div class="p-name">托马斯·博·拉森 <span class="p-role">主演（西奥）</span></div>
+              </div>
+              <div class="p-note">丹麦演员，温特伯格的固定班底。《家宴》里演那个在饭桌上被当众揭穿的弟弟，《狩猎》里演卢卡斯的挚友西奥——全片最痛的一刀正是他给的。另有《酒精计划》《海浪》《末路狂奔》。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_580175.jpg" alt="" loading="lazy"><span>酒精计划</span></div><div class="wk"><img src="assets/movies/w_309.jpg" alt="" loading="lazy"><span>家宴</span></div><div class="wk"><img src="assets/movies/w_336882.jpg" alt="" loading="lazy"><span>海浪</span></div><div class="wk"><img src="assets/movies/w_2061.jpg" alt="" loading="lazy"><span>末路狂奔</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《狩猎》最难受的地方在于：它从头到尾没有给你一个可以恨的人。轻微剧透：卡拉那句谎话说完之后，影片只用了一场戏就把镇子翻过来——园长找来的「专家」用诱导式提问，孩子们顺着大人的表情编出了细节；等孩子们说出「地下室」这个明显错误的信息时，没有人回头检查，因为结论已经被需要了。也就是说，毁掉卢卡斯的不是谎言，是所有人「愿意相信」的那一瞬间。麦斯·米科尔森的表演是它的另一半：他几乎不用表情，全靠一个越来越僵的身体——被打、被吐口水、被赶出超市，他每一次的反应都是「先愣住，再继续走」。真正的结尾是那一年后的枪响。真相早就澄清了，朋友也回来了，可有人还是朝他开了一枪。温特伯格不告诉你那是谁，因为他要说的正是：那个人可以是任何人。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《狩猎》《杀人回忆》《我们》这类「社会如何围剿一个人」的观众；想知道「群体暴力」在现实里到底长什么样的人。彩色，无血腥，含儿童性侵指控议题与动物死亡（狗被杀），情绪极沉。内地未引进，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/getout_poster.jpg" alt="逃出绝命镇 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 恐怖（美国 · 心理恐怖 · 阶层寓言）</span><span class="year">2017 · 美国 · 104 分钟 · 彩色 · 内地未映</span></div>
+        <h2>逃出绝命镇 <span class="en">Get Out</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>99%</b>烂番茄</span><span class="rate"><b>84</b>Metacritic</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「不，不，不，不，不——Get out。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>黑人摄影师克里斯跟着白人女友罗斯回她父母家过周末。一路上的每一句话都在强调「我们家不介意肤色」，而克里斯的每一次尴尬都被罗斯挡了回去。到了之后，父亲反复说自己在奥巴马任内投了两次票，母亲提议用催眠帮他戒烟，弟弟在饭桌上突然扑过来要跟他比力气，而院子里那两个黑人佣人的笑容，怎么看都不太对。克里斯想走，车钥匙却不在自己手里。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>乔丹·皮尔的处女作。成本 450 万美元，全球票房超过 2.5 亿美元，28 天拍完。</li><li>第 90 届奥斯卡拿下最佳原创剧本，另提名最佳影片、最佳导演、最佳男主——恐怖片拿到最佳影片提名，在奥斯卡历史上极少见。</li><li>烂番茄 99%（231 位影评人里 230 人投新鲜），Metacritic 84；而 IMDb 7.7、豆瓣 7.6——它是一部「影评人给的分数远高于观众」的恐怖片。</li><li>片名来自两个方向：字面意义上的「滚出去」，以及黑人之间那句打招呼的「Get out」。同一句话，在片中两种语气都出现过。</li><li>「催眠」是全片的核心机制：母亲用茶杯敲出那句下沉指令，把人关进自己身体里的一个小房间——这既是剧情装置，也是整部片的隐喻。</li><li>皮尔原本准备了好几个结局，其中一个是克里斯被捕、被判有罪；最终版他改成了克里斯自己逃出来。他说那个版本「会让观众彻底绝望」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/getout_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/getout_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/getout_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_291263.jpg" alt="" loading="lazy">
+                <div class="p-name">乔丹·皮尔 <span class="p-role">导演 / 编剧 / 制片</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、演员、制片。喜剧出身（《基努猫》与喜剧搭档 Key &amp; Peele），处女作《逃出绝命镇》(2017) 拿下奥斯卡最佳原创剧本；此后《我们》《不》与剧集《新阴阳魔界》，把恐怖片做成了当代美国最有效的社会寓言容器。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_301528.jpg" alt="" loading="lazy"><span>玩具总动员4</span></div><div class="wk"><img src="assets/movies/w_342521.jpg" alt="" loading="lazy"><span>基努猫</span></div><div class="wk"><img src="assets/movies/w_458723.jpg" alt="" loading="lazy"><span>我们</span></div><div class="wk"><img src="assets/movies/w_332210.jpg" alt="" loading="lazy"><span>逗鸟外传：萌宝满天飞</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_206919.jpg" alt="" loading="lazy">
+                <div class="p-name">丹尼尔·卡卢亚 <span class="p-role">主演（克里斯）</span></div>
+              </div>
+              <div class="p-note">英国演员。凭《逃出绝命镇》(2017) 提名奥斯卡影帝，此后《犹大与黑弥赛亚》拿下奥斯卡最佳男配角；另有《黑豹》《边境杀手》《不》《蜘蛛侠：纵横宇宙》（配音）。本片里他演的克里斯，全程靠眼神完成「从礼貌到恐惧」的转变。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_762504.jpg" alt="" loading="lazy"><span>不</span></div><div class="wk"><img src="assets/movies/w_284054.jpg" alt="" loading="lazy"><span>黑豹</span></div><div class="wk"><img src="assets/movies/w_583406.jpg" alt="" loading="lazy"><span>犹大与黑弥赛亚</span></div><div class="wk"><img src="assets/movies/w_273481.jpg" alt="" loading="lazy"><span>边境杀手</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1255540.jpg" alt="" loading="lazy">
+                <div class="p-name">艾莉森·威廉姆斯 <span class="p-role">主演（罗斯）</span></div>
+              </div>
+              <div class="p-note">美国演员、歌手。剧集《衰姐们》出道，《逃出绝命镇》里的罗斯是她最重要的银幕角色——一部片里要同时是温柔女友和另一个人；此后《梅根》系列、《完美琴仇》《地平线》。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_536554.jpg" alt="" loading="lazy"><span>梅根</span></div><div class="wk"><img src="assets/movies/w_529962.jpg" alt="" loading="lazy"><span>完美琴仇</span></div><div class="wk"><img src="assets/movies/w_1071585.jpg" alt="" loading="lazy"><span>梅根2.0</span></div><div class="wk"><img src="assets/movies/w_1327862.jpg" alt="" loading="lazy"><span>为你遗憾</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>它最聪明的地方是把「不舒服」拍成了主线，而不是把恐怖留到最后。前四十分钟没什么事发生，但每一句「我们真的很开放」都在把克里斯往里推——观众和克里斯一样，知道哪里不对，却说不出哪里不对，因为对方从头到尾都在做「正确」的事。轻微剧透：真正的转折不是那场拍卖，是那把茶匙。母亲敲杯子的时候，克里斯被关进了自己身体里的一个「下沉空间」：他能看见、能听见，但动不了。这一层拍得太准了——被剥夺的不是生命，是自主权。所以最后他用手堵住耳朵、用车钥匙捅死对方，动作都极其笨拙：这不是英雄反杀，是一个差点被永久关进自己身体里的人，拼命爬回来。至于为什么国内分数不如北美：这部片的笑点和恐惧都长在美国种族语境里，那句「我投过奥巴马」的荒谬，脱离语境会被读成一个普通的虚伪家长，而不是一整套系统的样子。两边看的是同一部片，但看到的不是同一层。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《万能钥匙》《隐形人》《我们》这类「越礼貌越危险」的惊悚片的人；想看恐怖片怎么处理社会议题而不说教的观众。彩色，含暴力与血腥镜头，惊吓以心理压迫为主。内地未引进，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/whiplash_poster.jpg" alt="爆裂鼓手 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 心理惊悚（美国 · 音乐题材）</span><span class="year">2014 · 美国 · 107 分钟 · 彩色 · 内地未映</span></div>
+        <h2>爆裂鼓手 <span class="en">Whiplash</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>94%</b>烂番茄</span><span class="rate"><b>89</b>Metacritic</span><span class="rate"><b>8.5</b>IMDb</span></div>
+        <p class="oneline">「英语里最有害的两个词，是『干得不错』。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>安德鲁是谢弗音乐学院一年级的爵士鼓手，被指挥弗莱彻挑进了全学院最强的一支乐队。弗莱彻会在排练时把椅子扔向他、扇他耳光、用最难听的话骂他，也会在台上笑着叫他「我的孩子」。安德鲁开始练到手出血，甩掉女朋友，跟父亲吵架。他想成为「伟大」的那一个。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>全片只拍了 19 天。剧本最初只有 15 页，查泽雷先把它拍成 18 分钟短片，2013 年圣丹斯获奖后才拿到投资拍成长片。</li><li>J·K·西蒙斯凭弗莱彻横扫当季：奥斯卡、金球、英国电影学院、美国演员工会，四项最佳男配全拿。</li><li>成本 330 万美元，全球票房约 5000 万美元。它同时拿到奥斯卡最佳剪辑与最佳音效——鼓点就是切点，剪和打是同一件事。</li><li>结尾那九分钟的《Caravan》独奏是实拍，迈尔斯·特勒真的打到手裂；片中血泡、绷带、冰水桶大部分是拍摄时的真实状态。</li><li>查泽雷本人是高中爵士鼓手，弗莱彻这个角色的原型有一部分来自他当年的乐队老师（老师本人后来还去看过这部片）。</li><li>提醒：这部片关于「伟大需要付出什么」的答案是开放的。它不谴责弗莱彻，也不原谅他——很多人看完会不舒服，这正是它的意图。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/whiplash_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/whiplash_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/whiplash_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_136495.jpg" alt="" loading="lazy">
+                <div class="p-name">达米恩·查泽雷 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演，1985 年生。《爆裂鼓手》(2014) 拿下三项奥斯卡，32 岁凭《爱乐之城》(2016) 成为史上最年轻的奥斯卡最佳导演；此后《登月第一人》《巴比伦》。他本人曾是高中爵士鼓手，本片几乎是他那段经历的自传性噩梦。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_313369.jpg" alt="" loading="lazy"><span>爱乐之城</span></div><div class="wk"><img src="assets/movies/w_369972.jpg" alt="" loading="lazy"><span>登月第一人</span></div><div class="wk"><img src="assets/movies/w_615777.jpg" alt="" loading="lazy"><span>巴比伦</span></div><div class="wk"><img src="assets/movies/w_367412.jpg" alt="" loading="lazy"><span>爆裂鼓手</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_996701.jpg" alt="" loading="lazy">
+                <div class="p-name">迈尔斯·特勒 <span class="p-role">主演（安德鲁）</span></div>
+              </div>
+              <div class="p-note">美国演员。《爆裂鼓手》让他成名，此后《军火贩》《神奇四侠》(2015)《壮志凌云：独行侠》(2022)《峡谷》；为了本片他重新学鼓，片中手上的血泡与绷带大部分是真的。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_166424.jpg" alt="" loading="lazy"><span>神奇四侠</span></div><div class="wk"><img src="assets/movies/w_361743.jpg" alt="" loading="lazy"><span>壮志凌云：独行侠</span></div><div class="wk"><img src="assets/movies/w_308266.jpg" alt="" loading="lazy"><span>军火贩</span></div><div class="wk"><img src="assets/movies/w_950396.jpg" alt="" loading="lazy"><span>峡谷</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_18999.jpg" alt="" loading="lazy">
+                <div class="p-name">J·K·西蒙斯 <span class="p-role">主演（弗莱彻）</span></div>
+              </div>
+              <div class="p-note">美国演员，好莱坞最可靠的性格演员之一。山姆·雷米《蜘蛛侠》三部曲里的 J·乔纳·詹姆森、《爆裂鼓手》的弗莱彻（奥斯卡最佳男配）、《爱乐之城》的酒吧老板、《会计师》《正义联盟》的戈登局长。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_557.jpg" alt="" loading="lazy"><span>蜘蛛侠</span></div><div class="wk"><img src="assets/movies/w_558.jpg" alt="" loading="lazy"><span>蜘蛛侠2</span></div><div class="wk"><img src="assets/movies/w_302946.jpg" alt="" loading="lazy"><span>会计刺客</span></div><div class="wk"><img src="assets/movies/w_508965.jpg" alt="" loading="lazy"><span>克劳斯：圣诞节的秘密</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《爆裂鼓手》最被误解的一点是：很多人把它当成励志片。它不是。轻微剧透：最后那场音乐会，弗莱彻故意换了安德鲁不熟的曲目，当众毁掉他——这是报复，因为安德鲁之前作证把他从学校赶走了。安德鲁摔下台、被父亲接走，然后他转身走回舞台，抢过鼓槌，用一段《Caravan》把整个乐队带起来。最后两个人隔着鼓对视，弗莱彻开始给他打拍子。这个结局是全片最难解的地方：你可以读成师徒和解、读成两个疯子终于互相承认，也可以读成弗莱彻赢了——他终于把这个学生变成了自己要的那种人，代价是这个人从此再也不能正常地爱任何人。查泽雷从头到尾没有表态，他只是把镜头推到那张流汗的脸上。还有一处容易被跳过：安德鲁第一次约会时说的那句「我宁愿醉死在别人记住的名单里」，这不是玩笑，是他之后所有行为的说明书。所以它讲的不是努力，是「人为了被记住愿意把自己烧掉多少」。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《黑天鹅》《社交网络》《爆裂鼓手》这类「成就与自毁」题材的观众；想看剪辑和声音怎么把一场演奏拍成动作戏的人。彩色，含大量语言暴力、掌掴与血腥画面，心理压迫强。内地未引进，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/shoplift_poster.jpg" alt="小偷家族 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 犯罪（日本 · 戛纳金棕榈）</span><span class="year">2018 · 日本 · 121 分钟 · 彩色 · 内地 2018-08-03 上映</span></div>
+        <h2>小偷家族 <span class="en">Shoplifters (万引き家族)</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>99%</b>烂番茄</span><span class="rate"><b>93</b>Metacritic</span><span class="rate"><b>7.9</b>IMDb</span></div>
+        <p class="oneline">「生了孩子，就自然是母亲了吗？」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>东京下町一栋快塌的老房子里住着五口人：做日结短工的治、在洗衣厂做工的信代、少年祥太、在店里打工的亚纪，以及靠养老金过日子的奶奶初枝。治带着祥太在超市顺东西，是这家人的日常。某个冬夜，他们在公寓楼道里捡回一个被冻僵的小女孩由里，于是家里多了一个人——也多了一个谁都不许问的秘密。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>2018 年戛纳金棕榈。是枝裕和此前四次入围主竞赛（《无人知晓》《如父如子》《海街日记》等），这是他第一次拿到最高奖。</li><li>安藤樱在结尾那场审讯戏里几乎一个人撑完全片最重的段落——没有配乐、没有剪辑点、只有她的脸和手；凭此片她横扫当年日本所有女主奖项。</li><li>树木希林演奶奶初枝，这是她生前最后几部作品之一（2018 年 9 月去世）。她在海边那场戏里对着一家人说出那句「谢谢你们」，全场没有台词能接。</li><li>是枝裕和自编自导自剪，是他作品中社会批判最锋利的一次——前作多拍「失去」，这一部拍的是「本来就没有」。</li><li>全片几乎不配乐，只有极少的钢琴与环境声。海边那场戏是唯一的释放，也正因为如此，后面的一切才更难承受。</li><li>内地 2018 年 8 月 3 日上映（删减极少），票房约 9700 万元，是当年口碑最高的引进艺术片之一。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/shoplift_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/shoplift_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/shoplift_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_25645.jpg" alt="" loading="lazy">
+                <div class="p-name">是枝裕和 <span class="p-role">导演 / 编剧 / 剪辑</span></div>
+              </div>
+              <div class="p-note">日本导演，纪录片出身。《幻之光》《无人知晓》《步履不停》《如父如子》《海街日记》《小偷家族》(2018，金棕榈)《怪物》(2023)。他拍「家庭」的方式是从不提供安慰，只把人放在一起，让你自己看。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1050035.jpg" alt="" loading="lazy"><span>怪物</span></div><div class="wk"><img src="assets/movies/w_177945.jpg" alt="" loading="lazy"><span>如父如子</span></div><div class="wk"><img src="assets/movies/w_2517.jpg" alt="" loading="lazy"><span>无人知晓</span></div><div class="wk"><img src="assets/movies/w_315846.jpg" alt="" loading="lazy"><span>海街日记</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_123739.jpg" alt="" loading="lazy">
+                <div class="p-name">中川雅也 <span class="p-role">主演（柴田治）</span></div>
+              </div>
+              <div class="p-note">日本演员、作家、插画家，艺名 Lily Franky。是枝裕和的长期合作者（《如父如子》《小偷家族》《怪物》），另有《百元之恋》《夜以继日》；本片他演那个靠小偷小摸养家的「父亲」柴田治。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_315465.jpg" alt="" loading="lazy"><span>怪物之子</span></div><div class="wk"><img src="assets/movies/w_177945.jpg" alt="" loading="lazy"><span>如父如子</span></div><div class="wk"><img src="assets/movies/w_283127.jpg" alt="" loading="lazy"><span>极道大战争</span></div><div class="wk"><img src="assets/movies/w_241863.jpg" alt="" loading="lazy"><span>要听神明的话</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_100766.jpg" alt="" loading="lazy">
+                <div class="p-name">安藤樱 <span class="p-role">主演（信代）</span></div>
+              </div>
+              <div class="p-note">日本演员，柄本明之女。《爱的曝光》《百元之恋》《小偷家族》《哥斯拉-1.0》《怪物》。本片结尾那场审讯戏是近年日本电影里最著名的长镜头表演之一，几乎凭一人之力拿下当年日本全部女主奖项。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1050035.jpg" alt="" loading="lazy"><span>怪物</span></div><div class="wk"><img src="assets/movies/w_940721.jpg" alt="" loading="lazy"><span>哥斯拉-1.0</span></div><div class="wk"><img src="assets/movies/w_28422.jpg" alt="" loading="lazy"><span>爱的曝光</span></div><div class="wk"><img src="assets/movies/w_314606.jpg" alt="" loading="lazy"><span>百元之恋</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《小偷家族》最狠的一句台词是信代被审讯时说的：「生了孩子，就自然是母亲了吗？」轻微剧透：这句话要到最后才成立——观众一路以为这是一个「被领养的孩子终于有了家」的故事，直到警方介入、档案摊开，你才发现这五个人彼此之间没有一条法律关系：治和信代不是夫妻（他们是杀人后一起逃的），祥太是治在停车场偷车时捡到的，亚纪是奶奶前夫的孙女，而初枝收留所有人，一部分原因是她想有人给她送终。也就是说，这个家里每一段关系都是「选择」出来的——因为选择，所以它比血缘家庭更真；也因为选择，它经不起一纸户口。结尾祥太在开走的巴士上回头，无声地叫了一声「爸爸」，治追着车跑，没听见。是枝裕和没有给任何和解。他只是把问题留在那儿：一个社会如果只能用「登记在册的关系」来承认人，那没被登记的那些爱，算什么。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《无人知晓》《如父如子》《寄生虫》这类家庭与社会交叉题材的观众；能接受慢节奏、几乎无配乐、情绪收着拍的人。彩色，含儿童被忽视与家暴议题，无血腥但情绪很重。内地 2018 年上映过，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/eeaao_poster.jpg" alt="瞬息全宇宙 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 剧情（美国 · 多元宇宙）</span><span class="year">2022 · 美国 · 139 分钟 · 彩色 · 内地未映</span></div>
+        <h2>瞬息全宇宙 <span class="en">Everything Everywhere All at Once</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>94%</b>烂番茄</span><span class="rate"><b>81</b>Metacritic</span><span class="rate"><b>7.8</b>IMDb</span></div>
+        <p class="oneline">「在所有我本可以成为的人里，我最想和你一起报税。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>伊芙琳和丈夫威门德开着一家洗衣店，正被税务局查账；父亲从香港来，女儿乔伊想把女友介绍给外公，家庭一团糟。某天在税务局电梯里，威门德突然变成另一个版本：他说自己来自阿尔法宇宙，要伊芙琳去连接所有平行宇宙里的自己，因为有个叫「猪布土巴姬」的存在正在吞噬一切。方式很怪：吃唇膏、纸割手、把鞋反穿。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 95 届奥斯卡七项大奖：最佳影片、最佳导演、最佳原创剧本、最佳女主角、最佳男配角、最佳女配角、最佳剪辑。</li><li>杨紫琼成为奥斯卡史上首位华裔影后。关继威凭威门德拿下最佳男配——他最广为人知的角色是《夺宝奇兵2》的豆丁和《七宝奇谋》的数据。</li><li>导演是「丹尼尔兄弟」关家永（Daniel Kwan）与丹尼尔·施纳特（Daniel Scheinert），前作是《瑞士军刀男》。本片筹备四年，A24 给了 2500 万美元。</li><li>成本 2500 万美元，全球票房 1.03 亿美元，是 A24 当时的票房纪录。热狗手指、石头宇宙这些荒诞道具，大部分是手工与实拍特效，边拍边做。</li><li>它在豆瓣的分裂很明显：开局 8.9，最终落在 7.6。喜欢的人称它年度最佳，不喜欢的人觉得它太吵、太满、太想讨好所有人。</li><li>它同时是科幻、功夫片、家庭剧、移民故事和无厘头喜剧——五种类型互相挤，这也是它让人受不了的那一面，和它了不起的那一面。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/eeaao_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/eeaao_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/eeaao_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1383612.jpg" alt="" loading="lazy">
+                <div class="p-name">关家永 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美籍华裔导演，与丹尼尔·施纳特组成「丹尼尔兄弟」。前作《瑞士军刀男》(2016)，《瞬息全宇宙》(2022) 拿下奥斯卡最佳影片、最佳导演、最佳原创剧本；他们的方法是把最荒诞的设定拍成最认真的一件事。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_347031.jpg" alt="" loading="lazy"><span>瑞士军刀男</span></div><div class="wk"><img src="assets/movies/w_301937.jpg" alt="" loading="lazy"><span>有趣的球（短片）</span></div><div class="wk"><img src="assets/movies/w_410631.jpg" alt="" loading="lazy"><span>可能性（短片）</span></div><div class="wk"><img src="assets/movies/w_350556.jpg" alt="" loading="lazy"><span>扫帚沙卡拉卡（短片）</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1620.jpg" alt="" loading="lazy">
+                <div class="p-name">杨紫琼 <span class="p-role">主演（伊芙琳）</span></div>
+              </div>
+              <div class="p-note">马来西亚籍华裔演员，香港动作片出身。《卧虎藏龙》《007：明日帝国》《摘金奇缘》《尚气与十环传奇》。凭《瞬息全宇宙》成为奥斯卡史上首位华裔影后，也是这部片所有宇宙版本的核心。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_146.jpg" alt="" loading="lazy"><span>卧虎藏龙</span></div><div class="wk"><img src="assets/movies/w_566525.jpg" alt="" loading="lazy"><span>尚气与十环传奇</span></div><div class="wk"><img src="assets/movies/w_455207.jpg" alt="" loading="lazy"><span>摘金奇缘</span></div><div class="wk"><img src="assets/movies/w_714.jpg" alt="" loading="lazy"><span>007：明日帝国</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_690.jpg" alt="" loading="lazy">
+                <div class="p-name">关继威 <span class="p-role">主演（威门德）</span></div>
+              </div>
+              <div class="p-note">越南裔美国演员，童星出身。12 岁演《夺宝奇兵2：魔域奇兵》的豆丁、《七宝奇谋》的数据；成年后长期无戏可演，转做武术指导与副导演。《瞬息全宇宙》让他拿下奥斯卡最佳男配，是近十年最动人的一次复出。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_87.jpg" alt="" loading="lazy"><span>夺宝奇兵2：魔域奇兵</span></div><div class="wk"><img src="assets/movies/w_1084242.jpg" alt="" loading="lazy"><span>疯狂动物城2</span></div><div class="wk"><img src="assets/movies/w_9340.jpg" alt="" loading="lazy"><span>七宝奇谋</span></div><div class="wk"><img src="assets/movies/w_777443.jpg" alt="" loading="lazy"><span>电幻国度</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《瞬息全宇宙》真正的主题不是多元宇宙，是「一个中年女人怎么跟自己的女儿和解」。轻微剧透：乔伊在阿尔法宇宙里的身份是猪布土巴姬——一个把所有可能性同时看过、因此觉得一切都没有意义的存在。她的贝果黑洞不是要毁灭世界，是要「什么都不必再选」。所以伊芙琳要打败的不是她，是她自己身上那份「要是当初没跟这个男人私奔就好了」的后悔。这也解释了为什么全片的解法不是打，是善良：在石头宇宙里，两块石头并排待在悬崖边，什么也没说；在热狗手指宇宙里，两个人弹着钢琴跳舞。它想说的是，既然一切都可以不重要，那选择善良也不损失什么——这个论证其实很虚无，但正因为虚无，它才对得上「我已经被生活磨到没有力气」的那批人。最后伊芙琳对税务官说的那句「在所有我本可以成为的人里，我最想和你一起报税」，是这部片唯一一次把话说白了：浪漫不是找到一个更好的人生，是认下这一份最糟的。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《瑞士军刀男》《银河系漫游指南》《蜘蛛侠：平行宇宙》这类「脑洞 + 感情」混搭的观众；想看杨紫琼职业生涯最重要一次演出的影迷。彩色，含大量荒诞暴力与粗口，节奏极快、信息密度高，容易审美疲劳。内地未引进，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/midsommar_poster.jpg" alt="仲夏夜惊魂 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 惊悚（美国 / 瑞典 · 白昼恐怖 · 民俗邪教）</span><span class="year">2019 · 美国 / 瑞典 / 匈牙利 · 147 分钟 · 彩色 · 内地未映</span></div>
+        <h2>仲夏夜惊魂 <span class="en">Midsommar</span></h2>
+        <div class="rates"><span class="rate"><b>6.7</b>豆瓣</span><span class="rate"><b>83%</b>烂番茄</span><span class="rate"><b>72</b>Metacritic</span><span class="rate"><b>7.1</b>IMDb</span></div>
+        <p class="oneline">「你感到被照顾了吗？」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>丹妮的姐姐带着父母一起自杀，只留下一封遗书。男友克里斯蒂安没敢分手，于是把她带上了自己和朋友们的瑞典之行——他们要去同学佩尔的家乡，参加一个每九十年才办一次的仲夏节。村子在世界尽头，太阳整夜不落，所有人穿白、戴花、手拉手跳舞。仪式一项项推进，从致幻蘑菇开始，到悬崖跳崖，再到那些「外来者」一个接一个消失。丹妮一开始是哭的那个，慢慢地，她成了唯一笑得出来的那个。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>阿里·艾斯特的第二部长片。他明确说过：《遗传厄运》在他自己眼里是家庭悲剧，这一部才是他的第一部恐怖片。</li><li>全片几乎发生在正午的阳光下——「白昼恐怖」是它最反直觉也最有效的设计：你什么都能看清，所以什么也躲不掉。</li><li>弗洛伦丝·皮尤凭此片拿下第 13 届底特律影评人协会奖最佳新人，并入围哥谭奖最佳女演员；她的哭戏开场是全片情绪的锚点。</li><li>片中的壁画、符文与仪式流程都是美术组按北欧民俗（尤其是 Hälsingland 地区的仲夏传统）重新设计出来的，不是随手拼贴。</li><li>导演剪辑版 171 分钟，比公映版多出近 25 分钟——多出来的大部分是丹妮与克里斯蒂安关系的裂缝，看过之后会对结局更不舒服。</li><li>口碑分化明显：烂番茄 83%、Metacritic 72，但观众分只有 63%；豆瓣 6.7 更是明显低于欧美。它被人骂得最多的一点是「猎奇」和「节奏拖」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/midsommar_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/midsommar_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/midsommar_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1145520.jpg" alt="" loading="lazy">
+                <div class="p-name">阿里·艾斯特 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧。处女作《遗传厄运》(2018) 一出道就被贴上「新一代恐怖作者」标签，《仲夏夜惊魂》(2019) 把恐怖搬进正午阳光，此后《博很恐惧》《爱丁顿》。他的恐怖不靠跳吓，靠关系崩坏与仪式感。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_493922.jpg" alt="" loading="lazy"><span>遗传厄运</span></div><div class="wk"><img src="assets/movies/w_798286.jpg" alt="" loading="lazy"><span>博很恐惧</span></div><div class="wk"><img src="assets/movies/w_648878.jpg" alt="" loading="lazy"><span>爱丁顿</span></div><div class="wk"><img src="assets/movies/w_164052.jpg" alt="" loading="lazy"><span>约翰逊家的怪事（短片）</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1373737.jpg" alt="" loading="lazy">
+                <div class="p-name">弗洛伦丝·皮尤 <span class="p-role">主演（丹妮）</span></div>
+              </div>
+              <div class="p-note">英国演员。凭《仲夏夜惊魂》(2019) 的丹妮拿下底特律影评人协会最佳新人；此后《小妇人》《黑寡妇》《奥本海默》《亲爱的别担心》《雷霆特攻队》。本片开场那段失声痛哭是全片情绪的地基。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_497698.jpg" alt="" loading="lazy"><span>黑寡妇</span></div><div class="wk"><img src="assets/movies/w_986056.jpg" alt="" loading="lazy"><span>雷霆特攻队</span></div><div class="wk"><img src="assets/movies/w_619730.jpg" alt="" loading="lazy"><span>亲爱的别担心</span></div><div class="wk"><img src="assets/movies/w_872585.jpg" alt="" loading="lazy"><span>奥本海默</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1007683.jpg" alt="" loading="lazy">
+                <div class="p-name">杰克·雷诺 <span class="p-role">主演（克里斯蒂安）</span></div>
+              </div>
+              <div class="p-note">爱尔兰演员。《仲夏夜惊魂》(2019) 里那个只会敷衍的男友克里斯蒂安，是他最招人恨也最真实的角色；另有《初恋这首情歌》《木乃伊》《变形金刚4：绝迹重生》《谢里》《边缘世界》。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1304313.jpg" alt="" loading="lazy"><span>木乃伊</span></div><div class="wk"><img src="assets/movies/w_91314.jpg" alt="" loading="lazy"><span>变形金刚4：绝迹重生</span></div><div class="wk"><img src="assets/movies/w_369557.jpg" alt="" loading="lazy"><span>初恋这首情歌</span></div><div class="wk"><img src="assets/movies/w_544401.jpg" alt="" loading="lazy"><span>谢里</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>很多人把它当成「邪教片」看，其实它从头到尾讲的是分手。轻微剧透：丹妮不是被骗进去的，她是自己走进去的——她刚失去全部家人，而克里斯蒂安从头到尾都在「维持关系」，没有一次真的接住她。村子里没人骗她：他们只是每一次都在她崩溃的时候递上一只手，说「你不是一个人」。所以最后那场选王仪式，丹妮笑着的那个表情，是这部片最冷的地方——她不是被洗脑，她是终于被当成一个人对待了，代价是她身边所有人都得死。艾斯特真正的技巧是：让观众和丹妮一起觉得这个村子是对的。你明知道那套东西建立在杀人上，但每当镜头切到克里斯蒂安那些只会吐槽、只想着论文选题的朋友，你又会觉得他们确实该消失。至于豆瓣为什么只有 6.7：这部片的恐怖是关系层面的，脱离「长期被伴侣敷衍」的体验去看，就只剩下猎奇和慢节奏了。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《遗传厄运》《异教徒》《圣餐》这类民俗 / 邪教恐怖的人；能接受阳光下的血腥、动物尸体与性暗示画面的人（不适感来自「画面太亮」而非血浆量）。彩色，R 级，建议看 147 分钟公映版。内地未引进，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/dune_poster.jpg" alt="沙丘 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻（美国 / 加拿大 · 太空史诗）</span><span class="year">2021 · 美国 / 加拿大 · 156 分钟 · 彩色 · 内地 2021-10-22 上映</span></div>
+        <h2>沙丘 <span class="en">Dune</span></h2>
+        <div class="rates"><span class="rate"><b>7.8</b>豆瓣</span><span class="rate"><b>83%</b>烂番茄</span><span class="rate"><b>74</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「恐惧是思维杀手。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>公元 10191 年，宇宙靠一种叫「香料」的东西维系星际航行，而香料只产在沙漠星球厄拉科斯。皇帝把厄拉科斯的采邑从哈克南家族转交给厄崔迪家族——这不是恩赏，是陷阱。公爵雷托带着儿子保罗与杰西卡夫人前往沙漠，很快遭遇背叛。活下来的人走进沙丘深处，遇上了真正的原住民弗雷曼人。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 94 届奥斯卡十项提名、六项获奖：摄影、剪辑、视觉效果、原创配乐、音效、艺术指导。</li><li>汉斯·季默为这部片准备了两年，拒绝沿用任何「太空片」的声音套路，用了大量非西方乐器与女声，要求听起来「不属于这个星球」。</li><li>这是《沙丘》第三次被搬上银幕：1970 年代佐杜洛夫斯基的版本胎死腹中（只留下一本厚厚的设定册），1984 年大卫·林奇的版本票房口碑双败。</li><li>维伦纽瓦只拍了原著第一部的上半部，影片停在保罗走进沙漠——所以它被叫做「半部《沙丘》」，续作 2024 年才补齐。</li><li>张震演岳医生，台词里有中文。维伦纽瓦是在看过《春光乍泄》之后专门为他加了这个角色，还特意给岳设计了中文对白。</li><li>内地 2021 年 10 月 22 日上映，正面撞上《长津湖》，两天破亿但排片被压，最终票房约 1.1 亿元人民币。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/dune_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dune_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dune_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_137427.jpg" alt="" loading="lazy">
+                <div class="p-name">丹尼斯·维伦纽瓦 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">加拿大魁北克导演。《囚徒》《边境杀手》《降临》(2016)《银翼杀手2049》《沙丘》(2021)《沙丘2》(2024)。他是当下好莱坞最会把「巨物」拍出敬畏感的导演，也是罕见的能在大制作里保持作者性的那一个。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_329865.jpg" alt="" loading="lazy"><span>降临</span></div><div class="wk"><img src="assets/movies/w_335984.jpg" alt="" loading="lazy"><span>银翼杀手2049</span></div><div class="wk"><img src="assets/movies/w_146233.jpg" alt="" loading="lazy"><span>囚徒</span></div><div class="wk"><img src="assets/movies/w_273481.jpg" alt="" loading="lazy"><span>边境杀手</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1190668.jpg" alt="" loading="lazy">
+                <div class="p-name">提莫西·查拉梅 <span class="p-role">主演（保罗）</span></div>
+              </div>
+              <div class="p-note">美法双籍演员。《请以你的名字呼唤我》(2017)《小妇人》《沙丘》《旺卡》《摇滚诗人：未知的传奇》。2018 年凭《漂亮男孩》提名奥斯卡男配，是同代男演员里最被看好的一个。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_398818.jpg" alt="" loading="lazy"><span>请以你的名字呼唤我</span></div><div class="wk"><img src="assets/movies/w_693134.jpg" alt="" loading="lazy"><span>沙丘2</span></div><div class="wk"><img src="assets/movies/w_787699.jpg" alt="" loading="lazy"><span>旺卡</span></div><div class="wk"><img src="assets/movies/w_504949.jpg" alt="" loading="lazy"><span>兰开斯特之王</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_933238.jpg" alt="" loading="lazy">
+                <div class="p-name">丽贝卡·弗格森 <span class="p-role">主演（杰西卡夫人）</span></div>
+              </div>
+              <div class="p-note">瑞典演员。《碟中谍》系列的伊尔莎、《马戏之王》《异星觉醒》《沙丘》《沙丘2》。本片她演杰西卡夫人——全片最复杂的一个角色：一个既爱儿子、又亲手把他推上神坛的女人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_346685.jpg" alt="" loading="lazy"><span>火车上的女孩</span></div><div class="wk"><img src="assets/movies/w_693134.jpg" alt="" loading="lazy"><span>沙丘2</span></div><div class="wk"><img src="assets/movies/w_395992.jpg" alt="" loading="lazy"><span>异星觉醒</span></div><div class="wk"><img src="assets/movies/w_316029.jpg" alt="" loading="lazy"><span>马戏之王</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《沙丘》不是一个英雄成长的故事，是一个「被安排好的救世主」的故事。轻微剧透：全片最关键的设定藏在杰西卡夫人身上——她是贝尼·杰瑟里特姐妹会的成员，而这个姐妹会用几千年的育种计划，就是要造出一个「奎萨茨·哈德拉克」：一个能同时看到过去与未来的男性。保罗不是天选的，他是被设计出来的，而且他越早看到未来，就越发现那条路通向的是一场以他之名发动的圣战。这是维伦纽瓦拍这部片真正的意图：他给了一个少年所有英雄该有的东西（预知梦、天赋、被预言选中），然后让你看着这些东西一步步变成枷锁。所以它的节奏慢不是因为拖，是因为「宿命」这件事必须被堆到足够重，观众才会明白保罗最后为什么害怕。也解释了为什么它在国内评分只有 7.8 而海外 IMDb 8.0、技术奖项拿到手软：它牺牲了情节的爽感换取氛围，而氛围这种东西，在手机上是打折扣的。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《降临》《银翼杀手2049》《星际穿越》这类「重氛围、重体量」科幻的观众；想看当今最好的摄影与声音设计能到什么程度的人。彩色 PG-13，含战争与暴力画面，节奏缓慢，156 分钟需耐心。内地 2021 年上映过，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/wrath_poster.jpg" alt="暴裂无声 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 犯罪（中国大陆 · 社会派）</span><span class="year">2017 · 中国大陆 · 120 分钟 · 彩色 · 内地 2018-04-04 上映</span></div>
+        <h2>暴裂无声 <span class="en">Wrath of Silence</span></h2>
+        <div class="rates"><span class="rate"><b>8.2</b>豆瓣</span><span class="rate"><b>7.1</b>IMDb</span><span class="rate"><b>评审团特别奖</b>澳门国际影展</span></div>
+        <p class="oneline">（主角全片没有一句台词。）</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>2004 年，北方矿区小镇。哑巴矿工张保民被叫回家，儿子张磊放羊时失踪了。他揣着儿子的照片一路找，撞上弘昌矿业老板昌万年的手下，打了一架；又在山里救下一个被绑架的女孩——她是昌万年请的律师徐文杰的女儿。徐文杰知道张磊去了哪儿，但他不说。三个人，三条线索，一层一层往下压。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>忻钰坤的第二部长片。处女作《心迷宫》(2014) 成本 170 万、豆瓣 8.8，靠多线叙事惊艳；这一部他反而改用线性叙事，把力气都放在社会结构上。</li><li>宋洋演失语矿工张保民，全片零台词，靠身体与眼神撑完 120 分钟，拿下第 2 届澳门国际影展最佳男主角。拍滚山坡那场戏时他眼部受伤，缝了十几针。</li><li>三个男人对应三个阶层：底层失语（张保民只能用拳头说话）、中层失德（律师徐文杰看见了却沉默）、上层失格（煤老板昌万年吃人都不用自己动手）。</li><li>羊肉是全片的食物链隐喻：涮羊肉、切肉机、生肉、炖汤反复出现——谁在切、谁在被切，镜头说得很清楚。</li><li>姜武演昌万年：戴假发、做慈善、吃番茄、在办公室里射弩。这个角色是全片最让人发毛的「体面人」，番茄的红是他出场的标记。</li><li>内地 2018 年 4 月 4 日上映，票房 5425.6 万元；豆瓣 8.2，是近十年国产犯罪片里口碑最高的一部。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/wrath_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/wrath_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/wrath_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1363480.jpg" alt="" loading="lazy">
+                <div class="p-name">忻钰坤 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">中国导演，内蒙古包头人。处女作《心迷宫》(2014) 成本 170 万、豆瓣 8.8；第二部《暴裂无声》把力气从叙事炫技转向社会结构。他的电影几乎都有一个共同点：普通人想弄清一件小事，最后撞上一整台机器。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_292362.jpg" alt="" loading="lazy"><span>心迷宫</span></div><div class="wk"><img src="assets/movies/w_386235.jpg" alt="" loading="lazy"><span>再见，在也不见</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_554932.jpg" alt="" loading="lazy">
+                <div class="p-name">宋洋 <span class="p-role">主演（张保民）</span></div>
+              </div>
+              <div class="p-note">中国演员，武行出身。《倭寇的踪迹》《箭士柳白猿》《师父》(2015)《暴裂无声》《从21世纪安全撤离》。本片他演失语矿工，全剧零台词，凭此拿下第 2 届澳门国际影展最佳男主角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1242372.jpg" alt="" loading="lazy"><span>从21世纪安全撤离</span></div><div class="wk"><img src="assets/movies/w_377823.jpg" alt="" loading="lazy"><span>师父</span></div><div class="wk"><img src="assets/movies/w_120460.jpg" alt="" loading="lazy"><span>倭寇的踪迹</span></div><div class="wk"><img src="assets/movies/w_264518.jpg" alt="" loading="lazy"><span>箭士柳白猿</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_15170.jpg" alt="" loading="lazy">
+                <div class="p-name">姜武 <span class="p-role">主演（昌万年）</span></div>
+              </div>
+              <div class="p-note">中国演员，姜文之弟。《洗澡》《活着》《天注定》《捉妖记》《拆弹专家》《八佰》。本片他演煤老板昌万年——戴假发、做慈善、吃番茄，是全片最让人发毛的一个「体面人」。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_187022.jpg" alt="" loading="lazy"><span>天注定</span></div><div class="wk"><img src="assets/movies/w_334298.jpg" alt="" loading="lazy"><span>捉妖记</span></div><div class="wk"><img src="assets/movies/w_441531.jpg" alt="" loading="lazy"><span>拆弹专家</span></div><div class="wk"><img src="assets/movies/w_508935.jpg" alt="" loading="lazy"><span>八佰</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《暴裂无声》是一个没有出口的故事，它的力量也在这里。轻微剧透：昌万年在非法狩猎时误把山坡上的张磊当成猎物射杀，律师徐文杰在场，看见了全过程，然后选择沉默——因为昌万年手上有他的把柄，也因为他自己那点体面生活不想丢。也就是说，两个「有语言」的人合伙把真相咽了下去，而唯一想查清楚的人恰恰说不出话。这是忻钰坤最狠的设计：他把「失语」从生理缺陷变成了社会结构——张保民在片中会写字、会打手势、会砸东西，但没有一件事能被听进去。结尾他没有找到儿子的尸体，只看到律师女儿画的一幅画；真相被知道了，正义没有发生，随后山体塌了。三部曲式的食物链到这儿就闭上了：羊吃草、人吃羊、矿吃人、山吃掉一切。它的豆瓣 8.2 不是因为烧脑，是因为它把「阶层」这件事拍成了具体的、有重量的、看得见的东西。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《心迷宫》《白日焰火》《烈日灼心》这类国产犯罪片的观众；想看「社会派悬疑」而不是「推理游戏」的人。彩色，含暴力、弓弩与儿童遇害议题，情绪极沉。内地 2018 年上映过，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/portrait_poster.jpg" alt="燃烧女子的肖像 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 爱情（法国 · 古典）</span><span class="year">2019 · 法国 · 122 分钟 · 彩色 · 内地未映</span></div>
+        <h2>燃烧女子的肖像 <span class="en">Portrait of a Lady on Fire</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>98%</b>烂番茄</span><span class="rate"><b>95</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「别遗憾，要记得。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1760 年，布列塔尼海边的孤岛。画师玛丽安受雇为即将出嫁的贵族少女艾洛伊兹画一幅肖像，寄给米兰的未婚夫。上一个画师失败了——艾洛伊兹不肯坐着让人画。于是玛丽安白天偷偷观察她，晚上凭记忆画。两人一起散步、读神话、帮女仆堕胎。画像完成的那天，也是她们分手的开始。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>2019 年戛纳最佳编剧 + 酷儿金棕榈（首次颁给女性导演的作品）。</li><li>前 60 分钟完全没有配乐。音乐只在两处出现：海边篝火旁女人们的吟唱，以及多年后音乐厅里的维瓦尔第《四季·夏》——两次都是艾洛伊兹「第一次真正听见」的时刻。</li><li>全片的核心动作是「看」：画师看模特，模特回头看画师。席安玛把凝视还给了被画的人，这是它和所有古典爱情片的分界线。</li><li>阿黛拉·哈内尔 2023 年公开宣布退出影坛，抗议行业对性侵的包庇。本片成为她最后的重要作品之一。</li><li>片中反复讨论俄耳甫斯与欧律狄刻：他为什么回头？玛丽安给出的答案不是「因为爱」，是「他选择记住她」——这句解释就是整部片的结尾。</li><li>摄影几乎只用自然光与烛火。绿裙与红裙的两次出现，是两段关系状态的标记：绿是开始，红是结束。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/portrait_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/portrait_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/portrait_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_68813.jpg" alt="" loading="lazy">
+                <div class="p-name">瑟琳·席安玛 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">法国导演、编剧。《水仙花开》(2007)《假小子》(2011)《女孩帮》《燃烧女子的肖像》(2019，戛纳最佳编剧)《小妈妈》(2021)。她的电影几乎都关于「看」与「被看」，也关于女性如何在男性缺席的空间里定义自己。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_65229.jpg" alt="" loading="lazy"><span>假小子</span></div><div class="wk"><img src="assets/movies/w_10818.jpg" alt="" loading="lazy"><span>水仙花开</span></div><div class="wk"><img src="assets/movies/w_749004.jpg" alt="" loading="lazy"><span>小妈妈</span></div><div class="wk"><img src="assets/movies/w_266082.jpg" alt="" loading="lazy"><span>女孩帮</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1385600.jpg" alt="" loading="lazy">
+                <div class="p-name">诺米·梅兰特 <span class="p-role">主演（玛丽安）</span></div>
+              </div>
+              <div class="p-note">法国演员、导演。《燃烧女子的肖像》让她一举成名，此后《珍品》《塔尔》(2022)《艾曼纽》，并自导长片《我的太阳》。本片她演画师玛丽安——一个以「看」为生、却第一次被人回看的女人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_817758.jpg" alt="" loading="lazy"><span>塔尔</span></div><div class="wk"><img src="assets/movies/w_487616.jpg" alt="" loading="lazy"><span>珍品</span></div><div class="wk"><img src="assets/movies/w_408299.jpg" alt="" loading="lazy"><span>天堂会等待</span></div><div class="wk"><img src="assets/movies/w_976576.jpg" alt="" loading="lazy"><span>艾曼纽</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_68816.jpg" alt="" loading="lazy">
+                <div class="p-name">阿黛拉·哈内尔 <span class="p-role">主演（艾洛伊兹）</span></div>
+              </div>
+              <div class="p-note">法国演员。《水仙花开》《初恋战士》《每分钟120击》《无名女孩》《燃烧女子的肖像》。两度凯撒奖得主，2023 年公开宣布退出影坛以抗议行业对性侵的包庇，本片成为她最后的重要作品之一。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_519106.jpg" alt="" loading="lazy"><span>自由了！</span></div><div class="wk"><img src="assets/movies/w_451945.jpg" alt="" loading="lazy"><span>每分钟120击</span></div><div class="wk"><img src="assets/movies/w_270343.jpg" alt="" loading="lazy"><span>初恋战士</span></div><div class="wk"><img src="assets/movies/w_340481.jpg" alt="" loading="lazy"><span>无名女孩</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《燃烧女子的肖像》是一部关于「看」的电影，所以它最动人的时刻都不是说话的时刻。轻微剧透：玛丽安画的第一版肖像被艾洛伊兹否掉了——不是画得不像，是「我不在那儿」。这句话逼出了全片的核心：她要的不是被画得美，是被看见。所以两人之后的相处其实是一场交换：白天玛丽安看她，晚上她看玛丽安画，直到两个人的目光对上。这也就是为什么分手的那场戏几乎没有对白：艾洛伊兹说「回头吧」，玛丽安真的回头了，看见她穿着婚纱站在门口——那是俄耳甫斯回头的那一眼，也是她们此生最后一眼。多年后的两个结尾把这件事做完：音乐厅里，艾洛伊兹听着《四季》落泪，玛丽安在二楼看着她；画展上，玛丽安看见艾洛伊兹的肖像，画里翻开的页码是 28——那是当年她在这页乐谱上给艾洛伊兹看过的那一页。两个人再没说过话，但她们都知道对方记得。席安玛把「永恒」这件事处理得非常具体：不是在一起，是「被一个人这么看过一次，你这辈子就跑不掉了」。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《请以你的名字呼唤我》《卡罗尔》《钢琴课》这类细腻情感片的观众；想看「凝视」这件事怎么被拍成剧情的人。彩色，含成人情感与裸露段落，无血腥，节奏克制缓慢。内地未引进，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/evildead_poster.jpg" alt="鬼玩人崛起 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖（美国 · 附身 / 身体恐怖）</span><span class="year">2023 · 美国 / 新西兰 / 爱尔兰 · 97 分钟 · 彩色 · 内地未映</span></div>
+        <h2>鬼玩人崛起 <span class="en">Evil Dead Rise</span></h2>
+        <div class="rates"><span class="rate"><b>6.5</b>豆瓣</span><span class="rate"><b>85%</b>烂番茄</span><span class="rate"><b>69</b>Metacritic</span><span class="rate"><b>6.5</b>IMDb</span></div>
+        <p class="oneline">「妈妈爱你爱到死。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>洛杉矶一栋待拆的旧公寓楼里，纹身师贝丝去看望久未见面的姐姐艾莉——艾莉带着三个孩子住在 12 楼，靠给美容院做头发糊口。一次地震后，孩子们在地下车库发现一本封在人皮里、配着三张虫胶唱片的书。大儿子放了唱片。那天夜里，艾莉「回来了」，但她已经不是艾莉。电梯坏了，楼梯被堵，整层楼只剩下他们。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>系列主创山姆·雷米与布鲁斯·坎贝尔担任执行制片，剧本与导演由爱尔兰导演李·克罗宁（《地面之洞》2019）一手完成。</li><li>这是《鬼玩人》第一次离开林中小屋：把场景搬进城市高层公寓，用电梯井、走廊、地下车库重做了一遍封闭空间。</li><li>全片坚持实体特效——血浆、断肢、道具假体极少用 CG。楼梯间与电梯那两场是近年院线恐怖片里最猛的段落之一。</li><li>阿丽莎·萨瑟兰演被附身的姐姐艾莉。她最广为人知的角色是《穿普拉达的女王》里的同事与剧集《维京传奇》的亚丝拉琪，本片她几乎靠身体完成整场附身。</li><li>成本 1500 万美元，全球票房约 1.47 亿美元，是整个系列最卖座的一部。</li><li>口碑分裂得厉害：烂番茄 85%、豆瓣只有 6.5。喜欢的人夸它血浆给得痛快，不喜欢的人嫌它除了血什么都没留下。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/evildead_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/evildead_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/evildead_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1398631.jpg" alt="" loading="lazy">
+                <div class="p-name">李·克罗宁 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">爱尔兰导演。《地面之洞》(2019) 让他被山姆·雷米看中，随后接手《鬼玩人崛起》(2023)。他擅长在窄小空间里做压迫感，也坚持用实体特效而不是 CG 来拍血。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1304313.jpg" alt="" loading="lazy"><span>木乃伊</span></div><div class="wk"><img src="assets/movies/w_484437.jpg" alt="" loading="lazy"><span>地面之洞</span></div><div class="wk"><img src="assets/movies/w_416226.jpg" alt="" loading="lazy"><span>午夜惊魂梦</span></div><div class="wk"><img src="assets/movies/w_311017.jpg" alt="" loading="lazy"><span>幽灵列车</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1186659.jpg" alt="" loading="lazy">
+                <div class="p-name">莉莉·沙利文 <span class="p-role">主演（贝丝）</span></div>
+              </div>
+              <div class="p-note">澳大利亚演员。《丛林》《巨物》《灵魂伴侣》《鬼玩人崛起》《木乃伊》(2026)。本片她演妹妹贝丝——一个从「还不想当妈」到「必须当妈」的角色，也是全片的动作核心。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_390062.jpg" alt="" loading="lazy"><span>丛林</span></div><div class="wk"><img src="assets/movies/w_1024721.jpg" alt="" loading="lazy"><span>巨物</span></div><div class="wk"><img src="assets/movies/w_1307118.jpg" alt="" loading="lazy"><span>灵魂伴侣</span></div><div class="wk"><img src="assets/movies/w_1304313.jpg" alt="" loading="lazy"><span>木乃伊</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_220620.jpg" alt="" loading="lazy">
+                <div class="p-name">阿丽莎·萨瑟兰 <span class="p-role">主演（艾莉）</span></div>
+              </div>
+              <div class="p-note">澳大利亚演员、模特。《穿普拉达的女王》《维京传奇》的亚丝拉琪、《血船》《鬼玩人崛起》。本片她演被恶灵附身的姐姐艾莉，那场附身戏几乎全靠身体完成。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_350.jpg" alt="" loading="lazy"><span>穿普拉达的女王</span></div><div class="wk"><img src="assets/movies/w_1212763.jpg" alt="" loading="lazy"><span>鬼玩人：炼狱</span></div><div class="wk"><img src="assets/movies/w_618585.jpg" alt="" loading="lazy"><span>血船</span></div><div class="wk"><img src="assets/movies/w_60599.jpg" alt="" loading="lazy"><span>套利交易</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《鬼玩人崛起》聪明的一点是它把「家庭」这个词反过来用。轻微剧透：被附身的不是陌生人，是妈妈。孩子们面对的不是怪物，是「妈妈还在里面吗」这个问题——贝丝必须一边救孩子，一边亲手动刀砍向姐姐的身体。李·克罗宁把恐怖从「外面有东西」改成了「最亲的人变成了东西」，所以这部片真正吓人的段落不是断肢，是艾莉用艾莉的声音说「妈妈爱你爱到死」。中段有一场戏是全片的转折：孩子们曾经想把她当作妈妈救回来，最后决定把她当作怪物处理。这场戏很残忍，但它是整部片的主题句——依附关系一旦被破坏，仪式就得由还在的人来完成。至于结尾：贝丝和卡西活着走出大楼，镜头随即切到湖边小屋，一个来度假的女孩在林子里被什么东西盯上。这个收尾既是对 1981 年原版的回敬，也说明这套东西从来没打算放过谁。它在豆瓣只有 6.5 完全可以理解：它确实没有野心，只有执行力，血浆是它的全部语言。但如果你今晚就想看一部不用动脑、能让你从沙发上弹起来的片，它几乎是最近几年最称职的一个。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《鬼玩人》(1981/2013)、《群尸玩过界》《野蛮人》这类血浆片的观众；想看实体特效而不是 CG 的恐怖片爱好者。彩色 R 级，含极端血腥、断肢、儿童遇险，生理刺激强烈。内地未引进，流媒体可看。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-09-30；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>

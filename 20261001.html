@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-10-01 · 第 31 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 10 月 1 日 · 第 31 期 · 已避开往期推荐过的全部 285 部</div>
+  <div>
+    <span class="pill">主题：东亚影像二十年（2000–2023）</span>
+    <span class="pill">全部 1990 年后：最早 2000，六部出自 2019 年以后</span>
+    <span class="pill">四地 / 四种语言：中国台湾 · 中国香港 · 中国大陆 · 日本 · 韩国</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-01，会随时间变动，仅供参考。<br>
+  这一期把范围收在东亚，从 2000 年《卧虎藏龙》到 2023 年《首尔之春》，二十三年、四地、十个导演。放在一起会看出一件事：这二十年东亚最好的类型片，几乎都在处理同一组关系——「一个人是怎么被一个家、一个系统、一句口号压住的」。《一一》里那句「电影发明以后，人类的生命至少延长了三倍」、《阳光普照》里那句「把握时间，掌握方向」、《首尔之春》里那句「今晚，谁先动，谁就赢」，都是同一类东西：一句话决定一个人怎么活。<br>
+  恐怖与惊悚那一边也一样，它们不约而同地回到本土信仰：《双瞳》用道教的五狱做凶案流程，《娑婆诃》用佛教的弥勒下生做推理骨架，《咒》用台湾的阴庙与养小鬼做诅咒载体。这类片子这几年在东亚特别多，而且越拍越狠——因为它们不需要解释「为什么会有鬼」，只需要解释「为什么这个家没保住」。<br>
+  还有两部是这二十年最稳的两张牌：《卧虎藏龙》让武侠第一次成为全球商品，《入殓师》让一部讲死亡的日本片拿到了奥斯卡。以及一部最特别的：《驾驶我的车》把契诃夫、村上春树和一辆红色萨博放在一起，拍了三个小时「说不出口的话」。<br>
+  10 位导演（李安 / 杨德昌 / 陈国富 / 杜琪峰 / 泷田洋二郎 / 钟孟宏 / 张宰贤 / 滨口龙介 / 柯孟融 / 金成洙）与 30 位主创全部为首次出现，无一与往期重复。<br>
+  几部口碑明显分裂的片子已如实标注、未做修饰：《咒》（豆瓣 6.9 / IMDb 6.6，结构上的算计让很多人不适）、《娑婆诃》（豆瓣 7.7 / IMDb 6.6，信息量过大）、《双瞳》（豆瓣 8.1 / IMDb 7.0，结尾那句「有爱，就是不死」争议很大）、《神探》（豆瓣 8.5 / IMDb 7.2，海外只当普通警匪片看）。<br>
+  内地公映情况：仅 1 部登过内地大银幕——《入殓师》2021-04-30；其余 9 部内地未映，流媒体或碟片可看。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>卧虎藏龙</td><td class="qg">剧情 / 武侠（中国台湾 · 中国香港 · 美国 · 中国大陆合拍）</td><td class="qr">8.2 / 98% / 94</td></tr><tr><td class="qn">02</td><td>一一</td><td class="qg">剧情 / 家庭（中国台湾 · 台北中产的一年）</td><td class="qr">9.1 / 97% / 94</td></tr><tr><td class="qn">03</td><td>双瞳</td><td class="qg">惊悚 / 悬疑（中国台湾 · 中国香港 · 道教连环杀人）</td><td class="qr">8.1 / 7.0</td></tr><tr><td class="qn">04</td><td>神探</td><td class="qg">惊悚 / 悬疑（中国香港 · 人格分裂）</td><td class="qr">8.5 / 7.2</td></tr><tr><td class="qn">05</td><td>入殓师</td><td class="qg">剧情 / 家庭（日本 · 生死与告别）</td><td class="qr">8.9 / 81% / 71</td></tr><tr><td class="qn">06</td><td>阳光普照</td><td class="qg">剧情 / 家庭（中国台湾 · 一个家的崩解）</td><td class="qr">8.6 / 7.4</td></tr><tr><td class="qn">07</td><td>娑婆诃</td><td class="qg">悬疑 / 惊悚（韩国 · 邪教与末世说）</td><td class="qr">7.7 / 6.6</td></tr><tr><td class="qn">08</td><td>驾驶我的车</td><td class="qg">剧情 / 心理（日本 · 语言与沉默）</td><td class="qr">7.9 / 97% / 91</td></tr><tr><td class="qn">09</td><td>咒</td><td class="qg">恐怖 / 伪纪录片（中国台湾 · 邪灵与诅咒）</td><td class="qr">6.9 / 6.6</td></tr><tr><td class="qn">10</td><td>首尔之春</td><td class="qg">剧情 / 历史惊悚（韩国 · 双十二那一夜）</td><td class="qr">8.8 / 7.6</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/crotig_poster.jpg" alt="卧虎藏龙 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 武侠（中国台湾 · 中国香港 · 美国 · 中国大陆合拍）</span><span class="year">2000 · 中国台湾 / 中国香港 / 美国 / 中国大陆 · 120 分钟 · 彩色 · 内地未映</span></div>
+        <h2>卧虎藏龙 <span class="en">Crouching Tiger, Hidden Dragon</span></h2>
+        <div class="rates"><span class="rate"><b>8.2</b>豆瓣</span><span class="rate"><b>98%</b>烂番茄</span><span class="rate"><b>94</b>Metacritic</span><span class="rate"><b>7.9</b>IMDb</span></div>
+        <p class="oneline">「把手握紧，里面什么也没有；把手松开，你就得到一切。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一代大侠李慕白决意退出江湖，托红颜知己俞秀莲把青冥剑送去京城交给铁贝勒。剑在当夜被窃，追查之下，偷剑的是一个即将出嫁的王府千金玉娇龙——她还有一个从没露过面的师父。李慕白在秀莲与娇龙之间看见了自己：一个想放下剑、却始终放不下的人。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>2001 年第 73 届奥斯卡拿下最佳外语片、最佳摄影、最佳艺术指导、最佳原创配乐四项，共获十项提名。</li><li>动作指导袁和平；竹林那场戏在竹梢上实拍，演员靠钢丝悬吊，李安要求「轻」，威亚被尽量擦掉——飞起来的不是侠客，是被拿走了重量的身体。</li><li>鲍德熹的摄影与谭盾的配乐（马友友大提琴）；配乐里大量留白，鼓点只在打斗时才出现。</li><li>章子怡当时 21 岁，前几周都还没拿到正式的角色确认，一直以为自己随时会被换掉。</li><li>周润发的李慕白说的是带广东口音的国语，李安没有让他配音，理由是「他说话的方式就是李慕白」。</li><li>北美票房超过 1.28 亿美元，长期保持北美外语片票房纪录；「武侠」第一次作为全球商品被看见，是从这部片开始的。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/crotig_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/crotig_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/crotig_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1614.jpg" alt="" loading="lazy">
+                <div class="p-name">李安 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">中国台湾导演。「父亲三部曲」（《推手》《喜宴》《饮食男女》）之后赴美拍《理智与情感》《冰风暴》，2000 年回到华语世界拍《卧虎藏龙》，此后《断背山》(2006 奥斯卡最佳导演)《色，戒》《少年派的奇幻漂流》(2013 第二次拿下奥斯卡最佳导演)。他是极少数在东西方两套工业里都做到顶的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_87827.jpg" alt="" loading="lazy"><span>少年派的奇幻漂流</span></div><div class="wk"><img src="assets/movies/w_142.jpg" alt="" loading="lazy"><span>断背山</span></div><div class="wk"><img src="assets/movies/w_1927.jpg" alt="" loading="lazy"><span>绿巨人浩克</span></div><div class="wk"><img src="assets/movies/w_453405.jpg" alt="" loading="lazy"><span>双子杀手</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1619.jpg" alt="" loading="lazy">
+                <div class="p-name">周润发 <span class="p-role">主演（李慕白）</span></div>
+              </div>
+              <div class="p-note">中国香港演员。《英雄本色》《秋天的童话》《赌神》《辣手神探》《喋血双雄》让他成为八九十年代香港电影的脸；赴美后拍《安娜与国王》《加勒比海盗3》。本片他演李慕白——一个想退出江湖却退不掉的大侠，台词不多，几乎全靠站姿与眼神。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_14164.jpg" alt="" loading="lazy"><span>七龙珠：进化</span></div><div class="wk"><img src="assets/movies/w_11817.jpg" alt="" loading="lazy"><span>防弹武僧</span></div><div class="wk"><img src="assets/movies/w_11782.jpg" alt="" loading="lazy"><span>辣手神探</span></div><div class="wk"><img src="assets/movies/w_10835.jpg" alt="" loading="lazy"><span>喋血双雄</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1339.jpg" alt="" loading="lazy">
+                <div class="p-name">章子怡 <span class="p-role">主演（玉娇龙）</span></div>
+              </div>
+              <div class="p-note">中国演员。《我的父亲母亲》(1999)《卧虎藏龙》《十面埋伏》《2046》《一代宗师》。本片是她的国际起点，她演玉娇龙——一个被规矩包起来的王府千金，也是全片唯一真正想要自由的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1904.jpg" alt="" loading="lazy"><span>艺伎回忆录</span></div><div class="wk"><img src="assets/movies/w_373571.jpg" alt="" loading="lazy"><span>哥斯拉2：怪兽之王</span></div><div class="wk"><img src="assets/movies/w_5175.jpg" alt="" loading="lazy"><span>尖峰时刻2</span></div><div class="wk"><img src="assets/movies/w_9550.jpg" alt="" loading="lazy"><span>十面埋伏</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《卧虎藏龙》最反武侠的地方在于：全片只有两场真正快意的打斗（夜闯府衙、茶馆），其余每一场都是被迫的——李慕白想拿回剑，俞秀莲想保住体面，玉娇龙想证明自己还没被安排好。轻微剧透：核心转折在竹林，李慕白追上去本是要收她为徒，玉娇龙答应的条件却是「你先打赢我」。李安把这场戏拍得像一次调情，也像一次授剑，直到碧眼狐狸出现，一切变成清算。真正的结论是结局那一跳：玉娇龙从武当山顶坠下。她不是在赎罪，是她终于听懂了李慕白那句「把手松开」——而她能松开的只有自己的命。李慕白至死没说出那句话，俞秀莲把剑扔进云海。这三个人里，只有最不江湖的那一个学会了放下。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「武侠不只是打」的人；想理解华语片在 2000 年为什么能同时拿下北美市场与奥斯卡的人。无血腥，节奏舒缓，含一次坠崖与轻度的江湖恩怨。内地未公映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/yiyi_poster.jpg" alt="一一 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 家庭（中国台湾 · 台北中产的一年）</span><span class="year">2000 · 中国台湾 / 日本 · 173 分钟 · 彩色 · 内地未映</span></div>
+        <h2>一一 <span class="en">Yi Yi: A One and a Two</span></h2>
+        <div class="rates"><span class="rate"><b>9.1</b>豆瓣</span><span class="rate"><b>97%</b>烂番茄</span><span class="rate"><b>94</b>Metacritic</span><span class="rate"><b>8.1</b>IMDb</span></div>
+        <p class="oneline">「电影发明以后，人类的生命至少延长了三倍。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>台北，简家。婆婆中风昏迷，医生要求家人每天轮流跟她说话。父亲 NJ 在老同学的公司里进退两难，母亲敏敏上山修行，女儿婷婷正经历第一段感情，八岁的小儿子洋洋拿着相机拍所有人的后脑勺——因为「你自己看不到，我拍给你看」。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>杨德昌凭此片拿下 2000 年第 53 届戛纳电影节最佳导演；这部 173 分钟的作品被普遍认为是他一生电影的总结。</li><li>片名「一一」取自「一个一个」。杨德昌说，人生就是一件事接着一件事，所以排起来就是「一一」。</li><li>三条线索并行：婆婆昏迷后每天必须有人对她说话、NJ 在东京重遇初恋、婷婷的第一段恋爱。全片没有一个镜头是在「解释」，重复出现的只有开门、关灯、电梯按钮。</li><li>男主角 NJ 由吴念真饰演——他本职是小说家与编剧（《悲情城市》《恋恋风尘》），不是职业演员。杨德昌要的就是他那种被生活磨过的脸。</li><li>金燕玲凭母亲敏敏一角拿下第 37 届金马奖最佳女配角；她在片中那场崩溃戏，是全片情绪唯一一次外放。</li><li>八岁的洋洋用相机拍所有人的后脑勺，理由是自己看不到的一半，要拍给别人看——这是整部片的题眼。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/yiyi_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/yiyi_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/yiyi_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_143035.jpg" alt="" loading="lazy">
+                <div class="p-name">杨德昌 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">中国台湾导演（1947–2007），与侯孝贤并列为台湾新电影的两根支柱。《海滩的一天》《青梅竹马》《恐怖分子》《牯岭街少年杀人事件》《独立时代》《麻将》《一一》。他的电影几乎都在处理同一件事：城市如何把人改造成另一种东西。本片是他生前最后一部完成的剧情长片。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_15804.jpg" alt="" loading="lazy"><span>牯岭街少年杀人事件</span></div><div class="wk"><img src="assets/movies/w_78450.jpg" alt="" loading="lazy"><span>恐怖份子</span></div><div class="wk"><img src="assets/movies/w_106380.jpg" alt="" loading="lazy"><span>青梅竹马</span></div><div class="wk"><img src="assets/movies/w_106373.jpg" alt="" loading="lazy"><span>海滩的一天</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_143036.jpg" alt="" loading="lazy">
+                <div class="p-name">吴念真 <span class="p-role">主演（NJ）</span></div>
+              </div>
+              <div class="p-note">中国台湾小说家、编剧、导演。编剧《恋恋风尘》《悲情城市》《戏梦人生》，自导《多桑》。本片他演 NJ——一个在事业、旧爱与家庭之间不断算账的中年人，也是全片最沉默的那个角色。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_49982.jpg" alt="" loading="lazy"><span>悲情城市</span></div><div class="wk"><img src="assets/movies/w_45996.jpg" alt="" loading="lazy"><span>恋恋风尘</span></div><div class="wk"><img src="assets/movies/w_96712.jpg" alt="" loading="lazy"><span>戏梦人生</span></div><div class="wk"><img src="assets/movies/w_106373.jpg" alt="" loading="lazy"><span>海滩的一天</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_103598.jpg" alt="" loading="lazy">
+                <div class="p-name">金燕玲 <span class="p-role">主演（敏敏）</span></div>
+              </div>
+              <div class="p-note">中国台湾演员。《牯岭街少年杀人事件》《独立时代》《一一》，凭本片拿下第 37 届金马奖最佳女配角。她演的母亲敏敏上山修行那一段，是全片唯一一次让情绪彻底泄出来的地方。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_15804.jpg" alt="" loading="lazy"><span>牯岭街少年杀人事件</span></div><div class="wk"><img src="assets/movies/w_334298.jpg" alt="" loading="lazy"><span>捉妖记</span></div><div class="wk"><img src="assets/movies/w_10951.jpg" alt="" loading="lazy"><span>玻璃樽</span></div><div class="wk"><img src="assets/movies/w_413838.jpg" alt="" loading="lazy"><span>一念无明</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《一一》几乎没有情节，它给的是三个小时的具体生活。轻微剧透：真正的关键在东京线——NJ 和初恋阿瑞在东京把当年重走了一遍，最后阿瑞在门外崩溃，NJ 站在门口说他从来没有爱过别人。回台北后他对昏迷的婆婆承认：如果重来一次，他大概还是会做同样的选择，因为「没有什么不一样」。这句话是整部片的答案——洋洋拍照、婷婷失恋、敏敏上山，所有人都在找「另一半自己看不到的东西」，而杨德昌的答案是：看得见，但日子还是得这样过。结尾婆婆去世，洋洋在葬礼上念了一段写给她的信：「我也老了。」一个八岁的孩子说出这句话，是全片最狠的一刀。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想认真看一次「家庭」的人；能接受三小时慢节奏、愿意被生活本身的密度压住的人。无暴力无血腥，情绪克制但很重。内地未公映，流媒体与碟片可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/double_poster.jpg" alt="双瞳 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 悬疑（中国台湾 · 中国香港 · 道教连环杀人）</span><span class="year">2002 · 中国台湾 / 中国香港 · 113 分钟 · 彩色 · 内地未映</span></div>
+        <h2>双瞳 <span class="en">Double Vision</span></h2>
+        <div class="rates"><span class="rate"><b>8.1</b>豆瓣</span><span class="rate"><b>7.0</b>IMDb</span></div>
+        <p class="oneline">「因爱生忧，因爱生惧；若离于爱者，无忧亦无惧。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>台北连发三起离奇命案：一个企业老板在办公室被冻死，一个女人在火灾现场被烧死，一个牧师被开膛剖腹。法医验出死者体内都有一种罕见的黑霉菌。警局从美国请来 FBI 专家凯文协助，与台北刑警黄火土搭档。黄火土因为两年前举报同事贪污被整组人孤立，自己也正在失去家庭。线索指向一座藏在医院大楼里的现代道观。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>陈国富自编自导，剧本与苏照彬合作；是他从作者电影转向华语工业的关键一部。</li><li>全片把道教的「五狱」（寒冰狱、火坑狱、抽肠狱、剜心狱、拔舌狱）直接做成了连环杀人手法——这是华语惊悚片里极少见的、把本土信仰体系完整搬进现代刑侦的设计。</li><li>梁家辉演的黄火土全程被同事排挤，几乎没有一场戏是轻松的；他的妻子（刘若英）台词极少，只在几场戏里吃饭、洗碗、发呆。</li><li>结尾那座真武观被做成了「藏在现代医院里的庙宇」，美术组在台北搭了一整套实景，没有用 CG。</li><li>2002 年台湾本地最卖座的华语片之一；北美发行权由哥伦比亚买下，是当时少数被好莱坞大厂买下的华语惊悚片。</li><li>口碑在国内一直偏高（豆瓣 8.1），海外只算合格（IMDb 7.0）——分歧主要在结尾那句「有爱，就是不死」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/double_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/double_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/double_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_53218.jpg" alt="" loading="lazy">
+                <div class="p-name">陈国富 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">中国台湾导演、编剧、监制。《只要为你活一天》《征婚启事》《双瞳》(2002)，此后转向监制：《天下无贼》《集结号》《风声》《狄仁杰》系列。他是华语电影里极少数既懂作者电影、又懂工业流程的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_48492.jpg" alt="" loading="lazy"><span>狄仁杰之通天帝国</span></div><div class="wk"><img src="assets/movies/w_217923.jpg" alt="" loading="lazy"><span>狄仁杰之神都龙王</span></div><div class="wk"><img src="assets/movies/w_121823.jpg" alt="" loading="lazy"><span>太极1：从零开始</span></div><div class="wk"><img src="assets/movies/w_32582.jpg" alt="" loading="lazy"><span>风声</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_56861.jpg" alt="" loading="lazy">
+                <div class="p-name">梁家辉 <span class="p-role">主演（黄火土）</span></div>
+              </div>
+              <div class="p-note">中国香港演员，多次拿下金像奖影帝。《火龙》《情人》《新龙门客栈》《黑社会》《寒战》。本片他演黄火土——一个被整个警局孤立的刑警，全片几乎没有笑容，是这部惊悚片真正的重心。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1419406.jpg" alt="" loading="lazy"><span>捕风追影</span></div><div class="wk"><img src="assets/movies/w_10995.jpg" alt="" loading="lazy"><span>情人</span></div><div class="wk"><img src="assets/movies/w_30596.jpg" alt="" loading="lazy"><span>十月围城</span></div><div class="wk"><img src="assets/movies/w_18747.jpg" alt="" loading="lazy"><span>黑社会</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_126735.jpg" alt="" loading="lazy">
+                <div class="p-name">刘若英 <span class="p-role">主演（清芳）</span></div>
+              </div>
+              <div class="p-note">中国台湾演员、歌手。《少女小渔》《征婚启事》《人间四月天》《双瞳》《天下无贼》。本片她演黄火土的妻子，戏份不多、台词极少，全靠沉默撑住一个正在崩塌的家。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_29363.jpg" alt="" loading="lazy"><span>天下无贼</span></div><div class="wk"><img src="assets/movies/w_77825.jpg" alt="" loading="lazy"><span>征婚启事</span></div><div class="wk"><img src="assets/movies/w_125085.jpg" alt="" loading="lazy"><span>美丽在唱歌</span></div><div class="wk"><img src="assets/movies/w_76275.jpg" alt="" loading="lazy"><span>20 30 40</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《双瞳》最聪明的设计是把「修仙」和「刑侦」焊在一起：命案手法完全按五狱来排——冻死、烧死、开膛、剜心、拔舌——法医那条线给的是科学解释（霉菌致幻），黄火土那条线给的是信仰解释。轻微剧透：真正的转折在真武观。那不是一场驱魔，是一次「送行」；而黄火土最后面对的那个东西，恰恰是他自己一直不肯承认的那部分。结局他在病床上醒来，说了那句「有爱，就是不死」。这句台词让全片的恐怖退了一格，剩下的是选择：信科学的人活了下来，信爱的人成了仙。它和《七宗罪》是同一类结构，但底层逻辑完全不同——这里没有惩罚，只有「能不能放下」。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「用中国自己的信仰体系做惊悚」的观众；喜欢《七宗罪》《哭声》这类「按某个体系杀人」结构的人。含开膛、剜心、枪战等血腥画面，情绪压抑。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/mad_poster.jpg" alt="神探 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 悬疑（中国香港 · 人格分裂）</span><span class="year">2007 · 中国香港 · 90 分钟 · 彩色 · 内地未映</span></div>
+        <h2>神探 <span class="en">Mad Detective</span></h2>
+        <div class="rates"><span class="rate"><b>8.5</b>豆瓣</span><span class="rate"><b>7.2</b>IMDb</span></div>
+        <p class="oneline">「我同你讲，你唔好惊。」（我跟你说，你别怕。）</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>重案组探员何家安接手一桩失枪案：警员高志伟的配枪失踪，一名便利店劫匪用它杀了人。他去找已经退休的「神探」陈桂彬——一个能看见别人心里「鬼」的前警探。陈桂彬看到高志伟身后站着七个人，每一个都是他丢掉的一部分。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>韦家辉编剧、杜琪峰导演，两人是银河映像的核心组合（《大只佬》《PTU》《黑社会》）。</li><li>陈桂彬那套「看见人心里的鬼」被完全实体化：每个角色身后跟着一个或多个演员，造型与人一模一样，只有眼神和站姿不同。全片没有一个特效镜头。</li><li>故事灵感来自香港真实的警员杀警夺枪案（徐步高事件，2001–2006）——它把一桩社会新闻改写成了一次人格解剖。</li><li>片长只有 90 分钟，节奏极紧，几乎没有一场闲戏。</li><li>结尾镜子前的那场枪战是技术高潮：五个角色、五把枪、多个倒影，靠机位、剪辑和替身完成，而不是靠 CG。</li><li>口碑国内明显高于海外（豆瓣 8.5 / IMDb 7.2）：国内观众吃它的结构，海外更多把它当成一部普通的香港警匪片。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/mad_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/mad_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/mad_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_25236.jpg" alt="" loading="lazy">
+                <div class="p-name">杜琪峰 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">中国香港导演，银河映像创办人之一。《枪火》《PTU》《大事件》《黑社会》《放·逐》《神探》《夺命金》《毒战》。他的强项是把警匪与黑帮拍成高度风格化的空间博弈，几乎没有一句多余台词。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_110410.jpg" alt="" loading="lazy"><span>毒战</span></div><div class="wk"><img src="assets/movies/w_18747.jpg" alt="" loading="lazy"><span>黑社会</span></div><div class="wk"><img src="assets/movies/w_13807.jpg" alt="" loading="lazy"><span>放·逐</span></div><div class="wk"><img src="assets/movies/w_15077.jpg" alt="" loading="lazy"><span>黑社会2：以和为贵</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_940339.jpg" alt="" loading="lazy">
+                <div class="p-name">刘青云 <span class="p-role">主演（陈桂彬）</span></div>
+              </div>
+              <div class="p-note">中国香港演员，多次拿下金像奖影帝。《新不了情》《暗花》《非常突然》《窃听风云》系列、《神探》。本片他演陈桂彬——一个能看见别人心里鬼的前警探，也是他职业生涯里最疯的一次表演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_518896.jpg" alt="" loading="lazy"><span>明日战记</span></div><div class="wk"><img src="assets/movies/w_2463.jpg" alt="" loading="lazy"><span>暗战</span></div><div class="wk"><img src="assets/movies/w_9460.jpg" alt="" loading="lazy"><span>黑侠</span></div><div class="wk"><img src="assets/movies/w_24889.jpg" alt="" loading="lazy"><span>窃听风云</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_83820.jpg" alt="" loading="lazy">
+                <div class="p-name">林家栋 <span class="p-role">主演（高志伟）</span></div>
+              </div>
+              <div class="p-note">中国香港演员，TVB 出身。《无间道》《黑社会》《神探》《树大招风》。本片他演高志伟——一个身上住着七个人的警察，全片最难的角色：同一张脸要同时演出七种状态。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_14756.jpg" alt="" loading="lazy"><span>叶问</span></div><div class="wk"><img src="assets/movies/w_10775.jpg" alt="" loading="lazy"><span>无间道</span></div><div class="wk"><img src="assets/movies/w_591222.jpg" alt="" loading="lazy"><span>智齿</span></div><div class="wk"><img src="assets/movies/w_18899.jpg" alt="" loading="lazy"><span>复仇</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《神探》的核心不是破案，是「一个人身上住了几个人」。高志伟身后那七个鬼分别是胆小的、狡猾的、贪婪的、暴力的、会算计的、会撒谎的、负责收拾的；等他连自己都看不见它们的时候，说明他已经不需要分身了——他自己就是那七个人。轻微剧透：真正的转折在最后。何家安拿到枪之后，身边的人一个个被换掉；镜头最后停在他脸上时，他身后跟着的鬼变成了一个年轻女孩——一个会害怕、会想办法、会替自己找理由的人。也就是说，神探死了，「鬼」传给了下一个好人。杜琪峰把整部片拍成了一个传染过程，九十分钟里没有一个镜头是多余的。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看华语电影里最锋利的一次「人格分裂」书写的人；喜欢《搏击俱乐部》《一级恐惧》这类结构的观众。含枪战与血腥，节奏非常快。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/depart_poster.jpg" alt="入殓师 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 家庭（日本 · 生死与告别）</span><span class="year">2008 · 日本 · 130 分钟 · 彩色 · 内地 2021-04-30 公映</span></div>
+        <h2>入殓师 <span class="en">Departures (おくりびと)</span></h2>
+        <div class="rates"><span class="rate"><b>8.9</b>豆瓣</span><span class="rate"><b>81%</b>烂番茄</span><span class="rate"><b>71</b>Metacritic</span><span class="rate"><b>8.1</b>IMDb</span></div>
+        <p class="oneline">「让已经冰冷的人重新焕发生机，给她永恒的美丽。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>大悟原本是东京一家乐团的大提琴手，乐团突然解散，他背着房贷和妻子美香回到山形县老家。在报纸上看到一则「旅途助理」的招聘，面试当天才知道是入殓师。社长当场录用他，他却一直不敢告诉妻子自己每天在做什么。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 81 届奥斯卡最佳外语片（2009），是日本片时隔多年再拿此奖，也是当年最大的冷门之一。</li><li>久石让配乐；大提琴是贯穿全片的乐器，大悟在河堤上拉琴的段落基本是即兴，本木雅弘为此练了三个月。</li><li>泷田洋二郎出身于日活的低成本类型片行业，拍了十余年商业片，六十岁前后突然拍出《入殓师》与《壬生义士传》。</li><li>本木雅弘为角色真的跟着入殓师学习，片中所有手部动作都是规范操作；他凭此片拿下日本电影学院奖最佳男主角。</li><li>改编自青木新门的自传随笔《纳棺夫日记》；作者本人是做过纳棺师的人。</li><li>内地 2021 年 4 月 30 日首次公映——一部十三年前的日本片，在内地还能被排上院线，本身就说明了它的口碑。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/depart_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/depart_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/depart_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_76936.jpg" alt="" loading="lazy">
+                <div class="p-name">泷田洋二郎 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">日本导演。1970 年代进入日活，拍了十余年低成本类型片；《壬生义士传》之后转向，凭《入殓师》(2008) 拿下奥斯卡最佳外语片。他是日本电影里少见的、从底层类型片一路走到国际奖项的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_14455.jpg" alt="" loading="lazy"><span>壬生义士传</span></div><div class="wk"><img src="assets/movies/w_21325.jpg" alt="" loading="lazy"><span>阴阳师</span></div><div class="wk"><img src="assets/movies/w_88517.jpg" alt="" loading="lazy"><span>秘密</span></div><div class="wk"><img src="assets/movies/w_458909.jpg" alt="" loading="lazy"><span>最后的食谱：麒麟之舌的记忆</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_80863.jpg" alt="" loading="lazy">
+                <div class="p-name">本木雅弘 <span class="p-role">主演（小林大悟）</span></div>
+              </div>
+              <div class="p-note">日本演员。杰尼斯组合出身，后转型演技派。《五个相扑的少年》《谈谈情跳跳舞》《入殓师》《永远的0》。本片他演大悟，凭此拿下日本电影学院奖最佳男主角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_27276.jpg" alt="" loading="lazy"><span>双生儿</span></div><div class="wk"><img src="assets/movies/w_28638.jpg" alt="" loading="lazy"><span>中国鸟人</span></div><div class="wk"><img src="assets/movies/w_391804.jpg" alt="" loading="lazy"><span>永远的托词</span></div><div class="wk"><img src="assets/movies/w_1032472.jpg" alt="" loading="lazy"><span>碰触</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_21658.jpg" alt="" loading="lazy">
+                <div class="p-name">广末凉子 <span class="p-role">主演（美香）</span></div>
+              </div>
+              <div class="p-note">日本演员。《悠长假期》《沙滩男孩》《秘密》《入殓师》《盗钥匙的方法》。本片她演妻子美香——一个跟着丈夫回乡下、却一直不知道他每天在干什么的女人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_2110.jpg" alt="" loading="lazy"><span>绿芥刑警</span></div><div class="wk"><img src="assets/movies/w_24293.jpg" alt="" loading="lazy"><span>大盗五右卫门</span></div><div class="wk"><img src="assets/movies/w_128113.jpg" alt="" loading="lazy"><span>盗钥匙的方法</span></div><div class="wk"><img src="assets/movies/w_88517.jpg" alt="" loading="lazy"><span>秘密</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《入殓师》不打算让你哭，它只是在重复同一件事：一双手、一块布、一个顺序。轻微剧透：中段有一场给一位变性者入殓的戏，家属说「他一直想变成女孩子」，父亲最后说了句「那就按她想要的样子」。从那一场开始，「入殓」从一份工作变成一种翻译——把一个人活着的样子翻译回她身上。真正的结局是大悟给父亲入殓，那个在他六岁时就跟人跑掉的父亲。他一开始不认，最后在父亲手里发现那颗自己小时候送出去的石头。全片最重的不是死亡，是来不及。它把「告别」拍成了一件可以被认真做好的手艺。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看一部关于告别的电影的人；家中有长辈、或刚经历过失去的人。无暴力，含遗体画面（处理得非常克制）。内地 2021 年引进过，现在流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/asun_poster.jpg" alt="阳光普照 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 家庭（中国台湾 · 一个家的崩解）</span><span class="year">2019 · 中国台湾 · 155 分钟 · 彩色 · 内地未映</span></div>
+        <h2>阳光普照 <span class="en">A Sun</span></h2>
+        <div class="rates"><span class="rate"><b>8.6</b>豆瓣</span><span class="rate"><b>7.4</b>IMDb</span></div>
+        <p class="oneline">「这个世界上最公平的东西是太阳。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>台北，一个四口之家。父亲阿文是驾校教练，一生信奉一句口号「把握时间，掌握方向」，把全部希望压在考上医学院的大儿子阿豪身上。小儿子阿和因为伤人进了少年辅育院。阿豪在一个普通的晚上洗完澡、把房间整理干净，然后从自家阳台跳了下去。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 56 届金马奖拿下最佳剧情长片、最佳导演、最佳男主角（陈以文）、最佳男配角与最佳剪辑，是当届最大赢家。</li><li>钟孟宏同时是本片的摄影，化名「中岛长雄」——这是他拍剧情片时的固定署名。</li><li>英文片名 A Sun 与 A Son 发音几乎相同；中文「阳光普照」在片里是父亲反复念的那句电台口号，也是全片最反讽的一句话：太阳照到每个人，阴影却只落在某些人身上。</li><li>陈以文演的父亲几乎没有一场爆发戏，全部情绪压在一张不动的脸上，凭此拿下金马影帝。</li><li>155 分钟是近年台湾电影里少见的长度，但不靠事件推动，靠的是每个人怎么继续过日子。</li><li>柯淑勤演的母亲琴姐是全片唯一把这个家黏住的人：理货、做饭、探监、找人，她是这个家最后的地基。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/asun_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/asun_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/asun_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_56379.jpg" alt="" loading="lazy">
+                <div class="p-name">钟孟宏 <span class="p-role">导演 / 编剧 / 摄影</span></div>
+              </div>
+              <div class="p-note">中国台湾导演、摄影。纪录片《医生》起步，剧情片《停车》《第四张画》《失魂》《一路顺风》《阳光普照》(2019)《瀑布》。他习惯用「中岛长雄」做摄影署名，画面偏冷偏硬，擅长拍人在空间里被挤压的样子。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_852355.jpg" alt="" loading="lazy"><span>瀑布</span></div><div class="wk"><img src="assets/movies/w_411005.jpg" alt="" loading="lazy"><span>一路顺风</span></div><div class="wk"><img src="assets/movies/w_8935.jpg" alt="" loading="lazy"><span>停车</span></div><div class="wk"><img src="assets/movies/w_212839.jpg" alt="" loading="lazy"><span>失魂</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_150165.jpg" alt="" loading="lazy">
+                <div class="p-name">陈以文 <span class="p-role">主演（阿文）</span></div>
+              </div>
+              <div class="p-note">中国台湾演员、导演。自导《运转手之恋》，出演《一一》《独立时代》《阳光普照》。本片他演父亲阿文——一个把人生过成一句口号、最后被这句口号反噬的驾校教练，凭此拿下金马奖最佳男主角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1046090.jpg" alt="" loading="lazy"><span>周处除三害</span></div><div class="wk"><img src="assets/movies/w_475149.jpg" alt="" loading="lazy"><span>大佛普拉斯</span></div><div class="wk"><img src="assets/movies/w_25538.jpg" alt="" loading="lazy"><span>一一</span></div><div class="wk"><img src="assets/movies/w_852355.jpg" alt="" loading="lazy"><span>瀑布</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2171708.jpg" alt="" loading="lazy">
+                <div class="p-name">柯淑勤 <span class="p-role">主演（琴姐）</span></div>
+              </div>
+              <div class="p-note">中国台湾演员。《一一》《孽子》《含笑食堂》《阳光普照》。本片她演母亲琴姐——全片唯一一直在做事的人，是这个家最后的地基。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_134990.jpg" alt="" loading="lazy"><span>逆光飞翔</span></div><div class="wk"><img src="assets/movies/w_500855.jpg" alt="" loading="lazy"><span>小美</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《阳光普照》真正的主角是那个死掉的人。阿豪在片中只活了三分之一，留下的只有一句「我把房间整理好了」和一个空房间；但后面两小时，这个家的每一件事都在补他没说完的话。轻微剧透：中段阿豪讲过一个司马光的故事——司马光砸缸之后，缸里还有一个小孩坐在黑暗里，那才是他自己。这是全片的钥匙：所有人都在看被救出来的那一个，没人看留在缸里的那个。真正的转折在结尾，父亲在山顶对母亲说出自己做过的事——为了让小儿子「变好」，他把另一个人推下了山。他说完，太阳照常升起。钟孟宏没有给他任何惩罚，只让他在山顶上站了一会儿。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看华语电影里最锋利的家庭书写的人；喜欢《一一》《小偷家族》这类「一家人的沉默」的观众。无血腥，情绪极重，含自杀与少年犯罪议题。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/svaha_poster.jpg" alt="娑婆诃 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 惊悚（韩国 · 邪教与末世说）</span><span class="year">2019 · 韩国 · 122 分钟 · 彩色 · 内地未映</span></div>
+        <h2>娑婆诃 <span class="en">Svaha: The Sixth Finger</span></h2>
+        <div class="rates"><span class="rate"><b>7.7</b>豆瓣</span><span class="rate"><b>6.6</b>IMDb</span></div>
+        <p class="oneline">「你相信的，未必救得了你。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>朴牧师专门揭发邪教，靠出书和上电视赚钱。他接到线索：一个叫「鹿野园」的宗教团体很可疑。与此同时，江原道一个偏僻村庄里连续发生少女失踪与离奇死亡。警探、牧师、一名年轻僧人三条线，慢慢收拢到同一个名字上。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>张宰贤自编自导，此前拍过《黑祭司们》(2015)；他习惯把韩国既有的宗教体系（天主教驱魔、佛教末世说）直接当推理材料用，而不是当背景。</li><li>片名「娑婆诃（Svaha）」是佛教咒语结尾的常用语，意为成就、圆满；英文副标题是 The Sixth Finger（第六根手指）。</li><li>全片把佛教「弥勒下生」的概念与连环杀人接在一起：如果那个该来的人已经来了，要怎么认出他？这是它和一般驱魔片最大的区别。</li><li>李政宰演的牧师不是传统意义上的好人——他揭发邪教是为了钱和名声，这个设定让整部片的道德坐标一直不稳。</li><li>朴正民演的年轻僧人是全片唯一没有立场、只负责「确认」的角色。</li><li>结尾的真相牵涉佛教转世与一个孩子的身份，全片几乎每个细节都是伏笔——这也是它在国内口碑两极（豆瓣 7.7 vs IMDb 6.6）的原因：信息量太大，一遍很难全接住。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/svaha_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/svaha_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/svaha_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1544991.jpg" alt="" loading="lazy">
+                <div class="p-name">张宰贤 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">韩国导演、编剧。《黑祭司们》(2015)《娑婆诃》(2019)。他的特色是把韩国既有的宗教体系直接当推理材料用，而不是当背景板。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_838209.jpg" alt="" loading="lazy"><span>破墓</span></div><div class="wk"><img src="assets/movies/w_133200.jpg" alt="" loading="lazy"><span>双面君王（光海，成为王的男人）</span></div><div class="wk"><img src="assets/movies/w_360551.jpg" alt="" loading="lazy"><span>黑祭司们</span></div><div class="wk"><img src="assets/movies/w_82994.jpg" alt="" loading="lazy"><span>特别搜查总部</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_571172.jpg" alt="" loading="lazy">
+                <div class="p-name">朴正民 <span class="p-role">主演（郑罗汉）</span></div>
+              </div>
+              <div class="p-note">韩国演员。《青年警察》《东柱》《娑婆诃》《分手的决心》《地狱公使》。本片他演一名青年僧人——全片里唯一没有立场、只负责确认的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_705996.jpg" alt="" loading="lazy"><span>分手的决心</span></div><div class="wk"><img src="assets/movies/w_200085.jpg" alt="" loading="lazy"><span>流感</span></div><div class="wk"><img src="assets/movies/w_452015.jpg" alt="" loading="lazy"><span>念力</span></div><div class="wk"><img src="assets/movies/w_1075676.jpg" alt="" loading="lazy"><span>战，乱</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_96484.jpg" alt="" loading="lazy">
+                <div class="p-name">郑进永 <span class="p-role">主演（金济石）</span></div>
+              </div>
+              <div class="p-note">韩国演员。《生死谍变》《实尾岛》《王的男人》《娑婆诃》。本片他演一个活了很久、被很多人等着的人，出场不多，但每次都把线索往前推一格。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_158445.jpg" alt="" loading="lazy"><span>七号房的礼物</span></div><div class="wk"><img src="assets/movies/w_429450.jpg" alt="" loading="lazy"><span>潘多拉</span></div><div class="wk"><img src="assets/movies/w_437068.jpg" alt="" loading="lazy"><span>出租车司机</span></div><div class="wk"><img src="assets/movies/w_45035.jpg" alt="" loading="lazy"><span>王的男人</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《娑婆诃》前九十分钟像一部标准的邪教调查片，最后二十分钟把它整个翻过来。牧师一直在找那个魔鬼：他手里有一张少女的照片、一段经文、一句预言。等他终于见到对方时，那是一个正在等死的老人的看护，也是一个从没做过恶的人。轻微剧透：真正的惊悚来自这里——所有线索都对得上，所有证据都成立，唯一错的是他要找的「恶」。片尾那句「如果他真的是弥勒，你会认出来吗」是全片的刀口：认不出来，因为你要找的是怪物。它和《哭声》一样，把「信仰能不能被验证」当成了恐怖的来源，但走的是完全相反的方向。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看宗教推理而不是驱魔打怪的观众；喜欢《哭声》《双瞳》这类「信仰体系驱动」的惊悚片。含血腥、尸体与动物画面，宗教议题密度高。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/dmc_poster.jpg" alt="驾驶我的车 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 心理（日本 · 语言与沉默）</span><span class="year">2021 · 日本 · 179 分钟 · 彩色 · 内地未映</span></div>
+        <h2>驾驶我的车 <span class="en">Drive My Car</span></h2>
+        <div class="rates"><span class="rate"><b>7.9</b>豆瓣</span><span class="rate"><b>97%</b>烂番茄</span><span class="rate"><b>91</b>Metacritic</span><span class="rate"><b>7.6</b>IMDb</span></div>
+        <p class="oneline">「她讲的故事，我只听见过一次。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>舞台剧演员兼导演家福悠介与编剧妻子音一起生活。某天他提前回家，撞见妻子与一名年轻演员在一起，他什么也没说，默默退出房间。不久音因脑溢血去世。两年后，家福受邀到广岛执导一部多语言版《万尼亚舅舅》，剧组给他配了一名沉默的女司机渡利。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 94 届奥斯卡最佳国际影片（2022），并入围最佳影片、最佳导演、最佳改编剧本——日本片首次入围奥斯卡最佳影片。</li><li>第 74 届戛纳电影节拿下最佳编剧、费比西奖、天主教人道精神奖三项。</li><li>片长 179 分钟，开场字幕之后还有近 40 分钟才出现片名；那 40 分钟是原著里没有的，滨口为了让「那件事」先发生才加的。</li><li>改编自村上春树短篇集《没有女人的男人们》中的同名篇，但滨口只保留了「妻子出轨与死亡」和「女司机」两个骨架，中间的《万尼亚舅舅》排练全部是他写的。</li><li>全片用多种语言排演契诃夫：日语、中文、韩语、菲律宾语、德语（手语），演员各说母语，靠节奏而不是理解彼此接戏。</li><li>那辆红色萨博 900 是家福与妻子共有的车；车里那盘录音带是音录的《万尼亚舅舅》台词，留了空拍给丈夫接。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/dmc_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dmc_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dmc_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1487492.jpg" alt="" loading="lazy">
+                <div class="p-name">滨口龙介 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">日本导演、编剧。《欢乐时光》(2015)《夜以继日》(2018)《偶然与想象》(2021)《驾驶我的车》(2021)《邪恶不存在》(2023)。他的电影几乎都在处理同一件事：两个人在语言说不通的地方，怎么把话说出来。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_795811.jpg" alt="" loading="lazy"><span>偶然与想象</span></div><div class="wk"><img src="assets/movies/w_1156125.jpg" alt="" loading="lazy"><span>邪恶不存在</span></div><div class="wk"><img src="assets/movies/w_487850.jpg" alt="" loading="lazy"><span>夜以继日</span></div><div class="wk"><img src="assets/movies/w_354759.jpg" alt="" loading="lazy"><span>欢乐时光</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_13250.jpg" alt="" loading="lazy">
+                <div class="p-name">西岛秀俊 <span class="p-role">主演（家福悠介）</span></div>
+              </div>
+              <div class="p-note">日本演员。《毛骨悚然》《玩偶》《起风了》《新·奥特曼》《驾驶我的车》。本片他演家福——一个用排戏代替悲伤的舞台剧导演，全片最重的戏几乎都在车里完成。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_149870.jpg" alt="" loading="lazy"><span>起风了</span></div><div class="wk"><img src="assets/movies/w_380620.jpg" alt="" loading="lazy"><span>毛骨悚然</span></div><div class="wk"><img src="assets/movies/w_870.jpg" alt="" loading="lazy"><span>玩偶</span></div><div class="wk"><img src="assets/movies/w_634429.jpg" alt="" loading="lazy"><span>新·奥特曼</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1509659.jpg" alt="" loading="lazy">
+                <div class="p-name">三浦透子 <span class="p-role">主演（渡利）</span></div>
+              </div>
+              <div class="p-note">日本演员、音乐人。《驾驶我的车》《你的鸟儿会唱歌》。本片她演沉默的女司机渡利，出场不算多，却是全片最后一段真正对话的另一半。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1014644.jpg" alt="" loading="lazy"><span>不愿恋爱的雀斑小姐</span></div><div class="wk"><img src="assets/movies/w_277806.jpg" alt="" loading="lazy"><span>只要你说你爱我</span></div><div class="wk"><img src="assets/movies/w_876797.jpg" alt="" loading="lazy"><span>余生那些年</span></div><div class="wk"><img src="assets/movies/w_658006.jpg" alt="" loading="lazy"><span>爱情人偶</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《驾驶我的车》真正处理的不是丧妻，是那句没问出口的话。家福撞见妻子出轨的那一刻选择了退场，此后两年他都在等一个可以开口的时机，而音在那之前就死了。滨口给出的解法是一辆车和一台录音机：音把《万尼亚舅舅》的台词录下来，留一个空拍给丈夫接。于是家福每天在车里跟一个死人演戏——这一段的力气在于，它让你明白演戏可以是活下去的唯一方式。轻微剧透：真正的转折在北海道，渡利说出她母亲的死，家福说出自己的沉默，两个人坐在雪地里，谁也没有被治愈。结尾是一场多语言的《万尼亚舅舅》，索尼娅那句「我们会休息的」由手语演员说出。三个小时，最后落在「再忍耐一会儿」。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>能接受三小时慢节奏、愿意让电影自己展开的人；喜欢契诃夫、村上春树、或「语言说不通」这个主题的人。无暴力，情绪极克制。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/incant_poster.jpg" alt="咒 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 伪纪录片（中国台湾 · 邪灵与诅咒）</span><span class="year">2022 · 中国台湾 · 111 分钟 · 彩色 · Netflix 全球上线</span></div>
+        <h2>咒 <span class="en">Incantation</span></h2>
+        <div class="rates"><span class="rate"><b>6.9</b>豆瓣</span><span class="rate"><b>6.6</b>IMDb</span></div>
+        <p class="oneline">「火佛修一，心萨呒哞。」（请跟我们一起念。）</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>六年前，李若男和男友擅自闯入山里的陈家宗祠，破坏了封印，之后三人接连出事。六年后若男独自抚养女儿朵朵，想重新开始，但那个「存在」从未放过她。影片以若男对着镜头请求观众一起念咒、一起比手印的方式展开——她说这是为了分担诅咒，其实是把灾祸摊给了所有人。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>柯孟融自编自导，此前拍过《宅变》(2005) 与《绝命派对》，沉潜多年后以本片回归。</li><li>2022 年 3 月 18 日 Netflix 全球上线，是首部登上 Netflix 全球电影榜前十的台湾电影，在多个地区拿下单日榜第一。</li><li>全片采用伪纪录片 + 交互式的结构：若男反复要求观众念咒、比手印、在屏幕前「加入」——这既是叙事，也是它在流媒体上病毒式传播的原因。</li><li>蔡亘晏是剧场演员出身，几乎全程对着镜头演，撑起了全片最难的「一边求救、一边骗人」的状态。</li><li>被封印的「大黑佛母」造型混合了台湾民间信仰（阴庙、乩童、养小鬼）与东南亚降头术，美术组做了大量实物道具而不是 CG。</li><li>国内口碑两极（豆瓣 6.9）：主要争议在结尾把「吓人」换成了「算计」——但那恰恰就是它的主题：恐惧可以被传递。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/incant_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/incant_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/incant_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1309565.jpg" alt="" loading="lazy">
+                <div class="p-name">柯孟融 <span class="p-role">导演 / 编剧 / 剪辑</span></div>
+              </div>
+              <div class="p-note">中国台湾导演、编剧。《宅变》(2005)《绝命派对》之后沉潜多年，2022 年以《咒》回归。他擅长把台湾本土信仰（阴庙、乩童、养小鬼）当成恐怖片的材料。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_23530.jpg" alt="" loading="lazy"><span>绝命派对</span></div><div class="wk"><img src="assets/movies/w_288287.jpg" alt="" loading="lazy"><span>不倒侠</span></div><div class="wk"><img src="assets/movies/w_519207.jpg" alt="" loading="lazy"><span>脱单告急</span></div><div class="wk"><img src="assets/movies/w_736528.jpg" alt="" loading="lazy"><span>末日逆袭（短片）</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1749592.jpg" alt="" loading="lazy">
+                <div class="p-name">蔡亘晏 <span class="p-role">主演（李若男）</span></div>
+              </div>
+              <div class="p-note">中国台湾演员，剧场出身，《咒》是她首度主演长片，几乎全片对着镜头演出。她演的李若男同时是求救者与加害者，这也是全片最受争议的一点。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1005996.jpg" alt="" loading="lazy"><span>小晓</span></div><div class="wk"><img src="assets/movies/w_537610.jpg" alt="" loading="lazy"><span>蓝色项圈</span></div><div class="wk"><img src="assets/movies/w_363874.jpg" alt="" loading="lazy"><span>百日告别</span></div><div class="wk"><img src="assets/movies/w_1022108.jpg" alt="" loading="lazy"><span>他马克老板</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_38286.jpg" alt="" loading="lazy">
+                <div class="p-name">高英轩 <span class="p-role">主演（谢启明）</span></div>
+              </div>
+              <div class="p-note">中国台湾演员。《诡扯》《粽邪3》《咒》。本片他演若男身边唯一愿意相信她、也因此被卷进来的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_4588.jpg" alt="" loading="lazy"><span>色‧戒</span></div><div class="wk"><img src="assets/movies/w_23530.jpg" alt="" loading="lazy"><span>绝命派对</span></div><div class="wk"><img src="assets/movies/w_1166073.jpg" alt="" loading="lazy"><span>还钱</span></div><div class="wk"><img src="assets/movies/w_781456.jpg" alt="" loading="lazy"><span>叱咤风云</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《咒》最妙的一点是它承认自己在骗你。若男从第一分钟就对着镜头说「请帮我念」，观众以为是共情，看到最后才发现那是一场分摊——她把诅咒拆成无数份，每个跟着念的人都拿走了一点。轻微剧透：所以片尾那段揭晓不是反转，是判决。镜头拉远，你看到整个影像本身就是那个诅咒的载体。柯孟融用的是伪纪录片最古老的手法（手持、监控、家庭录像），却把它接在了流媒体的传播逻辑上：看的人越多，它越灵。这部片真正让人不舒服的不是鬼，是它把「观看」这件事变成了共犯关系——而你是在看完之后才发现的。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看华语恐怖片这几年最大胆的一次结构尝试的人；能接受手持镜头、jump scare 密集的观众。含邪教仪式、儿童受苦、血腥与惊吓画面，心理压迫强。Netflix 可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/seoul_poster.jpg" alt="首尔之春 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 历史惊悚（韩国 · 双十二那一夜）</span><span class="year">2023 · 韩国 · 141 分钟 · 彩色 · 内地未映</span></div>
+        <h2>首尔之春 <span class="en">12.12: The Day</span></h2>
+        <div class="rates"><span class="rate"><b>8.8</b>豆瓣</span><span class="rate"><b>7.6</b>IMDb</span></div>
+        <p class="oneline">「今晚，谁先动，谁就赢。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1979 年韩国总统遇刺后，一位手握保安司令部的将领开始秘密攥权。12 月 12 日晚，他调动部队进入首尔；能拦住他的，只剩首都警备司令官李泰信与少数几名将领。九个小时，一群人赌上了整个国家的方向。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>2023 年韩国本土票房冠军，观影人次超过 1300 万，进入韩国影史票房前列。</li><li>金成洙此前拍过《流感》(2013)《阿修罗》(2016)，擅长把「一群男人在一间屋子里互相逼」拍成高速剪辑的群戏。</li><li>片中角色使用化名（全斗光 / 李泰信），但事件、职务与时间线完全对应真实历史：1979 年的双十二军事叛乱。</li><li>黄政民演的全斗光几乎每场戏都在笑、在递烟、在叫人兄弟；全片从未把他拍成传统意义上的反派。</li><li>郑雨盛演的李泰信对应当时的首都警备司令官，那一夜他多次试图调动部队未果。</li><li>叙事时间只有九个小时，却拍了 141 分钟，靠电话、地图与不断切换的会议室推进，是近年少见的政治惊悚片。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/seoul_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/seoul_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/seoul_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_17119.jpg" alt="" loading="lazy">
+                <div class="p-name">金成洙 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">韩国导演。《流感》(2013)《阿修罗》(2016)《首尔之春》(2023)。他的电影都在讲同一件事：一个系统在压力下如何变形，以及站在里面的人还剩多少选择。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_200085.jpg" alt="" loading="lazy"><span>流感</span></div><div class="wk"><img src="assets/movies/w_1436.jpg" alt="" loading="lazy"><span>武士</span></div><div class="wk"><img src="assets/movies/w_408620.jpg" alt="" loading="lazy"><span>阿修罗</span></div><div class="wk"><img src="assets/movies/w_44850.jpg" alt="" loading="lazy"><span>英语完全征服</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_17120.jpg" alt="" loading="lazy">
+                <div class="p-name">郑雨盛 <span class="p-role">主演（李泰信）</span></div>
+              </div>
+              <div class="p-note">韩国演员、导演。《雏菊》《好家伙、坏家伙、怪家伙》《监视者们》《证人》《首尔之春》。本片他演李泰信——一个手里有命令、却没有权限的司令官，全程靠吼和硬撑。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_15859.jpg" alt="" loading="lazy"><span>我脑海中的橡皮擦</span></div><div class="wk"><img src="assets/movies/w_15067.jpg" alt="" loading="lazy"><span>好家伙、坏家伙、怪家伙</span></div><div class="wk"><img src="assets/movies/w_435841.jpg" alt="" loading="lazy"><span>铁雨</span></div><div class="wk"><img src="assets/movies/w_204553.jpg" alt="" loading="lazy"><span>绝密跟踪</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_141548.jpg" alt="" loading="lazy">
+                <div class="p-name">李星民 <span class="p-role">主演（郑祥镐）</span></div>
+              </div>
+              <div class="p-note">韩国演员。《黄海》《群盗》《南汉山城》《犯罪都市》《首尔之春》。本片他演一位在关键节点上动摇的高级将领，是全片「沉默的大多数」的代表。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_639988.jpg" alt="" loading="lazy"><span>无可奈何</span></div><div class="wk"><img src="assets/movies/w_604360.jpg" alt="" loading="lazy"><span>第八天之夜</span></div><div class="wk"><img src="assets/movies/w_517991.jpg" alt="" loading="lazy"><span>特工</span></div><div class="wk"><img src="assets/movies/w_633374.jpg" alt="" loading="lazy"><span>我记得</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《首尔之春》不是历史课，是一场关于「程序」的灾难片。九个小时里，真正决定胜负的从来不是谁更勇，而是谁愿意先越过那道线——全斗光每一次都在等人下令，李泰信每一次都在等上级批准。等他终于决定自己下令时，电话线已经被切断了。轻微剧透：片中最狠的一场是李泰信带着几个人冲到桥头，对面是已经倒戈的部队，他没有下令开枪。那一夜不是被打败的，是被「合法」这两个字耗死的。结尾用几年后的字幕交代了所有人的下场，导演没有给任何安慰。它讲的是一件事：制度在关键的那几个小时里，其实只有几个人在撑。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看一场「没开枪的战争」的人；对韩国现代史、军人与权力交接有兴趣的观众。无大场面血腥，含枪战与暴力威胁，政治议题密度高。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-01；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>

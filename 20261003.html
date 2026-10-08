@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 剧情 / 科幻 / 爱情 / 传记（2026-10-03 · 第 33 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 剧情 / 科幻 / 爱情 / 传记</h1>
+  <div class="sub">2026 年 10 月 3 日 · 第 33 期 · 已避开往期推荐过的全部 320 部</div>
+  <div>
+    <span class="pill">主题：一年一部 · 2014–2023（十年十部）</span>
+    <span class="pill">全部 1990 年后：最早 2014，最晚 2023，六部出自 2018 年后</span>
+    <span class="pill">八国 / 六种语言：美国 · 英国 · 澳大利亚 · 墨西哥 · 韩国 · 挪威 · 瑞典 · 丹麦</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-03，会随时间变动，仅供参考。<br>
+  这一期做的是一个很笨的办法：从 2014 数到 2023，每年只挑一部。挑的时候没按奖项排，也没按票房排，只问一句——如果十年后还有人提起这一年，最可能先想到的是哪一部。于是有了这份名单：2014 年《布达佩斯大饭店》、2015 年《疯狂的麦克斯4》、2016 年《月光男孩》、2017 年《银翼杀手2049》、2018 年《罗马》、2019 年《寄生虫》、2020 年《无依之地》、2021 年《世界上最糟糕的人》、2022 年《分手的决心》、2023 年《奥本海默》。<br>
+  排下来自己也有点意外：十年里被记住的，几乎都不是「大事件电影」，而是把一件事做到极致的个人作品。安德森把一个消失的欧洲装进一间饭店，米勒用两小时追车讲完了文明崩塌，卡隆把童年的一条街拍成了黑白史诗，赵婷把整部片拍成了一次安静的公路旅行。另外几部则分别代表十年里最锋利的几种方向——阶级（《寄生虫》）、身份（《月光男孩》）、人与造物（《银翼杀手2049》）、以及一个人如何被时代使用又被时代清算（《奥本海默》）。<br>
+  10 部片名全部为首次出现，无一与往期 320 部重复（比对 `_titles_all.txt` 通过）。补充一句：本期按「一年一部」选片，《罗马》TMDB 标注为 2018，《无依之地》TMDB 标注 2021，但它的威尼斯首映在 2020 年 9 月，所以按 2020 计入。<br>
+  几部口碑明显分裂的片子已如实标注、未做修饰：《月光男孩》（烂番茄 98% / Metacritic 99，但豆瓣 7.4 / IMDb 7.4，落差主要来自「没讲什么故事」的预期）、《无依之地》（影评界 94/94，豆瓣 8.0 / IMDb 7.3，「几乎没有剧情」是最常见的差评）、《分手的决心》（烂番茄 94%，但豆瓣 7.6，冲着悬疑来的观众会觉得太慢）、《罗马》（豆瓣 8.2，长镜头与黑白是主要劝退点）。<br>
+  内地公映情况：2 部登过内地大银幕——《银翼杀手2049》2017-10-27、《奥本海默》2023-08-30（内地票房约 4.4 亿元）；其余 8 部内地未映，流媒体可看。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>布达佩斯大饭店</td><td class="qg">喜剧 / 剧情（美德英合拍 · 一个消失的欧洲）</td><td class="qr">8.9 / 92% / 88</td></tr><tr><td class="qn">02</td><td>疯狂的麦克斯4：狂暴之路</td><td class="qg">动作 / 科幻（澳美合拍 · 一路向西）</td><td class="qr">8.7 / 97% / 90</td></tr><tr><td class="qn">03</td><td>月光男孩</td><td class="qg">剧情 / 成长（美国 · 三段黑皮肤）</td><td class="qr">7.4 / 98% / 99</td></tr><tr><td class="qn">04</td><td>银翼杀手2049</td><td class="qg">科幻 / 悬疑（美英加西合拍 · 三十年后）</td><td class="qr">8.3 / 88% / 81</td></tr><tr><td class="qn">05</td><td>罗马</td><td class="qg">剧情 / 家庭（墨西哥 / 美国 · 黑白）</td><td class="qr">8.2 / 96% / 96</td></tr><tr><td class="qn">06</td><td>寄生虫</td><td class="qg">剧情 / 黑色喜剧（韩国 · 半地下室与山坡）</td><td class="qr">8.8 / 99% / 96</td></tr><tr><td class="qn">07</td><td>无依之地</td><td class="qg">剧情 / 公路（美国 · 现代游牧者）</td><td class="qr">8.0 / 94% / 94</td></tr><tr><td class="qn">08</td><td>世界上最糟糕的人</td><td class="qg">剧情 / 爱情（挪威 · 三十岁的岔路口）</td><td class="qr">8.0 / 96% / 90</td></tr><tr><td class="qn">09</td><td>分手的决心</td><td class="qg">爱情 / 悬疑（韩国 · 山与海）</td><td class="qr">7.6 / 94% / 85</td></tr><tr><td class="qn">10</td><td>奥本海默</td><td class="qg">传记 / 历史（美英合拍 · 三个小时与一个闪念）</td><td class="qr">8.9 / 93% / 88</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/buda_poster.jpg" alt="布达佩斯大饭店 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">喜剧 / 剧情（美德英合拍 · 一个消失的欧洲）</span><span class="year">2014 · 美国 / 德国 / 英国 · 99 分钟 · 彩色 · 内地未映</span></div>
+        <h2>布达佩斯大饭店 <span class="en">The Grand Budapest Hotel</span></h2>
+        <div class="rates"><span class="rate"><b>8.9</b>豆瓣</span><span class="rate"><b>92%</b>烂番茄</span><span class="rate"><b>88</b>Metacritic</span><span class="rate"><b>8.1</b>IMDb</span></div>
+        <p class="oneline">「文明的微光，还留在这间饭店里。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一位作家来到昔日辉煌、如今衰败的布达佩斯大饭店，结识了饭店主人穆斯塔法。晚餐时，穆斯塔法讲起自己年轻时的往事：那时他还是个叫「零」的门童，跟着传奇礼宾员古斯塔夫学怎么做一名出色的饭店员工。古斯塔夫深受年长女客人们的喜爱，其中富有的 D 夫人去世后把一幅名画留给了他——于是她的家族找上门来。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 87 届奥斯卡九项提名、四项获奖：最佳美术指导、最佳服装设计、最佳化妆与发型、最佳原创配乐。</li><li>韦斯·安德森自编自导，灵感来自茨威格的小说与散文；片尾直接致谢了《昨日的世界》的作者。</li><li>拉尔夫·费因斯演的古斯塔夫几乎是全片的发动机：一个把「礼貌」当成护身符的人，他说脏话都要先道歉。</li><li>全片用三种画幅拍摄（1.37 / 1.85 / 2.35），对应 1930 年代、1960 年代与 1980 年代三个时间层。</li><li>摄影由罗伯特·耶曼担任，他跟了安德森二十多年；那些对称构图与横移镜头，以及所有糖果色的调子，都是他的手笔。</li><li>烂番茄 92% / Metacritic 88，豆瓣 8.9——少数在影评人与普通观众两边都几乎没有差评的当代片。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/buda_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/buda_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/buda_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5655.jpg" alt="" loading="lazy">
+                <div class="p-name">韦斯·安德森 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、制片。《瓶装火箭》《天才一族》《穿越大吉岭》《了不起的狐狸爸爸》《月升王国》《布达佩斯大饭店》(2014)《犬之岛》。他的电影都长着同一张脸：对称构图、糖果配色、以及一群把体面看得比命重要的怪人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_83666.jpg" alt="" loading="lazy"><span>月升王国</span></div><div class="wk"><img src="assets/movies/w_10315.jpg" alt="" loading="lazy"><span>了不起的狐狸爸爸</span></div><div class="wk"><img src="assets/movies/w_399174.jpg" alt="" loading="lazy"><span>犬之岛</span></div><div class="wk"><img src="assets/movies/w_9428.jpg" alt="" loading="lazy"><span>天才一族</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5469.jpg" alt="" loading="lazy">
+                <div class="p-name">拉尔夫·费因斯 <span class="p-role">主演（古斯塔夫）</span></div>
+              </div>
+              <div class="p-note">英国演员。《辛德勒的名单》《英国病人》《哈利·波特》系列的伏地魔、《007：大破天幕杀机》《布达佩斯大饭店》《王牌特工：源起》。本片他演古斯塔夫——一个把礼貌当成信仰、也在最后为礼貌付出代价的礼宾员。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_424.jpg" alt="" loading="lazy"><span>辛德勒的名单</span></div><div class="wk"><img src="assets/movies/w_12445.jpg" alt="" loading="lazy"><span>哈利·波特与死亡圣器（下）</span></div><div class="wk"><img src="assets/movies/w_476669.jpg" alt="" loading="lazy"><span>王牌特工：源起</span></div><div class="wk"><img src="assets/movies/w_37724.jpg" alt="" loading="lazy"><span>007：大破天幕杀机</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1291350.jpg" alt="" loading="lazy">
+                <div class="p-name">托尼·雷沃罗利 <span class="p-role">主演（零·穆斯塔法）</span></div>
+              </div>
+              <div class="p-note">美国演员，童星出身。《布达佩斯大饭店》《蜘蛛侠：英雄归来》(饰演闪电) 等。本片他演少年门童「零」，全片的叙述者，也是那个把古斯塔夫的规矩一直带到老年的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_634649.jpg" alt="" loading="lazy"><span>蜘蛛侠：英雄无归</span></div><div class="wk"><img src="assets/movies/w_429617.jpg" alt="" loading="lazy"><span>蜘蛛侠：英雄远征</span></div><div class="wk"><img src="assets/movies/w_315635.jpg" alt="" loading="lazy"><span>蜘蛛侠：英雄归来</span></div><div class="wk"><img src="assets/movies/w_299687.jpg" alt="" loading="lazy"><span>第五波</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《布达佩斯大饭店》看起来是一个闹剧，其实是一封写给消失文明的信。安德森用糖果色、对称构图和一个接一个的荒诞人物，讲了一件正在被碾碎的事：古斯塔夫守的那套规矩——给客人开门、记住每一位夫人的名字、在逃亡路上也要喷香水——在一场已经开始的大战面前毫无用处。轻微剧透：真正扎人的转折在结尾。古斯塔夫为了替「零」辩护，被士兵带走，从此再没出现；而「零」继承了饭店，也继承了那套规矩。最后一个镜头是老年「零」坐在空荡荡的饭店里，说这座饭店是他与已故妻子共同保留下来的一点东西。安德森的态度一直很轻，但这一幕的重量很实在：文明不是被英雄救下来的，是被一些看上去很滑稽的人，一点一点搬到今天的。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看韦斯·安德森美学最完整的一次的人；喜欢群像、荒诞幽默与精致美术的观众。含少量暴力、粗口与轻度性暗示，整体轻快。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/fury_poster.jpg" alt="疯狂的麦克斯4：狂暴之路 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">动作 / 科幻（澳美合拍 · 一路向西）</span><span class="year">2015 · 澳大利亚 / 美国 · 120 分钟 · 彩色 · 内地未映</span></div>
+        <h2>疯狂的麦克斯4：狂暴之路 <span class="en">Mad Max: Fury Road</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>97%</b>烂番茄</span><span class="rate"><b>90</b>Metacritic</span><span class="rate"><b>8.1</b>IMDb</span></div>
+        <p class="oneline">「谁杀死了世界？我们都要负责。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>文明崩塌后的荒漠里，不死乔掌控着水源与武装。他的得力战将弗瑞奥萨私自带着五名「生育者」叛逃，驾驶油罐车穿越沙漠，要回到她童年记忆里的那片绿地。一个叫麦克斯的男人被锁在车头当「血袋」，阴差阳错成了同路人。后面是整支军队，前面是一片沙暴。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 88 届奥斯卡十项提名、六项获奖：剪辑、音效剪辑、音响效果、美术指导、服装设计、化妆与发型——技术奖项几乎全包。</li><li>乔治·米勒在拍完第三部三十年之后重启这个系列；他原本是急诊科医生，靠拍广告与《快乐的大脚》攒下的信誉换来了这次预算。</li><li>全片绝大多数动作是实拍：真实车辆、真实翻滚、真实特技演员，CG 主要用于擦除威亚与延伸背景。</li><li>查理兹·塞隆演的弗瑞奥萨才是这部片的主角；她剃了头、装上机械手臂，把「公路片」拍成了「回家」。</li><li>几乎没有任何旁白与说明，世界观全部靠画面上的细节交代；开场二十分钟没有一句对白是必要的。</li><li>烂番茄 97% / Metacritic 90，十年后被大量影评人选入「21 世纪最佳动作片」前三；豆瓣 8.7 同样极高。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/fury_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/fury_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/fury_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_20629.jpg" alt="" loading="lazy">
+                <div class="p-name">乔治·米勒 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">澳大利亚导演、编剧，原本是急诊科医生。《疯狂的麦克斯》(1979)《疯狂的麦克斯2》《疯狂的麦克斯3》《快乐的大脚》《疯狂的麦克斯4：狂暴之路》(2015)《疯狂的麦克斯：狂暴女神》。他用三十六年把这个系列拍成了动作片的教科书。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_9836.jpg" alt="" loading="lazy"><span>快乐的大脚</span></div><div class="wk"><img src="assets/movies/w_786892.jpg" alt="" loading="lazy"><span>疯狂的麦克斯：狂暴女神</span></div><div class="wk"><img src="assets/movies/w_9659.jpg" alt="" loading="lazy"><span>疯狂的麦克斯</span></div><div class="wk"><img src="assets/movies/w_8810.jpg" alt="" loading="lazy"><span>疯狂的麦克斯2</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2524.jpg" alt="" loading="lazy">
+                <div class="p-name">汤姆·哈迪 <span class="p-role">主演（麦克斯）</span></div>
+              </div>
+              <div class="p-note">英国演员。《盗梦空间》《勇士》《荒野猎人》《疯狂的麦克斯4》《毒液》系列、《敦刻尔克》。本片他演麦克斯——一个台词极少、靠身体和眼神撑住全片的沉默主角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_335983.jpg" alt="" loading="lazy"><span>毒液：致命守护者</span></div><div class="wk"><img src="assets/movies/w_580489.jpg" alt="" loading="lazy"><span>毒液2</span></div><div class="wk"><img src="assets/movies/w_27205.jpg" alt="" loading="lazy"><span>盗梦空间</span></div><div class="wk"><img src="assets/movies/w_281957.jpg" alt="" loading="lazy"><span>荒野猎人</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6885.jpg" alt="" loading="lazy">
+                <div class="p-name">查理兹·塞隆 <span class="p-role">主演（弗瑞奥萨）</span></div>
+              </div>
+              <div class="p-note">南非裔美国演员。《女魔头》(2004 奥斯卡影后)《普罗米修斯》《极寒之城》《疯狂的麦克斯4》《永生守卫》。本片她演弗瑞奥萨，剃头、装机械手臂，是这部片真正的主角与动机所在。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_341013.jpg" alt="" loading="lazy"><span>极寒之城</span></div><div class="wk"><img src="assets/movies/w_8960.jpg" alt="" loading="lazy"><span>全民超人汉考克</span></div><div class="wk"><img src="assets/movies/w_547016.jpg" alt="" loading="lazy"><span>永生守卫</span></div><div class="wk"><img src="assets/movies/w_70981.jpg" alt="" loading="lazy"><span>普罗米修斯</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《疯狂的麦克斯4》最了不起的地方是它把动作片拍成了默片。米勒几乎不用对白解释任何事——谁是谁、为什么逃、往哪去，全靠构图、颜色和一次次的引擎声交代清楚。轻微剧透：真正的转折在中段。他们冲过沙暴、越过盐湖，最后发现那片记忆中的绿地早就变成了毒沼，而「回家」这件事本身已经不可能了。于是弗瑞奥萨做了第二个决定：掉头，杀回去，把不死乔的据点拿来当新的家园。这部片表面是追车，实际是一个关于「目的消失了以后怎么办」的故事——麦克斯还是那个只想往前开的男人，但这一次他跟着别人往回走了一趟。结尾那句「谁杀死了世界」，问的不是反派，是所有活着的人。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看动作片能拍到什么程度的人；能接受几乎无对白、两小时高强度追逐与撞击的观众。含大量暴力、爆炸与人体改造画面，但血腥度不高。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/moon_poster.jpg" alt="月光男孩 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 成长（美国 · 三段黑皮肤）</span><span class="year">2016 · 美国 · 111 分钟 · 彩色 · 内地未映</span></div>
+        <h2>月光男孩 <span class="en">Moonlight</span></h2>
+        <div class="rates"><span class="rate"><b>7.4</b>豆瓣</span><span class="rate"><b>98%</b>烂番茄</span><span class="rate"><b>99</b>Metacritic</span><span class="rate"><b>7.4</b>IMDb</span></div>
+        <p class="oneline">「月光下，黑人男孩是蓝色的。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>迈阿密的一个黑人男孩喀戎，母亲吸毒、同辈欺侮他，唯一对他好的是毒贩胡安。影片分三段：童年他叫 Little，少年他叫 Chiron，成年他叫 Black。第二段里，他和唯一的朋友凯文在海边有过一个夜晚；多年后，凯文打来了一通电话。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 89 届奥斯卡最佳影片、最佳改编剧本、最佳男配角（马赫沙拉·阿里）三项大奖。</li><li>改编自塔瑞尔·阿尔文·麦克拉尼的未上演剧本《In Moonlight Black Boys Look Blue》；巴里·詹金斯与他是同乡，把剧本变成电影用了八年。</li><li>成本仅 150 万美元，却拿下奥斯卡最佳影片——是史上预算最低的最佳影片之一。</li><li>三段由三位演员分别演同一个角色：艾利克斯·希伯特、艾什顿·桑德斯、崔凡特·罗兹；开拍前三人没有一起对过戏。</li><li>摄影由詹姆斯·拉克斯顿担任，大量使用手持与近景；配乐是小提琴与弦乐改编的尼古拉斯·布里特尔作品。</li><li>口碑分裂点很明确：烂番茄 98% / Metacritic 99，是十年里评分最高的影片之一；豆瓣 7.4 / IMDb 7.4，落差主要来自叙事节奏与「没讲什么故事」的预期落空。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/moon_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/moon_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/moon_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_92784.jpg" alt="" loading="lazy">
+                <div class="p-name">巴里·詹金斯 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧。《忧郁的解药》《月光男孩》(2016)《假如比尔街可以作证》《狮子王：木法沙传奇》。他的电影都把镜头贴得很近，近到能看清人物在想什么。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_762509.jpg" alt="" loading="lazy"><span>狮子王：木法沙传奇</span></div><div class="wk"><img src="assets/movies/w_465914.jpg" alt="" loading="lazy"><span>假如比尔街可以作证</span></div><div class="wk"><img src="assets/movies/w_24885.jpg" alt="" loading="lazy"><span>忧郁的解药</span></div><div class="wk"><img src="assets/movies/w_189923.jpg" alt="" loading="lazy"><span>我的约瑟芬（短片）</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1650301.jpg" alt="" loading="lazy">
+                <div class="p-name">崔凡特·罗兹 <span class="p-role">主演（成年凯龙）</span></div>
+              </div>
+              <div class="p-note">美国演员。《蒙上你的眼》《铁血战士》《12勇士》《月光男孩》。本片他演成年喀戎（片中被叫作 Black）——一个把身体练成盔甲、却仍然开着车去见那个人的男人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_405774.jpg" alt="" loading="lazy"><span>蒙上你的眼</span></div><div class="wk"><img src="assets/movies/w_346910.jpg" alt="" loading="lazy"><span>铁血战士</span></div><div class="wk"><img src="assets/movies/w_429351.jpg" alt="" loading="lazy"><span>12勇士</span></div><div class="wk"><img src="assets/movies/w_566076.jpg" alt="" loading="lazy"><span>美国诉比莉·哈乐黛</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_459980.jpg" alt="" loading="lazy">
+                <div class="p-name">安德烈·霍兰 <span class="p-role">主演（凯文）</span></div>
+              </div>
+              <div class="p-note">美国演员。《塞尔玛》《42号传奇》《骨及所有》《月光男孩》。本片他演凯文——喀戎少年时唯一的朋友，也是多年后那通电话的那一头。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_273895.jpg" alt="" loading="lazy"><span>塞尔玛</span></div><div class="wk"><img src="assets/movies/w_791177.jpg" alt="" loading="lazy"><span>骨及所有</span></div><div class="wk"><img src="assets/movies/w_109410.jpg" alt="" loading="lazy"><span>42号传奇</span></div><div class="wk"><img src="assets/movies/w_510498.jpg" alt="" loading="lazy"><span>高飞鸟</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《月光男孩》讲的是一个人怎么把自己藏起来。喀戎在所有阶段只做两件事：忍着，以及不让人看出来他在忍。詹金斯把三段拍成三种皮肤——童年的他瘦小、沉默，少年开始学会用拳头当盔甲，成年后他干脆把整个身体练成了一副盔甲。轻微剧透：真正的转折在最后。凯文打来电话，喀戎开车去找他，两个人坐在餐馆里说了很多年没说的话。凯文问他什么时候开始变成现在这样的、什么时候开始碰毒品的，喀戎只回了一句：「我挣钱了。」全片最动人的不是那个海边夜晚，而是成年后的他仍然愿意开车去见那个人——一个人藏了一辈子，最后还是把最软的那块拿出来了。詹金斯没有让它变成励志，只让它停在那一秒：一个黑人男孩，在月光下是蓝色的。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看当代美国最被认可的独立片之一的人；能接受慢节奏、大量留白与情绪推进的观众。含毒品使用、校园霸凌与一场暴力，无大尺度血腥。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/br2049_poster.jpg" alt="银翼杀手2049 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 悬疑（美英加西合拍 · 三十年后）</span><span class="year">2017 · 美国 / 英国 / 加拿大 / 西班牙 · 164 分钟 · 彩色 · 内地 2017-10-27 公映</span></div>
+        <h2>银翼杀手2049 <span class="en">Blade Runner 2049</span></h2>
+        <div class="rates"><span class="rate"><b>8.3</b>豆瓣</span><span class="rate"><b>88%</b>烂番茄</span><span class="rate"><b>81</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「我见过的东西，你们人根本不会相信。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>《银翼杀手》事件三十年后，新一代银翼杀手 K 负责「退役」旧型号复制人。一次例行任务里，他挖出了一具复制人的遗骨——她曾经分娩过。这个秘密如果传出去，剩下的人类社会会再次崩塌，于是 K 接到命令：抹掉它。他开始追查那个失踪三十年的前银翼杀手瑞克·戴克。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 90 届奥斯卡五项提名、两项获奖：最佳摄影（罗杰·狄金斯，这是他拍了十三次提名后的第一次获奖）与最佳视觉效果。</li><li>丹尼斯·维伦纽瓦接手时坚持一件事：不做重启，只做续作，且必须回答 1982 年那部留下的空白。</li><li>片长 164 分钟，制作成本约 1.5 亿美元，全球票房约 2.6 亿——影评界一致叫好，票房却成了当年最著名的「亏本杰作」之一。</li><li>美术与摄影是本片真正的叙事手段：黄沙中的拉斯维加斯、雾气里的洛杉矶、以及那座巨大的华莱士总部，几乎没有一处用台词解释。</li><li>瑞恩·高斯林演的 K 全程处在「我是不是特别的」这个问题里；安娜·德·阿玛斯演的乔伊是一个全息投影，也是全片最像人的角色。</li><li>内地 2017 年 10 月 27 日公映；海外口碑极高，本土票房却远低于预期，是当年「叫好不叫座」的代表。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/br2049_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/br2049_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/br2049_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_137427.jpg" alt="" loading="lazy">
+                <div class="p-name">丹尼斯·维伦纽瓦 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">加拿大导演、编剧。《囚徒》《边境杀手》《降临》《银翼杀手2049》(2017)《沙丘》《沙丘2》。他是这一代最擅长用画面代替对白的导演，本片是他口碑最高的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_329865.jpg" alt="" loading="lazy"><span>降临</span></div><div class="wk"><img src="assets/movies/w_438631.jpg" alt="" loading="lazy"><span>沙丘</span></div><div class="wk"><img src="assets/movies/w_146233.jpg" alt="" loading="lazy"><span>囚徒</span></div><div class="wk"><img src="assets/movies/w_273481.jpg" alt="" loading="lazy"><span>边境杀手</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_30614.jpg" alt="" loading="lazy">
+                <div class="p-name">瑞恩·高斯林 <span class="p-role">主演（K）</span></div>
+              </div>
+              <div class="p-note">加拿大演员。《恋恋笔记本》《亡命驾驶》《爱乐之城》《银翼杀手2049》《挽救计划》。本片他演 K——一个从「我是不是特别」走到「我要做对的事」的复制人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_313369.jpg" alt="" loading="lazy"><span>爱乐之城</span></div><div class="wk"><img src="assets/movies/w_64690.jpg" alt="" loading="lazy"><span>亡命驾驶</span></div><div class="wk"><img src="assets/movies/w_11036.jpg" alt="" loading="lazy"><span>恋恋笔记本</span></div><div class="wk"><img src="assets/movies/w_687163.jpg" alt="" loading="lazy"><span>挽救计划</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_224513.jpg" alt="" loading="lazy">
+                <div class="p-name">安娜·德·阿玛斯 <span class="p-role">主演（乔伊）</span></div>
+              </div>
+              <div class="p-note">古巴裔西班牙演员。《利刃出鞘》《007：无暇赴死》客串、《银翼杀手2049》《金发梦露》。本片她演乔伊——一个全息投影，也是全片最接近「人」的角色。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_546554.jpg" alt="" loading="lazy"><span>利刃出鞘</span></div><div class="wk"><img src="assets/movies/w_541671.jpg" alt="" loading="lazy"><span>疾速追杀：芭蕾杀姬</span></div><div class="wk"><img src="assets/movies/w_308266.jpg" alt="" loading="lazy"><span>军火贩</span></div><div class="wk"><img src="assets/movies/w_301502.jpg" alt="" loading="lazy"><span>金发梦露</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《银翼杀手2049》问的是：一个被造出来的人，能不能拥有比人更像人的一生。K 从一开始就知道自己是复制人，也知道自己不特别；他每天回家，对着一个投影说话，把她的存在当成唯一真实的东西。轻微剧透：真正的转折是记忆。K 一直以为自己就是那个「奇迹般出生的孩子」，直到被告知那段记忆是别人植入的——他不是被选中的那个，他只是一个被安排来背锅的人。维伦纽瓦没有在这里煽情，他让 K 自己做了选择：既然我不是那个人，那我就替那个人做一次对的事。结尾他躺在台阶上，雪落在手里。这个问题没有答案，但那个动作是真的。这是科幻片里少见的、把「我是谁」拍成了一次道德选择而不是一次身份揭秘的作品。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看二十一世纪最讲究影像的科幻片的人；能接受 164 分钟慢节奏、大量空镜与哲思独白的观众。含暴力画面与一处裸体（非露骨），情绪克制。内地 2017 年引进过，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/roma_poster.jpg" alt="罗马 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 家庭（墨西哥 / 美国 · 黑白）</span><span class="year">2018 · 墨西哥 / 美国 · 135 分钟 · 黑白 · 内地未映</span></div>
+        <h2>罗马 <span class="en">Roma</span></h2>
+        <div class="rates"><span class="rate"><b>8.2</b>豆瓣</span><span class="rate"><b>96%</b>烂番茄</span><span class="rate"><b>96</b>Metacritic</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「不管别人怎么说，我们女人总是孤身一人。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1970 年代初的墨西哥城罗马区，一个中产家庭里，原住民帮佣克莱奥照看四个孩子、打扫房子、遛狗。丈夫长期不回家，妻子索菲亚的婚姻正在崩塌；与此同时，克莱奥自己怀孕了，而孩子的父亲消失了。城市的另一边，学生运动正在被镇压。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 91 届奥斯卡十项提名、三项获奖：最佳导演、最佳摄影、最佳外语片；阿方索·卡隆一人拿下导演与摄影两座。</li><li>威尼斯电影节金狮奖。卡隆集编剧、导演、摄影、联合剪辑与制片于一身，是他最私人化的一部。</li><li>主演雅利扎·阿帕里西奥是原住民出身的幼儿教师，此前从未演过戏；选角时她以为自己试的是配角。</li><li>全片黑白，用 65mm 胶片拍摄；卡隆坚持不使用任何打光以外的修饰，重建成记忆里的样子。</li><li>片中大量长镜头与横向平移，摄影机从不进入人物的情绪中心，只在一旁看着——这是它最被称道也最劝退人的地方。</li><li>Netflix 出品并发行，是流媒体电影第一次拿到奥斯卡最佳导演；当年关于「院线 vs 流媒体」的争论几乎盖过了影片本身。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/roma_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/roma_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/roma_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11218.jpg" alt="" loading="lazy">
+                <div class="p-name">阿方索·卡隆 <span class="p-role">导演 / 编剧 / 摄影</span></div>
+              </div>
+              <div class="p-note">墨西哥导演、编剧、摄影、制片。《你妈妈也一样》《哈利·波特与阿兹卡班的囚徒》《人类之子》《地心引力》《罗马》(2018)。他一人拿下奥斯卡最佳导演与最佳摄影，是这部片真正的作者。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_673.jpg" alt="" loading="lazy"><span>哈利·波特与阿兹卡班的囚徒</span></div><div class="wk"><img src="assets/movies/w_49047.jpg" alt="" loading="lazy"><span>地心引力</span></div><div class="wk"><img src="assets/movies/w_9693.jpg" alt="" loading="lazy"><span>人类之子</span></div><div class="wk"><img src="assets/movies/w_1391.jpg" alt="" loading="lazy"><span>你妈妈也一样</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1775557.jpg" alt="" loading="lazy">
+                <div class="p-name">雅利扎·阿帕里西奥 <span class="p-role">主演（克莱奥）</span></div>
+              </div>
+              <div class="p-note">墨西哥演员，原住民出身，本片是她的银幕首作。她演克莱奥——一个照顾着别人一家、也在自己崩溃边缘撑住的帮佣；凭此片登上《名利场》封面并获奥斯卡最佳女主角提名。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_772450.jpg" alt="" loading="lazy"><span>存在</span></div><div class="wk"><img src="assets/movies/w_1159086.jpg" alt="" loading="lazy"><span>了不起的诱拐</span></div><div class="wk"><img src="assets/movies/w_649368.jpg" alt="" loading="lazy"><span>罗马：拍摄实录</span></div><div class="wk"><img src="assets/movies/w_1062762.jpg" alt="" loading="lazy"><span>血汗工厂女孩（短片）</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_78883.jpg" alt="" loading="lazy">
+                <div class="p-name">玛丽娜·德·塔维拉 <span class="p-role">主演（索菲亚）</span></div>
+              </div>
+              <div class="p-note">墨西哥演员。《罗马》《这不是柏林》《追忆迷局》。本片她演索菲亚——一个婚姻正在崩塌、却仍要在孩子面前撑住体面的女主人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_579047.jpg" alt="" loading="lazy"><span>追忆迷局</span></div><div class="wk"><img src="assets/movies/w_555795.jpg" alt="" loading="lazy"><span>这不是柏林</span></div><div class="wk"><img src="assets/movies/w_265339.jpg" alt="" loading="lazy"><span>安娜和布鲁诺</span></div><div class="wk"><img src="assets/movies/w_121088.jpg" alt="" loading="lazy"><span>私人物品</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《罗马》最厉害的地方是它的摄影机从不介入。克莱奥被男友抛弃、在医院里失去孩子、在海里把两个孩子救回来——卡隆一个特写都没给，只是横移着拍完，然后继续拍地板、拍狗屎、拍晾着的衣服。轻微剧透：真正的高潮在海滩。克莱奥不会游泳，却走进越来越深的海里把两个孩子拖回来；上岸后，一家人抱在一起，她对索菲亚说了一句：「我很想他死掉。」（指她腹中的孩子）。那不是冷酷，是一个被彻底耗尽的人终于说出了真话。这部片从头到尾都在拍「照顾」这件事：谁在照顾谁，谁被照顾却从没被看见。结尾那场洗衣服的长镜头之后，是屋顶、飞机、天空——卡隆把一整年的隐忍收进了一个平静的俯拍。它不煽情，但看完会难受很久。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看私人记忆被拍成史诗的人；喜欢《一一》《东京物语》这类日常长镜头美学的观众。含一场医院戏与少量暴力画面，节奏极慢、无配乐。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/para_poster.jpg" alt="寄生虫 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 黑色喜剧（韩国 · 半地下室与山坡）</span><span class="year">2019 · 韩国 · 132 分钟 · 彩色 · 内地未映</span></div>
+        <h2>寄生虫 <span class="en">Parasite</span></h2>
+        <div class="rates"><span class="rate"><b>8.8</b>豆瓣</span><span class="rate"><b>99%</b>烂番茄</span><span class="rate"><b>96</b>Metacritic</span><span class="rate"><b>8.5</b>IMDb</span></div>
+        <p class="oneline">「有钱所以善良。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>金家四口住在首尔的半地下室，没有稳定工作。儿子基宇经朋友介绍，去富人朴社长家给女儿当英语家教。进门之后他发现机会不止一个：妹妹装成艺术治疗师、父亲去当司机、母亲顶替了管家。一家四口陆续进入了这栋房子，直到他们发现地下室里还有别人。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 72 届戛纳金棕榈；第 92 届奥斯卡最佳影片、最佳导演、最佳原创剧本、最佳国际影片四项大奖。</li><li>史上第一部拿下奥斯卡最佳影片的非英语电影；也是第一部同时拿下金棕榈与奥斯卡最佳影片的韩国电影。</li><li>奉俊昊自编自导，剧本灵感来自他二十多岁时做过的富人家教经历，也与 1960 年代韩国电影《下女》形成互文。</li><li>宋康昊演的金基泽是全片的轴心：一个把所有体面都押在孩子身上的父亲，也是最后动手的那个人。</li><li>全片的空间设计就是阶级结构：半地下室、地面、山坡上的豪宅、以及豪宅底下的地下堡垒，人物只在这些层之间上下移动。</li><li>豆瓣 8.8 / 烂番茄 99% / Metacritic 96 / IMDb 8.5，是近十年全球评分最高的非英语片之一。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/para_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/para_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/para_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_21684.jpg" alt="" loading="lazy">
+                <div class="p-name">奉俊昊 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">韩国导演、编剧。《杀人回忆》《汉江怪物》《母亲》《雪国列车》《玉子》《寄生虫》(2019)《编号17》。他的电影总是一半喜剧一半刀，本片让他拿下金棕榈与奥斯卡最佳导演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_110415.jpg" alt="" loading="lazy"><span>雪国列车</span></div><div class="wk"><img src="assets/movies/w_11423.jpg" alt="" loading="lazy"><span>杀人回忆</span></div><div class="wk"><img src="assets/movies/w_387426.jpg" alt="" loading="lazy"><span>玉子</span></div><div class="wk"><img src="assets/movies/w_696506.jpg" alt="" loading="lazy"><span>编号17</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_20738.jpg" alt="" loading="lazy">
+                <div class="p-name">宋康昊 <span class="p-role">主演（金基泽）</span></div>
+              </div>
+              <div class="p-note">韩国演员。《杀人回忆》《汉江怪物》《雪国列车》《寄生虫》《我要复仇》。本片他演金基泽——一个把全部体面押在孩子身上的父亲，也是最后动手的那个人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_110415.jpg" alt="" loading="lazy"><span>雪国列车</span></div><div class="wk"><img src="assets/movies/w_11423.jpg" alt="" loading="lazy"><span>杀人回忆</span></div><div class="wk"><img src="assets/movies/w_1255.jpg" alt="" loading="lazy"><span>汉江怪物</span></div><div class="wk"><img src="assets/movies/w_4689.jpg" alt="" loading="lazy"><span>我要复仇</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_115290.jpg" alt="" loading="lazy">
+                <div class="p-name">李善均 <span class="p-role">主演（朴社长）</span></div>
+              </div>
+              <div class="p-note">韩国演员（1975–2023）。《走到尽头》《寄生虫》《寂静计划》《眠》。本片他演朴社长——一个什么都没做错、却让人恨得牙痒的富人；他也是全片最「无辜」的那张脸。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_269494.jpg" alt="" loading="lazy"><span>走到尽头</span></div><div class="wk"><img src="assets/movies/w_726139.jpg" alt="" loading="lazy"><span>寂静计划</span></div><div class="wk"><img src="assets/movies/w_964592.jpg" alt="" loading="lazy"><span>眠</span></div><div class="wk"><img src="assets/movies/w_574303.jpg" alt="" loading="lazy"><span>恶霸警察</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《寄生虫》的结构精密得像一台机器，前六十分钟几乎是一部轻快的犯罪喜剧——你会笑，也会替他们捏一把汗。轻微剧透：转折发生在那场暴雨。金家的半地下室被污水灌满，一家人从「骗得挺成功」瞬间被冲回原位；第二天，朴家在草地上办生日会，阳光明媚，两家人的处境在这一夜里完成了对调。奉俊昊在这里把喜剧的地板抽掉了：之后的每一步都不再好笑，而且每一步都合理。真正让人坐不住的不是金家做了什么，而是朴家什么都没做错——他们只是看了眼神情、说了句「味道」。结尾基宇在地下室里写那封永远寄不出的信，镜头从豪宅切到半地下室的窗。奉俊昊没有给任何人判罪，他只是把这个结构摆在你面前：在同一片天空下，有人住在坡上，有人住在坡下，而坡下的人以为自己只是运气不好。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近十年被讨论最多的韩国电影的人；喜欢结构精密、类型混杂（喜剧转惊悚）的观众。含突发暴力与血腥画面，后半段转折很猛。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/nomad_poster.jpg" alt="无依之地 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 公路（美国 · 现代游牧者）</span><span class="year">2020 · 美国 · 108 分钟 · 彩色 · 内地未映</span></div>
+        <h2>无依之地 <span class="en">Nomadland</span></h2>
+        <div class="rates"><span class="rate"><b>8.0</b>豆瓣</span><span class="rate"><b>94%</b>烂番茄</span><span class="rate"><b>94</b>Metacritic</span><span class="rate"><b>7.3</b>IMDb</span></div>
+        <p class="oneline">「我不是无家可归，我只是没有房子。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>内华达州一座公司镇的经济崩塌之后，六十多岁的弗恩收拾行囊，开着一辆厢式货车上路，成了美国西部的一名叫「房车流浪者」的现代游牧者。她打季节工、在停车场过夜、在聚会里认识同类的人。全片没有反派，也没有目标，只有一段接一段的路。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 77 届威尼斯电影节金狮奖；第 93 届奥斯卡最佳影片、最佳导演、最佳女主角三项大奖。</li><li>赵婷成为首位获得奥斯卡最佳导演的华人女性，也是史上第二位获此奖的女性。</li><li>改编自杰西卡·布鲁德的纪实作品《无依之地：生存于21世纪的美国》；书中人物琳达·梅、斯旺基、鲍勃·韦尔斯在片中出演自己。</li><li>弗兰西斯·麦克多蒙德同时是制片人与主演；她买下版权后找赵婷执导，给了后者完全的自由度。</li><li>全片只有两位职业演员，其余几乎都是真实的游牧者；剧组跟着他们真的住了几个月。</li><li>烂番茄 94% / Metacritic 94，影评界几乎一致好评；豆瓣 8.0 / IMDb 7.3 的落差主要来自「几乎没有剧情」——它更像一部纪录片式的观察。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/nomad_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/nomad_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/nomad_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1395183.jpg" alt="" loading="lazy">
+                <div class="p-name">赵婷 <span class="p-role">导演 / 编剧 / 剪辑</span></div>
+              </div>
+              <div class="p-note">中国出生的导演、编剧、制片。《哥哥教我唱的歌》《骑士》《无依之地》(2020)《永恒族》《哈姆奈特》。她凭本片成为首位获奥斯卡最佳导演的华人女性。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_524434.jpg" alt="" loading="lazy"><span>永恒族</span></div><div class="wk"><img src="assets/movies/w_858024.jpg" alt="" loading="lazy"><span>哈姆奈特</span></div><div class="wk"><img src="assets/movies/w_453278.jpg" alt="" loading="lazy"><span>骑士</span></div><div class="wk"><img src="assets/movies/w_308640.jpg" alt="" loading="lazy"><span>哥哥教我唱的歌</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_3910.jpg" alt="" loading="lazy">
+                <div class="p-name">弗兰西斯·麦克多蒙德 <span class="p-role">主演（弗恩）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片人。《冰血暴》(1997 奥斯卡影后)《阅后即焚》《三块广告牌》(2018 奥斯卡影后)《无依之地》。本片她演弗恩，同时是制片人；是她买下原著版权并坚持由赵婷执导。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_359940.jpg" alt="" loading="lazy"><span>三块广告牌</span></div><div class="wk"><img src="assets/movies/w_275.jpg" alt="" loading="lazy"><span>冰血暴</span></div><div class="wk"><img src="assets/movies/w_105864.jpg" alt="" loading="lazy"><span>恐龙当家</span></div><div class="wk"><img src="assets/movies/w_4944.jpg" alt="" loading="lazy"><span>阅后即焚</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11064.jpg" alt="" loading="lazy">
+                <div class="p-name">大卫·斯特雷泽恩 <span class="p-role">主演（戴夫）</span></div>
+              </div>
+              <div class="p-note">美国演员。《谍影重重3》《林肯》《破绽》《无依之地》。本片他演戴夫——公路上另一位游牧者，也是唯一一个向弗恩提出「你可以留下」的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_2503.jpg" alt="" loading="lazy"><span>谍影重重3</span></div><div class="wk"><img src="assets/movies/w_6145.jpg" alt="" loading="lazy"><span>破绽</span></div><div class="wk"><img src="assets/movies/w_72976.jpg" alt="" loading="lazy"><span>林肯</span></div><div class="wk"><img src="assets/movies/w_124905.jpg" alt="" loading="lazy"><span>哥斯拉</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《无依之地》没有故事，只有处境。弗恩不是被生活打垮之后去流浪的，她是在丈夫去世、小镇消失之后，发现自己剩下的东西正好装得进一辆车。赵婷的处理非常克制：不给配乐煽情，不给角色下判断，只让镜头跟着她洗车、做饭、在夜里把门关上。轻微剧透：真正的转折不是某件事，而是她中途去了妹妹家——那栋有客厅、有餐桌、有洗碗机的房子。她可以在那里住下去，所有人都欢迎她留下。然后她回到车上，继续往东开。这个选择是这部片唯一的一次「表态」，也是它最重的一笔：她不是没有别的选择，她只是选了这条。结尾她站在自己那间空厂房里说「我在路上见到了很多人」，然后画面回到公路。这不是励志，是一个人对「什么是家」给出的私人答案。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年最被认可的现代公路片的人；喜欢纪实质感、安静长镜头与不煽情的观众。无暴力与情色内容，节奏舒缓、几乎没有戏剧冲突。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/worst_poster.jpg" alt="世界上最糟糕的人 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 爱情（挪威 · 三十岁的岔路口）</span><span class="year">2021 · 挪威 / 法国 / 丹麦 / 瑞典 · 128 分钟 · 彩色 · 内地未映</span></div>
+        <h2>世界上最糟糕的人 <span class="en">The Worst Person in the World</span></h2>
+        <div class="rates"><span class="rate"><b>8.0</b>豆瓣</span><span class="rate"><b>96%</b>烂番茄</span><span class="rate"><b>90</b>Metacritic</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「我花了很多时间，才敢浪费自己的人生。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>朱莉快三十岁了。她学过医、学过心理学，又转去摄影，然后做了书店店员；男朋友阿克塞尔比她大十几岁，是个成功的漫画家，催她生孩子。某天晚上她闯进一场婚礼，遇见了咖啡师艾文德。影片分十二个章节，加上一段序与一段尾声，讲她三十岁这一年。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 74 届戛纳主竞赛单元，雷娜特·赖因斯夫拿下最佳女演员。</li><li>约阿希姆·提尔「奥斯陆三部曲」的收官之作（前两部是《重奏》2006 与《奥斯陆，8月31日》2011），三部都写这座城市里的人。</li><li>全片分为十二章加序与尾声，章节之间节奏完全不同——有的像喜剧，有的像恐怖片，有的像一场梦。</li><li>雷娜特·赖因斯夫几乎是凭这部片从挪威舞台剧演员变成国际面孔；她的表演被评价为「把犹豫演成了动作」。</li><li>片中有一段著名的「时间静止」：朱莉跑过整座奥斯陆去找艾文德，城市里的所有人都被定住。</li><li>口碑相当一致：烂番茄 96% / Metacritic 90 / 豆瓣 8.0，是近年评价最高的非英语当代片之一。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/worst_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/worst_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/worst_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_71609.jpg" alt="" loading="lazy">
+                <div class="p-name">约阿希姆·提尔 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">挪威导演、编剧。《重奏》《奥斯陆，8月31日》《猛于炮火》《西尔玛》《世界上最糟糕的人》(2021)《情感价值》。他的「奥斯陆三部曲」写的都是这座城市里没能成为某种人的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_401898.jpg" alt="" loading="lazy"><span>西尔玛</span></div><div class="wk"><img src="assets/movies/w_1124566.jpg" alt="" loading="lazy"><span>情感价值</span></div><div class="wk"><img src="assets/movies/w_75233.jpg" alt="" loading="lazy"><span>奥斯陆，8月31日</span></div><div class="wk"><img src="assets/movies/w_157827.jpg" alt="" loading="lazy"><span>猛于炮火</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1576786.jpg" alt="" loading="lazy">
+                <div class="p-name">雷娜特·赖因斯夫 <span class="p-role">主演（朱莉）</span></div>
+              </div>
+              <div class="p-note">挪威演员，本片是她第一次主演长片，凭此拿下戛纳最佳女演员。她演朱莉——一个三十岁、什么都想要、因此什么都做不彻底的女人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1083381.jpg" alt="" loading="lazy"><span>后室</span></div><div class="wk"><img src="assets/movies/w_1124566.jpg" alt="" loading="lazy"><span>情感价值</span></div><div class="wk"><img src="assets/movies/w_989662.jpg" alt="" loading="lazy"><span>不同的男人</span></div><div class="wk"><img src="assets/movies/w_1020896.jpg" alt="" loading="lazy"><span>再会亡灵</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_71610.jpg" alt="" loading="lazy">
+                <div class="p-name">安德斯·丹尼尔森·李 <span class="p-role">主演（阿克塞尔）</span></div>
+              </div>
+              <div class="p-note">挪威演员、医生。《奥斯陆，8月31日》《挪威7·22爆炸枪击案》《世界上最糟糕的人》。本片他演阿克塞尔——一个成熟、温柔、想要孩子，也确实没做错什么的男友。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_457955.jpg" alt="" loading="lazy"><span>黑夜吞噬世界</span></div><div class="wk"><img src="assets/movies/w_474354.jpg" alt="" loading="lazy"><span>挪威7·22爆炸枪击案</span></div><div class="wk"><img src="assets/movies/w_75233.jpg" alt="" loading="lazy"><span>奥斯陆，8月31日</span></div><div class="wk"><img src="assets/movies/w_340676.jpg" alt="" loading="lazy"><span>私人采购员</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《世界上最糟糕的人》写的不是选择，是「不选择」。朱莉不是不知道自己想要什么，她是想要的东西太多了，每一样都真实，所以每一样都做不彻底。提尔的高明在于他没把这件事拍成成长故事：她换专业、换男友、换城市，每次都认真，每次都半途。轻微剧透：真正扎人的转折在后段。她终于和艾文德在一起了——那个让她觉得自由、不催她做任何决定的人——却在某天清晨发现，跟这个人在一起她也一样空虚。于是她明白了问题不在阿克塞尔，也不在艾文德，而在她自己一直在等一个「终于对了」的时刻。尾声里她成了片场摄影师，拿着相机给别人打光。她没有变成某种人，只是终于开始做一件事。这部片最温柔的地方在于：它没有惩罚她。三十岁这年的所有犹豫，最后都被允许了。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年最被讨论的北欧当代片的人；喜欢章节式结构、城市气质与情感细节的观众。含一段分娩与病痛情节、少量裸露（非露骨）。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/leave_poster.jpg" alt="分手的决心 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">爱情 / 悬疑（韩国 · 山与海）</span><span class="year">2022 · 韩国 · 139 分钟 · 彩色 · 内地未映</span></div>
+        <h2>分手的决心 <span class="en">Decision to Leave</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>94%</b>烂番茄</span><span class="rate"><b>85</b>Metacritic</span><span class="rate"><b>7.3</b>IMDb</span></div>
+        <p class="oneline">「他说我像山，可我从来没想过要成为山。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>韩国某处山顶，一名男子坠亡。是自杀还是他杀？刑警海俊到场后，开始怀疑死者的妻子徐来。随着调查深入，他发现自己陷入一场由谎言与欲望织成的迷局：这个女人似乎一点也不怕被审查，她只是想被看见。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 75 届戛纳电影节主竞赛单元，朴赞郁拿下最佳导演。</li><li>朴赞郁与《小姐》的编剧郑瑞景再次合作；两人把一部刑侦片写成了爱情片，或者说把爱情片写成了刑侦片。</li><li>汤唯演的徐来是近年韩国电影里最特别的女性角色之一：一个中文说得比韩语好的「嫌疑人」，全片靠表情和一点点韩语推进。</li><li>朴海日演的海俊是个失眠的刑警；他的职业是找出真相，而这部片让他爱上了那个最不像真相的人。</li><li>全片在「看」这件事上做足文章：监控画面、手机屏幕、望远镜、以及两个人互相盯着看的那些近景。</li><li>口碑分裂点在于预期：烂番茄 94% / Metacritic 85，影评界把它当成年度最佳之一；豆瓣 7.6 / IMDb 7.3，冲着悬疑来的观众会觉得节奏太慢、线索太散。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/leave_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/leave_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/leave_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_10099.jpg" alt="" loading="lazy">
+                <div class="p-name">朴赞郁 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">韩国导演、编剧。《共同警备区》《老男孩》《亲切的金子》《斯托克》《小姐》《分手的决心》(2022)。他的电影永远是精致的壳，里面装着失控的情感；本片让他拿下戛纳最佳导演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_670.jpg" alt="" loading="lazy"><span>老男孩</span></div><div class="wk"><img src="assets/movies/w_290098.jpg" alt="" loading="lazy"><span>小姐</span></div><div class="wk"><img src="assets/movies/w_86825.jpg" alt="" loading="lazy"><span>斯托克</span></div><div class="wk"><img src="assets/movies/w_4550.jpg" alt="" loading="lazy"><span>亲切的金子</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_38280.jpg" alt="" loading="lazy">
+                <div class="p-name">汤唯 <span class="p-role">主演（徐来）</span></div>
+              </div>
+              <div class="p-note">中国演员。《色‧戒》《晚秋》《北京遇上西雅图》《地球最后的夜晚》《分手的决心》。本片她演徐来——一个用中文思考、用韩语回答的「嫌疑人」，凭此片横扫韩国各大颁奖礼最佳女主角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_201088.jpg" alt="" loading="lazy"><span>骇客交锋</span></div><div class="wk"><img src="assets/movies/w_4588.jpg" alt="" loading="lazy"><span>色‧戒</span></div><div class="wk"><img src="assets/movies/w_486898.jpg" alt="" loading="lazy"><span>地球最后的夜晚</span></div><div class="wk"><img src="assets/movies/w_635996.jpg" alt="" loading="lazy"><span>梦境</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_21687.jpg" alt="" loading="lazy">
+                <div class="p-name">朴海日 <span class="p-role">主演（海俊）</span></div>
+              </div>
+              <div class="p-note">韩国演员。《杀人回忆》《汉江怪物》《最终兵器：弓》《恩娇》《分手的决心》。本片他演海俊——一个失眠的刑警，职业是找真相，却爱上了最不像真相的那个人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1255.jpg" alt="" loading="lazy"><span>汉江怪物</span></div><div class="wk"><img src="assets/movies/w_11423.jpg" alt="" loading="lazy"><span>杀人回忆</span></div><div class="wk"><img src="assets/movies/w_79224.jpg" alt="" loading="lazy"><span>最终兵器：弓</span></div><div class="wk"><img src="assets/movies/w_118451.jpg" alt="" loading="lazy"><span>恩娇</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《分手的决心》是一部把「调查」拍成「恋爱」的电影。海俊每一次审问徐来，都是在靠近她；而徐来每一次回答，都是在把自己交出去一点点。朴赞郁的高明在于他从不让这两件事分开——你分不清他是在找证据，还是在找机会再见她一面。轻微剧透：真正的转折在中后段。徐来第二次嫁人，第二任丈夫又死了，海俊这次成了唯一希望她不是凶手的人，也是唯一知道她可能是的人。最后那场海滩戏是两人关系的总结：他把她的案子彻底了结了，而她也终于把话说清楚了——不是用韩语，是用中文留在一个他永远要翻译的录音里。结尾海俊在海边一遍遍喊她的名字，海浪把脚印抹掉。这不是悬疑的解答，是一个男人终于承认：他从头到尾都被看穿了，而他甘愿。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近几年最被国际认可的韩国作者电影的人；喜欢《小姐》《老男孩》那种华丽而克制的朴赞郁的观众。含自杀、坠亡与少量血腥画面，节奏舒缓、叙事含蓄。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/oppen_poster.jpg" alt="奥本海默 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">传记 / 历史（美英合拍 · 三个小时与一个闪念）</span><span class="year">2023 · 美国 / 英国 · 180 分钟 · 彩色 + 黑白 · 内地 2023-08-30 公映</span></div>
+        <h2>奥本海默 <span class="en">Oppenheimer</span></h2>
+        <div class="rates"><span class="rate"><b>8.9</b>豆瓣</span><span class="rate"><b>93%</b>烂番茄</span><span class="rate"><b>88</b>Metacritic</span><span class="rate"><b>8.3</b>IMDb</span></div>
+        <p class="oneline">「我现在成了死神，世界的毁灭者。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>战时，物理学家罗伯特·奥本海默被任命主持洛斯阿拉莫斯实验室，推进绝密的曼哈顿计划。全片用彩色与黑白两条线交叉：彩色是他的主观视角，黑白是听证会上的客观陈述。原子弹试爆成功后，他成了英雄；几年之后，他成了被审查的对象。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 96 届奥斯卡十三项提名、七项获奖：最佳影片、最佳导演、最佳男主角（基利安·墨菲）、最佳男配角（小罗伯特·唐尼）、最佳摄影、最佳剪辑、最佳原创配乐。</li><li>改编自凯·伯德与马丁·舍温的普利策奖传记《美国普罗米修斯》；诺兰自编自导，是他第一部传记片。</li><li>全片用 65mm IMAX 胶片拍摄，是影史最长的 IMAX 胶片电影之一；三位一体试爆那场戏是实景拍摄，没有用 CGI。</li><li>诺兰把彩色与黑白分开使用：彩色是奥本海默看到的世界，黑白是别人看到的世界——这个设计是全片的叙事骨架。</li><li>配乐由路德维格·戈兰松创作，以小提琴为主；他在采访中说小提琴「可以一秒钟从优美变成让人不适」，正对应主角。</li><li>全球票房约 9.7 亿美元，是影史票房最高的传记片；内地 2023 年 8 月 30 日公映，票房约 4.4 亿元人民币。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/oppen_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/oppen_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/oppen_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_525.jpg" alt="" loading="lazy">
+                <div class="p-name">克里斯托弗·诺兰 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">英国导演、编剧、制片。《追随》《记忆碎片》《蝙蝠侠：黑暗骑士》《盗梦空间》《星际穿越》《敦刻尔克》《奥本海默》(2023)。本片是他的第一部传记片，也是他第一次拿到奥斯卡最佳导演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_157336.jpg" alt="" loading="lazy"><span>星际穿越</span></div><div class="wk"><img src="assets/movies/w_27205.jpg" alt="" loading="lazy"><span>盗梦空间</span></div><div class="wk"><img src="assets/movies/w_155.jpg" alt="" loading="lazy"><span>蝙蝠侠：黑暗骑士</span></div><div class="wk"><img src="assets/movies/w_49026.jpg" alt="" loading="lazy"><span>蝙蝠侠：黑暗骑士崛起</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2037.jpg" alt="" loading="lazy">
+                <div class="p-name">基利安·墨菲 <span class="p-role">主演（奥本海默）</span></div>
+              </div>
+              <div class="p-note">爱尔兰演员。《惊变28天》《蝙蝠侠：侠影之谜》《盗梦空间》《浴血黑帮》《奥本海默》。本片他演奥本海默，靠眼神撑住三个小时，拿下奥斯卡最佳男主角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_170.jpg" alt="" loading="lazy"><span>惊变28天</span></div><div class="wk"><img src="assets/movies/w_27205.jpg" alt="" loading="lazy"><span>盗梦空间</span></div><div class="wk"><img src="assets/movies/w_1272.jpg" alt="" loading="lazy"><span>太阳浩劫</span></div><div class="wk"><img src="assets/movies/w_49530.jpg" alt="" loading="lazy"><span>时间规划局</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_3223.jpg" alt="" loading="lazy">
+                <div class="p-name">小罗伯特·唐尼 <span class="p-role">主演（施特劳斯）</span></div>
+              </div>
+              <div class="p-note">美国演员。《钢铁侠》系列、《复仇者联盟》系列、《大侦探福尔摩斯》《奥本海默》。本片他演刘易斯·斯特劳斯——一个因为自尊心受伤而动手毁掉别人的人，凭此拿下奥斯卡最佳男配角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_24428.jpg" alt="" loading="lazy"><span>复仇者联盟</span></div><div class="wk"><img src="assets/movies/w_299536.jpg" alt="" loading="lazy"><span>复仇者联盟3：无限战争</span></div><div class="wk"><img src="assets/movies/w_1726.jpg" alt="" loading="lazy"><span>钢铁侠</span></div><div class="wk"><img src="assets/movies/w_299534.jpg" alt="" loading="lazy"><span>复仇者联盟4：终局之战</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《奥本海默》最特别的地方是它把「知道后果」这件事拍成了恐怖片。诺兰不拍广岛与长崎的画面——他没有给你任何一个受害者的镜头，却让那两声闷响一直压在三个小时的每一场戏下面。轻微剧透：真正的转折不是试爆，是听证会。奥本海默从「造出原子弹的人」变成「需要被证明忠诚的人」，而整场审判的依据，是他自己过去说过的话、见过的人、睡过的人。诺兰在这里做了一个非常冷的处理：他让观众在最后才明白，斯特劳斯动手的动机不过是自尊心受了一点伤。三个小时下来，最可怕的不是原子弹，是这件事竟如此平常——一个人可以被一个更小的人毁掉，而国家机器只需要一次会议。结尾那句「我现在成了死神」不是台词的高光，是一句迟迟没有说出口的自供。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年最重要的好莱坞大片的人；能接受 180 分钟、大量对白与三线交叉叙事的观众。含少量裸露与性暗示（非露骨）、核爆画面与强烈的心理压迫。内地 2023 年公映过，流媒体可看。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-03；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>

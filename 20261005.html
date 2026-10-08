@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 悬疑 / 惊悚 / 恐怖 / 科幻 / 剧情（2026-10-05 · 第 35 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 悬疑 / 惊悚 / 恐怖 / 科幻 / 剧情</h1>
+  <div class="sub">2026 年 10 月 5 日 · 第 35 期 · 已避开往期推荐过的全部 340 部</div>
+  <div>
+    <span class="pill">主题：后劲 · 千禧年后的十部类型片（2007–2023）</span>
+    <span class="pill">全部 1990 年后：最早 2007，最晚 2023，六部出自 2015 年后</span>
+    <span class="pill">类型覆盖：悬疑 / 惊悚 / 恐怖 / 科幻 / 剧情，十位导演互不重复</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-05，会随时间变动，仅供参考。<br>
+  这一期的筛选条件只有一条：**看完之后还留在脑子里**。不是"最好看"，是"后劲最大"——字幕走完了你还没起来，或者第二天还在想那个镜头。于是十六年里这十部浮了上来：一桩至今没破的案（《十二宫》）、一场四层深的梦（《盗梦空间》）、一只白天鹅的崩坏（《黑天鹅》）、一栋不该买下的房子（《招魂》）、一口换了三家人的棺材（《心迷宫》）、一个人在火星种土豆（《火星救援》）、一段行车记录仪里的彩色（《大佛普拉斯》）、两个人和一座岛（《灯塔》）、一头把国家打成负数的怪兽（《哥斯拉-1.0》）、以及一个杂志主编的西南公路（《宇宙探索编辑部》）。<br>
+  放在一起看有个共同点：这十部片的核心都不是"发生了什么"，而是"人为了撑住这件事，把自己改成了什么样"。格雷史密斯用十年换一个名字，柯布用四层梦换一句道歉，妮娜用身体换一支舞，村长用三次埋尸换儿子的前程，敷岛用一次撞击换回做人的资格。类型片最好看的地方从来不在类型本身。<br>
+  10 部片名全部为首次出现，无一与往期 340 部重复（比对 `_titles_all.txt` 通过）。<br>
+  几部口碑明显分裂的片子已如实标注、未做修饰：《灯塔》是本期落差最大的一部——烂番茄 90% / Metacritic 83，但豆瓣只有 7.3、IMDb 7.4，观众与影评界几乎是两个片；《哥斯拉-1.0》更极端，烂番茄 99% / Metacritic 81，欧美一边倒好评，豆瓣却是 6.6，主要分歧在男主"特攻队逃兵"的身份；《盗梦空间》影评界（Metacritic 74）也明显低于观众（豆瓣 9.4 / IMDb 8.8）；《黑天鹅》《招魂》《火星救援》同样存在"观众高于影评人"的落差。<br>
+  内地公映情况：仅 4 部登过内地大银幕——《盗梦空间》2010-09-01、《心迷宫》2015-10-16、《火星救援》2015-11-25、《宇宙探索编辑部》2023-04-01；其余 6 部内地未映，流媒体可看（《哥斯拉-1.0》未上亚洲院线，Netflix 可看）。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>十二宫</td><td class="qg">悬疑 / 惊悚（美国 · 一桩至今没破的案）</td><td class="qr">7.5 / 90% / 79</td></tr><tr><td class="qn">02</td><td>盗梦空间</td><td class="qg">科幻 / 悬疑（美国 · 一场四层深的梦）</td><td class="qr">9.4 / 87% / 74</td></tr><tr><td class="qn">03</td><td>黑天鹅</td><td class="qg">惊悚 / 剧情（美国 · 一只白天鹅的崩坏）</td><td class="qr">8.6 / 85% / 79</td></tr><tr><td class="qn">04</td><td>招魂</td><td class="qg">恐怖（美国 · 一栋房子和一对驱魔人）</td><td class="qr">7.9 / 86% / 68</td></tr><tr><td class="qn">05</td><td>心迷宫</td><td class="qg">悬疑 / 剧情（中国大陆 · 一口棺材换三家人）</td><td class="qr">8.7 / 7.7</td></tr><tr><td class="qn">06</td><td>火星救援</td><td class="qg">科幻（美国 / 英国 · 一个人在火星种土豆）</td><td class="qr">8.5 / 91% / 80</td></tr><tr><td class="qn">07</td><td>大佛普拉斯</td><td class="qg">剧情 / 悬疑（中国台湾 · 行车记录仪里的另一种人生）</td><td class="qr">8.7 / 90% / 7.6</td></tr><tr><td class="qn">08</td><td>灯塔</td><td class="qg">恐怖 / 惊悚（美国 / 加拿大 · 两个守灯人和一座岛）</td><td class="qr">7.3 / 90% / 83</td></tr><tr><td class="qn">09</td><td>哥斯拉-1.0</td><td class="qg">科幻 / 灾难（日本 · 从零到负一）</td><td class="qr">6.6 / 99% / 81</td></tr><tr><td class="qn">10</td><td>宇宙探索编辑部</td><td class="qg">科幻 / 剧情（中国大陆 · 一个主编的西南公路）</td><td class="qr">8.0 / 7.6</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/zodiac_poster.jpg" alt="十二宫 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 惊悚（美国 · 一桩至今没破的案）</span><span class="year">2007 · 美国 · 157 分钟（导演剪辑版 162 分钟）· 彩色 · 内地未映</span></div>
+        <h2>十二宫 <span class="en">Zodiac</span></h2>
+        <div class="rates"><span class="rate"><b>7.5</b>豆瓣</span><span class="rate"><b>90%</b>烂番茄</span><span class="rate"><b>79</b>Metacritic</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「我不相信没有答案，我只是还没找到。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1960 年代末的旧金山出现一个自称「十二宫」的连环杀手，杀人之后给报社寄密码信挑衅。《旧金山纪事报》的漫画家罗伯特·格雷史密斯与记者保罗·艾弗里开始追这条线，警探大卫·托斯奇也被卷了进来。十年过去，案子还是没破，人却先老了。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>改编自罗伯特·格雷史密斯的纪实作品；真实案件至今未破，芬奇为此做了近一年半的案卷与走访。</li><li>全片 157 分钟，没有追车、没有枪战，主要动作是打电话、查档案、比对笔迹。</li><li>较早全流程使用数字中间片拍摄的芬奇作品，雨夜与地下室的处理冷到发蓝。</li><li>小罗伯特·唐尼演一个逐渐垮掉的记者，这是他「钢铁侠」之前最被低估的一次表演。</li><li>影片结尾不给凶手，只给一个嫌疑人的名字和一段目击证词——这是它最被争议、也最诚实的地方。</li><li>烂番茄 90% / Metacritic 79，是芬奇作品里「影评人与观众分歧最大」的一部之一。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/zodiac_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/zodiac_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/zodiac_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_7467.jpg" alt="" loading="lazy">
+                <div class="p-name">大卫·芬奇 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、制片。《七宗罪》《搏击俱乐部》《十二宫》(2007)《本杰明·巴顿奇事》《社交网络》《消失的爱人》。他拍的几乎都是「人怎么被自己的执念吞掉」，本片是他最克制、也最不肯给安慰的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_550.jpg" alt="" loading="lazy"><span>搏击俱乐部</span></div><div class="wk"><img src="assets/movies/w_807.jpg" alt="" loading="lazy"><span>七宗罪</span></div><div class="wk"><img src="assets/movies/w_210577.jpg" alt="" loading="lazy"><span>消失的爱人</span></div><div class="wk"><img src="assets/movies/w_4922.jpg" alt="" loading="lazy"><span>本杰明·巴顿奇事</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_131.jpg" alt="" loading="lazy">
+                <div class="p-name">杰克·吉伦哈尔 <span class="p-role">主演（罗伯特·格雷史密斯）</span></div>
+              </div>
+              <div class="p-note">美国演员。《死亡幻觉》《断背山》《源代码》《夜行者》《蜘蛛侠：英雄远征》。本片他演罗伯特·格雷史密斯——从报纸漫画家变成业余侦探的人，也是全片唯一没有放弃的那一个。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_141.jpg" alt="" loading="lazy"><span>死亡幻觉</span></div><div class="wk"><img src="assets/movies/w_242582.jpg" alt="" loading="lazy"><span>夜行者</span></div><div class="wk"><img src="assets/movies/w_45612.jpg" alt="" loading="lazy"><span>源代码</span></div><div class="wk"><img src="assets/movies/w_429617.jpg" alt="" loading="lazy"><span>蜘蛛侠：英雄远征</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_3223.jpg" alt="" loading="lazy">
+                <div class="p-name">小罗伯特·唐尼 <span class="p-role">主演（保罗·艾弗里）</span></div>
+              </div>
+              <div class="p-note">美国演员。《卓别林》《钢铁侠》系列、《复仇者联盟》系列、《十二宫》《奥本海默》。本片他演记者保罗·艾弗里——「钢铁侠」之前最重要的角色，一个先把案子当头条、最后被它拖垮的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_24428.jpg" alt="" loading="lazy"><span>复仇者联盟</span></div><div class="wk"><img src="assets/movies/w_299536.jpg" alt="" loading="lazy"><span>复仇者联盟3：无限战争</span></div><div class="wk"><img src="assets/movies/w_1726.jpg" alt="" loading="lazy"><span>钢铁侠</span></div><div class="wk"><img src="assets/movies/w_299534.jpg" alt="" loading="lazy"><span>复仇者联盟4：终局之战</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《十二宫》最反套路的地方是它拒绝给你一个结局。轻微剧透：真正的转折不在案子，在人。格雷史密斯从一个凑热闹的漫画家，一点点变成比警察还熟卷宗的调查者，代价是丢了工作、散了家；等他终于在地下档案室里说出一个名字，镜头却什么都没替他证明。芬奇拍的不是「追凶」，是「追的过程怎么把人换掉」——托斯奇升了职又降了职，艾弗里喝到进戒毒所，格雷史密斯赢了推理、输掉了生活。它常被批评太长、太闷、太没有高潮，但这三点恰恰是它的主题：真实世界里，一桩案子不会在两小时内被解决，它只是慢慢凉下去，而追它的人还在原地。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《杀人回忆》那种「追不下去的案子」的人；能接受两个半小时慢节奏、没有最终反转的观众。含凶案现场与血腥照片镜头，压迫感中等，无大尺度画面。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/inception_poster.jpg" alt="盗梦空间 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 悬疑（美国 · 一场四层深的梦）</span><span class="year">2010 · 美国 / 英国 · 148 分钟 · 彩色 · 内地 2010-09-01 公映</span></div>
+        <h2>盗梦空间 <span class="en">Inception</span></h2>
+        <div class="rates"><span class="rate"><b>9.4</b>豆瓣</span><span class="rate"><b>87%</b>烂番茄</span><span class="rate"><b>74</b>Metacritic</span><span class="rate"><b>8.8</b>IMDb</span></div>
+        <p class="oneline">「你在等一班火车，它会带你去很远的地方。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>造梦师柯布带着团队做一件事：不是偷东西，而是把一个想法种进目标人物的脑子里。为了完成它，他们要潜入四层梦境，每一层的时间流速都不同。而柯布自己带着一个不该被带进梦里的人——他死去的妻子梅尔。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 83 届奥斯卡八项提名、四项获奖：最佳摄影、最佳视觉效果、最佳音效剪辑、最佳混音。</li><li>诺兰筹备近十年；汉斯·季默的配乐把《Non, je ne regrette rien》放慢成主题动机——那是梅尔的声音。</li><li>巴黎街景折叠、走廊失重打斗两场戏大量使用实景与机械装置，绿幕比想象中少得多。</li><li>「图腾」（陀螺）最后到底停没停，是近二十年最著名的开放式结局之一。</li><li>内地 2010-09-01 公映，是诺兰第一部同步引进内地的作品；豆瓣 9.4 长年在 TOP250 前十。</li><li>影评界（Metacritic 74）比观众（豆瓣 9.4 / IMDb 8.8）克制得多，主要批评是「解释太多、情感太少」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/inception_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/inception_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/inception_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_525.jpg" alt="" loading="lazy">
+                <div class="p-name">克里斯托弗·诺兰 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">英国导演、编剧、制片。《记忆碎片》《蝙蝠侠：黑暗骑士》三部曲、《盗梦空间》(2010)《星际穿越》《敦刻尔克》《信条》《奥本海默》。他把商业大片拍成了结构游戏，本片是他第一次把「时间」当成剪辑单位。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_157336.jpg" alt="" loading="lazy"><span>星际穿越</span></div><div class="wk"><img src="assets/movies/w_155.jpg" alt="" loading="lazy"><span>蝙蝠侠：黑暗骑士</span></div><div class="wk"><img src="assets/movies/w_49026.jpg" alt="" loading="lazy"><span>蝙蝠侠：黑暗骑士崛起</span></div><div class="wk"><img src="assets/movies/w_272.jpg" alt="" loading="lazy"><span>蝙蝠侠：侠影之谜</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6193.jpg" alt="" loading="lazy">
+                <div class="p-name">莱昂纳多·迪卡普里奥 <span class="p-role">主演（多姆·柯布）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片。《泰坦尼克号》《无间道风云》《禁闭岛》《盗梦空间》《荒野猎人》(2016 奥斯卡影帝)《好莱坞往事》。本片他演柯布——一个能拆开别人的梦、却拆不掉自己负罪感的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_597.jpg" alt="" loading="lazy"><span>泰坦尼克号</span></div><div class="wk"><img src="assets/movies/w_106646.jpg" alt="" loading="lazy"><span>华尔街之狼</span></div><div class="wk"><img src="assets/movies/w_11324.jpg" alt="" loading="lazy"><span>禁闭岛</span></div><div class="wk"><img src="assets/movies/w_281957.jpg" alt="" loading="lazy"><span>荒野猎人</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_24045.jpg" alt="" loading="lazy">
+                <div class="p-name">约瑟夫·高登-莱维特 <span class="p-role">主演（亚瑟）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《和莎莫的500天》《环形使者》《蝙蝠侠：黑暗骑士崛起》《斯诺登》《利刃出鞘》。本片他演亚瑟——柯布最可靠的搭档，负责在梦里把所有人叫醒。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_19913.jpg" alt="" loading="lazy"><span>和莎莫的500天</span></div><div class="wk"><img src="assets/movies/w_59967.jpg" alt="" loading="lazy"><span>环形使者</span></div><div class="wk"><img src="assets/movies/w_49026.jpg" alt="" loading="lazy"><span>蝙蝠侠：黑暗骑士崛起</span></div><div class="wk"><img src="assets/movies/w_302401.jpg" alt="" loading="lazy"><span>斯诺登</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《盗梦空间》真正讲的不是梦，是负罪感。柯布每次入梦，梅尔都会出现——不是她想杀他，是他不敢让她消失。轻微剧透：真正的转折在第四层。他终于说出「是我把怀疑种进了她脑子里」，这一句把整部片从科幻翻成了伦理：他偷了一辈子的东西，最后偷走的是妻子对现实的判断。影片的结尾在陀螺还在转的时候切走了，诺兰很聪明——他让观众自己决定柯布要不要留下来，可答案其实早写在那句台词里：他已经不想再看清那张脸了。这部片批評它「冷」的人说得没错，它确实把情感压在结构下面，但当你第二遍看的时候会发现，所有关于「时间」的设计，都只是为了多给梅尔几秒钟。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近二十年结构最完整的商业科幻的人；喜欢《星际穿越》《记忆碎片》这类「需要看两遍」的观众。含枪战与动作场面，无血腥；概念密集，第一次看建议集中注意力。内地公映过，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/swan_poster.jpg" alt="黑天鹅 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 剧情（美国 · 一只白天鹅的崩坏）</span><span class="year">2010 · 美国 · 108 分钟 · 彩色 · 内地未映</span></div>
+        <h2>黑天鹅 <span class="en">Black Swan</span></h2>
+        <div class="rates"><span class="rate"><b>8.6</b>豆瓣</span><span class="rate"><b>85%</b>烂番茄</span><span class="rate"><b>79</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「我只想要完美。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>纽约一家芭蕾舞团要重排《天鹅湖》，要求领舞一人分饰白天鹅与黑天鹅。技术无懈可击的妮娜拿到了角色，可她演不出黑天鹅的欲望与危险。随着首演临近，她的身体开始出现异常：背上的抓痕、脚趾的裂口，以及镜子里那个不跟着她动的自己。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>娜塔莉·波特曼凭此片拿下第 83 届奥斯卡影后；她为此训练一年多，片中大量舞蹈由她本人完成。</li><li>阿罗诺夫斯基把《天鹅湖》的人物关系和妮娜的处境一一对应：母亲、总监、莉莉分别对应王后、魔王与黑天鹅。</li><li>全片用 16mm 手持摄影贴着波特曼拍，观众从头到尾被关在她的视角里，几乎没有喘息镜头。</li><li>文森特·卡塞尔演的总监把「解放天性」当成控制手段——这条线近十年被反复重新解读。</li><li>成本约 1300 万美元，全球票房 3.3 亿美元，是当年最赚钱的艺术向惊悚片。</li><li>豆瓣 8.6 / 烂番茄 85%，观众评价明显高于影评界（Metacritic 79），分歧主要在「心理惊悚还是夸张过火」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/swan_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/swan_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/swan_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6431.jpg" alt="" loading="lazy">
+                <div class="p-name">达伦·阿罗诺夫斯基 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧。《圆周率》《梦之安魂曲》《摔角王》《黑天鹅》(2010)《诺亚方舟：创世之旅》《母亲！》《鲸》。他几乎只拍一种人：为了某件事把自己烧到尽头的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_641.jpg" alt="" loading="lazy"><span>梦之安魂曲</span></div><div class="wk"><img src="assets/movies/w_381283.jpg" alt="" loading="lazy"><span>母亲！</span></div><div class="wk"><img src="assets/movies/w_86834.jpg" alt="" loading="lazy"><span>诺亚方舟：创世之旅</span></div><div class="wk"><img src="assets/movies/w_785084.jpg" alt="" loading="lazy"><span>鲸</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_524.jpg" alt="" loading="lazy">
+                <div class="p-name">娜塔莉·波特曼 <span class="p-role">主演（妮娜·塞耶斯）</span></div>
+              </div>
+              <div class="p-note">美籍以色列演员。《这个杀手不太冷》《V字仇杀队》《黑天鹅》(2011 奥斯卡影后)《第一夫人》《湮灭》。本片她演妮娜，为此训练一年多，片中大量舞蹈由她本人完成。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_752.jpg" alt="" loading="lazy"><span>V字仇杀队</span></div><div class="wk"><img src="assets/movies/w_10195.jpg" alt="" loading="lazy"><span>雷神</span></div><div class="wk"><img src="assets/movies/w_300668.jpg" alt="" loading="lazy"><span>湮灭</span></div><div class="wk"><img src="assets/movies/w_76338.jpg" alt="" loading="lazy"><span>雷神2：黑暗世界</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_18973.jpg" alt="" loading="lazy">
+                <div class="p-name">米拉·库尼斯 <span class="p-role">主演（莉莉）</span></div>
+              </div>
+              <div class="p-note">美籍乌克兰演员。《70年代秀》《黑天鹅》《泰迪熊》《木星上行》《坏妈妈》。本片她演莉莉——一个什么都不费劲、却刚好拥有妮娜缺的那部分的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_72105.jpg" alt="" loading="lazy"><span>泰迪熊</span></div><div class="wk"><img src="assets/movies/w_376659.jpg" alt="" loading="lazy"><span>坏妈妈</span></div><div class="wk"><img src="assets/movies/w_50544.jpg" alt="" loading="lazy"><span>朋友也上床</span></div><div class="wk"><img src="assets/movies/w_76757.jpg" alt="" loading="lazy"><span>木星上行</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在化妆间。妮娜把碎玻璃捅进了「莉莉」的身体，然后发现那具身体是自己的。阿罗诺夫斯基从头到尾没告诉你哪一段是真的——拔倒刺、镜子里的自己、背上冒出的羽毛，全都可能是妮娜的幻觉。他真正厉害的地方在于：这不是一个「她疯了」的故事，而是一个「她必须疯掉才演得好」的故事。白天鹅要求完美，黑天鹅要求失控，一个从小被母亲培养成乖女儿的人，只能通过伤害自己来够到后者。最后那句「I felt it. Perfect. It was perfect.」是全片最冷的一句——她做到了，而代价是她自己。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年最好的「表演驱动型」心理惊悚的人；喜欢《梦之安魂曲》《夜行动物》《塔尔》这类压迫感影片的观众。含自残、性暗示与幻觉惊吓场面，心理压迫感强。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/conjuring_poster.jpg" alt="招魂 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖（美国 · 一栋房子和一对驱魔人）</span><span class="year">2013 · 美国 · 112 分钟 · 彩色 · 内地未映</span></div>
+        <h2>招魂 <span class="en">The Conjuring</span></h2>
+        <div class="rates"><span class="rate"><b>7.9</b>豆瓣</span><span class="rate"><b>86%</b>烂番茄</span><span class="rate"><b>68</b>Metacritic</span><span class="rate"><b>7.5</b>IMDb</span></div>
+        <p class="oneline">「它想要我的孩子。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1971 年，佩伦一家搬进罗德岛一栋旧农舍。先是狗死在院子里，接着是母亲身上的淤青、夜里被关进地下室的女儿，以及一个怎么也停不下来的钟。他们请来了超自然调查者埃德与洛琳·沃伦——两个真的以此为生的人。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>温子仁执导，成本约 2000 万美元，全球票房 3.2 亿美元，催生了后来的「招魂宇宙」。</li><li>故事来自沃伦夫妇的真实档案；片尾字幕写明案件编号与当事人结局，洛琳本人参与了前期工作。</li><li>全片几乎没有血浆，靠长镜头、慢推和声音设计取胜——地下室拍手那场戏没有一个特效镜头。</li><li>维拉·法米加与帕特里克·威尔逊的搭档是整套系列的地基，两人此后合作了四部以上。</li><li>结尾被收进「器物室」的那只音乐盒，真实存在于沃伦家的博物馆里。</li><li>烂番茄 86% / Metacritic 68：观众把它当近年最好的鬼屋片，影评界认为它「手法老派但极其有效」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/conjuring_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/conjuring_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/conjuring_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2127.jpg" alt="" loading="lazy">
+                <div class="p-name">温子仁 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">澳籍华裔导演、编剧、制片。《电锯惊魂》《死寂》《潜伏》《招魂》(2013)《速度与激情7》《海王》。他把恐怖片从血浆拉回了「声音与耐心」，本片是他真正打开局面的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_297802.jpg" alt="" loading="lazy"><span>海王</span></div><div class="wk"><img src="assets/movies/w_168259.jpg" alt="" loading="lazy"><span>速度与激情7</span></div><div class="wk"><img src="assets/movies/w_176.jpg" alt="" loading="lazy"><span>电锯惊魂</span></div><div class="wk"><img src="assets/movies/w_259693.jpg" alt="" loading="lazy"><span>招魂2</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_21657.jpg" alt="" loading="lazy">
+                <div class="p-name">维拉·法米加 <span class="p-role">主演（洛琳·沃伦）</span></div>
+              </div>
+              <div class="p-note">美国演员。《深入骨头》《无间道风云》《在云端》《招魂》系列、《贝茨旅馆》。本片她演洛琳·沃伦——一个能看见、却必须装作只是来「看看」的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_259693.jpg" alt="" loading="lazy"><span>招魂2</span></div><div class="wk"><img src="assets/movies/w_423108.jpg" alt="" loading="lazy"><span>招魂3</span></div><div class="wk"><img src="assets/movies/w_21208.jpg" alt="" loading="lazy"><span>孤儿怨</span></div><div class="wk"><img src="assets/movies/w_14574.jpg" alt="" loading="lazy"><span>穿条纹睡衣的男孩</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_17178.jpg" alt="" loading="lazy">
+                <div class="p-name">帕特里克·威尔逊 <span class="p-role">主演（埃德·沃伦）</span></div>
+              </div>
+              <div class="p-note">美国演员。《歌剧魅影》《守望者》《潜伏》系列、《招魂》系列、《海王》。本片他演埃德·沃伦——负责把妻子看到的东西，变成能被法院接受的证据。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_49018.jpg" alt="" loading="lazy"><span>潜伏</span></div><div class="wk"><img src="assets/movies/w_13183.jpg" alt="" loading="lazy"><span>守望者</span></div><div class="wk"><img src="assets/movies/w_91586.jpg" alt="" loading="lazy"><span>潜伏2</span></div><div class="wk"><img src="assets/movies/w_259693.jpg" alt="" loading="lazy"><span>招魂2</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在洛琳。整部片里最让人不安的不是鬼，是她——一个能看见东西、却必须装作只是来「看看」的女人。她每次进门先闻味道、先看孩子的房间，那一套动作比任何驱魔仪式都真实。温子仁很清楚自己在做什么：他不解释恶从哪来，只让它一点点挤进这栋房子——先是一只鸟撞死在窗上，再是钟停在 3:07，最后才是附身。它最聪明的一点是：这一家人从头到尾没做错任何事，他们只是买不起别的房子。恐怖片拍到这个份上，吓人已经不是目的了。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近十年最扎实的鬼屋题材的人；喜欢《潜伏》《寂静之地》这类靠氛围而非血浆的观众。含附身、惊吓跳吓与儿童受威胁场面，无血腥，情绪紧张。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/coffin_poster.jpg" alt="心迷宫 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 剧情（中国大陆 · 一口棺材换三家人）</span><span class="year">2014 · 中国大陆（2015-10-16 公映）· 110 分钟 · 彩色</span></div>
+        <h2>心迷宫 <span class="en">The Coffin in the Mountain</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「做事要对得起良心。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>河南一个山村，清晨突然多出一具烧焦的尸体。村里同时失踪了少女黄欢、外出打工的瘸子陈自立，以及欠了一屁股赌债的白虎。于是这口棺材在六天里被三户人家认领、退回、再借走——每一次转手，都有人松一口气，也都有人开始心虚。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>忻钰坤长片处女作，成本约 170 万元，全部使用河南本地非职业演员。</li><li>2014 年拿下第 8 届 FIRST 青年影展最佳剧情长片，并入围第 71 届威尼斯影评人周。</li><li>全片用环形叙事，同一件事从三个人的视角各讲一遍，每次补上一块拼图。</li><li>豆瓣 8.7，长年在「国产悬疑天花板」与「2015 年国产片评分第一」的讨论里被提起。</li><li>原名《殡棺》，改名为《心迷宫》有向科恩兄弟《血迷宫》致敬的意思。</li><li>结尾父子隔着一口棺材对视、没有一句台词的那场戏，是全片被引用最多的镜头。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/coffin_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/coffin_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/coffin_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1363480.jpg" alt="" loading="lazy">
+                <div class="p-name">忻钰坤 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">中国导演、编剧。《心迷宫》(2014，处女作)《暴裂无声》。写《心迷宫》剧本那一年他在家做饭、靠太太上班养家；全片成本约 170 万元，拍摄 26 天。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_473328.jpg" alt="" loading="lazy"><span>暴裂无声</span></div><div class="wk"><img src="assets/movies/w_386235.jpg" alt="" loading="lazy"><span>再见，在也不见</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1363474.jpg" alt="" loading="lazy">
+                <div class="p-name">霍卫民 <span class="p-role">主演（村长肖卫国）</span></div>
+              </div>
+              <div class="p-note">中国演员（河南话剧团出身，非职业电影演员）。本片他演村长肖卫国——一辈子讲「对得起良心」，最后烧了一具尸体、埋了一具、又刨了一具。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_852005.jpg" alt="" loading="lazy"><span>狂鳄海啸</span></div><div class="wk"><img src="assets/movies/w_816622.jpg" alt="" loading="lazy"><span>猎梦人</span></div><div class="wk"><img src="assets/movies/w_1271965.jpg" alt="" loading="lazy"><span>猎杀</span></div><div class="wk"><img src="assets/movies/w_1650257.jpg" alt="" loading="lazy"><span>哀牢山</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1363476.jpg" alt="" loading="lazy">
+                <div class="p-name">王笑天 <span class="p-role">主演（肖宗耀）</span></div>
+              </div>
+              <div class="p-note">中国演员。本片他演肖宗耀——村长的儿子，一失手推死了人，然后发现全村都在替他圆谎。</div>
+              
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不是「凶手是谁」——答案在第二十分钟就给了。这部片真正玩的是「谁以为自己杀了人」。村长替儿子烧尸、埋尸、刨尸，把同一具尸体在村里转了三手；大壮举起铁棍又放下，结果被所有人记成了恩人；丽琴把金手镯递回去时说的是谢谢。每个人都在为自己那点私心撒一个很小的谎，然后这些谎自动咬合成了一个谁也拆不开的结。它最好笑也最冷的地方是：全村没有一个人是坏人，也没有一个人清白。六天里死了两个人，而村长一辈子挂在嘴边的那句「做事要对得起良心」，最后成了这部片最锋利的一句反话。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看国产小成本悬疑能做到什么程度的人；喜欢《暴裂无声》《杀人回忆》这类乡土/犯罪题材的观众。含尸体、家暴与死亡场面，无血腥特写；方言对白，节奏偏慢。流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/martian_poster.jpg" alt="火星救援 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻（美国 / 英国 · 一个人在火星种土豆）</span><span class="year">2015 · 美国 / 英国（匈牙利、约旦取景）· 144 分钟 · 彩色 · 内地 2015-11-25 公映</span></div>
+        <h2>火星救援 <span class="en">The Martian</span></h2>
+        <div class="rates"><span class="rate"><b>8.5</b>豆瓣</span><span class="rate"><b>91%</b>烂番茄</span><span class="rate"><b>80</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「我要用科学干出一条生路来。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>阿瑞斯 3 号任务遭遇巨型风暴提前撤离，植物学家马克·沃特尼被吹飞的天线击中，队友以为他已经死了。醒来后他发现自己一个人被留在火星，补给只够一个月，下一次任务要四年之后。他开始算：用粪便做肥料种土豆，用火箭燃料制水，以及想办法让地球知道他还活着。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>雷德利·斯科特执导，改编自安迪·威尔的同名小说——最初是作者自费连载的网络小说。</li><li>第 88 届奥斯卡七项提名，包括最佳影片与最佳改编剧本；金球奖拿下音乐/喜剧类最佳影片与最佳男主。</li><li>NASA 全程担任顾问，片中大量设定（同位素电池取暖、离子推进器）都有现实依据。</li><li>杰西卡·查斯坦演的指挥官刘易斯，是「地球一侧」的道德锚点。</li><li>内地 2015-11-25 公映，票房约 5.9 亿人民币，豆瓣 8.5。</li><li>烂番茄 91% / Metacritic 80——影评界普遍认为它「技术过硬但过于乐观」，观众几乎没有意见。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/martian_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/martian_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/martian_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_578.jpg" alt="" loading="lazy">
+                <div class="p-name">雷德利·斯科特 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">英国导演、制片。《异形》《银翼杀手》《末路狂花》《角斗士》《火星救援》(2015)《最后的决斗》。八十多岁还在拍，本片是他少有的乐观之作。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_98.jpg" alt="" loading="lazy"><span>角斗士</span></div><div class="wk"><img src="assets/movies/w_348.jpg" alt="" loading="lazy"><span>异形</span></div><div class="wk"><img src="assets/movies/w_78.jpg" alt="" loading="lazy"><span>银翼杀手</span></div><div class="wk"><img src="assets/movies/w_70981.jpg" alt="" loading="lazy"><span>普罗米修斯</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1892.jpg" alt="" loading="lazy">
+                <div class="p-name">马特·达蒙 <span class="p-role">主演（马克·沃特尼）</span></div>
+              </div>
+              <div class="p-note">美国演员、编剧。《心灵捕手》(1998 奥斯卡最佳原创剧本)《谍影重重》系列、《火星救援》(金球奖最佳男主)《极速车王》《奥本海默》。本片他几乎一个人撑了两个多小时。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_489.jpg" alt="" loading="lazy"><span>心灵捕手</span></div><div class="wk"><img src="assets/movies/w_2501.jpg" alt="" loading="lazy"><span>谍影重重</span></div><div class="wk"><img src="assets/movies/w_68724.jpg" alt="" loading="lazy"><span>极乐空间</span></div><div class="wk"><img src="assets/movies/w_359724.jpg" alt="" loading="lazy"><span>极速车王</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_83002.jpg" alt="" loading="lazy">
+                <div class="p-name">杰西卡·查斯坦 <span class="p-role">主演（梅丽莎·刘易斯）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片。《生命之树》《猎杀本·拉登》《星际穿越》《火星救援》《茉莉牌局》。本片她演指挥官梅丽莎·刘易斯——「要不要回去救他」那一票的发言人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_157336.jpg" alt="" loading="lazy"><span>星际穿越</span></div><div class="wk"><img src="assets/movies/w_474350.jpg" alt="" loading="lazy"><span>小丑回魂2</span></div><div class="wk"><img src="assets/movies/w_97630.jpg" alt="" loading="lazy"><span>猎杀本·拉登</span></div><div class="wk"><img src="assets/movies/w_132232.jpg" alt="" loading="lazy"><span>妈妈</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在火星，在地球。全片最动人的一场戏是一屋子 NASA 高管在投票——救一个人要花多少钱、值不值、要不要告诉队员真相。沃特尼这边一直在说「我解决一个问题，再解决下一个」，而地球那边在算账。斯科特很聪明地把这两件事剪在一起：一个人靠常识活下来，一群人靠协作把他接回来。它常被说「太顺了」，可这份顺正是它的主题——在一个没人跟你说话的地方，唯一能做的就是把大问题拆成小问题，然后一个一个解决掉。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近十年最不费力的硬科幻的人；喜欢《星际穿越》《地心引力》这类太空题材、但不想要沉重结局的观众。无血腥与暴力，含少量粗口，基调乐观。内地公映过，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/buddha_poster.jpg" alt="大佛普拉斯 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 悬疑（中国台湾 · 行车记录仪里的另一种人生）</span><span class="year">2017 · 中国台湾 · 102 分钟 · 黑白 + 彩色 · 内地未映</span></div>
+        <h2>大佛普拉斯 <span class="en">The Great Buddha+</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>90%</b>烂番茄</span><span class="rate"><b>7.6</b>IMDb</span></div>
+        <p class="oneline">「有来有去，人生就是这样。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>菜埔是佛像工厂的夜班保安，肚财是收破烂的。两个人夜晚唯一的娱乐，是偷看老板黄启文的行车记录仪——那是他们唯一能看到「有钱人怎么活」的窗口。直到某天夜里，画面里出现了一具尸体。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>黄信尧从纪录片转剧情片的第一部长片；此前的短片《大佛》已经拿下金马奖。</li><li>第 54 届金马奖五项获奖，包括最佳改编剧本、最佳新导演与最佳摄影。</li><li>全片主体黑白，只有行车记录仪里的画面是彩色的——这个设定本身就是它的阶层隐喻。</li><li>导演本人担任旁白，时不时跳出来吐槽角色与剧情，是 2010 年代最特别的叙事设计之一。</li><li>台语、客语、国语混用，配乐由林生祥创作。</li><li>豆瓣 8.7 / 烂番茄 90%，海外媒体称它是「台客大叔版的贾木许加希区柯克」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/buddha_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/buddha_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/buddha_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1576769.jpg" alt="" loading="lazy">
+                <div class="p-name">黄信尧 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">中国台湾导演，纪录片出身。《大佛》（短片）《大佛普拉斯》(2017)《同学麦娜丝》。他习惯在片里自己讲旁白，边讲边吐槽自己的人物。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_739267.jpg" alt="" loading="lazy"><span>同学麦娜丝</span></div><div class="wk"><img src="assets/movies/w_382536.jpg" alt="" loading="lazy"><span>大佛</span></div><div class="wk"><img src="assets/movies/w_489410.jpg" alt="" loading="lazy"><span>沉没之岛</span></div><div class="wk"><img src="assets/movies/w_939939.jpg" alt="" loading="lazy"><span>北將七</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1844024.jpg" alt="" loading="lazy">
+                <div class="p-name">庄益增 <span class="p-role">主演（菜埔）</span></div>
+              </div>
+              <div class="p-note">中国台湾演员。《一路顺风》《大佛普拉斯》《消失的情人节》《老狐狸》。本片他演菜埔——一个连自己家都顾不好的夜班保安。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_411005.jpg" alt="" loading="lazy"><span>一路顺风</span></div><div class="wk"><img src="assets/movies/w_382536.jpg" alt="" loading="lazy"><span>大佛</span></div><div class="wk"><img src="assets/movies/w_733573.jpg" alt="" loading="lazy"><span>消失的情人节</span></div><div class="wk"><img src="assets/movies/w_1006012.jpg" alt="" loading="lazy"><span>老狐狸</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1743150.jpg" alt="" loading="lazy">
+                <div class="p-name">陈竹昇 <span class="p-role">主演（肚财）</span></div>
+              </div>
+              <div class="p-note">中国台湾演员。《艋舺》《总铺师》《大佛普拉斯》《消失的情人节》。本片他演肚财——收破烂的，也是全片唯一一个会为别人哭的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_40911.jpg" alt="" loading="lazy"><span>艋舺</span></div><div class="wk"><img src="assets/movies/w_468208.jpg" alt="" loading="lazy"><span>嘉年华</span></div><div class="wk"><img src="assets/movies/w_214674.jpg" alt="" loading="lazy"><span>总铺师</span></div><div class="wk"><img src="assets/movies/w_733573.jpg" alt="" loading="lazy"><span>消失的情人节</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在最后那场法会。所有人都以为那件事会被压下去，结果大佛肚子里传出的声音在几万人面前响了起来——这一下把「底层偷看上层」的黑色喜剧直接顶成了寓言。黄信尧最狠的地方是他不愤怒：他只是让两个连饭都吃不饱的人，对着一段行车记录仪羡慕人家「至少还有人陪他睡觉」。他们偷看到的从来不是真相，是另一种生活；等真相真的出现，反而是他们自己先被吓住。全片最安静的一句是那句旁白：「对他们来说，只要能顺利过完这辈子就很不容易了。」</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看中文电影里少见的「荒诞 + 悲悯」气质的人；喜欢《一路顺风》《同学麦娜丝》这类台湾黑色喜剧的观众。含命案画面与大量粗口，尺度不小；黑白摄影，节奏舒缓。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/light_poster.jpg" alt="灯塔 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 惊悚（美国 / 加拿大 · 两个守灯人和一座岛）</span><span class="year">2019 · 美国 / 加拿大 · 109 分钟 · 黑白 · 内地未映</span></div>
+        <h2>灯塔 <span class="en">The Lighthouse</span></h2>
+        <div class="rates"><span class="rate"><b>7.3</b>豆瓣</span><span class="rate"><b>90%</b>烂番茄</span><span class="rate"><b>83</b>Metacritic</span><span class="rate"><b>7.4</b>IMDb</span></div>
+        <p class="oneline">「为什么你要看我的灯？」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1890 年代，年轻的前伐木工温斯洛来到新英格兰外海的一座孤岛，与老守灯人托马斯·韦克一起值班四周。补给船没来，风暴不断；等酒也喝光之后，两个人开始分不清谁在说谎、谁在服从，以及灯塔顶上那个东西到底能不能看。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>罗伯特·艾格斯第二部长片，1.19:1 方形画幅 + 黑白摄影，用改装过的 1930 年代老镜头拍摄。</li><li>罗伯特·帕丁森与威廉·达福两个人撑满 109 分钟；达福的台词是导演仿 19 世纪新英格兰水手写成的。</li><li>第 35 届独立精神奖五项提名；帕丁森凭此片第一次被认真当作演员讨论。</li><li>神话线索取自普罗米修斯与普罗透斯——偷火、变形与被惩罚，正好对应两个人。</li><li>全片在加拿大新斯科舍实拍，灯塔是搭的，海鸥和雾是真的。</li><li>烂番茄 90% / Metacritic 83，影评界评价远高于观众（豆瓣 7.3 / IMDb 7.4），是本期落差最大的一部。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/light_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/light_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/light_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_138781.jpg" alt="" loading="lazy">
+                <div class="p-name">罗伯特·艾格斯 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧。《女巫》《灯塔》(2019)《北欧人》《诺斯费拉图》。他拍古装片会先考据那个年代的人怎么说话、吃什么、怕什么，本片是他的第二部长片。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_310131.jpg" alt="" loading="lazy"><span>女巫</span></div><div class="wk"><img src="assets/movies/w_639933.jpg" alt="" loading="lazy"><span>北欧人</span></div><div class="wk"><img src="assets/movies/w_426063.jpg" alt="" loading="lazy"><span>诺斯费拉图</span></div><div class="wk"><img src="assets/movies/w_397805.jpg" alt="" loading="lazy"><span>兄弟（短片）</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11288.jpg" alt="" loading="lazy">
+                <div class="p-name">罗伯特·帕丁森 <span class="p-role">主演（埃弗莱姆·温斯洛）</span></div>
+              </div>
+              <div class="p-note">英国演员。《暮光之城》系列、《好时光》《灯塔》《信条》《新蝙蝠侠》。本片是他摆脱「偶像」标签的关键一部——整部片只有两个演员，他撑满了后半段。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_414906.jpg" alt="" loading="lazy"><span>新蝙蝠侠</span></div><div class="wk"><img src="assets/movies/w_8966.jpg" alt="" loading="lazy"><span>暮光之城</span></div><div class="wk"><img src="assets/movies/w_577922.jpg" alt="" loading="lazy"><span>信条</span></div><div class="wk"><img src="assets/movies/w_18239.jpg" alt="" loading="lazy"><span>暮光之城2：新月</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5293.jpg" alt="" loading="lazy">
+                <div class="p-name">威廉·达福 <span class="p-role">主演（托马斯·韦克）</span></div>
+              </div>
+              <div class="p-note">美国演员。《野战排》《蜘蛛侠》系列、《佛罗里达乐园》《灯塔》《疾速追杀》《诺斯费拉图》。本片他演托马斯·韦克——满嘴莎剧腔、把灯塔当私产的老守灯人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_557.jpg" alt="" loading="lazy"><span>蜘蛛侠</span></div><div class="wk"><img src="assets/movies/w_245891.jpg" alt="" loading="lazy"><span>疾速追杀</span></div><div class="wk"><img src="assets/movies/w_12.jpg" alt="" loading="lazy"><span>海底总动员</span></div><div class="wk"><img src="assets/movies/w_297802.jpg" alt="" loading="lazy"><span>海王</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在他们喝完最后一箱酒之前。托马斯一直说「上去看灯」是被禁止的，可他自己就是守灯人——于是这句话变成了权力：谁能看，谁不能看。艾格斯把两个人的关系写成一场没有出口的主奴游戏，越往后越难分清谁是雇主、谁是仆人、谁先疯。最后温斯洛终于爬到了顶上，海鸥把他拖了回来，镜头拉远，什么都没解释。这部片不好看，但它做到了恐怖片很少做到的事：让你从头到尾感到湿、冷、咸，以及两个人之间那种说不清楚的羞耻。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年最「不妥协」的作者恐怖片的人；喜欢《女巫》《北欧人》这类民俗惊悚的观众。含暴力、性暗示、全裸与大量粗口，节奏缓慢、无配乐铺垫，接受门槛高。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/godzilla_poster.jpg" alt="哥斯拉-1.0 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 灾难（日本 · 从零到负一）</span><span class="year">2023 · 日本 · 125 分钟 · 彩色 · 内地未映</span></div>
+        <h2>哥斯拉-1.0 <span class="en">Godzilla Minus One</span></h2>
+        <div class="rates"><span class="rate"><b>6.6</b>豆瓣</span><span class="rate"><b>99%</b>烂番茄</span><span class="rate"><b>81</b>Metacritic</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「我的战争还没结束。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1945 年，神风特攻队员敷岛浩一在战时逃过一死，战后回到已成焦土的东京，父母双亡。他收留了抱着孤儿的大石典子，三个人凑成一个临时的家。然后哥斯拉来了，把一个刚归零的国家又打成了负数。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 96 届奥斯卡最佳视觉效果——首部拿下小金人的哥斯拉电影，也是首部获此奖的日本电影。</li><li>山崎贵自编自导并亲自做视效，全片特效成本约 1500 万美元，不到好莱坞同类片的十分之一。</li><li>为哥斯拉诞生 70 周年纪念作，东宝第 30 部哥斯拉片。</li><li>安藤樱凭配角戏拿下第 47 届日本电影学院奖最佳女配角。</li><li>口碑分裂得极其典型：烂番茄 99% / Metacritic 81，欧美几乎一边倒好评；豆瓣只有 6.6，国内观众对「神风特攻队逃兵」这条线的接受度明显更低。</li><li>全球票房约 1.16 亿美元，是当年最赚钱的非英语片之一。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/godzilla_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/godzilla_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/godzilla_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_43652.jpg" alt="" loading="lazy">
+                <div class="p-name">山崎贵 <span class="p-role">导演 / 编剧 / 视效</span></div>
+              </div>
+              <div class="p-note">日本导演、编剧、视效总监。《永远的三丁目的夕阳》系列、《哆啦A梦：伴我同行》《寄生兽》《哥斯拉-1.0》(2023)。他把视效当叙事工具用，本片一人包了导演、编剧、视效三份工作。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_265712.jpg" alt="" loading="lazy"><span>哆啦A梦：伴我同行</span></div><div class="wk"><img src="assets/movies/w_614587.jpg" alt="" loading="lazy"><span>鲁邦三世：THE FIRST</span></div><div class="wk"><img src="assets/movies/w_282069.jpg" alt="" loading="lazy"><span>寄生兽（上）</span></div><div class="wk"><img src="assets/movies/w_61984.jpg" alt="" loading="lazy"><span>宇宙战舰大和号</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_225730.jpg" alt="" loading="lazy">
+                <div class="p-name">神木隆之介 <span class="p-role">主演（敷岛浩一）</span></div>
+              </div>
+              <div class="p-note">日本演员。《浪客剑心》《你的名字。》《3年A班》《哥斯拉-1.0》。童星出身，本片他演敷岛浩一——一个从战场上逃回来、又必须再上一次战场的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_372058.jpg" alt="" loading="lazy"><span>你的名字。</span></div><div class="wk"><img src="assets/movies/w_129.jpg" alt="" loading="lazy"><span>千与千寻</span></div><div class="wk"><img src="assets/movies/w_4935.jpg" alt="" loading="lazy"><span>哈尔的移动城堡</span></div><div class="wk"><img src="assets/movies/w_51739.jpg" alt="" loading="lazy"><span>借东西的小人阿莉埃蒂</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1516266.jpg" alt="" loading="lazy">
+                <div class="p-name">滨边美波 <span class="p-role">主演（大石典子）</span></div>
+              </div>
+              <div class="p-note">日本演员。《我想吃掉你的胰脏》《狂赌之渊》《新·假面骑士》《哥斯拉-1.0》。本片她演大石典子——在焦土上捡了一个孩子、又捡了一个男人的女人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_813477.jpg" alt="" loading="lazy"><span>新·假面骑士</span></div><div class="wk"><img src="assets/movies/w_604605.jpg" alt="" loading="lazy"><span>你好世界</span></div><div class="wk"><img src="assets/movies/w_449132.jpg" alt="" loading="lazy"><span>我想吃掉你的胰脏</span></div><div class="wk"><img src="assets/movies/w_564251.jpg" alt="" loading="lazy"><span>狂赌之渊 电影版</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在敷岛第二次面对哥斯拉。第一次他不敢开炮，于是整个基地的人死了；这一次他把自己当成了一枚会拐弯的鱼雷。山崎贵做了一件很东方的事：他把「战后创伤」和「怪兽」接在了一起——哥斯拉不是战争，它是战争之后还没结束的那一部分。全片最动人的设定是：政府不出面，救人是几个平民凑在一艘旧扫雷艇上干的。它确实有煽情过度、角色偏薄的问题，豆瓣 6.6 不是没有理由；但当伊福部昭的旋律响起来、银座被一口气抹平的时候，你会发现它讲的是一件很朴素的事——一群已经一无所有的人，决定不再往后退。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年最好的怪兽片、以及「低成本视效能做到什么程度」的人；喜欢《新·哥斯拉》《环太平洋》这类题材的观众。含战争创伤、大规模破坏与死亡场面，情绪煽动力强。内地未映（未上亚洲院线），Netflix 可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/journey_poster.jpg" alt="宇宙探索编辑部 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 剧情（中国大陆 · 一个主编的西南公路）</span><span class="year">2023 · 中国大陆（2021 平遥首映）· 118 分钟 · 彩色</span></div>
+        <h2>宇宙探索编辑部 <span class="en">Journey to the West</span></h2>
+        <div class="rates"><span class="rate"><b>8.0</b>豆瓣</span><span class="rate"><b>7.6</b>IMDb</span></div>
+        <p class="oneline">「这不是普通的雪花点，这是宇宙诞生时的余晖。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>《宇宙探索》是上世纪八十年代创刊的科幻杂志，如今只剩主编唐志军一个人。某天他接收到一段疑似来自宇宙深处的异常信号，于是带着编辑部的几个人——一个酒鬼、一个路痴，还有一个到处找红衣大叔的姑娘，往西南方向走，去找一个据说被外星人带走的人。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>孔大山长片处女作，伪纪录片形式；监制是王红卫与郭帆（郭帆在片中客串了一个到处找航天服的导演）。</li><li>第 5 届平遥国际电影展费穆荣誉最佳影片，第 12 届北京国际电影节最受注目影片。</li><li>杨皓宇凭唐志军一角拿下北京国际电影节最受注目男演员——他此前长期只演配角。</li><li>全程手持跟拍，剧组真的走了四川、云南一带，路上大部分场景是实景。</li><li>成本极低，2023-04-01 上映，票房约 6700 万，是当年口碑最好的国产小片之一。</li><li>豆瓣 8.0（开分曾到 8.8），IMDb 7.6；评价两极——有人说它是「中国科幻的另一种可能」，也有人受不了它的晃镜头与松散。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/journey_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/journey_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/journey_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_3163137.jpg" alt="" loading="lazy">
+                <div class="p-name">孔大山 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">中国导演、编剧。《法制未来时》（短片）《宇宙探索编辑部》(2021 平遥首映 / 2023 公映)。1990 年生，本科与研究生都在四川，曾在《流浪地球2》担任 B 组导演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_968105.jpg" alt="" loading="lazy"><span>法制未来时</span></div><div class="wk"><img src="assets/movies/w_989053.jpg" alt="" loading="lazy"><span>少年马力傲的烦恼</span></div><div class="wk"><img src="assets/movies/w_1119503.jpg" alt="" loading="lazy"><span>长夜将尽</span></div><div class="wk"><img src="assets/movies/w_1119507.jpg" alt="" loading="lazy"><span>春天，老师们走了</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_939118.jpg" alt="" loading="lazy">
+                <div class="p-name">杨皓宇 <span class="p-role">主演（唐志军）</span></div>
+              </div>
+              <div class="p-note">中国演员。《流浪地球》《宇宙探索编辑部》《东极岛》《749局》。长期演配角，本片是他第一次当主角，凭唐志军拿下北京国际电影节最受注目男演员。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_535167.jpg" alt="" loading="lazy"><span>流浪地球</span></div><div class="wk"><img src="assets/movies/w_491305.jpg" alt="" loading="lazy"><span>海上浮城</span></div><div class="wk"><img src="assets/movies/w_1305653.jpg" alt="" loading="lazy"><span>东极岛</span></div><div class="wk"><img src="assets/movies/w_1033462.jpg" alt="" loading="lazy"><span>749局</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1542333.jpg" alt="" loading="lazy">
+                <div class="p-name">艾丽娅 <span class="p-role">主演（秦彩蓉）</span></div>
+              </div>
+              <div class="p-note">中国演员。《二嫫》《蒙古王》《地久天长》《出走的决心》《宇宙探索编辑部》。本片她演秦彩蓉——一路骂唐志军、一路跟着他走的那个人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_493899.jpg" alt="" loading="lazy"><span>地久天长</span></div><div class="wk"><img src="assets/movies/w_12246.jpg" alt="" loading="lazy"><span>蒙古王</span></div><div class="wk"><img src="assets/movies/w_124468.jpg" alt="" loading="lazy"><span>二嫫</span></div><div class="wk"><img src="assets/movies/w_1324509.jpg" alt="" loading="lazy"><span>出走的决心</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在孙一通消失之后。唐志军走完全程，一根骨头从短变长，最后在山洞里问出了那个问题——「我们人类存在在宇宙里的意义，究竟是什么？」答案大概是：这个问题本身没有答案，但问它这件事，就是意义。孔大山没有把唐志军拍成笑话，也没有把他拍成先知。他找了三十年外星人，最后找到的是女儿自杀时留下的那个没问出口的问题。片尾从地球一路拉到 DNA 双螺旋，那一下是全片唯一一次「特效」——前面两个小时攒下来的荒诞，在那一秒全部变成了柔软。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看国产科幻里最不像科幻的那一支的人；喜欢《流浪地球》《路边野餐》这类气质的观众。无血腥暴力，含轻微粗口与大量手持晃动镜头（晕动敏感者慎选）。内地公映过，流媒体可看。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-05；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>

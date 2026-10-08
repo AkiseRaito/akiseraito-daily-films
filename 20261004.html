@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 剧情 / 传记 / 历史 / 音乐（2026-10-04 · 第 34 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 剧情 / 传记 / 历史 / 音乐</h1>
+  <div class="sub">2026 年 10 月 4 日 · 第 34 期 · 已避开往期推荐过的全部 330 部</div>
+  <div>
+    <span class="pill">主题：真事改编 · 十个被搬上银幕的真实故事（2010–2020）</span>
+    <span class="pill">全部 1990 年后：最早 2010，最晚 2020，七部出自 2013 年后</span>
+    <span class="pill">清一色真人真事：Facebook / 乔治六世 / 伊朗人质 / 奴隶制 / 艾滋危机 / 图灵 / 次贷 / NASA / 皇后乐队 / 芝加哥审判</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-04，会随时间变动，仅供参考。<br>
+  这一期的筛选条件只有一条：片头或片尾必须写着「根据真实事件 / 真实人物改编」。于是十年里最被记住的那些故事浮了上来——一个宿舍里写出来的网站（《社交网络》）、一个口吃的国王（《国王的演讲》）、一次用假电影完成的营救（《逃离德黑兰》）、一段被偷走的十二年（《为奴十二年》）、一个只剩三十天的病人（《达拉斯买家俱乐部》）、一台机器和它的发明者（《模仿游戏》）、一场没人相信的崩盘（《大空头》）、三个人算出来的轨道（《隐藏人物》）、最后二十分钟的演唱会（《波西米亚狂想曲》）、以及一场被审判的审判（《芝加哥七君子审判》）。<br>
+  放在一起看有个很明显的共同点：这十部片里几乎没有一个是「英雄战胜」的故事。他们大多只是多撑了一会儿、多问了一句、多跑了一趟——然后事情就往另一个方向走了一点点。托尼·门德斯想出的方案荒唐得没人相信，罗恩·伍德鲁夫卖药最初只是为了自己，多萝西·沃恩学编程是为了不让整个组失业。真实事件最有意思的地方从来不是宏大，而是「居然是这么发生的」。<br>
+  10 部片名全部为首次出现，无一与往期 330 部重复（比对 `_titles_all.txt` 通过）。本期与第 33 期同日补齐（33 期为补做的 10-03），两期片名互不重复。<br>
+  几部口碑明显分裂的片子已如实标注、未做修饰：《波西米亚狂想曲》是本期落差最大的一部——豆瓣 8.7 / IMDb 7.9 / 爆米花指数 87%，但影评界只给 烂番茄 60% / Metacritic 49；《模仿游戏》豆瓣 8.6 但 Metacritic 只有 73，批评集中在「太工整、太讨好」；《隐藏人物》同样豆瓣 8.6 高于 Metacritic 74；《逃离德黑兰》长期被质疑弱化英国与加拿大使馆的作用；《为奴十二年》在国内的评价（8.3）明显低于海外（Metacritic 96），「不煽情」是最主要的分歧点。<br>
+  内地公映情况：仅 1 部登过内地大银幕——《波西米亚狂想曲》2019-03-22（全国艺联专线）；其余 9 部内地未映，流媒体可看。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>社交网络</td><td class="qg">剧情 / 传记（美国 · 五亿个朋友）</td><td class="qr">8.6 / 96% / 95</td></tr><tr><td class="qn">02</td><td>国王的演讲</td><td class="qg">剧情 / 历史（英美澳合拍 · 一个结巴的国王）</td><td class="qr">8.4 / 94% / 88</td></tr><tr><td class="qn">03</td><td>逃离德黑兰</td><td class="qg">惊悚 / 剧情（美国 · 一部假电影）</td><td class="qr">8.3 / 96% / 86</td></tr><tr><td class="qn">04</td><td>为奴十二年</td><td class="qg">剧情 / 历史（英美合拍 · 十二年）</td><td class="qr">8.3 / 95% / 96</td></tr><tr><td class="qn">05</td><td>达拉斯买家俱乐部</td><td class="qg">剧情 / 传记（美国 · 三十天）</td><td class="qr">8.7 / 92% / 84</td></tr><tr><td class="qn">06</td><td>模仿游戏</td><td class="qg">剧情 / 传记（英美合拍 · 一个人和一亿种可能）</td><td class="qr">8.6 / 89% / 73</td></tr><tr><td class="qn">07</td><td>大空头</td><td class="qg">剧情 / 金融（美国 · 一场没人相信的崩盘）</td><td class="qr">8.5 / 89% / 81</td></tr><tr><td class="qn">08</td><td>隐藏人物</td><td class="qg">剧情 / 历史（美国 · 三个人算出来的轨道）</td><td class="qr">8.6 / 93% / 74</td></tr><tr><td class="qn">09</td><td>波西米亚狂想曲</td><td class="qg">音乐 / 传记（英美合拍 · 二十分钟的拯救生命）</td><td class="qr">8.7 / 60% / 49</td></tr><tr><td class="qn">10</td><td>芝加哥七君子审判</td><td class="qg">剧情 / 法庭（美国 · 一场被审判的审判）</td><td class="qr">8.6 / 89% / 76</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/social_poster.jpg" alt="社交网络 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 传记（美国 · 五亿个朋友）</span><span class="year">2010 · 美国 · 120 分钟 · 彩色 · 内地未映</span></div>
+        <h2>社交网络 <span class="en">The Social Network</span></h2>
+        <div class="rates"><span class="rate"><b>8.6</b>豆瓣</span><span class="rate"><b>96%</b>烂番茄</span><span class="rate"><b>95</b>Metacritic</span><span class="rate"><b>7.8</b>IMDb</span></div>
+        <p class="oneline">「你不是混蛋，你只是太努力想成为混蛋。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>2003 年秋天，哈佛学生马克·扎克伯格在宿舍里写出了一个网站。几年后这个网站有了五亿用户，而他被两个人告上了法庭：出钱的朋友爱德华多·萨维林，以及声称创意是自己的温克沃斯兄弟。全片用两场听证会交叉讲述，把「一个网站是怎么变成一家公司的」拆成了证词。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 83 届奥斯卡八项提名、三项获奖：最佳改编剧本（艾伦·索金）、最佳原创配乐、最佳剪辑。</li><li>大卫·芬奇执导，索金改编自本·麦兹里奇的《意外的亿万富翁》；扎克伯格本人没有参与，也不认可这部片。</li><li>配乐由九寸钉乐队的特伦特·雷泽诺与阿提喀斯·罗斯创作，冷冽的电子音色几乎定义了 2010 年代的电影声音。</li><li>杰西·艾森伯格演的马克从头到尾没说过一句「对不起」；而这条线的另一端是安德鲁·加菲尔德演的爱德华多——一个真的把朋友当朋友的人。</li><li>全片节奏极快，索金的台词像子弹；开场五分钟那场分手戏后来被无数剧本研究。</li><li>豆瓣 8.6 / 烂番茄 96% / Metacritic 95，是二十一世纪评分最高的美国剧情片之一；当年最佳影片输给了《国王的演讲》。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/social_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/social_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/social_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_7467.jpg" alt="" loading="lazy">
+                <div class="p-name">大卫·芬奇 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、制片。《七宗罪》《搏击俱乐部》《十二宫》《本杰明·巴顿奇事》《社交网络》(2010)《消失的爱人》。他的电影都在拍「一个人怎么被自己的聪明反噬」，本片是他最冷也最快的一次。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_550.jpg" alt="" loading="lazy"><span>搏击俱乐部</span></div><div class="wk"><img src="assets/movies/w_807.jpg" alt="" loading="lazy"><span>七宗罪</span></div><div class="wk"><img src="assets/movies/w_210577.jpg" alt="" loading="lazy"><span>消失的爱人</span></div><div class="wk"><img src="assets/movies/w_4922.jpg" alt="" loading="lazy"><span>本杰明·巴顿奇事</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_44735.jpg" alt="" loading="lazy">
+                <div class="p-name">杰西·艾森伯格 <span class="p-role">主演（马克·扎克伯格）</span></div>
+              </div>
+              <div class="p-note">美国演员、编剧。《丧尸乐园》《惊天魔盗团》系列、《社交网络》《里约大冒险》。本片他演马克·扎克伯格——一个从头到尾没道歉、只在最后反复刷新页面的年轻人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_75656.jpg" alt="" loading="lazy"><span>惊天魔盗团</span></div><div class="wk"><img src="assets/movies/w_19908.jpg" alt="" loading="lazy"><span>丧尸乐园</span></div><div class="wk"><img src="assets/movies/w_291805.jpg" alt="" loading="lazy"><span>惊天魔盗团2</span></div><div class="wk"><img src="assets/movies/w_46195.jpg" alt="" loading="lazy"><span>里约大冒险</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_37625.jpg" alt="" loading="lazy">
+                <div class="p-name">安德鲁·加菲尔德 <span class="p-role">主演（爱德华多）</span></div>
+              </div>
+              <div class="p-note">英裔美国演员。《超凡蜘蛛侠》系列、《血战钢锯岭》《沉默》《社交网络》。本片他演爱德华多·萨维林——出钱、出力、最后被稀释掉的那个朋友，也是全片唯一真的受伤的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1930.jpg" alt="" loading="lazy"><span>超凡蜘蛛侠</span></div><div class="wk"><img src="assets/movies/w_324786.jpg" alt="" loading="lazy"><span>血战钢锯岭</span></div><div class="wk"><img src="assets/movies/w_102382.jpg" alt="" loading="lazy"><span>超凡蜘蛛侠2</span></div><div class="wk"><img src="assets/movies/w_68730.jpg" alt="" loading="lazy"><span>沉默</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《社交网络》不是一部关于 Facebook 的电影，是一部关于「被承认」的电影。马克从头到尾想要的不是钱——他想要的是进那个俱乐部、被那群人看见，以及证明自己配得上。轻微剧透：真正的转折不在官司，在最后。他赢了，成了最年轻的亿万富翁，然后一个人坐在会议室里，反复刷新前女友的页面。律师对他说「你不是混蛋，你只是太努力想成为混蛋」——这句话是全片的判决书。芬奇和索金的厉害之处在于他们没有让马克悔改，也没有让他受到惩罚：他只是坐在那里，一遍遍刷新。十年后回头看，这部片几乎预言了接下来的一切：一个人做了一件改变世界的事，动机却小得可怜；而那件小事，最后真的改变了世界。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看二十一世纪最锋利的剧本与剪辑的人；喜欢《点球成金》《史蒂夫·乔布斯》这类索金式对白的观众。含粗口、少量饮酒与派对场面，无暴力血腥。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/king_poster.jpg" alt="国王的演讲 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 历史（英美澳合拍 · 一个结巴的国王）</span><span class="year">2010 · 英国 / 美国 / 澳大利亚 · 118 分钟 · 彩色 · 内地未映</span></div>
+        <h2>国王的演讲 <span class="en">The King&#x27;s Speech</span></h2>
+        <div class="rates"><span class="rate"><b>8.4</b>豆瓣</span><span class="rate"><b>94%</b>烂番茄</span><span class="rate"><b>88</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「我有权利被听见吗？」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>兄长退位之后，乔治六世意外继承了王位。问题是他口吃严重，而 1939 年他必须对着整个大英帝国发表宣战演说。妻子帮他找到一位没有执照、没有头衔的澳大利亚语言治疗师莱纳尔·罗格。两个人在一间小房间里开始了一场漫长的练习。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 83 届奥斯卡十二项提名、四项获奖：最佳影片、最佳导演（汤姆·霍伯）、最佳男主角（科林·费尔斯）、最佳原创剧本。</li><li>科林·费尔斯凭此片拿下奥斯卡影帝；他此前以《傲慢与偏见》《单身男子》闻名，本片是他真正的主演代表作。</li><li>杰弗里·拉什演的罗格是真实人物，一个靠在朗诵会上表演维生、没有任何医学资格的澳大利亚人。</li><li>剧本由大卫·塞德勒写；他自己童年严重口吃，多年后才敢把这个故事写出来，完成时才让家人读。</li><li>成本仅 1400 万美元，全球票房超过 4.2 亿美元，是当年最赚钱的艺术片之一。</li><li>同年它在奥斯卡上击败了《社交网络》——这场争论（传统匠艺 vs 当代锋利）到今天还在被人提起。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/king_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/king_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/king_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_70500.jpg" alt="" loading="lazy">
+                <div class="p-name">汤姆·霍伯 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">英国导演。《魔鬼联队》《国王的演讲》(2010)《悲惨世界》《丹麦女孩》《猫》。他的长片几乎都是「一个人在体制里争取发声」，本片让他拿下奥斯卡最佳导演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_306819.jpg" alt="" loading="lazy"><span>丹麦女孩</span></div><div class="wk"><img src="assets/movies/w_82695.jpg" alt="" loading="lazy"><span>悲惨世界</span></div><div class="wk"><img src="assets/movies/w_536869.jpg" alt="" loading="lazy"><span>猫</span></div><div class="wk"><img src="assets/movies/w_21641.jpg" alt="" loading="lazy"><span>魔鬼联队</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5472.jpg" alt="" loading="lazy">
+                <div class="p-name">科林·费尔斯 <span class="p-role">主演（乔治六世）</span></div>
+              </div>
+              <div class="p-note">英国演员。《傲慢与偏见》《BJ单身日记》《单身男子》《国王的演讲》《王牌特工》系列。本片他演乔治六世，凭此拿下奥斯卡影帝；他把一个口吃的国王演成了一个先要找回脾气的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_207703.jpg" alt="" loading="lazy"><span>王牌特工：特工学院</span></div><div class="wk"><img src="assets/movies/w_343668.jpg" alt="" loading="lazy"><span>王牌特工2：黄金圈</span></div><div class="wk"><img src="assets/movies/w_634.jpg" alt="" loading="lazy"><span>BJ单身日记</span></div><div class="wk"><img src="assets/movies/w_229297.jpg" alt="" loading="lazy"><span>魔力月光</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_118.jpg" alt="" loading="lazy">
+                <div class="p-name">杰弗里·拉什 <span class="p-role">主演（莱纳尔·罗格）</span></div>
+              </div>
+              <div class="p-note">澳大利亚演员。《闪亮的风采》(1997 奥斯卡影帝)《加勒比海盗》系列、《国王的演讲》《偷书贼》。本片他演莱纳尔·罗格——没有执照、没有头衔，只坚持「叫我莱昂内尔」的那个人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_22.jpg" alt="" loading="lazy"><span>加勒比海盗1：黑珍珠号的诅咒</span></div><div class="wk"><img src="assets/movies/w_285.jpg" alt="" loading="lazy"><span>加勒比海盗3：世界的尽头</span></div><div class="wk"><img src="assets/movies/w_1865.jpg" alt="" loading="lazy"><span>加勒比海盗4：惊涛怪浪</span></div><div class="wk"><img src="assets/movies/w_203833.jpg" alt="" loading="lazy"><span>偷书贼</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《国王的演讲》讲的是一件很小的事：一个人怎么把话说出来。它没有任何战争场面，也没有政治博弈，全部张力都压在两个男人之间那间小屋子里。轻微剧透：真正的转折在罗格让国王骂人。他发现国王在说脏话时完全不结巴——问题从来不在发音，而在他从小被纠正、被规训、被告知「你不行」。于是治疗变成了政治：一个国王必须先被允许发脾气，才可能对着全国说话。最后的宣战演说拍得极慢，镜头贴着费尔斯的脸，你能听见每一次呼吸。这部片被批评太「安全」，但它的手艺确实无懈可击：它把一个国家的危机收进了一个人的喉咙里，然后让人看着他一个字一个字把它说出来。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看表演撑起整部片的经典范例的人；喜欢《至暗时刻》《敦刻尔克》这类英国历史题材的观众。无暴力与情色内容，节奏舒缓、情绪克制。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/argo_poster.jpg" alt="逃离德黑兰 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 剧情（美国 · 一部假电影）</span><span class="year">2012 · 美国 · 120 分钟 · 彩色 · 内地未映</span></div>
+        <h2>逃离德黑兰 <span class="en">Argo</span></h2>
+        <div class="rates"><span class="rate"><b>8.3</b>豆瓣</span><span class="rate"><b>96%</b>烂番茄</span><span class="rate"><b>86</b>Metacritic</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「你要在好莱坞拍一部烂片？那你就有一千个借口了。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1979 年伊朗革命，美国驻德黑兰大使馆被占领，六名外交人员逃脱后藏在加拿大外交官的住所里。中情局的营救方案是：让他们假扮成一个来伊朗勘景的科幻电影剧组，拿着加拿大护照上飞机。为此，他们真的在洛杉矶开了一家公司、买了一个剧本、开了一场发布会。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 85 届奥斯卡七项提名、三项获奖：最佳影片、最佳改编剧本（克里斯·特里奥）、最佳剪辑。</li><li>本·阿弗莱克自导自演；他凭此片拿下金球奖与英国电影学院奖最佳导演，却连奥斯卡导演提名都没拿到，是当年最大的争议之一。</li><li>改编自中情局特工托尼·门德斯的自述，以及 2007 年《连线》杂志的一篇文章；真实行动代号是「加拿大骗局」（Canadian Caper）。</li><li>那部虚构的电影叫《Argo》，剧本是真的写出来、概念图是真的画出来、发布会是真的办了——片中这些细节几乎没做戏剧化处理。</li><li>艾伦·阿金演的制片人约翰·钱伯斯与约翰·古德曼演的化妆师钱伯斯的老搭档，两人负责给这部「烂片」提供真实的好莱坞行头。</li><li>结尾的机场段落被公认为近二十年最有效的悬念片段之一；阿弗莱克在这里几乎只用了剪辑和人脸。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/argo_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/argo_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/argo_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_880.jpg" alt="" loading="lazy">
+                <div class="p-name">本·阿弗莱克 <span class="p-role">导演 / 主演（托尼·门德斯）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演、编剧。《心灵捕手》(1998 奥斯卡最佳原创剧本)《消失的爱人》《蝙蝠侠大战超人》《正义联盟》；自导《逃离德黑兰》(2012)《城中大盗》。本片他自导自演，演那个提出「假拍电影」的中情局特工。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_210577.jpg" alt="" loading="lazy"><span>消失的爱人</span></div><div class="wk"><img src="assets/movies/w_209112.jpg" alt="" loading="lazy"><span>蝙蝠侠大战超人：正义黎明</span></div><div class="wk"><img src="assets/movies/w_141052.jpg" alt="" loading="lazy"><span>正义联盟</span></div><div class="wk"><img src="assets/movies/w_791373.jpg" alt="" loading="lazy"><span>扎克·施奈德版正义联盟</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_17419.jpg" alt="" loading="lazy">
+                <div class="p-name">布莱恩·克兰斯顿 <span class="p-role">主演（杰克·奥唐纳）</span></div>
+              </div>
+              <div class="p-note">美国演员。《绝命毒师》《逃离德黑兰》《亡命驾驶》《犬之岛》。本片他演杰克·奥唐纳——中情局那条线上唯一一直想把事情做完整的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_399174.jpg" alt="" loading="lazy"><span>犬之岛</span></div><div class="wk"><img src="assets/movies/w_64690.jpg" alt="" loading="lazy"><span>亡命驾驶</span></div><div class="wk"><img src="assets/movies/w_356305.jpg" alt="" loading="lazy"><span>为什么是他？</span></div><div class="wk"><img src="assets/movies/w_140300.jpg" alt="" loading="lazy"><span>功夫熊猫3</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1903.jpg" alt="" loading="lazy">
+                <div class="p-name">艾伦·阿金 <span class="p-role">主演（约翰·钱伯斯）</span></div>
+              </div>
+              <div class="p-note">美国演员（1934–2023）。《剪刀手爱德华》《阳光小美女》《千钧一发》《逃离德黑兰》。本片他演好莱坞制片人约翰·钱伯斯，全片的喜剧时刻几乎都由他完成。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_782.jpg" alt="" loading="lazy"><span>千钧一发</span></div><div class="wk"><img src="assets/movies/w_438148.jpg" alt="" loading="lazy"><span>小黄人大眼萌：神偷奶爸前传</span></div><div class="wk"><img src="assets/movies/w_773.jpg" alt="" loading="lazy"><span>阳光小美女</span></div><div class="wk"><img src="assets/movies/w_162.jpg" alt="" loading="lazy"><span>剪刀手爱德华</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《逃离德黑兰》最好看的地方是它把「最荒唐的方案」拍成了唯一可行的方案。一个中情局的人坐在一屋子将军面前说：我要让他们假装拍电影。所有人都觉得他疯了——但正因为疯，才没人会信它是真的。轻微剧透：真正的转折在最后那架飞机上。所有文件、所有伪装都过了，只有机长多问了一句；电话打回好莱坞那个已经关掉的公司，居然有人接了。阿弗莱克在这里做了一件很聪明的事：他把全片最大的赌注压在一个已死项目的电话铃上。这部片常被批评「历史不准确」（尤其是弱化英国与加拿大的作用），但作为类型片它几乎无短板——每一分钟都在解释为什么这个方案能成立，又为什么它随时会塌。它是近二十年最好看的「假装」电影，讲的是一个国家的危机靠一群骗子解决的故事。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近二十年最紧张的类型片之一的人；喜欢《慕尼黑》《间谍之桥》这类冷战题材的观众。含枪战威胁与时代暴力画面，紧张度高但血腥度低。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/slave_poster.jpg" alt="为奴十二年 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 历史（英美合拍 · 十二年）</span><span class="year">2013 · 美国 / 英国 · 134 分钟 · 彩色 · 内地未映</span></div>
+        <h2>为奴十二年 <span class="en">12 Years a Slave</span></h2>
+        <div class="rates"><span class="rate"><b>8.3</b>豆瓣</span><span class="rate"><b>95%</b>烂番茄</span><span class="rate"><b>96</b>Metacritic</span><span class="rate"><b>8.1</b>IMDb</span></div>
+        <p class="oneline">「我不要只是活下去，我要活得像个人。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1841 年，纽约州的自由黑人音乐家所罗门·诺瑟普被两个人以高薪工作骗去华盛顿，醒来时已经被锁在奴隶牢里。此后十二年，他被转卖、改名、从一个种植园换到另一个，唯一能做的是不让任何人知道他识字、会拉小提琴。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 86 届奥斯卡九项提名、三项获奖：最佳影片、最佳改编剧本（约翰·雷德利）、最佳女配角（露皮塔·尼永奥）。</li><li>史蒂夫·麦奎因成为首位拿下奥斯卡最佳影片的黑人导演；他与编剧雷德利坚持一件事：不拍成励志片，只拍成事实。</li><li>改编自所罗门·诺瑟普 1853 年出版的自传《为奴十二年》，这本书在他生前卖出三万册，之后被遗忘了一百多年，直到 1960 年代才被重新发现。</li><li>切瓦特·埃加福演所罗门；全片最著名的一场戏是他在绞刑架旁被吊了很久——那场戏拍了很久，他真的悬在空中。</li><li>迈克尔·法斯宾德演的埃普斯是这部片里最复杂的反派：一个一边引用《圣经》、一边把奴隶当作财产的种植园主。</li><li>烂番茄 95% / Metacritic 96，是 2010 年代评分最高的影片之一；豆瓣 8.3，国内观众对它的「不煽情」评价两极。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/slave_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/slave_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/slave_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_72757.jpg" alt="" loading="lazy">
+                <div class="p-name">史蒂夫·麦奎因 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">英国导演、艺术家。《饥饿》《羞耻》《为奴十二年》(2013)《以寡敌众》《闪电战》。他的电影都不给出口，逼着人看完；本片让他成为首位拿下奥斯卡最佳影片的黑人导演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_76025.jpg" alt="" loading="lazy"><span>羞耻</span></div><div class="wk"><img src="assets/movies/w_401469.jpg" alt="" loading="lazy"><span>以寡敌众</span></div><div class="wk"><img src="assets/movies/w_10360.jpg" alt="" loading="lazy"><span>饥饿</span></div><div class="wk"><img src="assets/movies/w_896151.jpg" alt="" loading="lazy"><span>闪电战</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5294.jpg" alt="" loading="lazy">
+                <div class="p-name">切瓦特·埃加福 <span class="p-role">主演（所罗门·诺瑟普）</span></div>
+              </div>
+              <div class="p-note">英国演员、导演。《为奴十二年》《奇异博士》《狮子王》《后室》。本片他演所罗门·诺瑟普——一个被偷走十二年、靠不让人知道自己识字活下来的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_284052.jpg" alt="" loading="lazy"><span>奇异博士</span></div><div class="wk"><img src="assets/movies/w_420818.jpg" alt="" loading="lazy"><span>狮子王</span></div><div class="wk"><img src="assets/movies/w_14161.jpg" alt="" loading="lazy"><span>2012</span></div><div class="wk"><img src="assets/movies/w_1083381.jpg" alt="" loading="lazy"><span>后室</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_17288.jpg" alt="" loading="lazy">
+                <div class="p-name">迈克尔·法斯宾德 <span class="p-role">主演（埃普斯）</span></div>
+              </div>
+              <div class="p-note">德裔爱尔兰演员。《饥饿》《羞耻》《X战警》系列、《为奴十二年》《异形：契约》。本片他演埃普斯——一个一边引《圣经》、一边把人当财产的种植园主，是全片最复杂的反派。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_126889.jpg" alt="" loading="lazy"><span>异形：契约</span></div><div class="wk"><img src="assets/movies/w_121856.jpg" alt="" loading="lazy"><span>刺客信条</span></div><div class="wk"><img src="assets/movies/w_246655.jpg" alt="" loading="lazy"><span>X战警：天启</span></div><div class="wk"><img src="assets/movies/w_49538.jpg" alt="" loading="lazy"><span>X战警：第一战</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《为奴十二年》最难受的地方不是暴力，是时间。麦奎因不把它拍成一连串事件，而是拍成一整段被偷走的十二年的长度——你会真的感到时间在他身上过去了。轻微剧透：真正的转折是纸。所罗门偷偷写信、求人代寄，一次次失败；最后帮他的是一名加拿大木匠，一个愿意为他冒一点风险的白人。这里麦奎因做了最冷静的处理：救他的不是某个英雄时刻，只是一个普通人决定不看另一边。结尾他回到家中，十二年之后，孩子已经长大、女儿已经结婚，他对家人说的第一句话是道歉。这部片拒绝给你一个「重获自由」的爽感，它只给你一个人站在门口、已经不太知道怎么当父亲的样子。这是近十年关于奴隶制最诚实的一部电影。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年最重要的历史题材奥斯卡最佳影片的人；能接受长时间暴力与羞辱场面、情绪极度压抑的观众。含鞭打、吊刑与性暴力暗示，压迫感贯穿全片。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/dallas_poster.jpg" alt="达拉斯买家俱乐部 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 传记（美国 · 三十天）</span><span class="year">2013 · 美国 · 117 分钟 · 彩色 · 内地未映</span></div>
+        <h2>达拉斯买家俱乐部 <span class="en">Dallas Buyers Club</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>92%</b>烂番茄</span><span class="rate"><b>84</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「我不是在等死，我在找活路。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1985 年的达拉斯，电工兼牛仔罗恩·伍德鲁夫被查出感染艾滋，医生说他只剩三十天。当时唯一获批的药物 AZT 毒性极强，他开始从墨西哥、日本等地走私未被批准的药物，并成立「达拉斯买家俱乐部」，按月收会费、按月发药。他这么做一开始只是为了活下去，也为了赚钱。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 86 届奥斯卡六项提名、三项获奖：最佳男主角（马修·麦康纳）、最佳男配角（杰瑞德·莱托）、最佳化妆与发型。</li><li>马修·麦康纳为这个角色减重约 20 公斤，杰瑞德·莱托减重约 13 公斤并全程以女性形象示人；两人的体重变化是当年最常见的话题。</li><li>真实人物罗恩·伍德鲁夫 1992 年去世，比医生预言的三十天多活了七年；片中「买家俱乐部」的运作方式基本按史实。</li><li>导演让-马克·瓦雷采用大量手持与跳切，成本不足 500 万美元，拍摄周期只有 25 天。</li><li>雷蒙这个角色是虚构的，是罗恩与几名真实病友的复合体——这一点在片尾字幕里写明了。</li><li>豆瓣 8.7 高于多数海外评分（IMDb 8.0 / 烂番茄 92%），国内观众对「求生」这条线的接受度明显更高。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/dallas_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dallas_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dallas_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_69371.jpg" alt="" loading="lazy">
+                <div class="p-name">让-马克·瓦雷 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">加拿大导演、编剧、剪辑（1963–2021）。《爱疯狂》《年轻的维多利亚》《涉足荒野》《达拉斯买家俱乐部》(2013)《破碎人生》。他习惯用手持与跳切拍人物，本片只拍了 25 天。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_228970.jpg" alt="" loading="lazy"><span>涉足荒野</span></div><div class="wk"><img src="assets/movies/w_303991.jpg" alt="" loading="lazy"><span>破碎人生</span></div><div class="wk"><img src="assets/movies/w_18320.jpg" alt="" loading="lazy"><span>年轻的维多利亚</span></div><div class="wk"><img src="assets/movies/w_11421.jpg" alt="" loading="lazy"><span>爱疯狂</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_10297.jpg" alt="" loading="lazy">
+                <div class="p-name">马修·麦康纳 <span class="p-role">主演（罗恩·伍德鲁夫）</span></div>
+              </div>
+              <div class="p-note">美国演员。《星际穿越》《华尔街之狼》《达拉斯买家俱乐部》《绅士们》。本片他演罗恩·伍德鲁夫，为角色减重约 20 公斤，凭此拿下奥斯卡影帝。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_157336.jpg" alt="" loading="lazy"><span>星际穿越</span></div><div class="wk"><img src="assets/movies/w_335797.jpg" alt="" loading="lazy"><span>欢乐好声音</span></div><div class="wk"><img src="assets/movies/w_522627.jpg" alt="" loading="lazy"><span>绅士们</span></div><div class="wk"><img src="assets/movies/w_106646.jpg" alt="" loading="lazy"><span>华尔街之狼</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_7499.jpg" alt="" loading="lazy">
+                <div class="p-name">杰瑞德·莱托 <span class="p-role">主演（雷蒙）</span></div>
+              </div>
+              <div class="p-note">美国演员、音乐人（ Thirty Seconds to Mars 主唱）。《搏击俱乐部》《梦之安魂曲》《达拉斯买家俱乐部》《X特遣队》。本片他演雷蒙——一个虚构的、由多位真实病友合成的病友，凭此拿下奥斯卡男配。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_297761.jpg" alt="" loading="lazy"><span>X特遣队</span></div><div class="wk"><img src="assets/movies/w_550.jpg" alt="" loading="lazy"><span>搏击俱乐部</span></div><div class="wk"><img src="assets/movies/w_31011.jpg" alt="" loading="lazy"><span>无姓之人</span></div><div class="wk"><img src="assets/movies/w_641.jpg" alt="" loading="lazy"><span>梦之安魂曲</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《达拉斯买家俱乐部》不是一部关于英雄的电影，是一部关于「自私怎么变成责任」的电影。罗恩一开始什么都不相信：他恐同、他骂人、他卖药就是做生意。他之所以开始跟病人打交道，是因为有利可图；之所以后来不跑了，是因为他发现除了他没人管这些人。轻微剧透：真正的转折在他自己拿到药之后。他本可以拿着钱走掉，但他留下来跟 FDA 打官司、跟医院吵、跟药厂硬碰硬——不是为了平反，只是因为他在那儿多待一天，就多几个人能活到明天。麦康纳演得最好的地方是他从没让罗恩「变好」：到死他还是那个粗口连篇的德州佬。结尾他在墨西哥找到药、在法庭上被驳回，字幕说 FDA 两年后批准了相关药物的个人进口。这不是胜利，是迟到了七年的一句「你本可以活」。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年最被认可的表演驱动型传记片的人；喜欢《永不妥协》《聚焦》这类「一个人对抗系统」的观众。含粗口、毒品使用、疾病与身体衰败画面，情绪沉重但克制。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/imit_poster.jpg" alt="模仿游戏 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 传记（英美合拍 · 一个人和一亿种可能）</span><span class="year">2014 · 美国 / 英国 · 114 分钟 · 彩色 · 内地未映</span></div>
+        <h2>模仿游戏 <span class="en">The Imitation Game</span></h2>
+        <div class="rates"><span class="rate"><b>8.6</b>豆瓣</span><span class="rate"><b>89%</b>烂番茄</span><span class="rate"><b>73</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「有时候，正是那些不被看好的人，成就了无人能及的事。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>二战期间，数学家艾伦·图灵加入英国布莱切利园的密码破译小组，带着一支团队造出了一台能破解德军「恩尼格玛」的机器。1952 年，他因同性恋身份被警方以「严重猥亵」定罪，被迫接受化学阉割，两年后去世。影片在这三条时间线之间来回切换。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 87 届奥斯卡八项提名、一项获奖：最佳改编剧本（格拉汉姆·摩尔）。</li><li>本尼迪克特·康伯巴奇演图灵；他为了这个角色练了特定的口音与动作习惯，也推掉了多部商业片邀约。</li><li>凯拉·奈特莉演琼·克拉克——真实人物，当时布莱切利园为数不多的女性破译者之一，图灵曾向她求婚。</li><li>改编自安德鲁·霍奇斯的传记《艾伦·图灵：谜》；片中「机器叫 Christopher」这一设定来自图灵少年时恋人的名字，属实。</li><li>图灵 1952 年被定罪，1954 年去世；英国直到 2009 年才正式道歉，2013 年才追授赦免——这句字幕是本片最重的一击。</li><li>口碑分裂得很清楚：豆瓣 8.6 / 烂番茄 89%，观众向一边倒；Metacritic 只有 73，影评界批评它「太工整、太讨好」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/imit_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/imit_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/imit_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_77965.jpg" alt="" loading="lazy">
+                <div class="p-name">莫腾·泰杜姆 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">挪威导演。《猎头游戏》《模仿游戏》(2014)《太空旅客》。本片是他第一次执导英语长片，把一个三线交叉的剧本拍成了标准的奥斯卡形态。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_274870.jpg" alt="" loading="lazy"><span>太空旅客</span></div><div class="wk"><img src="assets/movies/w_70670.jpg" alt="" loading="lazy"><span>猎头游戏</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_71580.jpg" alt="" loading="lazy">
+                <div class="p-name">本尼迪克特·康伯巴奇 <span class="p-role">主演（艾伦·图灵）</span></div>
+              </div>
+              <div class="p-note">英国演员。《神探夏洛克》《奇异博士》系列、《模仿游戏》《蜘蛛侠：英雄无归》。本片他演艾伦·图灵——一个造出机器、又被自己国家的法律拆掉的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_284052.jpg" alt="" loading="lazy"><span>奇异博士</span></div><div class="wk"><img src="assets/movies/w_453395.jpg" alt="" loading="lazy"><span>奇异博士2：疯狂多元宇宙</span></div><div class="wk"><img src="assets/movies/w_634649.jpg" alt="" loading="lazy"><span>蜘蛛侠：英雄无归</span></div><div class="wk"><img src="assets/movies/w_360920.jpg" alt="" loading="lazy"><span>绿毛怪格林奇</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_116.jpg" alt="" loading="lazy">
+                <div class="p-name">凯拉·奈特莉 <span class="p-role">主演（琼·克拉克）</span></div>
+              </div>
+              <div class="p-note">英国演员。《傲慢与偏见》《加勒比海盗》系列、《赎罪》《模仿游戏》。本片她演琼·克拉克——布莱切利园少数女性破译者之一，也是图灵唯一愿意示弱的对象。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_4348.jpg" alt="" loading="lazy"><span>傲慢与偏见</span></div><div class="wk"><img src="assets/movies/w_58.jpg" alt="" loading="lazy"><span>加勒比海盗2：聚魂棺</span></div><div class="wk"><img src="assets/movies/w_22.jpg" alt="" loading="lazy"><span>加勒比海盗1：黑珍珠号的诅咒</span></div><div class="wk"><img src="assets/movies/w_285.jpg" alt="" loading="lazy"><span>加勒比海盗3：世界的尽头</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《模仿游戏》最成功的地方是它把一台机器和一个人的命运接在了一起。图灵那台机器叫 Christopher——少年时他爱过的那个男孩的名字。他一辈子都在做同一件事：造一个能替人完成「不可能」的东西，而社会给他的回报是让他不再是一个合法的人。轻微剧透：真正的转折在战后。他没有被表彰，没有被记住，只有一纸罪名和一支让他身体变形的针剂。康伯巴奇在这里演的不是天才的潇洒，是一个人怎么在两年之内被一点点拆掉。结尾那句字幕说「据估计，图灵的工作缩短了战争约两年，拯救了约一千四百万条生命」，然后是 2013 年的赦免。这部片被批评太工整，但它把一个迟到六十年的道歉拍成了一部你看得下去的电影——这件事本身有它的价值。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年最被大众接受的图灵故事的人；喜欢《美丽心灵》《万物理论》这类科学家传记的观众。含毒品（自杀）与疾病情节、时代歧视议题，情绪沉重但处理温和。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/short_poster.jpg" alt="大空头 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 金融（美国 · 一场没人相信的崩盘）</span><span class="year">2015 · 美国 · 130 分钟 · 彩色 · 内地未映</span></div>
+        <h2>大空头 <span class="en">The Big Short</span></h2>
+        <div class="rates"><span class="rate"><b>8.5</b>豆瓣</span><span class="rate"><b>89%</b>烂番茄</span><span class="rate"><b>81</b>Metacritic</span><span class="rate"><b>7.8</b>IMDb</span></div>
+        <p class="oneline">「真相就像诗歌，可大多数人讨厌诗歌。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>2005 年起，几个局外人先后发现了同一件事：美国的住房抵押贷款被打包成债券，层层卖给了全世界，而这些贷款的违约率正在飙升。他们开始做空——也就是押注整个市场崩盘。问题是，在崩盘之前，他们必须先付很多年的利息。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 88 届奥斯卡五项提名、一项获奖：最佳改编剧本（亚当·麦凯与查尔斯·兰道夫）。</li><li>亚当·麦凯此前是喜剧导演（《王牌播音员》《二流警探》），本片是他第一次用喜剧手法拍正剧——他自己说这是他「最愤怒的一部」。</li><li>改编自迈克尔·刘易斯的同名纪实作品；片中四位主角都有真实原型（迈克尔·巴里、史蒂夫·艾斯曼、杰瑞德·韦内特、康沃尔资本）。</li><li>片中几次直接打断叙事，让名人（厨师、演员、经济学家）用大白话解释 CDO、合成 CDO 与信用违约互换——这个设计后来被大量模仿。</li><li>克里斯蒂安·贝尔演的迈克尔·巴里是真实人物：一位患有亚斯伯格、一只眼睛失明的对冲基金经理，他靠一页页读贷款合同发现了问题。</li><li>豆瓣 8.5 / 烂番茄 89%，是金融危机题材里评价最高的一部；IMDb 7.8 稍低，主要因为大量术语让人疲劳。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/short_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/short_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/short_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_55710.jpg" alt="" loading="lazy">
+                <div class="p-name">亚当·麦凯 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、制片。《王牌播音员》《二流警探》《大空头》(2015)《副总统》《不要抬头》。他从喜剧转向政治讽刺，擅长用「把专业术语讲成人话」的方式拍愤怒。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_646380.jpg" alt="" loading="lazy"><span>不要抬头</span></div><div class="wk"><img src="assets/movies/w_8699.jpg" alt="" loading="lazy"><span>王牌播音员</span></div><div class="wk"><img src="assets/movies/w_27581.jpg" alt="" loading="lazy"><span>二流警探</span></div><div class="wk"><img src="assets/movies/w_429197.jpg" alt="" loading="lazy"><span>副总统</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4495.jpg" alt="" loading="lazy">
+                <div class="p-name">史蒂夫·卡瑞尔 <span class="p-role">主演（马克·鲍姆）</span></div>
+              </div>
+              <div class="p-note">美国演员、喜剧演员。《办公室》《神偷奶爸》系列、《疯狂愚蠢的爱》《大空头》。本片他演马克·鲍姆——一个越查越愤怒、最后发现没人愿意听的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_20352.jpg" alt="" loading="lazy"><span>神偷奶爸</span></div><div class="wk"><img src="assets/movies/w_93456.jpg" alt="" loading="lazy"><span>神偷奶爸2</span></div><div class="wk"><img src="assets/movies/w_50646.jpg" alt="" loading="lazy"><span>疯狂愚蠢的爱</span></div><div class="wk"><img src="assets/movies/w_324852.jpg" alt="" loading="lazy"><span>神偷奶爸3</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_3894.jpg" alt="" loading="lazy">
+                <div class="p-name">克里斯蒂安·贝尔 <span class="p-role">主演（迈克尔·巴里）</span></div>
+              </div>
+              <div class="p-note">英国演员。《蝙蝠侠》三部曲、《美国精神病人》《斗士》《大空头》《副总统》。本片他演迈克尔·巴里——一个靠逐页读贷款合同发现崩盘的人，也是最早做空的那一个。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_155.jpg" alt="" loading="lazy"><span>蝙蝠侠：黑暗骑士</span></div><div class="wk"><img src="assets/movies/w_49026.jpg" alt="" loading="lazy"><span>蝙蝠侠：黑暗骑士崛起</span></div><div class="wk"><img src="assets/movies/w_272.jpg" alt="" loading="lazy"><span>蝙蝠侠：侠影之谜</span></div><div class="wk"><img src="assets/movies/w_1359.jpg" alt="" loading="lazy"><span>美国精神病人</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《大空头》最厉害的地方是它把一件极其专业的事拍出了愤怒。金融本来是最难拍的题材——没有动作、没有现场，只有表格和术语；麦凯的解法是让角色对着观众说话，让名人在厨房里用叠叠乐解释债务分层。轻微剧透：真正的转折不是崩盘，是崩盘之后。马克·鲍姆在雷曼倒闭的第二天站在楼下，看着街上的人照常上班，说「他们不知道，也没人去告诉他们」。全片最重的一句台词在结尾：那些银行被罚了款、换了名字，然后又重新开始卖同样的东西。这部片没有英雄，它的人物有的赚了钱、有的关了基金、有的再也不碰金融。它唯一坚持的是：这件事是可以被看懂的，而看懂它的人，当时没人愿意听。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看金融危机被讲明白的人；喜欢《商海通牒》《华尔街之狼》这类金融题材的观众。含粗口与行业术语，节奏快但需要专注。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/hidden_poster.jpg" alt="隐藏人物 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 历史（美国 · 三个人算出来的轨道）</span><span class="year">2016 · 美国 · 127 分钟 · 彩色 · 内地未映</span></div>
+        <h2>隐藏人物 <span class="en">Hidden Figures</span></h2>
+        <div class="rates"><span class="rate"><b>8.6</b>豆瓣</span><span class="rate"><b>93%</b>烂番茄</span><span class="rate"><b>74</b>Metacritic</span><span class="rate"><b>7.8</b>IMDb</span></div>
+        <p class="oneline">「她们是这里的计算员，只不过她们是黑人女性。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1961 年的弗吉尼亚，NASA 兰利研究中心西区的计算组里，三位非裔女性在做着最关键的运算：凯瑟琳·约翰逊负责轨道验算，多萝西·沃恩自学了 Fortran 并带团队转向新机器，玛丽·杰克逊想成为工程师却必须先去上「白人学校」。水星计划要在苏联之前把人送上轨道。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 89 届奥斯卡三项提名：最佳影片、最佳改编剧本、最佳女配角（奥克塔维亚·斯宾塞）。</li><li>改编自玛戈特·李·谢特利的纪实作品《隐藏人物》；三位主角都是真实人物，凯瑟琳·约翰逊 2015 年获总统自由勋章。</li><li>凯瑟琳·约翰逊的验算被约翰·格伦亲自要求复核——他不信计算机，他说「如果她说是这个数，我就上」；这句台词是真的。</li><li>塔拉吉·P·汉森演凯瑟琳；全片最著名的两场戏分别是她在法庭上要求使用「有色人种」厕所的辩白，以及她抱着一摞资料跑半英里去另一个楼的洗手间。</li><li>多萝西·沃恩那条线是全片最「职场」的一条：她看懂了 IBM 主机迟早会取代计算员，于是偷学编程，把整个组带进了新部门。</li><li>豆瓣 8.6 / 烂番茄 93% 明显高于 Metacritic 74——影评界批评它「太励志、太工整」，普通观众却买账得非常彻底。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/hidden_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/hidden_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/hidden_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1141683.jpg" alt="" loading="lazy">
+                <div class="p-name">西奥多·梅尔菲 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、制片。《圣人文森特》《隐藏人物》(2016)《恶鸟的祝福》。他擅长把沉重题材拍得明亮好入口，本片是他最被大众接受的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_239563.jpg" alt="" loading="lazy"><span>圣人文森特</span></div><div class="wk"><img src="assets/movies/w_468225.jpg" alt="" loading="lazy"><span>恶鸟的祝福</span></div><div class="wk"><img src="assets/movies/w_466696.jpg" alt="" loading="lazy"><span>黑吉安德拉（短片）</span></div><div class="wk"><img src="assets/movies/w_535103.jpg" alt="" loading="lazy"><span>蜿蜒之路（短片）</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_40036.jpg" alt="" loading="lazy">
+                <div class="p-name">塔拉吉·P·汉森 <span class="p-role">主演（凯瑟琳·约翰逊）</span></div>
+              </div>
+              <div class="p-note">美国演员。《本杰明·巴顿奇事》《功夫梦》《隐藏人物》《无敌破坏王2》。本片她演凯瑟琳·约翰逊——那个把轨道算出来、也被约翰·格伦点名要求复核的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_4922.jpg" alt="" loading="lazy"><span>本杰明·巴顿奇事</span></div><div class="wk"><img src="assets/movies/w_38575.jpg" alt="" loading="lazy"><span>功夫梦</span></div><div class="wk"><img src="assets/movies/w_404368.jpg" alt="" loading="lazy"><span>无敌破坏王2：大闹互联网</span></div><div class="wk"><img src="assets/movies/w_487297.jpg" alt="" loading="lazy"><span>倾听男人心</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6944.jpg" alt="" loading="lazy">
+                <div class="p-name">奥克塔维亚·斯宾塞 <span class="p-role">主演（多萝西·沃恩）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片。《相助》《隐藏人物》《水形物语》《疯狂动物城》。本片她演多萝西·沃恩——先看懂机器会取代自己、再把整个组带进新部门的那个人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_399055.jpg" alt="" loading="lazy"><span>水形物语</span></div><div class="wk"><img src="assets/movies/w_502416.jpg" alt="" loading="lazy"><span>恐怖大妈</span></div><div class="wk"><img src="assets/movies/w_50014.jpg" alt="" loading="lazy"><span>相助</span></div><div class="wk"><img src="assets/movies/w_269149.jpg" alt="" loading="lazy"><span>疯狂动物城</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《隐藏人物》不拍惊天动地的反抗，它拍的是「被允许」。凯瑟琳每一天的障碍都不是张大网，而是一件小事：最近的咖啡壶、最近的厕所、能不能进会议室、能不能在报告上署名。轻微剧透：真正的转折是那块黑板。凯瑟琳被允许进入任务控制室的那天，所有人看着她在黑板上写出轨道方程——那一刻她不是被宽容了，是被需要了。全片最打动人的地方在于它没有把任何一个人写成恶棍：拒绝她的同事后来给她倒了咖啡，让她跑半英里上厕所的主管最后说「这里没有规定你不能来」。它没有回避种族隔离，却也没把故事停在那里。三个人一起把一个人送上了天，其中一个人的名字，直到半个世纪之后才被写进教科书。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年最被大众喜爱的 NASA 题材片的人；喜欢《绿皮书》《相助》这类温和历史题材的观众。含种族歧视的言语与时代隔离场景，无暴力血腥。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/bohemian_poster.jpg" alt="波西米亚狂想曲 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">音乐 / 传记（英美合拍 · 二十分钟的拯救生命）</span><span class="year">2018 · 美国 / 英国 · 134 分钟 · 彩色 · 内地 2019-03-22 公映</span></div>
+        <h2>波西米亚狂想曲 <span class="en">Bohemian Rhapsody</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>60%</b>烂番茄</span><span class="rate"><b>49</b>Metacritic</span><span class="rate"><b>7.9</b>IMDb</span></div>
+        <p class="oneline">「我不需要被拯救，我需要被听见。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>从希思罗机场的搬运工到摇滚史上最著名的一次现场，影片讲述皇后乐队主唱弗雷迪·莫库里的一生：组乐队、写歌、走红、迷失、确诊，以及最后那场二十分钟的拯救生命演唱会（Live Aid）。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 91 届奥斯卡五项提名、四项获奖：最佳男主角（拉米·马雷克）、最佳剪辑、最佳音效剪辑、最佳音响效果。</li><li>拉米·马雷克凭此片拿下奥斯卡影帝；他本人不会唱歌，片中歌声是马雷克的原声与马克·马特尔（皇后乐队 tribute 歌手）的混音。</li><li>导演署名是布莱恩·辛格，但他在拍摄后期被解雇，剩余部分与后期由德克斯特·弗莱彻完成（后者未获署名）。</li><li>片尾 21 分钟的 Live Aid 段落几乎一比一复刻了 1985 年那场演出：舞台尺寸、曲目顺序、甚至第一句喊话都按录像还原。</li><li>全球票房约 9.1 亿美元，是影史最卖座的音乐传记片；内地 2019 年 3 月 22 日通过全国艺术电影放映联盟专线公映。</li><li>口碑分裂得极其典型：豆瓣 8.7 / IMDb 7.9 / 烂番茄爆米花指数 87%，观众一边倒好评；而影评界只有 烂番茄 60% / Metacritic 49，批评它「流水账、回避性向议题、把人生拍成了名场面集锦」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/bohemian_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/bohemian_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/bohemian_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_9032.jpg" alt="" loading="lazy">
+                <div class="p-name">布莱恩·辛格 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、制片。《非常嫌疑犯》《X战警》系列、《超人归来》《波西米亚狂想曲》(2018)。本片拍摄后期他被解雇，剩余部分与后期由德克斯特·弗莱彻接手完成。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_127585.jpg" alt="" loading="lazy"><span>X战警：逆转未来</span></div><div class="wk"><img src="assets/movies/w_246655.jpg" alt="" loading="lazy"><span>X战警：天启</span></div><div class="wk"><img src="assets/movies/w_36657.jpg" alt="" loading="lazy"><span>X战警</span></div><div class="wk"><img src="assets/movies/w_629.jpg" alt="" loading="lazy"><span>非常嫌疑犯</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_17838.jpg" alt="" loading="lazy">
+                <div class="p-name">拉米·马雷克 <span class="p-role">主演（弗雷迪·莫库里）</span></div>
+              </div>
+              <div class="p-note">美国演员。《黑客军团》《波西米亚狂想曲》《007：无暇赴死》《奥本海默》。本片他演弗雷迪·莫库里，凭此拿下奥斯卡影帝；歌声是他本人与马克·马特尔的混音。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_370172.jpg" alt="" loading="lazy"><span>007：无暇赴死</span></div><div class="wk"><img src="assets/movies/w_1087891.jpg" alt="" loading="lazy"><span>谍网追凶</span></div><div class="wk"><img src="assets/movies/w_872585.jpg" alt="" loading="lazy"><span>奥本海默</span></div><div class="wk"><img src="assets/movies/w_602269.jpg" alt="" loading="lazy"><span>蛛丝马迹</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1452045.jpg" alt="" loading="lazy">
+                <div class="p-name">本·哈迪 <span class="p-role">主演（罗杰·泰勒）</span></div>
+              </div>
+              <div class="p-note">英国演员。《X战警：天启》《波西米亚狂想曲》《地下6号》。本片他演皇后乐队鼓手罗杰·泰勒——四个人里最稳的那个，也是把弗雷迪一次次拉回来的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_509967.jpg" alt="" loading="lazy"><span>地下6号</span></div><div class="wk"><img src="assets/movies/w_246655.jpg" alt="" loading="lazy"><span>X战警：天启</span></div><div class="wk"><img src="assets/movies/w_1038392.jpg" alt="" loading="lazy"><span>招魂4：终章</span></div><div class="wk"><img src="assets/movies/w_645710.jpg" alt="" loading="lazy"><span>偷窥者</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《波西米亚狂想曲》最好的部分和它最被批评的部分是同一件事：它几乎只拍高光。弗雷迪的一生被切成了几个名场面——组乐队、写《波西米亚狂想曲》、和乐队闹翻、确诊、以及最后那场二十分钟。轻微剧透：全片最有分量的一场戏恰恰是最安静的一场：他告诉队友自己得了艾滋，四个人站在录音棚里，谁也没说话。马雷克在这里演的不是模仿，是一个终于把话说出口的人。最后 Live Aid 那二十分钟是全片真正的目的：它拍的不是演唱会，是一个知道自己时日无多的人，最后一次站在几万人面前。影评人说它太工整、太安全，说得没错；但当镜头推到他那句「Day-oh」的时候，你会发现工整本身也是一种力量。这是本期唯一一部「影评人打低分、观众打高分」到这种程度的片，两边都值得看。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年最卖座的音乐传记片的人；喜欢《火箭人》《一个明星的诞生》这类舞台题材的观众。含疾病、药物与性向议题，处理方式温和；现场段落极易上头。内地 2019 年公映过，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/chicago_poster.jpg" alt="芝加哥七君子审判 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 法庭（美国 · 一场被审判的审判）</span><span class="year">2020 · 美国 · 129 分钟 · 彩色 · 内地未映</span></div>
+        <h2>芝加哥七君子审判 <span class="en">The Trial of the Chicago 7</span></h2>
+        <div class="rates"><span class="rate"><b>8.6</b>豆瓣</span><span class="rate"><b>89%</b>烂番茄</span><span class="rate"><b>76</b>Metacritic</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「你要是想让我安静，就让我说话。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1968 年芝加哥民主党全国代表大会期间，反越战抗议演变成警民冲突。一年后，新上任的尼克松政府以「阴谋煽动暴乱」起诉八名活动人士。审判持续了五个月，法官的偏袒、检方的构陷、以及被告之间的分歧，把这场官司本身变成了抗议的延续。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>第 93 届奥斯卡六项提名，包括最佳影片与最佳原创剧本（亚伦·索金）。</li><li>亚伦·索金自编自导；这个故事他写了十五年，原本计划由斯皮尔伯格执导、索金只写剧本。</li><li>真实事件：1969 年的「芝加哥七君子案」，八名被告中的黑豹党领袖鲍比·西尔被强行分开审判，甚至在庭上被捆绑和封口——这一段在片中被完整拍了出来。</li><li>原本由派拉蒙发行，因疫情改为 Netflix 上线；这让它成为当年争议最大的「流媒体抢走院线」案例之一。</li><li>埃迪·雷德梅恩演汤姆·海登，萨莎·拜伦·科恩演艾比·霍夫曼；两人的风格冲突（一个要体面、一个要闹）是全片最好看的部分。</li><li>结尾那场「念出越战阵亡士兵名单」的戏是影像虚构的（真实审判中没有），但它几乎是全片被讨论最多的一分钟。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/chicago_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/chicago_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/chicago_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_13520.jpg" alt="" loading="lazy">
+                <div class="p-name">亚伦·索金 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国编剧、导演、制片。《好人寥寥》《点球成金》《社交网络》《史蒂夫·乔布斯》《芝加哥七君子审判》(2020)。他写了这个剧本十五年，本片是他第二次自编自导。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_37799.jpg" alt="" loading="lazy"><span>社交网络</span></div><div class="wk"><img src="assets/movies/w_60308.jpg" alt="" loading="lazy"><span>点球成金</span></div><div class="wk"><img src="assets/movies/w_321697.jpg" alt="" loading="lazy"><span>史蒂夫·乔布斯</span></div><div class="wk"><img src="assets/movies/w_881.jpg" alt="" loading="lazy"><span>好人寥寥</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_37632.jpg" alt="" loading="lazy">
+                <div class="p-name">埃迪·雷德梅恩 <span class="p-role">主演（汤姆·海登）</span></div>
+              </div>
+              <div class="p-note">英国演员。《万物理论》(2015 奥斯卡影帝)《丹麦女孩》《神奇动物》系列、《芝加哥七君子审判》。本片他演汤姆·海登——一个坚持用体面方式抗议的人，也是全片被嘲讽最多的那个。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_259316.jpg" alt="" loading="lazy"><span>神奇动物在哪里</span></div><div class="wk"><img src="assets/movies/w_338952.jpg" alt="" loading="lazy"><span>神奇动物：格林德沃之罪</span></div><div class="wk"><img src="assets/movies/w_266856.jpg" alt="" loading="lazy"><span>万物理论</span></div><div class="wk"><img src="assets/movies/w_306819.jpg" alt="" loading="lazy"><span>丹麦女孩</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6730.jpg" alt="" loading="lazy">
+                <div class="p-name">萨莎·拜伦·科恩 <span class="p-role">主演（艾比·霍夫曼）</span></div>
+              </div>
+              <div class="p-note">英国喜剧演员、编剧。《波拉特》《独裁者》《王牌贱谍：格林斯比》《芝加哥七君子审判》。本片他演艾比·霍夫曼——用嘲讽当武器、最后真的把法庭变成舞台的那个人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_76493.jpg" alt="" loading="lazy"><span>独裁者</span></div><div class="wk"><img src="assets/movies/w_496.jpg" alt="" loading="lazy"><span>波拉特</span></div><div class="wk"><img src="assets/movies/w_740985.jpg" alt="" loading="lazy"><span>波拉特2</span></div><div class="wk"><img src="assets/movies/w_267193.jpg" alt="" loading="lazy"><span>王牌贱谍：格林斯比</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《芝加哥七君子审判》是一部关于「程序」的电影。索金最擅长的事就在这里：他让一群人为了一个词、一句允许、一次发言权，来来回回地争，而你居然看得血脉贲张。轻微剧透：真正的转折在鲍比·西尔。他被强行捆绑、塞住嘴、拖出法庭——那一刻你才明白这场审判的重点从来不是定罪，而是让人闭嘴。后面所有人的选择都从这条线生出来：艾比用嘲讽对抗，汤姆用体面争取，而到最后两个人都在同一件事上让步。影片结尾给了每个人一句去向字幕，那些数字比任何台词都狠：有人继续从政，有人流亡，有人在几年后死于服药过量。索金很清楚自己在拍什么——一场五个月的审判，最后被历史判了无罪，而做出这个决定的人，名字一个也没留下。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年最好的法庭题材片的人；喜欢《十二怒汉》《好人寥寥》《社交网络》这类索金式对白的观众。含警民暴力冲突与庭审羞辱画面，无血腥但情绪激烈。内地未映，流媒体可看。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-04；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>

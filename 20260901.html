@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.75 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1020px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:14px;margin-bottom:6px}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:10px}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin-right:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qt{color:var(--tx)}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 168px}
+.poster-img{width:168px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:12px}
+.p-face{width:72px;height:72px;border-radius:50%;overflow:hidden;background:#222836;margin-bottom:8px}
+.face{width:72px;height:72px;object-fit:cover;display:block}
+.p-name{font-size:14px;font-weight:600;margin-bottom:2px}
+.p-role{color:var(--mut);font-size:11.5px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;margin-bottom:6px}
+.works{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}
+.work{text-align:center}
+.work-p{width:100%;aspect-ratio:2/3;border-radius:5px;overflow:hidden;background:#222836;margin-bottom:3px}
+.work-img{width:100%;height:100%;object-fit:cover;display:block}
+.work span{font-size:9.5px;color:var(--mut);line-height:1.25;display:block}
+.ph{display:flex;align-items:center;justify-content:center;background:#232a3a;color:#5b657f;font-size:20px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px}
+@media(max-width:820px){
+  .head{flex-direction:column} .poster{flex:none} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .crew{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 9 月 1 日整理 · 已避开往期推荐过的 5 部（挽救计划、痴迷、消失的人、峡湾、激情邀约）</div>
+  <div>
+    <span class="pill">新片为主</span><span class="pill">兼顾口碑与话题</span>
+    <span class="pill">含海报 / 镜头 / 主创作品</span>
+  </div>
+  <div class="meta">评分来自豆瓣、IMDb、烂番茄等公开数据，采集于 2026-09-01，会随时间变动；部分新片评价人数较少，仅供参考。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td class="qt">惊变28年2：白骨圣殿</td><td class="qg">恐怖 / 末世</td><td class="qr">6.5 / 7.3 / 92%</td></tr><tr><td class="qn">02</td><td class="qt">请求救援</td><td class="qg">惊悚 / 生存</td><td class="qr">6.9 / 7.2 / 93%</td></tr><tr><td class="qn">03</td><td class="qt">重返重生</td><td class="qg">科幻 / 复仇</td><td class="qr">97% / 62% / 独立科幻</td></tr><tr><td class="qn">04</td><td class="qt">团战之夜</td><td class="qg">科幻 / 黑色喜剧</td><td class="qr">7.1 / 81% / 66</td></tr><tr><td class="qn">05</td><td class="qt">后室</td><td class="qg">科幻 / 恐怖</td><td class="qr">6.8 / 6.8 / 话题之作</td></tr><tr><td class="qn">06</td><td class="qt">密探</td><td class="qg">剧情 / 政治惊悚</td><td class="qr">7.8 / 99% / 最佳外语片</td></tr><tr><td class="qn">07</td><td class="qt">无可奈何</td><td class="qg">剧情 / 黑色喜剧</td><td class="qr">7.3 / 7.6 / 90%</td></tr><tr><td class="qn">08</td><td class="qt">拯救地球</td><td class="qg">科幻 / 惊悚</td><td class="qr">7.0 / 7.7 / 88%</td></tr><tr><td class="qn">09</td><td class="qt">凶器</td><td class="qg">悬疑 / 恐怖</td><td class="qr">7.0 / 7.7 / 94%</td></tr><tr><td class="qn">10</td><td class="qt">恐怖游轮</td><td class="qg">悬疑 / 心理循环</td><td class="qr">8.5 / 6.9 / 78%</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/bone_poster.jpg" alt="" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 末世</span><span class="year">2026 · 英国 / 美国 · 109 分钟</span></div>
+        <h2>惊变28年2：白骨圣殿 <span class="en">28 Years Later: The Bone Temple</span></h2>
+        <div class="rates"><span class="rate"><b>6.5</b>豆瓣</span><span class="rate"><b>7.3</b>IMDb</span><span class="rate"><b>92%</b>烂番茄</span><span class="rate"><b>81</b>MTC</span></div>
+        <p class="oneline">丧尸片走到第 28 年，最可怕的已经不是感染者了。</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>rage 病毒席卷后的第 28 年，少年斯派克离开孤岛踏上大陆，撞上“吉米帮”——一群把撒旦崇拜当制服穿的暴力少年；另一边，凯尔森医生正试着“治疗”一名感染者，想证明他们身体里还留着人的部分。两条线在一座用骨头搭起来的圣殿前汇合。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>把丧尸片从「人 vs 怪物」拧成「人 vs 人」：真正的恐怖是秩序塌掉之后长出来的新宗教。</li><li>拉尔夫·费因斯的骨殿段落 + 结尾那支铁娘子（Iron Maiden）配乐，荒诞、悲壮，又莫名温柔。</li><li>妮娅·达科斯塔的镜头比前作更冷，血浆和哀悼是同一件事的两面。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/bone_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/bone_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/bone_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_1795072.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">妮娅·达科斯塔 <span class="p-role">导演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_609681.jpg" alt="" loading="lazy"></div><span>惊奇队长2</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_565028.jpg" alt="" loading="lazy"></div><span>糖果人</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_997113.jpg" alt="" loading="lazy"></div><span>海达</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_451918.jpg" alt="" loading="lazy"></div><span>小森林</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_5469.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">拉尔夫·费因斯 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_120467.jpg" alt="" loading="lazy"></div><span>布达佩斯大饭店</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_424.jpg" alt="" loading="lazy"></div><span>辛德勒的名单</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_12445.jpg" alt="" loading="lazy"></div><span>哈利·波特与死亡圣器（下）</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_476669.jpg" alt="" loading="lazy"></div><span>王牌特工：源起</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_85065.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">杰克·奥康奈尔 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_227306.jpg" alt="" loading="lazy"></div><span>坚不可摧</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_1233413.jpg" alt="" loading="lazy"></div><span>罪人</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_252178.jpg" alt="" loading="lazy"></div><span>迷失1971</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_303858.jpg" alt="" loading="lazy"></div><span>金钱怪兽</span></div></div>
+              </div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>它最狠的地方，是让「治愈」变成最残忍的事。参孙被治好的那一刻，他重新想起自己是谁，也重新想起自己失去了什么——所谓白骨圣殿，不是邪教造的，是幸存者用遗忘搭起来的避难所。结尾那段歌舞几乎是全片唯一的温柔，而你心里清楚，它撑不过下一分钟。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>适合已经看腻了丧尸题材、想看看这个类型还能往哪儿走的人。海外口碑远高于国内评分，属于典型的「评价分化但值得一试」。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/send_poster.jpg" alt="" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 生存</span><span class="year">2026 · 美国 · 113 分钟</span></div>
+        <h2>请求救援 <span class="en">Send Help</span></h2>
+        <div class="rates"><span class="rate"><b>6.9</b>豆瓣</span><span class="rate"><b>7.2</b>IMDb</span><span class="rate"><b>93%</b>烂番茄</span></div>
+        <p class="oneline">荒岛只是把办公室搬到了没有监控的地方。</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>飞机失事，公司里的一对上下级成为荒岛仅有的两名幸存者。一个精通生存技能却长期被忽视，一个惯于发号施令却什么都不会。求生刚开始是合作，很快就变了味——当求生变成猎杀，谁会是最后的幸存者？</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>两个人的荒岛，靠表演和调度撑满 113 分钟，山姆·雷米把职场霸凌拍成了生存游戏。</li><li>瑞秋·麦克亚当斯近年最好的一次表演，温柔和狠劲的切换让人坐立不安。</li><li>黑色幽默极准，笑点往往就长在痛点上。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/send_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/send_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/send_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_7623.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">山姆·雷米 <span class="p-role">导演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_557.jpg" alt="" loading="lazy"></div><span>蜘蛛侠</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_558.jpg" alt="" loading="lazy"></div><span>蜘蛛侠2</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_559.jpg" alt="" loading="lazy"></div><span>蜘蛛侠3</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_453395.jpg" alt="" loading="lazy"></div><span>奇异博士2：疯狂多元宇宙</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_53714.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">瑞秋·麦克亚当斯 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_284052.jpg" alt="" loading="lazy"></div><span>奇异博士</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_11036.jpg" alt="" loading="lazy"></div><span>恋恋笔记本</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_10528.jpg" alt="" loading="lazy"></div><span>大侦探福尔摩斯</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_10625.jpg" alt="" loading="lazy"></div><span>贱女孩</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_527393.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">迪伦·奥布莱恩 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_198663.jpg" alt="" loading="lazy"></div><span>移动迷宫</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_294254.jpg" alt="" loading="lazy"></div><span>移动迷宫2：烧痕审判</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_336843.jpg" alt="" loading="lazy"></div><span>移动迷宫3：死亡解药</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_424783.jpg" alt="" loading="lazy"></div><span>大黄蜂</span></div></div>
+              </div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>最后二十分钟，猎物和猎人换了两次位置，而每一次反转你都会发现自己刚才站错了队。雷米的恶趣味在于：他不肯给你一个可以安心谴责的坏人，他给你一个「换我我大概也会这么做」的人。看完那点不舒服，会跟着你一段时间。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《蝇王》《异形》式人性实验的观众；也想看看雷米离开大制作、回到 B 级片手感后是什么样子。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/redux_poster.jpg" alt="" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 复仇</span><span class="year">2025 首映 · 2026 北美公映 · 109 分钟</span></div>
+        <h2>重返重生 <span class="en">Redux Redux</span></h2>
+        <div class="rates"><span class="rate"><b>97%</b>烂番茄</span><span class="rate"><b>62%</b>爆米花</span><span class="rate"><b>独立科幻</b>类型</span></div>
+        <p class="oneline">多重宇宙还能有新意吗？这部就是答案。</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>女儿被杀害后，艾琳搞到一台能穿梭平行宇宙的机器。她开始一个宇宙接一个宇宙地追杀凶手，杀了一次又一次——直到复仇本身成了她活下去的唯一理由。某一次，她救下了一个本该成为下一个受害者的少女米娅。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>把「多重宇宙」从视觉奇观拉回到一个人的丧女之痛，所有科幻设定都为情绪服务。</li><li>米凯拉·麦克马纳斯几乎独挑大梁，把一个被 grief 掏空的人演得极有说服力。</li><li>中段米娅加入后，片子从复仇片翻面成「两个受伤的人互相认领」，这是全片最好的转折。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/redux_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/redux_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/redux_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_223823.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">凯文·麦克马纳斯 <span class="p-role">导演 / 编剧</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_731740.jpg" alt="" loading="lazy"></div><span>布洛克岛秘音</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_96087.jpg" alt="" loading="lazy"></div><span>葬礼之王</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_210126.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">米凯拉·麦克马纳斯 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_731740.jpg" alt="" loading="lazy"></div><span>布洛克岛秘音</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_383256.jpg" alt="" loading="lazy"></div><span>爱在瓦伦丁</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_244316.jpg" alt="" loading="lazy"></div><span>嗜血灰熊</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_96087.jpg" alt="" loading="lazy"></div><span>葬礼之王</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_4909516.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">斯特拉·马库斯 <span class="p-role">主演</span></div>
+                <div class="p-note">新人演员，本片为其首个重要银幕角色。</div>
+                <div class="works"></div>
+              </div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>杀到第 N 个凶手时你会发现，重复不是为了让复仇更爽，而是为了让它更空。真正致命的一刀是全片最安静的那场戏：她闯进一个女儿还活着的宇宙，隔着窗看了一眼，然后道别。低成本看得出粗糙，但那股情绪是真的。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>对多重宇宙题材已经疲惫、但还愿意再给一次机会的人。今年被低估得最厉害的独立科幻片。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/glhf_poster.jpg" alt="" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 黑色喜剧</span><span class="year">2025 首映 · 2026 公映 · 134 分钟</span></div>
+        <h2>团战之夜 <span class="en">Good Luck, Have Fun, Don&#x27;t Die</span></h2>
+        <div class="rates"><span class="rate"><b>7.1</b>豆瓣</span><span class="rate"><b>81%</b>烂番茄</span><span class="rate"><b>66</b>MTC</span></div>
+        <p class="oneline">一个穿塑料雨衣的疯子，第 117 次回来救世界。</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>深夜十点十分，一个自称来自未来的男人冲进洛杉矶一家通宵餐厅，宣布要招募几个人跟他去拯救世界——这已经是他第 117 次尝试，前 116 次全失败了。他要阻止的，是一个九岁男孩即将创造出来的、会把人类养废的 AI。一夜、六条街、六个任务。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>一间餐厅、一夜时间，把「时间循环 + AI 末日」塞进密闭空间，节奏像游戏读档。</li><li>山姆·洛克威尔的表演是「疯癫里带着累」，越到后面越像在求救而不是下令。</li><li>每个人的前史都是一则当代寓言：克隆死去的孩子、为 VR 失去伴侣、被手机吃掉的学生。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/glhf_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/glhf_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/glhf_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_1704.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">戈尔·维宾斯基 <span class="p-role">导演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_22.jpg" alt="" loading="lazy"></div><span>加勒比海盗1：黑珍珠号的诅咒</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_58.jpg" alt="" loading="lazy"></div><span>加勒比海盗2：聚魂棺</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_285.jpg" alt="" loading="lazy"></div><span>加勒比海盗3：世界的尽头</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_44896.jpg" alt="" loading="lazy"></div><span>兰戈</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_6807.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">山姆·洛克威尔 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_17431.jpg" alt="" loading="lazy"></div><span>月球</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_10138.jpg" alt="" loading="lazy"></div><span>钢铁侠2</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_359940.jpg" alt="" loading="lazy"></div><span>三块广告牌</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_629542.jpg" alt="" loading="lazy"></div><span>坏蛋联盟</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_36594.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">朱诺·坦普尔 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_102651.jpg" alt="" loading="lazy"></div><span>沉睡魔咒</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_912649.jpg" alt="" loading="lazy"></div><span>毒液：最后一舞</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_149509.jpg" alt="" loading="lazy"></div><span>复仇之角</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_1007757.jpg" alt="" loading="lazy"></div><span>奇幻变身大冒险</span></div></div>
+              </div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>维宾斯基骂得很脏，也很真诚——他把「刷短视频刷到世界末日」拍成了恐怖片。中段确实乱，规则交代得有点绕，但那股愤怒是真的：AI 不是敌人，是我们主动交出去的注意力。那句台词刺得很准——「AI 会给你想要的一切，但最后全都是假的。」</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《瞬息全宇宙》《前目的地》那种高概念乱炖的人；对 AI 议题有情绪、想看有人替你骂出来的观众。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/back_poster.jpg" alt="" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 恐怖</span><span class="year">2026 · 美国 / 加拿大 · 111 分钟</span></div>
+        <h2>后室 <span class="en">The Backrooms</span></h2>
+        <div class="rates"><span class="rate"><b>6.8</b>豆瓣</span><span class="rate"><b>6.8</b>IMDb</span><span class="rate"><b>话题之作</b>类型</span></div>
+        <p class="oneline">今年讨论度最高的恐怖片，终于把「后室」拍出了实体。</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>心理治疗师玛丽的病人，在一次诡异事故后「切入」了一个不该存在的维度：无限延伸的黄色办公空间，头顶荧光灯嗡嗡作响，现实规则全部失效。为了把他带回来，她只能自己走进去。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>把网络共创恐怖美学第一次搬上大银幕，黄色走廊的质感终于有了实体。</li><li>切瓦特·埃加福 + 雷娜特·赖因斯夫，给了一个 B 级概念 A 级表演。</li><li>空间即心理创伤：每一层后室都对应一段走不出来的旧事，「逃出去」因此有了情感重量。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/back_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/back_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/back_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_3688382.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">凯恩·帕森斯 <span class="p-role">导演</span></div>
+                <div class="p-note">YouTube 现象级短片《Backrooms》创作者，本片是其长片处女作。</div>
+                <div class="works"></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_5294.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">切瓦特·埃加福 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_76203.jpg" alt="" loading="lazy"></div><span>为奴十二年</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_284052.jpg" alt="" loading="lazy"></div><span>奇异博士</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_420818.jpg" alt="" loading="lazy"></div><span>狮子王</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_14161.jpg" alt="" loading="lazy"></div><span>2012</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_1576786.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">雷娜特·赖因斯夫 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_660120.jpg" alt="" loading="lazy"></div><span>世界上最糟糕的人</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_1124566.jpg" alt="" loading="lazy"></div><span>情感价值</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_989662.jpg" alt="" loading="lazy"></div><span>不同的男人</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_1020896.jpg" alt="" loading="lazy"></div><span>再会亡灵</span></div></div>
+              </div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>争议几乎全在「具象化」三个字上——粉丝心里的后室一旦有了确定形状，必然得罪一半人。但作为一部影院片，它找到了聪明的落点：那些无尽走廊不是地狱，是每个人反复走不出去的那件事。豆瓣 6.8 但「好于 90% 恐怖片」，这话本身就说明它的位置。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>对「阈限空间 / liminal space」美学有感觉的人；想亲眼看看今年最出圈的恐怖概念到底被拍成了什么样。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/agent_poster.jpg" alt="" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 政治惊悚</span><span class="year">2025 · 巴西 / 法国 / 德国 / 荷兰 · 161 分钟</span></div>
+        <h2>密探 <span class="en">O Agente Secreto / The Secret Agent</span></h2>
+        <div class="rates"><span class="rate"><b>7.8</b>豆瓣</span><span class="rate"><b>99%</b>烂番茄</span><span class="rate"><b>最佳外语片</b>金球奖</span></div>
+        <p class="oneline">今年最完整的一部电影：独裁被拍成了炎热的、彩色的日常。</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1977 年狂欢节期间的巴西累西腓。化名「马塞洛」的前技术专家逃回家乡，想接回自幼分开的儿子。整座城市在过节，也在清算——而死亡威胁一直跟在他身后。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>把政治惊悚拍成「生活的惊悚」：最可怕的暴力发生在阳光、音乐和人群里。</li><li>瓦格纳·马拉收敛到极致的表演，戛纳影帝实至名归；乌多·基尔的最后一部电影。</li><li>门多萨对城市的爱：电影院、唱片、街道，都是他要保住的记忆。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/agent_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/agent_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/agent_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_1016214.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">小克莱伯·门多萨 <span class="p-role">导演 / 编剧</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_446159.jpg" alt="" loading="lazy"></div><span>巴克劳</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_377273.jpg" alt="" loading="lazy"></div><span>水瓶座</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_97989.jpg" alt="" loading="lazy"></div><span>舍间声响</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_1112548.jpg" alt="" loading="lazy"></div><span>幽灵肖像</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_52583.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">瓦格纳·马拉 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_7347.jpg" alt="" loading="lazy"></div><span>精英部队</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_315162.jpg" alt="" loading="lazy"></div><span>穿靴子的猫2</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_929590.jpg" alt="" loading="lazy"></div><span>美国内战</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_47931.jpg" alt="" loading="lazy"></div><span>精英部队2：大敌当前</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_1646.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">乌多·基尔 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_36647.jpg" alt="" loading="lazy"></div><span>刀锋战士</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_3049.jpg" alt="" loading="lazy"></div><span>神探飞机头</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_301337.jpg" alt="" loading="lazy"></div><span>缩小人生</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_249397.jpg" alt="" loading="lazy"></div><span>女性瘾者：第二部</span></div></div>
+              </div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>它最厉害的地方，是不把独裁拍成黑白色，而是拍成彩色、炎热、吵闹的日常——暴力就长在日常里。中段那条「鲨鱼肚子里的人腿」支线荒诞得像热带八卦，却正是那个年代的真实气味。结尾跨越数十年的一笔会让你明白，前面所有的耐心都是为了这一脚：历史不会自己保存记忆，得有人去翻档案。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>今年颁奖季的绝对主力（金球奖最佳外语片 + 奥斯卡四项提名）。想看一部结构、表演、作者性都在线的「大人看的电影」。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/noc_poster.jpg" alt="" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 黑色喜剧</span><span class="year">2025 · 韩国 · 139 分钟</span></div>
+        <h2>无可奈何 <span class="en">No Other Choice (어쩔수가없다)</span></h2>
+        <div class="rates"><span class="rate"><b>7.3</b>豆瓣</span><span class="rate"><b>7.6</b>IMDb</span><span class="rate"><b>90%</b>烂番茄</span></div>
+        <p class="oneline">为了保住房子，他决定把竞争对手一个个除掉。</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>在造纸厂干了 25 年、真心觉得自己「已经拥有一切」的老技师柳万秀，某天突然被裁员。为了保住妻子孩子、守住那套千辛万苦买下的房子，他开始重新求职；然后他想出了一个办法——把竞争对手一个个杀掉。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>朴赞郁把「中产坠落」拍成荒诞剧：每一步都很好笑，每一步都在往下掉。</li><li>李炳宪把一个小人物的体面崩塌演得毫厘不差；孙艺珍的妻子绝不是背景板。</li><li>视听依旧顶级：对称构图、突兀的幽默、残忍的剪辑节奏，一件都没少。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/noc_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/noc_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/noc_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_10099.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">朴赞郁 <span class="p-role">导演 / 编剧</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_670.jpg" alt="" loading="lazy"></div><span>老男孩</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_290098.jpg" alt="" loading="lazy"></div><span>小姐</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_86825.jpg" alt="" loading="lazy"></div><span>斯托克</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_4550.jpg" alt="" loading="lazy"></div><span>亲切的金子</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><div class="face ph">李</div></div>
+              <div class="p-body">
+                <div class="p-name">李炳宪 <span class="p-role">主演</span></div>
+                <div class="p-note">韩国国宝级演员，青龙奖 / 百想视帝常客。</div>
+                <div class="works"><div class="work"><div class="work-p"><div class="work-img ph">—</div></div><span>共同警备区JSA</span></div><div class="work"><div class="work-p"><div class="work-img ph">—</div></div><span>看见恶魔</span></div><div class="work"><div class="work-p"><div class="work-img ph">—</div></div><span>局内人</span></div><div class="work"><div class="work-p"><div class="work-img ph">—</div></div><span>南山的部长们</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_4635465.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">孙艺珍 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_35994.jpg" alt="" loading="lazy"></div><span>假如爱有天意</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_36256.jpg" alt="" loading="lazy"></div><span>我脑海中的橡皮擦</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_496243.jpg" alt="" loading="lazy"></div><span>现在去见你</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_414906.jpg" alt="" loading="lazy"></div><span>协商</span></div></div>
+              </div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>最冷的一笔是：他不是恶人，他只是「没有别的选择」——片名既是借口，也是判决书。当整个系统把人变成耗材，杀人就成了一种求职技巧。看完你会笑不出来，因为那份焦虑一点也不异国，它就贴在我们自己的工位上。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>朴赞郁粉丝必看；对职场与中年危机有切身体感的人（可能会看得有点疼）。多伦多人民选择奖第一名、青龙奖最佳影片。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/bug_poster.jpg" alt="" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 惊悚</span><span class="year">2025 · 爱尔兰 / 英国 / 韩国 / 美国 · 118 分钟</span></div>
+        <h2>拯救地球 <span class="en">Bugonia</span></h2>
+        <div class="rates"><span class="rate"><b>7.0</b>豆瓣</span><span class="rate"><b>7.7</b>IMDb</span><span class="rate"><b>88%</b>烂番茄</span></div>
+        <p class="oneline">两个疯子绑架了女 CEO，因为她其实是外星人。</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>两个深信阴谋论的年轻人——养蜂人泰迪和表弟唐——绑架了一家大型药企的女 CEO 米歇尔，坚信她是来毁灭地球的外星人。他们把她关进地下室、剃光她的头发，用尽荒诞手段想逼她「现出原形」。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>兰斯莫斯最锋利的一次：荒诞设定底下是彻骨的当代寓言。</li><li>艾玛·斯通剃光头出演，被绑在椅子上却始终牢牢掌控着场面。</li><li>杰西·普莱蒙的偏执狂表演令人不适又心碎——他不夸张，他可信。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/bug_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/bug_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/bug_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-face"><div class="face ph">欧</div></div>
+              <div class="p-body">
+                <div class="p-name">欧格斯·兰斯莫斯 <span class="p-role">导演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_254320.jpg" alt="" loading="lazy"></div><span>龙虾</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_375262.jpg" alt="" loading="lazy"></div><span>宠儿</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_792307.jpg" alt="" loading="lazy"></div><span>可怜的东西</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_399057.jpg" alt="" loading="lazy"></div><span>圣鹿之死</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_54693.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">艾玛·斯通 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_337404.jpg" alt="" loading="lazy"></div><span>黑白魔女库伊拉</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_1930.jpg" alt="" loading="lazy"></div><span>超凡蜘蛛侠</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_50014.jpg" alt="" loading="lazy"></div><span>相助</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_313369.jpg" alt="" loading="lazy"></div><span>爱乐之城</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_88124.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">杰西·普莱蒙 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_559969.jpg" alt="" loading="lazy"></div><span>续命之徒：绝命毒师电影</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_500840.jpg" alt="" loading="lazy"></div><span>我想结束这一切</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_337170.jpg" alt="" loading="lazy"></div><span>美国行动</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_451048.jpg" alt="" loading="lazy"></div><span>丛林奇航</span></div></div>
+              </div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>地下室里有三个「疯子」，而谁来定义疯子，是全片一直在掰的问题。最后十五分钟千万别被剧透，它会把你以为自己站的那块地整个抽走。看完你会反复想那个问题：真正的外星人，会不会正坐在 CEO 办公室里签文件？</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>兰斯莫斯 / 艾玛·斯通粉丝；喜欢看完还能跟人吵一架的电影。改编自 2003 年韩国cult片《拯救绿色星球!》，可作对照。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/weap_poster.jpg" alt="" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 恐怖</span><span class="year">2025 · 美国 · 128 分钟</span></div>
+        <h2>凶器 <span class="en">Weapons</span></h2>
+        <div class="rates"><span class="rate"><b>7.0</b>豆瓣</span><span class="rate"><b>7.7</b>IMDb</span><span class="rate"><b>94%</b>烂番茄</span></div>
+        <p class="oneline">凌晨 2:17，17 个孩子同时跑出家门，再也没有回来。</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>同一晚的同一时刻，同一个班级的 17 个孩子以诡异姿势冲出家门集体失踪，全班只有一个男孩留下。老师、家长、警察、小偷、校长、男孩——六个视角轮流展开，真相被一块块拼出来。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>多视角拼图叙事：每换一个视角，就把你对前面所有的判断重排一次。</li><li>几乎不靠 jump scare，靠构图、声音留白和「日常场景被异化」制造压迫。</li><li>把小镇恐慌拍成社会寓言：找替罪羊，永远比找真相容易。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/weap_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/weap_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/weap_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_84833.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">扎克·克雷格 <span class="p-role">导演 / 编剧</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_19556.jpg" alt="" loading="lazy"></div><span>三月女郎</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_913290.jpg" alt="" loading="lazy"></div><span>野蛮人</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_99367.jpg" alt="" loading="lazy"></div><span>基哥们</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_13991.jpg" alt="" loading="lazy"></div><span>大学预备生</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_936970.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">朱莉亚·加德纳 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_84892.jpg" alt="" loading="lazy"></div><span>壁花少年</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_617126.jpg" alt="" loading="lazy"></div><span>神奇四侠：初露锋芒</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_627463.jpg" alt="" loading="lazy"></div><span>助理</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_710295.jpg" alt="" loading="lazy"></div><span>狼人</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_16851.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">乔什·布洛林 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_383498.jpg" alt="" loading="lazy"></div><span>死侍2</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_299536.jpg" alt="" loading="lazy"></div><span>复仇者联盟3：无限战争</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_6977.jpg" alt="" loading="lazy"></div><span>老无所依</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_82682.jpg" alt="" loading="lazy"></div><span>匪帮传奇</span></div></div>
+              </div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>真正的「凶器」不是那个女巫，是这座小镇对彼此的猜忌。结局孩子们反扑的那一幕又脏又快，把「正义必胜」的幻觉撕了个干净——被救回来的孩子，没有一个还是完整的。看完你会想走到街上，用一种不太一样的眼神看看自家窗外。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《野蛮人》的人（同一个导演）；想看今年叙事最有想法的恐怖片。3800 万成本换回 2.5 亿美元票房。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/tri_poster.jpg" alt="" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 心理循环</span><span class="year">2009 · 英国 / 澳大利亚 · 99 分钟 · 2026 年 7 月 17 日内地首映</span></div>
+        <h2>恐怖游轮 <span class="en">Triangle</span></h2>
+        <div class="rates"><span class="rate"><b>8.5</b>豆瓣</span><span class="rate"><b>6.9</b>IMDb</span><span class="rate"><b>78%</b>烂番茄</span></div>
+        <p class="oneline">豆瓣 Top250 的时间循环天花板，17 年后终于登上内地大银幕。</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>单亲母亲杰西和朋友们乘游艇出海，风暴掀翻了船。绝望之际，一艘本该在 1930 年就失踪的旧游轮「埃俄罗斯」号缓缓驶来。船上空无一人，只有血迹、涂鸦，和一种她没法解释的似曾相识——她掉进了一个逃不出去的循环。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>时间循环片的逻辑天花板：没有一个镜头是废的，每一处伏笔都会回响。</li><li>恐惧不来自鬼怪，来自「命运无法更改」的窒息感，是细思极恐那一挂。</li><li>内地首次公映、一刀未剪，影院的声场会把轮回的压迫感放大好几倍。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/tri_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/tri_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/tri_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_41041.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">克里斯托弗·史密斯 <span class="p-role">导演 / 编剧</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_41215.jpg" alt="" loading="lazy"></div><span>黑死病</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_8555.jpg" alt="" loading="lazy"></div><span>地铁惊魂</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_5072.jpg" alt="" loading="lazy"></div><span>断头气</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_356500.jpg" alt="" loading="lazy"></div><span>改道</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_27755.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">梅利莎·乔治 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_4513.jpg" alt="" loading="lazy"></div><span>三十极夜</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_10065.jpg" alt="" loading="lazy"></div><span>鬼哭神嚎</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_81390.jpg" alt="" loading="lazy"></div><span>孤独的死亡之所</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_9796.jpg" alt="" loading="lazy"></div><span>丛林噩梦</span></div></div>
+              </div>
+            </div>
+            <div class="person">
+              <div class="p-face"><img class="face" src="assets/movies/p_76068.jpg" alt="" loading="lazy"></div>
+              <div class="p-body">
+                <div class="p-name">迈克尔·多曼 <span class="p-role">主演</span></div>
+                
+                <div class="works"><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_570670.jpg" alt="" loading="lazy"></div><span>隐形人</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_166426.jpg" alt="" loading="lazy"></div><span>加勒比海盗5：死无对证</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_19901.jpg" alt="" loading="lazy"></div><span>嗜血破晓</span></div><div class="work"><div class="work-p"><img class="work-img" src="assets/movies/w_49021.jpg" alt="" loading="lazy"></div><span>铁血精英</span></div></div>
+              </div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>它讲的从来不是时空陷阱，是一个人不肯原谅自己。每一次「再试一次」，都是执念的一次刷新；越挣扎，循环收得越紧。看到最后你会发现，最恐怖的不是甲板上那堆东西，而是杰西坐进出租车、说「我马上回来」时的那个表情——她明知那条路通向哪里。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>还没在影院看过的人，这次别再错过了。烧脑片入门与进阶都合适，看完值得去翻一遍时间线图解。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · 图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-09-01；标注「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>

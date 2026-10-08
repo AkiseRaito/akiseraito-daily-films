@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-09-29 · 第 29 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 9 月 29 日 · 第 29 期 · 已避开往期推荐过的全部 265 部</div>
+  <div>
+    <span class="pill">主题：1960 年代 · 新浪潮十年（1959–1968）</span>
+    <span class="pill">4 部欧洲现代主义（广岛之恋 · 甜蜜的生活 · 精疲力尽 · 无辜的人）</span>
+    <span class="pill">3 部日本新浪潮（切腹 · 鬼婆 · 砂之女）</span>
+    <span class="pill">3 部新好莱坞 / 意式西部（人猿星球 · 雌雄大盗 · 西部往事）</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-09-29，会随时间变动，仅供参考。<br>
+  本期主题是「1960 年代 · 新浪潮十年」。这十年里，全世界的电影几乎同时开始不守规矩：1959 年雷乃用《广岛之恋》把记忆剪成了非线性，1960 年费里尼用《甜蜜的生活》把情节拆成七夜、戈达尔用《精疲力尽》把跳接和手持推到了台前；1961 年英国有《无辜的人》——一部没有特效、全靠暗示的哥特心理恐怖；1962 到 1964 年，日本同时给出了《切腹》《鬼婆》《砂之女》三份完全不同的答案，一个反制度、一个反人性、一个反「自由」这个词的字面意思；到 1967-1968 年，好莱坞自己换了血，《雌雄大盗》撕开了暴力尺度，《人猿星球》用一个反转重写了科幻，而意大利人莱昂内在《西部往事》里给西部片办了一场葬礼。<br>
+  10 位导演（阿伦·雷乃 / 费德里科·费里尼 / 让-吕克·戈达尔 / 杰克·克莱顿 / 小林正树 / 新藤兼人 / 敕使河原宏 / 富兰克林·J·沙夫纳 / 阿瑟·佩恩 / 赛尔乔·莱昂内）与 30 位主创全部为首次出现，无一与往期重复。<br>
+  几部口碑明显分裂的片子已如实标注、未做修饰：《雌雄大盗》（豆瓣 8.2 vs 烂番茄 91%，1967 年上映时因美化真实杀人犯引发巨大争议）、《鬼婆》（豆瓣 8.1 vs 烂番茄 83%，样本量与题材都偏冷门）、《无辜的人》（豆瓣 7.9 vs 烂番茄 95% / Metacritic 88，因为它从头到尾不给答案）、《广岛之恋》（豆瓣 7.9，属于「评论界地位远高于大众评分」的典型）。<br>
+  内地公映情况：本期 10 部均未在内地上映，流媒体与修复版碟片可看；<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>广岛之恋</td><td class="qg">剧情 / 爱情（法国左岸派 · 记忆与创伤）</td><td class="qr">7.9 / 7.8 / 主竞赛</td></tr><tr><td class="qn">02</td><td>甜蜜的生活</td><td class="qg">剧情 / 喜剧（意大利现代主义 · 费里尼）</td><td class="qr">8.6 / 95% / 8.0</td></tr><tr><td class="qn">03</td><td>精疲力尽</td><td class="qg">剧情 / 犯罪（法国新浪潮 · 戈达尔）</td><td class="qr">8.4 / 97% / 7.6</td></tr><tr><td class="qn">04</td><td>无罪的人</td><td class="qg">恐怖 / 悬疑（英国哥特 · 心理惊悚）</td><td class="qr">7.9 / 95% / 88</td></tr><tr><td class="qn">05</td><td>切腹</td><td class="qg">剧情 / 悬疑（日本 · 反武士道）</td><td class="qr">9.4 / 8.6 / 评审团特别奖</td></tr><tr><td class="qn">06</td><td>鬼婆</td><td class="qg">恐怖 / 剧情（日本 · 新藤兼人 · 中世纪三部曲）</td><td class="qr">8.1 / 83% / 7.8</td></tr><tr><td class="qn">07</td><td>砂之女</td><td class="qg">剧情 / 惊悚（日本 · 敕使河原宏 · 存在主义）</td><td class="qr">8.5 / 100% / 8.4</td></tr><tr><td class="qn">08</td><td>人猿星球</td><td class="qg">科幻 / 悬疑（新好莱坞 · 反乌托邦）</td><td class="qr">8.1 / 90% / 79</td></tr><tr><td class="qn">09</td><td>雌雄大盗</td><td class="qg">剧情 / 犯罪（新好莱坞 · 阿瑟·佩恩）</td><td class="qr">8.2 / 91% / 7.8</td></tr><tr><td class="qn">10</td><td>西部往事</td><td class="qg">剧情 / 西部（意大利式西部片 · 莱昂内）</td><td class="qr">8.7 / 96% / 82</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/hiro_poster.jpg" alt="广岛之恋 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 爱情（法国左岸派 · 记忆与创伤）</span><span class="year">1959 · 法国 / 日本 · 90 分钟 · 黑白 · 内地未映</span></div>
+        <h2>广岛之恋 <span class="en">Hiroshima mon amour</span></h2>
+        <div class="rates"><span class="rate"><b>7.9</b>豆瓣</span><span class="rate"><b>7.8</b>IMDb</span><span class="rate"><b>主竞赛</b>戛纳</span></div>
+        <p class="oneline">「你在广岛什么都没看见。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1957 年，一个法国女演员来广岛拍一部反战电影，最后一天遇上一个日本建筑师。两人在旅馆房间里度过不到一天一夜，而她不停地在讲另一件事：十四年前，在法国小城内韦尔，她爱上过一个德国占领军士兵；德军撤退时他被击毙在她怀里，而她因为「通敌」被剃光头、关进地窖。广岛与内韦尔，两段记忆在她的叙述里互相侵入。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>剧本出自玛格丽特·杜拉斯之手。她写的不是对白，是台词式的长句——两个人互相打断、互相纠正，像在争一件谁也没真正经历过的事。</li><li>开场那十几分钟是影史上最著名的一段蒙太奇：被烧焦的头发、变形的钢筋、博物馆的展品，与两具缠在一起的躯体交替剪辑。雷乃把「集体创伤」和「肉身」剪成了同一件事。</li><li>「你在广岛什么都没看见」「我全都看见了」——这场争论是全片的轴心：记忆到底属于亲历者，还是属于讲述者。</li><li>它是法国「左岸派」的起点，也常被算作新浪潮的开山作之一，但它和戈达尔那批人完全不同：雷乃关心的是时间，不是街头。</li><li>影片在 1959 年戛纳主竞赛单元放映（因政治原因未参与金棕榈角逐），拿到国际影评人费比西奖。</li><li>片名里的「mon amour」（我的爱人）是杜拉斯加的。雷乃原本只想拍一部关于广岛的纪录片，被杜拉斯劝成了剧情片。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/hiro_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/hiro_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/hiro_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11983.jpg" alt="" loading="lazy">
+                <div class="p-name">阿伦·雷乃 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">法国导演，「左岸派」的核心。剪辑师出身，先拍纪录片（《夜与雾》(1955) 关于集中营），再转剧情片。《广岛之恋》(1959)《去年在马里昂巴德》(1961)《莫里埃尔》《我的美国舅舅》；一生关心的是「时间如何被记忆扭曲」，2014 年去世，享年 92 岁。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_803.jpg" alt="" loading="lazy"><span>夜与雾</span></div><div class="wk"><img src="assets/movies/w_4024.jpg" alt="" loading="lazy"><span>去年在马里昂巴德</span></div><div class="wk"><img src="assets/movies/w_39543.jpg" alt="" loading="lazy"><span>我的美国舅舅</span></div><div class="wk"><img src="assets/movies/w_54563.jpg" alt="" loading="lazy"><span>莫里埃尔</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_267962.jpg" alt="" loading="lazy">
+                <div class="p-name">埃玛妞·丽娃 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">法国演员，半路出家，32 岁才首次上银幕，《广岛之恋》就是她的电影处女作；53 年后凭哈内克的《爱》(2012) 拿下凯撒奖影后，并以 85 岁成为奥斯卡影后提名者中最年长的一位。2017 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_86837.jpg" alt="" loading="lazy"><span>爱</span></div><div class="wk"><img src="assets/movies/w_108.jpg" alt="" loading="lazy"><span>蓝白红三部曲之蓝</span></div><div class="wk"><img src="assets/movies/w_63892.jpg" alt="" loading="lazy"><span>莱昂莫汉神父</span></div><div class="wk"><img src="assets/movies/w_413778.jpg" alt="" loading="lazy"><span>流浪巴黎</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_24422.jpg" alt="" loading="lazy">
+                <div class="p-name">贝尔纳·弗雷松 <span class="p-role">主演（德国士兵）</span></div>
+              </div>
+              <div class="p-note">法国演员，本片是他的银幕处女作，演那个十四年前在内韦尔被击毙的德国士兵——只在闪回里出现。此后参演 120 余部影视作品，与科斯塔-加夫拉斯、弗兰克海默多次合作（《焦点新闻》《怪房客》），凭《Garçon!》获凯撒奖最佳男配角提名。2002 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_11482.jpg" alt="" loading="lazy"><span>怪房客</span></div><div class="wk"><img src="assets/movies/w_10711.jpg" alt="" loading="lazy"><span>法国贩毒网2</span></div><div class="wk"><img src="assets/movies/w_2721.jpg" alt="" loading="lazy"><span>焦点新闻</span></div><div class="wk"><img src="assets/movies/w_649.jpg" alt="" loading="lazy"><span>白日美人</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《广岛之恋》最特别的地方是：它讲的是一个女人试图把一段记忆说出来，而说出来这件事本身就失败了。轻微剧透：她反复说「我忘记了」，可每一段内韦尔的闪回都比上一次更清晰——雷乃用闪回的「清晰度」来表现记忆的强度，这在 1959 年是全新的语法。更狠的是结尾：两个人在咖啡馆里互相唤对方的名字，一个叫「广岛」，一个叫「内韦尔」。他们从头到尾没问过对方真名。也就是说，这场爱情的对象其实是两座城、两段历史，而不是彼此。所以它看着像爱情片，其实是一部关于「人无法真正向另一个人交付自己过去」的电影。埃玛妞·丽娃的表演是那种你不觉得她在演的状态——她大部分时间只是在说话，语速均匀、几乎不动，但你能听见她在句尾漏掉的那些东西。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《去年在马里昂巴德》《花样年华》《记忆》（2021 阿彼察邦）这类「时间不线性」电影的人；想看新浪潮另一条支脉（左岸派，而不是戈达尔那条）的人。黑白，无血腥，含成人情感内容与战争创伤议题。内地未引进，流媒体与修复版碟片可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/dolce_poster.jpg" alt="甜蜜的生活 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 喜剧（意大利现代主义 · 费里尼）</span><span class="year">1960 · 意大利 / 法国 · 174 分钟 · 黑白 · 内地未映</span></div>
+        <h2>甜蜜的生活 <span class="en">La Dolce Vita</span></h2>
+        <div class="rates"><span class="rate"><b>8.6</b>豆瓣</span><span class="rate"><b>95%</b>烂番茄</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「你已经把一切都浪费了。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>马切洛是罗马的小报记者，靠写明星八卦过活。他想当作家，但一直没写成。影片没有连贯剧情，只有他漂过的七个夜晚：追瑞典女星西尔维娅、陪贵族玛达莱娜在街头兜风、陪父亲去夜总会、见证一场假圣母显灵的闹剧。最后一场，一伙人在海边的别墅里狂欢到天亮，然后海滩上出现一条被冲上岸的怪鱼。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>《甜蜜的生活》是「paparazzo」（狗仔）这个词的产地——片中那个骑摩托追拍的记者叫 Paparazzo，从此全世界都这么叫。</li><li>特莱维喷泉那场戏（西尔维娅走进水里、马切洛跟进去）是影史被引用最多的镜头之一。拍的时候是冬天，阿妮塔·艾克伯格穿了三层潜水衣在冷水里站了整晚；马斯楚安尼则灌了整瓶伏特加才下去。</li><li>费里尼原本想拍「一个记者的七天」，最后拍成了七夜——白天的段落几乎全被删掉。这也是为什么全片从头到尾没有一场清醒的对话。</li><li>它拿到 1960 年戛纳金棕榈，但当年的争议极大：梵蒂冈的官方报纸公开谴责它「伤风败俗」，意大利议会也有人要求禁映。</li><li>片中那个「假圣母显灵」的段落，是费里尼对大众迷信最刻薄的一次嘲讽——人群举着蜡烛走了整整一夜，什么也没等到。</li><li>174 分钟，七段式结构。它发明了一种至今没人完全学会的节奏：每一段都有完整起落，但整体是往下走的。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/dolce_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dolce_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dolce_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4415.jpg" alt="" loading="lazy">
+                <div class="p-name">费德里科·费里尼 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">意大利导演，影史上最会用「段落」代替「情节」的人。《大路》(1954)《卡比利亚之夜》《甜蜜的生活》(1960)《八部半》(1963)《阿玛柯德》；四次奥斯卡最佳外语片，1993 年获奥斯卡终身成就奖。他创造了一个词：Felliniesque（费里尼式）。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_422.jpg" alt="" loading="lazy"><span>八部半</span></div><div class="wk"><img src="assets/movies/w_7857.jpg" alt="" loading="lazy"><span>阿玛柯德</span></div><div class="wk"><img src="assets/movies/w_405.jpg" alt="" loading="lazy"><span>大路</span></div><div class="wk"><img src="assets/movies/w_307.jpg" alt="" loading="lazy"><span>罗马，不设防的城市</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5676.jpg" alt="" loading="lazy">
+                <div class="p-name">马切洛·马斯楚安尼 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">意大利演员，费里尼的另一半人格。《甜蜜的生活》《八部半》《夜》《意大利式离婚》《极乐大餐》；三次奥斯卡提名，是欧洲作者电影在好莱坞最有名的一张脸。1996 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_422.jpg" alt="" loading="lazy"><span>八部半</span></div><div class="wk"><img src="assets/movies/w_41050.jpg" alt="" loading="lazy"><span>夜</span></div><div class="wk"><img src="assets/movies/w_10102.jpg" alt="" loading="lazy"><span>极乐大餐</span></div><div class="wk"><img src="assets/movies/w_20271.jpg" alt="" loading="lazy"><span>意大利式离婚</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5682.jpg" alt="" loading="lazy">
+                <div class="p-name">阿努克·艾梅 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">法国演员。《甜蜜的生活》里那个在夜间兜风时说「我什么都不要」的贵族玛达莱娜，是她最著名的配角之一；代表作《一个男人和一个女人》(1966)《萝拉》《最美年华》。2024 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_422.jpg" alt="" loading="lazy"><span>八部半</span></div><div class="wk"><img src="assets/movies/w_42726.jpg" alt="" loading="lazy"><span>一个男人和一个女人</span></div><div class="wk"><img src="assets/movies/w_40641.jpg" alt="" loading="lazy"><span>萝拉</span></div><div class="wk"><img src="assets/movies/w_582887.jpg" alt="" loading="lazy"><span>最美年华</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>看《甜蜜的生活》最要紧的一件事是：不要等剧情。它没有剧情，它只有一个人不断往下掉的过程。轻微剧透：影片真正的转折不在哪一场戏，而在马切洛这个人的变化——前两段他是观察者，还带着点嘲讽；到中段他开始羡慕那些被他观察的人；到最后的海滩别墅，他已经成了其中一员，甚至是最空虚的那个。费里尼做的事其实很残忍：他把三十岁男人的所有出口一个一个堵上——写作堵在段首（他从未动笔）、爱情堵在艾玛的自杀未遂、宗教堵在假圣母、家庭堵在父亲那一夜之后的心脏病。最后是那条鱼：巨大的、翻着白眼的、被冲上岸的东西。马切洛看着它，对面沙滩上有个少女在朝他喊什么，他听不清，摆了摆手，转身走回人群。所以这片名是反话。La Dolce Vita 是《甜蜜的生活》，可全片没有一秒是甜的。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《八部半》《罗马》《绝美之城》这类「城市肖像」电影的人；能接受三个小时、无主线、靠段落推进的观众。黑白，含成人内容与自杀议题。内地未引进，流媒体与修复版碟片可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/breath_poster.jpg" alt="精疲力尽 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 犯罪（法国新浪潮 · 戈达尔）</span><span class="year">1960 · 法国 · 90 分钟 · 黑白 · 内地未映</span></div>
+        <h2>精疲力尽 <span class="en">Breathless (À bout de souffle)</span></h2>
+        <div class="rates"><span class="rate"><b>8.4</b>豆瓣</span><span class="rate"><b>97%</b>烂番茄</span><span class="rate"><b>7.6</b>IMDb</span></div>
+        <p class="oneline">「你真恶心。」——「那又怎样？」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>米歇尔从马赛偷了一辆车开往巴黎，路上被摩托警追，他开枪打死了一个警察。到巴黎后他躲在美國女友帕特丽夏的公寓里，一边想办法讨回一笔卖车的钱，一边纠缠她。帕特丽夏在报社遇到警长，对方要她一有消息就打电话。她一边迷恋他那副什么都不在乎的样子，一边嫌他太不靠谱。最后她报了警。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>戈达尔拍这部片时没有完整剧本，只有特吕弗写的一个故事大纲，台词大多是现场给的。贝尔蒙多和茜宝每天到片场才知道今天说什么。</li><li>跳接（jump cut）是它最著名的技术标签：同一场戏里直接剪掉中间几秒，让时间断裂。这在当时被视为「不会剪」，后来成了电影语言的一部分。</li><li>全片用自然光、手持摄影、真实街道拍摄，摄影机常常直接架在推车里被人推着走——因为预算不够租设备。</li><li>成本约 40 万法郎，是当时一部法国普通剧情片的四分之一。它和特吕弗的《四百击》一起被当成新浪潮的开山作。</li><li>戈达尔本人客串了一个告密的路人；让-皮埃尔·梅尔维尔演了小说家帕尔武列斯库——那个在机场说「我想成为不朽，然后死去」的作家。</li><li>结尾米歇尔中枪后在街上跑的那一长段，是影史最长的死亡之一：他跑了整整一条街，倒了，翻过身，说了最后一句，然后才闭上眼睛。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/breath_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/breath_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/breath_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_3776.jpg" alt="" loading="lazy">
+                <div class="p-name">让-吕克·戈达尔 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">法国导演、影评人，新浪潮的核心与后来最难归类的人。《精疲力尽》(1960)《随心所欲》《蔑视》《狂人皮埃罗》《阿尔法城》；一生不断推翻自己的拍法，从剧情片走到论文电影。2022 年在瑞士以协助自杀方式离世，享年 91 岁。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_266.jpg" alt="" loading="lazy"><span>蔑视</span></div><div class="wk"><img src="assets/movies/w_2786.jpg" alt="" loading="lazy"><span>狂人皮埃罗</span></div><div class="wk"><img src="assets/movies/w_1626.jpg" alt="" loading="lazy"><span>随心所欲</span></div><div class="wk"><img src="assets/movies/w_8072.jpg" alt="" loading="lazy"><span>阿尔法城</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_3829.jpg" alt="" loading="lazy">
+                <div class="p-name">让-保罗·贝尔蒙多 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">法国演员，新浪潮的标志性面孔。《精疲力尽》让他一夜成名；此后《狂人皮埃罗》《里奥追踪》《危情谍影》《疯狂特务女杀手》，与戈达尔、梅尔维尔、特吕弗多次合作。2021 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_2786.jpg" alt="" loading="lazy"><span>狂人皮埃罗</span></div><div class="wk"><img src="assets/movies/w_1672.jpg" alt="" loading="lazy"><span>危情谍影</span></div><div class="wk"><img src="assets/movies/w_19562.jpg" alt="" loading="lazy"><span>疯狂特务女杀手</span></div><div class="wk"><img src="assets/movies/w_4034.jpg" alt="" loading="lazy"><span>里奥追踪</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_3830.jpg" alt="" loading="lazy">
+                <div class="p-name">珍·茜宝 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">美国演员，17 岁被奥托·普雷明格从 18000 人里选出来演《圣女贞德》，此后定居法国。《精疲力尽》的帕特丽夏是她最重要的角色；另有《你好，忧愁》《鼠吼奇谈》《国际机场》。1979 年在巴黎去世，年仅 40 岁。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_20391.jpg" alt="" loading="lazy"><span>漆好你的马车</span></div><div class="wk"><img src="assets/movies/w_10671.jpg" alt="" loading="lazy"><span>国际机场</span></div><div class="wk"><img src="assets/movies/w_12649.jpg" alt="" loading="lazy"><span>鼠吼奇谈</span></div><div class="wk"><img src="assets/movies/w_1937.jpg" alt="" loading="lazy"><span>你好，忧愁</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《精疲力尽》最好看的地方不是它的技术，是它的态度——它对「电影该是什么样」这件事完全不在乎。轻微剧透：米歇尔知道自己要死。帕特丽夏告密之后，他其实有机会走，他没走；他在院子里坐着，问她「你怎么能这么干」，然后说「我真想看看你告密时的表情」。这部片真正讲的东西是这个：一个把死亡当风格的人，和一个还没想好要不要认真活着的人，他们之间根本没法沟通。所以那句「你真恶心」「那又怎样」不是调情，是两个人语言系统的错位。戈达尔的跳接为什么重要？因为它让观众意识到「这是被剪出来的」，也就是把电影的接缝露给你看——他不要你沉浸，他要你清醒。这也是为什么它今天看着仍然年轻：它不是在讲故事，它是在讲一个人怎么度过他最后的两天，而且拒绝给这两天任何意义。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《四百击》《朱尔与吉姆》《戏梦巴黎》这类法国新浪潮的人；想理解「跳接」「手持」「实景」这套语法是从哪来的人。黑白，含枪击与暴力画面。内地未引进，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/inno_poster.jpg" alt="无罪的人 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 悬疑（英国哥特 · 心理惊悚）</span><span class="year">1961 · 英国 · 100 分钟 · 黑白 · 内地未映</span></div>
+        <h2>无罪的人 <span class="en">The Innocents</span></h2>
+        <div class="rates"><span class="rate"><b>7.9</b>豆瓣</span><span class="rate"><b>95%</b>烂番茄</span><span class="rate"><b>88</b>Metacritic</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「你会来救我们的，对吧，吉登斯小姐？」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>吉登斯小姐受雇到乡下的布莱庄园，照顾两个孤儿：弗洛拉和迈尔斯。雇主是孩子们的叔叔，他明确说「别来找我，什么都别问我」。庄园很大、很安静。不久她开始看见两个人——一个男人站在塔楼上，一个女人在湖边。管家格罗斯太太告诉她：那是已经死去的前家庭教师杰塞尔小姐和总管彼得·昆特。而两个孩子，似乎一直知道他们在。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>改编自亨利·詹姆斯 1898 年的中篇《螺丝在拧紧》。原著最厉害的地方是那个「不可判定」：鬼到底存在，还是女教师疯了——詹姆斯从头到尾没有给答案。</li><li>编剧名单里有杜鲁门·卡波特。他和威廉·阿奇博尔德、约翰·莫蒂默一起把小说改成了剧本，片中大量对白直接来自原著。</li><li>摄影师弗雷迪·弗朗西斯用深焦镜头把前景和背景同时压在画面里——你永远不确定下一个镜头会从哪儿冒出一个人来。</li><li>全片没有一个特效镜头，没有一个血腥画面。它靠声音：鸟叫、风声、钢琴、孩子唱歌。</li><li>黛博拉·蔻儿此前几乎只演体面的英国淑女，这部片是她职业生涯里最不体面的一次——她演的是一个逐渐失控的人。</li><li>两个孩子（马丁·史蒂芬斯与帕梅拉·富兰克林）的表演是它最冷的地方：他们说出台词的方式太乖了，乖到不正常。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/inno_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/inno_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/inno_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_25630.jpg" alt="" loading="lazy">
+                <div class="p-name">杰克·克莱顿 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">英国导演、制片。《无罪的人》(1961)《金屋泪》《了不起的盖茨比》(1974)《魔法嘉年华》；作品不多，但每一部都在处理「体面之下的失控」。他也是本片的制片人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_11034.jpg" alt="" loading="lazy"><span>了不起的盖茨比</span></div><div class="wk"><img src="assets/movies/w_24808.jpg" alt="" loading="lazy"><span>魔法嘉年华</span></div><div class="wk"><img src="assets/movies/w_43103.jpg" alt="" loading="lazy"><span>金屋泪</span></div><div class="wk"><img src="assets/movies/w_69557.jpg" alt="" loading="lazy"><span>爱撒谎的人</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_20141.jpg" alt="" loading="lazy">
+                <div class="p-name">黛博拉·蔻儿 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">英国演员，1940-50 年代好莱坞最优雅的女主角之一。《黑水仙》《国王与我》《金玉盟》《乱世忠魂》《黄昏之恋》；六次奥斯卡影后提名，1994 年获奥斯卡终身成就奖。本片是她职业生涯最暗的一次演出。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_16391.jpg" alt="" loading="lazy"><span>黑水仙</span></div><div class="wk"><img src="assets/movies/w_16520.jpg" alt="" loading="lazy"><span>国王与我</span></div><div class="wk"><img src="assets/movies/w_8356.jpg" alt="" loading="lazy"><span>金玉盟</span></div><div class="wk"><img src="assets/movies/w_11426.jpg" alt="" loading="lazy"><span>乱世忠魂</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_7640.jpg" alt="" loading="lazy">
+                <div class="p-name">迈克尔·雷德格瑞夫 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">英国演员，出身演艺世家（雷德格瑞夫家族第一代）。《贵妇失踪记》《长跑者的寂寞》《白朗宁版本》；本片里他演那个「什么都别问我」的叔叔，戏份很少，却是整个困局的源头。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_940.jpg" alt="" loading="lazy"><span>贵妇失踪记</span></div><div class="wk"><img src="assets/movies/w_16103.jpg" alt="" loading="lazy"><span>长跑者的寂寞</span></div><div class="wk"><img src="assets/movies/w_20324.jpg" alt="" loading="lazy"><span>贵在真诚</span></div><div class="wk"><img src="assets/movies/w_39946.jpg" alt="" loading="lazy"><span>白朗宁版本</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《无辜的人》是那种看完之后你会怀疑自己的电影——因为你不确定刚才看到的是不是真的发生了。轻微剧透：全片最关键的一句台词是迈尔斯说的「你会来救我们的，对吧」。这句话可以有两种读法：孩子在向女教师求救，或者鬼在借孩子的嘴说话。克莱顿从头到尾没有选。更冷的是结尾：迈尔斯在吉登斯小姐怀里死了。她把他抱得太紧，或者说她抱住的是她自己想象里的罪恶——影片没解释。所以它和《闪灵》是两种东西：《闪灵》告诉你房子有问题，《无辜的人》告诉你可能是女教师有问题，而且就算真是她有问题，那两个孩子也确实不对劲。这也是它在烂番茄 95%、Metacritic 88 却只有豆瓣 7.9 的原因：它不给答案，而很多人看恐怖片是为了得到一个答案。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《闪灵》《小岛惊魂》《遗孀秘闻》这类「不确定是不是鬼」的观众；想看没有特效、全靠暗示撑起来的恐怖片的人。黑白，无血腥，含儿童死亡与心理压迫，情绪偏沉。内地未引进，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/harakiri_poster.jpg" alt="切腹 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 悬疑（日本 · 反武士道）</span><span class="year">1962 · 日本 · 133 分钟 · 黑白 · 内地未映</span></div>
+        <h2>切腹 <span class="en">Harakiri (Seppuku)</span></h2>
+        <div class="rates"><span class="rate"><b>9.4</b>豆瓣</span><span class="rate"><b>8.6</b>IMDb</span><span class="rate"><b>评审团特别奖</b>戛纳</span></div>
+        <p class="oneline">「我今天的命运，或许就是你们明天的遭遇。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>宽永七年，落魄浪人津云半四郎来到江户名门井伊家，请求借庭院切腹。家老斋藤勘解由接待了他，并说起半年前的事：另一个浪人千千岩求女也来过，家臣们看穿他是来讹钱的，逼他用一把竹刀切腹，他痛到咬舌而死。半四郎听完，仍坚持要切腹，只是请求指定三名介错人——而那三个人，恰好都「病了」。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>编剧是桥本忍（《罗生门》《七武士》）。他在这里做了一件比《罗生门》更狠的事：不是让不同人讲同一个故事，而是让同一个人把故事的下半段讲完。</li><li>仲代达矢的表演是这部片的骨架。他坐在那里讲的时候几乎不动，所有的力气都在声音里——越到后面语速越慢，也越冷。</li><li>全片采用对称构图：井伊家的庭院、家臣的座次、甲胄的摆放。小林正树用「秩序」的画面去拍一个「秩序吃人」的故事。</li><li>1963 年戛纳评审团特别奖；日本《电影旬报》年度十佳第二。木下惠介称它是日本最好的五部电影之一。</li><li>它常被称为「一部反武士片的武士片」——唐纳德·里奇就是这么说的。片中那句「武士道不过是门面」，是当年日本影坛最直接的冒犯。</li><li>结尾那场混战是全片唯一的动作戏，也是唯一的乱局：所有对称构图在这里全部崩掉。半四郎不是被打败的，是被人数压死的。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/harakiri_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/harakiri_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/harakiri_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_76978.jpg" alt="" loading="lazy">
+                <div class="p-name">小林正树 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">日本导演，师从木下惠介。以「人间的条件」六部曲（共九小时）与《切腹》(1962)《怪谈》(1964)《夺命剑》著称；一生拍的都是「个人对抗制度」，1953-1996 年持续创作。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_30959.jpg" alt="" loading="lazy"><span>怪谈</span></div><div class="wk"><img src="assets/movies/w_31217.jpg" alt="" loading="lazy"><span>人间的条件(I-II)</span></div><div class="wk"><img src="assets/movies/w_27031.jpg" alt="" loading="lazy"><span>夺命剑</span></div><div class="wk"><img src="assets/movies/w_34528.jpg" alt="" loading="lazy"><span>人间的条件(III-IV)</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_70131.jpg" alt="" loading="lazy">
+                <div class="p-name">仲代达矢 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">日本演员，战后日本电影最重要的男演员之一。与黑泽明合作《影武者》《乱》《天国与地狱》《用心棒》，与小林正树合作《切腹》《人间的条件》；本片的津云半四郎是他公认的代表作。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_11645.jpg" alt="" loading="lazy"><span>乱</span></div><div class="wk"><img src="assets/movies/w_11878.jpg" alt="" loading="lazy"><span>用心棒</span></div><div class="wk"><img src="assets/movies/w_11953.jpg" alt="" loading="lazy"><span>影武者</span></div><div class="wk"><img src="assets/movies/w_12493.jpg" alt="" loading="lazy"><span>天国与地狱</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_76976.jpg" alt="" loading="lazy">
+                <div class="p-name">岩下志麻 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">日本演员，小津安二郎、小林正树、筱田正浩的固定班底。《秋刀鱼之味》《心中天网岛》《卑弥呼》《野兽之剑》；本片她演津云半四郎的女儿，戏份集中在中段，却是整个复仇动机的一环。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_50759.jpg" alt="" loading="lazy"><span>秋刀鱼之味</span></div><div class="wk"><img src="assets/movies/w_86520.jpg" alt="" loading="lazy"><span>卑弥呼</span></div><div class="wk"><img src="assets/movies/w_45713.jpg" alt="" loading="lazy"><span>心中天网岛</span></div><div class="wk"><img src="assets/movies/w_46917.jpg" alt="" loading="lazy"><span>野兽之剑</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《切腹》是那种看完会坐一会儿的电影。轻微剧透：半四郎根本不想切腹。他来井伊家是为了把女婿求女的死摊开——求女不是来讹钱的，他是为了给妻儿治病；他被逼着用竹刀剖腹，是因为家臣们要确保「规矩」不受挑战。半四郎最狠的一招，是他先让家老把这件事当成一个故事讲完，再当着所有人的面把后半段接上。也就是说，他要让井伊家亲口承认自己做过什么。最后他砍倒几个人、砸碎甲胄，然后切腹——而井伊家的记录册上，这一页会被写成「浪人两名，切腹，家中无事」。这部片真正要说的是：一个制度只要愿意维护自己的面子，它就可以把任何人的死解释成合理的。它的豆瓣 9.4 不是因为打戏好看，是因为它把这件事说得太清楚了。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《七武士》《影武者》《用心棒》这类日本时代剧的人；想看「武士道」被拆开来审查的观众。黑白，含切腹与暴力画面，情绪极沉。内地未引进，流媒体与修复版碟片可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/onibaba_poster.jpg" alt="鬼婆 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 剧情（日本 · 新藤兼人 · 中世纪三部曲）</span><span class="year">1964 · 日本 · 103 分钟 · 黑白 · 内地未映</span></div>
+        <h2>鬼婆 <span class="en">Onibaba</span></h2>
+        <div class="rates"><span class="rate"><b>8.1</b>豆瓣</span><span class="rate"><b>83%</b>烂番茄</span><span class="rate"><b>7.8</b>IMDb</span></div>
+        <p class="oneline">「人活着，就得活下去。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>日本南北朝，战乱。一片齐腰高的芦苇荡里住着婆媳二人，靠杀死掉队的士兵、剥下铠甲换粮食活着。同村的士兵八带回了儿子战死的消息，随后留下，和儿媳每晚在芦苇里私会。婆婆怕儿媳离开自己就没法活，于是在路上杀死一个戴鬼面具的武士，抢下面具，夜里扮鬼去吓唬她。她没想到的是：那张面具，摘不下来了。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>新藤兼人自编自导，灵感来自他母亲讲过的一则佛教寓言：一个被诅咒的女族长。</li><li>乙羽信子是新藤兼人的妻子，也是他的固定女主角。她在这里演婆婆——一个几乎全靠身体语言完成的角色，跑、蹲、趴、喘，几乎没有台词。</li><li>芦苇荡是这部片真正的主角。摄影几乎不给天空，画面永远被竖着的芦苇切碎，人只能从缝隙里被看见。</li><li>面具摘不下来那场戏的妆效，是直接参照广岛原爆伤者的照片做的。这是全片和「鬼」最无关、却最恐怖的一层。</li><li>拿到 1965 年日本蓝丝带奖最佳摄影、最佳女配角。</li><li>2026 年 1 月，标准收藏（Criterion）发行了本片的全新修复版蓝光——一部 1964 年的黑白片，六十年后仍在被重做。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/onibaba_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/onibaba_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/onibaba_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_33727.jpg" alt="" loading="lazy">
+                <div class="p-name">新藤兼人 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">日本导演、编剧，独立制片的先驱。1940 年代起做编剧，1950 年自组「近代映画协会」。《裸之岛》(1960)《鬼婆》(1964)《黑猫》《原爆之子》《北斋漫画》；晚年仍在高龄拍片，2012 年去世，享年 100 岁。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_40149.jpg" alt="" loading="lazy"><span>黑猫</span></div><div class="wk"><img src="assets/movies/w_3764.jpg" alt="" loading="lazy"><span>裸之岛</span></div><div class="wk"><img src="assets/movies/w_77057.jpg" alt="" loading="lazy"><span>原爆之子</span></div><div class="wk"><img src="assets/movies/w_77467.jpg" alt="" loading="lazy"><span>北斋漫画</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_33728.jpg" alt="" loading="lazy">
+                <div class="p-name">乙羽信子 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">日本演员，新藤兼人的妻子与缪斯。《裸之岛》《鬼婆》《黑猫》《原爆之子》《阿游小姐》；以极端的身体表演著称，本片的「婆婆」是她最重要的角色。1994 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_3764.jpg" alt="" loading="lazy"><span>裸之岛</span></div><div class="wk"><img src="assets/movies/w_40149.jpg" alt="" loading="lazy"><span>黑猫</span></div><div class="wk"><img src="assets/movies/w_77057.jpg" alt="" loading="lazy"><span>原爆之子</span></div><div class="wk"><img src="assets/movies/w_46043.jpg" alt="" loading="lazy"><span>阿游小姐</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_33731.jpg" alt="" loading="lazy">
+                <div class="p-name">宇野重吉 <span class="p-role">主演（武士）</span></div>
+              </div>
+              <div class="p-note">日本演员、导演，民艺剧团创始人之一。《西鹤一代女》《原爆之子》《恋文》《愤怒之街》；本片他演那个被婆婆杀死的戴面具武士——只有一场戏，却是全片的转折点。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_43364.jpg" alt="" loading="lazy"><span>西鹤一代女</span></div><div class="wk"><img src="assets/movies/w_77057.jpg" alt="" loading="lazy"><span>原爆之子</span></div><div class="wk"><img src="assets/movies/w_270055.jpg" alt="" loading="lazy"><span>恋文</span></div><div class="wk"><img src="assets/movies/w_92955.jpg" alt="" loading="lazy"><span>愤怒之街</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《鬼婆》名义上是恐怖片，实际上是一部关于「人被逼到什么份上还算人」的电影。轻微剧透：全片没有一个鬼。婆婆戴上那张面具只是为了留住儿媳——不是为了性，是为了劳动力：她老了，一个人杀不动士兵，会饿死。所以这部片最可怕的地方不是面具，是它的动机完全说得通。结尾那场戏是全片的重量：面具和脸长在了一起，武士说「你的脸真美」——而所谓的「美」，是一张已经不属于人的脸。新藤兼人在这里做的事比大多数恐怖片都要狠：他先让你理解婆婆，再让你看着她变成鬼。你没法站在道德高地上骂她，因为她的每一步都是活下去的必要代价。这也是为什么它和《切腹》是同一个十年的两面：一个讲制度吃人，一个讲饥饿吃人。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《怪谈》《黑猫》《裸之岛》这类日本黑白作者电影的人；想看「没有鬼的鬼片」的观众。黑白，含暴力、尸体与性暗示段落，有惊吓镜头。内地未引进，修复版碟片可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/dunes_poster.jpg" alt="砂之女 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 惊悚（日本 · 敕使河原宏 · 存在主义）</span><span class="year">1964 · 日本 · 147 分钟 · 黑白 · 内地未映</span></div>
+        <h2>砂之女 <span class="en">Woman in the Dunes (砂の女)</span></h2>
+        <div class="rates"><span class="rate"><b>8.5</b>豆瓣</span><span class="rate"><b>100%</b>烂番茄</span><span class="rate"><b>8.4</b>IMDb</span></div>
+        <p class="oneline">「我为什么要逃呢？逃出去又能怎样。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>昆虫爱好者仁木顺平到海边沙丘考察，错过末班车。村民「热情」地安排他到沙坑底部的一户人家借宿——那里住着一个寡妇。第二天早上绳梯被收走了。他在一个巨大的沙坑底，和这个女人一起生活：每天必须铲沙，否则房子会被流沙埋掉；水按配额供给；食物由村里送来，条件是继续铲沙。他试了七次逃跑，七次失败。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>原著是安部公房（《箱男》《他人的脸》），被称为「日本的卡夫卡」。他本人参与了剧本。</li><li>导演敕使河原宏出身于草月流花道世家，本职是造型艺术家。他对「沙子」的处理是颗粒级的——全片有大量沙子流动的微距镜头。</li><li>配乐是武满彻。他用尺八、琵琶和电子音做了一份至今听着都怪的配乐，和画面完全不调和，这恰恰是效果的一部分。</li><li>1964 年戛纳评审团特别奖，1965、1966 年两度获奥斯卡提名（最佳外语片、最佳导演）。</li><li>岸田今日子演寡妇。她在这个角色里几乎没有情绪起伏——她接受了规则，也因此比男主角自由。</li><li>147 分钟，全片只有一个场景：一个沙坑。它证明了一件事：只要把处境写透，一个空间就够拍三个小时。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/dunes_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dunes_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dunes_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_96801.jpg" alt="" loading="lazy">
+                <div class="p-name">敕使河原宏 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">日本导演，草月流花道世家出身，本职是造型艺术家与陶艺家。《砂之女》(1964)《他人之颜》(1966)《陷阱》《利休》(1989)；与作家安部公房、作曲家武满彻的三人组是日本电影史上最著名的作者组合。2001 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_29452.jpg" alt="" loading="lazy"><span>他人之颜</span></div><div class="wk"><img src="assets/movies/w_54146.jpg" alt="" loading="lazy"><span>陷阱</span></div><div class="wk"><img src="assets/movies/w_37239.jpg" alt="" loading="lazy"><span>安东尼奥·高迪</span></div><div class="wk"><img src="assets/movies/w_41939.jpg" alt="" loading="lazy"><span>利休</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_25466.jpg" alt="" loading="lazy">
+                <div class="p-name">冈田英次 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">日本演员。《广岛之恋》让他为欧洲观众熟知，随后主演《砂之女》；另参演小林正树的《人间的条件》、深作欣二的《修罗雪姬》。1995 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_5544.jpg" alt="" loading="lazy"><span>广岛之恋</span></div><div class="wk"><img src="assets/movies/w_28415.jpg" alt="" loading="lazy"><span>高手</span></div><div class="wk"><img src="assets/movies/w_29452.jpg" alt="" loading="lazy"><span>他人之颜</span></div><div class="wk"><img src="assets/movies/w_2487.jpg" alt="" loading="lazy"><span>修罗雪姬</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_94188.jpg" alt="" loading="lazy">
+                <div class="p-name">岸田今日子 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">日本演员、配音、作家。《砂之女》《他人之颜》《秋刀鱼之味》《一千零一夜物语》；以独特的低沉声线著称，也是日本最早的动画配音代表人物之一。2020 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_29452.jpg" alt="" loading="lazy"><span>他人之颜</span></div><div class="wk"><img src="assets/movies/w_34530.jpg" alt="" loading="lazy"><span>人间的条件(V-VI)</span></div><div class="wk"><img src="assets/movies/w_50759.jpg" alt="" loading="lazy"><span>秋刀鱼之味</span></div><div class="wk"><img src="assets/movies/w_85398.jpg" alt="" loading="lazy"><span>一千零一夜</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《砂之女》最颠覆的地方在最后十分钟。轻微剧透：男主角终于逃出去了。沙坑外的绳梯就在那儿，没有看守，他一路跑到海边，天亮了——然后他停下来，转身往回走。这个反转不是因为他爱上了寡妇，是因为他发现：他逃出去之后要面对的东西（身份、工作、被承认、被人看见）和他每天铲的沙没有区别。他之前想逃，是因为他以为外面有「证明自己存在」的办法；而在沙坑里他研究出了一种从沙里取水的方法——那才是他第一次真的做成一件事。所以它不是一个「被困住」的故事，是一个「人为了不被埋掉，必须每天劳动」的寓言，而劳动本身也可以是意义。这也是它和《切腹》正好相反：《切腹》里的主人公以死反抗制度，《砂之女》里的主人公以留下反抗「自由」这个词。烂番茄 100% 不是因为它好看，是因为它无法被反驳。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《潜行者》《飞向太空》《2001 太空漫游》这类慢节奏思辨科幻的人；能接受两个半小时、几乎单一场景的观众。黑白，含性暗示与裸露段落，无血腥。内地未引进，修复版碟片可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/apes_poster.jpg" alt="人猿星球 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 悬疑（新好莱坞 · 反乌托邦）</span><span class="year">1968 · 美国 · 112 分钟 · 彩色 · 内地未映</span></div>
+        <h2>人猿星球 <span class="en">Planet of the Apes</span></h2>
+        <div class="rates"><span class="rate"><b>8.1</b>豆瓣</span><span class="rate"><b>90%</b>烂番茄</span><span class="rate"><b>79</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「把你的脏爪子拿开，你这个该死的脏猴子！」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>宇航员泰勒的飞船坠毁在一个陌生星球。他和同伴发现这里的文明由猿类统治：猿骑马、持枪、讲英语，人类是被猎捕、被阉割、被做实验的哑巴野兽。泰勒被抓进实验室，和女科学家齐拉、她的未婚夫科尼利厄斯周旋，最后带着一个人类女孩诺瓦逃进「禁区」。在禁区的海岸线上，他看见了半埋在沙里的东西。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>改编自皮埃尔·布尔 1963 年的小说。布尔后来也写了《桂河大桥》。</li><li>猿的化妆由约翰·钱伯斯设计，是电影化妆史上的分水岭——此前猿类基本靠戏服，此后才有了「能说话的脸」。</li><li>结尾自由女神像那一镜是影史最著名的反转之一。它的设计者是编剧罗德·瑟林（《阴阳魔界》），原剧本里是猿在纽约的废墟上追捕人类。</li><li>查尔登·海斯顿演泰勒。他 1960 年刚凭《宾虚》拿过影帝，是当时最贵的男演员之一——他接这部片时，剧本只有结尾那张图。</li><li>1968 年上映，正值美国民权运动与反战运动最激烈的年份。它关于种族、阶级与「谁有资格定义文明」的隐喻，当年的观众不需要解释。</li><li>它催生了四部续作、两部剧集、一次 2001 年翻拍，以及 2011 年重启的《猩球崛起》三部曲——但没有一部续作拿到过首作这样的评价。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/apes_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/apes_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/apes_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_13265.jpg" alt="" loading="lazy">
+                <div class="p-name">富兰克林·J·沙夫纳 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演，从电视直播剧转入电影。《人猿星球》(1968)《巴顿将军》(1970，奥斯卡最佳导演)《巴比龙》《巴西来的男孩》《俄宫秘史》；他擅长把「大场面」和「人物被困住」放在一起。1989 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_5924.jpg" alt="" loading="lazy"><span>巴比龙</span></div><div class="wk"><img src="assets/movies/w_11202.jpg" alt="" loading="lazy"><span>巴顿将军</span></div><div class="wk"><img src="assets/movies/w_16241.jpg" alt="" loading="lazy"><span>巴西来的男孩</span></div><div class="wk"><img src="assets/movies/w_38646.jpg" alt="" loading="lazy"><span>俄宫秘史</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_7505.jpg" alt="" loading="lazy">
+                <div class="p-name">罗迪·麦克道尔 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">英国演员，童星出身，一生最重要的角色是猿。《人猿星球》的科尼利厄斯、四部续作、《失陷猩球》《逃离猩球》《猩球征服》《决战猩球》；同时长期活跃于百老汇与配音（《虫虫危机》）。1998 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1687.jpg" alt="" loading="lazy"><span>逃离猩球</span></div><div class="wk"><img src="assets/movies/w_1688.jpg" alt="" loading="lazy"><span>猩球征服</span></div><div class="wk"><img src="assets/movies/w_1705.jpg" alt="" loading="lazy"><span>决战猩球</span></div><div class="wk"><img src="assets/movies/w_9487.jpg" alt="" loading="lazy"><span>虫虫危机</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_12023.jpg" alt="" loading="lazy">
+                <div class="p-name">莫里斯·埃文斯 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">英国演员，莎士比亚舞台出身，以优雅的反派著称。《罗斯玛丽的婴儿》的邪教邻居、《人猿星球》的赞厄斯博士、《失陷猩球》《战神》；本片里他是猿社会里「体制」的化身。1989 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_805.jpg" alt="" loading="lazy"><span>罗斯玛丽的婴儿</span></div><div class="wk"><img src="assets/movies/w_1685.jpg" alt="" loading="lazy"><span>失陷猩球</span></div><div class="wk"><img src="assets/movies/w_6471.jpg" alt="" loading="lazy"><span>大笨蛋</span></div><div class="wk"><img src="assets/movies/w_42664.jpg" alt="" loading="lazy"><span>战神</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《人猿星球》今天最容易被当成「结局很牛」的片来看，但它真正厉害的地方是中段。轻微剧透：泰勒在实验室里被剥夺了语言——他被判定为不会说话的野兽。这一段是全片的重心：他越激动、越证明自己有理智，看守他的猿越觉得他只是更凶的畜生。也就是说，这部片先让你体验一遍「不被当成人」是什么感觉，然后才在结尾告诉你：你这个物种就是这么对待别人的。自由女神像那一镜之所以成立，是因为前面九十分钟已经把「文明只是谁掌权的说法」这件事铺完了。还有一个容易忽略的点：齐拉和科尼利厄斯不是反派，他们是真的在做科学，只是他们的科学把人类当作不值得同情的材料。这也是它比后来所有续作都强的地方——它不站在人类这边，也不站在猿那边，它站在「制度」的对面。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《2001 太空漫游》《银翼杀手》《猩球崛起》这类科幻的人；想看那个最著名的反转镜头是从哪来的观众。彩色，含暴力与实验题材画面。内地未引进，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/bonnie_poster.jpg" alt="雌雄大盗 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 犯罪（新好莱坞 · 阿瑟·佩恩）</span><span class="year">1967 · 美国 · 111 分钟 · 彩色 · 内地未映</span></div>
+        <h2>雌雄大盗 <span class="en">Bonnie and Clyde</span></h2>
+        <div class="rates"><span class="rate"><b>8.2</b>豆瓣</span><span class="rate"><b>91%</b>烂番茄</span><span class="rate"><b>7.8</b>IMDb</span></div>
+        <p class="oneline">「我们抢银行。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>大萧条时期的德州。女招待邦妮遇上一个刚出狱的小贼克莱德——他正要偷她母亲的车。她被他那副满不在乎的样子迷住了，跟着走。两个人抢商店、抢银行，拉上修车工 C.W.、克莱德的哥哥巴克和巴克的妻子布兰奇，组成「巴罗帮」，一路从德州抢到路易斯安那。他们一开始约定不杀人。然后第一次开枪之后，就停不下来了。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>它是新好莱坞的起点之一，也是好莱坞暴力尺度被撕开的那一年——1967 年之前，主角中枪不会溅血；这部片之后，会了。</li><li>沃伦·比蒂当时 30 岁，是制片人兼主演。他最初找的是特吕弗和戈达尔来导，两人都推了，最后落到阿瑟·佩恩头上。</li><li>费·唐纳薇凭此片一夜成名。她的造型——贝雷帽、及膝裙、手里的雪茄——直接成了 1967 年的时装流行款。</li><li>吉恩·哈克曼演哥哥巴克，三年后凭《法国贩毒网》拿影帝。埃斯特尔·帕森斯演布兰奇，拿下当年的奥斯卡最佳女配角。</li><li>剧本由罗伯特·本顿与大卫·纽曼写，罗伯特·汤恩参与修改。它刻意把真实历史美化了——历史上的邦妮与克莱德杀了至少九个人，片中的他们几乎是被逼的。</li><li>结尾那场伏击是慢动作拍的，全身被打成筛子。这是影史第一次用慢动作拍主角之死，后来被抄了无数次。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/bonnie_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/bonnie_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/bonnie_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6448.jpg" alt="" loading="lazy">
+                <div class="p-name">阿瑟·佩恩 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演，从电视直播剧起步。《雌雄大盗》(1967)《奇迹创造者》《小巨人》(1970)《夜行客》《凯德警长》；他是把欧洲作者电影的语言带进好莱坞商业片的关键人物，也是新好莱坞的开门人之一。2010 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_11040.jpg" alt="" loading="lazy"><span>小巨人</span></div><div class="wk"><img src="assets/movies/w_32042.jpg" alt="" loading="lazy"><span>夜行客</span></div><div class="wk"><img src="assets/movies/w_1162.jpg" alt="" loading="lazy"><span>奇迹创造者</span></div><div class="wk"><img src="assets/movies/w_31602.jpg" alt="" loading="lazy"><span>凯德警长</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6449.jpg" alt="" loading="lazy">
+                <div class="p-name">沃伦·比蒂 <span class="p-role">主演 / 制片</span></div>
+              </div>
+              <div class="p-note">美国演员、制片、导演。《雌雄大盗》由他发起并主演，此后《花村》《洗发水》《天堂可以等待》《豪情四海》《至尊神探》《打破陈规》；一生获 14 次奥斯卡提名，并凭《赤色分子》(1981) 拿下最佳导演，是好莱坞少见的「自己当老板」的演员。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_8592.jpg" alt="" loading="lazy"><span>至尊神探</span></div><div class="wk"><img src="assets/movies/w_291328.jpg" alt="" loading="lazy"><span>打破陈规</span></div><div class="wk"><img src="assets/movies/w_29005.jpg" alt="" loading="lazy"><span>花村</span></div><div class="wk"><img src="assets/movies/w_10337.jpg" alt="" loading="lazy"><span>豪情四海</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6450.jpg" alt="" loading="lazy">
+                <div class="p-name">费·唐纳薇 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">美国演员。《雌雄大盗》让她一夜成名，次年《唐人街》(1974) 确立地位；另有《电视台风云》(1976，奥斯卡影后)《秃鹰七十二小时》《圣女贞德》。以锐利、不讨好的银幕形象著称。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_829.jpg" alt="" loading="lazy"><span>唐人街</span></div><div class="wk"><img src="assets/movies/w_10774.jpg" alt="" loading="lazy"><span>电视台风云</span></div><div class="wk"><img src="assets/movies/w_11963.jpg" alt="" loading="lazy"><span>秃鹰七十二小时</span></div><div class="wk"><img src="assets/movies/w_10047.jpg" alt="" loading="lazy"><span>圣女贞德</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《雌雄大盗》当年最招骂的一点是：它让杀人犯变得可爱。轻微剧透：全片真正的转折不是哪一次抢劫，是克莱德的性无能——他不是「什么都能干」的英雄，他在邦妮面前多次失败，这才是他们关系里真正的裂缝。邦妮跟着他不是因为爱情，是因为她受够了小镇上的日子；她要的是「被看见」，而报纸上登她的照片就是被看见。所以这部片的核心不是犯罪，是两个人用犯罪来制造自己的存在感。佩恩聪明的地方在于：他没有批判他们，也没有歌颂他们，他只是让你看着他们一步步从「抢着玩」走到「必须开枪」。到最后那场伏击，慢动作不是为了好看，是因为这两个人早就知道自己会死，而且他们宁愿这样死。1967 年的美国年轻人把这部片当成了反体制宣言，其实它不是——它讲的是「人一旦开始靠制造事件来证明自己活着，就停不下来了」。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《末路狂花》《天生杀人狂》《好家伙》这类亡命公路片的人；想知道 1960 年代末好莱坞是怎么被改造的观众。彩色，含大量枪击与暴力画面。内地未引进，流媒体可看。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/west_poster.jpg" alt="西部往事 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 西部（意大利式西部片 · 莱昂内）</span><span class="year">1968 · 意大利 / 美国 · 165 分钟 · 彩色 · 内地未映</span></div>
+        <h2>西部往事 <span class="en">Once Upon a Time in the West</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>96%</b>烂番茄</span><span class="rate"><b>82</b>Metacritic</span><span class="rate"><b>8.5</b>IMDb</span></div>
+        <p class="oneline">「三个男人曾经出现在她的生命里：一个带她走，一个爱她，一个要杀她。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>铁路大亨莫顿想修通横贯美国的铁路，唯一缺的是甜水镇那块有水源的地。地主麦贝恩不肯卖，于是杀手弗兰克带人把麦贝恩一家四口全杀了。麦贝恩的新婚妻子吉尔从新奥尔良赶来，落地就成了寡妇，也继承了那块地。同时，一个吹口琴的无名枪手来到镇上，一个被栽赃的通缉犯夏延也在。三个人围着这块地，各自有账要算。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>亨利·方达演反派弗兰克。这是他一生唯一一次演冷血杀手——此前他演了三十年正派。莱昂内为了说服他，飞到美国对他说：镜头从一个拔枪的人的腰部往上摇，最后露出脸，那是亨利·方达。</li><li>口琴手这个角色最初给的是克林特·伊斯特伍德，他拒了；詹姆斯·柯本要价太高；最后落到查尔斯·布朗森头上。</li><li>埃尼奥·莫里康内的配乐是先于画面写好的，莱昂内按音乐拍戏。每个人物有专属主题——口琴、电吉他、人声。</li><li>开场那八分钟（三个枪手在车站等火车）被称为影史最好的开场之一：没有对白，只有水滴、苍蝇、风、门轴和一缕口琴声。</li><li>它是莱昂内「往事三部曲」的第一部。剧本由达里奥·阿基多与贝纳尔多·贝托鲁奇参与构思——两个后来成为恐怖片大师的人。</li><li>美国版被派拉蒙剪到 140 分钟，票房惨败；欧洲版 165 分钟大卖。2009 年美国国会图书馆把它列入国家影片登记表。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/west_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/west_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/west_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4385.jpg" alt="" loading="lazy">
+                <div class="p-name">赛尔乔·莱昂内 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">意大利导演，意大利式西部片的创造者，默片导演维内乔·莱昂内之子。《荒野大镖客》《黄昏双镖客》《黄金三镖客》《西部往事》(1968)《美国往事》(1984)；以极慢的节奏、极近的特写与莫里康内的音乐构成一整套语言。1989 年去世，享年 60 岁。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_429.jpg" alt="" loading="lazy"><span>黄金三镖客</span></div><div class="wk"><img src="assets/movies/w_311.jpg" alt="" loading="lazy"><span>美国往事</span></div><div class="wk"><img src="assets/movies/w_391.jpg" alt="" loading="lazy"><span>荒野大镖客</span></div><div class="wk"><img src="assets/movies/w_938.jpg" alt="" loading="lazy"><span>黄昏双镖客</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4959.jpg" alt="" loading="lazy">
+                <div class="p-name">克劳迪娅·卡汀娜 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">意大利演员（突尼斯出生）。《八部半》《豹》《西部往事》《粉红豹系列：偷香窃玉》《陆上行舟》；1960 年代欧洲最知名的女演员之一，也是莱昂内的私人朋友——她接下吉尔这个角色时甚至没看剧本。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_422.jpg" alt="" loading="lazy"><span>八部半</span></div><div class="wk"><img src="assets/movies/w_1040.jpg" alt="" loading="lazy"><span>豹</span></div><div class="wk"><img src="assets/movies/w_9343.jpg" alt="" loading="lazy"><span>陆上行舟</span></div><div class="wk"><img src="assets/movies/w_936.jpg" alt="" loading="lazy"><span>粉红豹系列：偷香窃玉</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4960.jpg" alt="" loading="lazy">
+                <div class="p-name">查尔斯·布朗森 <span class="p-role">主演</span></div>
+              </div>
+              <div class="p-note">美国演员（立陶宛裔矿工家庭出身），以沉默、硬朗的形象著称。《豪勇七蛟龙》《大逃亡》《西部往事》《猛龙怪客》系列；本片的「口琴人」是他职业生涯里最安静、也是最被记住的一次演出。2003 年去世。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_13939.jpg" alt="" loading="lazy"><span>猛龙怪客</span></div><div class="wk"><img src="assets/movies/w_5925.jpg" alt="" loading="lazy"><span>大逃亡</span></div><div class="wk"><img src="assets/movies/w_14373.jpg" alt="" loading="lazy"><span>猛龙怪客2</span></div><div class="wk"><img src="assets/movies/w_966.jpg" alt="" loading="lazy"><span>豪勇七蛟龙</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>《西部往事》是一部「告别」电影，虽然它自己假装不是。轻微剧透：口琴手找弗兰克不是为了钱，也不是为了那块地——他哥哥当年被弗兰克吊死，而弗兰克在行刑前把他哥哥的口琴塞进了他嘴里。这是全片最后才说出来的事，也是它所有沉默的解释。莱昂内拍的是西部片的葬礼：铁路来了，马没用了，枪手也没用了；莫顿这个一辈子躺在火车车厢里的瘸子，才是赢家——他甚至没能走到海边就死了。所以这部片里没有一个人是「为了正义」：弗兰克为钱，夏延为名，口琴手为仇，吉尔为活下去。真正往前走的只有一条铁路。这也是为什么它比《荒野大镖客》高一档：镖客三部曲讲的是人，这一部讲的是时代。结尾口琴手骑马离开，不是因为赢了，是因为他知道接下来没有自己的位置。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>喜欢《荒野大镖客》《黄金三镖客》《被解救的姜戈》这类西部片的人；想看莫里康内配乐与画面怎么咬合的观众。彩色，含枪杀与暴力画面，165 分钟需耐心。内地未引进，流媒体与修复版碟片可看。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-09-29；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>

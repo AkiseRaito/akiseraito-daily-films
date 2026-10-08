@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日电影片单 · 索引</title>
+<style>
+:root{
+  --bg:#070910; --card:rgba(20,23,31,.72); --line:rgba(255,255,255,.08);
+  --tx:#e9ebf3; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+html{min-height:100%}
+body{margin:0;background:var(--bg) url("assets/bg.svg") center top/cover no-repeat fixed;
+  color:var(--tx);font:15px/1.78 "PingFang SC","HarmonyOS Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  animation:drift 52s ease-in-out infinite;}
+@keyframes drift{0%,100%{background-position:50% 0}50%{background-position:53% 2.5%}}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(1100px 520px at 50% -8%,rgba(242,122,157,.10),transparent 62%),
+             radial-gradient(900px 520px at 100% 102%,rgba(124,196,255,.09),transparent 62%),
+             linear-gradient(180deg,rgba(7,9,16,.30),rgba(7,9,16,.72));}
+.wrap{max-width:1040px;margin:0 auto;padding:56px 20px 80px}
+
+header{position:relative;overflow:hidden;border-radius:16px;padding:30px 26px 26px;margin-bottom:26px;
+  background:linear-gradient(180deg,rgba(20,23,31,.62),rgba(20,23,31,.30));
+  border:1px solid var(--line);backdrop-filter:blur(8px);}
+header::after{content:"";position:absolute;top:0;left:-40%;width:38%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.13),transparent);
+  transform:skewX(-18deg);animation:sweep 6.5s ease-in-out infinite;pointer-events:none;}
+@keyframes sweep{0%{left:-45%}55%,100%{left:118%}}
+h1{margin:0 0 10px;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;
+  font-size:37px;font-weight:600;letter-spacing:3px;line-height:1.35;
+  background:linear-gradient(100deg,#ffffff 0%,#ffe7ef 26%,#f27a9d 46%,#7cc4ff 68%,#ffffff 100%);
+  background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shine 5.5s linear infinite;}
+@keyframes shine{0%{background-position:220% 0}100%{background-position:-120% 0}}
+header .sub{color:var(--mut);font-size:13.5px;line-height:1.85;position:relative}
+
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:22px 0 20px}
+.btn{background:rgba(25,29,39,.85);color:var(--tx);border:1px solid var(--line);border-radius:99px;
+  padding:8px 16px;font-size:13px;cursor:pointer;font-family:inherit;
+  transition:transform .18s,border-color .18s,box-shadow .18s,color .18s;}
+.btn:hover{transform:translateY(-2px);border-color:var(--acc);color:var(--acc);
+  box-shadow:0 6px 18px rgba(242,122,157,.18)}
+.btn:active{transform:translateY(0)}
+.btn b{color:var(--acc);font-weight:600}
+#q{background:rgba(25,29,39,.85);border:1px solid var(--line);border-radius:99px;color:var(--tx);
+  padding:8px 16px;font-size:13px;font-family:inherit;min-width:240px;outline:none;
+  transition:border-color .2s,box-shadow .2s;}
+#q:focus{border-color:var(--acc2);box-shadow:0 0 0 3px rgba(124,196,255,.12)}
+#q::placeholder{color:#5d6579}
+
+.it{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:9px;
+  overflow:hidden;backdrop-filter:blur(6px);
+  transition:transform .22s,border-color .22s,box-shadow .22s;
+  animation:fadeUp .5s cubic-bezier(.22,.8,.3,1) both;animation-delay:calc(var(--i,0)*.018s);}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.it:hover{transform:translateY(-2px);border-color:rgba(242,122,157,.32);
+  box-shadow:0 10px 28px rgba(0,0,0,.38)}
+.it.open{border-color:rgba(242,122,157,.30);box-shadow:0 8px 24px rgba(0,0,0,.32)}
+.hd{cursor:pointer;padding:13px 16px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  transition:background .18s;user-select:none}
+.hd:hover{background:rgba(255,255,255,.035)}
+.no{color:var(--acc);font-size:13px;font-weight:600;min-width:66px}
+.dt{color:var(--acc2);font-size:13px;min-width:92px;font-variant-numeric:tabular-nums}
+.th{flex:1 1 250px;font-size:14px}
+.cnt{color:var(--mut);font-size:12px}
+.arw{color:var(--mut);font-size:11px;transition:transform .26s cubic-bezier(.4,0,.2,1)}
+.it.open .arw{transform:rotate(90deg);color:var(--acc)}
+.bd{max-height:0;overflow:hidden;transition:max-height .34s cubic-bezier(.4,0,.2,1)}
+.bd-in{padding:2px 16px 16px;border-top:1px solid var(--line)}
+.ms{margin:12px 0;padding:0;list-style:none;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:6px 14px}
+.ms li{font-size:13.5px;color:#d5dae8}
+.ms li i{color:#6d7590;font-style:normal;font-size:11.5px;margin-right:7px}
+.go{display:inline-block;margin-top:12px;font-size:13px;color:var(--acc);text-decoration:none;
+  border:1px solid rgba(242,122,157,.38);border-radius:99px;padding:4px 15px;
+  transition:background .18s,transform .18s,box-shadow .18s}
+.go:hover{background:rgba(242,122,157,.13);transform:translateY(-1px);
+  box-shadow:0 6px 16px rgba(242,122,157,.16)}
+.empty{color:var(--mut);font-size:13.5px;padding:22px 2px}
+footer{margin-top:34px;color:#66708a;font-size:12.5px;border-top:1px solid var(--line);
+  padding-top:16px;line-height:1.9}
+@media(max-width:640px){
+  body{background-attachment:scroll}
+  .ms{grid-template-columns:1fr 1fr} .no,.dt{min-width:auto} h1{font-size:27px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.001s !important;transition-duration:.001s !important}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>每日电影片单 · 索引</h1>
+  <div class="sub">共 38 期 · 2026-09-01 → 2026-10-08 · 累计 380 部（按片名去重后 380 部）<br>
+  点任意一行展开当期 10 部片名，再点「打开本期」看完整片单。</div>
+</header>
+
+<div class="bar">
+  <button class="btn" id="sortBtn">排序：<b id="sortTxt">倒序（新 → 旧）</b></button>
+  <button class="btn" id="allBtn">展开全部</button>
+  <input id="q" placeholder="搜片名 / 日期 / 期号，如：星际穿越、10-07、38">
+</div>
+
+<div id="list"></div>
+<div class="empty" id="empty" style="display:none">没有匹配的结果。</div>
+
+<footer>
+  数据与图片均在本地，可离线浏览 · <span style="color:var(--acc)">by 浩</span><br>
+  注：2026-09-14 及更早的 14 期当时没有在页内标注期号，索引里显示为「—」；期号以各期页面自身标注为准（10-07 那期是补更，编号为第 38 期）。<br>
+  海报与剧照来自 TMDB，仅作观影参考，版权归各片方所有。
+</footer>
+</div>
+
+<script>
+const DATA = [{"file": "20260901.html", "no": "", "date": "2026-09-01", "theme": "新片为主", "movies": ["惊变28年2：白骨圣殿", "请求救援", "重返重生", "团战之夜", "后室", "密探", "无可奈何", "拯救地球", "凶器", "恐怖游轮"]}, {"file": "20260902.html", "no": "", "date": "2026-09-02", "theme": "2026 新片为主", "movies": ["瘴气营地的青春性事与死亡", "逃无止境", "利未记", "死人开关", "幽旅巫咒", "我们埋葬死者", "洛杉矶劫案", "全信没收", "铁肺", "罗宾汉之死"]}, {"file": "20260903.html", "no": "", "date": "2026-09-03", "theme": "2026 新片为主", "movies": ["奥德赛", "上帝是吗？", "调音师", "鬼玩人：炼狱", "极限审判", "坠落2：死点", "猩疯血雨", "黄金时段", "逃出布迪秀", "燃烧吧！爸爸"]}, {"file": "20260904.html", "no": "", "date": "2026-09-04", "theme": "2025–2026 新片为主", "movies": ["南京照相馆", "一战再战", "罪人", "揭秘日", "暗流低语", "木乃伊", "索命哨", "他们要杀了你", "死亡真面目", "禁果"]}, {"file": "20260905.html", "no": "", "date": "2026-09-05", "theme": "5 部 2026 新片 + 5 部近两年高分", "movies": ["希望", "猛攻", "最后孤屋", "不存在的罪人", "准备好了没2：我来了", "某种物质", "诺斯费拉图", "秘密会议", "因果报应", "异形：夺命舰"]}, {"file": "20260906.html", "no": "", "date": "2026-09-06", "theme": "3 部 2026 新片 + 5 部 2025 高分 + 2 部近年必看", "movies": ["8号出口", "呼啸山庄", "生化危机：爆发夜", "复活她", "弗兰肯斯坦", "死亡竞走", "完美伴侣", "铁血战士：杀戮之地", "异教徒", "沙丘2"]}, {"file": "20260907.html", "no": "", "date": "2026-09-07", "theme": "2 部 2026 新片 + 7 部 2025 高分 + 1 部 2024 必", "movies": ["同甘共苦", "丑陋的继姐", "好狗狗", "危险动物", "死神来了：血脉诅咒", "长腿怪", "偷天盗日", "爱丁顿", "群体", "糖精"]}, {"file": "20260908.html", "no": "", "date": "2026-09-08", "theme": "3 部 2025 新片 + 6 部 2024 高分 + 1 部 2023 华", "movies": ["编号17", "咒物寻凶", "魔鬼深夜秀", "荧屏在发光", "布谷鸟", "隔空投送", "周处除三害", "感应", "黑色电话2", "疯狂的麦克斯：狂暴女神"]}, {"file": "20260909.html", "no": "", "date": "2026-09-09", "theme": "4 部 2025 新片 + 6 部 2024 高分", "movies": ["噬血芭蕾", "怪奇收割", "危笑2", "寂静之地：入侵日", "非礼勿言", "凶兆前传", "血爱成河", "黑袋行动", "怪猴", "冲浪惊魂"]}, {"file": "20260910.html", "no": "", "date": "2026-09-10", "theme": "2 部 2025 + 1 部 2024 新片 · 7 部近五年高分 / 必看", "movies": ["破墓", "惊变28年", "红色房间", "怪栗情人", "野蛮人", "隐形人", "无瑕修女", "致命约会", "神圣之路", "回应我"]}, {"file": "20260911.html", "no": "", "date": "2026-09-11", "theme": "每个人都在试图拍下、直播、贩卖那个东西，而这个设定本身就是皮尔对观众的一次提", "movies": ["坠落的审判", "珀尔", "不", "菜单", "无边泳池", "孤立无援", "珍妮潘的规则", "异世降临", "北欧人", "孵化"]}, {"file": "20260912.html", "no": "", "date": "2026-09-12", "theme": "4 部豆瓣 8.6+ · 5 部烂番茄 85%+ · 2 部奥斯卡剧本奖", "movies": ["银翼杀手", "怪形", "惊魂记", "灵异第六感", "小岛惊魂", "禁闭岛", "非常嫌疑犯", "致命ID", "源代码", "香水"]}, {"file": "20260913.html", "no": "", "date": "2026-09-13", "theme": "5 部烂番茄 90%+ · 4 部豆瓣 8.5+ · 全部口碑过关", "movies": ["遗传厄运", "它在身后", "机械姬", "彗星来的那一夜", "利刃出鞘", "看不见的客人", "消失的爱人", "哭声", "塔尔", "杀人回忆"]}, {"file": "20260914.html", "no": "", "date": "2026-09-14", "theme": "两个缺东西的孤独小孩靠在一起，其中一个是人，另一个不是，但影片从头到尾没有评", "movies": ["黑客帝国", "第九区", "闪灵", "生人勿进", "沉默的羔羊", "老无所依", "穆赫兰道", "致命魔术", "小姐", "燃烧"]}, {"file": "20260915.html", "no": "13", "date": "2026-09-15", "theme": "1 部豆瓣 9.6 · 3 部豆瓣 8.0+ · 3 部烂番茄 90%+", "movies": ["人类之子", "罗生门", "罗斯玛丽的婴儿", "驱魔人", "控方证人", "死亡幻觉", "心慌方", "饥饿站台", "活埋", "吾栖之肤"]}, {"file": "20260916.html", "no": "14", "date": "2026-09-16", "theme": "5 部烂番茄 90%+ · 2 部豆瓣 8.5+ · 3 部奥斯卡获奖", "movies": ["午夜凶铃", "咒怨", "电锯惊魂", "落水狗", "潘神的迷宫", "红辣椒", "变蝇人", "妙想天开", "第五元素", "告白"]}, {"file": "20260917.html", "no": "17", "date": "2026-09-17", "theme": "4 部豆瓣 8.8+ · 2 部豆瓣 9.4 · 4 部烂番茄 90%+", "movies": ["卡里加里博士的小屋", "大都会", "第三人", "十二怒汉", "终结者2：审判日", "楚门的世界", "她", "前目的地", "这个男人来自地球", "移魂都市"]}, {"file": "20260918.html", "no": "18", "date": "2026-09-18", "theme": "4 部豆瓣 8.5+ · 4 部烂番茄 90%+ · 10 位导演全部首见", "movies": ["三块广告牌", "海市蜃楼", "一级恐惧", "无名女尸", "科洛弗道10号", "绿皮书", "无姓之人", "狙击电话亭", "林中小屋", "超时空接触"]}, {"file": "20260919.html", "no": "19", "date": "2026-09-19", "theme": "4 部豆瓣 8.7+ · 3 部韩影 · 1 部科幻灾难巨制", "movies": ["蝴蝶效应", "万能钥匙", "新世界", "机械师", "恐怖直播", "局内人", "时空恋旅人", "走到尽头", "蔷花红莲", "独立日"]}, {"file": "20260920.html", "no": "20", "date": "2026-09-20", "theme": "4 部伪纪录 / 灵异 · 2 部心理惊悚 · 1 部日式科幻 · 1 部太", "movies": ["见鬼", "昆池岩", "孤儿怨", "惊声尖叫", "寄生兽", "明日边缘", "寂静岭", "致命玩笑", "人皮客栈", "死亡录像"]}, {"file": "20260921.html", "no": "21", "date": "2026-09-21", "theme": "2 部媒介实验 · 3 部斯蒂芬·金改编 · 1 部死神设计 · 1 部新黑", "movies": ["死神来了", "女巫布莱尔", "网络谜踪", "迷雾", "1408幻影凶间", "危情十日", "本能", "大逃杀", "攻壳机动队", "黑洞表面"]}, {"file": "20260922.html", "no": "22", "date": "2026-09-22", "theme": "一个从未被当回事的人，一旦拿到了绝对力量，会做什么？铁雄不是反派，他只是终于", "movies": ["我是传奇", "僵尸世界大战", "活死人黎明", "僵尸之地", "马耳他之鹰", "致命诱惑", "撕裂的末日", "V字仇杀队", "阿基拉", "铁男"]}, {"file": "20260923.html", "no": "23", "date": "2026-09-23", "theme": "4 部好莱坞黑色电影（1944–1958）", "movies": ["罗拉秘史", "死吻", "猎人之夜", "历劫佳人", "无间道", "谜一样的双眼", "潜行者", "德州电锯杀人狂", "梦之安魂曲", "魔鬼代言人"]}, {"file": "20260924.html", "no": "24", "date": "2026-09-24", "theme": "3 部心理 / 感官恐怖（鬼书 · 阴风阵阵 · 威尼斯疑魂）", "movies": ["鬼书", "僵尸肖恩", "阴风阵阵", "威尼斯疑魂", "猩球崛起", "黑暗面", "夜行动物", "夜长梦多", "荒蛮故事", "房间"]}, {"file": "20260925.html", "no": "25", "date": "2026-09-25", "theme": "3 部恐怖 / 惊悚（黑暗侵袭 · 屏住呼吸 · 灵动：鬼影实录）", "movies": ["黑暗侵袭", "成功的滋味", "猎凶风河谷", "聚焦", "血色将至", "犬之力", "屏住呼吸", "科洛弗档案", "铁血战士", "灵动：鬼影实录"]}, {"file": "20260926.html", "no": "26", "date": "2026-09-26", "theme": "美国电影最锋利的七年", "movies": ["大白鲨", "天外魔花", "活死人之夜", "魔女嘉莉", "凶兆", "星球大战4：新希望", "窃听大阴谋", "总统班底", "海边的曼彻斯特", "借刀杀人"]}, {"file": "20260927.html", "no": "27", "date": "2026-09-27", "theme": "冷战档案 · 1951–1960", "movies": ["地球停转之日", "哥斯拉", "浴室情杀案", "禁忌星球", "第七封印", "不可思议的收缩人", "世界大战", "四百击", "偷窥狂", "奇遇"]}, {"file": "20260928.html", "no": "28", "date": "2026-09-28", "theme": "怪物与阴影 · 恐怖片的第一次黄金时代", "movies": ["M就是凶手", "吸血鬼", "德古拉", "化身博士", "科学怪人", "金刚", "狼人", "猫人", "第七个受害者", "煤气灯下"]}, {"file": "20260929.html", "no": "29", "date": "2026-09-29", "theme": "1960 年代 · 新浪潮十年", "movies": ["广岛之恋", "甜蜜的生活", "精疲力尽", "无罪的人", "切腹", "鬼婆", "砂之女", "人猿星球", "雌雄大盗", "西部往事"]}, {"file": "20260930.html", "no": "30", "date": "2026-09-30", "theme": "近十二年 · 十部当代类型片", "movies": ["狩猎", "逃出绝命镇", "爆裂鼓手", "小偷家族", "瞬息全宇宙", "仲夏夜惊魂", "沙丘", "暴裂无声", "燃烧女子的肖像", "鬼玩人崛起"]}, {"file": "20261001.html", "no": "31", "date": "2026-10-01", "theme": "东亚影像二十年", "movies": ["卧虎藏龙", "一一", "双瞳", "神探", "入殓师", "阳光普照", "娑婆诃", "驾驶我的车", "咒", "首尔之春"]}, {"file": "20261002.html", "no": "32", "date": "2026-10-02", "theme": "世纪末以来的十种不安", "movies": ["洛城机密", "天才瑞普利", "亡命驾驶", "致命礼物", "对不起，打扰你了", "寂静之地", "太空生活", "原钻", "钛", "利益区域"]}, {"file": "20261003.html", "no": "33", "date": "2026-10-03", "theme": "一年一部 · 2014–2023", "movies": ["布达佩斯大饭店", "疯狂的麦克斯4：狂暴之路", "月光男孩", "银翼杀手2049", "罗马", "寄生虫", "无依之地", "世界上最糟糕的人", "分手的决心", "奥本海默"]}, {"file": "20261004.html", "no": "34", "date": "2026-10-04", "theme": "真事改编 · 十个被搬上银幕的真实故事", "movies": ["社交网络", "国王的演讲", "逃离德黑兰", "为奴十二年", "达拉斯买家俱乐部", "模仿游戏", "大空头", "隐藏人物", "波西米亚狂想曲", "芝加哥七君子审判"]}, {"file": "20261005.html", "no": "35", "date": "2026-10-05", "theme": "后劲 · 千禧年后的十部类型片", "movies": ["十二宫", "盗梦空间", "黑天鹅", "招魂", "心迷宫", "火星救援", "大佛普拉斯", "灯塔", "哥斯拉-1.0", "宇宙探索编辑部"]}, {"file": "20261006.html", "no": "36", "date": "2026-10-06", "theme": "入坑作 · 十部类型片入门必看", "movies": ["侏罗纪公园", "罗拉快跑", "记忆碎片", "老男孩", "窃听风暴", "追击者", "龙纹身的女孩", "釜山行", "降临", "水形物语"]}, {"file": "20261007.html", "no": "38", "date": "2026-10-07", "theme": "补一张票 · 十部容易被跳过的类型佳作", "movies": ["人工智能", "狗镇", "夜行者", "边境杀手", "黑夜造访", "升级", "边境", "夜间小屋", "坠落", "涉过愤怒的海"]}, {"file": "20261008.html", "no": "37", "date": "2026-10-08", "theme": "近十五年 · 十部把类型片往前推了一步的作品", "movies": ["月球", "黄海", "一次别离", "皮囊之下", "囚徒", "星际穿越", "小丑回魂", "准备好了没", "黑色电话", "危笑"]}];
+const list = document.getElementById('list');
+const empty = document.getElementById('empty');
+let desc = true, expandAll = false;
+
+function card(it, idx) {
+  const d = document.createElement('div');
+  d.className = 'it';
+  d.style.setProperty('--i', idx);
+
+  const hd = document.createElement('div');
+  hd.className = 'hd';
+  hd.innerHTML =
+    '<span class="no">' + (it.no ? '第 ' + it.no + ' 期' : '第 — 期') + '</span>' +
+    '<span class="dt">' + it.date + '</span>' +
+    '<span class="th"></span>' +
+    '<span class="cnt">' + it.movies.length + ' 部</span>' +
+    '<span class="arw">▶</span>';
+  hd.querySelector('.th').textContent = it.theme || '';
+
+  const bd = document.createElement('div');
+  bd.className = 'bd';
+  const inner = document.createElement('div');
+  inner.className = 'bd-in';
+  const ol = document.createElement('ol');
+  ol.className = 'ms';
+  it.movies.forEach(function (m, i) {
+    const li = document.createElement('li');
+    const em = document.createElement('i');
+    em.textContent = String(i + 1).padStart(2, '0');
+    li.appendChild(em);
+    li.appendChild(document.createTextNode(m));
+    ol.appendChild(li);
+  });
+  const a = document.createElement('a');
+  a.className = 'go';
+  a.href = it.file;
+  a.textContent = '打开本期 →';
+  inner.appendChild(ol);
+  inner.appendChild(a);
+  bd.appendChild(inner);
+
+  hd.onclick = function () {
+    const open = d.classList.toggle('open');
+    bd.style.maxHeight = open ? (inner.scrollHeight + 4) + 'px' : '0px';
+  };
+  d._open = function (on) {
+    d.classList.toggle('open', on);
+    bd.style.maxHeight = on ? (inner.scrollHeight + 4) + 'px' : '0px';
+  };
+
+  d.appendChild(hd);
+  d.appendChild(bd);
+  return d;
+}
+
+function render() {
+  const kw = (document.getElementById('q').value || '').trim().toLowerCase();
+  const arr = DATA.slice().sort(function (a, b) {
+    return desc ? b.date.localeCompare(a.date) : a.date.localeCompare(b.date);
+  });
+  list.innerHTML = '';
+  let n = 0;
+  arr.forEach(function (it) {
+    const hay = (it.date + ' ' + it.no + ' ' + it.theme + ' ' + it.movies.join(' ')).toLowerCase();
+    if (kw && hay.indexOf(kw) < 0) return;
+    const c = card(it, n);
+    list.appendChild(c);
+    if (expandAll) c._open(true);
+    n++;
+  });
+  empty.style.display = n ? 'none' : 'block';
+}
+
+document.getElementById('sortBtn').onclick = function () {
+  desc = !desc;
+  document.getElementById('sortTxt').textContent = desc ? '倒序（新 → 旧）' : '正序（旧 → 新）';
+  render();
+};
+document.getElementById('allBtn').onclick = function () {
+  expandAll = !expandAll;
+  this.innerHTML = expandAll ? '收起全部' : '展开全部';
+  render();
+};
+document.getElementById('q').oninput = render;
+window.addEventListener('resize', function () {
+  document.querySelectorAll('.it.open .bd').forEach(function (b) {
+    b.style.maxHeight = (b.firstChild.scrollHeight + 4) + 'px';
+  });
+});
+render();
+</script>
+</body>
+</html>

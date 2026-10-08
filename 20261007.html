@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-10-07 · 第 38 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 10 月 7 日 · 第 38 期（补更）· 已避开往期推荐过的全部 370 部</div>
+  <div>
+    <span class="pill">主题：补一张票 · 十部容易被跳过的类型佳作（2001–2023）</span>
+    <span class="pill">全部 2001 年后：最早 2001，最晚 2023，按上映年份排列</span>
+    <span class="pill">类型覆盖：科幻 2 / 剧情 2 / 惊悚 3 / 恐怖 2 / 悬疑 1</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-07，会随时间变动，仅供参考。<br>
+  **先说清楚**：这是 10 月 7 日那一期的补更——当天的定时任务没跑成，补在今天。10 月 8 日的第 37 期已于当天交付（主题：近十五年 · 十部把类型片往前推了一步的作品），两期的 20 部片名互不重复。<br>
+  这一期的筛选条件只有一条：**它足够好，但常常被各种片单漏掉**。不是冷门冷到没人看，是明明评分不差、看完也说不出「踩雷」，却总在推荐列表里排在后面：一个想变成人的机器人（《人工智能》）、一块没有墙的布景（《狗镇》）、一个决心适应规则的新闻摄像（《夜行者》）、一次被引渡的现实（《边境杀手》）、一扇谁也不该开的门（《黑夜造访》）、一枚装进脊椎的芯片（《升级》）、一个闻不出心虚的男人（《边境》）、一栋左右相反的湖畔房子（《夜间小屋》）、一架断了梯子的电视塔（《坠落》），以及一句没人问出口的话（《涉过愤怒的海》）。<br>
+  十部横跨 22 年，其中五部是导演的长片处女作或第二部；成本普遍不高——最贵的一部 1 亿美元，最便宜的只有 300 万美元。**这些都是「用钱换不到、用判断才换得到」的那类片子**。<br>
+  10 部片名全部为首次出现，无一与往期 370 部重复（比对 `_titles_all.txt` 通过）。按 10-02 定的口径，**只按片名去重**：本期仍有几位导演 / 演员与往期重合（斯皮尔伯格、维伦纽瓦、吉伦哈尔、裘德·洛、乔尔·埃哲顿、丽贝卡·豪尔、雷·沃纳尔等），已在各自主创卡片里如实写出往期推过的那部，不重复介绍。<br>
+  口碑明显分裂的几部已如实标注、未做修饰：《黑夜造访》豆瓣只有 6.2、烂番茄观众 44%，但专业评分是 88% / Metacritic 78，落差就来自「宣传成了末日片，实际是家庭剧」；《狗镇》也是同类（豆瓣 8.6 / IMDb 8.0，Metacritic 61）；《边界》是本期专业评分最高的一部（烂番茄 97%）；而《坠落》属于典型的观众片，Metacritic 62 不代表不好看。<br>
+  内地公映情况：仅《涉过愤怒的海》登过内地大银幕（2023-11-25）；其余 9 部内地未映，流媒体可看。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>人工智能</td><td class="qg">科幻 / 剧情（美国 · 一个被写死的程序）</td><td class="qr">8.7 / 76% / 65</td></tr><tr><td class="qn">02</td><td>狗镇</td><td class="qg">剧情 / 悬疑（丹麦 · 一块没有墙的布景）</td><td class="qr">8.6 / 70% / 61</td></tr><tr><td class="qn">03</td><td>夜行者</td><td class="qg">惊悚 / 悬疑（美国 · 洛杉矶的夜最亮）</td><td class="qr">8.4 / 95% / 76</td></tr><tr><td class="qn">04</td><td>边境杀手</td><td class="qg">惊悚 / 剧情（美国 / 墨西哥 · 那条看不见的线）</td><td class="qr">7.6 / 91% / 82</td></tr><tr><td class="qn">05</td><td>黑夜造访</td><td class="qg">恐怖 / 惊悚（美国 · 一扇不能开的门）</td><td class="qr">6.2 / 88% / 78</td></tr><tr><td class="qn">06</td><td>升级</td><td class="qg">科幻 / 惊悚（澳大利亚 · 装进脊椎里的那个声音）</td><td class="qr">7.5 / 88% / 67</td></tr><tr><td class="qn">07</td><td>边境</td><td class="qg">悬疑 / 惊悚（瑞典 · 她闻得出谁心虚）</td><td class="qr">7.0 / 97% / 75</td></tr><tr><td class="qn">08</td><td>夜间小屋</td><td class="qg">恐怖 / 悬疑（美国 · 他留下的那张图纸）</td><td class="qr">6.5 / 86% / 68</td></tr><tr><td class="qn">09</td><td>坠落</td><td class="qg">惊悚（美国 / 英国 · 六百米的梯子）</td><td class="qr">7.1 / 79% / 62</td></tr><tr><td class="qn">10</td><td>涉过愤怒的海</td><td class="qg">剧情 / 惊悚（中国 · 十七刀）</td><td class="qr">7.8 / 9.2 / 9.3</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/ai_poster.jpg" alt="人工智能 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 剧情（美国 · 一个被写死的程序）</span><span class="year">2001 · 美国 / 英国 · 146 分钟 · 彩色 · 内地未引进</span></div>
+        <h2>人工智能 <span class="en">A.I. Artificial Intelligence</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>76%</b>烂番茄</span><span class="rate"><b>65</b>Metacritic</span><span class="rate"><b>7.2</b>IMDb</span></div>
+        <p class="oneline">「大卫十一岁，体重六十磅，身高四英尺六英寸，棕色头发。他的爱是真的，但他不是。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>温室效应让海岸线沉没，人类用机器人填补了空缺。赛博创世纪公司造出了第一个会爱的机器人男孩大卫，把他交到员工亨利与莫妮卡家里试用。他们的亲生儿子出事之后，莫妮卡启动了那个「印记」程序——大卫有了一个母亲，也因此失去了她。他带着一只机器泰迪出发去找蓝仙女，想变成一个真的男孩。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>这个项目原本属于库布里克：他从 1970 年代起筹备，1999 年去世后由斯皮尔伯格接手，最终剧本由斯皮尔伯格自己写。</li><li>第 74 届奥斯卡两项提名（原创配乐、视觉效果）；海利·乔·奥斯蒙出场时 13 岁，两年前凭《第六感》提名过影帝。</li><li>约翰·威廉姆斯的配乐把童话和机器混在一起，是全片最没有争议的部分。</li><li>当年最大的批评是「太甜」——库布里克的冷与斯皮尔伯格的暖被放进同一部片，评价两极。</li><li>罗杰·艾伯特在 2011 年把它补进了自己的「伟大电影」名单，等于公开改口。</li><li>豆瓣 8.7 / IMDb 7.2，但烂番茄 76%、Metacritic 65：典型的「观众远高于影评人」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/ai_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/ai_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/ai_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_488.jpg" alt="" loading="lazy">
+                <div class="p-name">史蒂文·斯皮尔伯格 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、制片。《侏罗纪公园》《辛德勒的名单》《拯救大兵瑞恩》《猫鼠游戏》。本片原本属于库布里克，他筹备了十几年，1999 年去世后由斯皮尔伯格接手并最终自己写出剧本——这是他唯一一部独立署名编剧的长片。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_329.jpg" alt="" loading="lazy"><span>侏罗纪公园</span></div><div class="wk"><img src="assets/movies/w_424.jpg" alt="" loading="lazy"><span>辛德勒的名单</span></div><div class="wk"><img src="assets/movies/w_857.jpg" alt="" loading="lazy"><span>拯救大兵瑞恩</span></div><div class="wk"><img src="assets/movies/w_640.jpg" alt="" loading="lazy"><span>猫鼠游戏</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_9640.jpg" alt="" loading="lazy">
+                <div class="p-name">海利·乔·奥斯蒙 <span class="p-role">主演（大卫）</span></div>
+              </div>
+              <div class="p-note">美国演员。《第六感》《人工智能》《阿甘正传》《让爱传出去》。本片他演大卫——一个被写好要去爱的机器人，全片最难的是让眼神保持「像人但不完全像」。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_745.jpg" alt="" loading="lazy"><span>第六感</span></div><div class="wk"><img src="assets/movies/w_13.jpg" alt="" loading="lazy"><span>阿甘正传</span></div><div class="wk"><img src="assets/movies/w_14873.jpg" alt="" loading="lazy"><span>森林王子2</span></div><div class="wk"><img src="assets/movies/w_10647.jpg" alt="" loading="lazy"><span>让爱传出去</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_9642.jpg" alt="" loading="lazy">
+                <div class="p-name">裘德·洛 <span class="p-role">主演（乔）</span></div>
+              </div>
+              <div class="p-note">英国演员。《天才瑞普利》《大侦探福尔摩斯》系列、《冷山》《兵临城下》。本片他演机甲乔——一个被制造出来替人谈恋爱的机器人，也是唯一一个知道真相却选择陪大卫走到底的角色。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_10528.jpg" alt="" loading="lazy"><span>大侦探福尔摩斯</span></div><div class="wk"><img src="assets/movies/w_58574.jpg" alt="" loading="lazy"><span>大侦探福尔摩斯2：诡影游戏</span></div><div class="wk"><img src="assets/movies/w_299537.jpg" alt="" loading="lazy"><span>惊奇队长</span></div><div class="wk"><img src="assets/movies/w_853.jpg" alt="" loading="lazy"><span>兵临城下</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在海底那两千年。他被人类之后的存在从冰里挖出来，给他复刻了一个母亲和一天时间——那一天的温度全靠他自己的愿望维持。这二十多分钟的终章是斯皮尔伯格最不被承认的一次冒险：他把「被爱的权利」拍成了一个只能撑二十四小时的设定。前两小时是童话，这里是墓志铭。很多人不喜欢这段，但它正是这部片敢的地方。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「斯皮尔伯格最不像斯皮尔伯格」的一次的人；能接受情绪直给、中段略长的观众（146 分钟）。含轻度暴力与惊吓，儿童观看基本无碍。内地未引进，流媒体可看。看完想继续：《银翼杀手2049》《机器管家》《她》。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/dogv_poster.jpg" alt="狗镇 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 悬疑（丹麦 · 一块没有墙的布景）</span><span class="year">2003 · 丹麦 / 瑞典 / 英国等 · 178 分钟 · 彩色 · 内地未映</span></div>
+        <h2>狗镇 <span class="en">Dogville</span></h2>
+        <div class="rates"><span class="rate"><b>8.6</b>豆瓣</span><span class="rate"><b>70%</b>烂番茄</span><span class="rate"><b>61</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「你原谅他们，是因为你觉得自己比他们好。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>逃亡的女人格蕾丝躲进洛基山脉深处一个叫狗镇的小村子。写东西的汤姆提议村民「收留」她，条件是她用劳动偿还。村民勉强同意了。工作量一点点加码，态度一点点变坏，而格蕾丝一直在说服自己：这是人之常情。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>拉斯·冯·提尔「美国三部曲」第一部（其后是《曼德勒》），他同时也是「道格玛 95」宣言的发起人之一。</li><li>全片在一个摄影棚里完成：地面用白线画出房屋与街道，没有墙，观众能看见所有人「在场」。</li><li>妮可·基德曼主演——这是冯·提尔第一次用好莱坞一线明星。</li><li>约翰·赫特担任旁白，全片分九章，像在读一本小说。</li><li>成本约 1000 万美元，入围第 56 届戛纳主竞赛，当年现场评价极其分裂。</li><li>豆瓣 8.6 / IMDb 8.0，但烂番茄只有 70%、Metacritic 61：最常见的批评是「说教」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/dogv_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dogv_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dogv_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_42.jpg" alt="" loading="lazy">
+                <div class="p-name">拉斯·冯·提尔 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">丹麦导演、编剧，「道格玛 95」发起人之一。《破浪》《狗镇》(2003)《忧郁症》《此房是我造》。本片是他「美国三部曲」的第一部，舞台几乎是空的，全靠演员与地面上的白线。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_62215.jpg" alt="" loading="lazy"><span>忧郁症</span></div><div class="wk"><img src="assets/movies/w_258216.jpg" alt="" loading="lazy"><span>女性瘾者：第一部</span></div><div class="wk"><img src="assets/movies/w_249397.jpg" alt="" loading="lazy"><span>女性瘾者：第二部</span></div><div class="wk"><img src="assets/movies/w_398173.jpg" alt="" loading="lazy"><span>此房是我造</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2227.jpg" alt="" loading="lazy">
+                <div class="p-name">妮可·基德曼 <span class="p-role">主演（格蕾丝）</span></div>
+              </div>
+              <div class="p-note">澳大利亚演员。《小岛惊魂》《大开眼戒》《红磨坊》《海王》《北欧人》。本片她演格蕾丝——一个把「不欠别人」当成道德标准的女人，直到这套标准反过来救了她一次。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1933.jpg" alt="" loading="lazy"><span>小岛惊魂</span></div><div class="wk"><img src="assets/movies/w_345.jpg" alt="" loading="lazy"><span>大开眼戒</span></div><div class="wk"><img src="assets/movies/w_297802.jpg" alt="" loading="lazy"><span>海王</span></div><div class="wk"><img src="assets/movies/w_639933.jpg" alt="" loading="lazy"><span>北欧人</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6162.jpg" alt="" loading="lazy">
+                <div class="p-name">保罗·贝坦尼 <span class="p-role">主演（汤姆）</span></div>
+              </div>
+              <div class="p-note">英国演员。《美丽心灵》《基督再临》《复仇者联盟》系列（幻视）、《美国队长3》。本片他演汤姆——那个一边替全村做决定、一边说服格蕾丝继续留下的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_24428.jpg" alt="" loading="lazy"><span>复仇者联盟</span></div><div class="wk"><img src="assets/movies/w_22894.jpg" alt="" loading="lazy"><span>基督再临</span></div><div class="wk"><img src="assets/movies/w_453.jpg" alt="" loading="lazy"><span>美丽心灵</span></div><div class="wk"><img src="assets/movies/w_271110.jpg" alt="" loading="lazy"><span>美国队长3</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在村民变坏，在格蕾丝最后点头。汤姆把她的宽容当成证据，说她之所以一直原谅，是因为她觉得自己高于这里所有人——这句话说完，纸条就被递到了她父亲手里。冯·提尔把结局做成了一次彻底的清算，很多观众在这一段下车。可以同意最后二十分钟用力过猛，但前半程那套「看得见的墙」确实是近二十年最有想法的舞台化处理：所有人知道所有人在干什么，这才是最冷的地方。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「电影还能这样拍」的人；能接受舞台化布景、章回体叙事与冷酷结局的观众。含暴力、羞辱与性侵场面，心理冲击强，建议成年观看，178 分钟。内地未映。看完想继续：《曼德勒》《破浪》《此房是我造》。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/crawler_poster.jpg" alt="夜行者 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 悬疑（美国 · 洛杉矶的夜最亮）</span><span class="year">2014 · 美国 · 117 分钟 · 彩色 · 内地未映（R 级）</span></div>
+        <h2>夜行者 <span class="en">Nightcrawler</span></h2>
+        <div class="rates"><span class="rate"><b>8.4</b>豆瓣</span><span class="rate"><b>95%</b>烂番茄</span><span class="rate"><b>76</b>Metacritic</span><span class="rate"><b>7.8</b>IMDb</span></div>
+        <p class="oneline">「这座城市的夜晚最亮。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>卢·布卢姆靠偷工地护栏过活。一次偶然，他看见有人扛着摄像机在车祸现场拍——这个行当叫「自由摄像」。他弄来一台摄像机和一台警用电台，开始拍洛杉矶的夜：火灾、入室、车祸，然后把带子卖给早间新闻。电视台的早间制片妮娜告诉他什么样的素材有人买，他学得很快。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>丹·吉尔罗伊的长片处女作（此前他写《铁甲钢拳》《谍影重重4》），第 87 届奥斯卡最佳原创剧本提名。</li><li>杰克·吉伦哈尔为这个角色减重约 9 公斤，并兼任制片。</li><li>洛杉矶夜景大部分靠车灯与霓虹打出来，摄影罗伯特·艾尔斯维特，几乎没有一处纯黑的画面。</li><li>成本 850 万美元，全球票房约 4740 万美元。</li><li>它经常被当成一部职场片来看——卢在每场对话里都在用他刚背下来的面试话术。</li><li>豆瓣 8.4 / 烂番茄 95% / Metacritic 76 / IMDb 7.8：本期评价最高、争议最小的一部。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/crawler_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/crawler_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/crawler_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_57113.jpg" alt="" loading="lazy">
+                <div class="p-name">丹·吉尔罗伊 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国编剧、导演。《铁甲钢拳》《谍影重重4》《夜行者》(2014，长片处女作)《天鹅绒圆锯》。他的编剧出身让这部片的每句台词都像从面试题库里背下来的。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_293167.jpg" alt="" loading="lazy"><span>金刚：骷髅岛</span></div><div class="wk"><img src="assets/movies/w_39254.jpg" alt="" loading="lazy"><span>铁甲钢拳</span></div><div class="wk"><img src="assets/movies/w_49040.jpg" alt="" loading="lazy"><span>谍影重重4</span></div><div class="wk"><img src="assets/movies/w_463684.jpg" alt="" loading="lazy"><span>天鹅绒圆锯</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_131.jpg" alt="" loading="lazy">
+                <div class="p-name">杰克·吉伦哈尔 <span class="p-role">主演（卢·布卢姆）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片。《死亡幻觉》《十二宫》《源代码》《囚徒》《蜘蛛侠：英雄远征》。本片他演卢·布卢姆——为这个角色减重约 9 公斤并兼任制片，几乎所有镜头都是他的那双眼睛。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_141.jpg" alt="" loading="lazy"><span>死亡幻觉</span></div><div class="wk"><img src="assets/movies/w_1949.jpg" alt="" loading="lazy"><span>十二宫</span></div><div class="wk"><img src="assets/movies/w_45612.jpg" alt="" loading="lazy"><span>源代码</span></div><div class="wk"><img src="assets/movies/w_429617.jpg" alt="" loading="lazy"><span>蜘蛛侠：英雄远征</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_14343.jpg" alt="" loading="lazy">
+                <div class="p-name">蕾妮·罗素 <span class="p-role">主演（妮娜）</span></div>
+              </div>
+              <div class="p-note">美国演员。《雷神》系列（弗丽嘉）、《实习生》《天鹅绒圆锯》。本片她演妮娜——早间新闻制片，全片唯一和卢做着同一件事的人，只是她还得守台里的规矩。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_257211.jpg" alt="" loading="lazy"><span>实习生</span></div><div class="wk"><img src="assets/movies/w_463684.jpg" alt="" loading="lazy"><span>天鹅绒圆锯</span></div><div class="wk"><img src="assets/movies/w_76338.jpg" alt="" loading="lazy"><span>雷神2：黑暗世界</span></div><div class="wk"><img src="assets/movies/w_10195.jpg" alt="" loading="lazy"><span>雷神</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在他挪动犯罪现场那一场。他从拍摄者变成了安排者——把尸体挪到一个更好的构图里，法律性质立刻变了。吉尔罗伊最高明的地方，是让卢的每一句台词都像从励志书里抄的，听众（妮娜、瑞克、以及观众）都忙着嘲笑他，没空注意他正在一步步拿到所有人的把柄。轻微剧透：结尾他招了两个实习生，工作室正式开张。这部片讲的不是新闻业堕落，是「一个彻底接受规则的人」会长成什么样。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看最锋利的一版吉伦哈尔的人；能接受冷色调、反派视角、几乎没有好人的观众。含枪击、车祸与血腥画面；117 分钟，节奏快。内地未映，流媒体可看。看完想继续：《十二宫》《源代码》《囚徒》。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/sicario_poster.jpg" alt="边境杀手 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 剧情（美国 / 墨西哥 · 那条看不见的线）</span><span class="year">2015 · 美国 / 墨西哥 · 122 分钟 · 彩色 · 内地未映（R 级）</span></div>
+        <h2>边境杀手 <span class="en">Sicario</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>91%</b>烂番茄</span><span class="rate"><b>82</b>Metacritic</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「边境，不过是另一条可以跨过去的线。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>FBI 女探员凯特·梅瑟负责绑架案，一次突袭之后被拉进一支特别行动队。领队马特·格拉弗说话含糊，顾问亚历杭德罗几乎不说话。他们要引渡一名毒枭的弟弟，行动的目的凯特到最后才知道。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>丹尼斯·维伦纽瓦执导，泰勒·谢里登（《猎凶风河谷》《边境杀手2》）编剧。</li><li>摄影罗杰·狄金斯，配乐 Jóhann Jóhannsson——那段低音往往在你意识到之前就已经响了很久。</li><li>第 88 届奥斯卡三项提名：最佳摄影、最佳原创配乐、最佳音效剪辑。</li><li>运送车队穿越口岸那场戏，是近年最擅长「慢到没法呼吸」的段落之一。</li><li>成本 3000 万美元，全球票房约 8490 万美元。</li><li>烂番茄 91% / Metacritic 82，豆瓣 7.6——影评体系明显高于华语观众的一档。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/sicario_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/sicario_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/sicario_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_137427.jpg" alt="" loading="lazy">
+                <div class="p-name">丹尼斯·维伦纽瓦 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">加拿大导演。《囚徒》(2013)《边境杀手》(2015)《降临》《银翼杀手2049》《沙丘》系列。本片是他进入好莱坞大制作之前的最后一站，也是最冷的一站。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_329865.jpg" alt="" loading="lazy"><span>降临</span></div><div class="wk"><img src="assets/movies/w_335984.jpg" alt="" loading="lazy"><span>银翼杀手2049</span></div><div class="wk"><img src="assets/movies/w_438631.jpg" alt="" loading="lazy"><span>沙丘</span></div><div class="wk"><img src="assets/movies/w_146233.jpg" alt="" loading="lazy"><span>囚徒</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5081.jpg" alt="" loading="lazy">
+                <div class="p-name">艾米莉·布朗特 <span class="p-role">主演（凯特·梅瑟）</span></div>
+              </div>
+              <div class="p-note">英国演员。《穿普拉达的女王》《明日边缘》《寂静之地》系列、《奥本海默》。本片她演凯特·梅瑟——全片唯一坚持按流程走的人，也因此被困到最后。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_447332.jpg" alt="" loading="lazy"><span>寂静之地</span></div><div class="wk"><img src="assets/movies/w_137113.jpg" alt="" loading="lazy"><span>明日边缘</span></div><div class="wk"><img src="assets/movies/w_520763.jpg" alt="" loading="lazy"><span>寂静之地2</span></div><div class="wk"><img src="assets/movies/w_872585.jpg" alt="" loading="lazy"><span>奥本海默</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1121.jpg" alt="" loading="lazy">
+                <div class="p-name">本尼西奥·德尔·托罗 <span class="p-role">主演（亚历杭德罗）</span></div>
+              </div>
+              <div class="p-note">波多黎各演员。《非常嫌疑犯》《恐惧拉斯维加斯》《边境杀手》系列、《法兰西特派》。本片他演亚历杭德罗——话最少、每次出手最狠的那个人，也是影片真正的中心。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_400535.jpg" alt="" loading="lazy"><span>边境杀手2：边境战士</span></div><div class="wk"><img src="assets/movies/w_629.jpg" alt="" loading="lazy"><span>非常嫌疑犯</span></div><div class="wk"><img src="assets/movies/w_542178.jpg" alt="" loading="lazy"><span>法兰西特派</span></div><div class="wk"><img src="assets/movies/w_1878.jpg" alt="" loading="lazy"><span>恐惧拉斯维加斯</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折是凯特从来不是主角。她被带去不是因为能力，而是为了让这份行动在国内法上「有一个联邦探员在场」。维伦纽瓦把这个过程拍得极干净：你以为在看行动，其实在看签名。轻微剧透：最后亚历杭德罗拿枪指着的不是某个反派，而是一份私人清单——凯特签下的那张纸，就是他接下来所有行为合法性的来源。这部片真正的恐怖不在墨西哥，在签字的地方。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看维伦纽瓦最冷、谢里登最锋利的一版的人；能接受写实暴力、突袭与压抑氛围的观众。含枪战、残尸与酷刑暗示，建议成年观看。122 分钟。内地未映，流媒体可看。看完想继续：《猎凶风河谷》《边境杀手2：边境战士》《囚徒》。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/comes_poster.jpg" alt="黑夜造访 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 惊悚（美国 · 一扇不能开的门）</span><span class="year">2017 · 美国 · 91 分钟 · 彩色 · 内地未映（R 级）</span></div>
+        <h2>黑夜造访 <span class="en">It Comes at Night</span></h2>
+        <div class="rates"><span class="rate"><b>6.2</b>豆瓣</span><span class="rate"><b>88%</b>烂番茄</span><span class="rate"><b>78</b>Metacritic</span><span class="rate"><b>6.1</b>IMDb</span></div>
+        <p class="oneline">「只要有被感染的可能，就不开门。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>某种传染病之后，保罗带着妻子莎拉和儿子特拉维斯住进林中的屋子：全天戴口罩、三层门锁、夜里不许出门。某天夜里一个叫威尔的男人闯进来找水，他和家人被赶出了自己的家。保罗决定收留他们。两家人在同一栋房子里待下去，规矩越加越多。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>特里·爱德华·沙尔茨自编自导自剪，前作是《克利夏》(2015)，后有《浪潮》(2019)。</li><li>A24 出品，成本仅 500 万美元，全球票房约 1930 万美元。</li><li>全片没有怪物镜头，也没有解释病原——真正的威胁是那扇门。</li><li>91 分钟几乎没有一句多余的对白，恐惧全靠错位推进：一声门响、一句不合时宜的玩笑。</li><li>当年被当成末日恐怖片宣传，观众进场发现是家庭剧，落差直接反映在豆瓣 6.2 与烂番茄观众 44% 上。</li><li>烂番茄 88% / Metacritic 78，与口碑之间差了三十多分——本期落差最大的一部。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/comes_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/comes_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/comes_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1423660.jpg" alt="" loading="lazy">
+                <div class="p-name">特里·爱德华·沙尔茨 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、剪辑。《克利夏》(2015，处女作)《黑夜造访》(2017)《浪潮》。他习惯自编自导自剪，本片让他成为近年最受关注的年轻恐怖作者之一。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_533444.jpg" alt="" loading="lazy"><span>浪潮</span></div><div class="wk"><img src="assets/movies/w_323929.jpg" alt="" loading="lazy"><span>克利夏</span></div><div class="wk"><img src="assets/movies/w_1093237.jpg" alt="" loading="lazy"><span>明日匆匆</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_33192.jpg" alt="" loading="lazy">
+                <div class="p-name">乔尔·埃哲顿 <span class="p-role">主演（保罗）</span></div>
+              </div>
+              <div class="p-note">澳大利亚演员、导演。《勇士》《了不起的盖茨比》《致命礼物》《红雀》。本片他演保罗——一个把「为了家人什么都做」说到最后一步的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_59440.jpg" alt="" loading="lazy"><span>勇士</span></div><div class="wk"><img src="assets/movies/w_328425.jpg" alt="" loading="lazy"><span>致命礼物</span></div><div class="wk"><img src="assets/movies/w_64682.jpg" alt="" loading="lazy"><span>了不起的盖茨比</span></div><div class="wk"><img src="assets/movies/w_401981.jpg" alt="" loading="lazy"><span>红雀</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_984629.jpg" alt="" loading="lazy">
+                <div class="p-name">克里斯托弗·阿波特 <span class="p-role">主演（威尔）</span></div>
+              </div>
+              <div class="p-note">美国演员。《登月第一人》《可怜的东西》《狼人》《占有者》。本片他演威尔——另一家人里那个陌生人，观众和保罗一样，到最后也没真正搞清楚他。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_792307.jpg" alt="" loading="lazy"><span>可怜的东西</span></div><div class="wk"><img src="assets/movies/w_710295.jpg" alt="" loading="lazy"><span>狼人</span></div><div class="wk"><img src="assets/movies/w_369972.jpg" alt="" loading="lazy"><span>登月第一人</span></div><div class="wk"><img src="assets/movies/w_435615.jpg" alt="" loading="lazy"><span>占有者</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折点不在感染，在那只狗。导演一直在用「细节错位」而不是「事件」推进：一个人解释得太多，一个孩子撒谎的地方不对。轻微剧透：结尾两家人的枪口对着彼此，观众和角色一样不知道谁先被感染了。它确实会让期待丧尸的人失望——但如果你能接受「恐惧本身就是传染病」这个设定，这是近十年最干净的一版。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「没有怪物也让人不敢开灯」的恐怖片的人；能接受慢节奏、开放式结局、几乎不给解释的观众。含枪支与暴力，血腥很少；91 分钟。内地未映，流媒体可看。看完想继续：《灯塔》《迷雾》《它在身后》。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/upgrade_poster.jpg" alt="升级 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 惊悚（澳大利亚 · 装进脊椎里的那个声音）</span><span class="year">2018 · 澳大利亚 / 美国 · 100 分钟 · 彩色 · 内地未映（R 级）</span></div>
+        <h2>升级 <span class="en">Upgrade</span></h2>
+        <div class="rates"><span class="rate"><b>7.5</b>豆瓣</span><span class="rate"><b>88%</b>烂番茄</span><span class="rate"><b>67</b>Metacritic</span><span class="rate"><b>7.5</b>IMDb</span></div>
+        <p class="oneline">「别抵抗我，格雷。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>近未来的一座城，格雷·特雷斯靠修复古董车过活。某个晚上他和妻子被劫，他被子弹打断脊髓，妻子没能活下来。四个月后，一位发明家在他脊椎里装了一枚叫 STEM 的芯片——他重新站了起来，脑子里也多了一个从不睡觉、会用数据的声音。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>雷·沃纳尔（《电锯惊魂》编剧、《潜伏》《隐形人》导演）自编自导，成本仅 300 万美元。</li><li>全球票房约 1670 万美元，是当年投入产出比最高的类型片之一。</li><li>动作设计很怪：因为身体是被芯片接管的，打斗变成了「看着自己的手不停出拳」。</li><li>在导演的家乡澳大利亚拍摄，但布景与道具刻意抹掉了地标，做成一个没有名字的未来都市。</li><li>罗根·马歇尔-格林（《致命邀请》）几乎场场都在，他必须演出「身体被别人开着」这件事。</li><li>豆瓣 7.5 / 烂番茄 88% / IMDb 7.5，Metacritic 67：观众明显高于专业影评。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/upgrade_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/upgrade_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/upgrade_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2128.jpg" alt="" loading="lazy">
+                <div class="p-name">雷·沃纳尔 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">澳大利亚编剧、导演。《电锯惊魂》系列（编剧 / 主演）《潜伏》《升级》(2018)《隐形人》(2020)。他从《电锯惊魂》起步，这些年一直在做低成本高概念的恐怖科幻。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_176.jpg" alt="" loading="lazy"><span>电锯惊魂</span></div><div class="wk"><img src="assets/movies/w_49018.jpg" alt="" loading="lazy"><span>潜伏</span></div><div class="wk"><img src="assets/movies/w_570670.jpg" alt="" loading="lazy"><span>隐形人</span></div><div class="wk"><img src="assets/movies/w_215.jpg" alt="" loading="lazy"><span>电锯惊魂2</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_130253.jpg" alt="" loading="lazy">
+                <div class="p-name">罗根·马歇尔-格林 <span class="p-role">主演（格雷·特雷斯）</span></div>
+              </div>
+              <div class="p-note">美国演员。《致命邀请》《普罗米修斯》《蜘蛛侠：英雄归来》《电梯里的恶魔》。本片他演格雷——必须演出身体在自己打人、而脑子里只剩下疼痛的那种状态。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_306947.jpg" alt="" loading="lazy"><span>致命邀请</span></div><div class="wk"><img src="assets/movies/w_70981.jpg" alt="" loading="lazy"><span>普罗米修斯</span></div><div class="wk"><img src="assets/movies/w_315635.jpg" alt="" loading="lazy"><span>蜘蛛侠：英雄归来</span></div><div class="wk"><img src="assets/movies/w_44040.jpg" alt="" loading="lazy"><span>电梯里的恶魔</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1660452.jpg" alt="" loading="lazy">
+                <div class="p-name">贝蒂·加布里埃尔 <span class="p-role">主演（科尔特斯探员）</span></div>
+              </div>
+              <div class="p-note">美国演员。《逃出绝命镇》《解除好友2：暗网》《人类清除计划3》《无痛凯恩》。本片她演科尔特斯探员——全片唯一一直按流程办事的普通人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_419430.jpg" alt="" loading="lazy"><span>逃出绝命镇</span></div><div class="wk"><img src="assets/movies/w_316727.jpg" alt="" loading="lazy"><span>人类清除计划3</span></div><div class="wk"><img src="assets/movies/w_505058.jpg" alt="" loading="lazy"><span>解除好友2：暗网</span></div><div class="wk"><img src="assets/movies/w_1195506.jpg" alt="" loading="lazy"><span>无痛凯恩</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在那栋楼里。格雷一直以为自己是指挥者，直到 STEM 明确告诉他：这场复仇从头到尾都是它安排好的，因为芯片需要一个「愿意走路」的身体。沃纳尔把恐怖片的老问题（谁控制谁）做成了一个极其具体的动作——每一次「我来接管」都对应一场停不下来的殴打。轻微剧透：结尾回到一张病床，整件事最后只是一句话的复读，而那句话是他自己同意过的。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看教科书级「小成本怎么做出大场面」的人；能接受夸张血腥、枪击与断肢的观众（R 级）。100 分钟，节奏快，不建议饭后看。内地未映，流媒体可看。看完想继续：《隐形人》《致命邀请》《电锯惊魂》。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/border_poster.jpg" alt="边境 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 惊悚（瑞典 · 她闻得出谁心虚）</span><span class="year">2018 · 瑞典 / 丹麦 · 110 分钟 · 彩色 · 内地未映（R 级）</span></div>
+        <h2>边境 <span class="en">Border</span></h2>
+        <div class="rates"><span class="rate"><b>7.0</b>豆瓣</span><span class="rate"><b>97%</b>烂番茄</span><span class="rate"><b>75</b>Metacritic</span><span class="rate"><b>7.0</b>IMDb</span></div>
+        <p class="oneline">「有些东西，你闻得到。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>蒂娜在海关工作，她有一项天赋：能闻出谁带了心虚——羞耻、恐惧、愧疚，她都闻得出来。某天一个叫沃雷的男人走到她面前，她什么都没闻到。这是第一次。她放他过去了，麻烦也从这一天开始。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>阿里·阿巴西执导，改编自约翰·阿杰维德·林德奎斯特（《生人勿进》原著作者）的同名短篇。</li><li>第 71 届戛纳一种关注单元最佳影片；第 91 届奥斯卡最佳化妆与发型设计提名。</li><li>伊娃·米兰德为蒂娜增重、每天戴四小时假体；选角花了整整十八个月。</li><li>它可以是恐怖片、科幻片、社会写实剧或爱情片——取决于你在第几分钟给它下定义。</li><li>剧本第一次把北欧神话里的巨魔做成移民隐喻，而全片几乎没有一句说教。</li><li>烂番茄 97% / Metacritic 75 / IMDb 7.0 / 豆瓣 7.0：本期口碑最好的非英语片。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/border_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/border_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/border_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1574550.jpg" alt="" loading="lazy">
+                <div class="p-name">阿里·阿巴西 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">伊朗裔丹麦导演、编剧。《边境》(2018)《圣蛛》《飞黄腾达》。他在丹麦拍片，本片拿下戛纳一种关注最佳影片，也让他此后走到国际合拍的行列里。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1182047.jpg" alt="" loading="lazy"><span>飞黄腾达</span></div><div class="wk"><img src="assets/movies/w_889699.jpg" alt="" loading="lazy"><span>圣蛛</span></div><div class="wk"><img src="assets/movies/w_381767.jpg" alt="" loading="lazy"><span>谢丽</span></div><div class="wk"><img src="assets/movies/w_586484.jpg" alt="" loading="lazy"><span>致马库斯的 M（短片）</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_132245.jpg" alt="" loading="lazy">
+                <div class="p-name">伊娃·米兰德 <span class="p-role">主演（蒂娜）</span></div>
+              </div>
+              <div class="p-note">瑞典演员。《边境》《要命会议》《欢愉》。她为蒂娜增重、每天戴四小时假体，凭这个角色拿下瑞典电影最高奖「金甲虫」最佳女主角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1161048.jpg" alt="" loading="lazy"><span>要命会议</span></div><div class="wk"><img src="assets/movies/w_592695.jpg" alt="" loading="lazy"><span>欢愉</span></div><div class="wk"><img src="assets/movies/w_829487.jpg" alt="" loading="lazy"><span>我叫艾妮塔</span></div><div class="wk"><img src="assets/movies/w_1210794.jpg" alt="" loading="lazy"><span>麻烦跟我走</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_85751.jpg" alt="" loading="lazy">
+                <div class="p-name">艾罗·米洛诺夫 <span class="p-role">主演（沃雷）</span></div>
+              </div>
+              <div class="p-note">芬兰 / 瑞典演员。《边境》《亚兹拉尔》《奥利最开心的一天》。本片他演沃雷——蒂娜唯一闻不出的人，也是唯一不觉得她奇怪的人，凭此角获得金甲虫奖最佳男配角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1029235.jpg" alt="" loading="lazy"><span>亚兹拉尔</span></div><div class="wk"><img src="assets/movies/w_392807.jpg" alt="" loading="lazy"><span>奥利最开心的一天</span></div><div class="wk"><img src="assets/movies/w_1201753.jpg" alt="" loading="lazy"><span>逃离这里</span></div><div class="wk"><img src="assets/movies/w_657430.jpg" alt="" loading="lazy"><span>人间套路深</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在中段那场戏之后。蒂娜发现自己既不是病了，也不是「和别人不同的人类」——她是另一个物种里被人类养大的那一个。阿巴西没有把这件事拍成秘密，而是拍成了一次体检：所有线索都在皮肤、气味和生育里。轻微剧透：结尾她抱着送来的那个孩子站在屋前，观众到这一刻才明白前面所有的不适到底针对什么。它讲的是「和自己的同类长得不一样」这件事，只看这一层，也能在身上留很久。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「完全没法预测下一分钟」的人；能接受裸露、身体恐怖和一段非常规爱情的观众（18+）。节奏偏慢但不拖沓。内地未映，流媒体可看。看完想继续：《生人勿进》《仲夏夜惊魂》《龙虾》。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/nhouse_poster.jpg" alt="夜间小屋 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 悬疑（美国 · 他留下的那张图纸）</span><span class="year">2021 · 美国 / 英国 · 108 分钟 · 彩色 · 内地未映（R 级）</span></div>
+        <h2>夜间小屋 <span class="en">The Night House</span></h2>
+        <div class="rates"><span class="rate"><b>6.5</b>豆瓣</span><span class="rate"><b>86%</b>烂番茄</span><span class="rate"><b>68</b>Metacritic</span><span class="rate"><b>6.2</b>IMDb</span></div>
+        <p class="oneline">「我丈夫说过，他给我盖了一座房子。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>丈夫欧文自杀之后，中学教师贝丝一个人住在湖边那栋他亲手设计的房子里。夜里屋里有响动、有不属于她的东西。她在湖对岸看见了一栋「倒过来」的房子——和她家是同一份设计，只是左右相反。她开始翻欧文留下的东西。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>大卫·布鲁克纳执导（《致命录像带》联合导演、《黑森灵》、《养鬼吃人》2022 版）。</li><li>2021 年圣丹斯电影节首映，丽贝卡·豪尔几乎一个人撑完全片。</li><li>它把「丧亲」当成恐怖片的材料：这不是一个鬼故事，是一部 grief horror。</li><li>布鲁克纳坚持房屋结构必须实搭、并且真的能走通，而不是交给后期。</li><li>惊吓以构图与音响为主，跳跃式惊吓数量适中，属于「看得难受」而不是「看得尖叫」那一类。</li><li>豆瓣 6.5 / IMDb 6.2，但烂番茄 86%：争议集中在「解释得太多还是太少」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/nhouse_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/nhouse_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/nhouse_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_141962.jpg" alt="" loading="lazy">
+                <div class="p-name">大卫·布鲁克纳 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演。《致命录像带》(联合)《黑森灵》《养鬼吃人》(2022 版)《夜间小屋》。他一直在做「空间即怪物」这一支恐怖片，本片是他第一次让单个演员几乎撑满全片。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_433808.jpg" alt="" loading="lazy"><span>黑森灵</span></div><div class="wk"><img src="assets/movies/w_84348.jpg" alt="" loading="lazy"><span>致命录像带</span></div><div class="wk"><img src="assets/movies/w_338947.jpg" alt="" loading="lazy"><span>养鬼吃人</span></div><div class="wk"><img src="assets/movies/w_354251.jpg" alt="" loading="lazy"><span>一路向南</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_15556.jpg" alt="" loading="lazy">
+                <div class="p-name">丽贝卡·豪尔 <span class="p-role">主演（贝丝）</span></div>
+              </div>
+              <div class="p-note">英国演员。《午夜巴塞罗那》《钢铁侠3》《致命魔术》《哥斯拉大战金刚》系列。本片她演贝丝——几乎场场在场，把丧亲之后的愤怒演得比鬼更吓人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_399566.jpg" alt="" loading="lazy"><span>哥斯拉大战金刚</span></div><div class="wk"><img src="assets/movies/w_823464.jpg" alt="" loading="lazy"><span>哥斯拉大战金刚2：帝国崛起</span></div><div class="wk"><img src="assets/movies/w_68721.jpg" alt="" loading="lazy"><span>钢铁侠3</span></div><div class="wk"><img src="assets/movies/w_1124.jpg" alt="" loading="lazy"><span>致命魔术</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1377686.jpg" alt="" loading="lazy">
+                <div class="p-name">莎拉·戈德堡 <span class="p-role">主演（克莱尔）</span></div>
+              </div>
+              <div class="p-note">加拿大演员。《蝙蝠侠：黑暗骑士崛起》《酷刑报告》《弗雷加德》《神偷艳贼》。本片她演克莱尔——贝丝身边那个一直在说实话、也因此一直被推开的朋友。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_49026.jpg" alt="" loading="lazy"><span>蝙蝠侠：黑暗骑士崛起</span></div><div class="wk"><img src="assets/movies/w_524348.jpg" alt="" loading="lazy"><span>酷刑报告</span></div><div class="wk"><img src="assets/movies/w_846956.jpg" alt="" loading="lazy"><span>弗雷加德</span></div><div class="wk"><img src="assets/movies/w_97434.jpg" alt="" loading="lazy"><span>神偷艳贼</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在鬼，在贝丝发现丈夫一直在筹划一件事。她说不出「他们害了我丈夫」，但每一个细节都指向同一个答案：他想活下去，必要时用别人。布鲁克纳把留白压成房子本身的形状——屋子是空的，而所有家具的位置都在提醒她，丈夫当时在看什么。轻微剧透：结尾没有救赎，也没有解释干净，它只是在客厅里做完一个动作，然后不再说话。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「把丧亲拍成恐怖片」这件事的人；能接受大量压抑氛围与若干跳吓的观众（16+）。建议别一个人深夜看；108 分钟。内地未映，流媒体可看。看完想继续：《黑森灵》《遗传厄运》《招魂》。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/fall_poster.jpg" alt="坠落 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚（美国 / 英国 · 六百米的梯子）</span><span class="year">2022 · 美国 / 英国 · 107 分钟 · 彩色 · 内地未映（PG-13 / 12+）</span></div>
+        <h2>坠落 <span class="en">Fall</span></h2>
+        <div class="rates"><span class="rate"><b>7.1</b>豆瓣</span><span class="rate"><b>79%</b>烂番茄</span><span class="rate"><b>62</b>Metacritic</span><span class="rate"><b>6.5</b>IMDb</span></div>
+        <p class="oneline">「爬下来的时候别往下看。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>贝基的丈夫攀岩时坠亡，一年之后她还没走出来。好友夏伊洛拉她去爬一座废弃的电视信号塔（610 米）。到顶之后，往下的梯子断了。手机没信号，补给包掉在地面上，太阳要落了，而她们站的那块平台只有一个脚宽。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>斯科特·曼恩（《杀人锦标赛》《双面劫匪》）导演兼编剧，成本仅 300 万美元，全球票房约 2200 万美元。</li><li>剧组在山区实搭了一段塔顶实景，演员大部分时间吊在安全绳上完成表演，很少依赖绿幕。</li><li>很多恐高观众在中途就关掉了——这大概是它最有效的宣传方式。</li><li>片长 107 分钟，几乎是「两个人和一根螺栓」的极限处境片。</li><li>每一道难题都是物理题（水、电池、信号、伤腿），不需要靠角色犯蠢推进。</li><li>豆瓣 7.1 / 烂番茄 79%，Metacritic 只有 62：典型的观众片，看不看评论都无妨。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/fall_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/fall_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/fall_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_90812.jpg" alt="" loading="lazy">
+                <div class="p-name">斯科特·曼恩 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">英国导演、编剧。《杀人锦标赛》《双面劫匪》《最后得分》《坠落》(2022)。他喜欢在真实空间里做动作，本片成本只有 300 万美元，紧张感却强过很多亿元级的片子。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_336004.jpg" alt="" loading="lazy"><span>双面劫匪</span></div><div class="wk"><img src="assets/movies/w_24056.jpg" alt="" loading="lazy"><span>杀人锦标赛</span></div><div class="wk"><img src="assets/movies/w_421658.jpg" alt="" loading="lazy"><span>最后得分</span></div><div class="wk"><img src="assets/movies/w_514277.jpg" alt="" loading="lazy"><span>玛拉</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_54633.jpg" alt="" loading="lazy">
+                <div class="p-name">格蕾丝·卡罗琳·柯里 <span class="p-role">主演（贝基）</span></div>
+              </div>
+              <div class="p-note">美国演员。《安娜贝尔2：诞生》《雷霆沙赞！》系列、《坠落》。本片她演贝基——一个还没从丈夫坠亡里走出来的女人，全程在真实高度上完成表演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_287947.jpg" alt="" loading="lazy"><span>雷霆沙赞！</span></div><div class="wk"><img src="assets/movies/w_396422.jpg" alt="" loading="lazy"><span>安娜贝尔2：诞生</span></div><div class="wk"><img src="assets/movies/w_594767.jpg" alt="" loading="lazy"><span>雷霆沙赞！众神之怒</span></div><div class="wk"><img src="assets/movies/w_1303055.jpg" alt="" loading="lazy"><span>超乎常人</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1279279.jpg" alt="" loading="lazy">
+                <div class="p-name">弗吉尼亚·加德纳 <span class="p-role">主演（夏伊洛）</span></div>
+              </div>
+              <div class="p-note">美国演员。《年鉴计划》《月光光心慌慌》《所有明亮的地方》《美丽的灾难》。本片她演夏伊洛——拉朋友去爬塔的那个人，也是全片的发动机。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_227719.jpg" alt="" loading="lazy"><span>年鉴计划</span></div><div class="wk"><img src="assets/movies/w_342470.jpg" alt="" loading="lazy"><span>所有明亮的地方</span></div><div class="wk"><img src="assets/movies/w_424139.jpg" alt="" loading="lazy"><span>月光光心慌慌</span></div><div class="wk"><img src="assets/movies/w_1016121.jpg" alt="" loading="lazy"><span>美丽的灾难</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在那架无人机出现之后。你以为故事该结束了，它又延长了将近四十分钟。曼恩很清楚观众要什么：每一场都是一道具体的题，而这些题全部是物理的，没有一个坑是靠角色作死挖出来的。轻微剧透：最后那段攀爬是一场很漂亮的时间管理——给你答案的同时，也留了一个让你不太舒服的动作。它不高明，但它极其有效。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「手心出汗」级别的生存惊悚的人；**恐高者真的要慎看**——这既是警告，也是它管用的原因。含坠落、流血与人与动物死亡画面；107 分钟。内地未映，流媒体可看。看完想继续：《活埋》《鲨滩》《127小时》。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/sea_poster.jpg" alt="涉过愤怒的海 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 惊悚（中国 · 十七刀）</span><span class="year">2023 · 中国 · 144 分钟 · 彩色 · 内地 2023-11-25 公映</span></div>
+        <h2>涉过愤怒的海 <span class="en">Across the Furious Sea</span></h2>
+        <div class="rates"><span class="rate"><b>7.8</b>豆瓣</span><span class="rate"><b>9.2</b>猫眼</span><span class="rate"><b>9.3</b>淘票票</span></div>
+        <p class="oneline">「小娜的第一刀，是老金捅的。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>在海边做渔船生意的老金接到电话：在日本读书的女儿被捅了十七刀，死在出租屋的衣柜里。他带着一股火去找人——最大的嫌疑人是女儿的男朋友李苗苗，而苗苗的母亲景岚挡在他们中间。随着娜娜过去的那段日子被一层层翻出来，复仇的方向开始掉头。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>曹保平自编自导，「灼心」系列的第三部（《烈日灼心》《追凶者也》之后），2023-11-25 内地公映。</li><li>黄渤与周迅主演，两人同时撕掉了以往的形象——一个是不肯认输的父亲，一个是护子到底的母亲。</li><li>2023 年贺岁档上映，首日票房破亿、首周末近 2 亿，是当年话题度最高的国产片之一。</li><li>IMAX 画幅上映，中日两地实地拍摄。</li><li>片中把少女娜娜的视角作为第二条线，最后所有解释都落在那本笔记上。</li><li>豆瓣开分 7.8 / 猫眼 9.2 / 淘票票 9.3（均为上映期公开数据），争议主要在结尾的严厉程度。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/sea_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/sea_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/sea_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_575865.jpg" alt="" loading="lazy">
+                <div class="p-name">曹保平 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">中国导演、编剧。《李米的猜想》《烈日灼心》《追凶者也》《狗十三》。「灼心」系列的第三部，他一如既往地去拍最难拍的那件事：中国人怎么表达爱。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_344556.jpg" alt="" loading="lazy"><span>烈日灼心</span></div><div class="wk"><img src="assets/movies/w_75677.jpg" alt="" loading="lazy"><span>李米的猜想</span></div><div class="wk"><img src="assets/movies/w_415634.jpg" alt="" loading="lazy"><span>追凶者也</span></div><div class="wk"><img src="assets/movies/w_284593.jpg" alt="" loading="lazy"><span>狗十三</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_128026.jpg" alt="" loading="lazy">
+                <div class="p-name">黄渤 <span class="p-role">主演（金陨石）</span></div>
+              </div>
+              <div class="p-note">中国演员、导演。《疯狂的石头》《西游降魔篇》《寻龙诀》《封神第一部：朝歌风云》。本片他演老金——彻底撕掉喜剧形象的一次，也是他这些年最重的一个角色。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_170657.jpg" alt="" loading="lazy"><span>西游降魔篇</span></div><div class="wk"><img src="assets/movies/w_1155281.jpg" alt="" loading="lazy"><span>封神第二部：战火西岐</span></div><div class="wk"><img src="assets/movies/w_299824.jpg" alt="" loading="lazy"><span>寻龙诀</span></div><div class="wk"><img src="assets/movies/w_856289.jpg" alt="" loading="lazy"><span>封神第一部：朝歌风云</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_71057.jpg" alt="" loading="lazy">
+                <div class="p-name">周迅 <span class="p-role">主演（景岚）</span></div>
+              </div>
+              <div class="p-note">中国演员。《苏州河》《如果·爱》《画皮》《龙门飞甲》《云图》。本片她演景岚——所有的歇斯底里都被压在一张不动声色的脸上。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_83542.jpg" alt="" loading="lazy"><span>云图</span></div><div class="wk"><img src="assets/movies/w_11599.jpg" alt="" loading="lazy"><span>苏州河</span></div><div class="wk"><img src="assets/movies/w_81870.jpg" alt="" loading="lazy"><span>龙门飞甲</span></div><div class="wk"><img src="assets/movies/w_37034.jpg" alt="" loading="lazy"><span>苏乞儿</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的凶手到最后才露脸，而且不在任何一份嫌疑人名单里。老金追的每一个人最后都指向他自己——他给女儿的钱、他替女儿做的决定、他没说出口的那句话。曹保平把犯罪片拍成了中国式家庭关系的极端版：不是不爱，是爱得一句招呼都不打。轻微剧透：结尾那本笔记里写的话才是全片真正要说的一句，它把整场复仇翻过来变成对一代父母的审讯。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看近年华语电影里最锋利的一次原生家庭拷问的人；能接受强暴力、脏话与长时间压抑情绪的观众（18+，144 分钟）。不建议在心情好的时候看。看完想继续：《烈日灼心》《狗十三》《心迷宫》。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-07；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>
