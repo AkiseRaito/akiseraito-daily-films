@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-10-09 · 第 39 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 10 月 9 日 · 第 39 期 · 已避开往期推荐过的全部 380 部</div>
+  <div>
+    <span class="pill">主题：幻术清单 · 十部把特效做成叙事的电影（2009–2019）</span>
+    <span class="pill">全部 2009 年后：最早 2009，最晚 2019，按上映日期排列</span>
+    <span class="pill">类型覆盖：科幻 8 / 动作 4 / 剧情 2 / 冒险 2 / 惊悚 2 / 战争 1 / 灾难 1</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-09，会随时间变动，仅供参考。<br>
+  这一期的筛选条件只有一条：**技术本身就是叙事**。不是「特效多贵、多好看」，而是——**把这些技术抽掉，这个故事就讲不成**。这十一年里，电影工业恰好做成了三件事：真到能扛近景的 CG 角色（《阿凡达》《阿丽塔》）、把「不可能到达的地方」第一次搬上银幕（《地心引力》《1917》），以及让整个主角班组可以全部由 CG 组成而不违和（《奇幻森林》《头号玩家》）。<br>
+  十部全部落在 2009–2019。其中五部至少拿到一项奥斯卡：**《地心引力》拿了七项**，《阿凡达》《奇幻森林》拿下最佳视觉效果，《1917》拿下最佳摄影、最佳视觉效果与最佳音效混合，《少年派的奇幻漂流》拿下最佳导演等四项；四位导演是把技术手段第一次搬到自己最大制作上的那个人。成本从 9500 万美元到 2.37 亿美元不等，最贵的《阿凡达》后来成为影史票房冠军。《1917》是唯一的例外：它不是 CG 大片，是把 CG 藏起来、让你看不见的那一类——影片看着像一镜到底，实际由几十次重新布光与重排调度拼接而成。<br>
+  10 部片名全部为首次出现，无一与往期 380 部重复（比对 `_titles_all.txt` 通过）。按 10-02 定的口径，**只按片名去重**：本期有四位导演与往期重合——**李安**（第 31 期《卧虎藏龙》）、**阿方索·卡隆**（第 33 期《罗马》）、**吉尔莫·德尔·托罗**（第 36 期《水形物语》）、**史蒂文·斯皮尔伯格**（第 38 期《人工智能》），已在各自主创卡片里如实写出往期推过的那部，不重复介绍。<br>
+  口碑落差如实标注、不做修饰：**《流浪地球》豆瓣 7.9、猫眼 9.2，而 IMDb 只有 5.9、Metacritic 57**——这一部在本期的口碑落差最大，也最值得谈；**《创：战纪》是本期评分最低的一部**（豆瓣 7.2 / IMDb 6.8 / 烂番茄 51%），入选是因为它对后来几年的数字减龄与全 CG 角色行业的影响，远超它自己的评分；**《阿丽塔》影评人与观众彻底不在同一频道**（烂番茄 59%、Metacritic 53，但爆米花指数 94%）。<br>
+  内地引进情况：八部曾在内地大银幕上映（《阿凡达》2010-01-04、《少年派的奇幻漂流》2012-11-22、《地心引力》2013-11-19、《环太平洋》2013-07-31、《奇幻森林》2016-04-15、《头号玩家》2018-03-30、《流浪地球》2019-02-05、《阿丽塔：战斗天使》2019-02-22）；《创：战纪》与《1917》内地未映，流媒体可看。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>阿凡达</td><td class="qg">科幻 / 冒险（美国 · 一双蓝脚印）</td><td class="qr">8.8 / 81% / 83</td></tr><tr><td class="qn">02</td><td>创：战纪</td><td class="qg">科幻 / 动作（美国 · 一个被复制的父亲）</td><td class="qr">7.2 / 51% / 49</td></tr><tr><td class="qn">03</td><td>少年派的奇幻漂流</td><td class="qg">剧情 / 冒险（美国 / 中国台湾 · 一只假的老虎比真的更真）</td><td class="qr">9.1 / 87% / 79</td></tr><tr><td class="qn">04</td><td>环太平洋</td><td class="qg">科幻 / 动作（美国 · 为了打怪，我们造了怪）</td><td class="qr">7.6 / 72% / 65</td></tr><tr><td class="qn">05</td><td>地心引力</td><td class="qg">科幻 / 惊悚（美国 / 英国 · 无重力里的一手一脚）</td><td class="qr">8.0 / 96% / 96</td></tr><tr><td class="qn">06</td><td>奇幻森林</td><td class="qg">冒险 / 剧情（美国 · 只有男孩是真的）</td><td class="qr">7.9 / 95% / 77</td></tr><tr><td class="qn">07</td><td>头号玩家</td><td class="qg">科幻 / 动作（美国 · 所有人的童年被折成一局游戏）</td><td class="qr">8.7 / 72% / 64</td></tr><tr><td class="qn">08</td><td>流浪地球</td><td class="qg">科幻 / 灾难（中国 · 带走整个地球的那一次尝试）</td><td class="qr">7.9 / 70% / 57</td></tr><tr><td class="qn">09</td><td>阿丽塔：战斗天使</td><td class="qg">科幻 / 动作（美国 / 加拿大 · 一双比人大十倍的眼睛）</td><td class="qr">7.6 / 59% / 53</td></tr><tr><td class="qn">10</td><td>1917</td><td class="qg">战争 / 惊悚（英国 / 美国 · 一步剪辑都不能有）</td><td class="qr">8.5 / 89% / 78</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/avatar_poster.jpg" alt="阿凡达 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 冒险（美国 · 一双蓝脚印）</span><span class="year">2009 · 美国 / 英国 · 162 分钟（剧场版）· 内地 2010-01-04 公映</span></div>
+        <h2>阿凡达 <span class="en">Avatar</span></h2>
+        <div class="rates"><span class="rate"><b>8.8</b>豆瓣</span><span class="rate"><b>81%</b>烂番茄</span><span class="rate"><b>83</b>Metacritic</span><span class="rate"><b>7.9</b>IMDb</span></div>
+        <p class="oneline">「我看见你了。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>2154 年，双腿瘫痪的前海军陆战队员杰克·萨利顶替死去的孪生哥哥，去潘多拉星参与「阿凡达」计划——把人类意识接进一具有纳美人外形的躯体。一次意外让他被部落接纳，学会了骑马、飞行，以及那个世界里所有生命彼此相连的方式。地面上的人类企业要的是树下面的矿，而那棵树，正是纳美人世世代代住的地方。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>詹姆斯·卡梅隆早在 1994 年就写完了这份故事的提纲（约八十页），等了十四年才开机——他的理由一直是「技术还不够」。</li><li>预算 2.37 亿美元，全球票房约 29 亿美元；中国内地 2010-01-04 公映，很多人第一次为一部 IMAX 3D 排了通宵的队。</li><li>第 82 届奥斯卡九项提名，拿下最佳艺术指导、最佳摄影、最佳视觉效果三项。</li><li>剧组自研 Fusion Camera System 双镜头 3D 摄影机；另一项叫 Simulcam 的技术，让导演在现场就能看到 CG 角色叠进真实取景里。</li><li>性能捕捉最细的地方不在奇观，在脸：全片大量近景完全依赖演员本人的表情，卡梅隆坚持先看表演、再看特效。</li><li>豆瓣 8.8 / IMDb 7.9 / 烂番茄 81% / Metacritic 83：口碑相当一致，最常见的批评是「故事其实是个老故事」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/avatar_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/avatar_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/avatar_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2710.jpg" alt="" loading="lazy">
+                <div class="p-name">詹姆斯·卡梅隆 <span class="p-role">导演 / 编剧 / 制片</span></div>
+              </div>
+              <div class="p-note">加拿大导演、编剧、制片人，也是深海探险者。《终结者》《终结者2：审判日》《泰坦尼克号》《阿凡达》系列。本片他 1994 年就写出故事提纲，等了十四年才开机，理由是「技术还不够」；现场同时管着 3D 摄影、虚拟拍摄台与面部捕捉三件事。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_597.jpg" alt="" loading="lazy"><span>泰坦尼克号</span></div><div class="wk"><img src="assets/movies/w_218.jpg" alt="" loading="lazy"><span>终结者</span></div><div class="wk"><img src="assets/movies/w_280.jpg" alt="" loading="lazy"><span>终结者2：审判日</span></div><div class="wk"><img src="assets/movies/w_76600.jpg" alt="" loading="lazy"><span>阿凡达：水之道</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_65731.jpg" alt="" loading="lazy">
+                <div class="p-name">萨姆·沃辛顿 <span class="p-role">主演（杰克·萨利）</span></div>
+              </div>
+              <div class="p-note">澳大利亚演员。《终结者2018》《诸神之战》《血战钢锯岭》《阿凡达》系列。本片他演杰克·萨利——一个坐轮椅的前海军陆战队员。人类本体与纳美人化身都由他演：前者是实拍，后者是在捕捉服里完成的，包括跳树、坠落与飞行。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_76600.jpg" alt="" loading="lazy"><span>阿凡达：水之道</span></div><div class="wk"><img src="assets/movies/w_324786.jpg" alt="" loading="lazy"><span>血战钢锯岭</span></div><div class="wk"><img src="assets/movies/w_18823.jpg" alt="" loading="lazy"><span>诸神之战</span></div><div class="wk"><img src="assets/movies/w_57165.jpg" alt="" loading="lazy"><span>诸神之怒</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_8691.jpg" alt="" loading="lazy">
+                <div class="p-name">佐伊·索尔达娜 <span class="p-role">主演（奈蒂莉）</span></div>
+              </div>
+              <div class="p-note">美国演员。《星际迷航》系列、《银河护卫队》系列、《阿凡达》系列。本片她演奈蒂莉——部落猎手、首领之女。全片纳美人的姿态、语言节奏和那双黄眼睛的表情由她先演一遍，再由特效团队跟上去。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_118340.jpg" alt="" loading="lazy"><span>银河护卫队</span></div><div class="wk"><img src="assets/movies/w_283995.jpg" alt="" loading="lazy"><span>银河护卫队2</span></div><div class="wk"><img src="assets/movies/w_76600.jpg" alt="" loading="lazy"><span>阿凡达：水之道</span></div><div class="wk"><img src="assets/movies/w_447365.jpg" alt="" loading="lazy"><span>银河护卫队3</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在杰克决定主动去驯服那只魅影之前——他把「人类的身份」当成一件可以随时放下的行李交了出去。卡梅隆很清楚自己重拍的是哪一出（走进原住民、最后选择留下来的那个人），所以他把全部力气放在另一件事上：**让你相信那个世界值得为它打仗**。轻微剧透：结尾被赶出人类的门、转身走进树林，镜头在你已经知道答案之后还往前推了很久。剧作确实老，但只要「种子落在枪口上」那一刻你还在心动，这片的目的就达到了。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看懂「当年的大场面」到底指什么的人；愿意为一套世界观暂缓对剧情创新的期待的观众。162 分钟，强烈建议大屏 / 3D 版本。战斗与死亡场面较多但血腥度低，儿童观看基本无碍。内地 2010 年公映过，流媒体亦有高清版本。看完想继续：《阿凡达：水之道》《潘神的迷宫》《幽灵公主》。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/tron_poster.jpg" alt="创：战纪 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 动作（美国 · 一个被复制的父亲）</span><span class="year">2010 · 美国 · 125 分钟 · 内地未映（PG）</span></div>
+        <h2>创：战纪 <span class="en">Tron: Legacy</span></h2>
+        <div class="rates"><span class="rate"><b>7.2</b>豆瓣</span><span class="rate"><b>51%</b>烂番茄</span><span class="rate"><b>49</b>Metacritic</span><span class="rate"><b>6.8</b>IMDb</span></div>
+        <p class="oneline">「游戏已经开始了。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1989 年，ENCOM 的天才程序员凯文·弗林在一次演示后人间蒸发。二十年后，他的儿子山姆收到一条来自父亲废弃机房的传呼，进去之后被拉进了父亲设计的那个世界——网格。掌管那里的是父亲的另一个版本克鲁，它在追求一件它自己都说不清的「完美」，而完美的前提是所有人步调一致。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>约瑟夫·科辛斯基的长片处女作，此前他是广告导演；本片是 1982 年《电子世界争霸战》的正统续篇。</li><li>杰夫·布里吉斯一人分饰父亲与它的对立面——年轻版的克鲁（CLU）由数字减龄技术生成，当年正好踩在「像」与「不像」的那条线上。</li><li>预算 1.7 亿美元，全球票房约 4.09 亿美元。</li><li>配乐由 Daft Punk 制作，是全片评价最没有争议的部分。</li><li>第 83 届奥斯卡最佳音效剪辑提名。</li><li>豆瓣 7.2 / IMDb 6.8，烂番茄只有 51%、Metacritic 49：本期口碑最低的一部，但它的视听在今天看依然超前。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/tron_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/tron_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/tron_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_86270.jpg" alt="" loading="lazy">
+                <div class="p-name">约瑟夫·科辛斯基 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧，本片是他的长片处女作，此前做广告。下一部《遗落战境》延续了同一种「先看设计，再上故事」的做法；再往后是《壮志凌云：独行侠》与《F1：狂飙飞车》——他后来一直在这条「技术能不能不露痕迹」的路上。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_75612.jpg" alt="" loading="lazy"><span>遗落战境</span></div><div class="wk"><img src="assets/movies/w_361743.jpg" alt="" loading="lazy"><span>壮志凌云：独行侠</span></div><div class="wk"><img src="assets/movies/w_911430.jpg" alt="" loading="lazy"><span>F1：狂飙飞车</span></div><div class="wk"><img src="assets/movies/w_395991.jpg" alt="" loading="lazy"><span>勇往直前</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_9828.jpg" alt="" loading="lazy">
+                <div class="p-name">加内特·赫德兰 <span class="p-role">主演（山姆·弗林）</span></div>
+              </div>
+              <div class="p-note">美国演员。《特洛伊》《在路上》《坚不可摧》《泥土之界》。本片他演山姆·弗林——一个从小失去父亲、把「父亲的机房」当成最后线索的儿子。他几乎所有的高速与打斗段落都是自己上，光轮那段是在实搭的网格场景里完成的。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_266647.jpg" alt="" loading="lazy"><span>小飞侠：幻梦启航</span></div><div class="wk"><img src="assets/movies/w_227306.jpg" alt="" loading="lazy"><span>坚不可摧</span></div><div class="wk"><img src="assets/movies/w_652.jpg" alt="" loading="lazy"><span>特洛伊</span></div><div class="wk"><img src="assets/movies/w_83770.jpg" alt="" loading="lazy"><span>在路上</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1229.jpg" alt="" loading="lazy">
+                <div class="p-name">杰夫·布里吉斯 <span class="p-role">主演（凯文·弗林）</span></div>
+              </div>
+              <div class="p-note">美国演员。《谋杀绿脚趾》《钢铁侠》《大地惊雷》《赴汤蹈火》。本片他一人饰演凯文·弗林与它的对立面克鲁——年轻版的脸由数字减龄技术生成。当年那张脸是争议的焦点，但他在老年弗林那几场戏里的表演几乎没人挑得出毛病。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_115.jpg" alt="" loading="lazy"><span>谋杀绿脚趾</span></div><div class="wk"><img src="assets/movies/w_1726.jpg" alt="" loading="lazy"><span>钢铁侠</span></div><div class="wk"><img src="assets/movies/w_44264.jpg" alt="" loading="lazy"><span>大地惊雷</span></div><div class="wk"><img src="assets/movies/w_338766.jpg" alt="" loading="lazy"><span>赴汤蹈火</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在克鲁背叛，在弗林为什么二十年不出手。他在网格里等的不是夺回控制权，而是一个「超出他计划的东西」——他儿子，以及一个叫葵拉的、他没能写出来的程序。科辛斯基把整部片做成了一次工业设计展：所有东西发光，所有线条是直的，唯独葵拉是例外。轻微剧透：结尾两个人骑着光轮驶出边界、阳光落在水面上那一镜，是全片唯一「不为炫技、就是为了好看」的地方。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看工业设计级别的视听、能接受剧情极度简化的人；125 分钟不闷，但别指望人物层次。无血腥画面，儿童观看无碍。内地未映，Disney+ 及其他流媒体可看。看完想继续：《遗落战境》《壮志凌云：独行侠》《电子世界争霸战》(1982)。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/pi_poster.jpg" alt="少年派的奇幻漂流 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 冒险（美国 / 中国台湾 · 一只假的老虎比真的更真）</span><span class="year">2012 · 美国 / 中国台湾 / 英国 · 127 分钟 · 内地 2012-11-22 公映</span></div>
+        <h2>少年派的奇幻漂流 <span class="en">Life of Pi</span></h2>
+        <div class="rates"><span class="rate"><b>9.1</b>豆瓣</span><span class="rate"><b>87%</b>烂番茄</span><span class="rate"><b>79</b>Metacritic</span><span class="rate"><b>7.9</b>IMDb</span></div>
+        <p class="oneline">「没有理查德·帕克，我活不下来。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>少年派出生在印度一个经营动物园的家庭里，同时信着好几种宗教。父亲决定举家移民加拿大，他们带着动物登上一艘日本货船。跨洋风暴之后，只剩他、一条救生艇，和一只叫理查德·帕克的孟加拉虎。二百二十七天后获救的那个人讲了这个故事；日本调查员上门的时候，他又讲了另一个版本。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>李安执导，改编自扬·马特尔的同名小说——出版十余年间一直被认为「不可能拍成电影」。</li><li>预算 1.2 亿美元，全球票房约 6.09 亿美元；第 85 届奥斯卡十一项提名，拿下最佳导演、最佳摄影、最佳视觉效果、最佳原创配乐四项。</li><li>苏拉·沙玛第一次演戏，17 岁，从几千人的海选中被挑出来，全片大部分时间在对着空气。</li><li>海上段落几乎全在台湾台中搭建的水槽里完成，剧组为此造了当时世界上最大的自动造浪池之一。</li><li>老虎是全 CG，但每一帧的水、光与反射都来自真实拍摄——这也是它不容易像同期电影那样迅速过时的原因。</li><li>豆瓣 9.1 / 烂番茄 87% / Metacritic 79 / IMDb 7.9：本期华语观众评分最高的一部。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/pi_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/pi_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/pi_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1614.jpg" alt="" loading="lazy">
+                <div class="p-name">李安 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">中国台湾导演、编剧、制片。《推手》《喜宴》《饮食男女》《理智与情感》《卧虎藏龙》《断背山》。本片为他带来第二座奥斯卡最佳导演；他把一个被认为不可能拍的条件做到了令人信服：2500 个特效镜头、一只从不存在的老虎，和一个最终的哲学问题。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_142.jpg" alt="" loading="lazy"><span>断背山</span></div><div class="wk"><img src="assets/movies/w_1927.jpg" alt="" loading="lazy"><span>绿巨人浩克</span></div><div class="wk"><img src="assets/movies/w_453405.jpg" alt="" loading="lazy"><span>双子杀手</span></div><div class="wk"><img src="assets/movies/w_146.jpg" alt="" loading="lazy"><span>卧虎藏龙</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_933160.jpg" alt="" loading="lazy">
+                <div class="p-name">苏拉·沙玛 <span class="p-role">主演（派·帕蒂尔）</span></div>
+              </div>
+              <div class="p-note">印度演员，本片是他的银幕处女作。《百万金臂》《忌日快乐2》《婚礼季》。本片他演派——17 岁时从数千人的海选中被挑出来，之前完全没演过戏，全片大部分时间是在对着空气和一只尚未存在的老虎。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_512196.jpg" alt="" loading="lazy"><span>忌日快乐2</span></div><div class="wk"><img src="assets/movies/w_198185.jpg" alt="" loading="lazy"><span>百万金臂</span></div><div class="wk"><img src="assets/movies/w_818612.jpg" alt="" loading="lazy"><span>婚礼季</span></div><div class="wk"><img src="assets/movies/w_492449.jpg" alt="" loading="lazy"><span>杀手</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_76793.jpg" alt="" loading="lazy">
+                <div class="p-name">伊尔凡·可汗 <span class="p-role">主演（成年派）</span></div>
+              </div>
+              <div class="p-note">印度演员。《贫民窟的百万富翁》《侏罗纪世界》《超凡蜘蛛侠》《但丁密码》。本片他演成年的派——整部片的讲述者。他只用了后半场的两段戏就把整个故事的可信度撑住了，是这部片最被低估的一次表演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_135397.jpg" alt="" loading="lazy"><span>侏罗纪世界</span></div><div class="wk"><img src="assets/movies/w_1930.jpg" alt="" loading="lazy"><span>超凡蜘蛛侠</span></div><div class="wk"><img src="assets/movies/w_207932.jpg" alt="" loading="lazy"><span>但丁密码</span></div><div class="wk"><img src="assets/movies/w_12405.jpg" alt="" loading="lazy"><span>贫民窟的百万富翁</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在最后那场谈话。派把两个版本都讲了，然后问作家「哪个故事更好」——作家选了有老虎的那个，派回了一句「你也是」。李安没给它做判决，只是把「选择」放在「事实」前面，而这个动作正是他前面两个小时一直在排练的。轻微剧透：值得看第二遍，因为前一个版本的每一处都藏着后一个版本的证据。结尾那只老虎连头都不回、直接走进丛林的一镜，是全片最重的一句。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看一部舍得给时间、又从头到尾不疲劳的电影的人；愿意接受「别问哪个是真的」这个前提的观众。127 分钟，画面极美，务必大屏。海难与动物场面可能令部分观众不适，儿童建议陪同观看。内地 2012 年公映过。看完想继续：《断背山》《色，戒》《千与千寻》。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/rim_poster.jpg" alt="环太平洋 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 动作（美国 · 为了打怪，我们造了怪）</span><span class="year">2013 · 美国 / 墨西哥 · 131 分钟 · 内地 2013-07-31 公映</span></div>
+        <h2>环太平洋 <span class="en">Pacific Rim</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>72%</b>烂番茄</span><span class="rate"><b>65</b>Metacritic</span><span class="rate"><b>6.9</b>IMDb</span></div>
+        <p class="oneline">「今天，我们要取消世界末日。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>太平洋底裂开一道通关口，巨兽隔一段时间就上来一次。人类放弃常规武器，改成造巨大的双人驾驶机甲「贼鸥」——两名驾驶员必须共享记忆才能操作。多年下来伤亡越来越多、预算越来越少，将军斯泰克找回归隐的驾驶员罗利，要他和森麻子一起驾驶唯一一台还能打的旧机甲。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>吉尔莫·德尔·托罗执导，并与特拉维斯·比彻姆共同编剧；成本 1.9 亿美元，全球票房约 4.11 亿美元。</li><li>第 86 届奥斯卡最佳视觉效果提名，安妮奖等多个技术奖项。</li><li>德尔·托罗给每个机甲定了「重量」：转身要花时间，中弹会掉零件，出海面要先考虑脚下的浮筒——这让它不像个塑料模型。</li><li>这是近年少见的「白天作战的怪兽片」：怪兽与机甲在白天、在大雨里、在海面上打，全部让你看清。</li><li>它同时是一封写给日本特摄、机甲动画与怪兽电影的情书，只是用北美 A 级制作的成本拍的。</li><li>豆瓣 7.6 / IMDb 6.9 / 烂番茄 72% / Metacritic 65：典型的「看完想找第二部，别指望剧情」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/rim_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/rim_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/rim_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_10828.jpg" alt="" loading="lazy">
+                <div class="p-name">吉尔莫·德尔·托罗 <span class="p-role">导演 / 编剧 / 制片</span></div>
+              </div>
+              <div class="p-note">墨西哥导演、编剧、制片。《魔鬼银爪》《刀锋战士2》《地狱男爵》《潘神的迷宫》《水形物语》。本片他把日本的特摄、机甲动画与怪兽片全部放进了一个北美 A 级制作里，也第一次写了一部「机甲要有重量」的剧本。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_399055.jpg" alt="" loading="lazy"><span>水形物语</span></div><div class="wk"><img src="assets/movies/w_1417.jpg" alt="" loading="lazy"><span>潘神的迷宫</span></div><div class="wk"><img src="assets/movies/w_1487.jpg" alt="" loading="lazy"><span>地狱男爵</span></div><div class="wk"><img src="assets/movies/w_11253.jpg" alt="" loading="lazy"><span>地狱男爵2：黄金军团</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_56365.jpg" alt="" loading="lazy">
+                <div class="p-name">查理·汉纳姆 <span class="p-role">主演（罗利·贝克特）</span></div>
+              </div>
+              <div class="p-note">英国演员。《环太平洋》《绅士们》《亚瑟王：斗兽争霸》《巴比龙》。本片他演罗利·贝克特——因哥哥阵亡而离开驾驶员岗位的退役驾驶员，回来时要面对的既是怪兽，也是那个「共享记忆」的第二次意愿。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_274857.jpg" alt="" loading="lazy"><span>亚瑟王：斗兽争霸</span></div><div class="wk"><img src="assets/movies/w_522627.jpg" alt="" loading="lazy"><span>绅士们</span></div><div class="wk"><img src="assets/movies/w_314095.jpg" alt="" loading="lazy"><span>失落之城</span></div><div class="wk"><img src="assets/movies/w_433498.jpg" alt="" loading="lazy"><span>巴比龙</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_18054.jpg" alt="" loading="lazy">
+                <div class="p-name">菊地凛子 <span class="p-role">主演（森麻子）</span></div>
+              </div>
+              <div class="p-note">日本演员。《通天塔》《环太平洋》系列、《四十七浪人》《东京喰种》。本片她演森麻子——唯一一个敢当面忤逆妄想族老板的驾驶员。她和斯泰克·潘特考斯特之间那段互相行礼的关系，是全片少见的对手戏。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1164.jpg" alt="" loading="lazy"><span>通天塔</span></div><div class="wk"><img src="assets/movies/w_268896.jpg" alt="" loading="lazy"><span>环太平洋：雷霆再起</span></div><div class="wk"><img src="assets/movies/w_64686.jpg" alt="" loading="lazy"><span>四十七浪人</span></div><div class="wk"><img src="assets/movies/w_244563.jpg" alt="" loading="lazy"><span>宝藏猎人久美子</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在两人第一次完成「漂移」之后——共享记忆这件事把一部纯机甲片变成了另一种东西：它真正的题目是「把自己最深的东西给另一个人看」。德尔·托罗很清楚自己在拍什么，也没给这个题目留太多空间，但它确实存在。轻微剧透：结尾主动炸掉通关口、跳进虚空那一段，是全片唯一一次承认自己其实是个童话。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看最大号的机甲和最大号的怪兽在最大号的屏幕上对打的人；能接受剧情简单、台词偶有中二、131 分钟全在打斗的观众。暴力是机甲片那一档，几乎无人类血腥。内地 2013-07-31 公映过。看完想继续：《环太平洋：雷霆再起》《水形物语》《哥斯拉-1.0》。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/gravity_poster.jpg" alt="地心引力 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 惊悚（美国 / 英国 · 无重力里的一手一脚）</span><span class="year">2013 · 美国 / 英国 / 墨西哥 · 91 分钟 · 内地 2013-11-19 公映</span></div>
+        <h2>地心引力 <span class="en">Gravity</span></h2>
+        <div class="rates"><span class="rate"><b>8.0</b>豆瓣</span><span class="rate"><b>96%</b>烂番茄</span><span class="rate"><b>96</b>Metacritic</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「别松手。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一次常规的太空行走中，休斯敦传来「碎片接近、立刻返回」的警告。这次任务上有一位第一次飞天的医学工程师瑞恩·斯通，和一位即将退休、把这次当最后一次兜风的资深航天员马特。碎片扫过之后通讯中断、飞船报废，只剩她一个人拴在空间站的残骸外面，只能一步一步往前挪到另一个站去。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>阿方索·卡隆自编自导自制片，剧本与儿子霍纳斯共同写完；预算 1 亿美元，全球票房约 7.23 亿美元。</li><li>第 86 届奥斯卡十项提名、拿下七项：最佳导演、最佳摄影、最佳剪辑、最佳视觉效果、最佳原创配乐、最佳音效剪辑、最佳音效混合。</li><li>桑德拉·布洛克大部分时间被固定在机械臂驱动的台车上，周围并没有真的太空——每一个动作都要提前算好。</li><li>演员脸上的环境光来自由数万颗 LED 组成的「灯箱」，屏幕上播放的就是 CG 地球，所以反光永远是对的。</li><li>整个项目花了四年多，其中大部分时间花在让导演「能真的用虚拟相机走进场景里」这件事上。</li><li>豆瓣 8.0 / 烂番茄 96% / Metacritic 96 / IMDb 7.7：**Metacritic 96 是本期专业评分最高的一部**。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/gravity_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/gravity_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/gravity_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11218.jpg" alt="" loading="lazy">
+                <div class="p-name">阿方索·卡隆 <span class="p-role">导演 / 编剧 / 制片</span></div>
+              </div>
+              <div class="p-note">墨西哥导演、编剧、制片、剪辑。《你妈妈也一样》《哈利·波特与阿兹卡班的囚徒》《人类之子》《罗马》。本片让他成为第一位拿下奥斯卡最佳导演的墨西哥人；项目花了四年多，其中大部分时间是在把「虚拟相机可以被真人在现场移动」这件事做成。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_673.jpg" alt="" loading="lazy"><span>哈利·波特与阿兹卡班的囚徒</span></div><div class="wk"><img src="assets/movies/w_9693.jpg" alt="" loading="lazy"><span>人类之子</span></div><div class="wk"><img src="assets/movies/w_426426.jpg" alt="" loading="lazy"><span>罗马</span></div><div class="wk"><img src="assets/movies/w_1391.jpg" alt="" loading="lazy"><span>你妈妈也一样</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_18277.jpg" alt="" loading="lazy">
+                <div class="p-name">桑德拉·布洛克 <span class="p-role">主演（瑞恩·斯通）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片。《生死时速》《假结婚》《蒙上你的眼》《瞒天过海：美人计》。本片她演瑞恩·斯通——一个第一次上天的医学工程师。她几乎全片独角戏，大部分镜头是被绑在机械臂台车上完成的，这也是她职业生涯里身体负担最重的一次演出。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_211672.jpg" alt="" loading="lazy"><span>小黄人大眼萌</span></div><div class="wk"><img src="assets/movies/w_405774.jpg" alt="" loading="lazy"><span>蒙上你的眼</span></div><div class="wk"><img src="assets/movies/w_402900.jpg" alt="" loading="lazy"><span>瞒天过海：美人计</span></div><div class="wk"><img src="assets/movies/w_18240.jpg" alt="" loading="lazy"><span>假结婚</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1461.jpg" alt="" loading="lazy">
+                <div class="p-name">乔治·克鲁尼 <span class="p-role">主演（马特·科沃斯基）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演、制片。《急诊室的故事》《十一罗汉》《艺术家》《后人》。本片他演马特·科沃斯基——一个把这次任务当最后一次兜风的资深航天员。他出场时间不长，却是全片情绪的锚点，也是整部片子唯一一次让人笑出来的地方。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_161.jpg" alt="" loading="lazy"><span>十一罗汉</span></div><div class="wk"><img src="assets/movies/w_163.jpg" alt="" loading="lazy"><span>十二罗汉</span></div><div class="wk"><img src="assets/movies/w_298.jpg" alt="" loading="lazy"><span>十三罗汉</span></div><div class="wk"><img src="assets/movies/w_755.jpg" alt="" loading="lazy"><span>杀出个黎明</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在她终于钻进舱内、脱下航天服从一个胎姿浮起来的那几分钟——那是全片唯一一次「安全」，也是她在一艘别人的飞船里重新变成一个人的过程。卡隆拍的从来不是太空求生，是「失去所有支点之后，一个人怎么把自己重新装起来」。轻微剧透：最后落地站在岸边、一步一步握住栏杆的那几个动作，是全片唯一一段不需要任何台词的解释。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看一次「91 分钟手心出汗」的人；能接受单主演、场景单一、几乎没有解释性台词的观众。强烈建议大屏 + 尽可能好的音响。对旋转镜头 / 3D 眩晕敏感的观众需留意。内地 2013-11-19 公映过。看完想继续：《星际穿越》《月球》《火星救援》。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/jungle_poster.jpg" alt="奇幻森林 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">冒险 / 剧情（美国 · 只有男孩是真的）</span><span class="year">2016 · 美国 / 英国 · 106 分钟 · 内地 2016-04-15 公映</span></div>
+        <h2>奇幻森林 <span class="en">The Jungle Book</span></h2>
+        <div class="rates"><span class="rate"><b>7.9</b>豆瓣</span><span class="rate"><b>95%</b>烂番茄</span><span class="rate"><b>77</b>Metacritic</span><span class="rate"><b>7.4</b>IMDb</span></div>
+        <p class="oneline">「丛林的法则，谁也逃不掉。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>被狼群养大的人类男孩毛克利，被黑豹巴希拉从老虎谢利·可汗的威胁下带往人类村庄。路上他见过会把他当猎物的巨蟒、像庙一样的废墟，也重新学会自己和这片林子的关系。谢利·可汗放话：只要他留在丛林里，就要他的命。而森林里的大火正在按季节往上走。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>乔恩·费儒执导，迪士尼对自己 1967 年动画《森林王子》的真人重制版。</li><li>预算 1.75 亿美元，全球票房约 9.66 亿美元；第 89 届奥斯卡拿下最佳视觉效果。</li><li>尼尔·塞西是全片唯一出现在实景里的演员，所有动物与环境都是 CG。</li><li>每一只动物的体重感、皮肤下垂与肌肉走向都参考真实解剖；导演的要求是「它们必须站得住」，不能只是一个漂亮的皮套。</li><li>它同时取自吉卜林的原著与 1967 年的动画片：留下最经典的几首歌，其余在丛林规则里重讲一遍。</li><li>豆瓣 7.9 / 烂番茄 95% / Metacritic 77 / IMDb 7.4：视听几乎无争议，分歧主要在「够不够黑」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/jungle_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/jungle_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/jungle_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_15277.jpg" alt="" loading="lazy">
+                <div class="p-name">乔恩·费儒 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、演员、制片。《钢铁侠》《钢铁侠2》《落魄大厨》《奇幻森林》《狮子王》《曼达洛人》。本片他把「除了男孩全是 CG」这个几乎不可能的条件做成了一部票房近 10 亿美元的片，也是后来迪士尼那批真人重制的技术起点。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_315635.jpg" alt="" loading="lazy"><span>蜘蛛侠：英雄归来</span></div><div class="wk"><img src="assets/movies/w_634649.jpg" alt="" loading="lazy"><span>蜘蛛侠：英雄无归</span></div><div class="wk"><img src="assets/movies/w_68721.jpg" alt="" loading="lazy"><span>钢铁侠3</span></div><div class="wk"><img src="assets/movies/w_212778.jpg" alt="" loading="lazy"><span>落魄大厨</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1414734.jpg" alt="" loading="lazy">
+                <div class="p-name">尼尔·塞西 <span class="p-role">主演（毛克利）</span></div>
+              </div>
+              <div class="p-note">美国演员，本片是他的银幕处女作。《给你来点血浆》等青年 / 独立制作。参选毛克利时他没有任何表演经验，从几千人的筛选中被挑出来，是全片唯一出现在真实景里的演员——其他所有动植物都由数字构成。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1178329.jpg" alt="" loading="lazy"><span>给你来点血浆</span></div><div class="wk"><img src="assets/movies/w_830367.jpg" alt="" loading="lazy"><span>莱茵河的守望（短片）</span></div><div class="wk"><img src="assets/movies/w_1087198.jpg" alt="" loading="lazy"><span>排灯节（短片）</span></div><div class="wk"><img src="assets/movies/w_1288442.jpg" alt="" loading="lazy"><span>戈尔曼家的成长（短片）</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2282.jpg" alt="" loading="lazy">
+                <div class="p-name">本·金斯利 <span class="p-role">配音（巴希拉）</span></div>
+              </div>
+              <div class="p-note">英国演员，爵士。《甘地》《辛德勒的名单》《禁闭岛》《雨果》《钢铁侠3》。本片他为黑豹巴希拉配音——所有台词在录音棚里独自完成，角色的面部动画大量参考了他的嘴型与呼吸节奏。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_424.jpg" alt="" loading="lazy"><span>辛德勒的名单</span></div><div class="wk"><img src="assets/movies/w_11324.jpg" alt="" loading="lazy"><span>禁闭岛</span></div><div class="wk"><img src="assets/movies/w_44826.jpg" alt="" loading="lazy"><span>雨果</span></div><div class="wk"><img src="assets/movies/w_68721.jpg" alt="" loading="lazy"><span>钢铁侠3</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在毛克利决定跑回丛林那一趟。所有人都在告诉他「你是人，人就该去人的村子」，而他的答案是：我可以用人的方式，做丛林里没人做得到的事。费儒往这个一百多年前的老故事里塞进的分歧是——工具与火到底算不算一个人的「武器」。轻微剧透：最后那场火不是单纯的动作高潮，它就是他对「不再躲在被保护的位置上」的回答：他学会用火，也因此改变了他和谢利·可汗之间的最后关系。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「全 CG 动物 + 一个真人小孩」这件事是怎么做成的人；愿意在视觉迷人的前提下接受故事偏传统的观众。106 分钟，节奏干净。动物追捕场面略紧张，低龄儿童建议陪同。内地 2016-04-15 公映过。看完想继续：《钢铁侠》《落魄大厨》《狮子王》(2019)。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/rpo_poster.jpg" alt="头号玩家 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 动作（美国 · 所有人的童年被折成一局游戏）</span><span class="year">2018 · 美国 · 140 分钟 · 内地 2018-03-30 公映</span></div>
+        <h2>头号玩家 <span class="en">Ready Player One</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>72%</b>烂番茄</span><span class="rate"><b>64</b>Metacritic</span><span class="rate"><b>7.5</b>IMDb</span></div>
+        <p class="oneline">「这里唯一限制你的，是你自己的想象力。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>2045 年，现实是一座叠起来的贫民窟，所有人戴上头显躲进名叫「绿洲」的虚拟世界。创造者哈利迪去世前留下遗嘱：找到藏在里面的三把彩蛋钥匙的人，继承全部股权与这个世界。五年没人成功。而这一天，一个住在集装箱里的少年帕西法尔打开了第一扇门。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>史蒂文·斯皮尔伯格执导，改编自恩斯特·克莱恩 2011 年的同名小说（作者本人参与了剧本）。</li><li>预算 1.55 亿美元，全球票房约 5.82 亿美元；中国内地 2018-03-30 公映，票房逾 10 亿元人民币。</li><li>第 91 届奥斯卡最佳视觉效果提名。</li><li>版权清理是这部片最贵、最麻烦的部分之一——你能想到的那些角色与道具，几乎一个个都要谈。</li><li>绿洲里的场景是完整的 CG，但游戏分身的表演全部来自真人表演捕捉：屏幕上看着像动画，底下其实是演员。</li><li>豆瓣 8.7 / 烂番茄 72% / Metacritic 64 / IMDb 7.5：**典型的「华语观众远高于欧美影评」**。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/rpo_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/rpo_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/rpo_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_488.jpg" alt="" loading="lazy">
+                <div class="p-name">史蒂文·斯皮尔伯格 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、制片。《大白鲨》《第三类接触》《夺宝奇兵》系列、《侏罗纪公园》《辛德勒的名单》《拯救大兵瑞恩》《人工智能》。本片是他第一次把整部电影架在一个玩家看得懂的世界里；「每周关两天绿洲」这个反技术高潮，由一个造过最多大片奇观的人说出来，格外有分量。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_329.jpg" alt="" loading="lazy"><span>侏罗纪公园</span></div><div class="wk"><img src="assets/movies/w_424.jpg" alt="" loading="lazy"><span>辛德勒的名单</span></div><div class="wk"><img src="assets/movies/w_857.jpg" alt="" loading="lazy"><span>拯救大兵瑞恩</span></div><div class="wk"><img src="assets/movies/w_640.jpg" alt="" loading="lazy"><span>猫鼠游戏</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1034681.jpg" alt="" loading="lazy">
+                <div class="p-name">泰伊·谢里丹 <span class="p-role">主演（韦德·沃兹）</span></div>
+              </div>
+              <div class="p-note">美国演员。《污泥》《乔》《X战警：天启》《X战警：黑凤凰》。本片他演帕西法尔 / 韦德——一个住在叠起来的集装箱里的少年。他同时要演真实世界里的那个少年与游戏里的虚拟形象：两层表演都要服务同一个角色。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_273477.jpg" alt="" loading="lazy"><span>童军手册之僵尸启示录</span></div><div class="wk"><img src="assets/movies/w_320288.jpg" alt="" loading="lazy"><span>X战警：黑凤凰</span></div><div class="wk"><img src="assets/movies/w_246655.jpg" alt="" loading="lazy"><span>X战警：天启</span></div><div class="wk"><img src="assets/movies/w_103731.jpg" alt="" loading="lazy"><span>污泥</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1173984.jpg" alt="" loading="lazy">
+                <div class="p-name">奥利维亚·库克 <span class="p-role">主演（萨曼莎·库克）</span></div>
+              </div>
+              <div class="p-note">英国演员。《我和厄尔以及将死的女孩》《金属之声》《良种动物》《信号》。本片她演阿尔忒弥斯——一个刻意不用真实名字、也不想被人认出来的玩家。她把角色的「我想把这个世界留下来，而不是卖掉它」演得比台词更清楚。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_308369.jpg" alt="" loading="lazy"><span>我和厄尔以及将死的女孩</span></div><div class="wk"><img src="assets/movies/w_502033.jpg" alt="" loading="lazy"><span>金属之声</span></div><div class="wk"><img src="assets/movies/w_397722.jpg" alt="" loading="lazy"><span>良种动物</span></div><div class="wk"><img src="assets/movies/w_242095.jpg" alt="" loading="lazy"><span>信号</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在哈利迪为什么不给任何提示——他设计的题目从来不是「你记不记得」，而是「你愿不愿意慢下来、愿意输、愿意回到一个人做某件事的初衷」。斯皮尔伯格把最后三十分钟做成了一次反高潮：赢下整个绿洲之后的第一件事，是每周关掉它两天。轻微剧透：这句话在 2026 年听起来已经不像当年那么新鲜，但它依然是所有人都能听进去的一句。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想在爆米花片里看到「我们从小在录像带里捞出来的那些东西」的人；能接受剧情直白、彩蛋多到不像悬疑片的观众。140 分钟偏长但几乎不冷场。赛车段落有零碎血腥，儿童观看基本无碍。内地 2018 年公映过，流媒体可看。看完想继续：《人工智能》《侏罗纪公园》《电子世界争霸战》(1982)。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/wander_poster.jpg" alt="流浪地球 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 灾难（中国 · 带走整个地球的那一次尝试）</span><span class="year">2019 · 中国 · 125 分钟 · 内地 2019-02-05 公映</span></div>
+        <h2>流浪地球 <span class="en">The Wandering Earth</span></h2>
+        <div class="rates"><span class="rate"><b>7.9</b>豆瓣</span><span class="rate"><b>70%</b>烂番茄</span><span class="rate"><b>57</b>Metacritic</span><span class="rate"><b>5.9</b>IMDb</span></div>
+        <p class="oneline">「我们的英雄，是这颗地球本身。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>太阳即将急速膨胀吞噬整个太阳系，人类启动「流浪地球」计划：在地表建一万座行星发动机，把地球整体推去比邻星。2075 年，地球借木星引力加速时被捕获，数千座发动机停机，地壳开始解体。地下城里长大的刘启带着妹妹逃上地表，被征用进一支运送火石的救援队；而在空间站上的父亲刘培强，手握另一个决定。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>郭帆执导，改编自刘慈欣的同名短篇（原著作者任监制）。制作周期四年，参与人数约七千人，道具一万件。</li><li>成本约 3 亿人民币，最终内地票房约 46.9 亿人民币（含重映），是当年春节档冠军、国产科幻的一个分界点。</li><li>全片约七成半的特效由中国团队完成；导演郭帆最初只是被定给《流浪地球》的几位候选之一。</li><li>美术团队三百多人、耗时十五个月，产出三千多张概念图与八千多张分镜——地下城、行星发动机、运载车都先有图纸再开工。</li><li>吴京原本只打算客串两天，最后不但留了三十多天，还自带资金进组出任出品人。</li><li>豆瓣 7.9 / 猫眼 9.2，但 IMDb 只有 5.9、烂番茄 70%、Metacritic 57：**本期口碑落差最大的一部**，值得一说。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/wander_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/wander_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/wander_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1100748.jpg" alt="" loading="lazy">
+                <div class="p-name">郭帆 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">中国导演、编剧。《李献计历险记》《同桌的妳》《流浪地球》系列、《金刚川》（联合执导）。本片他 2015 年拿到项目后推掉了其他工作，找了刘慈欣团队、搭建了两百多人的美术组；困难最重的时候他和制片人卖了自己的房子和车。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_842675.jpg" alt="" loading="lazy"><span>流浪地球2</span></div><div class="wk"><img src="assets/movies/w_748685.jpg" alt="" loading="lazy"><span>金刚川</span></div><div class="wk"><img src="assets/movies/w_290217.jpg" alt="" loading="lazy"><span>同桌的妳</span></div><div class="wk"><img src="assets/movies/w_133466.jpg" alt="" loading="lazy"><span>李献计历险记</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_78871.jpg" alt="" loading="lazy">
+                <div class="p-name">吴京 <span class="p-role">主演（刘培强）</span></div>
+              </div>
+              <div class="p-note">中国演员、导演、出品人。《战狼》系列、《狼牙》《狼图腾》《金刚川》《长津湖》。本片他演刘培强——一个在空间站上待了十七年、缺席了儿子整个成长过程的父亲。他原本只打算客串两天，最后留在组里三十多天，还自己投了钱进去。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_615656.jpg" alt="" loading="lazy"><span>巨齿鲨2：深渊</span></div><div class="wk"><img src="assets/movies/w_842675.jpg" alt="" loading="lazy"><span>流浪地球2</span></div><div class="wk"><img src="assets/movies/w_452557.jpg" alt="" loading="lazy"><span>战狼2</span></div><div class="wk"><img src="assets/movies/w_1735.jpg" alt="" loading="lazy"><span>木乃伊3：龙帝之墓</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2082186.jpg" alt="" loading="lazy">
+                <div class="p-name">屈楚萧 <span class="p-role">主演（刘启）</span></div>
+              </div>
+              <div class="p-note">中国演员。《我要我们在一起》《一秒钟》《侍神令》《燃冬》《危机航线》。本片他演刘启——带着妹妹从地下城逃到地表、脾气倔到冒泡的少年。出演这部片时他还是北京电影学院的在校生，第一次担纲这么重的角色。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_830938.jpg" alt="" loading="lazy"><span>我要我们在一起</span></div><div class="wk"><img src="assets/movies/w_758902.jpg" alt="" loading="lazy"><span>侍神令</span></div><div class="wk"><img src="assets/movies/w_923150.jpg" alt="" loading="lazy"><span>燃冬</span></div><div class="wk"><img src="assets/movies/w_949709.jpg" alt="" loading="lazy"><span>危机航线</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在木星能不能点着，在那个决策本身。在此之前所有片都在问「怎么活下去」，这部片问的是「谁被留下」——MOSS 在 0.42 秒内就算出了全部结果，它选的是带走文明的受精卵；刘培强选的是另一条。它把「带着家一起走」从一句说法，做成了具体的选择题。轻微剧透：结局里父亲主动驶向火焰的那种干脆，正是这部片最不像好莱坞的地方。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想知道「国产重工业科幻这七个字是怎么买的单」的人；能接受人物带着舞台感的夸张表演、台词偏直给的观众。125 分钟。含灾难、牺牲与亲人离世场面，建议小学以上观看。内地各大平台可看（部分有 IMAX / 加长版本）。看完想继续：《流浪地球2》《疯狂的外星人》《寂静之地》。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/alita_poster.jpg" alt="阿丽塔：战斗天使 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 动作（美国 / 加拿大 · 一双比人大十倍的眼睛）</span><span class="year">2019 · 美国 / 加拿大 / 日本 · 122 分钟 · 内地 2019-02-22 公映</span></div>
+        <h2>阿丽塔：战斗天使 <span class="en">Alita: Battle Angel</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>59%</b>烂番茄</span><span class="rate"><b>53</b>Metacritic</span><span class="rate"><b>7.3</b>IMDb</span></div>
+        <p class="oneline">「我不管这座城规没规矩，我有我的。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>二十六世纪的钢铁城，机械医生依德在废料堆里捡到一颗还活着的人脑与半截机械残躯，把它救回来，取名阿丽塔。她重新站起来、重新学会走路，也丢失了全部过去。她在街头认识了做买卖的雨果，在一次次与猎手们的厮杀里，掉落的记忆开始往上冒——关于一套她曾经十分熟悉的战技，也关于天空那座名叫撒冷的城市。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>罗伯特·罗德里格兹执导，詹姆斯·卡梅隆制片并与他人共同编剧；卡梅隆自 2000 年代初就握着《铳梦》的改编权，写了十余年剧本。</li><li>预算 1.7 亿美元，全球票房约 4.05 亿美元；中国内地 2019-02-22 公映，票房近 9 亿元人民币，反超北美。</li><li>阿丽塔由罗莎·萨拉查表演捕捉生成，是一具完全 CG 的身体；为了让「她不是人」这件事成立，同时又不让人觉得别扭，维塔工作室在眼睛与皮肤上花了整条项目的绝大部分时间。</li><li>机动球那段是全片最贵也最完整的一段 CG：它原本在原著里就长这样，二十年里没有人敢拍。</li><li>改编把一个相当黑暗的反乌托邦原作往「我们能看」的方向挪了不少，这也是原著党最不满的一点。</li><li>豆瓣 7.6 / IMDb 7.3，但烂番茄只有 59%、Metacritic 53——同一批观众在爆米花指数上却给了 94%：典型的「影评人与观众完全不在同一个频道」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/alita_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/alita_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/alita_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2294.jpg" alt="" loading="lazy">
+                <div class="p-name">罗伯特·罗德里格兹 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、制片、作曲、摄影。《杀手悲歌》《杀出个黎明》《罪恶之城》《恐怖星球》《弯刀》。本片他把卡梅隆写给《铳梦》的十余年资料搬上了银幕，也第一次在 CG 主角与人类演员之间做出了一整套可以反复用的表演方法。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_187.jpg" alt="" loading="lazy"><span>罪恶之城</span></div><div class="wk"><img src="assets/movies/w_755.jpg" alt="" loading="lazy"><span>杀出个黎明</span></div><div class="wk"><img src="assets/movies/w_189.jpg" alt="" loading="lazy"><span>罪恶之城2：蛇蝎美人</span></div><div class="wk"><img src="assets/movies/w_1992.jpg" alt="" loading="lazy"><span>恐怖星球</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_973667.jpg" alt="" loading="lazy">
+                <div class="p-name">罗莎·萨拉查 <span class="p-role">主演（阿丽塔）</span></div>
+              </div>
+              <div class="p-note">加拿大籍演员。《移动迷宫2：烧痕审判》《移动迷宫3：死亡解药》《分歧者2：绝地反击》《蒙上你的眼》。本片她演阿丽塔——全套面部与身体表演捕捉由她完成，包括那双被放大过的眼睛里每一帧的微表情。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_405774.jpg" alt="" loading="lazy"><span>蒙上你的眼</span></div><div class="wk"><img src="assets/movies/w_294254.jpg" alt="" loading="lazy"><span>移动迷宫2：烧痕审判</span></div><div class="wk"><img src="assets/movies/w_336843.jpg" alt="" loading="lazy"><span>移动迷宫3：死亡解药</span></div><div class="wk"><img src="assets/movies/w_262500.jpg" alt="" loading="lazy"><span>分歧者2：绝地反击</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_27319.jpg" alt="" loading="lazy">
+                <div class="p-name">克里斯托弗·瓦尔兹 <span class="p-role">主演（戴森·依德）</span></div>
+              </div>
+              <div class="p-note">德国演员。《无耻混蛋》《被解救的姜戈》《007：幽灵党》《超凡蜘蛛侠2》。本片他演戴森·依德——捡到阿丽塔、把她当女儿养，却也和她保留了秘密的机械医生。他在全片里说的每一句话都在「保护」和「放手」之间晃。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_68718.jpg" alt="" loading="lazy"><span>被解救的姜戈</span></div><div class="wk"><img src="assets/movies/w_16869.jpg" alt="" loading="lazy"><span>无耻混蛋</span></div><div class="wk"><img src="assets/movies/w_206647.jpg" alt="" loading="lazy"><span>007：幽灵党</span></div><div class="wk"><img src="assets/movies/w_258489.jpg" alt="" loading="lazy"><span>泰山归来：险战丛林</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在阿丽塔把自己心脏掏出来递过去的那一场。她在这个剧本里最常被批评的是「没有污点」，但那一场把她说清楚了：她不是学会了什么，她是从一开始就没有「舍不得」这个概念。罗德里格兹把这个赛博朋克设定做成了一次很直白的成长弧度。轻微剧透：结尾给了一个巨大的续集钩子，而续集至今没有开机——这也是它留下来最让人遗憾的一件事。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「全 CG 主角怎么在人类演员中间站得住」的人；能接受剧情套路、台词直给、以及结局明显是半部片的观众。122 分钟，机动球段落非常过瘾。含机械身体损伤与较为风格化的暴力画面，建议小学以上观看。内地 2019 年公映过，流媒体可看。看完想继续：《铳梦》《攻壳机动队》《银翼杀手2049》。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/w1917_poster.jpg" alt="1917 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">战争 / 惊悚（英国 / 美国 · 一步剪辑都不能有）</span><span class="year">2019 · 英国 / 美国 · 119 分钟 · 内地未映（R 级）</span></div>
+        <h2>1917 <span class="en">1917</span></h2>
+        <div class="rates"><span class="rate"><b>8.5</b>豆瓣</span><span class="rate"><b>89%</b>烂番茄</span><span class="rate"><b>78</b>Metacritic</span><span class="rate"><b>8.2</b>IMDb</span></div>
+        <p class="oneline">「你走到那里之前，别停下来。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1917 年春天，西线的英军准备发动一次看起来稳赢的进攻，而德军刚刚撤到了一条新防线的后面。两名年轻士兵威廉与汤姆必须在天黑前越过无人区，把一封取消进攻的命令送到前线德文郡团——那里有一千六百人，其中包括汤姆的亲哥哥。他们只有几小时。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>萨姆·门德斯自编自导自制片，灵感来自他祖父在一战里当传令兵的经历。</li><li>预算约 9500 万美元，全球票房约 3.85 亿美元；第 92 届奥斯卡十项提名，拿下最佳摄影、最佳视觉效果、最佳音效混合三项，另获金球奖最佳剧情片与最佳导演。</li><li>摄影罗杰·狄金斯。全片由多个长镜头拼接，剪接点藏在穿门、过暗处与镜头划过物体的瞬间——看着像一镜到底，实际是几十次重新布光与重排调度换来的。</li><li>拍摄前排练了整整半年：所有走位、所有爆炸、所有配角入场都要精确到秒，因为一次失误整条作废。</li><li>它几乎没给历史背景，也不解释双方是谁——两个人的行程有多长，观众知道的信息就有多少。</li><li>豆瓣 8.5 / IMDb 8.2 / 烂番茄 89% / Metacritic 78：本期口碑最齐整的一部。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/w1917_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/w1917_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/w1917_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_39.jpg" alt="" loading="lazy">
+                <div class="p-name">萨姆·门德斯 <span class="p-role">导演 / 编剧 / 制片</span></div>
+              </div>
+              <div class="p-note">英国导演、编剧、制片，舞台剧导演出身。《美国丽人》《毁灭之路》《锅盖头》《革命之路》《007：大破天幕杀机》《007：幽灵党》。本片的灵感来自祖父在一战当传令兵的经历，他坚持全片必须在真实地形里连续排完，而不是靠后期拼出来。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_37724.jpg" alt="" loading="lazy"><span>007：大破天幕杀机</span></div><div class="wk"><img src="assets/movies/w_14.jpg" alt="" loading="lazy"><span>美国丽人</span></div><div class="wk"><img src="assets/movies/w_206647.jpg" alt="" loading="lazy"><span>007：幽灵党</span></div><div class="wk"><img src="assets/movies/w_4148.jpg" alt="" loading="lazy"><span>革命之路</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_146750.jpg" alt="" loading="lazy">
+                <div class="p-name">乔治·麦凯 <span class="p-role">主演（威廉·斯科菲尔德）</span></div>
+              </div>
+              <div class="p-note">英国演员。《水之乡》《慕尼黑：战争边缘》《马柔本宅秘事》《骄傲》《神奇队长》。本片他演威廉·斯科菲尔德——一个答应替朋友把命令送完的年轻士兵。全片的时间感几乎全挂在他身上，而他在上半程几乎没有替自己说话的机会。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_334533.jpg" alt="" loading="lazy"><span>神奇队长</span></div><div class="wk"><img src="assets/movies/w_399366.jpg" alt="" loading="lazy"><span>马柔本宅秘事</span></div><div class="wk"><img src="assets/movies/w_234200.jpg" alt="" loading="lazy"><span>骄傲</span></div><div class="wk"><img src="assets/movies/w_760336.jpg" alt="" loading="lazy"><span>慕尼黑：战争边缘</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1332971.jpg" alt="" loading="lazy">
+                <div class="p-name">迪恩-查尔斯·查普曼 <span class="p-role">主演（汤姆·布莱克）</span></div>
+              </div>
+              <div class="p-note">英国演员。《权力的游戏》（托曼·拜拉席恩）、《在我入睡前》《一呼一吸》《通勤营救》《兰开斯特之王》。本片他演汤姆·布莱克——因为哥哥在前线才答应走这一趟的人。他出场的时间不长，却承担了全片唯一一次让人出神的温暖。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_504949.jpg" alt="" loading="lazy"><span>兰开斯特之王</span></div><div class="wk"><img src="assets/movies/w_399035.jpg" alt="" loading="lazy"><span>通勤营救</span></div><div class="wk"><img src="assets/movies/w_204922.jpg" alt="" loading="lazy"><span>在我入睡前</span></div><div class="wk"><img src="assets/movies/w_407445.jpg" alt="" loading="lazy"><span>一呼一吸</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在汤姆不再出现的那一刻之后。门德斯很清楚这是一部「结构先行」的片——没有前中型任务介绍，没有人物往事，镜头只是跟着这两个人一直走。也正因为如此，那次突然的中断才有分量：这部片从这一秒起交出的不是冒险，是「你必须继续走」这件事本身。轻微剧透：最后他坐在树下拿出的那两张照片，是全片唯一一次让观众喘气，也是全片唯一一次解释他为什么走得下去。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「电影工艺能压到什么程度」的人；能接受几乎无背景解释、以时间为唯一驱动力的观众。119 分钟，极其连贯，不建议中途停。战场画面写实、有尸体与流血，建议成年观看。内地未映，流媒体可看。看完想继续：《拯救大兵瑞恩》《漫长的婚约》《敦刻尔克》。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-09；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>
