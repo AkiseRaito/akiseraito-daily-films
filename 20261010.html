@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-10-10 · 第 40 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 10 月 10 日 · 第 40 期 · 已避开往期推荐过的全部 390 部</div>
+  <div>
+    <span class="pill">主题：末日之后 · 十部文明停摆后的电影（1995–2021）</span>
+    <span class="pill">全部 1990 年后：最早 1995，最晚 2021，按上映年份排列</span>
+    <span class="pill">类型覆盖：剧情 8 / 惊悚 8 / 科幻 6 / 动作 2 / 冒险 2 / 恐怖 1 / 灾难 1</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-10，会随时间变动，仅供参考。<br>
+  这一期的筛选条件只有一条：**故事发生在文明已经停摆之后**。不是「灾难正在发生」——是那之后：医院不再开门，超市里剩下的罐头是有主人的，广播里那句承诺不一定是给人听的。<br>
+  十部全部落在 1995–2021，按上映年份排列。里面有**两次瘟疫**：1995 年的《极度恐慌》与 2011 年的《传染病》，相隔十六年，正好能看出这类片从「追一个病原体」变成了「追一条传播链」；有**一次气候骤变**（《后天》）；有**两场从头到尾不解释的灾变**（《末日危途》《艾利之书》）；也有三部把末日做成封闭模型或心理空间的作品（《盲流感》《雪国列车》《湮灭》）。最新的《芬奇》只有一个人、一条狗和一台机器人——它没有反派，也不发生冲突，是本期最温柔的一部。<br>
+  十位导演全部不同。值得一提的是**亚力克斯·加兰**：十六年前他写了《惊变28天》的剧本，本期则是他自己执导的《湮灭》，是本期唯一横跨两部的人。按 10-02 定的口径，**只按片名去重**：丹尼斯·奎德、杰克·吉伦哈尔、马特·达蒙、玛丽昂·歌迪亚、娜塔莉·波特曼、宋康昊、奉俊昊等主创此前都出现过，已在各自主创卡片里如实写出，不重复介绍。<br>
+  口碑落差如实标注、不做修饰：**《后天》豆瓣 8.3 而 IMDb 只有 6.5、烂番茄 45%**，是本期华语观众与欧美影评落差最大的一部；**《艾利之书》豆瓣 6.8、烂番茄 46%**，是本期评分最低的一部，入选是因为它把「护送一本书」这件事做成了真正的身体力行；**《盲流感》烂番茄 44%**，是本期专业评价最低的一部，也是本期最不妥协的一部。<br>
+  内地引进情况：三部曾在内地大银幕上映（《后天》2004-05-28、《传染病》2011-09-09、《雪国列车》2014-03-17）；其余七部内地未映，流媒体可看。<br>
+  10 部片名全部为首次出现，无一与往期 390 部重复（比对 `_titles_all.txt` 通过）。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>极度恐慌</td><td class="qg">惊悚 / 科幻（美国 · 一只猴子带来的东西）</td><td class="qr">7.9 / 60% / 51</td></tr><tr><td class="qn">02</td><td>惊变28天</td><td class="qg">恐怖 / 科幻（英国 · 一座空掉的伦敦）</td><td class="qr">7.2 / 87% / 73</td></tr><tr><td class="qn">03</td><td>后天</td><td class="qg">科幻 / 灾难（美国 · 一场被警告过的寒潮）</td><td class="qr">8.3 / 45% / 47</td></tr><tr><td class="qn">04</td><td>盲流感</td><td class="qg">惊悚 / 剧情（加拿大 / 巴西 / 日本 · 一场白色的失明）</td><td class="qr">7.2 / 44% / 45</td></tr><tr><td class="qn">05</td><td>末日危途</td><td class="qg">剧情 / 惊悚（美国 · 一辆超市推车里的全部家当）</td><td class="qr">7.6 / 74% / 64</td></tr><tr><td class="qn">06</td><td>艾利之书</td><td class="qg">动作 / 惊悚（美国 · 一本不能再丢的书）</td><td class="qr">6.8 / 46% / 53</td></tr><tr><td class="qn">07</td><td>传染病</td><td class="qg">惊悚 / 剧情（美国 · 一条传播链的完整复现）</td><td class="qr">7.4 / 85% / 70</td></tr><tr><td class="qn">08</td><td>雪国列车</td><td class="qg">科幻 / 动作（韩国 / 捷克 · 一节车厢一个阶层）</td><td class="qr">7.6 / 94% / 84</td></tr><tr><td class="qn">09</td><td>湮灭</td><td class="qg">科幻 / 惊悚（美国 / 英国 · 一片会折射一切的区域）</td><td class="qr">7.2 / 88% / 79</td></tr><tr><td class="qn">10</td><td>芬奇</td><td class="qg">科幻 / 剧情（美国 · 一个人、一条狗、一台机器人）</td><td class="qr">8.4 / 74% / 58</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/outbreak_poster.jpg" alt="极度恐慌 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 科幻（美国 · 一只猴子带来的东西）</span><span class="year">1995 · 美国 · 128 分钟 · 内地未映（R 级）</span></div>
+        <h2>极度恐慌 <span class="en">Outbreak</span></h2>
+        <div class="rates"><span class="rate"><b>7.9</b>豆瓣</span><span class="rate"><b>60%</b>烂番茄</span><span class="rate"><b>51</b>Metacritic</span><span class="rate"><b>6.6</b>IMDb</span></div>
+        <p class="oneline">「它暂时还不是空气传播的。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一种来自非洲的致命病毒，被一只携带它的猴子带进了美国。军医山姆·丹尼尔斯与前妻、疾控中心的罗比一起追查源头：感染者会在几天内死亡，而唯一的抗血清握在军方手里。他锁定了那只猴子的位置，上面下来的命令却是：让它消失，连同那座小镇一起。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>沃尔夫冈·彼得森执导（《从海底出击》《空军一号》），改编自理查德·普雷斯顿 1994 年的非虚构作品《血疫》——那本书写的正是埃博拉。</li><li>成本约 5000 万美元，全球票房约 1.9 亿美元；这是好莱坞第一次把「病毒」拍成一部 A 级大制作惊悚片。</li><li>片中的病毒叫「莫塔巴」，在电子显微镜下被做成一条会动的项链——当年是被吐槽最多的一处，但后来成了这类片的视觉定式。</li><li>达斯汀·霍夫曼与摩根·弗里曼第一次合作，两人的对手戏几乎构成了全片的全部张力；凯文·史派西演那个感染后仍坚持上班的同事。</li><li>它拍在艾滋病议题最紧张的那几年之后，也在「9·11」与 SARS 之前——这个时间点决定了它看待传染病的方式。</li><li>豆瓣 7.9 / IMDb 6.6 / 烂番茄 60% / Metacritic 51：典型的「当年很吓人，今天看仍然很吓人」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/outbreak_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/outbreak_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/outbreak_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5231.jpg" alt="" loading="lazy">
+                <div class="p-name">沃尔夫冈·彼得森 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">德国导演、编剧、制片。《从海底出击》《大魔域》《空军一号》《完美风暴》《特洛伊》。本片是他好莱坞阶段的代表作之一：他把潜艇片里那套「舱内调度 + 倒计时」的方法搬到了病毒题材上，也是第一个把这类题材拍成 A 级大制作的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_652.jpg" alt="" loading="lazy"><span>特洛伊</span></div><div class="wk"><img src="assets/movies/w_34584.jpg" alt="" loading="lazy"><span>大魔域</span></div><div class="wk"><img src="assets/movies/w_9772.jpg" alt="" loading="lazy"><span>空军一号</span></div><div class="wk"><img src="assets/movies/w_2133.jpg" alt="" loading="lazy"><span>完美风暴</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4483.jpg" alt="" loading="lazy">
+                <div class="p-name">达斯汀·霍夫曼 <span class="p-role">主演（山姆·丹尼尔斯）</span></div>
+              </div>
+              <div class="p-note">美国演员。《毕业生》《克莱默夫妇》《雨人》《铁钩船长》《功夫熊猫》。本片他演山姆·丹尼尔斯——一个军医，也是唯一一个坚持「先弄清源头，再谈掩盖」的人。全片他几乎一直在跑、在喊、在被一个更大的系统驳回。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_380.jpg" alt="" loading="lazy"><span>雨人</span></div><div class="wk"><img src="assets/movies/w_9502.jpg" alt="" loading="lazy"><span>功夫熊猫</span></div><div class="wk"><img src="assets/movies/w_879.jpg" alt="" loading="lazy"><span>铁钩船长</span></div><div class="wk"><img src="assets/movies/w_37247.jpg" alt="" loading="lazy"><span>毕业生</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_192.jpg" alt="" loading="lazy">
+                <div class="p-name">摩根·弗里曼 <span class="p-role">主演（比利·福特）</span></div>
+              </div>
+              <div class="p-note">美国演员。《七宗罪》《肖申克的救赎》《不可饶恕》《超体》《遗落战境》。本片他演比利·福特——一个给山姆资源、也给他设限的上级。他和霍夫曼的对手戏几乎是这部片全部的张力来源。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_807.jpg" alt="" loading="lazy"><span>七宗罪</span></div><div class="wk"><img src="assets/movies/w_278.jpg" alt="" loading="lazy"><span>肖申克的救赎</span></div><div class="wk"><img src="assets/movies/w_240832.jpg" alt="" loading="lazy"><span>超体</span></div><div class="wk"><img src="assets/movies/w_75612.jpg" alt="" loading="lazy"><span>遗落战境</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在军方为什么要掩盖——不是因为病毒有多危险，而是因为「它是被造出来的」这件事不能被知道。彼得森把惊悚片的引擎放在官僚系统里：山姆每往前走一步，都有一个更大的机构在往后拉。轻微剧透：结尾小镇轰炸的命令被撤销，靠的是一次「从飞机上追直升机」的动作设计；它俗，但这是全片唯一允许自己爽一次的地方。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「流行病题材在被现实追上之前长什么样」的人；能接受 90 年代大片节奏、科学细节被戏剧化处理的观众。128 分钟，节奏紧凑。含较写实的病患与动物实验镜头，建议小学以上陪同观看。内地未映，流媒体可看。看完想继续：《传染病》《血疫》（剧集）《惊变28天》。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/days_poster.jpg" alt="惊变28天 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 科幻（英国 · 一座空掉的伦敦）</span><span class="year">2002 · 英国 · 113 分钟 · 内地未映（R 级）</span></div>
+        <h2>惊变28天 <span class="en">28 Days Later</span></h2>
+        <div class="rates"><span class="rate"><b>7.2</b>豆瓣</span><span class="rate"><b>87%</b>烂番茄</span><span class="rate"><b>73</b>Metacritic</span><span class="rate"><b>7.5</b>IMDb</span></div>
+        <p class="oneline">「二十八天前，一切还在正常进行。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>动物保护者闯进实验室，放走了被注射过「狂暴」病毒的黑猩猩。二十八天后，自行车快递员吉姆从昏迷中醒来，医院是空的，伦敦是空的。他遇见塞莱娜，才知道这二十八天里发生了什么；也才知道，城外驻扎的军队在广播里说的那句「我们有解药」，未必是给人听的。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>丹尼·博伊尔执导，亚力克斯·加兰编剧——加兰后来自己拍了《机械姬》与《湮灭》，本期片单里他是唯一横跨两部的人。</li><li>成本约 800 万美元，全球票房约 8200 万美元；它把「丧尸」从缓慢的、被诅咒的，改成了会冲刺的、被感染的。</li><li>全片用小型数码摄影机拍摄，画面粗糙、过曝、常常欠曝——这是预算决定的，后来成了后末日影像的一种定式。</li><li>空伦敦那几场戏是在清晨封路拍的，一天只有几十分钟窗口：那些画面不是 CG 抹掉的城，是真的没人。</li><li>基利安·墨菲当时几乎没人认识，二十一年后他凭《奥本海默》拿到奥斯卡最佳男主角。</li><li>豆瓣 7.2 / 烂番茄 87% / Metacritic 73 / IMDb 7.5：本期专业评价最高的一部之一。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/days_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/days_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/days_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2034.jpg" alt="" loading="lazy">
+                <div class="p-name">丹尼·博伊尔 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">英国导演、编剧、制片。《浅坟》《猜火车》《海滩》《太阳浩劫》《贫民窟的百万富翁》《127小时》。本片他把 DV 拍摄与后末日题材绑在一起：粗糙的画面不是风格选择，是预算选择，后来反过来成了这个类型最有影响的一笔。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_12405.jpg" alt="" loading="lazy"><span>贫民窟的百万富翁</span></div><div class="wk"><img src="assets/movies/w_627.jpg" alt="" loading="lazy"><span>猜火车</span></div><div class="wk"><img src="assets/movies/w_44115.jpg" alt="" loading="lazy"><span>127小时</span></div><div class="wk"><img src="assets/movies/w_1907.jpg" alt="" loading="lazy"><span>海滩</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2037.jpg" alt="" loading="lazy">
+                <div class="p-name">基利安·墨菲 <span class="p-role">主演（吉姆）</span></div>
+              </div>
+              <div class="p-note">爱尔兰演员。《冥王星早餐》《风吹麦浪》《蝙蝠侠：侠影之谜》《盗梦空间》《太阳浩劫》《奥本海默》。本片他演吉姆——一个在空城里醒来的快递员。《惊变28天》是他第一次在大制作里担纲男主角，二十一年后他凭《奥本海默》拿到奥斯卡最佳男主角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_872585.jpg" alt="" loading="lazy"><span>奥本海默</span></div><div class="wk"><img src="assets/movies/w_27205.jpg" alt="" loading="lazy"><span>盗梦空间</span></div><div class="wk"><img src="assets/movies/w_1272.jpg" alt="" loading="lazy"><span>太阳浩劫</span></div><div class="wk"><img src="assets/movies/w_49530.jpg" alt="" loading="lazy"><span>时间规划局</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2038.jpg" alt="" loading="lazy">
+                <div class="p-name">娜奥米·哈里斯 <span class="p-role">主演（塞莱娜）</span></div>
+              </div>
+              <div class="p-note">英国演员。《迈阿密风云》《007：大破天幕杀机》《007：幽灵党》《月光男孩》《毒液2》。本片她演塞莱娜——一个比任何人都更早决定「不带着累赘走」的幸存者。全片最难的那场戏是她的：她必须在几秒内决定要不要开枪。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_427641.jpg" alt="" loading="lazy"><span>狂暴巨兽</span></div><div class="wk"><img src="assets/movies/w_37724.jpg" alt="" loading="lazy"><span>007：大破天幕杀机</span></div><div class="wk"><img src="assets/movies/w_580489.jpg" alt="" loading="lazy"><span>毒液2</span></div><div class="wk"><img src="assets/movies/w_206647.jpg" alt="" loading="lazy"><span>007：幽灵党</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在主角们抵达军营之后——病毒不是全片最坏的东西。加兰把剧本的重心放在后半段：当「安全」由一个持枪的男人来定义时，那个营区比空城更接近地狱。轻微剧透：结尾那句从天上飞过、没人回应的求救，是博伊尔给这个类型留下的最狠的一笔：获救不一定等于被看见。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「现代丧尸片从哪里开始」的人；能接受手持 DV 质感、血腥镜头较直接、以及后半段突然转向人性黑暗的观众。113 分钟。R 级，含暴力与血腥，建议成年观看。内地未映，流媒体可看。看完想继续：《惊变28周》《惊变28年》《我是传奇》。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/tomorrow_poster.jpg" alt="后天 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 灾难（美国 · 一场被警告过的寒潮）</span><span class="year">2004 · 美国 · 124 分钟 · 内地 2004-05-28 公映</span></div>
+        <h2>后天 <span class="en">The Day After Tomorrow</span></h2>
+        <div class="rates"><span class="rate"><b>8.3</b>豆瓣</span><span class="rate"><b>45%</b>烂番茄</span><span class="rate"><b>47</b>Metacritic</span><span class="rate"><b>6.5</b>IMDb</span></div>
+        <p class="oneline">「给我一个理由，一个能让他听得懂的理由。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>气候学家杰克·霍尔在一次国际会议上说：北极冰盖融化会让洋流改道，冰河期不是几百年后的事，可能就在几周内。没人当真。然后东京下冰雹、洛杉矶被龙卷风撕开、纽约被海啸灌满，北半球开始生成新的冰盖。他只能往北走，去把困在纽约公共图书馆里的儿子带出来。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>罗兰·艾默里奇自编自导自制片，成本约 1.25 亿美元，全球票房约 5.52 亿美元。</li><li>第 58 届英国电影学院奖最佳特殊视觉效果；第 14 届 MTV 电影奖最佳动作场面。</li><li>全片约九成镜头含特效，是当年特效镜头数量最多的项目之一；海啸淹曼哈顿那场是在接近真实比例的水池里拍的。</li><li>内地 2004-05-28 上映，与北美几乎同步——很多人的「灾难片」概念是从这部开始的。</li><li>科学界对它意见很大：把几百年的过程压缩进几天，是被批评最多的一点。</li><li>豆瓣 8.3，但 IMDb 只有 6.5、烂番茄 45%、Metacritic 47：**本期华语观众与欧美影评落差最大的一部**。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/tomorrow_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/tomorrow_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/tomorrow_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6046.jpg" alt="" loading="lazy">
+                <div class="p-name">罗兰·艾默里奇 <span class="p-role">导演 / 编剧 / 制片</span></div>
+              </div>
+              <div class="p-note">德国导演、编剧、制片。《再造战士》《星际之门》《独立日》《哥斯拉》《爱国者》《2012》。本片是他第一次把「全球性灾难」做成完整的两段式结构：一半是父亲往北走，一半是儿子在图书馆里活着。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_14161.jpg" alt="" loading="lazy"><span>2012</span></div><div class="wk"><img src="assets/movies/w_602.jpg" alt="" loading="lazy"><span>独立日</span></div><div class="wk"><img src="assets/movies/w_47933.jpg" alt="" loading="lazy"><span>独立日2：卷土重来</span></div><div class="wk"><img src="assets/movies/w_117251.jpg" alt="" loading="lazy"><span>惊天危机</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6065.jpg" alt="" loading="lazy">
+                <div class="p-name">丹尼斯·奎德 <span class="p-role">主演（杰克·霍尔）</span></div>
+              </div>
+              <div class="p-note">美国演员。《突破》《大寒》《龙之心》《天生的赢家》《刺杀据点》。本片他演杰克·霍尔——一个在会议上被当成危言耸听者的气候学家。他的戏大部分在雪里和冰水里完成，是这部片最耗体力的一次演出。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_87818.jpg" alt="" loading="lazy"><span>电影43</span></div><div class="wk"><img src="assets/movies/w_9820.jpg" alt="" loading="lazy"><span>天生一对</span></div><div class="wk"><img src="assets/movies/w_7461.jpg" alt="" loading="lazy"><span>刺杀据点</span></div><div class="wk"><img src="assets/movies/w_8840.jpg" alt="" loading="lazy"><span>龙之心</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_131.jpg" alt="" loading="lazy">
+                <div class="p-name">杰克·吉伦哈尔 <span class="p-role">主演（山姆·霍尔）</span></div>
+              </div>
+              <div class="p-note">美国演员。《死亡幻觉》《十月的天空》《断背山》《十二宫》《源代码》《囚徒》《夜行者》。本片他演山姆·霍尔——被困在纽约公共图书馆里的儿子。他与父亲之间的隔空线索由一部还能打通的公用电话维系，是全片唯一的情绪通道。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_141.jpg" alt="" loading="lazy"><span>死亡幻觉</span></div><div class="wk"><img src="assets/movies/w_242582.jpg" alt="" loading="lazy"><span>夜行者</span></div><div class="wk"><img src="assets/movies/w_1949.jpg" alt="" loading="lazy"><span>十二宫</span></div><div class="wk"><img src="assets/movies/w_45612.jpg" alt="" loading="lazy"><span>源代码</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在图书馆里那场讨论——烧书取暖的时候，他们先烧的是税法，留下的那本是谁都不肯动的。艾默里奇从不在人物上花太多力气，但他知道怎么让一个灾难有「日常感」：冷是具体的，饿是具体的，隔着冰面打电话是具体的。轻微剧透：结尾父亲走进图书馆、看见儿子活着那一镜，观众哭的不是团圆，是「他真的走完了那几百公里」。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看最大号的灾难奇观、同时能容忍科学夸张与人物单薄的人；124 分钟，节奏很稳，几乎不冷场。灾难场面有人员伤亡表现，建议小学以上观看。内地 2004 年公映过，流媒体可看。看完想继续：《2012》《独立日》《末日逃生》。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/blind_poster.jpg" alt="盲流感 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 剧情（加拿大 / 巴西 / 日本 · 一场白色的失明）</span><span class="year">2008 · 加拿大 / 巴西 / 日本 · 121 分钟 · 内地未映（R 级）</span></div>
+        <h2>盲流感 <span class="en">Blindness</span></h2>
+        <div class="rates"><span class="rate"><b>7.2</b>豆瓣</span><span class="rate"><b>44%</b>烂番茄</span><span class="rate"><b>45</b>Metacritic</span><span class="rate"><b>6.4</b>IMDb</span></div>
+        <p class="oneline">「我看不见，我只是看得见太多了。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一座城市里的人开始一个接一个地失明——不是黑，是一片牛奶一样的白。第一名患者被送进隔离区，他的妻子假装也失明了，陪他进去，成为唯一还能看见的人。隔离区很快爆满、很快失控，有人开始按病房分配食物，也开始按病房分配女人。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>费尔南多·梅里尔斯执导——他把《上帝之城》的那套群像调度搬进了一个完全抽象的设定里。</li><li>改编自若泽·萨拉马戈 1995 年的诺贝尔文学奖小说；原著里所有人物都没有名字，只有「医生的妻子」「第一个失明的人」。</li><li>朱丽安·摩尔演「医生的妻子」：全片唯一没有失明的人，也是唯一一个必须一直装下去的人。</li><li>全片几乎没有任何特效，「白色」是靠过曝与滤镜做出来的——失明不是黑暗，是太亮。</li><li>第 61 届戛纳电影节开幕片。</li><li>豆瓣 7.2 / IMDb 6.4 / 烂番茄 44% / Metacritic 45：**本期专业评价最低，也是本期最不妥协的一部**。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/blind_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/blind_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/blind_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_8557.jpg" alt="" loading="lazy">
+                <div class="p-name">费尔南多·梅里尔斯 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">巴西导演、编剧、制片。《上帝之城》《不朽的园丁》《盲流感》《教宗的承继》。本片他把一群没有名字的人放进一个没有名字的城市；这是他第一次完全离开巴西题材，也是他最受争议的一次尝试。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_598.jpg" alt="" loading="lazy"><span>上帝之城</span></div><div class="wk"><img src="assets/movies/w_551332.jpg" alt="" loading="lazy"><span>教宗的承继</span></div><div class="wk"><img src="assets/movies/w_1985.jpg" alt="" loading="lazy"><span>不朽的园丁</span></div><div class="wk"><img src="assets/movies/w_89455.jpg" alt="" loading="lazy"><span>圆舞360</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1231.jpg" alt="" loading="lazy">
+                <div class="p-name">朱丽安·摩尔 <span class="p-role">主演（医生的妻子）</span></div>
+              </div>
+              <div class="p-note">美国演员。《不羁的天空》《谋杀绿脚趾》《时时刻刻》《远离天堂》《依然爱丽丝》。本片她演「医生的妻子」——全片唯一没有失明的人。她要在所有人对「看得见」这件事失去概念之后继续装作看不见，这是她自己说过最难演的一次。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_330.jpg" alt="" loading="lazy"><span>侏罗纪公园2：失落的世界</span></div><div class="wk"><img src="assets/movies/w_115.jpg" alt="" loading="lazy"><span>谋杀绿脚趾</span></div><div class="wk"><img src="assets/movies/w_343668.jpg" alt="" loading="lazy"><span>王牌特工2：黄金圈</span></div><div class="wk"><img src="assets/movies/w_284293.jpg" alt="" loading="lazy"><span>依然爱丽丝</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_103.jpg" alt="" loading="lazy">
+                <div class="p-name">马克·鲁法洛 <span class="p-role">主演（医生）</span></div>
+              </div>
+              <div class="p-note">美国演员。《你可以信赖我》《禁闭岛》《孩子们都很好》《复仇者联盟》系列。本片他演第一个失明的患者——一位眼科医生，也是被送进隔离区的第一批人之一。他大部分戏都在「白」里，几乎看不到他的眼睛。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_24428.jpg" alt="" loading="lazy"><span>复仇者联盟</span></div><div class="wk"><img src="assets/movies/w_11324.jpg" alt="" loading="lazy"><span>禁闭岛</span></div><div class="wk"><img src="assets/movies/w_284053.jpg" alt="" loading="lazy"><span>雷神3：诸神黄昏</span></div><div class="wk"><img src="assets/movies/w_299534.jpg" alt="" loading="lazy"><span>复仇者联盟4：终局之战</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在医生的妻子终于动手的那一刻。前面一小时她一直在「看见但不行动」，那场戏之后她不再只是见证者。梅里尔斯没把这个设定拍成寓言，他把它拍成了具体的脏、具体的饿、具体的排队上厕所——这也是当年很多影评人不满的地方：它太实了，实到不好看。轻微剧透：结尾所有人一个接一个复明，而她站在那里哭，因为她知道自己并没有重见光明，她只是终于可以不再装了。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「文明崩塌的最小单位是怎么失效的」的人；能接受抽象设定、大量裸露与暴力、121 分钟持续压迫感的观众。R 级，含性暴力与群体暴力场面，建议成年观看。内地未映。看完想继续：《饥饿站台》《上帝之城》《狗镇》。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/road_poster.jpg" alt="末日危途 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 惊悚（美国 · 一辆超市推车里的全部家当）</span><span class="year">2009 · 美国 · 111 分钟 · 内地未映（R 级）</span></div>
+        <h2>末日危途 <span class="en">The Road</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>74%</b>烂番茄</span><span class="rate"><b>64</b>Metacritic</span><span class="rate"><b>7.2</b>IMDb</span></div>
+        <p class="oneline">「我们带着火。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一场没有解释的灾变之后，天一直是灰的，所有植物都死了。一个男人带着儿子推着一辆超市购物车往南走，车上是一床被子、几罐头和一把左轮——子弹只剩两发。妻子在灾变后不久离开了他们。路上他们要躲开的，是那些已经不再吃罐头的人。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>约翰·希尔科特执导，改编自考麦克·麦卡锡 2006 年的普利策奖小说（他也是《老无所依》的原著作者）。</li><li>第 66 届威尼斯电影节金狮奖竞赛片；维果·莫特森为此片大幅减重，全片几乎没有一场戏是暖色调的。</li><li>全片不解释灾变是什么：没有爆炸回放、没有新闻播报，你看到的世界就是这两个人看到的世界。</li><li>柯蒂·斯密特-麦菲出演时 13 岁，「好人」这个词是他一遍遍问出来的——全片的道德重量几乎挂在他身上。</li><li>原著里父子没有名字，电影保留了这一点：字幕里就是「男人」与「男孩」。</li><li>豆瓣 7.6 / IMDb 7.2 / 烂番茄 74% / Metacritic 64。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/road_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/road_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/road_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_53333.jpg" alt="" loading="lazy">
+                <div class="p-name">约翰·希尔科特 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">澳大利亚导演、编剧。《内战亡魂》《关键协议》《无法无天》《红色警戒999》。本片他把麦卡锡那本几乎没有情节的小说拍成了一部公路片，并保留原著的一个决定：父子没有名字，只有「男人」与「男孩」。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_82633.jpg" alt="" loading="lazy"><span>无法无天</span></div><div class="wk"><img src="assets/movies/w_146198.jpg" alt="" loading="lazy"><span>红色警戒999</span></div><div class="wk"><img src="assets/movies/w_16608.jpg" alt="" loading="lazy"><span>关键协议</span></div><div class="wk"><img src="assets/movies/w_31219.jpg" alt="" loading="lazy"><span>内战亡魂</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_110.jpg" alt="" loading="lazy">
+                <div class="p-name">维果·莫特森 <span class="p-role">主演（男人）</span></div>
+              </div>
+              <div class="p-note">美国 / 丹麦籍演员、诗人、摄影师。《指环王》三部曲、《暴力史》《东方的承诺》《绿皮书》。本片他演「男人」——一个把所有家当装进一辆超市推车、带着儿子往南走的父亲。为这个角色他减重到几乎脱形，全片没有一场戏是暖的。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_490132.jpg" alt="" loading="lazy"><span>绿皮书</span></div><div class="wk"><img src="assets/movies/w_120.jpg" alt="" loading="lazy"><span>指环王1：护戒使者</span></div><div class="wk"><img src="assets/movies/w_122.jpg" alt="" loading="lazy"><span>指环王3：王者无敌</span></div><div class="wk"><img src="assets/movies/w_121.jpg" alt="" loading="lazy"><span>指环王2：双塔奇兵</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_113505.jpg" alt="" loading="lazy">
+                <div class="p-name">柯蒂·斯密特-麦菲 <span class="p-role">主演（男孩）</span></div>
+              </div>
+              <div class="p-note">澳大利亚演员。《生人勿进》《通灵男孩诺曼》《猩球崛起2：黎明之战》《犬之力》。本片他演「男孩」——一个在没有任何参照物的世界里长大、却反复追问「我们是不是好人」的孩子。出演时他 13 岁，全片的道德重量几乎挂在他身上。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_77174.jpg" alt="" loading="lazy"><span>通灵男孩诺曼</span></div><div class="wk"><img src="assets/movies/w_399360.jpg" alt="" loading="lazy"><span>阿尔法：狼伴归途</span></div><div class="wk"><img src="assets/movies/w_41402.jpg" alt="" loading="lazy"><span>生人勿进</span></div><div class="wk"><img src="assets/movies/w_119450.jpg" alt="" loading="lazy"><span>猩球崛起2：黎明之战</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在那间地下室。他们找到一整屋的罐头和水，吃饱、洗澡、灯还亮着——然后听见上面有脚步声。希尔科特把「最好与最坏只差一层天花板」这件事拍得极其干净。轻微剧透：父亲死后，男孩做的第一件事是把枪留在他身边再离开；那把枪在全片里都没响过，这是它唯一一次被交代去处。结局里收留他的那家人说的那句「我们带着火」，是这部片能给出的全部希望。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看一部不解释、不宽慰、但把父子关系写到实处的人；能接受全片灰暗、几乎没有配乐、节奏缓慢的观众。111 分钟。含人食人的暗示与绝望场面，建议成年观看。内地未映。看完想继续：《老无所依》《艾利之书》《芬奇》。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/eli_poster.jpg" alt="艾利之书 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">动作 / 惊悚（美国 · 一本不能再丢的书）</span><span class="year">2010 · 美国 · 118 分钟 · 内地未映（R 级）</span></div>
+        <h2>艾利之书 <span class="en">The Book of Eli</span></h2>
+        <div class="rates"><span class="rate"><b>6.8</b>豆瓣</span><span class="rate"><b>46%</b>烂番茄</span><span class="rate"><b>53</b>Metacritic</span><span class="rate"><b>6.8</b>IMDb</span></div>
+        <p class="oneline">「我一直在往西走。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>战争之后三十年，地表只剩灰和公路。一个独行的旅人往西走，包里有一本不能给人看的书。他走进一座由卡内基控制着水源的小镇，而卡内基也在找那本书——因为他知道，一本能让人重新聚起来的书，比水更值钱。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>由休斯兄弟（阿尔伯特·休斯与艾伦·休斯）联合执导，此前的代表作是《威胁社会》与《来自地狱》。</li><li>成本约 8000 万美元，全球票房约 1.57 亿美元。</li><li>摄影由唐·伯吉斯完成，全片用一种褪到接近单色的黄褐调子——不是黑白，是把颜色几乎抽干。</li><li>丹泽尔·华盛顿出演时 55 岁，全片动作戏几乎自己完成；这个角色是「一言不发也会让人让路」那一路。</li><li>加里·奥德曼演的卡内基，是这类片里少见的一个真的读过书的反派。</li><li>豆瓣 6.8 / IMDb 6.8 / 烂番茄 46% / Metacritic 53：**本期评分最低，也是本期最「信」的一部**。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/eli_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/eli_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/eli_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11447.jpg" alt="" loading="lazy">
+                <div class="p-name">阿尔伯特·休斯 <span class="p-role">导演（与艾伦·休斯联合执导）</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、制片，与孪生兄弟艾伦·休斯联合执导。《威胁社会》《来自地狱》《绝命战场》《阿尔法：狼伴归途》。本片他把一部宗教寓言拍成了西部公路片：褪色的黄褐调子、沉默的主角，以及最后那场朗读。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_768.jpg" alt="" loading="lazy"><span>来自地狱</span></div><div class="wk"><img src="assets/movies/w_399360.jpg" alt="" loading="lazy"><span>阿尔法：狼伴归途</span></div><div class="wk"><img src="assets/movies/w_9516.jpg" alt="" loading="lazy"><span>社会威胁</span></div><div class="wk"><img src="assets/movies/w_11443.jpg" alt="" loading="lazy"><span>绝命战场</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5292.jpg" alt="" loading="lazy">
+                <div class="p-name">丹泽尔·华盛顿 <span class="p-role">主演（艾利）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演、制片。《光荣》《训练日》《局内人》《伸冤人》《迫降航班》；两座奥斯卡（最佳男配角与最佳男主角）。本片他演艾利——一个往西走了三十年、包里有一本不能给人看的书的旅人。全片动作戏几乎由他本人完成，出演时他 55 岁。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_156022.jpg" alt="" loading="lazy"><span>伸冤人</span></div><div class="wk"><img src="assets/movies/w_2034.jpg" alt="" loading="lazy"><span>训练日</span></div><div class="wk"><img src="assets/movies/w_87502.jpg" alt="" loading="lazy"><span>迫降航班</span></div><div class="wk"><img src="assets/movies/w_388.jpg" alt="" loading="lazy"><span>局内人</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_64.jpg" alt="" loading="lazy">
+                <div class="p-name">加里·奥德曼 <span class="p-role">主演（卡内基）</span></div>
+              </div>
+              <div class="p-note">英国演员、导演。《席德与南希》《惊情四百年》《这个杀手不太冷》《蝙蝠侠：黑暗骑士》三部曲、《至暗时刻》。本片他演卡内基——一个控制水源、也在找那本书的人。他不吼、不动手，是这类片里少见的一个真的读过书的反派。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_49026.jpg" alt="" loading="lazy"><span>蝙蝠侠：黑暗骑士崛起</span></div><div class="wk"><img src="assets/movies/w_155.jpg" alt="" loading="lazy"><span>蝙蝠侠：黑暗骑士</span></div><div class="wk"><img src="assets/movies/w_6114.jpg" alt="" loading="lazy"><span>惊情四百年</span></div><div class="wk"><img src="assets/movies/w_399404.jpg" alt="" loading="lazy"><span>至暗时刻</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在最后那场朗读。艾利一路护送的是一本他其实看不见的书——他是盲人，全书靠背下来。这个设定把「护送经典」从动作片任务，变成了一种身体力行的东西。轻微剧透：卡内基拿到书之后发现那是盲文，是本片最好的一次讽刺：他要的是权力，而这本书对读不了它的人来说，只是纸。结尾印刷机重新转起来的那一段，是这部片唯一一次允许自己煽情。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「后末日公路片」这一路的人；能接受宗教意味偏重、动作片框架简单、118 分钟里前三十分钟几乎不说话的观众。R 级，含断肢与较直接的暴力，建议成年观看。内地未映。看完想继续：《末日危途》《疯狂的麦克斯4：狂暴之路》《芬奇》。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/contagion_poster.jpg" alt="传染病 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 剧情（美国 · 一条传播链的完整复现）</span><span class="year">2011 · 美国 · 106 分钟 · 内地 2011-09-09 公映</span></div>
+        <h2>传染病 <span class="en">Contagion</span></h2>
+        <div class="rates"><span class="rate"><b>7.4</b>豆瓣</span><span class="rate"><b>85%</b>烂番茄</span><span class="rate"><b>70</b>Metacritic</span><span class="rate"><b>6.8</b>IMDb</span></div>
+        <p class="oneline">「平均每人每天接触两百个人。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>从香港出差回明尼苏达的贝丝在机场咳嗽了两声，两天后死在家中。一种从未见过的病毒顺着航班、门把手和赌场筹码扩散。疾控中心派出调查员，世卫组织派人溯源，一位自媒体写手在镜头前宣称自己被治好了——三条线同时在跑，中间没有英雄，只有流程。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>史蒂文·索德伯格自导自摄（摄影署名 Peter Andrews），斯科特·Z·本恩斯编剧；成本约 6000 万美元，全球票房约 1.35 亿美元。</li><li>剧本有流行病学顾问参与，片中用到的 R0 值、传播模型与疫苗研发周期是真实的量级。</li><li>全片刻意不给主角光环：凯特·温斯莱特的角色在片中死于疫情，裘德·洛的角色是个造谣的博客写手，他们都不是视点人物。</li><li>马特·达蒙演的米奇是唯一一个「不被感染但一直在失去家人」的人——他的免疫是这部片最冷的一处设计。</li><li>索德伯格全程不用音乐提示情绪，靠剪辑与声音把三条线拧在一起。</li><li>豆瓣 7.4 / 烂番茄 85% / Metacritic 70 / IMDb 6.8：本期专业评价最齐整的一部之一。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/contagion_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/contagion_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/contagion_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1884.jpg" alt="" loading="lazy">
+                <div class="p-name">史蒂文·索德伯格 <span class="p-role">导演 / 摄影</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、摄影、剪辑。《性、谎言和录像带》《永不妥协》《十一罗汉》系列、《切·格瓦拉》《烛台背后》。本片他自导自摄（摄影署名 Peter Andrews），把三条线索并行推进、全程不用音乐提示情绪，是他职业生涯里最「冷」的一次调度。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_70160.jpg" alt="" loading="lazy"><span>饥饿游戏</span></div><div class="wk"><img src="assets/movies/w_161.jpg" alt="" loading="lazy"><span>十一罗汉</span></div><div class="wk"><img src="assets/movies/w_163.jpg" alt="" loading="lazy"><span>十二罗汉</span></div><div class="wk"><img src="assets/movies/w_298.jpg" alt="" loading="lazy"><span>十三罗汉</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1892.jpg" alt="" loading="lazy">
+                <div class="p-name">马特·达蒙 <span class="p-role">主演（米奇·埃姆霍夫）</span></div>
+              </div>
+              <div class="p-note">美国演员、编剧、制片。《心灵捕手》《谍影重重》系列、《无间道风云》《火星救援》《极乐空间》。本片他演米奇·埃姆霍夫——一个对病毒免疫、却一个接一个失去家人的普通人。他的免疫不是能力，是这部片最冷的一处设计。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_286217.jpg" alt="" loading="lazy"><span>火星救援</span></div><div class="wk"><img src="assets/movies/w_489.jpg" alt="" loading="lazy"><span>心灵捕手</span></div><div class="wk"><img src="assets/movies/w_2501.jpg" alt="" loading="lazy"><span>谍影重重</span></div><div class="wk"><img src="assets/movies/w_68724.jpg" alt="" loading="lazy"><span>极乐空间</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_8293.jpg" alt="" loading="lazy">
+                <div class="p-name">玛丽昂·歌迪亚 <span class="p-role">主演（利奥诺拉·奥兰特斯）</span></div>
+              </div>
+              <div class="p-note">法国演员、歌手。《玫瑰人生》（奥斯卡最佳女主角）、《盗梦空间》《铁娘子》《两天一夜》《锈与骨》。本片她演利奥诺拉·奥兰特斯——世卫组织派去香港与澳门溯源的流行病学家。她的那条线全片最安静，也是唯一一条在最后把答案交出来的线。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_27205.jpg" alt="" loading="lazy"><span>盗梦空间</span></div><div class="wk"><img src="assets/movies/w_49026.jpg" alt="" loading="lazy"><span>蝙蝠侠：黑暗骑士崛起</span></div><div class="wk"><img src="assets/movies/w_121856.jpg" alt="" loading="lazy"><span>刺客信条</span></div><div class="wk"><img src="assets/movies/w_369885.jpg" alt="" loading="lazy"><span>间谍同盟</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在最后五分钟——索德伯格把时间倒回第一天，让你亲眼看见那只蝙蝠、那辆推土机、那次握手。在此之前的一百分钟全是「结果」，直到这一刻你才知道起点有多小。轻微剧透：这部片真正的冷酷在于它拒绝给出罪人：没有人制造了病毒，只是有一棵树被砍了。结尾那场被包装成阴谋论的电视采访，是它对「事后总要有人负责」这件事最锋利的回答。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「一部把流程拍到严谨的流行病电影」的人；能接受群像、无主角、情绪被刻意压住的观众。106 分钟。含患者抽搐与死亡镜头，建议小学以上观看。内地 2011-09-09 公映过，流媒体可看。看完想继续：《极度恐慌》《盲流感》《芬奇》。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/snow_poster.jpg" alt="雪国列车 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 动作（韩国 / 捷克 · 一节车厢一个阶层）</span><span class="year">2013 · 韩国 / 捷克 · 126 分钟 · 内地 2014-03-17 公映</span></div>
+        <h2>雪国列车 <span class="en">Snowpiercer</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>94%</b>烂番茄</span><span class="rate"><b>84</b>Metacritic</span><span class="rate"><b>7.1</b>IMDb</span></div>
+        <p class="oneline">「列车就是世界，世界就是列车。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一次失败的气候工程把地球冻成了一颗雪球，最后的人类住在一列永不停车的列车上，按票分级：头等舱在前面，末节车厢在最后。末节的人靠一种不明成分的蛋白块活着，已经十七年。柯蒂斯带着他们一节一节往前打，而他真正要找的，是那个设计这列车的、神一样的男人威尔福德。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>奉俊昊执导，改编自法国漫画《Le Transperceneige》；成本约 4000 万美元，是当时韩国史上投资最大的电影之一。</li><li>第 34 届韩国青龙奖最佳导演、第 50 届大钟奖最佳剪辑与最佳美术；全球票房约 8680 万美元。</li><li>剧组在捷克搭了长约一百米的真实车厢并让它真的晃动——车头到车尾的空间关系是实拍出来的。</li><li>蒂尔达·斯文顿演的梅森是全片最被讨论的表演：一个戴眼镜、说话带鼻音的官僚，和这部片的暴力完全不在一个调上。</li><li>宋康昊演的南宫民秀只想拿到一种叫克洛诺的东西——他不是来革命的，他是来开门的。</li><li>豆瓣 7.6 / 烂番茄 94% / Metacritic 84 / IMDb 7.1：**Metacritic 84 是本期专业评分最高的一部**。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/snow_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/snow_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/snow_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_21684.jpg" alt="" loading="lazy">
+                <div class="p-name">奉俊昊 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">韩国导演、编剧、制片。《杀人回忆》《汉江怪物》《母亲》《玉子》《寄生虫》《编号17》。本片是他第一次全英文制作，也是他第一次把阶级议题放进一个封闭的科幻设定里；在《寄生虫》拿下奥斯卡最佳影片之前，《雪国列车》是他国际知名度最高的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_496243.jpg" alt="" loading="lazy"><span>寄生虫</span></div><div class="wk"><img src="assets/movies/w_11423.jpg" alt="" loading="lazy"><span>杀人回忆</span></div><div class="wk"><img src="assets/movies/w_387426.jpg" alt="" loading="lazy"><span>玉子</span></div><div class="wk"><img src="assets/movies/w_696506.jpg" alt="" loading="lazy"><span>编号17</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_16828.jpg" alt="" loading="lazy">
+                <div class="p-name">克里斯·埃文斯 <span class="p-role">主演（柯蒂斯）</span></div>
+              </div>
+              <div class="p-note">美国演员。《神奇四侠》《美国队长》系列、《复仇者联盟》系列、《利刃出鞘》。本片他演柯蒂斯——末节车厢里那个十七年后终于决定往前打的人。出演时他正处在「美国队长」系列的中段，这是他那几年最不一样的一次选择。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_271110.jpg" alt="" loading="lazy"><span>美国队长3</span></div><div class="wk"><img src="assets/movies/w_1771.jpg" alt="" loading="lazy"><span>美国队长</span></div><div class="wk"><img src="assets/movies/w_100402.jpg" alt="" loading="lazy"><span>美国队长2</span></div><div class="wk"><img src="assets/movies/w_24428.jpg" alt="" loading="lazy"><span>复仇者联盟</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_20738.jpg" alt="" loading="lazy">
+                <div class="p-name">宋康昊 <span class="p-role">主演（南宫民秀）</span></div>
+              </div>
+              <div class="p-note">韩国演员。《杀人回忆》《汉江怪物》《我要复仇》《密阳》《寄生虫》。本片他演南宫民秀——一个只想拿到克洛诺、然后去开门的人。他和奉俊昊是长期合作的搭档，《雪国列车》是他们第一次在英文制作里合作。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_496243.jpg" alt="" loading="lazy"><span>寄生虫</span></div><div class="wk"><img src="assets/movies/w_11423.jpg" alt="" loading="lazy"><span>杀人回忆</span></div><div class="wk"><img src="assets/movies/w_1255.jpg" alt="" loading="lazy"><span>汉江怪物</span></div><div class="wk"><img src="assets/movies/w_4689.jpg" alt="" loading="lazy"><span>我要复仇</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在柯蒂斯走到车头、听见威尔福德说出的那个真相——暴动本身就是被安排好的，连「牺牲多少人」都是算好的。奉俊昊把一列火车做成了一整套社会模型：每往前一节，你就换一个阶层，也换一种世界观。轻微剧透：最后他选择炸车而不是接手，是这部片最不妥协的一次决定：它拒绝让「推翻之后我来当」成为答案。结尾雪地上那两个小小的身影，是全片唯一一次让你觉得冷是对的。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「科幻设定与社会隐喻怎么咬合得这么紧」的人；能接受暴力直接、台词有舞台感、结局并不安慰人的观众。126 分钟。含断肢与大量打斗，建议高中以上观看。内地 2014-03-17 公映过。看完想继续：《寄生虫》《杀人回忆》《玉子》。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/annihil_poster.jpg" alt="湮灭 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 惊悚（美国 / 英国 · 一片会折射一切的区域）</span><span class="year">2018 · 美国 / 英国 · 115 分钟 · 内地未映（R 级）</span></div>
+        <h2>湮灭 <span class="en">Annihilation</span></h2>
+        <div class="rates"><span class="rate"><b>7.2</b>豆瓣</span><span class="rate"><b>88%</b>烂番茄</span><span class="rate"><b>79</b>Metacritic</span><span class="rate"><b>6.8</b>IMDb</span></div>
+        <p class="oneline">「它不是在毁灭，它是在折射。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一颗陨石落进一座灯塔，之后那片区域被一层闪动的薄膜裹住，进去的队伍没有一个回来过。生物学家莉娜的丈夫是唯一回来的人，回来后器官开始衰竭。她带着一支五人小队进入「闪光」，发现里面的植物长成人形、鹿角上开出花，而每一种生物都在互相读取对方的基因。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>亚力克斯·加兰自编自导，改编自杰夫·范德米尔的小说《遗落的南境》第一部——他没读完后面两部就写了剧本。</li><li>成本约 4000 万美元，北美票房未过 4300 万美元，随后由 Netflix 在北美以外上线。</li><li>那些「长成人形」的植物与动物是实景搭建与特效结合：加兰坚持能实拍的先实拍。</li><li>娜塔莉·波特曼演的莉娜不是典型英雄：她进入区域的动机里有一半是赎罪。</li><li>结尾那段双人舞般的对峙，全片没有任何台词解释，只有动作与光。</li><li>豆瓣 7.2 / 烂番茄 88% / Metacritic 79 / IMDb 6.8。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/annihil_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/annihil_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/annihil_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2036.jpg" alt="" loading="lazy">
+                <div class="p-name">亚历克斯·加兰 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">英国作家、编剧、导演。《惊变28天》《太阳浩劫》《别让我走》《特警判官》《机械姬》。本片他自编自导，是本期片单里唯一横跨两部的人——十六年前他写了《惊变28天》的剧本，十六年后他拍了这部「文明边界正在被改写」的片。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_264660.jpg" alt="" loading="lazy"><span>机械姬</span></div><div class="wk"><img src="assets/movies/w_170.jpg" alt="" loading="lazy"><span>惊变28天</span></div><div class="wk"><img src="assets/movies/w_49049.jpg" alt="" loading="lazy"><span>特警判官</span></div><div class="wk"><img src="assets/movies/w_1907.jpg" alt="" loading="lazy"><span>海滩</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_524.jpg" alt="" loading="lazy">
+                <div class="p-name">娜塔莉·波特曼 <span class="p-role">主演（莉娜）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《这个杀手不太冷》《V字仇杀队》《黑天鹅》（奥斯卡最佳女主角）、《第一夫人》。本片她演莉娜——一个细胞生物学教授、前美军士兵，进入「闪光」的动机里有一半是赎罪。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_752.jpg" alt="" loading="lazy"><span>V字仇杀队</span></div><div class="wk"><img src="assets/movies/w_44214.jpg" alt="" loading="lazy"><span>黑天鹅</span></div><div class="wk"><img src="assets/movies/w_10195.jpg" alt="" loading="lazy"><span>雷神</span></div><div class="wk"><img src="assets/movies/w_76338.jpg" alt="" loading="lazy"><span>雷神2：黑暗世界</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_10431.jpg" alt="" loading="lazy">
+                <div class="p-name">詹妮弗·杰森·李 <span class="p-role">主演（文特里斯博士）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《速速投降》《感官游戏》《机械师》《八恶人》《失常》。本片她演文特里斯博士——这支小队的领队，也是唯一一个从一开始就知道自己在往哪里走的人。她最后那场独白是全片最安静也最重的一场。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_273248.jpg" alt="" loading="lazy"><span>八恶人</span></div><div class="wk"><img src="assets/movies/w_4553.jpg" alt="" loading="lazy"><span>机械师</span></div><div class="wk"><img src="assets/movies/w_1946.jpg" alt="" loading="lazy"><span>感官游戏</span></div><div class="wk"><img src="assets/movies/w_291270.jpg" alt="" loading="lazy"><span>失常</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在莉娜终于走到灯塔下面，看见那个「复制」她的东西——它不是怪物，它在学她；她的每一个动作都被先一步模仿，直到她放弃挣扎、把磷弹递过去。加兰给这部片的题目不是「外来入侵」，是「自我毁灭」：进入区域的人一个个被自己的东西吞噬。轻微剧透：结尾那两个幸存者互相拥抱的镜头，是这部片留给你最不安的一句——回来的那个人，到底还是不是同一个人。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「恐怖与科幻的边界被做成一部片」的人；能接受节奏缓慢、解释极少、结局开放、115 分钟里大部分时间处在不确定中的观众。R 级，含身体恐怖与血腥画面，建议成年观看。内地未映，流媒体可看。看完想继续：《机械姬》《降临》《皮囊之下》。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/finch_poster.jpg" alt="芬奇 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 剧情（美国 · 一个人、一条狗、一台机器人）</span><span class="year">2021 · 美国 · 115 分钟 · 内地未映（PG-13）</span></div>
+        <h2>芬奇 <span class="en">Finch</span></h2>
+        <div class="rates"><span class="rate"><b>8.4</b>豆瓣</span><span class="rate"><b>74%</b>烂番茄</span><span class="rate"><b>58</b>Metacritic</span><span class="rate"><b>6.9</b>IMDb</span></div>
+        <p class="oneline">「我只要求它答应我一件事。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>太阳耀斑之后，地表紫外线足以在几分钟内烧穿皮肤，白天不能出门。一个叫芬奇的工程师带着他的狗住在地下实验室里。他知道自己的时间不多了，于是花了几年做了一台机器人，教会它走路、说话、认字，也教会它一件事：如果他不在了，要替他照顾这条狗。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>米格尔·萨普什尼克执导——他此前最被人知道的身份是《权力的游戏》多集的导演（含「私生子之战」与「长夜」），《芬奇》是他自《重生男人》之后时隔十一年的第二部长片。</li><li>2021-11-05 在 Apple TV+ 上线，几乎没有院线放映。</li><li>机器人杰夫由卡莱伯·兰德里·琼斯穿着实体道具服演出并配音，不是纯 CG。</li><li>全片只有三个角色：一个人、一条狗、一台机器人，其中狗是真狗。</li><li>公路段落取景于新墨西哥与犹他的真实荒地，地表那层永远偏黄的光是实景拍的，不是调色。</li><li>豆瓣 8.4 / 烂番茄 74% / Metacritic 58 / IMDb 6.9：**豆瓣是本期最高的一部，专业评分则明显保守得多**。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/finch_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/finch_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/finch_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_114404.jpg" alt="" loading="lazy">
+                <div class="p-name">米格尔·萨普什尼克 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">美国导演、制片，早期做分镜与美术。《重生男人》是他的长片处女作；此后主要转向剧集，《权力的游戏》的「私生子之战」与「长夜」、以及《权力的游戏前传：龙族》均出自他手。《芬奇》是他时隔十一年的第二部电影长片。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_31867.jpg" alt="" loading="lazy"><span>重生男人</span></div><div class="wk"><img src="assets/movies/w_1399.jpg" alt="" loading="lazy"><span>权力的游戏</span></div><div class="wk"><img src="assets/movies/w_94997.jpg" alt="" loading="lazy"><span>权力的游戏前传：龙族</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_31.jpg" alt="" loading="lazy">
+                <div class="p-name">汤姆·汉克斯 <span class="p-role">主演（芬奇·温伯格）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片、导演。《费城故事》《阿甘正传》《拯救大兵瑞恩》《绿里奇迹》《荒岛余生》《玩具总动员》。本片他演芬奇——一个知道自己没多少时间、于是把全部力气用来教一台机器人怎么照顾狗的工程师。全片几乎是他一个人的独角戏，对手戏的对象是一台机器和一条狗。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_13.jpg" alt="" loading="lazy"><span>阿甘正传</span></div><div class="wk"><img src="assets/movies/w_862.jpg" alt="" loading="lazy"><span>玩具总动员</span></div><div class="wk"><img src="assets/movies/w_497.jpg" alt="" loading="lazy"><span>绿里奇迹</span></div><div class="wk"><img src="assets/movies/w_857.jpg" alt="" loading="lazy"><span>拯救大兵瑞恩</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_572541.jpg" alt="" loading="lazy">
+                <div class="p-name">卡莱伯·兰德里·琼斯 <span class="p-role">动作与配音（杜威 / 杰夫）</span></div>
+              </div>
+              <div class="p-note">美国演员。《逃出绝命镇》《三块广告牌》《内特拉姆》《狗神》。本片他给机器人杰夫做动作与配音——穿着实体道具服在片场演，不是后期配音。他要用一套机械的动作，演出从「刚刚学会走路」到「开始理解承诺」的全过程。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_419430.jpg" alt="" loading="lazy"><span>逃出绝命镇</span></div><div class="wk"><img src="assets/movies/w_359940.jpg" alt="" loading="lazy"><span>三块广告牌</span></div><div class="wk"><img src="assets/movies/w_1246049.jpg" alt="" loading="lazy"><span>德古拉</span></div><div class="wk"><img src="assets/movies/w_944401.jpg" alt="" loading="lazy"><span>狗神</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在芬奇终于没能走出那辆车。这部片让人难受的地方在于，它一开始就把结局说清楚了——你从头就知道他会死，所以你一路看的不是「他能不能活」，是「他能不能来得及把该教的教完」。轻微剧透：杰夫学会的最后一句话是「我会照顾它」；萨普什尼克把整部片的感情压在这一句上，没有多加一句。结尾机器人带着狗走上大桥那一镜，是本期唯一一次让人想立刻打电话给谁的场面。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看一部几乎没有反派、几乎不发生冲突的后末日片的人；能接受节奏舒缓、115 分钟里两个主角大部分时间只是在赶路的观众。PG-13，含疾病与死亡主题，儿童可陪同观看。内地未映，Apple TV+ 可看。看完想继续：《我是传奇》《末日危途》《人工智能》。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-10；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>
