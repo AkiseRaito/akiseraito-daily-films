@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-10-12 · 第 42 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 10 月 12 日 · 第 42 期 · 已避开往期推荐过的全部 410 部</div>
+  <div>
+    <span class="pill">主题：机器还在录 · 十部把摄影机交给角色的电影（2010–2021）</span>
+    <span class="pill">全部 1990 年后：最早 2010，最晚 2021，按上映年份排列</span>
+    <span class="pill">类型覆盖：恐怖 6 / 惊悚 4 / 伪纪录片 5 / 科幻 3 / 剧情 2 / 奇幻 1 / 动作 1</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-12，会随时间变动，仅供参考。<br>
+  这一期的筛选条件只有一条：<b>摄影机在角色手里，而它一直没有停</b>。不是「手持镜头」这么宽泛——是这台机器本身就是故事的一部分：谁在拍、为什么还在拍、拍下来的东西最后落到谁手上。<br>
+  十部全部落在 2010–2021，按上映年份排列。里面有<b>三组主动开机的人</b>：一个打算当场拆穿自己的牧师（《最后一次驱魔》）、一支追着盗猎者跑的学生摄制组（《追击巨怪》）、一档把自己反锁进精神病院的灵异节目（《墓地邂逅》）；有<b>三种被动记录的机器</b>：一台从不离手的家用摄影机（《超能失控》）、一柜子没人整理的录像带（《致命录像带》）、飞船里那些没人操控的固定机位（《欧罗巴报告》）；还有三部把「机器」换成了别的界面：一块电脑屏幕（《解除好友》）、一双没有脸的眼睛（《硬核亨利》）、一台拍到最后还在转的摄像机（《中邪》《灵媒》）。<br>
+  需要说明的一处取舍：这个类型最有名的那几部——《女巫布莱尔》《死亡录像》《科洛弗档案》《昆池岩》《灵动：鬼影实录》——<b>往期已经推过了</b>，这一期是避开它们之后的十年，所以名单整体会往后半段偏。<br>
+  跨期重合如实写出，按 10-02 定的口径<b>只按片名去重</b>：<b>罗泓轸</b>——第 36 期的《追击者》、第 37 期的《黄海》都是他导的，这一期的《灵媒》由他出任制片与联合编剧；<b>Radio Silence</b>——第 37 期推过的《准备好了没》出自他们之手，这一期他们参与了《致命录像带》；<b>沙尔托·科普雷</b>一人占了本期两部（《欧罗巴报告》与《硬核亨利》）。十位导演全部不同。<br>
+  口碑落差如实标注、不做修饰：<b>《追击巨怪》烂番茄 83% 而豆瓣只有 6.1</b>，是本期落差最大的一部；<b>《硬核亨利》豆瓣 7.7 而烂番茄只有 51%</b>，是本期落差第二大的一部；<b>《墓地邂逅》Metacritic 33</b> 是本期专业评价最低，且它在烂番茄上只有 15 条影评，样本太少，已在卡片里用星号标出；<b>《中邪》没有海外评分</b>，四个平台里三个未收录，只有豆瓣的 7.0 可以参考。<br>
+  内地引进情况：十部全部未在内地院线公映（《中邪》原定 2018-04-04 上映、上映前三天撤档，至今未公映）；其余九部流媒体或点播可看。<br>
+  10 部片名全部为首次出现，无一与往期 410 部重复（比对 `_titles_all.txt` 通过）。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>最后一次驱魔</td><td class="qg">恐怖 / 伪纪录片（美国 / 法国 · 一位牧师的最后一次驱魔）</td><td class="qr">6.3 / 71% / 63</td></tr><tr><td class="qn">02</td><td>追击巨怪</td><td class="qg">奇幻 / 伪纪录片（挪威 · 一部不该被拍到的纪录片）</td><td class="qr">6.1 / 83% / 61</td></tr><tr><td class="qn">03</td><td>墓地邂逅</td><td class="qg">恐怖 / 伪纪录片（加拿大 · 一档把自己锁进去的灵异节目）</td><td class="qr">6.8 / 67%* / 33</td></tr><tr><td class="qn">04</td><td>超能失控</td><td class="qg">科幻 / 剧情（美国 · 一台从不离手的摄影机）</td><td class="qr">7.0 / 85% / 69</td></tr><tr><td class="qn">05</td><td>致命录像带</td><td class="qg">恐怖 / 伪纪录片（美国 · 一柜子没人整理的录像带）</td><td class="qr">6.7 / 56% / 54</td></tr><tr><td class="qn">06</td><td>欧罗巴报告</td><td class="qg">科幻 / 惊悚（美国 · 一艘回不了地球的飞船）</td><td class="qr">6.9 / 81% / 68</td></tr><tr><td class="qn">07</td><td>解除好友</td><td class="qg">恐怖 / 惊悚（美国 · 一个退不出去的群聊）</td><td class="qr">6.5 / 62% / 59</td></tr><tr><td class="qn">08</td><td>硬核亨利</td><td class="qg">动作 / 科幻（俄罗斯 / 美国 · 一双没有脸的眼睛）</td><td class="qr">7.7 / 51% / 51</td></tr><tr><td class="qn">09</td><td>中邪</td><td class="qg">恐怖 / 伪纪录片（中国 · 一场不该被拍完的还人）</td><td class="qr">7.0 / 未收录 / 未收录</td></tr><tr><td class="qn">10</td><td>灵媒</td><td class="qg">恐怖 / 伪纪录片（泰国 / 韩国 · 一位请错了神的灵媒）</td><td class="qr">6.4 / 79% / 未收录</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/exorc_38358_poster.jpg" alt="最后一次驱魔 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 伪纪录片（美国 / 法国 · 一位牧师的最后一次驱魔）</span><span class="year">2010 · 美国 / 法国 · 87 分钟 · 内地未映（PG-13）</span></div>
+        <h2>最后一次驱魔 <span class="en">The Last Exorcism</span></h2>
+        <div class="rates"><span class="rate"><b>6.3</b>豆瓣</span><span class="rate"><b>71%</b>烂番茄</span><span class="rate"><b>63</b>Metacritic</span><span class="rate"><b>5.7</b>IMDb</span></div>
+        <p class="oneline">「这是最后一次。我保证。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>路易斯安那。科顿·马库斯是个从小跟着父亲上台驱魔的牧师，他自己不信这一套——那些仪式是他养家的手艺。他请来一支摄制组，要拍一部揭穿驱魔骗局的纪录片。一封来自偏远农场的求助信成了他口中的「最后一次」：他带着摄影机去给农场主的女儿内尔做仪式，打算当场拆穿自己。结果他拆不掉。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>德国导演丹尼尔·斯塔姆的长片处女作，此前他只拍过短片；伊莱·罗斯出任制片，剧本由哈克·博特科与安德鲁·格兰德写。</li><li>成本约 180 万美元，北美票房约 4100 万美元，全球约 6940 万美元——2010 年最赚钱的恐怖片之一。</li><li>全片用手持摄影机拍成，摄影机是叙事的一部分：科顿一边做仪式，一边对着镜头解释自己是怎么骗人的。</li><li>帕特里克·法比安演的科顿不是反派，他是个诚实的人——他真的以为这次也会像前面几十次一样收场。</li><li>阿什利·贝尔演的内尔几乎只出现在取景框里；她的表演是这部片唯一被各方影评一致肯定的部分。</li><li>豆瓣 6.3 / 烂番茄 71% / Metacritic 63 / IMDb 5.7：专业评价明显高于观众，争议几乎全在最后十分钟。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/exorc_38358_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/exorc_38358_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/exorc_38358_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_120245.jpg" alt="" loading="lazy">
+                <div class="p-name">丹尼尔·斯塔姆 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">德国导演、编剧。《最后一次驱魔》是他的长片处女作，此前只拍过短片；伊莱·罗斯看中这个提案并出任制片。本片之后他主要在美国拍剧集与电视电影。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_155084.jpg" alt="" loading="lazy"><span>13骇人游戏</span></div><div class="wk"><img src="assets/movies/w_676547.jpg" alt="" loading="lazy"><span>恶魔的光火</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_58791.jpg" alt="" loading="lazy">
+                <div class="p-name">帕特里克·法比安 <span class="p-role">主演（科顿·马库斯）</span></div>
+              </div>
+              <div class="p-note">美国演员，长期在美剧里担任重要配角（《绝命律师》里的霍华德·哈姆林、《新闻编辑室》）。本片他演科顿·马库斯——一个靠驱魔养家的牧师，也是全片唯一一个从头到尾对着镜头说话的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_21481.jpg" alt="" loading="lazy"><span>魔法双星</span></div><div class="wk"><img src="assets/movies/w_1003579.jpg" alt="" loading="lazy"><span>蝙蝠侠：哥谭厄运</span></div><div class="wk"><img src="assets/movies/w_94380.jpg" alt="" loading="lazy"><span>混蛋</span></div><div class="wk"><img src="assets/movies/w_487672.jpg" alt="" loading="lazy"><span>超人王朝</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_120248.jpg" alt="" loading="lazy">
+                <div class="p-name">阿什利·贝尔 <span class="p-role">主演（内尔·斯威策）</span></div>
+              </div>
+              <div class="p-note">美国演员。本片她演内尔·斯威策，那个被父亲叫来「做仪式」的农场女孩；几乎全片她只在取景框里出现，而她的表演是这部片最被肯定的部分。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_146203.jpg" alt="" loading="lazy"><span>最后一次驱魔2</span></div><div class="wk"><img src="assets/movies/w_369032.jpg" alt="" loading="lazy"><span>屠杀公园</span></div><div class="wk"><img src="assets/movies/w_84226.jpg" alt="" loading="lazy"><span>幸存日</span></div><div class="wk"><img src="assets/movies/w_400160.jpg" alt="" loading="lazy"><span>海绵宝宝：营救大冒险</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在「她是不是真的被附身」，而在科顿发现自己的那套把戏已经不管用了——他这次得真的做一个决定，而摄影机还在拍。轻微剧透：全片最狠的设计是「揭穿」这件事本身：前面半小时他把自己的伎俩一样样演示给镜头看，所以后面发生的事你没法用同一套逻辑解释。结尾那场火是全片唯一一次把摄影机丢下——而最后记录的画面，是有人把它捡起来继续拍。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「伪纪录片怎么把一个不信的人逼成信徒」的人；能接受手持镜头晃、中段节奏偏慢、结尾转向突兀的观众。PG-13，含惊吓与宗教恐怖画面，建议初中以上观看。内地未映，流媒体可看。看完想继续：《女巫布莱尔》《灵动：鬼影实录》《墓地邂逅》。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/troll_46146_poster.jpg" alt="追击巨怪 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">奇幻 / 伪纪录片（挪威 · 一部不该被拍到的纪录片）</span><span class="year">2010 · 挪威 · 103 分钟 · 内地未映</span></div>
+        <h2>追击巨怪 <span class="en">Trollhunter</span></h2>
+        <div class="rates"><span class="rate"><b>6.1</b>豆瓣</span><span class="rate"><b>83%</b>烂番茄</span><span class="rate"><b>61</b>Metacritic</span><span class="rate"><b>6.9</b>IMDb</span></div>
+        <p class="oneline">「那不是熊。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>三个挪威学生带着一台摄影机去追拍盗猎熊的人，被对方赶走，又跟了上去。跟到最后他们发现，那个满嘴抱怨、开着房车到处跑的男人追的根本不是熊。他叫汉斯，他替政府干活，他追的东西在挪威地图上被高压线标着——那些电线不是为了输电，是为了把它们圈在里面。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>安德烈·艾弗道夫自编自导，这是他的第二部长片；此后他拍了《无名女尸》与《在黑暗中讲述的恐怖故事》。</li><li>成本约 350 万美元，全球票房约 416 万美元；2012 年拿下 Fangoria 电锯奖最佳国际影片。</li><li>全片是手持摄影机拍的伪纪录片，巨怪第一次露脸被压在六十分钟之后——前面全是采访、开车和争吵。</li><li>巨怪的设计是这部片最被低估的部分：三头、石头皮肤、以石为食、怕紫外线；特效大量依赖实拍模型与真景，而不是纯电脑画面。</li><li>时任挪威首相在片尾以本人身份出镜，被拍得像真的一样——这是全片最好笑的一个笑话。</li><li>豆瓣 6.1 / 烂番茄 83% / Metacritic 61 / IMDb 6.9：<b>本期华语观众与欧美影评落差最大的一部</b>，华语观众嫌它慢，欧美影评把它当类型片惊喜。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/troll_46146_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/troll_46146_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/troll_46146_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_135113.jpg" alt="" loading="lazy">
+                <div class="p-name">安德烈·艾弗道夫 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">挪威导演、编剧。《追击巨怪》是他的第二部长片，也是他第一次把北欧神话搬进现代故事；此后他拍了《无名女尸》与《在黑暗中讲述的恐怖故事》，成了这一代恐怖片里最稳的名字之一。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_397243.jpg" alt="" loading="lazy"><span>无名女尸</span></div><div class="wk"><img src="assets/movies/w_417384.jpg" alt="" loading="lazy"><span>在黑暗中讲述的恐怖故事</span></div><div class="wk"><img src="assets/movies/w_635910.jpg" alt="" loading="lazy"><span>得墨忒耳号的最后航程</span></div><div class="wk"><img src="assets/movies/w_489326.jpg" alt="" loading="lazy"><span>超能追缉</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_141999.jpg" alt="" loading="lazy">
+                <div class="p-name">奥托·耶斯佩森 <span class="p-role">主演（汉斯）</span></div>
+              </div>
+              <div class="p-note">挪威喜剧演员、主持人，在挪威家喻户晓。本片他演汉斯——一个替政府收拾烂摊子的巨怪猎人，全片的冷幽默基本都在他身上。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_505746.jpg" alt="" loading="lazy"><span>赛车狂人3</span></div><div class="wk"><img src="assets/movies/w_284279.jpg" alt="" loading="lazy"><span>赛车狂人</span></div><div class="wk"><img src="assets/movies/w_417503.jpg" alt="" loading="lazy"><span>赛车狂人2</span></div><div class="wk"><img src="assets/movies/w_612995.jpg" alt="" loading="lazy"><span>又一个快乐圣诞</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_142004.jpg" alt="" loading="lazy">
+                <div class="p-name">格伦·埃兰·托斯特鲁德 <span class="p-role">主演（托马斯）</span></div>
+              </div>
+              <div class="p-note">挪威演员。本片他演托马斯，三个学生里拿着摄影机的那一个；全片你在看的大部分画面，就是他手里那台机器拍的。</div>
+              
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在他们第一次看见巨怪的那一刻——不是它有多大，而是它怕光。前面那些看似闲笔的抱怨、高压线、政府官员，全都是为这一条规则做的铺垫。轻微剧透：艾弗道夫把北欧神话拍成了一份公务员工作：汉斯不是英雄，是个累坏了的中年人，在给一群不肯听话的动物收拾烂摊子。结尾摄影机的下落，是这部片最后一个冷笑话。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「怪物片怎么被拍成纪录片」的人；能接受前半段铺垫长、笑点是冷幽默、特效在今天看略旧的观众。无血腥，含少量惊吓与怪物画面，适合小学以上观看。内地未映。看完想继续：《科洛弗档案》《女巫布莱尔》《汉江怪物》。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/grave_50698_poster.jpg" alt="墓地邂逅 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 伪纪录片（加拿大 · 一档把自己锁进去的灵异节目）</span><span class="year">2011 · 加拿大 · 92 分钟 · 内地未映</span></div>
+        <h2>墓地邂逅 <span class="en">Grave Encounters</span></h2>
+        <div class="rates"><span class="rate"><b>6.8</b>豆瓣</span><span class="rate"><b>67%*</b>烂番茄</span><span class="rate"><b>33</b>Metacritic</span><span class="rate"><b>6.1</b>IMDb</span></div>
+        <p class="oneline">「我们把自己锁进去八个小时。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一档叫《墓地邂逅》的灵异真人秀，主持人兰斯·普雷斯顿带着摄影师、通灵师和一车器材，把自己反锁进废弃的科林伍德精神病院待一整夜。前几个小时什么都没有发生，于是他们开始造假：挪动道具、伪造声音、假装被吓到。然后他们发现，有一样东西不是他们做的。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>由「恶毒兄弟」（科林·米尼汉与斯图尔特·奥尔蒂斯）自编自导自剪，这是他们的长片处女作。</li><li>拍摄地是加拿大一间真的废弃精神病院；剧组在里面连续拍了十几个夜班，大部分场景靠头灯与红外摄影机打光。</li><li>全片的结构就是一档真人秀：有节目片头、有采访、有「上集回顾」，甚至有片尾字幕——这套形式感是它最聪明的地方。</li><li>兰斯这个角色写得比同类片的主持人复杂：他从第一分钟就在演，所以你没法判断他哪一句是真话。</li><li>麦肯兹·格雷演的通灵师休斯顿·格雷是全片第一个察觉不对的人，也是第一个要走的人。</li><li>豆瓣 6.8 / 烂番茄 67%（仅 15 条影评，样本极少，已在卡片里标星号）/ Metacritic 33 / IMDb 6.1：<b>本期专业评价最低的一部</b>，但它在恐怖片观众里的口碑一直很高。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/grave_50698_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/grave_50698_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/grave_50698_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1310518.jpg" alt="" loading="lazy">
+                <div class="p-name">科林·米尼汉 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">加拿大导演、编剧、剪辑，与斯图尔特·奥尔蒂斯组成「恶毒兄弟」。《墓地邂逅》是这对组合的长片处女作，此后两人又拍了《墓地邂逅2》与其他低成本类型片。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_134366.jpg" alt="" loading="lazy"><span>墓地邂逅2</span></div><div class="wk"><img src="assets/movies/w_265016.jpg" alt="" loading="lazy"><span>外星人</span></div><div class="wk"><img src="assets/movies/w_623520.jpg" alt="" loading="lazy"><span>臆想魔友</span></div><div class="wk"><img src="assets/movies/w_503752.jpg" alt="" loading="lazy"><span>蜜谋逃杀</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_169747.jpg" alt="" loading="lazy">
+                <div class="p-name">肖恩·罗格森 <span class="p-role">主演（兰斯·普雷斯顿）</span></div>
+              </div>
+              <div class="p-note">加拿大演员。本片他演主持人兰斯·普雷斯顿——一个从第一分钟就在演的人；续集也由他继续出演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_134366.jpg" alt="" loading="lazy"><span>墓地邂逅2</span></div><div class="wk"><img src="assets/movies/w_623520.jpg" alt="" loading="lazy"><span>臆想魔友</span></div><div class="wk"><img src="assets/movies/w_265016.jpg" alt="" loading="lazy"><span>外星人</span></div><div class="wk"><img src="assets/movies/w_195269.jpg" alt="" loading="lazy"><span>12回合2：重装上阵</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_37698.jpg" alt="" loading="lazy">
+                <div class="p-name">麦肯兹·格雷 <span class="p-role">主演（休斯顿·格雷）</span></div>
+              </div>
+              <div class="p-note">加拿大演员，长期在加拿大与美国的类型片与剧集里出演。本片他演通灵师休斯顿·格雷，全片第一个察觉不对、也是第一个想走的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_49521.jpg" alt="" loading="lazy"><span>超人：钢铁之躯</span></div><div class="wk"><img src="assets/movies/w_7485.jpg" alt="" loading="lazy"><span>生死狙击</span></div><div class="wk"><img src="assets/movies/w_68735.jpg" alt="" loading="lazy"><span>魔兽</span></div><div class="wk"><img src="assets/movies/w_8054.jpg" alt="" loading="lazy"><span>魔法奇幻秀</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在鬼出现，在他们意识到「造假」这件事本身已经被利用——前面他们自己布置的那些机关，后来全都变成了真的。轻微剧透：这部片把真人秀做成了一个道德装置：一个靠骗人吃饭的节目组，最后被困在自己编的那套规则里。结尾那段穿过走廊、楼梯与病房的长镜头是它最花心思的地方，也是它被记住的原因。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「低成本恐怖片能把一个空间玩到什么程度」的人；能接受手持镜头晃、人物扁平、逻辑经不起推敲的观众。含惊吓与血腥画面，建议高中以上观看。内地未映。看完想继续：《灵动：鬼影实录》《昆池岩》《墓地邂逅2》。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/chron_76726_poster.jpg" alt="超能失控 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 剧情（美国 · 一台从不离手的摄影机）</span><span class="year">2012 · 美国 · 83 分钟 · 内地未映（PG-13）</span></div>
+        <h2>超能失控 <span class="en">Chronicle</span></h2>
+        <div class="rates"><span class="rate"><b>7.0</b>豆瓣</span><span class="rate"><b>85%</b>烂番茄</span><span class="rate"><b>69</b>Metacritic</span><span class="rate"><b>7.0</b>IMDb</span></div>
+        <p class="oneline">「别拍了。」——「我一直都在拍。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>安德鲁是个在学校里不说话的人，家里有个酗酒暴力的父亲和一个正在病重的母亲。他随身带着一台摄影机，把它当挡箭牌。表哥马特拉他去派对，派对上有人提到树林里有个洞。三个人钻进去，出来之后他们能隔空移动东西。他们约法三章：不用来害人、不用来对付彼此、不在别人面前用。安德鲁第一个违反。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>乔什·特兰克的长片处女作，拍完时 27 岁；剧本由马克斯·兰迪斯写，灵感来自《魔女嘉莉》《阿基拉》与《第九区》。</li><li>成本约 1200 万美元，全球票房约 1.27 亿美元；因为这部片的成绩，他随后被选中去执导《新神奇四侠》。</li><li>全片由安德鲁的摄影机、马特的摄影机，以及街头监控与手机画面拼成——「谁在拍」这件事本身就是情节。</li><li>戴恩·德哈恩出演时 25 岁，演安德鲁；他的表演几乎全靠机器的视角完成：观众看到的画面，就是他决定让别人看到的画面。</li><li>迈克尔·B·乔丹演史蒂夫，是三人里唯一一个始终在踩刹车的人；他后来凭《奎迪》系列与《黑豹》成名。</li><li>豆瓣 7.0 / 烂番茄 85% / Metacritic 69 / IMDb 7.0：<b>本期四个平台最一致的一部</b>，也是本期豆瓣并列最高。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/chron_76726_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/chron_76726_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/chron_76726_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_934803.jpg" alt="" loading="lazy">
+                <div class="p-name">乔什·特兰克 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧。《超能失控》是他的长片处女作，拍完时 27 岁；因为这部片的成绩，他随后被选中执导《新神奇四侠》。本片他把「手持摄影机」与「超能力」这两件当时都还很新的东西绑在了一起。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_166424.jpg" alt="" loading="lazy"><span>神奇四侠</span></div><div class="wk"><img src="assets/movies/w_429422.jpg" alt="" loading="lazy"><span>卡彭</span></div><div class="wk"><img src="assets/movies/w_29150.jpg" alt="" loading="lazy"><span>狂热粉丝</span></div><div class="wk"><img src="assets/movies/w_274105.jpg" alt="" loading="lazy"><span>莉亚二十二岁生日上的刺杀事件</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_122889.jpg" alt="" loading="lazy">
+                <div class="p-name">戴恩·德哈恩 <span class="p-role">主演（安德鲁·德特默）</span></div>
+              </div>
+              <div class="p-note">美国演员。《超能失控》之后出演了《杀死汝爱》《超凡蜘蛛侠2》《星际特工：千星之城》。本片他演安德鲁——一个把摄影机当挡箭牌的高中生，出演时 25 岁。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_339964.jpg" alt="" loading="lazy"><span>星际特工：千星之城</span></div><div class="wk"><img src="assets/movies/w_340837.jpg" alt="" loading="lazy"><span>救命解药</span></div><div class="wk"><img src="assets/movies/w_102382.jpg" alt="" loading="lazy"><span>超凡蜘蛛侠2</span></div><div class="wk"><img src="assets/movies/w_342473.jpg" alt="" loading="lazy"><span>了不起的菲丽西</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_135651.jpg" alt="" loading="lazy">
+                <div class="p-name">迈克尔·B·乔丹 <span class="p-role">主演（史蒂夫·蒙哥马利）</span></div>
+              </div>
+              <div class="p-note">美国演员。《弗鲁特维尔车站》《奎迪》系列、《黑豹》。本片他演史蒂夫，三人里唯一一直在踩刹车、也唯一一直在问「我们是不是做得太过」的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_284054.jpg" alt="" loading="lazy"><span>黑豹</span></div><div class="wk"><img src="assets/movies/w_312221.jpg" alt="" loading="lazy"><span>奎迪</span></div><div class="wk"><img src="assets/movies/w_480530.jpg" alt="" loading="lazy"><span>奎迪：英雄再起</span></div><div class="wk"><img src="assets/movies/w_1233413.jpg" alt="" loading="lazy"><span>罪人</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在安德鲁第一次把摄影机放下——到那时你才反应过来，前面那些「随手拍」的画面不是风格，是他唯一愿意和人说话的方式。轻微剧透：这部片把超能力拍成了青春期的一个放大器：他没有变坏，他只是终于有了能赢的手段。结尾那段从空中俯拍的镜头，是全片唯一一次把视角从他手里拿走。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「超能力片被拍成家庭剧」的人；能接受手持镜头晃、中段人物行为会让人生气、83 分钟节奏偏快的观众。PG-13，含暴力与受伤画面，建议初中以上观看。内地未映。看完想继续：《第九区》《阿基拉》《升级》。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/vhs_84348_poster.jpg" alt="致命录像带 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 伪纪录片（美国 · 一柜子没人整理的录像带）</span><span class="year">2012 · 美国 · 116 分钟 · 内地未映（R 级）</span></div>
+        <h2>致命录像带 <span class="en">V/H/S</span></h2>
+        <div class="rates"><span class="rate"><b>6.7</b>豆瓣</span><span class="rate"><b>56%</b>烂番茄</span><span class="rate"><b>54</b>Metacritic</span><span class="rate"><b>5.8</b>IMDb</span></div>
+        <p class="oneline">「这屋里有一柜子带子。我们要的只是其中一盘。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一伙小混混受雇闯进一栋空屋，要偷一盘录像带。屋里只有一具坐在电视机前的老人尸体，和一柜子没人整理的带子。他们一台一台放下去，每放一盘，画面就变成另一个故事：三个男人带了两个女孩回汽车旅馆、一对夫妻在公路旅行中被闯入、隔着视频通话看见自己背后有人、一栋闹鬼的房子。放完之后，轮到他们自己。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>由恐怖媒体 Bloody Disgusting 发起的合集片：六段短片分给六组人拍，框架故事「Tape 56」由亚当·温加德导演、西蒙·巴雷特编剧。</li><li>参与的人后来各自成名：提·威斯特（《X》系列）、大卫·布鲁克纳（《夜间小屋》）、Radio Silence（《准备好了没》《惊声尖叫5》）。<b>第 37 期推过的《准备好了没》正是 Radio Silence 导的</b>。</li><li>成本极低，由木兰花影业旗下的 Magnet Releasing 发行；北美小范围上映加点播，全球票房约 190 万美元，之后做成了系列。</li><li>汉娜·菲尔曼演的那段《Amateur Night》是全片口碑最好的一段：一台藏在眼镜上的针孔摄影机，拍了一整晚。</li><li>乔·斯旺伯格演并导的那段《Second Honeymoon》全靠一台放在房间角落的固定机位——它是最安静、也最难受的一段。</li><li>豆瓣 6.7 / 烂番茄 56% / Metacritic 54 / IMDb 5.8：<b>专业评价中下，但它在恐怖片观众里的地位远高于分数</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/vhs_84348_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/vhs_84348_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/vhs_84348_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_98631.jpg" alt="" loading="lazy">
+                <div class="p-name">亚当·温加德 <span class="p-role">导演 / 剪辑（Tape 56）</span></div>
+              </div>
+              <div class="p-note">美国导演、剪辑，与编剧西蒙·巴雷特长期搭档（《你是下一个》《访客》《哥斯拉大战金刚》）。本片他导框架故事「Tape 56」，也是整部合集的组织者之一。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_399566.jpg" alt="" loading="lazy"><span>哥斯拉大战金刚</span></div><div class="wk"><img src="assets/movies/w_823464.jpg" alt="" loading="lazy"><span>哥斯拉大战金刚2：帝国崛起</span></div><div class="wk"><img src="assets/movies/w_351460.jpg" alt="" loading="lazy"><span>死亡笔记</span></div><div class="wk"><img src="assets/movies/w_83899.jpg" alt="" loading="lazy"><span>你是下一个</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_111692.jpg" alt="" loading="lazy">
+                <div class="p-name">汉娜·菲尔曼 <span class="p-role">主演（莉莉 · Amateur Night）</span></div>
+              </div>
+              <div class="p-note">美国演员。本片她在《Amateur Night》一段里演莉莉——那段是全片口碑最好的一段，她凭不到二十分钟的出场被恐怖片观众记住。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_355506.jpg" alt="" loading="lazy"><span>女妖</span></div><div class="wk"><img src="assets/movies/w_502406.jpg" alt="" loading="lazy"><span>圣阿加莎</span></div><div class="wk"><img src="assets/movies/w_262165.jpg" alt="" loading="lazy"><span>不速之客</span></div><div class="wk"><img src="assets/movies/w_931237.jpg" alt="" loading="lazy"><span>恐怖之旅</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_40863.jpg" alt="" loading="lazy">
+                <div class="p-name">乔·斯旺伯格 <span class="p-role">导演 / 主演（山姆 · Second Honeymoon）</span></div>
+              </div>
+              <div class="p-note">美国导演、演员，低成本写实独立电影那一代的代表名字之一。本片他自导自演了《Second Honeymoon》一段：一台固定机位、一对夫妻、一个进屋的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_172533.jpg" alt="" loading="lazy"><span>酒肉朋友</span></div><div class="wk"><img src="assets/movies/w_397442.jpg" alt="" loading="lazy"><span>赢家</span></div><div class="wk"><img src="assets/movies/w_244534.jpg" alt="" loading="lazy"><span>圣诞快乐</span></div><div class="wk"><img src="assets/movies/w_295490.jpg" alt="" loading="lazy"><span>掘火者</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在任何一段里，而在框架故事：那伙人放完所有带子之后才发现，这栋屋里的电视机数量，和带子的数量对得上。轻微剧透：这部片真正做的事情，是把「伪纪录片」拆成六个不同的技术版本——针孔、固定机位、视频通话、家用摄像机，每一段都在换一套规则，所以你根本来不及适应。结尾那个没收尾的收尾，是这类合集片一贯的坏习惯，也是它能一直拍下去的原因。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「同一个手法能被玩出几种花样」的人；能接受六段水准参差、部分段落口味极重、116 分钟里有明显注水的观众。R 级，含裸露、血腥与暴力画面，建议高中以上观看。内地未映。看完想继续：《致命录像带94》《准备好了没》《昆池岩》。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/europa_174772_poster.jpg" alt="欧罗巴报告 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 惊悚（美国 · 一艘回不了地球的飞船）</span><span class="year">2013 · 美国 · 90 分钟 · 内地未映（PG-13）</span></div>
+        <h2>欧罗巴报告 <span class="en">Europa Report</span></h2>
+        <div class="rates"><span class="rate"><b>6.9</b>豆瓣</span><span class="rate"><b>81%</b>烂番茄</span><span class="rate"><b>68</b>Metacritic</span><span class="rate"><b>6.4</b>IMDb</span></div>
+        <p class="oneline">「我们已经失去和地球的通讯。任务继续。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>六名宇航员被派往木卫二——木星那颗冰壳下可能有液态海洋、也可能有生命的卫星。飞船进入深空后与地球失联。影片由事后回看的方式展开：舱内固定机位、头盔摄像机、着陆器的记录画面，一段一段拼出这趟任务到底发生了什么，以及它为什么没有回来。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>厄瓜多尔导演塞巴斯蒂安·科尔德罗，此前在拉美拍了三部西班牙语长片；《欧罗巴报告》是他第一次拍英语片，也是第一次做科幻。</li><li>剧本由菲利普·盖拉特写；制作方参考了 NASA 与喷气推进实验室的公开数据，木卫二的地表形态按真实测绘图建模。</li><li>全片由舱内固定机位、头盔摄像机与舱外摄影机拍成；失重靠吊威亚与平衡球实拍，进水那场用的是三分之一比例模型。</li><li>吴彦祖演指挥官威廉·徐，是主演名单里唯一的华人脸孔；他大部分时间戴着头盔、在对讲里说话。</li><li>天体物理学家尼尔·德格拉塞·泰森以本人身份出镜（作为受访者），不是客串角色。</li><li>全球票房仅约 12.6 万美元（几乎全靠点播）；2013 年锡切斯电影节最佳影片提名、2014 年布莱伯里奖提名。豆瓣 6.9 / 烂番茄 81% / Metacritic 68 / IMDb 6.4：<b>本期专业评价第二高</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/europa_174772_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/europa_174772_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/europa_174772_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_86255.jpg" alt="" loading="lazy">
+                <div class="p-name">塞巴斯蒂安·科尔德罗 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">厄瓜多尔导演、编剧，此前在厄瓜多尔与墨西哥拍了三部西班牙语长片。《欧罗巴报告》是他第一次拍英语片，也是他第一次做科幻——他把成本压到极低，把力气全花在「像真的」上。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_20511.jpg" alt="" loading="lazy"><span>编年史</span></div><div class="wk"><img src="assets/movies/w_265087.jpg" alt="" loading="lazy"><span>鼠辈</span></div><div class="wk"><img src="assets/movies/w_61539.jpg" alt="" loading="lazy"><span>瑞比亚</span></div><div class="wk"><img src="assets/movies/w_387733.jpg" alt="" loading="lazy"><span>热带生活就是如此</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_20699.jpg" alt="" loading="lazy">
+                <div class="p-name">安娜玛丽亚·马林卡 <span class="p-role">主演（罗莎·达斯科）</span></div>
+              </div>
+              <div class="p-note">罗马尼亚演员。《四月三周两天》（2007 年戛纳金棕榈）、《园丁》。本片她演罗莎·达斯科，飞船的驾驶员，也是最后一段里做出那个决定的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_228150.jpg" alt="" loading="lazy"><span>狂怒</span></div><div class="wk"><img src="assets/movies/w_2009.jpg" alt="" loading="lazy"><span>四月三周两天</span></div><div class="wk"><img src="assets/movies/w_315837.jpg" alt="" loading="lazy"><span>攻壳机动队</span></div><div class="wk"><img src="assets/movies/w_547016.jpg" alt="" loading="lazy"><span>永生守卫</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_64436.jpg" alt="" loading="lazy">
+                <div class="p-name">吴彦祖 <span class="p-role">主演（威廉·徐）</span></div>
+              </div>
+              <div class="p-note">中国香港演员、制片。《新警察故事》《门徒》《荒原》。本片他演指挥官威廉·徐，是主演名单里唯一的华人脸孔；全片他大部分时间戴着头盔，靠声音演。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_338970.jpg" alt="" loading="lazy"><span>古墓丽影：源起之战</span></div><div class="wk"><img src="assets/movies/w_274855.jpg" alt="" loading="lazy"><span>全球风暴</span></div><div class="wk"><img src="assets/movies/w_68735.jpg" alt="" loading="lazy"><span>魔兽</span></div><div class="wk"><img src="assets/movies/w_579047.jpg" alt="" loading="lazy"><span>追忆迷局</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在他们决定继续往下钻的那一刻——前面所有的损失都已经是沉没成本，而他们选择把剩下的资源押在那一个可能上。轻微剧透：这部片把伪纪录片用在了最不适合它的地方：太空里没有人拿着摄影机，所以它只能靠舱内固定机位和记录影像，结果反而比手持更冷。结尾那几秒画面是全片唯一一次给到活的东西，科尔德罗在这里收得非常干净。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「硬科幻怎么把孤独拍出来」的人；能接受节奏慢、几乎没有人物冲突、90 分钟里大部分是技术动作的观众。PG-13，含受伤与死亡画面，建议初中以上观看。内地未映。看完想继续：《月球》《地心引力》《降临》。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/unfr_277685_poster.jpg" alt="解除好友 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 惊悚（美国 · 一个退不出去的群聊）</span><span class="year">2014 · 美国 · 83 分钟 · 内地未映（R 级）</span></div>
+        <h2>解除好友 <span class="en">Unfriended</span></h2>
+        <div class="rates"><span class="rate"><b>6.5</b>豆瓣</span><span class="rate"><b>62%</b>烂番茄</span><span class="rate"><b>59</b>Metacritic</span><span class="rate"><b>5.6</b>IMDb</span></div>
+        <p class="oneline">「这个账号属于一年前自杀的那个人。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>劳拉·巴恩斯自杀一周年那晚，六个高中同学在一个视频群聊里闲聊。群里多了一个没有画面的账号，退不掉、踢不走，账号属于劳拉。它开始一个一个翻出他们没说出口的事：谁上传了那段视频、谁在私信里叫她去死、谁说自己当时不在场。每翻出一个，就少一个人。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>格鲁吉亚裔导演列万·加布里亚泽的长片处女作；制片是《守夜人》《通缉令》的提莫·贝克曼贝托夫，与布伦屋的杰森·布伦。</li><li>成本约 100 万美元，全球票房约 6400 万美元——2015 年回报率最高的恐怖片之一。</li><li>全片只发生在一块电脑屏幕上：视频窗口、社交网站、聊天记录、搜索页。没有一处「摄影机」，叙事全靠鼠标和窗口。</li><li>雪莱·亨尼格演布莱尔，是全片唯一一直在做选择的人；饰演劳拉的海瑟·索思曼几乎只以一张静态头像出现。</li><li>影片 2014 年在加拿大奇幻电影节首映时名为《Cybernatural》，2015 年由环球影业改名《Unfriended》公映。</li><li>豆瓣 6.5 / 烂番茄 62% / Metacritic 59 / IMDb 5.6：<b>专业与观众评价都一般，但形式被反复模仿</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/unfr_277685_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/unfr_277685_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/unfr_277685_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_86688.jpg" alt="" loading="lazy">
+                <div class="p-name">列万·加布里亚泽 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">格鲁吉亚裔导演，此前主要拍广告与短片。《解除好友》是他的长片处女作，也是「桌面电影」这条线上最早被大规模看到的那一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_39253.jpg" alt="" loading="lazy"><span>冒牌教练</span></div><div class="wk"><img src="assets/movies/w_85317.jpg" alt="" loading="lazy"><span>圣诞树2</span></div><div class="wk"><img src="assets/movies/w_248747.jpg" alt="" loading="lazy"><span>圣诞树3</span></div><div class="wk"><img src="assets/movies/w_513204.jpg" alt="" loading="lazy"><span>雷佐</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_444211.jpg" alt="" loading="lazy">
+                <div class="p-name">雪莱·亨尼格 <span class="p-role">主演（布莱尔·莉莉）</span></div>
+              </div>
+              <div class="p-note">美国演员，此前主要在美剧里演出（《少狼》）。本片她演布莱尔，全片唯一一直在做选择的人——她要决定说不说、救谁、以及要不要关掉电脑。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_433310.jpg" alt="" loading="lazy"><span>重返初遇夜</span></div><div class="wk"><img src="assets/movies/w_242512.jpg" alt="" loading="lazy"><span>死亡占卜</span></div><div class="wk"><img src="assets/movies/w_1387382.jpg" alt="" loading="lazy"><span>狩猎季</span></div><div class="wk"><img src="assets/movies/w_877703.jpg" alt="" loading="lazy"><span>少狼：大电影</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_155621.jpg" alt="" loading="lazy">
+                <div class="p-name">蕾妮·奥尔斯特德 <span class="p-role">主演（杰丝·费尔顿）</span></div>
+              </div>
+              <div class="p-note">美国演员、歌手，童星出身。本片她演杰丝，那个把「不是我发的」这句话反复说了半部片的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_10096.jpg" alt="" loading="lazy"><span>女孩梦三十</span></div><div class="wk"><img src="assets/movies/w_9008.jpg" alt="" loading="lazy"><span>惊曝内幕</span></div><div class="wk"><img src="assets/movies/w_9946.jpg" alt="" loading="lazy"><span>魔鬼末日</span></div><div class="wk"><img src="assets/movies/w_436494.jpg" alt="" loading="lazy"><span>野性侵袭</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在「谁上传了那段视频」——答案指向的不是最刻薄的那个人，而是最想被大家喜欢的那个人。轻微剧透：这部片把恐怖片的「凶手」换成了一套机制：在这个房间里，说真话的代价是死，不说的代价也是死，所以它其实是一部关于网络暴力的道德剧。结尾镜头从屏幕里退到屏幕外，是全片唯一一次提醒你：你也在同一个房间里。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「一块电脑桌面怎么撑起 83 分钟」的人；能接受人物讨厌、死亡设计夸张、恐怖桥段重复的观众。R 级，含自杀与惊吓画面，心理承受力弱的慎看。内地未映。看完想继续：《网络谜踪》《解除好友2：暗网》《昆池岩》。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/hard_325348_poster.jpg" alt="硬核亨利 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">动作 / 科幻（俄罗斯 / 美国 · 一双没有脸的眼睛）</span><span class="year">2015 · 俄罗斯 / 美国 · 96 分钟 · 内地未映（R 级）</span></div>
+        <h2>硬核亨利 <span class="en">Hardcore Henry</span></h2>
+        <div class="rates"><span class="rate"><b>7.7</b>豆瓣</span><span class="rate"><b>51%</b>烂番茄</span><span class="rate"><b>51</b>Metacritic</span><span class="rate"><b>6.7</b>IMDb</span></div>
+        <p class="oneline">「你不记得我。我是你妻子。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一个男人醒来，腿是假的、脸还没装好，身边的人告诉他：你叫亨利，你妻子被一个能隔空控物的疯子带走了。他身上装的东西让他能跑能打，但不让他记事。全片就是他从醒过来到结束的这一天，一镜到底的主观视角——你看到的就是他的眼睛，没有剪开的喘息，也没有一个能看到他脸的镜头。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>俄罗斯导演伊利亚·奈舒勒自编自导，改编自他自己乐队的那支短片《Bad Motherfucker》；全片用固定在头部的运动相机拍摄。</li><li>成本约 200 万美元，全球票房约 1680 万美元；2015 年多伦多电影节「午夜疯狂」单元首映并获奖。</li><li>沙尔托·科普雷演吉米——一个不断死掉、又不断换一副身体回来的人；他是全片唯一有台词、有性格的角色。<b>他也出演了本期的《欧罗巴报告》</b>。</li><li>蒂姆·罗斯演亨利的父亲，全片只有一场戏，却是唯一一段不带打斗的。</li><li>全片 96 分钟没有一个客观的第三人称镜头，摄影机的每一次撞击、跌落、翻滚都是真人跑出来的。</li><li>豆瓣 7.7 / 烂番茄 51% / Metacritic 51 / IMDb 6.7：<b>本期落差第二大的一部</b>，豆瓣比烂番茄高出 26 个百分点——华语观众当爽片看，欧美影评嫌它没有故事。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/hard_325348_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/hard_325348_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/hard_325348_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1169024.jpg" alt="" loading="lazy">
+                <div class="p-name">伊利亚·奈舒勒 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">俄罗斯导演、编剧、音乐人，摇滚乐队 Biting Elbows 的主唱。他的短片《Bad Motherfucker》在网上被大量转发之后才有机会拍成长片；《硬核亨利》是他的第一部长片。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_615457.jpg" alt="" loading="lazy"><span>小人物</span></div><div class="wk"><img src="assets/movies/w_749170.jpg" alt="" loading="lazy"><span>国家元首</span></div><div class="wk"><img src="assets/movies/w_606896.jpg" alt="" loading="lazy"><span>急救员</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_82191.jpg" alt="" loading="lazy">
+                <div class="p-name">沙尔托·科普雷 <span class="p-role">主演（吉米）</span></div>
+              </div>
+              <div class="p-note">南非演员。《第九区》《超能查派》《黑镜》。本片他演吉米——一个不断换身体回来的人，也是全片唯一有台词、有性格的角色；<b>他同时出演了本期的《欧罗巴报告》</b>。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_17654.jpg" alt="" loading="lazy"><span>第九区</span></div><div class="wk"><img src="assets/movies/w_198184.jpg" alt="" loading="lazy"><span>超能查派</span></div><div class="wk"><img src="assets/movies/w_102651.jpg" alt="" loading="lazy"><span>沉睡魔咒</span></div><div class="wk"><img src="assets/movies/w_68724.jpg" alt="" loading="lazy"><span>极乐空间</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_58754.jpg" alt="" loading="lazy">
+                <div class="p-name">海莉·班奈特 <span class="p-role">主演（艾丝特尔）</span></div>
+              </div>
+              <div class="p-note">美国演员。《生活残骸》《豪勇七蛟龙》《乡下人的悲歌》。本片她演艾丝特尔，亨利要救回去的那个人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_346685.jpg" alt="" loading="lazy"><span>火车上的女孩</span></div><div class="wk"><img src="assets/movies/w_156022.jpg" alt="" loading="lazy"><span>伸冤人</span></div><div class="wk"><img src="assets/movies/w_586461.jpg" alt="" loading="lazy"><span>吞咽</span></div><div class="wk"><img src="assets/movies/w_333484.jpg" alt="" loading="lazy"><span>豪勇七蛟龙</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在吉米第二次出现——到那时你才明白，亨利不是唯一一个被改造过的人，而改造这件事本身就是那个疯子的生意。轻微剧透：这部片不太像电影，更像一段第一人称的游戏录像，而它很清楚这一点：它把「看不清发生了什么」变成了节奏的一部分。结尾那段从楼上一直摔到地面的长镜头，是全片唯一一次让你意识到这个人有多疼。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「动作片还能怎么拍」的人；能接受几乎没有剧情、角色是工具人、摇晃画面会引起眩晕的观众。R 级，含大量暴力与血腥画面，晕动症患者慎看。内地未映。看完想继续：《升级》《第九区》《杀死比尔》。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/zhongx_510337_poster.jpg" alt="中邪 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 伪纪录片（中国 · 一场不该被拍完的还人）</span><span class="year">2016 · 中国 · 110 分钟（影展版）/ 97 分钟（院线版）· 内地原定 2018-04-04 上映，撤档后未公映</span></div>
+        <h2>中邪 <span class="en">The Possessed</span></h2>
+        <div class="rates"><span class="rate"><b>7.0</b>豆瓣</span><span class="rate"><b>未收录</b>烂番茄</span><span class="rate"><b>未收录</b>Metacritic</span><span class="rate"><b>未收录</b>IMDb</span></div>
+        <p class="oneline">「你们俩别说话，跟在我后面。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>两个大学生要拍一部关于农村算命的纪录片，跟着一位神婆和她丈夫进了一处偏远山庄，要拍一场「还人」——给活着的人驱邪。房东一家人客气得不太对劲，院子里有纸人，屋里有不该打开的门。两个学生继续拍，因为这是他们要的素材；等他们意识到该停的时候，摄影机已经停不下来了。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>马凯自编自导自剪，此前在横店做了五年群众演员；全组 11 个人，其中演员 6 个，都是他在横店认识的群演。</li><li>拍摄成本约 7 万元（其中 2 万元是男主角摔伤后的医药费），拍摄周期 17 天；男主角董天文在拍结尾奔跑戏时跌下山坡摔断了腰，结尾是导演临时改的。</li><li>2016 年在第十届 FIRST 青年电影展首映，拿到最佳艺术探索奖，此后被称为「近二十年最好的国产恐怖片」。</li><li>2016 年腾讯影业买下版权并补拍重剪，院线版从 110 分钟剪到 97 分钟；原定 2018-04-04 上映，上映前三天以「技术原因」撤档，至今没有公映。</li><li>全片用手持摄影机拍成，形式直接借鉴《女巫布莱尔》与《灵动：鬼影实录》，素材却是本地的：还人、纸扎、神婆、驱邪。</li><li>豆瓣 7.0（约 2 万人评价），好于 81% 的恐怖片：<b>本期唯一一部没有海外评分的电影，也是本期争议最小的一部</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/zhongx_510337_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/zhongx_510337_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/zhongx_510337_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1999608.jpg" alt="" loading="lazy">
+                <div class="p-name">马凯 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">中国导演、编剧，在横店做过五年群众演员。《中邪》是他的长片处女作：11 个人、17 天、7 万元拍完，拿到 2016 年第十届 FIRST 青年电影展最佳艺术探索奖。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1053435.jpg" alt="" loading="lazy"><span>了不起的夜晚</span></div><div class="wk"><img src="assets/movies/w_1209609.jpg" alt="" loading="lazy"><span>撞邪</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><div class="p-ava"></div>
+                <div class="p-name">董天文 <span class="p-role">主演（丁鑫）</span></div>
+              </div>
+              <div class="p-note">本片男主角，此前是横店群演。他演丁鑫，拿摄影机的那个学生；拍结尾奔跑戏时跌下山坡摔断了腰，全片结尾因此被临时改过。</div>
+              
+            </div>
+            <div class="person">
+              <div class="p-top"><div class="p-ava"></div>
+                <div class="p-name">何佳 <span class="p-role">主演（刘梦）</span></div>
+              </div>
+              <div class="p-note">本片女主角，此前也是横店群演。她演刘梦，跟着进村、负责提问的那一个；全片她的反应镜头，是观众唯一能「替自己害怕」的地方。</div>
+              
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在两个学生终于承认自己一直在「要素材」——前面所有的犹豫都被这一句话解释了：他们不是被骗进去的，是他们自己不肯走。轻微剧透：马凯最狠的一处不是鬼，是那间屋子里的日常：吃饭、劝酒、说客气话，越客气越不对。结尾那段手持长镜头一路跑进黑暗里，是全片唯一一次把这个形式反过来用——它让你分不清自己是在看，还是在逃。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「国产恐怖片能到什么程度」的人；能接受画面粗糙、表演生涩、方言需要字幕、结局仓促（导演因男主受伤临时改的）的观众。含惊吓与民俗恐怖画面，建议高中以上观看。内地未公映，目前只能通过影展录像与非官方渠道看到，请支持正版。看完想继续：《女巫布莱尔》《灵动：鬼影实录》《咒》。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/medium_745881_poster.jpg" alt="灵媒 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 伪纪录片（泰国 / 韩国 · 一位请错了神的灵媒）</span><span class="year">2021 · 泰国 / 韩国 · 131 分钟 · 内地未映</span></div>
+        <h2>灵媒 <span class="en">The Medium</span></h2>
+        <div class="rates"><span class="rate"><b>6.4</b>豆瓣</span><span class="rate"><b>79%</b>烂番茄</span><span class="rate"><b>未收录</b>Metacritic</span><span class="rate"><b>6.5</b>IMDb</span></div>
+        <p class="oneline">「巴扬神选中了她。或者没有。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>泰国伊桑地区。一个摄制组去拍一位灵媒尼姆——她供奉巴扬神，替人驱邪。她的外甥女敏开始出现异状：说脏话、自残、夜里跑出去、身上出现不属于她的伤。尼姆按老规矩一层层查下去，越查越不对：附在敏身上的不是巴扬神，而那个东西可能已经跟了这个家族好几代人。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>泰国导演班庄·比辛达拿刚（《鬼影》《鬼夫》），这是他第一次拍伪纪录片，也是第一次与韩国团队合作。</li><li>韩国导演罗泓轸出任制片与联合编剧——<b>第 36 期的《追击者》与第 37 期的《黄海》都是他导的</b>；本片为韩泰合拍，由 GDH 559 与 Showbox 出品。</li><li>全片是摄制组视角的伪纪录片，随着拍摄失控一路滑向混乱；班庄刻意保留了大量「采访」和「等待」的段落。</li><li>萨尼·乌托玛演尼姆，是全片唯一一个始终相信自己在做对的事的人，凭此片拿到多个亚洲电影奖项的提名。</li><li>纳瑞拉·库尔蒙科尔佩特演敏，是全片最难受的角色——她要在同一个镜头里演「本人」和「不是本人」。这是她的第一部长片主演。</li><li>全球票房约 883 万美元（其中韩国约 725 万美元），2021 年在富川国际奇幻电影节首映。豆瓣 6.4 / 烂番茄 79% / IMDb 6.5：<b>本期华语观众评分最低，但烂番茄 79% 是本期第二高</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/medium_745881_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/medium_745881_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/medium_745881_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_81251.jpg" alt="" loading="lazy">
+                <div class="p-name">班庄·比辛达拿刚 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">泰国导演、编剧。《鬼影》《鬼夫》——泰国恐怖片这二十年里最卖座的几部大多出自他手。《灵媒》是他第一次拍伪纪录片，也是他第一次与韩国团队合作。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_17111.jpg" alt="" loading="lazy"><span>鬼影</span></div><div class="wk"><img src="assets/movies/w_87436.jpg" alt="" loading="lazy"><span>26种死法</span></div><div class="wk"><img src="assets/movies/w_37973.jpg" alt="" loading="lazy"><span>连体阴</span></div><div class="wk"><img src="assets/movies/w_184219.jpg" alt="" loading="lazy"><span>鬼夫</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_3131642.jpg" alt="" loading="lazy">
+                <div class="p-name">纳瑞拉·库尔蒙科尔佩特 <span class="p-role">主演（敏）</span></div>
+              </div>
+              <div class="p-note">泰国演员。本片她演敏，那个被附身的外甥女；这是她的第一部长片主演，凭此片拿到多个泰国电影奖项的提名。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_959092.jpg" alt="" loading="lazy"><span>极拳攻缉</span></div><div class="wk"><img src="assets/movies/w_1254594.jpg" alt="" loading="lazy"><span>大百足</span></div><div class="wk"><img src="assets/movies/w_1444384.jpg" alt="" loading="lazy"><span>超时空鬼妻</span></div><div class="wk"><img src="assets/movies/w_1301470.jpg" alt="" loading="lazy"><span>重生</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2424471.jpg" alt="" loading="lazy">
+                <div class="p-name">萨尼·乌托玛 <span class="p-role">主演（尼姆）</span></div>
+              </div>
+              <div class="p-note">泰国演员。本片她演尼姆，家族里供奉巴扬神的灵媒，也是全片唯一一个始终相信自己在做对的事的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_670292.jpg" alt="" loading="lazy"><span>AI创世者</span></div><div class="wk"><img src="assets/movies/w_959092.jpg" alt="" loading="lazy"><span>极拳攻缉</span></div><div class="wk"><img src="assets/movies/w_1034335.jpg" alt="" loading="lazy"><span>枕边嫌疑人</span></div><div class="wk"><img src="assets/movies/w_470719.jpg" alt="" loading="lazy"><span>承诺</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在尼姆自己被否定的那一刻——她供奉了一辈子的那位神，可能从头到尾没有选中过她。轻微剧透：这部片把「附身」拍成了一笔代际的债：不是某个人做了什么，是这一家人一直没还完。结尾摄影机掉在地上却没有停止运转、拍下角色视野之外的画面，是这部片最明确的立场——它讲的不是鬼，是信仰塌掉之后剩下什么。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「民俗恐怖能做到多脏多狠」的人；能接受节奏偏慢、131 分钟较长、部分画面会引起不适的观众。含自残、动物伤害与身体恐怖画面，心理承受力弱的慎看。内地未映。看完想继续：《哭声》《鬼影》《昆池岩》。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-12；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>

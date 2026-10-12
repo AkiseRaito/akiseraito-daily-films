@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-10-11 · 第 41 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 10 月 11 日 · 第 41 期 · 已避开往期推荐过的全部 400 部</div>
+  <div>
+    <span class="pill">主题：门从里面锁上 · 十部困在方寸之间的电影（2002–2021）</span>
+    <span class="pill">全部 1990 年后：最早 2002，最晚 2021，按上映年份排列</span>
+    <span class="pill">类型覆盖：惊悚 8 / 剧情 5 / 悬疑 3 / 科幻 2 / 冒险 2 / 恐怖 1 / 犯罪 1</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-11，会随时间变动，仅供参考。<br>
+  这一期的筛选条件只有一条：**出口被封死的那一刻，就是电影开始的地方**。不是「被困之后想办法逃」这么笼统——是那扇门从里面锁上、那块石头压下来、那段楼梯没有尽头，角色手边有什么，就只能用什么。<br>
+  十部全部落在 2002–2021，按上映年份排列。里面有**四间真的门**：安全屋（《战栗空间》）、会收缩的房间（《极限空间》）、卡住的电梯（《电梯里的恶魔》）、以及六间为六个人分别准备的密室（《密室逃生》）；有**三种被困在自然里**的处境：手臂被石头压住（《127小时》）、漂在印度洋上（《一切尽失》）、离沙滩两百码却回不去（《鲨滩》）；还有两部把空间本身做成了循环与骗局（《意外空间》《隧道》）。最新的一部《氧气危机》只有一个低温舱和一个女人——它把这类片的恐怖点从「出不去」改成了「我到底还是不是我」。<br>
+  十位导演全部不同。有一处跨期重合要说明：**丹尼·博伊尔**——上一期（第 40 期）的《惊变28天》出自他手，这一期的《127小时》也是；两部相隔八年，都在拍「绝境是一个物理问题」。另外，《走到尽头》（第 24 期）是本片导演金成勋与河正宇此前的合作，已在主创卡片里如实写出。按 10-02 定的口径，**只按片名去重**。<br>
+  口碑落差如实标注、不做修饰：**《氧气危机》烂番茄 90% 而豆瓣只有 6.5**，是本期专业评价与华语观众落差最大的一部；**《电梯里的恶魔》烂番茄 49%、Metacritic 44**，是本期专业评价最低的一部，但它 80 分钟的密度是本期最高的；**《极限空间》豆瓣 6.7**，是本期评分最低的一部，入选是因为它把「密室」和「解题」这两件事绑得最紧。另需说明：《隧道》在烂番茄上是满分，但只有十几条影评，样本太少，已在卡片里用星号标出。<br>
+  内地引进情况：三部曾在内地大银幕上映（《极限空间》2010-03-04、《鲨滩》2016-09-09、《密室逃生》2019-01-18）；其余七部内地未映，流媒体可看。<br>
+  10 部片名全部为首次出现，无一与往期 400 部重复（比对 `_titles_all.txt` 通过）。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>战栗空间</td><td class="qg">惊悚 / 犯罪（美国 · 一间只对内开门的房间）</td><td class="qr">7.2 / 76% / 65</td></tr><tr><td class="qn">02</td><td>极限空间</td><td class="qg">悬疑 / 惊悚（西班牙 · 一间会往里收的房间）</td><td class="qr">6.7 / 70% / 6.6</td></tr><tr><td class="qn">03</td><td>电梯里的恶魔</td><td class="qg">恐怖 / 悬疑（美国 · 一部停在半空的电梯）</td><td class="qr">6.5 / 49% / 44</td></tr><tr><td class="qn">04</td><td>127小时</td><td class="qg">剧情 / 冒险（美国 / 英国 · 一块石头和一条手臂）</td><td class="qr">8.1 / 93% / 82</td></tr><tr><td class="qn">05</td><td>一切尽失</td><td class="qg">剧情 / 冒险（美国 · 印度洋上的一艘帆船）</td><td class="qr">7.7 / 94% / 87</td></tr><tr><td class="qn">06</td><td>意外空间</td><td class="qg">科幻 / 惊悚（墨西哥 · 一段走不完的楼梯）</td><td class="qr">7.6 / 6.4 / 未收录</td></tr><tr><td class="qn">07</td><td>隧道</td><td class="qg">剧情 / 惊悚（韩国 · 一段塌下来的公路隧道）</td><td class="qr">7.9 / 100%* / 6.8</td></tr><tr><td class="qn">08</td><td>鲨滩</td><td class="qg">惊悚 / 剧情（美国 · 离沙滩两百码的一块礁石）</td><td class="qr">7.1 / 78% / 59</td></tr><tr><td class="qn">09</td><td>密室逃生</td><td class="qg">惊悚 / 悬疑（美国 / 南非 · 六间为六个人准备的房间）</td><td class="qr">7.1 / 51% / 48</td></tr><tr><td class="qn">10</td><td>氧气危机</td><td class="qg">科幻 / 惊悚（法国 / 美国 · 一台只剩百分之三十的低温舱）</td><td class="qr">6.5 / 90% / 67</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/panic_4547_poster.jpg" alt="战栗空间 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 犯罪（美国 · 一间只对内开门的房间）</span><span class="year">2002 · 美国 · 112 分钟 · 内地未映（R 级）</span></div>
+        <h2>战栗空间 <span class="en">Panic Room</span></h2>
+        <div class="rates"><span class="rate"><b>7.2</b>豆瓣</span><span class="rate"><b>76%</b>烂番茄</span><span class="rate"><b>65</b>Metacritic</span><span class="rate"><b>6.8</b>IMDb</span></div>
+        <p class="oneline">「它本来是这栋房子里最安全的房间。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>刚离婚的梅格带着女儿莎拉搬进纽约一栋四层褐石公寓。这栋房子里有一间安全屋：钢门、独立通风、一整面监控屏，以及一条只能打出去的电话线。入住第一晚，三个男人进来了。母女俩退进安全屋，门从里面锁上——而他们要的东西，就锁在那间屋子里。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>大卫·芬奇执导，大卫·柯普编剧；成本约 4800 万美元，全球票房约 1.97 亿美元。</li><li>全片几乎只在一栋房子里完成。剧组在洛杉矶搭了完整的四层剖面布景，摄影机能从天花板一路穿到地板——那几段「穿墙」的长镜头是实拍加数字合成的连续运动，不是切出来的。</li><li>朱迪·福斯特是在原定主演因伤退出之后接手的，出演时 39 岁；全片她的表演几乎全靠声音、呼吸和手完成。</li><li>克里斯汀·斯图尔特出演时 11 岁，演一个随时需要注射胰岛素的糖尿病女孩——这个设定不是装饰，后半段它变成了唯一的破局工具。</li><li>福里斯特·惠特克演的伯纳姆是三人里唯一不想伤人的人；这间安全屋的设计标准正是他自己也进不去。</li><li>豆瓣 7.2 / 烂番茄 76% / Metacritic 65 / IMDb 6.8：专业评价不差，但华语观众对「芬奇加密室」的期待更高。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/panic_4547_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/panic_4547_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/panic_4547_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_7467.jpg" alt="" loading="lazy">
+                <div class="p-name">大卫·芬奇 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、制片。《七宗罪》《搏击俱乐部》《十二宫》《社交网络》《消失的爱人》《曼克》。本片是他的第九部长片，也是他唯一一次把整部电影压在一栋房子里——他把「空间即叙事」这件事做到了最极端的一次。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_550.jpg" alt="" loading="lazy"><span>搏击俱乐部</span></div><div class="wk"><img src="assets/movies/w_807.jpg" alt="" loading="lazy"><span>七宗罪</span></div><div class="wk"><img src="assets/movies/w_210577.jpg" alt="" loading="lazy"><span>消失的爱人</span></div><div class="wk"><img src="assets/movies/w_4922.jpg" alt="" loading="lazy"><span>本杰明·巴顿奇事</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1038.jpg" alt="" loading="lazy">
+                <div class="p-name">朱迪·福斯特 <span class="p-role">主演（梅格·阿尔特曼）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《出租车司机》《沉默的羔羊》（奥斯卡最佳女主角）、《超时空接触》《杀戮》。本片她演梅格——一个刚离婚、还没完全站稳的母亲。全片她几乎没有离开那间屋子，全部表演靠声音、呼吸和手完成。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_274.jpg" alt="" loading="lazy"><span>沉默的羔羊</span></div><div class="wk"><img src="assets/movies/w_103.jpg" alt="" loading="lazy"><span>出租车司机</span></div><div class="wk"><img src="assets/movies/w_686.jpg" alt="" loading="lazy"><span>超时空接触</span></div><div class="wk"><img src="assets/movies/w_68724.jpg" alt="" loading="lazy"><span>极乐空间</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_37917.jpg" alt="" loading="lazy">
+                <div class="p-name">克里斯汀·斯图尔特 <span class="p-role">主演（莎拉·阿尔特曼）</span></div>
+              </div>
+              <div class="p-note">美国演员。《荒野生存》《暮光之城》系列、《锡尔斯玛利亚》《斯宾塞》。本片她演莎拉——一个随身带着胰岛素泵的十一岁女孩。出演时她还没演《暮光之城》，这是她第一次在大制作里担纲。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_8966.jpg" alt="" loading="lazy"><span>暮光之城</span></div><div class="wk"><img src="assets/movies/w_18239.jpg" alt="" loading="lazy"><span>暮光之城2：新月</span></div><div class="wk"><img src="assets/movies/w_50620.jpg" alt="" loading="lazy"><span>暮光之城4：破晓（下）</span></div><div class="wk"><img src="assets/movies/w_50619.jpg" alt="" loading="lazy"><span>暮光之城4：破晓（上）</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在「他们要的不是钱」。三人闯进来是为了前屋主藏在那间屋子里的东西，而知道这件事的人，恰恰是把房子卖给梅格的那一位。轻微剧透：芬奇把这场博弈做成了一整套空间算术——谁在哪一层、谁离那扇门最近、监控屏上还剩几个格子能看。第二处转折是梅格终于离开安全屋的那一刻：她不是被逼出来的，是女儿的血糖撑不住了。结尾母女俩坐在门外的台阶上、房子换了主人，是全片唯一一次把镜头拉远。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「一个空间能被拍出多少种走位」的人；能接受人物动机简单、中段略长、112 分钟几乎全在室内的观众。R 级，含暴力与血腥画面，建议小学以上陪同观看。内地未映，流媒体可看。看完想继续：《活埋》《狙击电话亭》《科洛弗道10号》。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/fermat_5595_poster.jpg" alt="极限空间 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 惊悚（西班牙 · 一间会往里收的房间）</span><span class="year">2007 · 西班牙 · 89 分钟 · 内地 2010-03-04 公映</span></div>
+        <h2>极限空间 <span class="en">La habitación de Fermat</span></h2>
+        <div class="rates"><span class="rate"><b>6.7</b>豆瓣</span><span class="rate"><b>70%</b>烂番茄</span><span class="rate"><b>6.6</b>IMDb</span><span class="rate"><b>未收录</b>Metacritic</span></div>
+        <p class="oneline">「墙又往里收了一格。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>四个人收到同一封邀请函，赴约时要用假名：伽罗华、希尔伯特、帕斯卡、奥莉薇娅——借的都是数学家的名字。聚齐之后他们发现，自己被锁在一间仓库一样的屋子里，桌上每隔几分钟出现一道新的谜题；答错或者超时，四面墙就往里收一段。他们必须先弄清楚一件事：这四个人之间到底有什么共同点。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>路易斯·佩德拉希塔与罗德里戈·索佩尼亚联合编导，两人此前在西班牙做谜题与魔术类电视节目——这不是跨界，是把老本行搬进了电影。</li><li>成本极低，主要场景只有一间会移动的房间；那面墙是靠液压装置真的推过来的，演员是真的被挤到。</li><li>片中的谜题都是真实可解的，四个代号分别借自数学史上的名字；这不是随手起的绰号，后面有一道题要靠它。</li><li>费德里科·卢皮演的「费马」是阿根廷老牌演员，他是全片唯一一个始终站在房间之外的人。</li><li>本片 2007 年在西班牙锡切斯电影节首映，之后由网飞在全球范围内上线。</li><li>豆瓣 6.7 / 烂番茄 70% / IMDb 6.6：**本期评分最低的一部**，入选是因为它把「密室」和「解题」这两件事绑得最紧。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/fermat_5595_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/fermat_5595_still2.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_44263.jpg" alt="" loading="lazy">
+                <div class="p-name">路易斯·佩德拉希塔 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">西班牙编剧、导演，长期与罗德里戈·索佩尼亚搭档做谜题与魔术类电视节目。《极限空间》是他们第一次把这些手法做成一部长片：一个房间、四个人、几道题。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_709664.jpg" alt="" loading="lazy"><span>Penn &amp;amp; Teller: Try This at Home</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1604.jpg" alt="" loading="lazy">
+                <div class="p-name">路易斯·奥马 <span class="p-role">主演（希尔伯特）</span></div>
+              </div>
+              <div class="p-note">西班牙演员。《不良教育》《吾栖之肤》《朱莉娅的眼睛》。本片他演希尔伯特——四人里年纪最大、也最先把「我们之中有人在撒谎」这句话说出口的那一位。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_52274.jpg" alt="" loading="lazy"><span>茱莉娅的眼睛</span></div><div class="wk"><img src="assets/movies/w_8088.jpg" alt="" loading="lazy"><span>破碎的拥抱</span></div><div class="wk"><img src="assets/movies/w_140.jpg" alt="" loading="lazy"><span>不良教育</span></div><div class="wk"><img src="assets/movies/w_77561.jpg" alt="" loading="lazy"><span>伊娃</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_17094.jpg" alt="" loading="lazy">
+                <div class="p-name">费德里科·卢皮 <span class="p-role">主演（费马）</span></div>
+              </div>
+              <div class="p-note">阿根廷演员。《官方说法》《潘神的迷宫》《哭泣的女人》。本片他演费马——那个始终站在房间之外、用对讲机出题的人。他 2017 年去世，这是他晚期最被人记得的一部西班牙片。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_11655.jpg" alt="" loading="lazy"><span>魔鬼银爪</span></div><div class="wk"><img src="assets/movies/w_1433.jpg" alt="" loading="lazy"><span>鬼童院</span></div><div class="wk"><img src="assets/movies/w_1417.jpg" alt="" loading="lazy"><span>潘神的迷宫</span></div><div class="wk"><img src="assets/movies/w_394374.jpg" alt="" loading="lazy"><span>隧道尽头</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在最后一道题，而在四人终于承认自己撒了谎——他们不是被随机挑中的，四个人各自欠着同一场事故。轻微剧透：这部片真正的机关是时间：每道题的倒计时不是装饰，墙的移动速度是按答题进度算的，所以你看到的每一次收缩都是他们自己造成的。结尾那个把门打开的装置，是四人手里各自那件东西拼起来的——这个设计笨，但很诚实。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「数学题怎么变成惊悚片的节拍」的人；能接受人物偏扁平、逻辑有几处硬伤、89 分钟里大部分时间在争吵的观众。无血腥画面，含少量暴力与惊吓，适合初中以上观看。内地 2010-03-04 公映过，流媒体可看。看完想继续：《心慌方》《终极面试》《彗星来的那一夜》。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/devil_44040_poster.jpg" alt="电梯里的恶魔 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 悬疑（美国 · 一部停在半空的电梯）</span><span class="year">2010 · 美国 · 80 分钟 · 内地未映（PG-13）</span></div>
+        <h2>电梯里的恶魔 <span class="en">Devil</span></h2>
+        <div class="rates"><span class="rate"><b>6.5</b>豆瓣</span><span class="rate"><b>49%</b>烂番茄</span><span class="rate"><b>44</b>Metacritic</span><span class="rate"><b>6.3</b>IMDb</span></div>
+        <p class="oneline">「灯每灭一次，就少一个人。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>费城一栋办公楼里，五个人先后走进同一部电梯。电梯卡在半空，维修工修不好，保安也叫不来。灯第一次熄灭之后，其中一个人背后多了一道伤口。楼下的警探博登通过监控和对讲看着这一切，慢慢意识到：这五个人不是随机凑到一起的。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>故事与制片来自沙马兰，导演是约翰·埃里克·道达尔；这是他规划的「夜间编年史」系列的第一部，后面两部没有拍成。</li><li>成本约 1000 万美元，北美票房约 3360 万美元，全球约 6340 万美元——以恐怖片的标准看是很划算的一笔。</li><li>全片 80 分钟，几乎全部发生在一部电梯轿厢和一间保安室里；那部电梯是按真实比例搭的，能真的上下移动一小段。</li><li>克里斯·梅西纳演的博登警探是唯一一个在电梯外的人——他的那条线与轿厢里的那条线同时推进，也是全片唯一的外部视角。</li><li>罗根·马歇尔-格林演的修理工是全片最后一个还站着的人，他凭这个角色拿到当年恐怖片奖项的最佳男配角提名。</li><li>豆瓣 6.5 / 烂番茄 49% / Metacritic 44 / IMDb 6.3：**本期专业评价最低的一部**，但 80 分钟的密度是本期最高的。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/devil_44040_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/devil_44040_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/devil_44040_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_77147.jpg" alt="" loading="lazy">
+                <div class="p-name">约翰·埃里克·道达尔 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧，长期与弟弟德鲁·道达尔合作。《隔离区》《巴黎地下墓穴》《无处可逃》《波基普西录像带》。本片他用一台始终在动的摄影机，把一部电梯拍成了一间审讯室。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_256274.jpg" alt="" loading="lazy"><span>巴黎地下墓穴</span></div><div class="wk"><img src="assets/movies/w_192141.jpg" alt="" loading="lazy"><span>无处可逃</span></div><div class="wk"><img src="assets/movies/w_13812.jpg" alt="" loading="lazy"><span>隔离区</span></div><div class="wk"><img src="assets/movies/w_38410.jpg" alt="" loading="lazy"><span>波基普西录像带</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11614.jpg" alt="" loading="lazy">
+                <div class="p-name">M·奈特·沙马兰 <span class="p-role">编剧 / 制片</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、制片。《灵异第六感》《不死劫》《天兆》《分裂》。本片他只出任编剧与制片，把导演交给道达尔——这是他第一次把自己只写不导的项目交出去。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_381288.jpg" alt="" loading="lazy"><span>分裂</span></div><div class="wk"><img src="assets/movies/w_745.jpg" alt="" loading="lazy"><span>第六感</span></div><div class="wk"><img src="assets/movies/w_9741.jpg" alt="" loading="lazy"><span>不死劫</span></div><div class="wk"><img src="assets/movies/w_450465.jpg" alt="" loading="lazy"><span>玻璃先生</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_130253.jpg" alt="" loading="lazy">
+                <div class="p-name">罗根·马歇尔-格林 <span class="p-role">主演（托尼）</span></div>
+              </div>
+              <div class="p-note">美国演员。《普罗米修斯》《升级》《蜘蛛侠：英雄归来》。本片他演托尼——一个电梯修理工，也是最后一个还站着的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_500664.jpg" alt="" loading="lazy"><span>升级</span></div><div class="wk"><img src="assets/movies/w_306947.jpg" alt="" loading="lazy"><span>致命邀请</span></div><div class="wk"><img src="assets/movies/w_70981.jpg" alt="" loading="lazy"><span>普罗米修斯</span></div><div class="wk"><img src="assets/movies/w_315635.jpg" alt="" loading="lazy"><span>蜘蛛侠：英雄归来</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在灯第三次熄灭之前——出事的顺序不是上电梯的顺序，而是「谁在隐瞒什么」。轻微剧透：这部片把恐怖片的机制改成了一套算术：每个人都有一个不肯说出口的错处，而那个东西正在按次序被取走。结尾那句宽恕来得很快、也很直接，是它被批评最多的地方，但它正是这部片真正想说的那句话。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「80 分钟不喘气」的人；能接受人物刻画单薄、寓意比较直白、结局偏说教的观众。PG-13，含惊吓与血腥画面，建议初中以上观看。内地未映，流媒体可看。看完想继续：《心慌方》《1408幻影凶间》《活埋》。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/h127_44115_poster.jpg" alt="127小时 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 冒险（美国 / 英国 · 一块石头和一条手臂）</span><span class="year">2010 · 美国 / 英国 · 94 分钟 · 内地未映（R 级）</span></div>
+        <h2>127小时 <span class="en">127 Hours</span></h2>
+        <div class="rates"><span class="rate"><b>8.1</b>豆瓣</span><span class="rate"><b>93%</b>烂番茄</span><span class="rate"><b>82</b>Metacritic</span><span class="rate"><b>7.6</b>IMDb</span></div>
+        <p class="oneline">「这块石头从几十亿年前就在等我。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>2003 年 4 月，阿伦独自进犹他州的蓝约翰峡谷，没有告诉任何人。一块几百公斤的石头落下，压住了他的右前臂。他手上只有一个急救包、一根登山绳、一把 8 厘米的小折刀和一天的口粮。第五天，他做了一个决定。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>丹尼·博伊尔执导并与西蒙·博福伊共同编剧，改编自阿伦·罗斯顿本人的回忆录。</li><li>成本约 1800 万美元，全球票房约 6070 万美元；第 83 届奥斯卡六项提名，包括最佳影片与最佳男主角。</li><li>全片几乎只有一个演员和一个场景，靠剪辑、分屏与主观镜头撑起来——博伊尔说过这是他拍过最不依赖场面的一部。</li><li>真实的阿伦·罗斯顿在片尾短暂出镜；他 2003 年 5 月 1 日断臂自救，之后继续登山。</li><li>断臂那一段用的是实拍加局部假肢，声音是另外做出来的——当年多个放映场有观众晕倒的记录。</li><li>豆瓣 8.1 / 烂番茄 93% / Metacritic 82 / IMDb 7.6：**本期专业评分最高的一部**。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/h127_44115_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/h127_44115_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/h127_44115_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2034.jpg" alt="" loading="lazy">
+                <div class="p-name">丹尼·博伊尔 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">英国导演、编剧、制片。《浅坟》《猜火车》《海滩》《惊变28天》《太阳浩劫》《贫民窟的百万富翁》。**上一期（第 40 期）的《惊变28天》也是他导的**——两部相隔八年，共同点是都用粗糙的质感、都把绝境当成一个物理问题来拍。本片他把几乎没有情节的真实事件，做成了一部靠剪辑推进的电影。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_12405.jpg" alt="" loading="lazy"><span>贫民窟的百万富翁</span></div><div class="wk"><img src="assets/movies/w_627.jpg" alt="" loading="lazy"><span>猜火车</span></div><div class="wk"><img src="assets/movies/w_170.jpg" alt="" loading="lazy"><span>惊变28天</span></div><div class="wk"><img src="assets/movies/w_1907.jpg" alt="" loading="lazy"><span>海滩</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_17051.jpg" alt="" loading="lazy">
+                <div class="p-name">詹姆斯·弗兰科 <span class="p-role">主演（阿伦·罗斯顿）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演、作家。《蜘蛛侠》系列、《菠萝快车》《米尔克》《灾难艺术家》。本片他演阿伦——全片 94 分钟里他有八十多分钟是一个人，这次演出为他带来奥斯卡最佳男主角提名。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_109414.jpg" alt="" loading="lazy"><span>世界末日</span></div><div class="wk"><img src="assets/movies/w_68728.jpg" alt="" loading="lazy"><span>魔境仙踪</span></div><div class="wk"><img src="assets/movies/w_61791.jpg" alt="" loading="lazy"><span>猩球崛起</span></div><div class="wk"><img src="assets/movies/w_228967.jpg" alt="" loading="lazy"><span>刺杀金正恩</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_51072.jpg" alt="" loading="lazy">
+                <div class="p-name">凯特·玛拉 <span class="p-role">主演（克里斯蒂）</span></div>
+              </div>
+              <div class="p-note">美国演员。《断背山》《社交网络》《纸牌屋》《火星救援》。本片她演克里斯蒂——阿伦进峡谷前一天遇到的两个女孩之一。她的戏只有几分钟，却是全片唯一一段「他本来可以不一个人」的证据。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_286217.jpg" alt="" loading="lazy"><span>火星救援</span></div><div class="wk"><img src="assets/movies/w_166424.jpg" alt="" loading="lazy"><span>神奇四侠</span></div><div class="wk"><img src="assets/movies/w_10138.jpg" alt="" loading="lazy"><span>钢铁侠2</span></div><div class="wk"><img src="assets/movies/w_377264.jpg" alt="" loading="lazy"><span>摩根</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在那把小刀，而在他终于接受「没有人会来」——前半小时一直在铺垫他的性格：不告而别、不接电话、习惯一个人。轻微剧透：博伊尔把「渴」拍得比「疼」更狠；他用那台摄像机录下遗言的一段，是全片最安静也最难受的地方。结尾他爬出峡谷、在岩壁上看见自己刻下的名字，是这部片唯一一次允许自己抒情。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「一个人能撑到什么程度」的人；能接受全片几乎没有对话、中段极度压抑、断臂段落画面直接的观众。R 级，含自残与血腥，心理承受力弱的慎看。内地未映，流媒体可看。看完想继续：《荒野生存》《火星救援》《一切尽失》。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/lost_152747_poster.jpg" alt="一切尽失 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 冒险（美国 · 印度洋上的一艘帆船）</span><span class="year">2013 · 美国 · 106 分钟 · 内地未映（PG-13）</span></div>
+        <h2>一切尽失 <span class="en">All Is Lost</span></h2>
+        <div class="rates"><span class="rate"><b>7.7</b>豆瓣</span><span class="rate"><b>94%</b>烂番茄</span><span class="rate"><b>87</b>Metacritic</span><span class="rate"><b>6.9</b>IMDb</span></div>
+        <p class="oneline">「醒来的时候，水已经到膝盖了。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>印度洋，距苏门答腊海峡一千七百海里。一个独自驾帆船的人醒来发现船在进水——撞上了一个漂在海上的集装箱。他堵住破口、修好电台、爬上救生筏；然后风暴来了，然后鲨鱼来了，然后路过的货轮没有看见他。全片他有一句台词。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>尚多尔自编自导，这是他的第二部长片，前一部是同样「一个人被困在系统里」的《商海通牒》。</li><li>成本约 850 万美元；罗伯特·雷德福出演时 77 岁，凭此片拿到金球奖剧情类最佳男主角提名。</li><li>剧本里这个人物没有名字，字幕上写的就是「我们的男人」；全片对白只有片头那段画外音之后的一句。</li><li>大量海上镜头是实景拍摄：剧组在巴哈马与墨西哥外海真的把船弄沉、把筏子弄翻，雷德福自己在水里完成了大部分动作。</li><li>配乐由一支美国独立乐队的主唱完成，是这部片里唯一一处「还有别人在场」的声音。</li><li>豆瓣 7.7 / 烂番茄 94% / Metacritic 87 / IMDb 6.9：**烂番茄 94% 是本期最高**。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/lost_152747_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/lost_152747_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/lost_152747_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_556172.jpg" alt="" loading="lazy">
+                <div class="p-name">J·C·尚多尔 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、制片。《商海通牒》《一切尽失》《三方国界》。他早期的两部作品都是「一个人被困在系统里」：前一部困在一间交易室，这一部困在一艘船上。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_399361.jpg" alt="" loading="lazy"><span>三方国界</span></div><div class="wk"><img src="assets/movies/w_539972.jpg" alt="" loading="lazy"><span>猎人克莱文</span></div><div class="wk"><img src="assets/movies/w_50839.jpg" alt="" loading="lazy"><span>商海通牒</span></div><div class="wk"><img src="assets/movies/w_241239.jpg" alt="" loading="lazy"><span>至暴之年</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4135.jpg" alt="" loading="lazy">
+                <div class="p-name">罗伯特·雷德福 <span class="p-role">主演（我们的男人）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演、制片，圣丹斯电影节创办人。《虎豹小霸王》《骗中骗》《总统班底》《走出非洲》；1981 年凭《普通人》拿到奥斯卡最佳导演。本片他演那个没有名字的男人——106 分钟，一句台词。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_100402.jpg" alt="" loading="lazy"><span>美国队长2</span></div><div class="wk"><img src="assets/movies/w_1535.jpg" alt="" loading="lazy"><span>间谍游戏</span></div><div class="wk"><img src="assets/movies/w_4478.jpg" alt="" loading="lazy"><span>桃色交易</span></div><div class="wk"><img src="assets/movies/w_606.jpg" alt="" loading="lazy"><span>走出非洲</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在救生筏第二次被掀翻之后——到那时你已经明白，这部片不会派来任何外部救援。尚多尔把「求生」拍成了一连串具体的技术动作：剪纸板、接水管、算淡水、记天数。轻微剧透：结尾他把手伸向水面下那一点光的方向，画面在这里切断；不说他有没有活下来，是这部片最后的一点温柔。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「几乎无台词也能撑满 106 分钟」的人；能接受全片只有一个角色、节奏缓慢、结局不作交代的观众。PG-13，含海难与受伤画面，适合小学以上观看。内地未映。看完想继续：《少年派的奇幻漂流》《127小时》《地心引力》。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/incid_264397_poster.jpg" alt="意外空间 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 惊悚（墨西哥 · 一段走不完的楼梯）</span><span class="year">2014 · 墨西哥 · 100 分钟 · 内地未映</span></div>
+        <h2>意外空间 <span class="en">El Incidente</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>6.4</b>IMDb</span><span class="rate"><b>未收录</b>烂番茄</span><span class="rate"><b>未收录</b>Metacritic</span></div>
+        <p class="oneline">「第九层之后，还是第九层。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>两条线同时展开。一条：一对兄弟拿了来路不明的钱，警察追上门，三个人在楼梯间里跑，然后楼梯就再也没有尽头——九层之后还是九层。另一条：一家人开车出城，公路两边的加油站和便利店永远是同一家。他们都出不去，而外面的时间照常走。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>伊萨克·厄兹本自编自导，这是他的长片处女作，此后他又拍了《相似者》与《镜像世界》。</li><li>全片用西班牙语拍摄，成本极低；楼梯间与公路两段是分开搭的景，靠剪辑对齐。</li><li>楼梯那一段里，弟弟在循环里过了三十五年；公路那一段里，那一家人在车里重复经过同一个加油站——两边的时间尺度不一样，却被剪成了同时发生。</li><li>胡伯托·布斯托演弟弟，是这条线里唯一一个坚持在墙上刻字记天数的人。</li><li>劳尔·门德斯演的警察是唯一一个从「外面」追进来的人；他进来之后，就再也没能出去。</li><li>豆瓣 7.6 / IMDb 6.4：华语观众评分明显高于欧美，很多人把它和《恐怖游轮》放在一起谈。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/incid_264397_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/incid_264397_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/incid_264397_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1309478.jpg" alt="" loading="lazy">
+                <div class="p-name">伊萨克·厄兹本 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">墨西哥导演、编剧、制片。《意外空间》是他的长片处女作，此后拍了《相似者》与《镜像世界》。他习惯用单一空间承载一整部电影，是墨西哥类型片这一代里最受关注的名字之一。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_943221.jpg" alt="" loading="lazy"><span>邪眼</span></div><div class="wk"><img src="assets/movies/w_426793.jpg" alt="" loading="lazy"><span>镜像世界</span></div><div class="wk"><img src="assets/movies/w_268105.jpg" alt="" loading="lazy"><span>相似者</span></div><div class="wk"><img src="assets/movies/w_597785.jpg" alt="" loading="lazy"><span>死二月</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_266.jpg" alt="" loading="lazy">
+                <div class="p-name">温贝托·布斯托 <span class="p-role">主演（弟弟）</span></div>
+              </div>
+              <div class="p-note">墨西哥演员，长期在墨西哥影视与舞台剧中演出。本片他演弟弟——楼梯循环里唯一一个坚持在墙上刻下天数的人，也是全片最不肯放弃记忆的那一个。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_55.jpg" alt="" loading="lazy"><span>爱情是狗娘</span></div><div class="wk"><img src="assets/movies/w_460316.jpg" alt="" loading="lazy"><span>爷们儿点</span></div><div class="wk"><img src="assets/movies/w_987400.jpg" alt="" loading="lazy"><span>阿兹特克蝙蝠侠：帝国冲突</span></div><div class="wk"><img src="assets/movies/w_268105.jpg" alt="" loading="lazy"><span>相似者</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_18463.jpg" alt="" loading="lazy">
+                <div class="p-name">劳尔·门德斯 <span class="p-role">主演（警察）</span></div>
+              </div>
+              <div class="p-note">墨西哥演员。《意外空间》之外，长期在墨西哥电影与剧集中出演。本片他演那名警察——唯一一个从外面追进来的人，进来之后就再也没能出去。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1656.jpg" alt="" loading="lazy"><span>佐罗传奇</span></div><div class="wk"><img src="assets/movies/w_890771.jpg" alt="" loading="lazy"><span>狂暴黑鲨</span></div><div class="wk"><img src="assets/movies/w_20015.jpg" alt="" loading="lazy"><span>鬼蜮失魂地</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在两条线终于被接上的那一刻——你原以为是两个故事，其实是同一个人在不同年纪的两种处境。轻微剧透：这部片把「循环」做成了一个关于习惯的寓言：困住他们的不是楼梯和公路，是他们自己重复了几十年的那套反应。结尾那个终于走出楼梯间的人，做的第一件事不是跑，是回头看了一眼。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「低成本科幻能想到什么程度」的人；能接受节奏偏慢、逻辑需要自己补、100 分钟里两条线交替推进的观众。无血腥画面，含少量暴力与惊吓，建议初中以上观看。内地未映，流媒体可看。看完想继续：《恐怖游轮》《彗星来的那一夜》《前目的地》。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/tunnel_390497_poster.jpg" alt="隧道 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 惊悚（韩国 · 一段塌下来的公路隧道）</span><span class="year">2016 · 韩国 · 126 分钟 · 内地未映</span></div>
+        <h2>隧道 <span class="en">Tunnel</span></h2>
+        <div class="rates"><span class="rate"><b>7.9</b>豆瓣</span><span class="rate"><b>100%*</b>烂番茄</span><span class="rate"><b>6.8</b>IMDb</span><span class="rate"><b>未收录</b>Metacritic</span></div>
+        <p class="oneline">「您好，是救援队吗。我在隧道里面。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>汽车销售员李正洙买了蛋糕，赶回家给女儿过生日。车进隧道的时候，隧道塌了。他被困在车里，手机只剩一点电，身边只有一瓶水、一个蛋糕和一条狗。隧道外面，救援队挖了三十五天，媒体直播了三十五天，官员来合影了三十五天。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>金成勋自编自导；他与河正宇此前合作的《走到尽头》也是「一个人被卡住」的故事，那一部卡在一场葬礼和一场追车里。</li><li>成本约 1000 万美元，韩国观影人次约 712 万，是 2016 年韩国本土票房前十。</li><li>河正宇出演时 38 岁，全片近一半时间在一辆车里完成；隧道搭了一段实景，其余靠灯光与尘土做出来。</li><li>裴斗娜演妻子世贤，是全片唯一一个始终在做决定的人——她签救援同意书，也对媒体发火。</li><li>吴达洙演救援队队长，他与河正宇、裴斗娜的对手戏几乎全部发生在隧道之外。</li><li>豆瓣 7.9 / IMDb 6.8：华语观众评分明显更高；这部片的讽刺对象在任何地方都成立。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/tunnel_390497_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/tunnel_390497_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/tunnel_390497_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1135240.jpg" alt="" loading="lazy">
+                <div class="p-name">金成勋 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">韩国导演、编剧。《走到尽头》《隧道》——两部都是「一个人被卡住」的故事，前一部卡在一场葬礼和一场追车里，这一部卡在一段隧道里。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_845222.jpg" alt="" loading="lazy"><span>尸战朝鲜：雅信传</span></div><div class="wk"><img src="assets/movies/w_269494.jpg" alt="" loading="lazy"><span>走到尽头</span></div><div class="wk"><img src="assets/movies/w_581395.jpg" alt="" loading="lazy"><span>非官方行动</span></div><div class="wk"><img src="assets/movies/w_373556.jpg" alt="" loading="lazy"><span>爱情缺乏对两个男人的影响</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_75913.jpg" alt="" loading="lazy">
+                <div class="p-name">河正宇 <span class="p-role">主演（李正洙）</span></div>
+              </div>
+              <div class="p-note">韩国演员、导演。《追击者》《黄海》《柏林》《与犯罪的战争》《暗杀》。本片他演李正洙——一个普通得不能再普通的汽车销售员。全片近一半时间他在一辆车里，对手戏的对象是一条狗和一部快没电的手机。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_290098.jpg" alt="" loading="lazy"><span>小姐</span></div><div class="wk"><img src="assets/movies/w_397567.jpg" alt="" loading="lazy"><span>与神同行：罪与罚</span></div><div class="wk"><img src="assets/movies/w_13855.jpg" alt="" loading="lazy"><span>追击者</span></div><div class="wk"><img src="assets/movies/w_518068.jpg" alt="" loading="lazy"><span>与神同行2：因与缘</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_21688.jpg" alt="" loading="lazy">
+                <div class="p-name">裴斗娜 <span class="p-role">主演（世贤）</span></div>
+              </div>
+              <div class="p-note">韩国演员。《汉江怪物》《空气人偶》《云图》《王国》《秘密森林》。本片她演世贤——李正洙的妻子，全片唯一一个既要签字、又要对着镜头发火的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_83542.jpg" alt="" loading="lazy"><span>云图</span></div><div class="wk"><img src="assets/movies/w_1255.jpg" alt="" loading="lazy"><span>汉江怪物</span></div><div class="wk"><img src="assets/movies/w_4689.jpg" alt="" loading="lazy"><span>我要复仇</span></div><div class="wk"><img src="assets/movies/w_76757.jpg" alt="" loading="lazy"><span>木星上行</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在他被挖出来，而在隧道外那三十五天里发生的事：救援预算被算成「值不值」，官员来合影，记者为了独家把钻头都堵住。轻微剧透：金成勋把这部片拍成了一部黑色喜剧——里面的人在拼命活着，外面的人在拼命作秀，两条线越往后越荒诞。结尾他走出隧道、对着镜头说的那句，是这部片留给现实的一句话。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「灾难片怎么被拍成社会讽刺」的人；能接受中段节奏偏长、幽默与沉重交替、126 分钟的观众。含坍塌与受伤画面，无血腥，适合小学以上观看。内地未映，流媒体可看。看完想继续：《釜山行》《走到尽头》《恐怖直播》。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/shallow_332567_poster.jpg" alt="鲨滩 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 剧情（美国 · 离沙滩两百码的一块礁石）</span><span class="year">2016 · 美国 · 86 分钟 · 内地 2016-09-09 公映</span></div>
+        <h2>鲨滩 <span class="en">The Shallows</span></h2>
+        <div class="rates"><span class="rate"><b>7.1</b>豆瓣</span><span class="rate"><b>78%</b>烂番茄</span><span class="rate"><b>59</b>Metacritic</span><span class="rate"><b>6.3</b>IMDb</span></div>
+        <p class="oneline">「就两百码。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>南希来到母亲生前最喜欢的一片海滩冲浪。她在离岸两百码的地方被什么东西咬了一口，爬上一块露出海面的礁石。两百码，游过去只要几分钟——但中间隔着一头大白鲨。潮水正在涨上来，天黑之前这块礁石会被淹掉。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>佐米·希尔拉执导，安东尼·贾斯温斯基编剧；成本约 1700 万美元，全球票房约 1.19 亿美元。</li><li>全片主要场景只有一个：一块礁石加一片海。剧组在澳大利亚与多米尼加外海实拍，布蕾克·莱弗利大部分动作自己完成。</li><li>布蕾克·莱弗利出演时 29 岁，全片有近三分之一时间几乎独自在镜头里；美国多家影评都把这次表演称为「既是运动能力也是表演能力」。</li><li>那只海鸥是真的，那条鲨鱼几乎全是电脑特效——两者出现在同一批镜头里，处理方式完全不同。</li><li>片长只有 86 分钟，是本期最短的一部；它把求生压缩成几个具体动作：止血、缝针、算潮水。</li><li>豆瓣 7.1 / 烂番茄 78% / Metacritic 59 / IMDb 6.3：**典型的「专业评价一般、观众看着很爽」**。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/shallow_332567_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/shallow_332567_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/shallow_332567_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_59521.jpg" alt="" loading="lazy">
+                <div class="p-name">佐米·希尔拉 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">西班牙裔导演，长期在美国拍类型片。《孤儿怨》《不明身份》《空中营救》《黑亚当》，与连姆·尼森合作多次。本片是他第一次把一个角色单独放在一片海里拍完整部电影。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_436270.jpg" alt="" loading="lazy"><span>黑亚当</span></div><div class="wk"><img src="assets/movies/w_451048.jpg" alt="" loading="lazy"><span>丛林奇航</span></div><div class="wk"><img src="assets/movies/w_225574.jpg" alt="" loading="lazy"><span>空中营救</span></div><div class="wk"><img src="assets/movies/w_21208.jpg" alt="" loading="lazy"><span>孤儿怨</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_59175.jpg" alt="" loading="lazy">
+                <div class="p-name">布蕾克·莱弗利 <span class="p-role">主演（南希）</span></div>
+              </div>
+              <div class="p-note">美国演员。《牛仔裤的夏天》《绯闻女孩》《城中大盗》《咖啡公社》。本片她演南希——一个医学生，来这片海滩是为了纪念去世的母亲。全片她几乎从头到尾都在受伤的状态里。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_293863.jpg" alt="" loading="lazy"><span>时光尽头的恋人</span></div><div class="wk"><img src="assets/movies/w_44912.jpg" alt="" loading="lazy"><span>绿灯侠</span></div><div class="wk"><img src="assets/movies/w_484247.jpg" alt="" loading="lazy"><span>一个小忙</span></div><div class="wk"><img src="assets/movies/w_1079091.jpg" alt="" loading="lazy"><span>爱情，到此为止</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_59129.jpg" alt="" loading="lazy">
+                <div class="p-name">奥斯卡·贾纳达 <span class="p-role">主演（卡洛斯）</span></div>
+              </div>
+              <div class="p-note">西班牙演员。本片他演卡洛斯——住在附近、带她去那片海滩的当地人。他的戏份不多，但他是南希在陆地上唯一的联系。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1865.jpg" alt="" loading="lazy"><span>加勒比海盗4：惊涛怪浪</span></div><div class="wk"><img src="assets/movies/w_522938.jpg" alt="" loading="lazy"><span>第一滴血5：最后的血</span></div><div class="wk"><img src="assets/movies/w_1125510.jpg" alt="" loading="lazy"><span>饥饿站台2</span></div><div class="wk"><img src="assets/movies/w_34813.jpg" alt="" loading="lazy"><span>绝命反击</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在她发现那艘沉船之前——前面所有的努力都只是为了撑到涨潮，而涨潮意味着礁石没了。轻微剧透：这部片把空间算得很死：伤口的位置、潮水的高度、浮标的距离，每一个数字后面都会用到。结尾她把浮标绳系在自己腿上那一幕，是这部片唯一一次让人真的松一口气。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「86 分钟纯求生、不需要任何背景」的人；能接受设定简单、人物动机单薄、有几处物理上不太成立的观众。PG-13，含血腥与受伤画面，建议初中以上观看。内地 2016-09-09 公映过，流媒体可看。看完想继续：《大白鲨》《一切尽失》《127小时》。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/escape_522681_poster.jpg" alt="密室逃生 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 悬疑（美国 / 南非 · 六间为六个人准备的房间）</span><span class="year">2019 · 美国 / 南非 · 99 分钟 · 内地 2019-01-18 公映</span></div>
+        <h2>密室逃生 <span class="en">Escape Room</span></h2>
+        <div class="rates"><span class="rate"><b>7.1</b>豆瓣</span><span class="rate"><b>51%</b>烂番茄</span><span class="rate"><b>48</b>Metacritic</span><span class="rate"><b>6.4</b>IMDb</span></div>
+        <p class="oneline">「这一关，是为谁设计的？」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>六个陌生人各自收到一个木制魔方，解开之后得到一张邀请函：参加一场密室逃脱，赢家一万美元。他们在候诊室里集合，然后发现候诊室本身就是第一关——房间开始变成一个烤箱。之后是冰屋、倒过来的台球室、有毒气的病房。每一关都不一样，每一关都像是在问其中一个人一件事。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>亚当·罗比特尔执导，此前与温子仁合作过《潜伏4：锁命亡灵》。</li><li>成本不足 1000 万美元，全球票房超过 1.5 亿美元；续集《密室逃生2》在 2021 年上映。</li><li>六间密室是分别搭建的实景，不是绿幕；颠倒台球室那一场是把整个房间真的倒过来建的。</li><li>泰勒·拉塞尔演的佐伊是物理系学生，也是唯一一个开始记笔记的人——全片的解谜逻辑基本挂在她身上。</li><li>洛根·米勒演的本，开场那场被收拢的房间压住的戏发生在三天前，是全片最后才接上的一段。</li><li>豆瓣 7.1 / 烂番茄 51% / Metacritic 48 / IMDb 6.4：**本期华语观众与欧美影评落差第二大的一部**。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/escape_522681_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/escape_522681_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/escape_522681_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1306608.jpg" alt="" loading="lazy">
+                <div class="p-name">亚当·罗比特尔 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧。《潜伏4：锁命亡灵》《密室逃生》《密室逃生2》。他长期与温子仁合作；本片是他第一次自己担纲一部院线大片的导演，也是他从「温式惊悚」里独立出来的一次。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_406563.jpg" alt="" loading="lazy"><span>潜伏4：锁命亡灵</span></div><div class="wk"><img src="assets/movies/w_585216.jpg" alt="" loading="lazy"><span>密室逃生2</span></div><div class="wk"><img src="assets/movies/w_297608.jpg" alt="" loading="lazy"><span>失魂记忆</span></div><div class="wk"><img src="assets/movies/w_465203.jpg" alt="" loading="lazy"><span>The Bloody Benders</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1353827.jpg" alt="" loading="lazy">
+                <div class="p-name">泰勒·拉塞尔 <span class="p-role">主演（佐伊）</span></div>
+              </div>
+              <div class="p-note">加拿大演员。《密室逃生》系列、《浪潮》、《骨与一切》。本片她演佐伊——一个靠记笔记活下来的物理系学生。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_585216.jpg" alt="" loading="lazy"><span>密室逃生2</span></div><div class="wk"><img src="assets/movies/w_791177.jpg" alt="" loading="lazy"><span>骨及所有</span></div><div class="wk"><img src="assets/movies/w_533444.jpg" alt="" loading="lazy"><span>浪潮</span></div><div class="wk"><img src="assets/movies/w_397837.jpg" alt="" loading="lazy"><span>忽然七日</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_116088.jpg" alt="" loading="lazy">
+                <div class="p-name">洛根·米勒 <span class="p-role">主演（本）</span></div>
+              </div>
+              <div class="p-note">美国演员，此前与罗比特尔合作过《潜伏4：锁命亡灵》。本片他演本——开场那个被收拢的房间压住的年轻人，他那段戏其实发生在三天前。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_585216.jpg" alt="" loading="lazy"><span>密室逃生2</span></div><div class="wk"><img src="assets/movies/w_449176.jpg" alt="" loading="lazy"><span>爱你，西蒙</span></div><div class="wk"><img src="assets/movies/w_273477.jpg" alt="" loading="lazy"><span>童军手册之僵尸启示录</span></div><div class="wk"><img src="assets/movies/w_26505.jpg" alt="" loading="lazy"><span>亚瑟和他的迷你王国2</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在佐伊把六个人的共同点拼出来——他们都是某场事故的唯一幸存者。轻微剧透：这部片真正聪明的地方，是把密室做成了一套审讯：每一关的机关都对应一个人没说出口的那件事，所以「解谜」其实是在逼他们交代。结尾她带着线索板走进那栋楼，是这部片唯一一次把悬念留给了下一部。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「99 分钟不冷场的机关片」的人；能接受人物刻画浅、部分机关牵强、结局明显留续集的观众。含暴力与死亡画面，建议初中以上观看。内地 2019-01-18 公映过，流媒体可看。看完想继续：《电锯惊魂》《心慌方》《极限空间》。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/oxygen_471498_poster.jpg" alt="氧气危机 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 惊悚（法国 / 美国 · 一台只剩百分之三十的低温舱）</span><span class="year">2021 · 法国 / 美国 · 100 分钟 · 内地未映（网飞）</span></div>
+        <h2>氧气危机 <span class="en">Oxygen</span></h2>
+        <div class="rates"><span class="rate"><b>6.5</b>豆瓣</span><span class="rate"><b>90%</b>烂番茄</span><span class="rate"><b>67</b>Metacritic</span><span class="rate"><b>6.5</b>IMDb</span></div>
+        <p class="oneline">「剩余氧气：百分之三十二。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一个女人在低温舱里醒来，不记得自己是谁。舱盖打不开，舱内氧气只剩不到三分之一，唯一的同伴是一个叫米洛的人工智能——而它按规定不能替她开门。她一边往外找路，一边往回找记忆，最后发现这两件事指向的是同一个答案。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>亚历山大·阿嘉执导，克里斯蒂·勒布朗编剧；2021 年 5 月在网飞上线，几乎没有院线放映。</li><li>阿嘉是 2000 年代法国极端恐怖那一波的代表名字（《高压电》《隔山有眼》《巨鳄风暴》），这是他第一次做纯科幻。</li><li>梅拉尼·罗兰出演时 38 岁，全片 100 分钟几乎只有她一个人的脸；她凭《无耻混蛋》被国际观众认识。</li><li>马修·阿马立克只出声音——他演人工智能米洛，全片没有露脸。</li><li>舱内那个不断往下掉的氧气百分比，是这部片唯一的时钟；阿嘉把它直接打在画面上，让观众和角色看同一个数字。</li><li>豆瓣 6.5 / 烂番茄 90% / Metacritic 67 / IMDb 6.5：**本期「专业评价与华语观众」落差最大的一部**。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/oxygen_471498_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/oxygen_471498_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/oxygen_471498_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_59291.jpg" alt="" loading="lazy">
+                <div class="p-name">亚历山大·阿嘉 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">法国导演、编剧、制片。《高压电》《隔山有眼》《食人鱼3D》《巨鳄风暴》。他是 2000 年代法国极端恐怖那一波的代表名字；本片是他第一次做纯科幻，也是他第一次把整部片压在一个容器里。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_9792.jpg" alt="" loading="lazy"><span>隔山有眼</span></div><div class="wk"><img src="assets/movies/w_511987.jpg" alt="" loading="lazy"><span>巨鳄风暴</span></div><div class="wk"><img src="assets/movies/w_149509.jpg" alt="" loading="lazy"><span>复仇之角</span></div><div class="wk"><img src="assets/movies/w_43593.jpg" alt="" loading="lazy"><span>食人鱼3D</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_19119.jpg" alt="" loading="lazy">
+                <div class="p-name">梅拉尼·罗兰 <span class="p-role">主演（伊丽莎白）</span></div>
+              </div>
+              <div class="p-note">法国演员、导演。《无耻混蛋》《音乐会》，并自导过《明天》。本片她演伊丽莎白——一个在低温舱里醒来、连自己的名字都想不起来的女人。全片 100 分钟，她几乎占满了每一个镜头。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_16869.jpg" alt="" loading="lazy"><span>无耻混蛋</span></div><div class="wk"><img src="assets/movies/w_181886.jpg" alt="" loading="lazy"><span>宿敌</span></div><div class="wk"><img src="assets/movies/w_75656.jpg" alt="" loading="lazy"><span>惊天魔盗团</span></div><div class="wk"><img src="assets/movies/w_509967.jpg" alt="" loading="lazy"><span>6 Underground</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_8789.jpg" alt="" loading="lazy">
+                <div class="p-name">马修·阿马立克 <span class="p-role">配音（米洛）</span></div>
+              </div>
+              <div class="p-note">法国演员、导演，两座凯撒奖。《潜水钟与蝴蝶》《007：大破量子危机》《芭芭拉》。本片他只出声音——演那个按规定不能替她开门的人工智能米洛。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_10764.jpg" alt="" loading="lazy"><span>007：大破量子危机</span></div><div class="wk"><img src="assets/movies/w_120467.jpg" alt="" loading="lazy"><span>布达佩斯大饭店</span></div><div class="wk"><img src="assets/movies/w_484482.jpg" alt="" loading="lazy"><span>大浴场</span></div><div class="wk"><img src="assets/movies/w_2013.jpg" alt="" loading="lazy"><span>潜水钟与蝴蝶</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在她终于想起来的那一刻——她不是在求生，她是在被复制。轻微剧透：这部片把「活埋」的模板搬进了科幻，然后把恐怖点从「出不去」改成了「我到底还是不是我」。结尾她带着一个新的身体和一个旧的名字离开，阿嘉没有解释这算救赎还是替换，这是这部片最不安的一处。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「科幻设定怎么把幽闭恐惧做到极致」的人；能接受解释较多、后半段设定翻转偏快、100 分钟里大部分是独角戏的观众。含身体恐怖与惊吓画面，建议高中以上观看。内地未映，网飞可看。看完想继续：《活埋》《月球》《湮灭》。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-11；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>
