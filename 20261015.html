@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-10-15 · 第 45 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 10 月 15 日 · 第 45 期 · 已避开往期推荐过的全部 440 部</div>
+  <div>
+    <span class="pill">主题：雪线以上 · 十部把人扔进极寒绝境的电影（1993–2015）</span>
+    <span class="pill">全部 1990 年后：最早 1993，最晚 2015，按上映年份排列</span>
+    <span class="pill">类型覆盖：剧情 8 / 冒险 6 / 惊悚 3 / 灾难 2 / 动作 1 / 恐怖 1 / 悬疑 1 / 西部 1 / 传记 1 / 历史 1</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-15，会随时间变动，仅供参考。<br>
+  这一期的筛选条件只有一条：<b>冷在这部片里不是背景，是规则</b>——不是「下了一场雪」这么宽泛，是故事一旦离开低温就没法成立：要么人被留在雪线之上，要么高度、缺氧和体温在替编剧做决定。<br>
+  十部全部落在 1993–2015，按上映年份排列。里面有<b>四部真实事件改编</b>：安第斯空难后七十二天（《天劫余生》）、1936 年艾格峰北壁山难（《北壁》）、1958 年日本南极观测队与八条雪橇犬（《南极大冒险》）、1996 年珠峰山难（《绝命海拔》）；有<b>三部把人困在一个具体高度上</b>：一条停在半空的缆车（《冷冻》）、海拔八千米的冰裂缝（《垂直极限》）、以及一间被暴风雪封死的杂货店（《八恶人》）；还有三部讲的是「主动走进去」：一个年轻人走进阿拉斯加（《荒野生存》）、一个猎人爬出自己的坟（《荒野猎人》）、七个男人往南走（《人狼大战》）。<br>
+  需要说明的一处取舍：这个主题最常被提到的《怪形》《闪灵》《白日梦想家》一部是 1982 年、一部是 1980 年、一部不符合「绝境」这条线，所以这一期是避开它们之后的二十三年，名单整体会偏向后半段。<br>
+  跨期重合如实写出，按 10-02 定的口径<b>只按片名去重</b>：<b>弗兰克·马歇尔</b>是本期唯一一位出现两次的导演——《天劫余生》（第 1 部）与《南极大冒险》（第 3 部）相隔十三年，讲的都是「人被留在雪里之后」。演员方面：<b>比尔·帕克斯顿</b>（第 2 部《垂直极限》）在往期第 44 期《猎杀U-571》的主创卡片上出现过；<b>连姆·尼森</b>（第 7 部《人狼大战》）是往期第 44 期《K-19：寡妇制造者》的主创之一；<b>塞缪尔·杰克逊</b>（第 8 部《八恶人》）在往期第 44 期《深海狂鲨》里演的那个投资方，开场不到半小时就被吃掉了。<b>十位导演中九位互不相同。</b><br>
+  口碑落差如实标注、不做修饰：<b>《北壁》烂番茄 84%，是本期专业评价最高</b>；<b>《荒野猎人》Metacritic 76，是本期媒体均分最高</b>；<b>《南极大冒险》与《八恶人》豆瓣同为 8.7，是本期华语评分最高</b>；<b>《垂直极限》烂番茄只有 49%、Metacritic 48，是本期专业评价最低</b>，而它的豆瓣有 7.7，是本期落差最大的一部；<b>《冷冻》Metacritic 只有 43</b>，是本期唯一一部纯粹靠环境做恐怖的 B 级片。<br>
+  内地引进情况：四部在内地公映过（《垂直极限》2001-01-19、《南极大冒险》2006-04-21、《绝命海拔》2015-11-03、《荒野猎人》2016-03-18），其余六部未在内地院线公映，流媒体或点播可看。<br>
+  10 部片名全部为首次出现，无一与往期 440 部重复（比对 `_titles_all.txt` 通过）。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>天劫余生</td><td class="qg">剧情 / 冒险（美国 · 安第斯雪线上的七十二天）</td><td class="qr">8.1 / 63% / 56</td></tr><tr><td class="qn">02</td><td>垂直极限</td><td class="qg">动作 / 惊悚（美国 / 德国 · K2 上的一次营救）</td><td class="qr">7.7 / 49% / 48</td></tr><tr><td class="qn">03</td><td>南极大冒险</td><td class="qg">剧情 / 冒险（美国 · 八条雪橇犬的半年）</td><td class="qr">8.7 / 73% / 64</td></tr><tr><td class="qn">04</td><td>荒野生存</td><td class="qg">剧情 / 传记（美国 · 一个年轻人走进阿拉斯加）</td><td class="qr">8.6 / 83% / 73</td></tr><tr><td class="qn">05</td><td>北壁</td><td class="qg">剧情 / 历史（德国 / 奥地利 / 瑞士 · 艾格峰北壁上的四个人）</td><td class="qr">8.6 / 84% / 67</td></tr><tr><td class="qn">06</td><td>冷冻</td><td class="qg">恐怖 / 惊悚（美国 · 一条停在半空的缆车）</td><td class="qr">6.3 / 63% / 43</td></tr><tr><td class="qn">07</td><td>人狼大战</td><td class="qg">惊悚 / 剧情（美国 / 英国 · 阿拉斯加雪原上的七个男人）</td><td class="qr">6.5 / 79% / 64</td></tr><tr><td class="qn">08</td><td>八恶人</td><td class="qg">悬疑 / 西部（美国 · 暴风雪里的一间杂货店）</td><td class="qr">8.7 / 75% / 68</td></tr><tr><td class="qn">09</td><td>荒野猎人</td><td class="qg">剧情 / 冒险（美国 · 1820 年代的雪原与河）</td><td class="qr">7.9 / 78% / 76</td></tr><tr><td class="qn">10</td><td>绝命海拔</td><td class="qg">剧情 / 灾难（美国 / 英国 / 冰岛 · 1996 年珠峰的那个五月）</td><td class="qr">7.5 / 73% / 64</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/alive_7305_poster.jpg" alt="天劫余生 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 冒险（美国 · 安第斯雪线上的七十二天）</span><span class="year">1993 · 美国 · 127 分钟 · 内地未映（R 级）</span></div>
+        <h2>天劫余生 <span class="en">Alive</span></h2>
+        <div class="rates"><span class="rate"><b>8.1</b>豆瓣</span><span class="rate"><b>63%</b>烂番茄</span><span class="rate"><b>56</b>Metacritic</span><span class="rate"><b>7.1</b>IMDb</span></div>
+        <p class="oneline">「明天我们就走出这座山。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1972 年 10 月 13 日，一支乌拉圭橄榄球队包机去智利比赛，飞机撞上安第斯山脊，断成两截。四十多人里活下来二十几个，落在海拔三千多米的雪线上。他们等了八天，收音机里传来消息：搜救停止了。食物只剩几块巧克力和几瓶酒。活下来的人做了那个后来被讨论了很多年的决定——用死去同伴的身体活下去。七十二天之后，两个人翻过了山。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>弗兰克·马歇尔导演，改编自皮尔斯·保罗·里德 1974 年的纪实作品《活着：安第斯幸存者的故事》，剧本由约翰·帕特里克·尚利写。</li><li>成本约 3200 万美元，北美票房约 3670 万美元，全球约 8500 万美元；<b>上映当年在美国引发过一场关于道德边界的公开讨论</b>。</li><li>剧组真的在安第斯山海拔四千米以上拍了数周，残骸与雪地场景大部分是实景；演员在拍摄期间减重，片里那种饥饿状态有相当部分是真实的。</li><li>伊桑·霍克演南多·帕拉多，最后走出雪山的那个人；乔什·汉弥尔顿演罗伯托·卡内萨，全片最先说出「要活就得吃」的人。</li><li>真实事件里幸存者在 1972 年 12 月 23 日获救，一共 16 人；帕拉多的母亲与妹妹都在空难中丧生，他是在找到母亲遗体之后才决定往外走的。</li><li>豆瓣 8.1 / 烂番茄 63% / Metacritic 56 / IMDb 7.1：<b>本期上映最早的一部（1993）</b>，也是本期唯一一部改编自二十世纪真实空难的电影。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/alive_7305_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/alive_7305_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/alive_7305_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_664.jpg" alt="" loading="lazy">
+                <div class="p-name">弗兰克·马歇尔 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">美国导演、制片，斯皮尔伯格的长期搭档，安培林与肯尼迪 / 马歇尔公司联合创始人。《回到未来》系列、《夺宝奇兵》系列、《天劫余生》《南极大冒险》。本片是他从制片转向导演的代表作。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_105.jpg" alt="" loading="lazy"><span>回到未来</span></div><div class="wk"><img src="assets/movies/w_135397.jpg" alt="" loading="lazy"><span>侏罗纪世界</span></div><div class="wk"><img src="assets/movies/w_165.jpg" alt="" loading="lazy"><span>回到未来2</span></div><div class="wk"><img src="assets/movies/w_4922.jpg" alt="" loading="lazy"><span>本杰明·巴顿奇事</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_569.jpg" alt="" loading="lazy">
+                <div class="p-name">伊桑·霍克 <span class="p-role">主演（南多·帕拉多）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演、作家。《死亡诗社》《爱在黎明破晓前》三部曲、《训练日》《少年时代》《第一归正会》。本片他演南多·帕拉多——那个最后翻过雪山、把人带回来的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_158015.jpg" alt="" loading="lazy"><span>人类清除计划</span></div><div class="wk"><img src="assets/movies/w_206487.jpg" alt="" loading="lazy"><span>前目的地</span></div><div class="wk"><img src="assets/movies/w_782.jpg" alt="" loading="lazy"><span>千钧一发</span></div><div class="wk"><img src="assets/movies/w_82507.jpg" alt="" loading="lazy"><span>险恶</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_52419.jpg" alt="" loading="lazy">
+                <div class="p-name">乔什·汉弥尔顿 <span class="p-role">主演（罗伯托·卡内萨）</span></div>
+              </div>
+              <div class="p-note">美国演员。《天劫余生》《不羁的天空》《密西西比河上的玛德》《八月：奥色治郡》。本片他演罗伯托·卡内萨，全片最先说出「要活就得吃」的那个人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_425.jpg" alt="" loading="lazy"><span>冰川时代</span></div><div class="wk"><img src="assets/movies/w_2501.jpg" alt="" loading="lazy"><span>谍影重重</span></div><div class="wk"><img src="assets/movies/w_145135.jpg" alt="" loading="lazy"><span>黑暗天际</span></div><div class="wk"><img src="assets/movies/w_489925.jpg" alt="" loading="lazy"><span>八年级</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在他们做了那个决定，在他们从收音机里听到搜救已经取消——那一刻之后，等待不再是选项，人必须自己往下走。轻微剧透：马歇尔把这部片拍得很「日常」：分配食物、融化雪水、把死者排好、在机舱里开会，这些琐碎让它没有变成奇观。结尾那句旁白说到「他们从未解释过那七十二天」，是全片唯一一次承认这件事讲不完。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「真实事件能被拍到多克制」的人；能接受人物众多、前半段节奏慢、雪山实景让人发冷的观众。R 级，含事故伤情与同类相食相关情节，建议高中以上观看。内地未映，流媒体可看。看完想继续：《荒野生存》《荒野猎人》《南极大冒险》。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/vert_11678_poster.jpg" alt="垂直极限 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">动作 / 惊悚（美国 / 德国 · K2 上的一次营救）</span><span class="year">2000 · 美国 / 德国 · 124 分钟 · 2001-01-19 内地上映（PG-13）</span></div>
+        <h2>垂直极限 <span class="en">Vertical Limit</span></h2>
+        <div class="rates"><span class="rate"><b>7.7</b>豆瓣</span><span class="rate"><b>49%</b>烂番茄</span><span class="rate"><b>48</b>Metacritic</span><span class="rate"><b>6.0</b>IMDb</span></div>
+        <p class="oneline">「氧气只够一个人用。是带上去，还是留给自己。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>开场那场戏里，父亲把绳子割断了——为了让儿子和女儿活下来。三年后，妹妹安妮去登 K2，赞助这次攀登的富豪艾略特·沃恩一心要抢时间登顶。雪崩之后，三个人被困在海拔八千米的冰裂缝里。已经不再爬山的哥哥彼得，只能重新组队上去。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>马丁·坎贝尔导演（《007之黄金眼》《佐罗的面具》），剧本由罗伯特·金写；这是千禧年前后好莱坞登山片的代表作。</li><li>成本约 7500 万美元，全球票房约 2.157 亿美元，是 2000 年全球票房第 17 名。</li><li>大量镜头在巴基斯坦与新西兰皇后镇实拍；剧组从澳大利亚租了贝尔 212 直升机，涂成卡其绿色冒充巴基斯坦空军。</li><li>克里斯·奥唐纳演彼得，比尔·帕克斯顿演富豪沃恩；斯科特·格伦演那位留下来的老登山家，罗宾·唐尼演被困的妹妹安妮。</li><li>自由攀登名将 Alex Honnold 后来公开说过，开场那场戏「大概是好莱坞所有攀岩片里最糟糕的一场」——这句评价本身也成了影迷之间的著名段子。</li><li>豆瓣 7.7 / 烂番茄 49% / Metacritic 48 / IMDb 6.0：<b>本期专业评价最低</b>，华语观众明显高于欧美影评。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/vert_11678_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/vert_11678_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/vert_11678_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_10702.jpg" alt="" loading="lazy">
+                <div class="p-name">马丁·坎贝尔 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">新西兰导演，动作片老手，两次重启 007。《007之黄金眼》《佐罗的面具》《垂直极限》《007：大战皇家赌场》。本片是他拍《皇家赌场》之前的商业片代表。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_36557.jpg" alt="" loading="lazy"><span>007：大战皇家赌场</span></div><div class="wk"><img src="assets/movies/w_44912.jpg" alt="" loading="lazy"><span>绿灯侠</span></div><div class="wk"><img src="assets/movies/w_710.jpg" alt="" loading="lazy"><span>007：黄金眼</span></div><div class="wk"><img src="assets/movies/w_9342.jpg" alt="" loading="lazy"><span>佐罗的面具</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5577.jpg" alt="" loading="lazy">
+                <div class="p-name">克里斯·奥唐纳 <span class="p-role">主演（彼得·加勒特）</span></div>
+              </div>
+              <div class="p-note">美国演员。《闻香识女人》《永远的蝙蝠侠》《蝙蝠侠与罗宾》《垂直极限》。本片他演彼得·加勒特，一个已经不再爬山、却必须再上去一次的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_415.jpg" alt="" loading="lazy"><span>蝙蝠侠与罗宾</span></div><div class="wk"><img src="assets/movies/w_9475.jpg" alt="" loading="lazy"><span>闻香识女人</span></div><div class="wk"><img src="assets/movies/w_414.jpg" alt="" loading="lazy"><span>永远的蝙蝠侠</span></div><div class="wk"><img src="assets/movies/w_10057.jpg" alt="" loading="lazy"><span>豪情三剑客</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2053.jpg" alt="" loading="lazy">
+                <div class="p-name">比尔·帕克斯顿 <span class="p-role">主演（艾略特·沃恩）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《异形2》《阿波罗13号》《泰坦尼克号》《明日边缘》《猎杀U-571》。<b>往期第 44 期的《猎杀U-571》里也有他</b>。本片他演富豪艾略特·沃恩。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_597.jpg" alt="" loading="lazy"><span>泰坦尼克号</span></div><div class="wk"><img src="assets/movies/w_137113.jpg" alt="" loading="lazy"><span>明日边缘</span></div><div class="wk"><img src="assets/movies/w_568.jpg" alt="" loading="lazy"><span>阿波罗13号</span></div><div class="wk"><img src="assets/movies/w_242582.jpg" alt="" loading="lazy"><span>夜行者</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在硝化甘油出场——从那一刻起，这部片不再假装自己是写实攀登片，而是一部关于「还剩几步能炸」的动作片。轻微剧透：坎贝尔最有效的一处是把救援拆成三段时间：组队、上爬、以及最后那段必须在天黑前做出的决定。结尾沃恩与老人同归于尽的安排很工整，工整到你会意识到它一直在往那个方向走。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「登山片能把高度拍成压力」的人；能接受剧情逻辑有硬伤、配角死法离谱、主角有明显光环的观众。PG-13，含坠落与雪崩画面，恐高者慎看。内地公映过，流媒体可看。看完想继续：《北壁》《绝命海拔》《天劫余生》。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/eight_9036_poster.jpg" alt="南极大冒险 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 冒险（美国 · 八条雪橇犬的半年）</span><span class="year">2006 · 美国 · 120 分钟 · 2006-04-21 内地上映（PG）</span></div>
+        <h2>南极大冒险 <span class="en">Eight Below</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>73%</b>烂番茄</span><span class="rate"><b>64</b>Metacritic</span><span class="rate"><b>7.3</b>IMDb</span></div>
+        <p class="oneline">「它们还在那儿。我们还在这里。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>南极科考站。向导杰里·谢泼德带着八条雪橇犬，送一位教授去搜寻陨石。暴风雪逼近，全站必须撤离，飞机装不下狗，只能把它们锁在链子上。杰里以为几天就回来，结果一等就是半年。八条狗在零下几十度的极夜里，自己挣断了链子。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>弗兰克·马歇尔导演——<b>本期第 1 部《天劫余生》也是他导的</b>，两部相隔十三年，讲的都是「人被留在雪里之后」。</li><li>成本约 4000 万美元，北美票房约 8180 万美元，全球约 1.2 亿美元，是当年家庭片的票房黑马之一。</li><li>狗的戏由真实的雪橇犬与训练员完成，部分镜头在格陵兰与加拿大实地拍摄；八条狗各有名字，片尾给出了它们的演员表。</li><li>保罗·沃克演向导杰里，一个把八条狗当同事的人；布鲁斯·格林伍德演教授戴维斯·麦克拉伦，两人的关系是从「我欠你一条命」开始的。</li><li>影片改编自 1958 年日本南极观测队的真实事件（那次事件后来也被改编成《南极物语》），片尾字幕向当年的观测队致意。</li><li>豆瓣 8.7 / 烂番茄 73% / Metacritic 64 / IMDb 7.3：<b>本期豆瓣并列最高</b>，与《八恶人》同为 8.7。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/eight_9036_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/eight_9036_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/eight_9036_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_664.jpg" alt="" loading="lazy">
+                <div class="p-name">弗兰克·马歇尔 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">美国导演、制片。《回到未来》系列、《夺宝奇兵》系列、《天劫余生》《南极大冒险》《侏罗纪世界》。本片是他更擅长调度的那一面——动物、雪地与野外实景。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_105.jpg" alt="" loading="lazy"><span>回到未来</span></div><div class="wk"><img src="assets/movies/w_135397.jpg" alt="" loading="lazy"><span>侏罗纪世界</span></div><div class="wk"><img src="assets/movies/w_165.jpg" alt="" loading="lazy"><span>回到未来2</span></div><div class="wk"><img src="assets/movies/w_4922.jpg" alt="" loading="lazy"><span>本杰明·巴顿奇事</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_8167.jpg" alt="" loading="lazy">
+                <div class="p-name">保罗·沃克 <span class="p-role">主演（杰里·谢泼德）</span></div>
+              </div>
+              <div class="p-note">美国演员。《速度与激情》系列、《南极大冒险》《夺命枪火》《八面埋伏》。本片他演向导杰里·谢泼德，一个把八条狗当同事、也因此一直放不下的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_9799.jpg" alt="" loading="lazy"><span>速度与激情</span></div><div class="wk"><img src="assets/movies/w_584.jpg" alt="" loading="lazy"><span>速度与激情2</span></div><div class="wk"><img src="assets/movies/w_168259.jpg" alt="" loading="lazy"><span>速度与激情7</span></div><div class="wk"><img src="assets/movies/w_82992.jpg" alt="" loading="lazy"><span>速度与激情6</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_21089.jpg" alt="" loading="lazy">
+                <div class="p-name">布鲁斯·格林伍德 <span class="p-role">主演（戴维斯·麦克拉伦）</span></div>
+              </div>
+              <div class="p-note">加拿大演员。《星际迷航》系列、《我，机器人》《南极大冒险》《杰罗德游戏》。本片他演教授戴维斯·麦克拉伦，那个欠狗一条命的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_2048.jpg" alt="" loading="lazy"><span>我，机器人</span></div><div class="wk"><img src="assets/movies/w_13475.jpg" alt="" loading="lazy"><span>星际迷航</span></div><div class="wk"><img src="assets/movies/w_343674.jpg" alt="" loading="lazy"><span>杰罗德游戏</span></div><div class="wk"><img src="assets/movies/w_40662.jpg" alt="" loading="lazy"><span>蝙蝠侠：红影迷踪</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在杰里回到美国之后——他没能立刻回去，而那半年不是「等待」，是一次被不断延长的放弃。轻微剧透：这部片最狠的一处是没有旁白去解释狗在想什么，只有行为：分担、守夜、走、回头。结尾玛雅把杰里带到老杰克倒下的地方那段，是全片唯一一次让动物替人做决定。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「动物片怎么不靠拟人化打动人」的人；能接受中段抒情偏多、个别桥段煽情、狗受伤的情节会让人难受的观众。PG，含动物受伤与危机画面，建议小学以上在家长陪同下观看。内地公映过，流媒体可看。看完想继续：《天劫余生》《荒野生存》《人狼大战》。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/wild_5915_poster.jpg" alt="荒野生存 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 传记（美国 · 一个年轻人走进阿拉斯加）</span><span class="year">2007 · 美国 · 148 分钟 · 内地未映（R 级）</span></div>
+        <h2>荒野生存 <span class="en">Into the Wild</span></h2>
+        <div class="rates"><span class="rate"><b>8.6</b>豆瓣</span><span class="rate"><b>83%</b>烂番茄</span><span class="rate"><b>73</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「幸福只有在分享时才真实。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1992 年，克里斯托弗·麦坎德利斯从名校毕业，把两万四千美元存款捐给慈善机构，剪掉证件，给自己改名「亚历山大·超级游民」，一路搭车往北。路上他遇见过一对露营的夫妻、一个种地的老兵、一个在河上漂流的女孩。最后他一个人走进阿拉斯加的荒野，在一辆废弃巴士里住下。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>西恩·潘自编自导并任制片，改编自乔恩·克拉考尔 1996 年的同名非虚构作品；本片拿到奥斯卡两项提名（最佳男配角、最佳剪辑）。</li><li>成本约 1500 万美元，全球票房约 5660 万美元；这是西恩·潘导演生涯里评价最高的一部。</li><li>埃米尔·赫希为这个角色减重约 40 磅；片中大量自然光与实景，剧组真的把一辆巴士运到了阿拉斯加的指定地点。</li><li>哈尔·霍尔布鲁克演老兵罗恩·弗朗兹，凭这个角色在 82 岁拿到他唯一一次奥斯卡最佳男配角提名。</li><li>配乐由珍珠果酱乐队主唱艾迪·维达写了六首原创歌曲；那首《Guaranteed》拿了金球奖最佳原创歌曲。</li><li>豆瓣 8.6 / 烂番茄 83% / Metacritic 73 / IMDb 8.0：<b>本期 IMDb 并列最高</b>，与《荒野猎人》同为 8.0。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/wild_5915_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/wild_5915_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/wild_5915_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2228.jpg" alt="" loading="lazy">
+                <div class="p-name">西恩·潘 <span class="p-role">导演 / 编剧 / 制片</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《死囚漫步》《我是山姆》《神秘河》《米尔克》《荒野生存》。两座奥斯卡最佳男主角。本片是他导演生涯评价最高的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_322.jpg" alt="" loading="lazy"><span>神秘河</span></div><div class="wk"><img src="assets/movies/w_2649.jpg" alt="" loading="lazy"><span>心理游戏</span></div><div class="wk"><img src="assets/movies/w_470.jpg" alt="" loading="lazy"><span>21克</span></div><div class="wk"><img src="assets/movies/w_116745.jpg" alt="" loading="lazy"><span>白日梦想家</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_46593.jpg" alt="" loading="lazy">
+                <div class="p-name">埃米尔·赫希 <span class="p-role">主演（克里斯托弗·麦坎德利斯）</span></div>
+              </div>
+              <div class="p-note">美国演员。《邻家女优》《荒野生存》《极速赛车手》《好莱坞往事》《无名女尸》。本片他演克里斯托弗·麦坎德利斯，为这个角色减重约四十磅。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_397243.jpg" alt="" loading="lazy"><span>无名女尸</span></div><div class="wk"><img src="assets/movies/w_10591.jpg" alt="" loading="lazy"><span>邻家女优</span></div><div class="wk"><img src="assets/movies/w_466272.jpg" alt="" loading="lazy"><span>好莱坞往事</span></div><div class="wk"><img src="assets/movies/w_7459.jpg" alt="" loading="lazy"><span>极速赛车手</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11066.jpg" alt="" loading="lazy">
+                <div class="p-name">哈尔·霍尔布鲁克 <span class="p-role">主演（罗恩·弗朗兹）</span></div>
+              </div>
+              <div class="p-note">美国演员。《总统班底》《荒野生存》《林肯》《紧急搜捕令》。本片他演老兵罗恩·弗朗兹，82 岁凭这个角色拿到他唯一一次奥斯卡提名。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_16281.jpg" alt="" loading="lazy"><span>鬼作秀</span></div><div class="wk"><img src="assets/movies/w_72976.jpg" alt="" loading="lazy"><span>林肯</span></div><div class="wk"><img src="assets/movies/w_11970.jpg" alt="" loading="lazy"><span>大力士</span></div><div class="wk"><img src="assets/movies/w_10648.jpg" alt="" loading="lazy"><span>紧急搜捕令</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在他想走回去的时候——河涨了，来时过不去的地方现在也过不去，他这才明白那条河不是边界，是期限。轻微剧透：潘最聪明的一处是把结局放在前面告诉你：你从头就知道他没能出来，所以这一路遇到的人全都有了重量。结尾那张躺在巴士里的照片，是全片唯一一次把「他到底找到了什么」留给你自己判断。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「一个人为什么非要离开」的人；能接受 148 分钟偏长、叙事打乱时间线、主角的选择会让你又佩服又生气的观众。R 级，含少量粗口与危险画面，建议高中以上观看。内地未映，流媒体可看。看完想继续：《荒野猎人》《天劫余生》《涉足荒野》。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/north_16436_poster.jpg" alt="北壁 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 历史（德国 / 奥地利 / 瑞士 · 艾格峰北壁上的四个人）</span><span class="year">2008 · 德国 / 奥地利 / 瑞士 · 126 分钟 · 内地未映</span></div>
+        <h2>北壁 <span class="en">North Face</span></h2>
+        <div class="rates"><span class="rate"><b>8.6</b>豆瓣</span><span class="rate"><b>84%</b>烂番茄</span><span class="rate"><b>67</b>Metacritic</span><span class="rate"><b>7.4</b>IMDb</span></div>
+        <p class="oneline">「给我一套装备，我还能爬。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1936 年，柏林奥运会之前。德国的两名年轻登山者托尼·库尔茨与安迪·辛特斯托塞尔要去攻艾格峰北壁——那面墙此前从没有人上去过，也没有人活着下来。山下的旅馆里坐着记者和游客，他们端着酒看这场攀登。天气变了，四个人卡在墙上，往上不行，往下也不行。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>菲利普·施特尔茨自编自导，改编自 1936 年真实的艾格峰北壁山难；片中的救援线与媒体线是虚构并线，攀登过程基本照史实。</li><li>影片在瑞士阿尔卑斯山实地拍摄，演员在真实岩壁上完成了大量攀登镜头；本片入围洛迦诺电影节主竞赛。</li><li>本诺·菲尔曼演托尼·库尔茨，弗洛里安·卢卡斯演安迪；乌尔里希·图库尔演那位把山难当新闻做的记者。</li><li>真实事件里，安迪·辛特斯托塞尔走出的那条横向穿越路线后来以他命名；库尔茨在救援者上方几米处耗尽体力死去的照片，是登山史上最著名的一张。</li><li>影片把「旅馆里的人在鼓掌」和「墙上的人在下坠」剪在一起——这才是它真正想说的东西。</li><li>豆瓣 8.6 / 烂番茄 84% / Metacritic 67 / IMDb 7.4：<b>本期烂番茄最高</b>，也是本期唯一的德语片。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/north_16436_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/north_16436_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/north_16436_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_113500.jpg" alt="" loading="lazy">
+                <div class="p-name">Philipp Stölzl <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">德国导演、编剧，同时是舞台与歌剧导演。《北壁》《少年歌德之烦恼》《神医》《叛谍追击》。本片入围洛迦诺电影节主竞赛，是他最被认可的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_169881.jpg" alt="" loading="lazy"><span>神医</span></div><div class="wk"><img src="assets/movies/w_106021.jpg" alt="" loading="lazy"><span>叛谍追击</span></div><div class="wk"><img src="assets/movies/w_748787.jpg" alt="" loading="lazy"><span>象棋的故事</span></div><div class="wk"><img src="assets/movies/w_52475.jpg" alt="" loading="lazy"><span>少年歌德之烦恼</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11953.jpg" alt="" loading="lazy">
+                <div class="p-name">本诺·菲尔曼 <span class="p-role">主演（托尼·库尔茨）</span></div>
+              </div>
+              <div class="p-note">德国演员。《帝国陷落》《圣诞快乐》《北壁》《尼伯龙根的指环》。本片他演托尼·库尔茨，那个在救援者上方几米处死去的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_11661.jpg" alt="" loading="lazy"><span>圣诞快乐</span></div><div class="wk"><img src="assets/movies/w_7459.jpg" alt="" loading="lazy"><span>极速赛车手</span></div><div class="wk"><img src="assets/movies/w_1698.jpg" alt="" loading="lazy"><span>解剖</span></div><div class="wk"><img src="assets/movies/w_11188.jpg" alt="" loading="lazy"><span>尼伯龙根的指环</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4795.jpg" alt="" loading="lazy">
+                <div class="p-name">弗洛里安·卢卡斯 <span class="p-role">主演（安迪·辛特斯托塞尔）</span></div>
+              </div>
+              <div class="p-note">德国演员。《再见列宁》《布达佩斯大饭店》《北壁》《白色严冬》。本片他演安迪·辛特斯托塞尔——以他命名的横向穿越路线，至今仍是艾格峰北壁的关键一段。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_120467.jpg" alt="" loading="lazy"><span>布达佩斯大饭店</span></div><div class="wk"><img src="assets/movies/w_338.jpg" alt="" loading="lazy"><span>再见列宁</span></div><div class="wk"><img src="assets/movies/w_78215.jpg" alt="" loading="lazy"><span>白色严冬</span></div><div class="wk"><img src="assets/movies/w_1661.jpg" alt="" loading="lazy"><span>告别汉堡</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在天气变坏，在他们决定下撤——上攀是比赛，下撤是求生，而那面墙只对上攀的人留过路。轻微剧透：这部片最难受的一段是救援队到了却差几米：绳子接不上，只能看着。结尾那句被人反复引用的遗言，是全片唯一一次让「国家的荣誉」这件事显得廉价。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「登山片能拍到多冷酷」的人；能接受德语对白、人物众多、后半段几乎不忍看的观众。含坠崖与冻伤画面，建议高中以上观看。内地未映。看完想继续：《垂直极限》《绝命海拔》《天劫余生》。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/froze_44363_poster.jpg" alt="冷冻 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 惊悚（美国 · 一条停在半空的缆车）</span><span class="year">2010 · 美国 · 93 分钟 · 内地未映（R 级）</span></div>
+        <h2>冷冻 <span class="en">Frozen</span></h2>
+        <div class="rates"><span class="rate"><b>6.3</b>豆瓣</span><span class="rate"><b>63%</b>烂番茄</span><span class="rate"><b>43</b>Metacritic</span><span class="rate"><b>6.1</b>IMDb</span></div>
+        <p class="oneline">「滑雪场要封山五个月。我们还挂在上面。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>三个人为了最后滑一趟，塞钱给缆车操作员上了山。操作员临时换班，接班的人以为山上没人，直接拉闸下班——滑雪场要封山五个月。三个人挂在离地十几米的缆车上，天黑了，温度掉到零下，而雪地里有东西闻到了血。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>亚当·格林自编自导，他的成名作是砍杀片《短柄斧》；本片是他第一次不靠血浆、靠环境做恐怖。</li><li>成本约 150 万美元，全球票房约 380 万美元；北美只卖了 24 万美元，主要靠海外与碟片回本。</li><li>全片几乎实拍：演员真的被吊在犹他州一座山的缆车上，离地五十英尺，剧组雇来的摄影团队不敢上，最后是导演和摄影指导自己上去拍的。</li><li>艾玛·贝尔演帕克，肖恩·阿什莫演乔，凯文·泽格斯演丹——那个先跳下去的人。</li><li>片里的狼是真狼加训练员；凯文·泽格斯被狼群围住那场戏没用替身，拍到狼靠太近时训练员才把它们拉开。</li><li>豆瓣 6.3 / 烂番茄 63% / Metacritic 43 / IMDb 6.1：<b>本期 Metacritic 最低</b>，也是本期唯一一部 B 级恐怖片。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/froze_44363_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/froze_44363_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/froze_44363_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_70890.jpg" alt="" loading="lazy">
+                <div class="p-name">亚当·格林 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、演员，B 级恐怖片出身。《短柄斧》系列、《冷冻》《挖骨髓》。本片是他第一次不靠血浆、靠环境做恐怖。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_11908.jpg" alt="" loading="lazy"><span>短柄斧</span></div><div class="wk"><img src="assets/movies/w_43919.jpg" alt="" loading="lazy"><span>短柄斧2</span></div><div class="wk"><img src="assets/movies/w_472338.jpg" alt="" loading="lazy"><span>短柄斧4</span></div><div class="wk"><img src="assets/movies/w_279972.jpg" alt="" loading="lazy"><span>挖骨髓</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_131820.jpg" alt="" loading="lazy">
+                <div class="p-name">艾玛·贝尔 <span class="p-role">主演（帕克·奥尼尔）</span></div>
+              </div>
+              <div class="p-note">美国演员。《冷冻》《死神来了5》《宁静的热情》《行尸走肉》。本片她演帕克，全片大部分时间只挂在一条缆车上。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_55779.jpg" alt="" loading="lazy"><span>死神来了5</span></div><div class="wk"><img src="assets/movies/w_368942.jpg" alt="" loading="lazy"><span>宁静的热情</span></div><div class="wk"><img src="assets/movies/w_43919.jpg" alt="" loading="lazy"><span>短柄斧2</span></div><div class="wk"><img src="assets/movies/w_442788.jpg" alt="" loading="lazy"><span>不同的花</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11023.jpg" alt="" loading="lazy">
+                <div class="p-name">肖恩·阿什莫 <span class="p-role">主演（乔·林奇）</span></div>
+              </div>
+              <div class="p-note">加拿大演员。《X战警》系列（冰人）、《X战警：逆转未来》《冷冻》《恐怖废墟》。本片他演乔，那个最后必须自己决定要不要下去的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_127585.jpg" alt="" loading="lazy"><span>X战警：逆转未来</span></div><div class="wk"><img src="assets/movies/w_36668.jpg" alt="" loading="lazy"><span>X战警3：背水一战</span></div><div class="wk"><img src="assets/movies/w_36658.jpg" alt="" loading="lazy"><span>X战警2</span></div><div class="wk"><img src="assets/movies/w_11152.jpg" alt="" loading="lazy"><span>恐怖废墟</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在丹跳下去之后——他没摔死，摔断了腿，于是「要不要下去」从一个理论问题变成了算术题。轻微剧透：格林最有效的一处是把恐怖做成高度：这不是躲鬼片，是「离地五十英尺」这件事本身在杀人。结尾帕克顺着雪板往下滑那段，是全片唯一一次让摄影机跟着人一起离开那把椅子。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「一个念头能撑满九十分钟」的人；能接受人物决策会让你着急、台词一般、狼的部分有点刻意的观众。R 级，含动物撕咬与断肢画面，恐高与畏寒者慎看。内地未映。看完想继续：《鲨滩》《一切尽失》《人狼大战》。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/grey_75174_poster.jpg" alt="人狼大战 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 剧情（美国 / 英国 · 阿拉斯加雪原上的七个男人）</span><span class="year">2012 · 美国 / 英国 · 117 分钟 · 内地未映（R 级）</span></div>
+        <h2>人狼大战 <span class="en">The Grey</span></h2>
+        <div class="rates"><span class="rate"><b>6.5</b>豆瓣</span><span class="rate"><b>79%</b>烂番茄</span><span class="rate"><b>64</b>Metacritic</span><span class="rate"><b>6.7</b>IMDb</span></div>
+        <p class="oneline">「一次，就这样。就这样。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>阿拉斯加一处石油作业点。飞机在暴雪里掉了下来，活下来七个人，都是干重活、坐过牢、或者想消失的那种人。护猎员约翰·奥特维知道这里的狼：这是它们的地盘，人是闯进来的。他带着剩下的人往南走，穿过树林、河床和雪线，而狼群一直跟在后面。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>乔·卡纳汉自编自导并任制片，改编自伊恩·麦肯齐·杰弗斯的短篇《鬼魂行者》；这是他拍得最收敛的一部。</li><li>成本约 2500 万美元，北美票房约 5170 万美元，全球约 8100 万美元。</li><li>连姆·尼森演奥特维，一个在开场那封信里就已经决定不回去的人；弗兰克·格里罗演迪亚兹，全片唯一一个一直跟他硬碰硬的人。</li><li>影片大量外景在不列颠哥伦比亚与阿拉斯加实拍，剧组在零下二十多度的雪原上工作了数周；狼由真狼与特效结合完成。</li><li>正片在片尾字幕之前就停了——<b>字幕中间还藏着一段很短的镜头</b>，第一次看的人很容易以为片子坏了。</li><li>豆瓣 6.5 / 烂番茄 79% / Metacritic 64 / IMDb 6.7：<b>本期豆瓣与专业评价落差最大的一部</b>（豆瓣 6.5，烂番茄却有 79%）。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/grey_75174_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/grey_75174_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/grey_75174_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_40223.jpg" alt="" loading="lazy">
+                <div class="p-name">乔·卡纳汉 <span class="p-role">导演 / 编剧 / 制片</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、制片。《缉毒特警》《天龙特攻队》《人狼大战》《虎胆追凶》《绝地战警：疾速追击》。本片是他拍得最克制的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_38700.jpg" alt="" loading="lazy"><span>绝地战警：疾速追击</span></div><div class="wk"><img src="assets/movies/w_34544.jpg" alt="" loading="lazy"><span>天龙特攻队</span></div><div class="wk"><img src="assets/movies/w_395990.jpg" alt="" loading="lazy"><span>虎胆追凶</span></div><div class="wk"><img src="assets/movies/w_513310.jpg" alt="" loading="lazy"><span>领袖水准</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_3896.jpg" alt="" loading="lazy">
+                <div class="p-name">连姆·尼森 <span class="p-role">主演（约翰·奥特维）</span></div>
+              </div>
+              <div class="p-note">英国 / 爱尔兰演员。《辛德勒的名单》《蝙蝠侠：侠影之谜》《飓风营救》系列、《人狼大战》。<b>往期第 44 期《K-19：寡妇制造者》的主创卡片上也有他</b>。本片他演约翰·奥特维。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_424.jpg" alt="" loading="lazy"><span>辛德勒的名单</span></div><div class="wk"><img src="assets/movies/w_1893.jpg" alt="" loading="lazy"><span>星球大战1：幽灵的威胁</span></div><div class="wk"><img src="assets/movies/w_8681.jpg" alt="" loading="lazy"><span>飓风营救</span></div><div class="wk"><img src="assets/movies/w_272.jpg" alt="" loading="lazy"><span>蝙蝠侠：侠影之谜</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_81685.jpg" alt="" loading="lazy">
+                <div class="p-name">弗兰克·格里罗 <span class="p-role">主演（约翰·迪亚兹）</span></div>
+              </div>
+              <div class="p-note">美国演员。《美国队长2》《人类清除计划2》《人狼大战》《领袖水准》。本片他演迪亚兹，全片唯一一个从头到尾跟奥特维硬碰硬的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_238636.jpg" alt="" loading="lazy"><span>人类清除计划2</span></div><div class="wk"><img src="assets/movies/w_316727.jpg" alt="" loading="lazy"><span>人类清除计划3</span></div><div class="wk"><img src="assets/movies/w_100402.jpg" alt="" loading="lazy"><span>美国队长2</span></div><div class="wk"><img src="assets/movies/w_513310.jpg" alt="" loading="lazy"><span>领袖水准</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在他们发现狼不是来吃人的，是在把人往回赶——从那一刻起，这部片的问题从「怎么活」变成了「往哪走」。轻微剧透：卡纳汉把每个人的死都拍得很短：没有遗言、没有慢镜、没有配乐，说完就走。结尾奥特维最后那一下，是全片唯一一次让「活着」和「不活着」变成同一个选择。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「男性群戏能被拍得多不热血」的人；能接受节奏偏慢、人物更像类型而不是角色、结局刻意留白的观众。R 级，含暴力与动物袭击画面，建议高中以上观看。内地未映。看完想继续：《荒野猎人》《天劫余生》《一切尽失》。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/hate_273248_poster.jpg" alt="八恶人 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 西部（美国 · 暴风雪里的一间杂货店）</span><span class="year">2015 · 美国 · 168 分钟（70mm 路演版 182 分钟）· 内地未映（R 级）</span></div>
+        <h2>八恶人 <span class="en">The Hateful Eight</span></h2>
+        <div class="rates"><span class="rate"><b>8.7</b>豆瓣</span><span class="rate"><b>75%</b>烂番茄</span><span class="rate"><b>68</b>Metacritic</span><span class="rate"><b>7.8</b>IMDb</span></div>
+        <p class="oneline">「这屋里有一个人在撒谎。找出是谁。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>怀俄明的雪原上，赏金猎人约翰·鲁斯押着犯人黛西·多默格，要去红石镇领赏。路上先后搭上两个人：同为赏金猎人的沃伦少校，和自称新任警长的马尼克斯。暴风雪太猛，五个人挤进米妮男装店避雪，店里已经有四个人在等——他们都说自己是路过。八个人，一间屋子，一把枪在桌子下面。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>昆汀·塔伦蒂诺自编自导，这是他的第八部长片；剧本曾在网络泄露，他一度搁置，改成舞台剧朗读之后才重新开拍。</li><li>成本约 4400 万美元，全球票房约 1.556 亿美元；奥斯卡三项提名，埃尼奥·莫里康内凭本片拿到他唯一一座奥斯卡最佳原创配乐。</li><li>影片用 65mm 胶片（Ultra Panavision 70）拍摄，是 1985 年之后第一部用这套规格大规模放映的故事片。</li><li>塞缪尔·杰克逊演沃伦少校，库尔特·拉塞尔演鲁斯；詹妮弗·杰森·李演黛西，凭这个角色拿到奥斯卡最佳女配角提名。</li><li>全片分五章，中间有一段旁白式的回述；塔伦蒂诺把暴风雪山庄模式整个搬进了西部片。</li><li>豆瓣 8.7 / 烂番茄 75% / Metacritic 68 / IMDb 7.8：<b>本期豆瓣并列最高</b>，与《南极大冒险》同为 8.7，也是本期片长最长的一部（168 分钟）。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/hate_273248_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/hate_273248_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/hate_273248_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_138.jpg" alt="" loading="lazy">
+                <div class="p-name">昆汀·塔伦蒂诺 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、演员。《落水狗》《低俗小说》《杀死比尔》《被解救的姜戈》《八恶人》《好莱坞往事》。本片是他的第八部长片，也是他第一次拿到奥斯卡（最佳原创配乐，颁给莫里康内）。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_680.jpg" alt="" loading="lazy"><span>低俗小说</span></div><div class="wk"><img src="assets/movies/w_68718.jpg" alt="" loading="lazy"><span>被解救的姜戈</span></div><div class="wk"><img src="assets/movies/w_16869.jpg" alt="" loading="lazy"><span>无耻混蛋</span></div><div class="wk"><img src="assets/movies/w_24.jpg" alt="" loading="lazy"><span>杀死比尔</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2231.jpg" alt="" loading="lazy">
+                <div class="p-name">塞缪尔·杰克逊 <span class="p-role">主演（马奎斯·沃伦少校）</span></div>
+              </div>
+              <div class="p-note">美国演员。《低俗小说》《美国队长2》《惊奇队长》《王牌特工：特工学院》《八恶人》。本片他演马奎斯·沃伦少校——<b>往期第 44 期《深海狂鲨》里演的那个投资方，开场不到半小时就被吃掉了</b>。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_680.jpg" alt="" loading="lazy"><span>低俗小说</span></div><div class="wk"><img src="assets/movies/w_100402.jpg" alt="" loading="lazy"><span>美国队长2</span></div><div class="wk"><img src="assets/movies/w_299537.jpg" alt="" loading="lazy"><span>惊奇队长</span></div><div class="wk"><img src="assets/movies/w_207703.jpg" alt="" loading="lazy"><span>王牌特工：特工学院</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6856.jpg" alt="" loading="lazy">
+                <div class="p-name">库尔特·拉塞尔 <span class="p-role">主演（约翰·鲁思）</span></div>
+              </div>
+              <div class="p-note">美国演员。《怪形》《纽约大逃亡》《金刚不坏》《银河护卫队2》《八恶人》。本片他演「绞刑者」约翰·鲁斯，一个坚持要把犯人活着送到绞架的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1091.jpg" alt="" loading="lazy"><span>怪形</span></div><div class="wk"><img src="assets/movies/w_1991.jpg" alt="" loading="lazy"><span>金刚不坏</span></div><div class="wk"><img src="assets/movies/w_283995.jpg" alt="" loading="lazy"><span>银河护卫队2</span></div><div class="wk"><img src="assets/movies/w_1103.jpg" alt="" loading="lazy"><span>纽约大逃亡</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在谁拔了枪，在中间那章回述——它把前半段你以为的偶然全都改成了安排，而你看完只能承认自己被摆了一道。轻微剧透：塔伦蒂诺把八个人锁在一间屋子里，靠的不是枪，是话：每多说一句，屋里的立场就重排一次。结尾两个人对着念那封信，是全片唯一一次让暴力停下来的地方。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「话痨悬疑能撑三个小时」的人；能接受大量冒犯性台词、血浆来得突然、前三章节奏偏慢的观众。R 级，含大量暴力与粗口，建议成年观看。内地未映，流媒体可看。看完想继续：《被解救的姜戈》《无耻混蛋》《落水狗》。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/rev_281957_poster.jpg" alt="荒野猎人 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 冒险（美国 · 1820 年代的雪原与河）</span><span class="year">2015 · 美国 / 中国香港 / 中国台湾 · 156 分钟 · 2016-03-18 内地上映（R 级）</span></div>
+        <h2>荒野猎人 <span class="en">The Revenant</span></h2>
+        <div class="rates"><span class="rate"><b>7.9</b>豆瓣</span><span class="rate"><b>78%</b>烂番茄</span><span class="rate"><b>76</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「只要还能喘气，就接着打。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1823 年，皮草猎人休·格拉斯在密苏里河上游被一头灰熊撕成重伤。队里留下三个人照顾他：船长的雇工菲茨杰拉德、年轻的布里杰，还有格拉斯的儿子霍克。菲茨杰拉德只想赶紧走，他杀死了霍克，把格拉斯拖进坑里埋了半截。格拉斯自己爬了出来，然后往南走了两百英里。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>亚历杭德罗·冈萨雷斯·伊尼亚里图自编自导并任制片，改编自迈克尔·庞克 2002 年的同名小说；这是他连庄奥斯卡最佳导演的第二年（前一年是《鸟人》）。</li><li>成本约 1.35 亿美元，全球票房约 5.33 亿美元；奥斯卡 12 项提名、拿下 3 座（最佳导演、最佳男主角、最佳摄影）。</li><li>全片只用自然光拍摄，摄影是艾曼努尔·卢贝兹基；剧组为了追光每天只有几小时能拍，实际拍摄周期超过九个月。</li><li>莱昂纳多·迪卡普里奥凭本片拿到他第一座奥斯卡最佳男主角；汤姆·哈迪演菲茨杰拉德，拿到最佳男配角提名。</li><li>拍摄地最后从加拿大一路换到阿根廷火地岛——原来的雪不够了，剧组追着雪走。</li><li>豆瓣 7.9 / 烂番茄 78% / Metacritic 76 / IMDb 8.0：<b>本期 Metacritic 最高（76）</b>，IMDb 与《荒野生存》并列本期第一。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/rev_281957_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/rev_281957_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/rev_281957_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_223.jpg" alt="" loading="lazy">
+                <div class="p-name">亚历杭德罗·冈萨雷斯·伊尼亚里图 <span class="p-role">导演 / 编剧 / 制片</span></div>
+              </div>
+              <div class="p-note">墨西哥导演、编剧、制片。《爱情是狗娘》《21克》《通天塔》《鸟人》《荒野猎人》。两座连庄的奥斯卡最佳导演。本片让他拿到第二座。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_194662.jpg" alt="" loading="lazy"><span>鸟人</span></div><div class="wk"><img src="assets/movies/w_1164.jpg" alt="" loading="lazy"><span>通天塔</span></div><div class="wk"><img src="assets/movies/w_470.jpg" alt="" loading="lazy"><span>21克</span></div><div class="wk"><img src="assets/movies/w_55.jpg" alt="" loading="lazy"><span>爱情是狗娘</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6193.jpg" alt="" loading="lazy">
+                <div class="p-name">莱昂纳多·迪卡普里奥 <span class="p-role">主演（休·格拉斯）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片。《泰坦尼克号》《飞行家》《无间道风云》《华尔街之狼》《荒野猎人》。本片让他拿到第一座奥斯卡最佳男主角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_27205.jpg" alt="" loading="lazy"><span>盗梦空间</span></div><div class="wk"><img src="assets/movies/w_597.jpg" alt="" loading="lazy"><span>泰坦尼克号</span></div><div class="wk"><img src="assets/movies/w_106646.jpg" alt="" loading="lazy"><span>华尔街之狼</span></div><div class="wk"><img src="assets/movies/w_11324.jpg" alt="" loading="lazy"><span>禁闭岛</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2524.jpg" alt="" loading="lazy">
+                <div class="p-name">汤姆·哈迪 <span class="p-role">主演（约翰·菲茨杰拉德）</span></div>
+              </div>
+              <div class="p-note">英国演员。《布朗森》《勇士》《盗梦空间》《蝙蝠侠：黑暗骑士崛起》《疯狂的麦克斯4：狂暴之路》《荒野猎人》。本片他演约翰·菲茨杰拉德，拿到奥斯卡最佳男配角提名。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_76341.jpg" alt="" loading="lazy"><span>疯狂的麦克斯4：狂暴之路</span></div><div class="wk"><img src="assets/movies/w_335983.jpg" alt="" loading="lazy"><span>毒液：致命守护者</span></div><div class="wk"><img src="assets/movies/w_580489.jpg" alt="" loading="lazy"><span>毒液2</span></div><div class="wk"><img src="assets/movies/w_27205.jpg" alt="" loading="lazy"><span>盗梦空间</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在那头熊，在那句「他儿子在哪」——从那一刻起，格拉斯不是要活，是要回去。轻微剧透：伊尼亚里图最狠的一处是把复仇追到了最后又松手：那句「复仇在上帝手里」不是和解，是他终于走不动了。结尾格拉斯的呼吸声，是全片唯一一次让摄影机离开雪原、只看着他。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「自然光能拍出什么」的人；能接受 156 分钟、台词极少、暴力与寒冷都拍得很直的观众。R 级，含大量血腥与暴力画面，建议成年观看。内地公映过（删减版），流媒体可看。看完想继续：《荒野生存》《人狼大战》《北壁》。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/ever_253412_poster.jpg" alt="绝命海拔 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 灾难（美国 / 英国 / 冰岛 · 1996 年珠峰的那个五月）</span><span class="year">2015 · 美国 / 英国 / 冰岛 · 121 分钟 · 2015-11-03 内地上映（PG-13）</span></div>
+        <h2>绝命海拔 <span class="en">Everest</span></h2>
+        <div class="rates"><span class="rate"><b>7.5</b>豆瓣</span><span class="rate"><b>73%</b>烂番茄</span><span class="rate"><b>64</b>Metacritic</span><span class="rate"><b>7.1</b>IMDb</span></div>
+        <p class="oneline">「我们把客户带到八千米，就得把他们带下来。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1996 年 5 月 10 日，珠穆朗玛峰。两支商业登山队——罗布·霍尔的「冒险顾问」与斯科特·费舍尔的「山痴」——在同一天冲顶。那天山上挤了三十多个人，排队通过希拉里台阶，比原计划晚了两个小时。下午风暴上来的时候，还有人在上面。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>巴塔萨·科马库导演，改编自乔恩·克拉考尔 1997 年的《进入空气稀薄地带》与贝克·韦瑟斯的回忆录；这是他第一次拍英语大片。</li><li>成本约 5500 万美元，全球票房约 2.034 亿美元，是科马库生涯商业成绩最好的一部。</li><li>剧组在尼泊尔与意大利的阿尔卑斯山实景拍摄，还在松林制片厂搭了昆布冰瀑与希拉里台阶的等比例模型。</li><li>杰森·克拉克演罗布·霍尔，乔什·布洛林演贝克·韦瑟斯，杰克·吉伦哈尔演斯科特·费舍尔；凯拉·奈特莉与罗宾·怀特演留在家里等的人。</li><li>影片上映后，1996 年那场山难的幸存者与家属对部分改编提出过异议；片尾字幕列出了八名遇难者的名字。</li><li>豆瓣 7.5 / 烂番茄 73% / Metacritic 64 / IMDb 7.1：<b>本期四个平台分数最平均的一部</b>，都落在中上区间。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/ever_253412_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/ever_253412_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/ever_253412_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_67813.jpg" alt="" loading="lazy">
+                <div class="p-name">巴塔萨·科马库 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">冰岛导演、制片、演员。《101雷克雅未克》《禁运品》《双龙出手》《绝命海拔》《惊涛飓浪》。本片是他第一次拍英语大片，也是他商业成绩最好的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_136400.jpg" alt="" loading="lazy"><span>双龙出手</span></div><div class="wk"><img src="assets/movies/w_429300.jpg" alt="" loading="lazy"><span>惊涛飓浪</span></div><div class="wk"><img src="assets/movies/w_77866.jpg" alt="" loading="lazy"><span>禁运品</span></div><div class="wk"><img src="assets/movies/w_760741.jpg" alt="" loading="lazy"><span>荒野狂兽</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_76512.jpg" alt="" loading="lazy">
+                <div class="p-name">杰森·克拉克 <span class="p-role">主演（罗布·霍尔）</span></div>
+              </div>
+              <div class="p-note">澳大利亚演员。《猎杀本·拉登》《猩球崛起2：黎明之战》《终结者：创世纪》《绝命海拔》。本片他演罗布·霍尔，那个坚持要等客户下来的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_119450.jpg" alt="" loading="lazy"><span>猩球崛起2：黎明之战</span></div><div class="wk"><img src="assets/movies/w_87101.jpg" alt="" loading="lazy"><span>终结者：创世纪</span></div><div class="wk"><img src="assets/movies/w_157433.jpg" alt="" loading="lazy"><span>宠物坟场</span></div><div class="wk"><img src="assets/movies/w_97630.jpg" alt="" loading="lazy"><span>猎杀本·拉登</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_16851.jpg" alt="" loading="lazy">
+                <div class="p-name">乔什·布洛林 <span class="p-role">主演（贝克·韦瑟斯）</span></div>
+              </div>
+              <div class="p-note">美国演员。《老无所依》《米尔克》《复仇者联盟3：无限战争》《死侍2》《沙丘》《绝命海拔》。本片他演贝克·韦瑟斯，那个在雪地里躺了一夜、自己走回营地的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_383498.jpg" alt="" loading="lazy"><span>死侍2</span></div><div class="wk"><img src="assets/movies/w_299536.jpg" alt="" loading="lazy"><span>复仇者联盟3：无限战争</span></div><div class="wk"><img src="assets/movies/w_6977.jpg" alt="" loading="lazy"><span>老无所依</span></div><div class="wk"><img src="assets/movies/w_82682.jpg" alt="" loading="lazy"><span>匪帮传奇</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在风暴，在那个下午两点——每个人都被告知过「两点必须下撤」，而那天连最有经验的向导也往上走了。轻微剧透：科马库把这部片拍成了一次「流程失控」的复盘：谁在等氧、谁在等绳、谁在等一个电话，越往上走，每一个等待都在变贵。结尾霍尔在卫星电话里跟妻子说话那段，是全片唯一一次让海拔这件事安静下来。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「登山片怎么被拍成一次事故调查」的人；能接受人物众多、前四十分钟几乎都在讲准备、部分情感戏常规的观众。PG-13，含冻伤与遇难画面，建议高中以上观看。内地公映过，流媒体可看。看完想继续：《北壁》《垂直极限》《天劫余生》。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-15；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>

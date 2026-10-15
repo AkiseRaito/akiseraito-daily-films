@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-10-14 · 第 44 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 10 月 14 日 · 第 44 期 · 已避开往期推荐过的全部 430 部</div>
+  <div>
+    <span class="pill">主题：水线以下 · 十部发生在海上、海面与水下的电影（1995–2018）</span>
+    <span class="pill">全部 1990 年后：最早 1995，最晚 2018，按上映年份排列</span>
+    <span class="pill">类型覆盖：惊悚 5 / 剧情 5 / 动作 4 / 灾难 3 / 科幻 3 / 冒险 2 / 战争 2 / 恐怖 2</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-14，会随时间变动，仅供参考。<br>
+  这一期的筛选条件只有一条：<b>水在这部片里不是背景，是规则</b>——不是「海边发生了点什么」这么宽泛，是故事一旦离开水就没法成立：要么人被关在水下的一个容器里，要么水位、氧气和距离在替编剧做决定。<br>
+  十部全部落在 1995–2018，按上映年份排列。里面有<b>四部被关在钢铁容器里的人</b>：一艘要发射核弹的美国潜艇（《红潮风暴》）、一艘被劫来的德军潜艇（《猎杀U-571》）、一艘反应堆要炸的苏联潜艇（《K-19：寡妇制造者》）、一艘已经沉在海底的俄罗斯潜艇（《库尔斯克》）；有<b>三只水里的东西</b>：一只吃掉了整艘邮轮的海怪（《极度深寒》）、三条被改聪明的鲨鱼（《深海狂鲨》）、一条从汉江爬上来的鱼（《汉江怪物》）；还有三部把人扔进水里不管的：一场百年一遇的风暴（《完美风暴》）、一头撞沉了捕鲸船的抹香鲸（《海洋深处》）、一个断掉的吊缆（《鲨海》）。<br>
+  需要说明的一处取舍：这个主题最常被提到的《大白鲨》《泰坦尼克号》一部是 1975 年、一部超出本期范围，<b>《大白鲨》往期已经推过</b>，这一期是避开它们之后的二十三年，所以名单整体会往后半段偏。<br>
+  跨期重合如实写出，按 10-02 定的口径<b>只按片名去重</b>：<b>沃尔夫冈·彼得森</b>——往期第 40 期的《极度恐慌》也是他导的，这一期他带来的是《完美风暴》；<b>奉俊昊</b>——往期第 40 期的《雪国列车》出自他手，这一期的《汉江怪物》是他更早期的一部。<b>十位导演全部不同</b>。<br>
+  口碑落差如实标注、不做修饰：<b>《汉江怪物》烂番茄 93%、Metacritic 85，是本期专业评价最高</b>；<b>《极度深寒》烂番茄只有 31%，是本期最低</b>，而它的豆瓣有 7.6，是本期落差第二大的一部；<b>《鲨海》四个平台全部垫底</b>（豆瓣 6.0 / 烂番茄 53% / Metacritic 52 / IMDb 5.7），但它是本期唯一一部在内地公映过的深海惊悚片；<b>《红潮风暴》与《极度深寒》的 Metacritic 未收录</b>，已在卡片里写明。<br>
+  内地引进情况：两部在内地公映过（《汉江怪物》2007-03-06、《鲨海》2017-12-08），其余八部未在内地院线公映，流媒体或点播可看。<br>
+  10 部片名全部为首次出现，无一与往期 430 部重复（比对 `_titles_all.txt` 通过）。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>红潮风暴</td><td class="qg">动作 / 惊悚（美国 · 一艘潜艇里两个人的分歧）</td><td class="qr">8.0 / 89% / 未收录</td></tr><tr><td class="qn">02</td><td>极度深寒</td><td class="qg">动作 / 科幻（美国 / 加拿大 · 一艘豪华邮轮上的海怪）</td><td class="qr">7.6 / 31% / 未收录</td></tr><tr><td class="qn">03</td><td>深海狂鲨</td><td class="qg">科幻 / 惊悚（美国 / 澳大利亚 · 一群被改聪明的鲨鱼）</td><td class="qr">7.2 / 60% / 54</td></tr><tr><td class="qn">04</td><td>完美风暴</td><td class="qg">剧情 / 灾难（美国 · 一艘渔船的最后一次出海）</td><td class="qr">7.6 / 46% / 59</td></tr><tr><td class="qn">05</td><td>猎杀U-571</td><td class="qg">动作 / 战争（美国 / 法国 · 一艘德军潜艇与一台密码机）</td><td class="qr">8.1 / 68% / 62</td></tr><tr><td class="qn">06</td><td>K-19：寡妇制造者</td><td class="qg">剧情 / 惊悚（英国 / 德国 / 美国 · 一艘苏联核潜艇的第一次远航）</td><td class="qr">7.8 / 59% / 58</td></tr><tr><td class="qn">07</td><td>汉江怪物</td><td class="qg">科幻 / 恐怖（韩国 · 一条河与一个家庭）</td><td class="qr">7.6 / 93% / 85</td></tr><tr><td class="qn">08</td><td>海洋深处</td><td class="qg">剧情 / 冒险（美国 / 澳大利亚 / 西班牙 · 一艘捕鲸船与一头鲸）</td><td class="qr">7.5 / 42% / 47</td></tr><tr><td class="qn">09</td><td>鲨海</td><td class="qg">惊悚 / 恐怖（英国 / 美国 · 一个沉到 47 米下的笼子）</td><td class="qr">6.0 / 53% / 52</td></tr><tr><td class="qn">10</td><td>库尔斯克</td><td class="qg">剧情 / 灾难（法国 / 比利时 / 卢森堡 · 一艘沉在巴伦支海底的潜艇）</td><td class="qr">6.8 / 55% / 50</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/tide_8963_poster.jpg" alt="红潮风暴 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">动作 / 惊悚（美国 · 一艘潜艇里两个人的分歧）</span><span class="year">1995 · 美国 · 116 分钟（加长版 123 分钟）· 内地未映（R 级）</span></div>
+        <h2>红潮风暴 <span class="en">Crimson Tide</span></h2>
+        <div class="rates"><span class="rate"><b>8.0</b>豆瓣</span><span class="rate"><b>89%</b>烂番茄</span><span class="rate"><b>未收录</b>Metacritic</span><span class="rate"><b>7.3</b>IMDb</span></div>
+        <p class="oneline">「我们在这里是为了守护民主，不是实践民主。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>冷战结束之后，俄罗斯一个分离出去的共和国握着核弹头。美国核潜艇阿拉巴马号奉命进入发射阵位。就在是否发射的关键时刻，通讯系统坏了——他们收到一条命令，却没法确认它是不是最后一条。艇长拉姆齐要发射，新来的副艇长亨特不肯，于是他把艇长关了起来。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>托尼·斯科特导演，制片是唐·辛普森与杰里·布鲁克海默；剧本由迈克尔·希弗与理查德·P·亨里克写，<b>昆汀·塔伦蒂诺参与了台词润色但没有署名</b>。</li><li>北美首周末 1860 万美元登顶，全球票房约 1.573 亿美元；奥斯卡三项提名（剪辑、音响、音效剪辑）。</li><li>汉斯·季默的配乐拿了 1996 年格莱美最佳影视器乐作曲——把海军圣咏《永恒之父》混进合成器的那段主题，是他自己最满意的作品之一。</li><li>美国海军拒绝合作（剧本里有兵变），剧组改用法国海军的福煦号航母与一艘凯旋级核潜艇完成了大部分拍摄。</li><li>丹泽尔·华盛顿演副艇长亨特，吉恩·哈克曼演艇长拉姆齐；此后华盛顿与托尼·斯科特又合作了四次。</li><li>豆瓣 8.0 / 烂番茄 89% / Metacritic 未收录 / IMDb 7.3：<b>本期烂番茄并列第二</b>，是本期商业成绩最好的一部。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/tide_8963_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/tide_8963_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/tide_8963_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_893.jpg" alt="" loading="lazy">
+                <div class="p-name">托尼·斯科特 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">英国导演、制片，广告出身，视觉风格以高速剪辑与强烈色调著称。《壮志凌云》《红潮风暴》《国家公敌》《怒火救援》《危情时速》。本片是他与丹泽尔·华盛顿的第一次合作，此后两人又合作了四次。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_744.jpg" alt="" loading="lazy"><span>壮志凌云</span></div><div class="wk"><img src="assets/movies/w_9509.jpg" alt="" loading="lazy"><span>怒火救援</span></div><div class="wk"><img src="assets/movies/w_7551.jpg" alt="" loading="lazy"><span>时空线索</span></div><div class="wk"><img src="assets/movies/w_9798.jpg" alt="" loading="lazy"><span>国家公敌</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5292.jpg" alt="" loading="lazy">
+                <div class="p-name">丹泽尔·华盛顿 <span class="p-role">主演（罗恩·亨特）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《光荣》《费城故事》《训练日》《怒火救援》《藩篱》。两座奥斯卡（最佳男配角、最佳男主角）。本片他演副艇长罗恩·亨特——一个拒绝在命令未经确认时发射的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_156022.jpg" alt="" loading="lazy"><span>伸冤人</span></div><div class="wk"><img src="assets/movies/w_20504.jpg" alt="" loading="lazy"><span>艾利之书</span></div><div class="wk"><img src="assets/movies/w_2034.jpg" alt="" loading="lazy"><span>训练日</span></div><div class="wk"><img src="assets/movies/w_87502.jpg" alt="" loading="lazy"><span>迫降航班</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_193.jpg" alt="" loading="lazy">
+                <div class="p-name">吉恩·哈克曼 <span class="p-role">主演（弗兰克·拉姆齐）</span></div>
+              </div>
+              <div class="p-note">美国演员。《法国贩毒网》《对话》《不可饶恕》《超人》《天才一族》。两座奥斯卡（最佳男主角、最佳男配角）。本片他演艇长弗兰克·拉姆齐——他要的不是发射，是不让这艘船错过它的任务。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_9428.jpg" alt="" loading="lazy"><span>天才一族</span></div><div class="wk"><img src="assets/movies/w_33.jpg" alt="" loading="lazy"><span>不可饶恕</span></div><div class="wk"><img src="assets/movies/w_1051.jpg" alt="" loading="lazy"><span>法国贩毒网</span></div><div class="wk"><img src="assets/movies/w_9798.jpg" alt="" loading="lazy"><span>国家公敌</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在谁对谁错，在他们终于确认了那条被中断的命令——结果证明亨特是对的，但真正让这部片成立的，是拉姆齐从头到尾也没有错。轻微剧透：托尼·斯科特把潜艇拍成了一个「程序」的空间：每一步都有口令、有复述、有确认，所以那场兵变才有重量——它不是两个人的冲突，是一个人决定不再走程序。结尾军事法庭的那句判词，是全片唯一一次把问题说出口。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「两个人怎么把一艘潜艇撑满两小时」的人；能接受全片几乎没有外景、军事术语密集、结局略和稀泥的观众。R 级，含粗口与威胁画面，建议初中以上观看。内地未映，流媒体可看。看完想继续：《猎杀U-571》《K-19：寡妇制造者》《从海底出击》。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/rising_9457_poster.jpg" alt="极度深寒 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">动作 / 科幻（美国 / 加拿大 · 一艘豪华邮轮上的海怪）</span><span class="year">1998 · 美国 / 加拿大 · 106 分钟 · 内地未映（R 级）</span></div>
+        <h2>极度深寒 <span class="en">Deep Rising</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>31%</b>烂番茄</span><span class="rate"><b>未收录</b>Metacritic</span><span class="rate"><b>6.1</b>IMDb</span></div>
+        <p class="oneline">「这艘船上有什么东西，把所有人都吃掉了。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一伙劫匪劫持了一艘拖船，要去南太平洋上劫一艘豪华邮轮「阿尔戈号」。等他们登船，船上一个人都没有——只有血、被打穿的舱壁，和两个幸存者：女贼崔莲和船东代表西蒙。他们说的东西没人信，直到它从下层甲板爬上来。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>斯蒂芬·索莫斯自编自导，这是他拍《木乃伊》之前的最后一部 B 级片；此后他成了环球冒险片的主力导演。</li><li>北美票房仅约 1120 万美元，是当年著名的票房失利案例——<b>这也是它迟迟没有续集的原因</b>。</li><li>怪物由 Boss Film 与 Dream Quest Images 两家特效公司合作完成，采用实物模型与电脑动画混合；它那套触手与尖牙的设计，是 90 年代末海怪片的标志性造型。</li><li>片中怪物的叫声是把猪、海豹、僧帽猴、无喉人与福音歌手的声音混录而成的；那些超自然的低频声，是在一个 3000 加仑不锈钢罐里用干冰录出来的。</li><li>特里特·威廉斯演劫匪头子芬尼根，全片他在跑、在骂、在扔炸药；法米克·詹森演崔莲，是船上两个幸存者之一。</li><li>豆瓣 7.6 / 烂番茄 31% / Metacritic 未收录 / IMDb 6.1：<b>本期专业评价最低的一部</b>，华语观众明显高于欧美影评。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/rising_9457_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/rising_9457_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/rising_9457_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_7775.jpg" alt="" loading="lazy">
+                <div class="p-name">斯蒂芬·索莫斯 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧，擅长把老派冒险片做成大制作。《小鬼闯天关》《极度深寒》《木乃伊》《木乃伊归来》《范海辛》。本片是他拍《木乃伊》之前的最后一部 B 级片。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_564.jpg" alt="" loading="lazy"><span>木乃伊</span></div><div class="wk"><img src="assets/movies/w_1734.jpg" alt="" loading="lazy"><span>木乃伊2：木乃伊归来</span></div><div class="wk"><img src="assets/movies/w_7131.jpg" alt="" loading="lazy"><span>范海辛</span></div><div class="wk"><img src="assets/movies/w_14869.jpg" alt="" loading="lazy"><span>特种部队Ⅰ：眼镜蛇的崛起</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4515.jpg" alt="" loading="lazy">
+                <div class="p-name">特里特·威廉斯 <span class="p-role">主演（约翰·芬尼根）</span></div>
+              </div>
+              <div class="p-note">美国演员。《毛发》《城市王子》《极度深寒》《仙境谋杀案》。本片他演劫匪头子约翰·芬尼根——一个本想抢船、最后只能带着所有人逃命的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_44115.jpg" alt="" loading="lazy"><span>127小时</span></div><div class="wk"><img src="assets/movies/w_311.jpg" alt="" loading="lazy"><span>美国往事</span></div><div class="wk"><img src="assets/movies/w_9029.jpg" alt="" loading="lazy"><span>情迷拉斯维加斯</span></div><div class="wk"><img src="assets/movies/w_10654.jpg" alt="" loading="lazy"><span>毛发</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_10696.jpg" alt="" loading="lazy">
+                <div class="p-name">法米克·詹森 <span class="p-role">主演（崔莲）</span></div>
+              </div>
+              <div class="p-note">荷兰演员、模特。《007之黄金眼》《X战警》《极度深寒》《飓风营救》。本片她演女贼崔莲，船上两个幸存者之一，也是唯一一个从头到尾知道发生了什么的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_8681.jpg" alt="" loading="lazy"><span>飓风营救</span></div><div class="wk"><img src="assets/movies/w_36657.jpg" alt="" loading="lazy"><span>X战警</span></div><div class="wk"><img src="assets/movies/w_82675.jpg" alt="" loading="lazy"><span>飓风营救2</span></div><div class="wk"><img src="assets/movies/w_60304.jpg" alt="" loading="lazy"><span>韩赛尔与格蕾特：女巫猎人</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在他们终于搞清楚这艘船为什么漂在海上——不是被袭击，是被吃掉了，而吃掉它的东西还留在船上。轻微剧透：索莫斯最聪明的一处，是把怪物藏了整整五十分钟：前面只有声音、只有拖痕、只有船体在沉，等你终于看清它，反而不如想象中吓人——而这部片很清楚这一点，所以后半段改成一路炸。结尾小岛上的那一声吼是它留给续集的门，可惜那扇门再没打开过。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「90 年代 B 级海怪片长什么样」的人；能接受人物是工具人、台词粗糙、特效在今天看略旧的观众。R 级，含血腥与撕咬画面，建议高中以上观看。内地未映。看完想继续：《深海狂鲨》《汉江怪物》《狂蟒之灾》。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/dbs_8914_poster.jpg" alt="深海狂鲨 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 惊悚（美国 / 澳大利亚 · 一群被改聪明的鲨鱼）</span><span class="year">1999 · 美国 / 澳大利亚 / 墨西哥 · 105 分钟 · 内地未映（R 级）</span></div>
+        <h2>深海狂鲨 <span class="en">Deep Blue Sea</span></h2>
+        <div class="rates"><span class="rate"><b>7.2</b>豆瓣</span><span class="rate"><b>60%</b>烂番茄</span><span class="rate"><b>54</b>Metacritic</span><span class="rate"><b>5.9</b>IMDb</span></div>
+        <p class="oneline">「它们现在比我们想的聪明。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一座漂在海上的研究中心里，苏珊·麦卡利斯特博士正在从鲨鱼脑中提取蛋白质，用来治疗阿尔茨海默病。为了拿到更多蛋白，她把鲨鱼的脑容量改大了。这一步做完了：鲨鱼不但更强壮，还开始思考。风暴来了，平台开始进水，而水下那三只已经学会了怎么把人分开。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>雷尼·哈林导演（《虎胆龙威2》《绝岭雄风》），剧本由邓肯·肯尼迪与鲍尔斯兄弟写。</li><li>成本约 6000 万美元，全球票房约 1.65 亿美元，是 1999 年北美暑期档的爆米花代表之一。</li><li>鲨鱼用机械模型与电脑动画混合完成，大量水下镜头是真在开放式水箱里拍的——<b>演员与三条机械鲨鱼同框的戏占了全片大半</b>。</li><li>塞缪尔·杰克逊演投资方法兰克林，他出场不到半小时就被吃了；这场戏是全片最著名的「骗观众」设计。</li><li>萨弗蓉·布罗斯演苏珊博士，一个为了救人而做了错事的人；托马斯·简演鲨鱼专家卡特，是三个主角里唯一一直想跑的。</li><li>豆瓣 7.2 / 烂番茄 60% / Metacritic 54 / IMDb 5.9：<b>专业评价中下，但它在鲨鱼片观众里的地位远高于分数</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/dbs_8914_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dbs_8914_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/dbs_8914_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_16938.jpg" alt="" loading="lazy">
+                <div class="p-name">雷尼·哈林 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">芬兰导演、制片，以动作片见长。《虎胆龙威2》《绝岭雄风》《深海狂鲨》《驱魔人前传》。本片是他 90 年代商业成绩最好的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1573.jpg" alt="" loading="lazy"><span>虎胆龙威2</span></div><div class="wk"><img src="assets/movies/w_9350.jpg" alt="" loading="lazy"><span>绝岭雄风</span></div><div class="wk"><img src="assets/movies/w_10131.jpg" alt="" loading="lazy"><span>猛鬼街4：梦幻主宰</span></div><div class="wk"><img src="assets/movies/w_188207.jpg" alt="" loading="lazy"><span>大力神</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_9825.jpg" alt="" loading="lazy">
+                <div class="p-name">萨弗蓉·布罗斯 <span class="p-role">主演（苏珊·麦卡利斯特）</span></div>
+              </div>
+              <div class="p-note">英国演员、作家。《深海狂鲨》《特洛伊》《银行抢劫案》《良医》。本片她演苏珊·麦卡利斯特博士——一个为了救人而把鲨鱼改聪明了的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_8848.jpg" alt="" loading="lazy"><span>银行大劫案</span></div><div class="wk"><img src="assets/movies/w_652.jpg" alt="" loading="lazy"><span>特洛伊</span></div><div class="wk"><img src="assets/movies/w_2355.jpg" alt="" loading="lazy"><span>从心开始</span></div><div class="wk"><img src="assets/movies/w_1360.jpg" alt="" loading="lazy"><span>弗里达</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11155.jpg" alt="" loading="lazy">
+                <div class="p-name">托马斯·简 <span class="p-role">主演（卡特·布莱克）</span></div>
+              </div>
+              <div class="p-note">美国演员。《深海狂鲨》《惩罚者》《迷雾》《大侦探皮卡丘》。本片他演鲨鱼专家卡特·布莱克，三个人里唯一一个从一开始就主张离开的。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_5876.jpg" alt="" loading="lazy"><span>迷雾</span></div><div class="wk"><img src="assets/movies/w_7220.jpg" alt="" loading="lazy"><span>惩罚者</span></div><div class="wk"><img src="assets/movies/w_452507.jpg" alt="" loading="lazy"><span>1922</span></div><div class="wk"><img src="assets/movies/w_6171.jpg" alt="" loading="lazy"><span>捕梦网</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在塞缪尔·杰克逊被吃掉的那一刻——到那时你才明白这部片没有安全区，而它愿意在二十分钟里就把最大的明星处理掉。轻微剧透：哈林把「科学怪谈」拍成了一场水位的竞赛：每过十分钟，水就涨一级，能站的地方就少一层，所以这部片真正紧张的不是鲨鱼，是空间。结尾那只鲨鱼从水里跃起来的镜头，是全片唯一一次让摄影机跟着它一起出水。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「鲨鱼片能把套路玩到什么程度」的人；能接受人物扁平、科学设定离谱、特效在今天看有年代感的观众。R 级，含血腥与撕咬画面，建议高中以上观看。内地未映。看完想继续：《大白鲨》《鲨海》《极度深寒》。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/storm_2133_poster.jpg" alt="完美风暴 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 灾难（美国 · 一艘渔船的最后一次出海）</span><span class="year">2000 · 美国 · 130 分钟 · 内地未映（PG-13）</span></div>
+        <h2>完美风暴 <span class="en">The Perfect Storm</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>46%</b>烂番茄</span><span class="rate"><b>59</b>Metacritic</span><span class="rate"><b>6.5</b>IMDb</span></div>
+        <p class="oneline">「再等一天，鱼就要跑了。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1991 年马萨诸塞州格洛斯特。船长比利·泰恩这一季运气不好，他决定再出海一次，去更远的海域。那一年的北大西洋上，一股飓风与两股天气系统撞在了一起，形成了气象史上罕见的「完美风暴」。剑鱼船「安德里亚·盖尔号」和船上的六个人就在里面。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>沃尔夫冈·彼得森导演，改编自塞巴斯蒂安·荣格尔 1997 年的同名纪实作品；<b>往期第 40 期推过的《极度恐慌》也是他导的</b>。</li><li>成本约 1.3 亿美元，全球票房约 3.287 亿美元；奥斯卡两项提名（音响、视觉效果），英国电影学院奖最佳特效成就奖。</li><li>剧组在真实海况里拍了大量镜头：那艘道具船「格蕾斯女士号」在拍摄期间共航行了 16000 海里。</li><li>乔治·克鲁尼演船长比利·泰恩，马克·沃尔伯格演新手渔民鲍比·沙特福德；戴安·琳恩与玛丽·伊丽莎白·马斯特兰托尼奥演留在岸上等的人。</li><li>影片没有给出最后的答案：船体残骸被发现过，六个人始终没有找到——这个结尾是照着真实事件写的。</li><li>豆瓣 7.6 / 烂番茄 46% / Metacritic 59 / IMDb 6.5：<b>专业评价中下，是彼得森生涯里评价分化最大的一部</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/storm_2133_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/storm_2133_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/storm_2133_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5231.jpg" alt="" loading="lazy">
+                <div class="p-name">沃尔夫冈·彼得森 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">德国导演，好莱坞海难片与政治惊悚片的代表。《从海底出击》《永不退缩》《极度恐慌》《空军一号》《完美风暴》《特洛伊》。<b>往期第 40 期推过的《极度恐慌》出自他手</b>。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_652.jpg" alt="" loading="lazy"><span>特洛伊</span></div><div class="wk"><img src="assets/movies/w_34584.jpg" alt="" loading="lazy"><span>大魔域</span></div><div class="wk"><img src="assets/movies/w_9772.jpg" alt="" loading="lazy"><span>空军一号</span></div><div class="wk"><img src="assets/movies/w_387.jpg" alt="" loading="lazy"><span>从海底出击</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1461.jpg" alt="" loading="lazy">
+                <div class="p-name">乔治·克鲁尼 <span class="p-role">主演（比利·泰恩）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《急诊室的故事》《十一罗汉》《迈克尔·克莱顿》《在云端》《后人》。两座奥斯卡。本片他演船长比利·泰恩——一个这季运气不好、决定再赌一把的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_161.jpg" alt="" loading="lazy"><span>十一罗汉</span></div><div class="wk"><img src="assets/movies/w_49047.jpg" alt="" loading="lazy"><span>地心引力</span></div><div class="wk"><img src="assets/movies/w_163.jpg" alt="" loading="lazy"><span>十二罗汉</span></div><div class="wk"><img src="assets/movies/w_298.jpg" alt="" loading="lazy"><span>十三罗汉</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_13240.jpg" alt="" loading="lazy">
+                <div class="p-name">马克·沃尔伯格 <span class="p-role">主演（鲍比·沙特福德）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片。《不羁夜》《三块广告牌》《斗士》《变形金刚》。本片他演新手渔民鲍比·沙特福德，那个刚谈了恋爱、刚买了车的年轻人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_72105.jpg" alt="" loading="lazy"><span>泰迪熊</span></div><div class="wk"><img src="assets/movies/w_91314.jpg" alt="" loading="lazy"><span>变形金刚4：绝迹重生</span></div><div class="wk"><img src="assets/movies/w_214756.jpg" alt="" loading="lazy"><span>泰迪熊2</span></div><div class="wk"><img src="assets/movies/w_335988.jpg" alt="" loading="lazy"><span>变形金刚5：最后的骑士</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在他们决定掉头——不是不知道风暴来了，是他们已经装满了鱼，回去要扔掉一半，所以他们选择再赌一次。轻微剧透：彼得森最扎实的一处是前半段：讨价还价、借钱、分手、再上船，这些琐碎全都是为了让「赌一把」这件事有重量。结尾没有英雄镜头，只有岸上的人开始一个一个打电话——这部片把灾难片的高潮放在了别处。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「灾难片怎么处理一个没有救援的故事」的人；能接受前半段铺垫长、部分情感戏煽情、特效在今天看略旧的观众。PG-13，含海难与溺水画面，建议初中以上观看。内地未映。看完想继续：《一切尽失》《怒海救援》《海洋深处》。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/u571_3536_poster.jpg" alt="猎杀U-571 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">动作 / 战争（美国 / 法国 · 一艘德军潜艇与一台密码机）</span><span class="year">2000 · 美国 / 法国 · 116 分钟 · 内地未映（PG-13）</span></div>
+        <h2>猎杀U-571 <span class="en">U-571</span></h2>
+        <div class="rates"><span class="rate"><b>8.1</b>豆瓣</span><span class="rate"><b>68%</b>烂番茄</span><span class="rate"><b>62</b>Metacritic</span><span class="rate"><b>6.6</b>IMDb</span></div>
+        <p class="oneline">「我们已经上来了。现在要把它开回去。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1942 年大西洋。德军 U 型潜艇用「狼群」战术切断了盟军的补给线，而盟军破不开它们的密码。美国海军上尉泰勒带着一队人伪装成德军，登上一艘被击伤的 U-571，要抢走艇上的恩尼格玛密码机。他们抢到了，但潜艇也被打坏了，而德国人在后面追。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>乔纳森·莫斯托自编自导，联合编剧是大卫·阿耶——后来《训练日》《狂怒》的编剧。</li><li>成本约 6200 万美元，全球票房约 1.276 亿美元；奥斯卡最佳音效剪辑提名。</li><li>影片上映后引发真实争议：最早缴获恩尼格玛机的主要是英国皇家海军，片方后来在片尾字幕里加了一行说明向英国水兵致意。</li><li>马修·麦康纳演泰勒，一个被许诺过却始终没拿到艇长任命的副艇长；比尔·帕克斯顿演士官达尔格伦，哈维·凯特尔演枪炮长。</li><li>邦·乔维演轮机长，这是他少数几次在主流电影里的重要角色；托马斯·克莱舒曼演德军艇长。</li><li>豆瓣 8.1 / 烂番茄 68% / Metacritic 62 / IMDb 6.6：<b>本期豆瓣并列最高</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/u571_3536_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/u571_3536_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/u571_3536_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_7213.jpg" alt="" loading="lazy">
+                <div class="p-name">乔纳森·莫斯托 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧。《猎杀U-571》《终结者3》《代理人》。本片让他拿到了当时最大的一次预算，此后他转向了科幻与惊悚。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_296.jpg" alt="" loading="lazy"><span>终结者3：机器的觉醒</span></div><div class="wk"><img src="assets/movies/w_19959.jpg" alt="" loading="lazy"><span>未来战警</span></div><div class="wk"><img src="assets/movies/w_2163.jpg" alt="" loading="lazy"><span>悍将奇兵</span></div><div class="wk"><img src="assets/movies/w_302150.jpg" alt="" loading="lazy"><span>杀手的祷告</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_10297.jpg" alt="" loading="lazy">
+                <div class="p-name">马修·麦康纳 <span class="p-role">主演（泰勒）</span></div>
+              </div>
+              <div class="p-note">美国演员。《星际穿越》《达拉斯买家俱乐部》《真探》《华尔街之狼》《猎杀U-571》。奥斯卡最佳男主角。本片他演泰勒——一个被许诺过却始终没拿到艇长任命的副艇长。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_157336.jpg" alt="" loading="lazy"><span>星际穿越</span></div><div class="wk"><img src="assets/movies/w_152532.jpg" alt="" loading="lazy"><span>达拉斯买家俱乐部</span></div><div class="wk"><img src="assets/movies/w_335797.jpg" alt="" loading="lazy"><span>欢乐好声音</span></div><div class="wk"><img src="assets/movies/w_522627.jpg" alt="" loading="lazy"><span>绅士们</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2053.jpg" alt="" loading="lazy">
+                <div class="p-name">比尔·帕克斯顿 <span class="p-role">主演（达尔格伦）</span></div>
+              </div>
+              <div class="p-note">美国演员。《异形2》《阿波罗13》《泰坦尼克号》《猎杀U-571》《明日边缘》。本片他演士官达尔格伦，艇上资历最深、也最先看清局势的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_597.jpg" alt="" loading="lazy"><span>泰坦尼克号</span></div><div class="wk"><img src="assets/movies/w_137113.jpg" alt="" loading="lazy"><span>明日边缘</span></div><div class="wk"><img src="assets/movies/w_568.jpg" alt="" loading="lazy"><span>阿波罗13号</span></div><div class="wk"><img src="assets/movies/w_242582.jpg" alt="" loading="lazy"><span>夜行者</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在他们抢到密码机之后——任务完成了，可潜艇被打坏了、发报机没了、原班人马死了一半，剩下的问题全都变成了「怎么开回去」。轻微剧透：这部片把潜艇片拍成了一次换位：他们穿着德军的制服、开着德军的设备、用德军的方式操作，到后面你几乎忘了谁是谁。结尾他们把密码机交出去、自己沉进海里的镜头，是全片唯一一次让摄影机离开那艘船。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「潜艇片怎么把一次任务拆成三段」的人；能接受史实改动较大（主要缴获由英军完成，片尾有说明）、部分桥段夸张的观众。PG-13，含战争与溺水画面，建议初中以上观看。内地未映。看完想继续：《红潮风暴》《K-19：寡妇制造者》《从海底出击》。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/k19_8665_poster.jpg" alt="K-19：寡妇制造者 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 惊悚（英国 / 德国 / 美国 · 一艘苏联核潜艇的第一次远航）</span><span class="year">2002 · 英国 / 德国 / 美国 / 加拿大 · 138 分钟 · 内地未映（PG-13）</span></div>
+        <h2>K-19：寡妇制造者 <span class="en">K-19: The Widowmaker</span></h2>
+        <div class="rates"><span class="rate"><b>7.8</b>豆瓣</span><span class="rate"><b>59%</b>烂番茄</span><span class="rate"><b>58</b>Metacritic</span><span class="rate"><b>6.7</b>IMDb</span></div>
+        <p class="oneline">「这不是一次任务。这是一次献祭。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1961 年，冷战最紧的那一年。苏联第一艘战略核潜艇 K-19 要在北极试射导弹，而它是一艘赶工出来的船：反应堆没人愿意修，管道是临时接的。新任艇长沃斯特里科夫接手后坚持按计划出海。出海第四天，反应堆冷却系统失效了；能把它修好的人，得进到一个没有任何防护的舱室里去。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>凯瑟琳·毕格罗导演并出任制片——她是首位拿到奥斯卡最佳导演的女性，本片是她拍《拆弹部队》之前的最后一部英语长片。</li><li>成本约 1 亿美元，全球票房仅约 6500 万美元，是当年著名的票房失利。</li><li>哈里森·福特演艇长阿列克谢·沃斯特里科夫，连姆·尼森演原任艇长波列宁——一个被降职却留下来的人；两个人的关系是全片真正的轴。</li><li>片名「寡妇制造者」只是电影里的叫法；真实历史中这艘潜艇在 1961 年 7 月 3 日事故之后才有了外号，叫「广岛」。</li><li>影片在俄罗斯上映时，52 名 K-19 老兵被请到圣彼得堡参加首映；他们指出片中大量史实与技术改动，但肯定了福特的那场戏。</li><li>豆瓣 7.8 / 烂番茄 59% / Metacritic 58 / IMDb 6.7：<b>专业评价中庸，也是本期片长最长的一部（138 分钟）</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/k19_8665_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/k19_8665_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/k19_8665_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_14392.jpg" alt="" loading="lazy">
+                <div class="p-name">凯瑟琳·毕格罗 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧、制片，首位拿到奥斯卡最佳导演的女性。《拆弹部队》《猎杀本·拉登》《底特律》。本片是她拍《拆弹部队》之前的最后一部英语长片，也是她第一次处理冷战题材。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_12162.jpg" alt="" loading="lazy"><span>拆弹部队</span></div><div class="wk"><img src="assets/movies/w_97630.jpg" alt="" loading="lazy"><span>猎杀本·拉登</span></div><div class="wk"><img src="assets/movies/w_1089.jpg" alt="" loading="lazy"><span>惊爆点</span></div><div class="wk"><img src="assets/movies/w_407448.jpg" alt="" loading="lazy"><span>底特律</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_3.jpg" alt="" loading="lazy">
+                <div class="p-name">哈里森·福特 <span class="p-role">主演（阿列克谢·沃斯特里科夫）</span></div>
+              </div>
+              <div class="p-note">美国演员。《星球大战》《夺宝奇兵》《银翼杀手》《亡命天涯》《空军一号》。本片他演艇长阿列克谢·沃斯特里科夫；2023 年他曾提到，这是他自己最满意的角色之一。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_78.jpg" alt="" loading="lazy"><span>银翼杀手</span></div><div class="wk"><img src="assets/movies/w_85.jpg" alt="" loading="lazy"><span>夺宝奇兵：法柜奇兵</span></div><div class="wk"><img src="assets/movies/w_11.jpg" alt="" loading="lazy"><span>星球大战4：新希望</span></div><div class="wk"><img src="assets/movies/w_89.jpg" alt="" loading="lazy"><span>夺宝奇兵3：圣战奇兵</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_3896.jpg" alt="" loading="lazy">
+                <div class="p-name">连姆·尼森 <span class="p-role">主演（米哈伊尔·波列宁）</span></div>
+              </div>
+              <div class="p-note">英国 / 爱尔兰演员。《辛德勒的名单》《星球大战前传》《飓风营救》《K-19：寡妇制造者》。本片他演原任艇长米哈伊尔·波列宁——一个被降职却坚持留在船上的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_424.jpg" alt="" loading="lazy"><span>辛德勒的名单</span></div><div class="wk"><img src="assets/movies/w_1893.jpg" alt="" loading="lazy"><span>星球大战1：幽灵的威胁</span></div><div class="wk"><img src="assets/movies/w_8681.jpg" alt="" loading="lazy"><span>飓风营救</span></div><div class="wk"><img src="assets/movies/w_272.jpg" alt="" loading="lazy"><span>蝙蝠侠：侠影之谜</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在反应堆出事，在他们发现没有人有防护服——前面几十分钟所有的赶工、抢进度、不肯停，到这一刻全部变成了具体的代价。轻微剧透：毕格罗最狠的一处是把两个艇长放在同一艘船上：一个要完成任务，一个要保住人，而他们谁都没有错。结尾那场老兵聚会的戏是全片唯一一次离开潜艇镜头，也是这部片真正想说的东西——那些人后来怎么样了。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「潜艇片怎么被拍成一部关于责任的作品」的人；能接受 138 分钟偏长、前半段铺垫慢、史实改动较多的观众。PG-13，含辐射伤害画面，建议初中以上观看。内地未映。看完想继续：《红潮风暴》《猎杀U-571》《库尔斯克》。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/hanmon_1255_poster.jpg" alt="汉江怪物 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 恐怖（韩国 · 一条河与一个家庭）</span><span class="year">2006 · 韩国 · 120 分钟 · 2007-03-06 内地上映</span></div>
+        <h2>汉江怪物 <span class="en">The Host</span></h2>
+        <div class="rates"><span class="rate"><b>7.6</b>豆瓣</span><span class="rate"><b>93%</b>烂番茄</span><span class="rate"><b>85</b>Metacritic</span><span class="rate"><b>7.1</b>IMDb</span></div>
+        <p class="oneline">「它在汉江里。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>汉江边上一家人经营着一家小店：糊涂的父亲康斗、爷爷熙峰、失业的叔叔南日、射箭总在关键时刻掉链子的姑姑南珠，还有康斗的女儿贤书。一天，一个从桥墩上爬下来的东西冲进了人群，把贤书叼走了。官方说这是病毒，要封锁江边。这一家人不等了，他们自己进去了。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>奉俊昊自编自导，这是他的第三部长片；<b>往期第 40 期推过的《雪国列车》也是他导的</b>。</li><li>成本约 1100 万美元，韩国观影人次超过 1300 万，全球票房约 8943 万美元——在《寄生虫》之前，它是韩国电影全球票房的纪录保持者。</li><li>片中怪物由新西兰的维塔工作室设计、美国的 The Orphanage 做特效；它那副非鱼非兽的样子是奉俊昊特意要求的——<b>不要酷，要脏</b>。</li><li>宋康昊演父亲康斗，一个又糊涂又拼的中年人；裴斗娜演姑姑南珠，那个射箭总在关键时刻掉链子的人。</li><li>影片取材于真实的麦克法兰德事件（驻韩美军向汉江倾倒废液），开头那场戏直接把这件事拍了出来。</li><li>豆瓣 7.6 / 烂番茄 93% / Metacritic 85 / IMDb 7.1：<b>本期专业评价最高</b>，烂番茄 93% 与 Metacritic 85 都是本期第一。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/hanmon_1255_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/hanmon_1255_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/hanmon_1255_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_21684.jpg" alt="" loading="lazy">
+                <div class="p-name">奉俊昊 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">韩国导演、编剧。《绑架门口狗》《杀人回忆》《汉江怪物》《母亲》《雪国列车》《寄生虫》。<b>往期第 40 期推过的《雪国列车》也是他导的</b>。本片是让他从韩国走向国际的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_496243.jpg" alt="" loading="lazy"><span>寄生虫</span></div><div class="wk"><img src="assets/movies/w_110415.jpg" alt="" loading="lazy"><span>雪国列车</span></div><div class="wk"><img src="assets/movies/w_11423.jpg" alt="" loading="lazy"><span>杀人回忆</span></div><div class="wk"><img src="assets/movies/w_387426.jpg" alt="" loading="lazy"><span>玉子</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_20738.jpg" alt="" loading="lazy">
+                <div class="p-name">宋康昊 <span class="p-role">主演（朴江斗）</span></div>
+              </div>
+              <div class="p-note">韩国演员。《杀人回忆》《汉江怪物》《寄生虫》《辩护人》《密探》。本片他演父亲朴康斗，一个又糊涂又拼的中年人；这个角色让他成为韩国电影的票房保证。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_496243.jpg" alt="" loading="lazy"><span>寄生虫</span></div><div class="wk"><img src="assets/movies/w_110415.jpg" alt="" loading="lazy"><span>雪国列车</span></div><div class="wk"><img src="assets/movies/w_11423.jpg" alt="" loading="lazy"><span>杀人回忆</span></div><div class="wk"><img src="assets/movies/w_4689.jpg" alt="" loading="lazy"><span>我要复仇</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_21688.jpg" alt="" loading="lazy">
+                <div class="p-name">裴斗娜 <span class="p-role">主演（朴南珠）</span></div>
+              </div>
+              <div class="p-note">韩国演员。《汉江怪物》《空气人偶》《超感猎杀》《王国》。本片她演姑姑朴南珠，那个射箭总在关键时刻掉链子的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_83542.jpg" alt="" loading="lazy"><span>云图</span></div><div class="wk"><img src="assets/movies/w_4689.jpg" alt="" loading="lazy"><span>我要复仇</span></div><div class="wk"><img src="assets/movies/w_76757.jpg" alt="" loading="lazy"><span>木星上行</span></div><div class="wk"><img src="assets/movies/w_848326.jpg" alt="" loading="lazy"><span>月球叛军：火之女</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在怪物出现，在官方宣布这是病毒——从那一刻起，这家人要对抗的不是一条鱼，是一整套应急机制。轻微剧透：奉俊昊把怪物片拍成了家庭剧：这四个人各有各的毛病，而救孩子这件事逼着他们一个个把自己修好。结尾康斗独自守在江边小店里的镜头，是全片唯一一次让摄影机停下来——这部片真正讲的东西在那间店里，不在水里。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「怪物片怎么同时是一部社会片」的人；能接受政府形象被写得相当不堪、怪物特效有年代感、中段节奏偏慢的观众。含怪物袭击与死亡画面，建议初中以上观看。内地上映过，流媒体可看。看完想继续：《釜山行》《极度深寒》《哭声》。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/heart_205775_poster.jpg" alt="海洋深处 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 冒险（美国 / 澳大利亚 / 西班牙 · 一艘捕鲸船与一头鲸）</span><span class="year">2015 · 美国 / 澳大利亚 / 西班牙 · 122 分钟 · 内地未映（PG-13）</span></div>
+        <h2>海洋深处 <span class="en">In the Heart of the Sea</span></h2>
+        <div class="rates"><span class="rate"><b>7.5</b>豆瓣</span><span class="rate"><b>42%</b>烂番茄</span><span class="rate"><b>47</b>Metacritic</span><span class="rate"><b>6.9</b>IMDb</span></div>
+        <p class="oneline">「问题不是能不能回去。是回去的路上还剩几个人。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1820 年，新英格兰捕鲸船「埃塞克斯号」在南太平洋被一头巨型抹香鲸撞沉。二十名船员挤上三艘小艇，带着有限的淡水和饼干，漂流了九十天。这部片从一个幸存者把这件事讲给一位年轻作家听开始——那位作家后来写了一本叫《白鲸》的小说。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>朗·霍华德导演，改编自纳撒尼尔·菲尔布里克 2000 年的非虚构作品《海洋深处》；这是《白鲸》真正的原型事件。</li><li>成本约 1 亿美元，全球票房约 9320 万美元，是朗·霍华德生涯里票房失利的作品之一。</li><li>克里斯·海姆斯沃斯演大副欧文·蔡斯，本·卫肖演赫尔曼·梅尔维尔——那位听故事的作家；本杰明·沃克演船长波拉德。</li><li>大量海上镜头是在西班牙加那利群岛外海实拍的，剧组在真船上搭了三艘小艇的复制品，并长时间泡在海上完成拍摄。</li><li>影片把「梅尔维尔听故事」这条线放在最后：前面九十天的漂流，是一段被讲出来的回忆。</li><li>豆瓣 7.5 / 烂番茄 42% / Metacritic 47 / IMDb 6.9：<b>本期专业评价倒数第二</b>，华语观众明显高于欧美影评。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/heart_205775_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/heart_205775_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/heart_205775_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6159.jpg" alt="" loading="lazy">
+                <div class="p-name">朗·霍华德 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">美国导演、制片，童星出身，好莱坞最稳的「正剧工匠」之一。《美丽心灵》《阿波罗13》《对话尼克松》《极速风流》《海洋深处》。本片改编自《白鲸》真正的原型事件。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_453.jpg" alt="" loading="lazy"><span>美丽心灵</span></div><div class="wk"><img src="assets/movies/w_591.jpg" alt="" loading="lazy"><span>达·芬奇密码</span></div><div class="wk"><img src="assets/movies/w_348350.jpg" alt="" loading="lazy"><span>星球大战外传2：游侠索罗</span></div><div class="wk"><img src="assets/movies/w_8871.jpg" alt="" loading="lazy"><span>圣诞怪杰</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_74568.jpg" alt="" loading="lazy">
+                <div class="p-name">克里斯·海姆斯沃斯 <span class="p-role">主演（欧文·蔡斯）</span></div>
+              </div>
+              <div class="p-note">澳大利亚演员。《雷神》系列、《复仇者联盟》系列、《海洋深处》《 Rush 》。本片他演大副欧文·蔡斯——那个最后要替所有人做决定的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_10195.jpg" alt="" loading="lazy"><span>雷神</span></div><div class="wk"><img src="assets/movies/w_284053.jpg" alt="" loading="lazy"><span>雷神3：诸神黄昏</span></div><div class="wk"><img src="assets/movies/w_76338.jpg" alt="" loading="lazy"><span>雷神2：黑暗世界</span></div><div class="wk"><img src="assets/movies/w_99861.jpg" alt="" loading="lazy"><span>复仇者联盟2：奥创纪元</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_239996.jpg" alt="" loading="lazy">
+                <div class="p-name">本杰明·沃克 <span class="p-role">主演（乔治·波拉德）</span></div>
+              </div>
+              <div class="p-note">美国演员。《朗读者》《007：大破天幕杀机》《天空之眼》《海洋深处》。本片他演船长乔治·波拉德，一个始终想按规矩来的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_72331.jpg" alt="" loading="lazy"><span>吸血鬼猎人林肯</span></div><div class="wk"><img src="assets/movies/w_330483.jpg" alt="" loading="lazy"><span>爱情的选择</span></div><div class="wk"><img src="assets/movies/w_245842.jpg" alt="" loading="lazy"><span>凡尔赛传奇</span></div><div class="wk"><img src="assets/movies/w_457962.jpg" alt="" loading="lazy"><span>波光湖</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在鲸撞船，在他们决定往哪个方向划——最近的岛在一千多海里外，顺风的那个方向却更远，他们选了后者。轻微剧透：这部片最难受的一段不是撞船，是漂流到第三十天之后的那些决定：谁先死、吃什么、谁还能站起来。朗·霍华德把这段拍得很直白，没有转场、没有音乐，只留海和太阳。结尾梅尔维尔坐下来开始写，是全片唯一一次给这段历史一个出口。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「海难片怎么处理九十天的饥饿」的人；能接受节奏偏慢、情感戏略煽情、部分特效不够精致的观众。PG-13，含同类相食相关情节与海难画面，建议高中以上观看。内地未映。看完想继续：《完美风暴》《一切尽失》《少年派的奇幻漂流》。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/shark47_403119_poster.jpg" alt="鲨海 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 恐怖（英国 / 美国 · 一个沉到 47 米下的笼子）</span><span class="year">2017 · 英国 / 美国 · 89 分钟 · 2017-12-08 内地上映（PG-13）</span></div>
+        <h2>鲨海 <span class="en">47 Meters Down</span></h2>
+        <div class="rates"><span class="rate"><b>6.0</b>豆瓣</span><span class="rate"><b>53%</b>烂番茄</span><span class="rate"><b>52</b>Metacritic</span><span class="rate"><b>5.7</b>IMDb</span></div>
+        <p class="oneline">「氧气还剩十九分钟。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一对姐妹去墨西哥度假。姐姐凯特劝刚被男友甩掉的丽莎去潜水看鲨鱼，说有笼子，很安全。笼子下水了，然后吊缆断了——她们连人带笼沉到 47 米深的海底，周围是大白鲨，气瓶里的氧气只够几十分钟，而救援队说要等到天亮。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>约翰内斯·罗伯茨自编自导，这是他第一次拿到较大规模的院线发行；影片大部分水下戏是在伦敦与多米尼加的水箱里拍的。</li><li>成本约 550 万美元，全球票房约 6170 万美元（北美 4430 万），是 2017 年票房最高的独立电影之一。</li><li>影片最初的发行方打算直接出碟，片名一度改成《在深处》；新发行方接手后改回《47 Meters Down》并送进院线。</li><li>曼迪·摩尔演丽莎，克莱尔·霍尔特演凯特；全片大部分时间只有两个人、一个笼子和一块氧气表。</li><li>深水减压与氮醉被写进了情节：她们越往上浮，判断力越差——这是这部片真正的恐怖来源。</li><li>豆瓣 6.0 / 烂番茄 53% / Metacritic 52 / IMDb 5.7：<b>本期四个平台全部最低</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/shark47_403119_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/shark47_403119_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/shark47_403119_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_100734.jpg" alt="" loading="lazy">
+                <div class="p-name">约翰内斯·罗伯茨 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">英国导演、编剧，长期拍低成本恐怖片。《47号物品》《鲨海》《星际救援》《鲨海逃生》。本片是他第一次拿到大规模院线发行的作品。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_460458.jpg" alt="" loading="lazy"><span>生化危机：欢迎来到浣熊市</span></div><div class="wk"><img src="assets/movies/w_480105.jpg" alt="" loading="lazy"><span>鲨海逃生</span></div><div class="wk"><img src="assets/movies/w_371608.jpg" alt="" loading="lazy"><span>只杀陌生人2：狩猎之夜</span></div><div class="wk"><img src="assets/movies/w_437342.jpg" alt="" loading="lazy"><span>凶兆前传</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_16855.jpg" alt="" loading="lazy">
+                <div class="p-name">曼迪·摩尔 <span class="p-role">主演（丽莎）</span></div>
+              </div>
+              <div class="p-note">美国演员、歌手。《公主日记》《我们这一天》《鲨海》《这是我们的战争》。本片她演妹妹丽莎——一个被推进水里、最后必须自己爬出来的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_38757.jpg" alt="" loading="lazy"><span>魔发奇缘</span></div><div class="wk"><img src="assets/movies/w_10229.jpg" alt="" loading="lazy"><span>初恋的回忆</span></div><div class="wk"><img src="assets/movies/w_82881.jpg" alt="" loading="lazy"><span>魔发奇缘番外篇：麻烦不断</span></div><div class="wk"><img src="assets/movies/w_404368.jpg" alt="" loading="lazy"><span>无敌破坏王2：大闹互联网</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_86132.jpg" alt="" loading="lazy">
+                <div class="p-name">克莱尔·霍尔特 <span class="p-role">主演（凯特）</span></div>
+              </div>
+              <div class="p-note">澳大利亚演员。《美少女的谎言》《鲨海》《美国恐怖故事》。本片她演姐姐凯特，那个劝妹妹下水、也因此一直背着这份愧疚的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_51481.jpg" alt="" loading="lazy"><span>贱女孩2</span></div><div class="wk"><img src="assets/movies/w_20441.jpg" alt="" loading="lazy"><span>鬼使神差2</span></div><div class="wk"><img src="assets/movies/w_506815.jpg" alt="" loading="lazy"><span>爆裂兄弟</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在她们发现氧气表上的数字不对——不是装备坏了，是深水让她们算错了，而慌乱本身正在消耗氧气。轻微剧透：这部片把「看不清」做成了主要手段：能见度低、灯光只照到一米、你永远不知道笼子外面有几条。结尾那场分不清是幻觉还是真的戏，是它最有争议的一笔，也是它跟同类片拉开差距的地方。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「深海恐惧能被拍到什么程度」的人；能接受人物决策会让你着急、中段重复、结尾处理有争议的观众。PG-13，含鲨鱼袭击与受伤画面，恐水与幽闭恐惧者慎看。内地公映过，流媒体可看。看完想继续：《鲨滩》《深海狂鲨》《一切尽失》。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/kursk_401200_poster.jpg" alt="库尔斯克 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 灾难（法国 / 比利时 / 卢森堡 · 一艘沉在巴伦支海底的潜艇）</span><span class="year">2018 · 法国 / 比利时 / 卢森堡 · 117 分钟 · 内地未映（PG-13）</span></div>
+        <h2>库尔斯克 <span class="en">Kursk</span></h2>
+        <div class="rates"><span class="rate"><b>6.8</b>豆瓣</span><span class="rate"><b>55%</b>烂番茄</span><span class="rate"><b>50</b>Metacritic</span><span class="rate"><b>6.6</b>IMDb</span></div>
+        <p class="oneline">「他们在下面。他们还在敲。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>2000 年 8 月 12 日，巴伦支海。俄军演习中，核潜艇 K-141「库尔斯克号」发生爆炸后沉没，118 名官兵在舰上。影片三条线同时推进：艇内还没沉没的那部分人、岸上等消息的家属、以及一个想进去救人的英国军官——他要的只是一份许可，而许可迟迟不来。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>托马斯·温特伯格导演（《家宴》《狩猎》《酒精计划》），改编自罗伯特·摩尔的纪实作品；这是他第一次拍英语大片。</li><li>成本约 2000 万美元，全球票房远低于成本，是温特伯格生涯里商业成绩最差的一部。</li><li>科林·费尔斯演英国海军准将戴维·罗素，那个一遍遍要许可的人；马提亚斯·修奈尔演艇员米哈伊尔，蕾雅·赛杜演他的妻子。</li><li>马克斯·冯·西多演一位老将军，这是他晚年最后几部电影之一。</li><li>配乐由亚历山大·德斯普拉写；摄影是安东尼·多德·曼托，他用大量手持镜头与实景水箱拍出了艇内的逼仄。</li><li>豆瓣 6.8 / 烂番茄 55% / Metacritic 50 / IMDb 6.6：<b>本期专业评价倒数第三，也是本期唯一一部以真实潜艇灾难为原型的电影</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/kursk_401200_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/kursk_401200_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/kursk_401200_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4453.jpg" alt="" loading="lazy">
+                <div class="p-name">托马斯·温特伯格 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">丹麦导演、编剧，道格玛 95 运动发起人之一。《家宴》《狩猎》《远离尘嚣》《酒精计划》。本片是他第一次拍英语大片，也是他第一次处理真实灾难。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_103663.jpg" alt="" loading="lazy"><span>狩猎</span></div><div class="wk"><img src="assets/movies/w_580175.jpg" alt="" loading="lazy"><span>酒精计划</span></div><div class="wk"><img src="assets/movies/w_309.jpg" alt="" loading="lazy"><span>家宴</span></div><div class="wk"><img src="assets/movies/w_250734.jpg" alt="" loading="lazy"><span>远离尘嚣</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_73381.jpg" alt="" loading="lazy">
+                <div class="p-name">马提亚斯·修奈尔 <span class="p-role">主演（米哈伊尔·阿韦林）</span></div>
+              </div>
+              <div class="p-note">比利时演员。《锈与骨》《丹麦女孩》《红雀》《库尔斯克》。本片他演艇员米哈伊尔·阿韦林——一个在沉船之后仍然按流程做事的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_401981.jpg" alt="" loading="lazy"><span>红雀</span></div><div class="wk"><img src="assets/movies/w_306819.jpg" alt="" loading="lazy"><span>丹麦女孩</span></div><div class="wk"><img src="assets/movies/w_547016.jpg" alt="" loading="lazy"><span>永生守卫</span></div><div class="wk"><img src="assets/movies/w_1081003.jpg" alt="" loading="lazy"><span>超级少女</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_5472.jpg" alt="" loading="lazy">
+                <div class="p-name">科林·费尔斯 <span class="p-role">主演（戴维·罗素）</span></div>
+              </div>
+              <div class="p-note">英国演员。《国王的演讲》《单身男子》《BJ单身日记》《真爱至上》。奥斯卡最佳男主角。本片他演英国海军准将戴维·罗素，那个一遍遍要一份许可的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_45269.jpg" alt="" loading="lazy"><span>国王的演讲</span></div><div class="wk"><img src="assets/movies/w_207703.jpg" alt="" loading="lazy"><span>王牌特工：特工学院</span></div><div class="wk"><img src="assets/movies/w_343668.jpg" alt="" loading="lazy"><span>王牌特工2：黄金圈</span></div><div class="wk"><img src="assets/movies/w_634.jpg" alt="" loading="lazy"><span>BJ单身日记</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在爆炸，在岸上——家属们被一遍遍告知「很快就有消息」，而消息从来不来。轻微剧透：温特伯格把这部片拍成了一次「等待」的比较：艇里的人在等水，家属在等电话，英国军官在等签字，而三边的等待互不相通。结尾那场家属集合的戏是全片最狠的一处：它没有指责谁，只是把所有人放在同一个礼堂里。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「灾难片怎么拍岸上那一半」的人；能接受 117 分钟里真正的灾难只有开头十几分钟、后半段节奏慢、部分人物写得单薄的观众。PG-13，含爆炸与溺水画面，建议高中以上观看。内地未映。看完想继续：《K-19：寡妇制造者》《完美风暴》《红潮风暴》。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-14；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-10-13 · 第 43 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 10 月 13 日 · 第 43 期 · 已避开往期推荐过的全部 420 部</div>
+  <div>
+    <span class="pill">主题：判决 · 十部关于审判、冤狱与翻案的电影（1993–2019）</span>
+    <span class="pill">全部 1990 年后：最早 1993，最晚 2019，按上映年份排列</span>
+    <span class="pill">类型覆盖：剧情 8 / 悬疑 5 / 犯罪 5 / 惊悚 2 / 传记 1 / 历史 1</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-13，会随时间变动，仅供参考。<br>
+  这一期的筛选条件只有一条：<b>故事的核心是一次判决</b>——不是「有人犯了罪」这么宽泛，是那句「有罪 / 无罪」真的被说出口过，或者本该被说出口却始终没人说。<br>
+  十部全部落在 1993–2019，按上映年份排列。里面有<b>三种被判错的人</b>：一个被当成恐怖分子的小偷（《因父之名》）、一个被判两个无期徒刑的银行家（《肖申克的救赎》）、一个被送进精神病院的母亲（《换子疑云》）；有<b>三种等结果的人</b>：一个死囚的修女（《死囚漫步》）、一个只剩七十二小时的记者（《大卫·戈尔的一生》）、一间必须拿出一致意见的屋子（《十二公民》）；还有三部把「判决」推到了法庭之外的东西上——一个国家（《熔炉》）、一个时代（《辩护人》）、一个家庭（《全民目击》《误杀》）。<br>
+  需要说明的一处取舍：这个类型最常被提到的《十二怒汉》<b>往期已经推过了</b>，这一期放进的是它的中国改编版《十二公民》，两者不算同一部片，但血缘关系写在卡片里了。<br>
+  跨期重合如实写出，按 10-02 定的口径<b>只按片名去重</b>：<b>蒂姆·罗宾斯</b>一人占了本期两部——《肖申克的救赎》里演安迪，《死囚漫步》里当导演；<b>宋康昊</b>在《辩护人》里演律师，他主演的《汉江怪物》在往期推过；<b>陈思诚</b>在《全民目击》里出演，此后又监制了本期的《误杀》。<br>
+  口碑落差如实标注、不做修饰：<b>《大卫·戈尔的一生》豆瓣 8.6 而烂番茄只有 19%</b>，是本期落差最大的一部，也是本期唯一一部 Metacritic 未收录的英语片；<b>《辩护人》烂番茄 77% 但只有 12 条影评</b>，样本太少，已在卡片里用星号标出；<b>《全民目击》《十二公民》《误杀》三部中国片</b>在海外几乎没有评分，其中《误杀》用猫眼与淘票票替代。<b>《肖申克的救赎》四个平台全部是本期最高</b>。<br>
+  内地引进情况：五部公映过（《全民目击》《十二公民》《误杀》内地公映，《肖申克的救赎》2026 年 8 月以 4K 修复版首次在内地公映），其余五部未在内地院线公映，流媒体或点播可看。<br>
+  10 部片名全部为首次出现，无一与往期 420 部重复（比对 `_titles_all.txt` 通过）。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>因父之名</td><td class="qg">剧情 / 传记（爱尔兰 / 英国 · 一桩没人愿意重查的爆炸案）</td><td class="qr">8.8 / 94% / 84</td></tr><tr><td class="qn">02</td><td>肖申克的救赎</td><td class="qg">剧情 / 犯罪（美国 · 一座监狱里的二十年）</td><td class="qr">9.7 / 89% / 82</td></tr><tr><td class="qn">03</td><td>死囚漫步</td><td class="qg">剧情 / 犯罪（美国 · 一位修女与一个死囚）</td><td class="qr">8.0 / 95% / 80</td></tr><tr><td class="qn">04</td><td>大卫·戈尔的一生</td><td class="qg">悬疑 / 惊悚（美国 / 德国 / 英国 · 一个反对死刑的人被判了死刑）</td><td class="qr">8.6 / 19% / 未收录</td></tr><tr><td class="qn">05</td><td>换子疑云</td><td class="qg">剧情 / 悬疑（美国 · 一个母亲说那不是她的孩子）</td><td class="qr">8.4 / 62% / 63</td></tr><tr><td class="qn">06</td><td>熔炉</td><td class="qg">剧情 / 犯罪（韩国 · 一所聋哑学校里发生的事）</td><td class="qr">9.3 / 72% / 75</td></tr><tr><td class="qn">07</td><td>辩护人</td><td class="qg">剧情 / 历史（韩国 · 一个只想赚钱的律师）</td><td class="qr">9.2 / 77%* / 55</td></tr><tr><td class="qn">08</td><td>全民目击</td><td class="qg">悬疑 / 犯罪（中国大陆 · 一场翻三次的庭审）</td><td class="qr">7.7 / 未收录 / 未收录</td></tr><tr><td class="qn">09</td><td>十二公民</td><td class="qg">剧情 / 悬疑（中国大陆 · 一间屋子里十二个人）</td><td class="qr">8.4 / 未收录 / 未收录</td></tr><tr><td class="qn">10</td><td>误杀</td><td class="qg">悬疑 / 犯罪（中国大陆 · 一个父亲把时间剪碎了）</td><td class="qr">7.5 / 9.5 / 9.3</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/father_7984_poster.jpg" alt="因父之名 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 传记（爱尔兰 / 英国 · 一桩没人愿意重查的爆炸案）</span><span class="year">1993 · 爱尔兰 / 英国 / 美国 · 133 分钟 · 内地未映（R 级）</span></div>
+        <h2>因父之名 <span class="en">In the Name of the Father</span></h2>
+        <div class="rates"><span class="rate"><b>8.8</b>豆瓣</span><span class="rate"><b>94%</b>烂番茄</span><span class="rate"><b>84</b>Metacritic</span><span class="rate"><b>8.1</b>IMDb</span></div>
+        <p class="oneline">「以真相之名。以正义之名。以爱之名。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1974 年伦敦。贝尔法斯特来的小偷格里·康隆在错误的时间出现在错误的地方，被当成爱尔兰共和军爆炸案的主犯抓了起来。警方要的是结案，不是凶手。他和一起被抓的四个人在没有读过的认罪书上签了名；父亲朱塞佩赶来照顾他，也一起进了监狱。父子俩在同一套牢房系统里待了十五年，直到一位女律师从案卷的角落里翻出一份警方自己都没看过的供词。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>爱尔兰导演吉姆·谢里登与特瑞·乔治共同编剧，改编自格里·康隆本人的回忆录《证明无罪》；这是谢里登继《我的左脚》之后第二次入围奥斯卡最佳导演。</li><li>成本约 1300 万美元，全球票房约 6580 万美元；1994 年柏林电影节金熊奖，奥斯卡七项提名（最佳影片、导演、改编剧本、男主、男配、女配、剪辑）。</li><li>丹尼尔·戴-刘易斯为这个角色减重约 30 磅，拍摄期间夜里睡在牢房布景里，让工作人员往他身上泼水、对他辱骂。</li><li>皮特·波斯尔思韦特演父亲朱塞佩，凭此片拿到他人生唯一一次奥斯卡最佳男配角提名——这位英国演员大半辈子都在演配角。</li><li>艾玛·汤普森演的是真实人物、律师加雷斯·皮尔斯，全片她的戏份不到二十分钟，但她是唯一一个在翻卷宗的人。</li><li>豆瓣 8.8 / 烂番茄 94% / Metacritic 84 / IMDb 8.1：<b>四个平台高度一致，Metacritic 84 是本期专业评价最高</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/father_7984_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/father_7984_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/father_7984_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_53334.jpg" alt="" loading="lazy">
+                <div class="p-name">吉姆·谢里登 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">爱尔兰导演、编剧，与编剧特瑞·乔治长期搭档。《我的左脚》《因父之名》《新美国梦》——他的三部代表作都入围了奥斯卡最佳导演，是爱尔兰电影这三十年最重要的名字之一。本片他把格里·康隆的回忆录《证明无罪》搬上了银幕。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_7445.jpg" alt="" loading="lazy"><span>兄弟</span></div><div class="wk"><img src="assets/movies/w_69668.jpg" alt="" loading="lazy"><span>梦宅诡影</span></div><div class="wk"><img src="assets/movies/w_10060.jpg" alt="" loading="lazy"><span>要钱不要命</span></div><div class="wk"><img src="assets/movies/w_10161.jpg" alt="" loading="lazy"><span>我的左脚</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11856.jpg" alt="" loading="lazy">
+                <div class="p-name">丹尼尔·戴-刘易斯 <span class="p-role">主演（格里·康隆）</span></div>
+              </div>
+              <div class="p-note">英国 / 爱尔兰演员，以极端方法派著称。《我的左脚》《纽约黑帮》《血色将至》《林肯》——三座奥斯卡最佳男主角，也是影史上唯一三次拿下这个奖的男演员。本片他演格里·康隆：一个在错误时间出现在错误地点的小偷，凭此片拿到奥斯卡最佳男主角提名。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_7345.jpg" alt="" loading="lazy"><span>血色将至</span></div><div class="wk"><img src="assets/movies/w_72976.jpg" alt="" loading="lazy"><span>林肯</span></div><div class="wk"><img src="assets/movies/w_400617.jpg" alt="" loading="lazy"><span>魅影缝匠</span></div><div class="wk"><img src="assets/movies/w_3131.jpg" alt="" loading="lazy"><span>纽约黑帮</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4935.jpg" alt="" loading="lazy">
+                <div class="p-name">皮特·波斯尔思韦特 <span class="p-role">主演（朱塞佩·康隆）</span></div>
+              </div>
+              <div class="p-note">英国演员，大半辈子都在演配角，被同行称为「演员中的演员」。《盗梦空间》《非常嫌疑犯》《侏罗纪公园2：失落的世界》《诸神之战》。本片他演父亲朱塞佩·康隆，凭此片拿到人生唯一一次奥斯卡最佳男配角提名。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_27205.jpg" alt="" loading="lazy"><span>盗梦空间</span></div><div class="wk"><img src="assets/movies/w_330.jpg" alt="" loading="lazy"><span>侏罗纪公园2：失落的世界</span></div><div class="wk"><img src="assets/movies/w_629.jpg" alt="" loading="lazy"><span>非常嫌疑犯</span></div><div class="wk"><img src="assets/movies/w_18823.jpg" alt="" loading="lazy"><span>诸神之战</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在平反，在他们被关进去之前——那份认罪书是警察念给他们听的，他们没看就签了，因为当时没人相信不签会有区别。轻微剧透：谢里登最狠的一处设计，是把父子俩放在同一座监狱里却让他们隔着等级互相够不着：父亲先病倒，儿子才第一次知道自己的案子把父亲拖了进来。结尾那场庭审没有欢呼，只有一句记录在案的话——那才是这部片真正要的东西。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「冤案片怎么不靠煽情也能压住人」的人；能接受 133 分钟、中段节奏偏慢、英爱政治背景需要一点功课的观众。R 级，含监狱暴力与辱骂画面，建议高中以上观看。内地未映，流媒体可看。看完想继续：《飓风》《辩护人》《死囚漫步》。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/shaws_278_poster.jpg" alt="肖申克的救赎 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 犯罪（美国 · 一座监狱里的二十年）</span><span class="year">1994 · 美国 · 142 分钟 · 2026-08-28 内地 4K 修复版首映（R 级）</span></div>
+        <h2>肖申克的救赎 <span class="en">The Shawshank Redemption</span></h2>
+        <div class="rates"><span class="rate"><b>9.7</b>豆瓣</span><span class="rate"><b>89%</b>烂番茄</span><span class="rate"><b>82</b>Metacritic</span><span class="rate"><b>9.3</b>IMDb</span></div>
+        <p class="oneline">「有些鸟是关不住的。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1947 年，银行家安迪·杜佛兰被判谋杀妻子及其情人，两个无期徒刑，进了肖申克监狱。他没有喊冤，只是按部就班地活：先要一把小锤子，再要一张海报，然后是图书馆、税务、音乐。他帮狱警避税，帮典狱长洗钱，也帮狱友考文凭。二十年后，那把小锤子终于用上了。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>弗兰克·德拉邦特自编自导，改编自斯蒂芬·金的中篇小说《丽塔·海华丝与肖申克的救赎》；这是他的第二部长片，此前只拍过《生人活埋》。</li><li>成本约 2500 万美元，1994 年北美首轮票房只有约 1600 万美元，被发行方定性为失败作品；全球票房最终约 5830 万美元。</li><li>1995 年第 67 届奥斯卡七项提名（最佳影片、最佳男主角、最佳改编剧本等），一奖未得——那一年它输给了《阿甘正传》。</li><li>摩根·弗里曼演瑞德，凭此片拿到他人生第一个奥斯卡提名；蒂姆·罗宾斯演安迪。<b>蒂姆·罗宾斯是本期的两位导演之一</b>，他在本期的《死囚漫步》里坐在了导演椅上。</li><li>配乐由托马斯·纽曼写；那段莫扎特《费加罗的婚礼》从广播里飘出监狱的戏，是全片唯一一次没有对白的两分钟。</li><li>豆瓣 9.7（超过 300 万人评价，长期位列豆瓣电影 TOP250 第一）/ 烂番茄 89% / Metacritic 82 / IMDb 9.3（IMDb TOP250 第一）：<b>本期四个平台全部最高</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/shaws_278_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/shaws_278_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/shaws_278_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4027.jpg" alt="" loading="lazy">
+                <div class="p-name">弗兰克·德拉邦特 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧，斯蒂芬·金改编专业户。《生人活埋》《肖申克的救赎》《绿里奇迹》《迷雾》——他只拍过四部长片，却把其中两部做成了影史常青片。本片改编自斯蒂芬·金的中篇《丽塔·海华丝与肖申克的救赎》。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_497.jpg" alt="" loading="lazy"><span>绿里奇迹</span></div><div class="wk"><img src="assets/movies/w_5876.jpg" alt="" loading="lazy"><span>迷雾</span></div><div class="wk"><img src="assets/movies/w_11086.jpg" alt="" loading="lazy"><span>电影人生</span></div><div class="wk"><img src="assets/movies/w_37865.jpg" alt="" loading="lazy"><span>生人活埋</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_504.jpg" alt="" loading="lazy">
+                <div class="p-name">蒂姆·罗宾斯 <span class="p-role">主演（安迪·杜佛兰）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《肖申克的救赎》《神秘河》《异世浮生》《世界之战》。本片他演安迪·杜佛兰——一个不喊冤、只按部就班活着的银行家；<b>他也是本期《死囚漫步》的导演</b>。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_322.jpg" alt="" loading="lazy"><span>神秘河</span></div><div class="wk"><img src="assets/movies/w_2291.jpg" alt="" loading="lazy"><span>异世浮生</span></div><div class="wk"><img src="assets/movies/w_74.jpg" alt="" loading="lazy"><span>世界之战</span></div><div class="wk"><img src="assets/movies/w_44912.jpg" alt="" loading="lazy"><span>绿灯侠</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_192.jpg" alt="" loading="lazy">
+                <div class="p-name">摩根·弗里曼 <span class="p-role">主演（瑞德）</span></div>
+              </div>
+              <div class="p-note">美国演员。《七宗罪》《百万美元宝贝》《遗落战境》《冒牌天神》。本片他演瑞德，那个替安迪搞来锤子和海报的人，凭此片拿到人生第一个奥斯卡提名。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_807.jpg" alt="" loading="lazy"><span>七宗罪</span></div><div class="wk"><img src="assets/movies/w_240832.jpg" alt="" loading="lazy"><span>超体</span></div><div class="wk"><img src="assets/movies/w_75612.jpg" alt="" loading="lazy"><span>遗落战境</span></div><div class="wk"><img src="assets/movies/w_310.jpg" alt="" loading="lazy"><span>冒牌天神</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在越狱，在安迪终于开口说出「那不是我干的」——到那时他已经认了二十年，所以这句话说出口时他不是在申辩，是在还给自己一个说法。轻微剧透：这部片把「希望」写成了一项技能而不是一种情绪：图书馆、啤酒、唱片、棋盘，全都是他每天做一点点的东西。结尾瑞德在雨里张开手臂的镜头是全片唯一一次把情绪放出来，而它撑得住，是因为前面两个小时一直忍着。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「二十年怎么被拍成两个小时」的人；能接受几乎没有女性角色、前半段节奏慢、结局理想化的观众。R 级，含监狱暴力与自杀情节，建议高中以上观看。2026 年 8 月以 4K 修复版首次在内地公映，流媒体可看。看完想继续：《绿里奇迹》《死囚漫步》《美丽人生》。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/deadman_687_poster.jpg" alt="死囚漫步 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 犯罪（美国 · 一位修女与一个死囚）</span><span class="year">1995 · 美国 / 英国 · 122 分钟 · 内地未映（R 级）</span></div>
+        <h2>死囚漫步 <span class="en">Dead Man Walking</span></h2>
+        <div class="rates"><span class="rate"><b>8.0</b>豆瓣</span><span class="rate"><b>95%</b>烂番茄</span><span class="rate"><b>80</b>Metacritic</span><span class="rate"><b>7.5</b>IMDb</span></div>
+        <p class="oneline">「我只是想在他死之前，让他看着我。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>路易斯安那。死囚马修·庞斯莱特还有 168 小时，他写信给修女海伦·普雷让，请她来做自己的精神顾问。海伦去见了他，然后去见了被害人的父母——一对失去儿子的夫妻，还有一对失去女儿的夫妻。她两头跑，一边替马修找律师、申请听证，一边陪着被害人家属等一个结果。马修始终坚持自己没杀过人。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>蒂姆·罗宾斯自编自导，改编自修女海伦·普雷让 1993 年的同名纪实作品；这是他的第二部导演作品，此前他只导过《鲍勃·罗伯茨》。</li><li>成本约 1100 万美元，全球票房约 8300 万美元；苏珊·萨兰登凭此片拿到第 68 届奥斯卡最佳女主角。</li><li>西恩·潘演马修，拿到奥斯卡最佳男主角提名；罗宾斯拿到最佳导演提名；布鲁斯·斯普林斯汀的主题曲《Dead Man Walkin&#x27;》也入围了最佳原创歌曲。</li><li>真实的海伦·普雷让本人出现在监狱外烛光守夜那场戏里，不是演员扮的。</li><li>彼得·萨斯加德在这部片里第一次上大银幕，演其中一个被害人的家属。</li><li>豆瓣 8.0 / 烂番茄 95% / Metacritic 80 / IMDb 7.5：<b>本期烂番茄最高（95%），专业评价第二</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/deadman_687_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/deadman_687_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/deadman_687_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_504.jpg" alt="" loading="lazy">
+                <div class="p-name">蒂姆·罗宾斯 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国演员、导演、编剧。《肖申克的救赎》《神秘河》《异世浮生》。本片是他第二次当导演，也是他第一次改编非虚构作品——原著是修女海伦·普雷让本人的纪实作品。<b>他也是本期《肖申克的救赎》的主演</b>。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_278.jpg" alt="" loading="lazy"><span>肖申克的救赎</span></div><div class="wk"><img src="assets/movies/w_322.jpg" alt="" loading="lazy"><span>神秘河</span></div><div class="wk"><img src="assets/movies/w_2291.jpg" alt="" loading="lazy"><span>异世浮生</span></div><div class="wk"><img src="assets/movies/w_74.jpg" alt="" loading="lazy"><span>世界之战</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4038.jpg" alt="" loading="lazy">
+                <div class="p-name">苏珊·萨兰登 <span class="p-role">主演（海伦·普雷让修女）</span></div>
+              </div>
+              <div class="p-note">美国演员。《末路狂花》《洛基恐怖秀》《可爱的骨头》《蓝甲虫》。本片她演海伦·普雷让，一个两头跑、谁也不肯放弃的修女，凭此片拿到第 68 届奥斯卡最佳女主角。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1541.jpg" alt="" loading="lazy"><span>末路狂花</span></div><div class="wk"><img src="assets/movies/w_36685.jpg" alt="" loading="lazy"><span>洛基恐怖秀</span></div><div class="wk"><img src="assets/movies/w_7980.jpg" alt="" loading="lazy"><span>可爱的骨头</span></div><div class="wk"><img src="assets/movies/w_565770.jpg" alt="" loading="lazy"><span>蓝甲虫</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2228.jpg" alt="" loading="lazy">
+                <div class="p-name">西恩·潘 <span class="p-role">主演（马修·庞斯莱特）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《神秘河》《21克》《米尔克》《荒野生存》。两座奥斯卡最佳男主角。本片他演死囚马修·庞斯莱特——一个始终坚持自己没杀过人的人，凭此片拿到奥斯卡最佳男主角提名。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_322.jpg" alt="" loading="lazy"><span>神秘河</span></div><div class="wk"><img src="assets/movies/w_2649.jpg" alt="" loading="lazy"><span>心理游戏</span></div><div class="wk"><img src="assets/movies/w_470.jpg" alt="" loading="lazy"><span>21克</span></div><div class="wk"><img src="assets/movies/w_116745.jpg" alt="" loading="lazy"><span>白日梦想家</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在马修认不认罪，在海伦第一次走出监狱、坐进被害人家属的客厅——那一刻你才发现这部片不是「要不要废除死刑」的辩论赛，是两种痛苦被放在了同一张桌子上。轻微剧透：罗宾斯最克制的一处是行刑那场戏：没有配乐、没有慢镜头，只有程序，一针一针按流程走完。马修最后对着被害者父母说的那句话，是全片唯一一次让镜头停在别人的脸上。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「死刑议题怎么被拍成一部不站队的电影」的人；能接受 122 分钟几乎全是对话、立场让人不舒服、看完会闷着的观众。R 级，含犯罪回忆与行刑程序画面，建议高中以上观看。内地未映。看完想继续：《大卫·戈尔的一生》《因父之名》《绿里奇迹》。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/gale_11615_poster.jpg" alt="大卫·戈尔的一生 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 惊悚（美国 / 德国 / 英国 · 一个反对死刑的人被判了死刑）</span><span class="year">2003 · 美国 / 德国 / 英国 / 西班牙 · 130 分钟 · 内地未映（R 级）</span></div>
+        <h2>大卫·戈尔的一生 <span class="en">The Life of David Gale</span></h2>
+        <div class="rates"><span class="rate"><b>8.6</b>豆瓣</span><span class="rate"><b>19%</b>烂番茄</span><span class="rate"><b>未收录</b>Metacritic</span><span class="rate"><b>7.5</b>IMDb</span></div>
+        <p class="oneline">「我不是要你救我。我要你听我说完。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>得克萨斯。大学哲学教授大卫·戈尔是个坚定的废除死刑倡导者，却因为强奸并谋杀同事康丝坦斯被判死刑。行刑前三天，记者贝茜·布鲁姆拿到了独家采访。她只有七十二小时，而她越查越不对：指控他的那个女学生、那份被反复修改的测谎、那盘没人说得清来路的录像带，全都指向另一个方向。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>英国导演艾伦·帕克（《午夜快车》《迷墙》《天使之心》），剧本由查尔斯·伦道夫写；本片入围第 53 届柏林电影节金熊奖，也是帕克导演生涯的最后一部剧情长片。</li><li>成本约 3800 万美元，全球票房约 3900 万美元；北美口碑失利，专业评价与观众评价出现罕见的两极分化。</li><li>凯文·史派西演大卫·戈尔，凯特·温斯莱特演记者贝茜；劳拉·琳妮演康丝坦斯——她凭同年的《神秘河》入围了奥斯卡最佳女配角。</li><li>帕克把大量真实辩论材料写进了台词：得州的死刑执行数字、误判率、测谎的不可靠性，都是照着当年公开资料来的。</li><li>全片用倒叙与采访交织，三条时间线靠一盘录像带串起来——这盘带子究竟是什么时候拍的，就是谜底。</li><li>豆瓣 8.6 / 烂番茄 19% / Metacritic 未收录 / IMDb 7.5：<b>本期口碑落差最大的一部</b>，豆瓣比烂番茄高出六十七个百分点。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/gale_11615_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/gale_11615_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/gale_11615_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_9168.jpg" alt="" loading="lazy">
+                <div class="p-name">艾伦·帕克 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">英国导演、编剧，职业生涯横跨摇滚歌剧与黑色惊悚。《午夜快车》《名扬四海》《迷墙》《天使之心》《贝隆夫人》。本片是他最后一部剧情长片，入围第 53 届柏林电影节金熊奖。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1632.jpg" alt="" loading="lazy"><span>烈血大风暴</span></div><div class="wk"><img src="assets/movies/w_11327.jpg" alt="" loading="lazy"><span>午夜快车</span></div><div class="wk"><img src="assets/movies/w_635.jpg" alt="" loading="lazy"><span>天使之心</span></div><div class="wk"><img src="assets/movies/w_12104.jpg" alt="" loading="lazy"><span>迷墙</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1979.jpg" alt="" loading="lazy">
+                <div class="p-name">凯文·史派西 <span class="p-role">主演（大卫·戈尔）</span></div>
+              </div>
+              <div class="p-note">美国演员。《美国丽人》《非常嫌疑犯》《洛城机密》《七宗罪》。两座奥斯卡（最佳男配角、最佳男主角）。本片他演大卫·戈尔：一个反对死刑、却被判了死刑的哲学教授。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_14.jpg" alt="" loading="lazy"><span>美国丽人</span></div><div class="wk"><img src="assets/movies/w_339403.jpg" alt="" loading="lazy"><span>极盗车神</span></div><div class="wk"><img src="assets/movies/w_2118.jpg" alt="" loading="lazy"><span>洛城机密</span></div><div class="wk"><img src="assets/movies/w_9487.jpg" alt="" loading="lazy"><span>虫虫危机</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_204.jpg" alt="" loading="lazy">
+                <div class="p-name">凯特·温斯莱特 <span class="p-role">主演（贝茜·布鲁姆）</span></div>
+              </div>
+              <div class="p-note">英国演员。《泰坦尼克号》《暖暖内含光》《朗读者》《革命之路》。奥斯卡最佳女主角。本片她演记者贝茜·布鲁姆，那个只有七十二小时的人——全片的谜题都是从她的视角一层层剥开的。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_597.jpg" alt="" loading="lazy"><span>泰坦尼克号</span></div><div class="wk"><img src="assets/movies/w_38.jpg" alt="" loading="lazy"><span>暖暖内含光</span></div><div class="wk"><img src="assets/movies/w_76600.jpg" alt="" loading="lazy"><span>阿凡达：水之道</span></div><div class="wk"><img src="assets/movies/w_1581.jpg" alt="" loading="lazy"><span>恋爱假期</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在贝茜发现那盘带子上的日期——它比她以为的晚了三天，而这三天决定了所有人的动机。轻微剧透：这部片真正冒犯评论界的地方，是它把「反对死刑」拍成了一次设计好的献祭：不是论证，是做出了一个样本。你可以说它用力过猛、说它算计，但没法说它没敢下注。结尾那盘带子被公开播放的镜头，是帕克留给观众的一道道德选择题。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「悬疑片敢把立场押到最后一分钟」的人；能接受中段说理偏多、部分情节经不起细抠、结局极端化的观众。R 级，含暴力与性侵相关陈述，建议高中以上观看。内地未映。看完想继续：《死囚漫步》《全民目击》《一级恐惧》。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/change_3580_poster.jpg" alt="换子疑云 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 悬疑（美国 · 一个母亲说那不是她的孩子）</span><span class="year">2008 · 美国 · 141 分钟 · 内地未映（R 级）</span></div>
+        <h2>换子疑云 <span class="en">Changeling</span></h2>
+        <div class="rates"><span class="rate"><b>8.4</b>豆瓣</span><span class="rate"><b>62%</b>烂番茄</span><span class="rate"><b>63</b>Metacritic</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「那不是我的儿子。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1928 年洛杉矶。克里斯汀·柯林斯下班回家，九岁的儿子沃尔特不见了。五个月后警方把一个男孩交还给她，说这就是沃尔特。克里斯汀一眼就看出不是。她反复说、反复举证、反复被驳回，最后被送进了精神病院——因为一个不肯闭嘴的女人，比一个失踪的孩子好处理得多。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>克林特·伊斯特伍德自导自制并亲自配乐，剧本由《巴比伦5号》的 J·迈克尔·斯特拉辛斯基写，大量对白直接取自庭审记录。</li><li>成本约 5500 万美元，全球票房约 1.13 亿美元；入围戛纳主竞赛，奥斯卡三项提名（最佳女主角、摄影、美术指导）。</li><li>安吉丽娜·朱莉演克里斯汀，凭此片拿到她第二个奥斯卡最佳女主角提名；约翰·马尔科维奇演那位在电台里替她说话的牧师布里格勒布。</li><li>改编自真实事件「葡萄酒维尔鸡舍谋杀案」；斯特拉辛斯基是翻遍市政档案与旧报纸才把这个案子挖出来的。</li><li>伊斯特伍德的配乐只有一架钢琴、几乎不着痕迹——这是他为自己的电影写过的最克制的音乐。</li><li>豆瓣 8.4 / 烂番茄 62% / Metacritic 63 / IMDb 7.7：<b>专业评价中庸，但在华语观众里的口碑一直很稳</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/change_3580_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/change_3580_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/change_3580_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_190.jpg" alt="" loading="lazy">
+                <div class="p-name">克林特·伊斯特伍德 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">美国演员、导演、制片，好莱坞少见的「演导双巅峰」。《黄金三镖客》《荒野大镖客》《不可饶恕》《百万美元宝贝》《老爷车》《骡子》。本片他自导自制并亲自写了配乐，把真实案件「葡萄酒维尔鸡舍谋杀案」搬上了银幕。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_13223.jpg" alt="" loading="lazy"><span>老爷车</span></div><div class="wk"><img src="assets/movies/w_70.jpg" alt="" loading="lazy"><span>百万美元宝贝</span></div><div class="wk"><img src="assets/movies/w_429.jpg" alt="" loading="lazy"><span>黄金三镖客</span></div><div class="wk"><img src="assets/movies/w_504172.jpg" alt="" loading="lazy"><span>骡子</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_11701.jpg" alt="" loading="lazy">
+                <div class="p-name">安吉丽娜·朱莉 <span class="p-role">主演（克里斯汀·柯林斯）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演、人道主义工作者。《古墓丽影》《史密斯夫妇》《换子疑云》《沉睡魔咒》。本片她演克里斯汀·柯林斯——那个不肯承认「找回来的孩子是自己的」的母亲，凭此片拿到第二个奥斯卡最佳女主角提名。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_102651.jpg" alt="" loading="lazy"><span>沉睡魔咒</span></div><div class="wk"><img src="assets/movies/w_787.jpg" alt="" loading="lazy"><span>史密斯夫妇</span></div><div class="wk"><img src="assets/movies/w_1995.jpg" alt="" loading="lazy"><span>古墓丽影</span></div><div class="wk"><img src="assets/movies/w_420809.jpg" alt="" loading="lazy"><span>沉睡魔咒2：恶魔夫人</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6949.jpg" alt="" loading="lazy">
+                <div class="p-name">约翰·马尔科维奇 <span class="p-role">主演（古斯塔夫·布里格勒布牧师）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《危险关系》《麦克白》(2015)《赤焰战场》《蒙上你的眼》。本片他演牧师古斯塔夫·布里格勒布，一个用广播替克里斯汀说话的人；现实里的原型当年也确实是这么做的。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_39514.jpg" alt="" loading="lazy"><span>赤焰战场</span></div><div class="wk"><img src="assets/movies/w_405774.jpg" alt="" loading="lazy"><span>蒙上你的眼</span></div><div class="wk"><img src="assets/movies/w_146216.jpg" alt="" loading="lazy"><span>赤焰战场2</span></div><div class="wk"><img src="assets/movies/w_296524.jpg" alt="" loading="lazy"><span>深海浩劫</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在找到真凶，在克里斯汀被关进精神病院之后——那所医院里住的几乎全是「不肯听话」的女人，医生的问题从来不是「你病了吗」，而是「你还说不说」。轻微剧透：伊斯特伍德最冷的一处处理，是那个假儿子和真儿子始终没有给出答案：片子把真相交还给了永远悬着的问题，而这恰恰是真实案件的样子。朱莉在火车站辨认孩子那场戏，是全片唯一一次让镜头逼着她一个人扛。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「体制怎么对付一个不合作的人」的人；能接受 141 分钟偏长、反派写得比较脸谱、结尾不做解答的观众。R 级，含儿童受害相关陈述与精神病院虐待画面，建议高中以上观看。内地未映。看完想继续：《熔炉》《因父之名》《辩护人》。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/silence_81481_poster.jpg" alt="熔炉 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 犯罪（韩国 · 一所聋哑学校里发生的事）</span><span class="year">2011 · 韩国 · 125 分钟 · 内地未映</span></div>
+        <h2>熔炉 <span class="en">Silenced</span></h2>
+        <div class="rates"><span class="rate"><b>9.3</b>豆瓣</span><span class="rate"><b>72%</b>烂番茄</span><span class="rate"><b>75</b>Metacritic</span><span class="rate"><b>8.0</b>IMDb</span></div>
+        <p class="oneline">「我们一路奋战，不是为了改变世界，而是为了不让世界改变我们。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>美术老师姜仁浩从首尔来到雾津的慈爱聋哑学校任教。他花了一大笔钱才拿到这个职位，进来之后才发现这里不对：孩子躲着他，走廊尽头有声音，教导主任在办公室里打人。他开始问，然后开始查，最后在法庭上用手语把这一切说出来——而对面坐着的是校长、律师、法官，和一整个镇子。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>黄东赫自编自导，这是他的第二部长片；改编自孔枝泳 2009 年的同名小说，原型是 2000–2005 年光州仁和聋哑学校的真实性侵案。</li><li>2011 年 9 月 22 日在韩国上映，观影人次超过 570 万；上映后三个月，韩国国会通过《性侵害犯罪处罚特例法修订案》，民间称「熔炉法」，废除了对未成年人与残障人性侵犯罪的追诉时效。</li><li>这是 21 世纪韩国电影改写国家法律最著名的一次；2014 年该案重启，多名受害者获得国家赔偿。</li><li>孔刘演姜仁浩，这个角色让他从「偶像演员」变成韩国电影的中坚；郑裕美演人权组织成员徐宥珍。</li><li>张光一人分饰校长与行政主任这对孪生兄弟；金贤秀演听障学生金妍斗，凭此片拿到多个新人奖提名。</li><li>豆瓣 9.3（超过 100 万人评价）/ 烂番茄 72% / Metacritic 75 / IMDb 8.0：<b>本期豆瓣最高，也是本期唯一一部直接改写了法律的电影</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/silence_81481_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/silence_81481_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/silence_81481_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1294471.jpg" alt="" loading="lazy">
+                <div class="p-name">黄东赫 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">韩国导演、编剧。《我的爸爸》《熔炉》《奇怪的她》《南汉山城》——他的每一部都在处理「体制与个人」这组关系。十年之后，他凭《鱿鱼游戏》成为全球家喻户晓的名字。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_437081.jpg" alt="" loading="lazy"><span>南汉山城</span></div><div class="wk"><img src="assets/movies/w_253065.jpg" alt="" loading="lazy"><span>奇怪的她</span></div><div class="wk"><img src="assets/movies/w_108778.jpg" alt="" loading="lazy"><span>我的爸爸</span></div><div class="wk"><img src="assets/movies/w_469949.jpg" alt="" loading="lazy"><span>成为明星的孩子</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_150903.jpg" alt="" loading="lazy">
+                <div class="p-name">孔刘 <span class="p-role">主演（姜仁浩）</span></div>
+              </div>
+              <div class="p-note">韩国演员。《釜山行》《嫌疑人》《徐福》《密探》。本片他演姜仁浩，一个花了一大笔钱才拿到教职、最后把这一切说出来的美术老师；这个角色改变了他的职业生涯。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_396535.jpg" alt="" loading="lazy"><span>釜山行</span></div><div class="wk"><img src="assets/movies/w_586047.jpg" alt="" loading="lazy"><span>徐福</span></div><div class="wk"><img src="assets/movies/w_242454.jpg" alt="" loading="lazy"><span>嫌疑人</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_127720.jpg" alt="" loading="lazy">
+                <div class="p-name">郑裕美 <span class="p-role">主演（徐宥珍）</span></div>
+              </div>
+              <div class="p-note">韩国演员。《釜山行》《82年生的金智英》《念力》《眠》。本片她演人权组织成员徐宥珍，那个从一开始就相信孩子、并且愿意一直查下去的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_396535.jpg" alt="" loading="lazy"><span>釜山行</span></div><div class="wk"><img src="assets/movies/w_964592.jpg" alt="" loading="lazy"><span>眠</span></div><div class="wk"><img src="assets/movies/w_586048.jpg" alt="" loading="lazy"><span>82年生的金智英</span></div><div class="wk"><img src="assets/movies/w_452015.jpg" alt="" loading="lazy"><span>念力</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在法庭宣判，在宣判之后——加害者只判了几个月、缓刑、当庭释放，而三个孩子里已经有一个死了。轻微剧透：黄东赫把「雾」做成了一整套视觉：雾津的雾从第一帧挂到最后一帧，它不只是气氛，是这个镇子对这件事的共同态度。结尾那场在水炮里举着遗照的戏，是全片唯一一次把镜头从主角身后挪开、放进了人群里。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「一部电影到底能改变什么」的人；能接受题材极沉重、侵害场面点到即止却足够难受、结尾不给你安慰的观众。含儿童性侵相关情节，心理承受力弱的慎看。内地未映。看完想继续：《素媛》《辩护人》《狩猎》。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/attny_242452_poster.jpg" alt="辩护人 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 历史（韩国 · 一个只想赚钱的律师）</span><span class="year">2013 · 韩国 · 127 分钟 · 内地未映</span></div>
+        <h2>辩护人 <span class="en">The Attorney</span></h2>
+        <div class="rates"><span class="rate"><b>9.2</b>豆瓣</span><span class="rate"><b>77%*</b>烂番茄</span><span class="rate"><b>55</b>Metacritic</span><span class="rate"><b>7.7</b>IMDb</span></div>
+        <p class="oneline">「从今天起，我不再只是个赚钱的律师。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1978 年，只有高中学历的宋佑硕考过了司法考试，先当法官，很快转行做律师。他从不动产代书做起，被同行笑话成到处派名片的，但他赚到了钱，也还了当年欠一位饭店大婶的一顿饭。1981 年，那位大婶的儿子因为参加读书会被当成左翼抓走、被刑求逼供。佑硕接下了这个案子。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>杨宇硕自编自导，这是他的长片处女作；他此前学的是法律，剧本写了四年。原型是已故韩国前总统卢武铉担任律师时承办的「釜林事件」。</li><li>韩国观影人次超过 1137 万，是 2013 年韩国本土票房第二；豆瓣 TOP250 常年在前 100。</li><li>宋康昊演宋佑硕，凭此片拿到多个韩国电影奖项的最佳男主角；任时完演被刑求的学生朴镇宇，这是他第一次演电影主角。</li><li>影片上映后的第二年（2014 年 9 月 25 日），「釜林事件」复审宣判，33 年前被判有罪的五名被告被认定无罪。</li><li>郭度沅演那个刑求学生的警官，是全片最让人咬牙的角色；吴达洙演佑硕的事务长，负责这部片为数不多的笑点。</li><li>豆瓣 9.2 / 烂番茄 77%（仅 12 条影评，样本极少，已在卡片里标星号）/ Metacritic 55 / IMDb 7.7：<b>本期华语与欧美专业评价落差较大的一部</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/attny_242452_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/attny_242452_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/attny_242452_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1285352.jpg" alt="" loading="lazy">
+                <div class="p-name">杨宇硕 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">韩国导演、编剧，学法律出身。《辩护人》《铁雨》《铁雨2：首脑峰会》——他擅长把政治事件拍成类型片。本片是他的长片处女作，剧本写了四年。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_435841.jpg" alt="" loading="lazy"><span>铁雨</span></div><div class="wk"><img src="assets/movies/w_606906.jpg" alt="" loading="lazy"><span>铁雨2：首脑峰会</span></div><div class="wk"><img src="assets/movies/w_1064205.jpg" alt="" loading="lazy"><span>大家庭</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_20738.jpg" alt="" loading="lazy">
+                <div class="p-name">宋康昊 <span class="p-role">主演（宋佑硕）</span></div>
+              </div>
+              <div class="p-note">韩国演员。《杀人回忆》《汉江怪物》《寄生虫》《雪国列车》《辩护人》。本片他演宋佑硕：一个只想赚钱的律师，凭此片拿到多个韩国电影奖项的最佳男主角——这部片至今仍是韩国观影人次破千万的作品里最被反复提起的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_496243.jpg" alt="" loading="lazy"><span>寄生虫</span></div><div class="wk"><img src="assets/movies/w_110415.jpg" alt="" loading="lazy"><span>雪国列车</span></div><div class="wk"><img src="assets/movies/w_11423.jpg" alt="" loading="lazy"><span>杀人回忆</span></div><div class="wk"><img src="assets/movies/w_1255.jpg" alt="" loading="lazy"><span>汉江怪物</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1296713.jpg" alt="" loading="lazy">
+                <div class="p-name">任时完 <span class="p-role">主演（朴镇宇）</span></div>
+              </div>
+              <div class="p-note">韩国演员、歌手（ZE:A 成员）。《辩护人》《不汗党》《非常宣言》《杀手螳螂》。本片他演被刑求的学生朴镇宇，这是他第一次在电影里挑大梁。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_740441.jpg" alt="" loading="lazy"><span>虽然只是弄丢了手机</span></div><div class="wk"><img src="assets/movies/w_1267319.jpg" alt="" loading="lazy"><span>杀手螳螂</span></div><div class="wk"><img src="assets/movies/w_626872.jpg" alt="" loading="lazy"><span>非常宣言</span></div><div class="wk"><img src="assets/movies/w_451997.jpg" alt="" loading="lazy"><span>不汗党</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在法庭辩论，在佑硕第一次被叫去谈「认罪协商」——他们要的不是他输，是要他承认这套程序是对的。轻微剧透：这部片最聪明的一处是前半段：它花了整整四十分钟拍一个只想赚钱的人怎么赚钱，所以后来他放弃这些东西时，你才知道代价有多大。结尾那一排律师站起来报名的镜头，是全片唯一一次让主角不再是主角。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「一个人怎么被一件事改变」的人；能接受法庭戏台词密集、韩国现代史背景需要一点功课、后半段情绪推动明显的观众。含刑求与暴力画面，建议高中以上观看。内地未映。看完想继续：《熔炉》《出租车司机》《首尔之春》。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/witness_225877_poster.jpg" alt="全民目击 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 犯罪（中国大陆 · 一场翻三次的庭审）</span><span class="year">2013 · 中国大陆 · 119 分钟 · 已公映</span></div>
+        <h2>全民目击 <span class="en">Silent Witness</span></h2>
+        <div class="rates"><span class="rate"><b>7.7</b>豆瓣</span><span class="rate"><b>未收录</b>烂番茄</span><span class="rate"><b>未收录</b>Metacritic</span><span class="rate"><b>7.0</b>IMDb</span></div>
+        <p class="oneline">「你以为你看到的就是真相。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>富豪林泰的准新娘死在地下车库，所有证据指向他的女儿林萌萌。林泰请来知名律师周莉辩护，公诉方派出的是检察官童涛——他跟林泰打了十几年官司，一次都没赢过。庭上每出现一个新证据，案子就翻一次；翻到第三次，你才发现前面看到的都不算数。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>非行自编自导，这是他的第二部长片；他此前主要做编剧，这部片的三段式结构是他自己搭的。</li><li>孙红雷演林泰，郭富城演检察官童涛，余男演律师周莉——三个人在法庭上的对手戏撑起了全片。</li><li>本片被韩国买下版权翻拍（崔岷植主演的《沉默的目击者》），是国产悬疑片里少见的被翻拍案例。</li><li>全片用同一桩案子讲了三遍：每一遍换一个视角，每一遍都有意漏掉上一遍最关键的几分钟。</li><li>邓家佳演女儿林萌萌，是这部片里唯一一个全程被别人讲述、自己几乎没说话的角色。<b>陈思诚也在片中出演，并在六年后监制了本期的《误杀》</b>。</li><li>豆瓣 7.7 / 烂番茄未收录 / Metacritic 未收录 / IMDb 7.0：<b>三个海外平台两个未收录，但 IMDb 上有超过 2000 条评价</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/witness_225877_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/witness_225877_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/witness_225877_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1044872.jpg" alt="" loading="lazy">
+                <div class="p-name">非行 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">中国导演、编剧，此前主要做编剧（《疯狂的石头》系列的编剧之一）。《全民目击》是他的第二部长片，三段式的庭审结构是他自己搭的。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_571446.jpg" alt="" loading="lazy"><span>云南虫谷</span></div><div class="wk"><img src="assets/movies/w_81752.jpg" alt="" loading="lazy"><span>守望者：罪恶迷途</span></div><div class="wk"><img src="assets/movies/w_988814.jpg" alt="" loading="lazy"><span>龙岭迷窟</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_73774.jpg" alt="" loading="lazy">
+                <div class="p-name">孙红雷 <span class="p-role">主演（林泰）</span></div>
+              </div>
+              <div class="p-note">中国演员。《潜伏》《全民目击》《毒战》《带着爸爸去留学》。本片他演林泰：一个在法庭上三次被重新讲述的富豪，也是这部片最后那个问题的答案。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_12246.jpg" alt="" loading="lazy"><span>蒙古王</span></div><div class="wk"><img src="assets/movies/w_110410.jpg" alt="" loading="lazy"><span>毒战</span></div><div class="wk"><img src="assets/movies/w_44555.jpg" alt="" loading="lazy"><span>三枪拍案惊奇</span></div><div class="wk"><img src="assets/movies/w_12276.jpg" alt="" loading="lazy"><span>我的父亲母亲</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_21908.jpg" alt="" loading="lazy">
+                <div class="p-name">郭富城 <span class="p-role">主演（童涛）</span></div>
+              </div>
+              <div class="p-note">中国香港演员、歌手。《无间道》《父子》《全民目击》《寒战》。本片他演检察官童涛——那个跟林泰打了十几年、一次都没赢过的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_137409.jpg" alt="" loading="lazy"><span>寒战</span></div><div class="wk"><img src="assets/movies/w_416249.jpg" alt="" loading="lazy"><span>寒战2</span></div><div class="wk"><img src="assets/movies/w_119892.jpg" alt="" loading="lazy"><span>西游记之大闹天宫</span></div><div class="wk"><img src="assets/movies/w_381902.jpg" alt="" loading="lazy"><span>西游记之孙悟空三打白骨精</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在第三次庭审——前两次你以为问题是「谁杀的」，第三次才告诉你问题应该是「谁替谁顶的」。轻微剧透：这部片把悬疑片惯用的叙述性诡计搬上了法庭：每个视角都是一份证词，而证词天然就是被剪过的。结尾那段独白是全片唯一一次让镜头离开法庭，也是它最被人记住的原因——它把案子的答案换成了另一个问题。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「国产悬疑片能把反转做到什么程度」的人；能接受人物动机略显极端、部分法律程序经不起推敲、情绪戏偏重的观众。含暴力与死亡画面，建议初中以上观看。内地流媒体可看。看完想继续：《十二公民》《误杀》《心迷宫》。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/cit12_299117_poster.jpg" alt="十二公民 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">剧情 / 悬疑（中国大陆 · 一间屋子里十二个人）</span><span class="year">2014 · 中国大陆 · 106 分钟 · 2015-05-15 公映（2018 年重映）</span></div>
+        <h2>十二公民 <span class="en">12 Citizens</span></h2>
+        <div class="rates"><span class="rate"><b>8.4</b>豆瓣</span><span class="rate"><b>未收录</b>烂番茄</span><span class="rate"><b>未收录</b>Metacritic</span><span class="rate"><b>7.1</b>IMDb</span></div>
+        <p class="oneline">「我投无罪。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一所政法大学的模拟法庭，家长们被叫来组成陪审团，就一起「富二代杀父」的案子给出一致意见。第一轮投票，十一票有罪，一票无罪。剩下的一小时里，那一个人要说服十一个人——或者被十一个人说服。屋子里有出租车司机、小卖部老板、退休老人、医生、保安，每个人带来的都不只是意见。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>徐昂导演，这是他的电影处女作；他此前是话剧导演（《喜剧的忧伤》），全片几乎在一间仓库里拍完。</li><li>改编自 1957 年的《十二怒汉》（西德尼·吕美特导演、亨利·方达主演）；2014 年在罗马电影节拿到最高奖。</li><li>何冰演 8 号陪审员，是那个投「无罪」的人；韩童生演 3 号陪审员，是最后一个改主意的人，两人最后那场对峙是全片的核心。</li><li>成本约 1000 万元，内地票房约 1300 万元（院线票房不高，靠国际版权回收成本）；豆瓣 8.4。</li><li>因为中国没有陪审团制度，剧本把它改成了「模拟陪审团」——这个设定既是妥协，也成了这部片最诚实的一处说明。</li><li>豆瓣 8.4 / 烂番茄未收录 / Metacritic 未收录 / IMDb 7.1：<b>本期唯一一部几乎没有海外发行的中国片</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/cit12_299117_still1.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1353697.jpg" alt="" loading="lazy">
+                <div class="p-name">徐昂 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">中国导演，此前是话剧导演，代表作《喜剧的忧伤》。《十二公民》是他的电影处女作，全片几乎在一间仓库里拍完，2014 年在罗马电影节拿到最高奖。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1107387.jpg" alt="" loading="lazy"><span>忠犬八公</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_586335.jpg" alt="" loading="lazy">
+                <div class="p-name">何冰 <span class="p-role">主演（8 号陪审员）</span></div>
+              </div>
+              <div class="p-note">中国演员（北京人民艺术剧院）。《大宋提刑官》《十二公民》《情满四合院》。本片他演 8 号陪审员，那个第一轮投「无罪」的人——全片的推进几乎都由他一个人扛。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_79279.jpg" alt="" loading="lazy"><span>甲方乙方</span></div><div class="wk"><img src="assets/movies/w_1050.jpg" alt="" loading="lazy"><span>洗澡</span></div><div class="wk"><img src="assets/movies/w_77099.jpg" alt="" loading="lazy"><span>没完没了</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1268918.jpg" alt="" loading="lazy">
+                <div class="p-name">韩童生 <span class="p-role">主演（3 号陪审员）</span></div>
+              </div>
+              <div class="p-note">中国演员。《十二公民》《大丈夫》《我的前半生》。本片他演 3 号陪审员，那个最后一个改主意的人；他跟何冰最后那场对峙，是这部片真正的高潮。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_309302.jpg" alt="" loading="lazy"><span>狼图腾</span></div><div class="wk"><img src="assets/movies/w_479794.jpg" alt="" loading="lazy"><span>缝纫机乐队</span></div><div class="wk"><img src="assets/movies/w_51245.jpg" alt="" loading="lazy"><span>形影不离</span></div><div class="wk"><img src="assets/movies/w_79064.jpg" alt="" loading="lazy"><span>手机</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在证据被推翻，在 3 号陪审员为什么坚持——他反对的根本不是这个案子，是他自己跟儿子的那笔账。轻微剧透：徐昂最聪明的一处，是把十二个人的社会身份直接写成了偏见：每个人开口第一句就在替自己那个群体说话，所以这部片真正讨论的不是「有没有罪」，而是「你凭什么确定」。结尾那句关于「怀疑」的话被留在了最后，没有给答案。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「一群人关在一间屋子里能把戏扛到什么程度」的人；能接受全片几乎无外景、台词密集、部分人物写得功能化的观众。无血腥画面，适合初中以上观看。内地流媒体可看。看完想继续：《全民目击》《误杀》《十二怒汉》。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/sheep_652783_poster.jpg" alt="误杀 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">悬疑 / 犯罪（中国大陆 · 一个父亲把时间剪碎了）</span><span class="year">2019 · 中国大陆 · 112 分钟 · 已公映</span></div>
+        <h2>误杀 <span class="en">Sheep Without a Shepherd</span></h2>
+        <div class="rates"><span class="rate"><b>7.5</b>豆瓣</span><span class="rate"><b>9.5</b>猫眼</span><span class="rate"><b>9.3</b>淘票票</span><span class="rate"><b>未收录</b>IMDb</span></div>
+        <p class="oneline">「我没什么本事，能做的只有挡在你们前面。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>在泰国打拼的华人李维杰开着一家网络公司，日子不大不小。大女儿平平在夏令营被警察局长的儿子侵犯，反抗中对方死了。李维杰没有报警，他看过的上千部电影教会了他一件事：只要把时间线剪碎，所有人都会替你作证。他把一家人两天的行程重新剪了一遍，然后等着警察来问。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>柯汶利导演，陈思诚监制；翻拍自印度电影《误杀瞒天记》（2015），保留了原作的核心诡计，把背景整个搬到了泰国唐人街。</li><li>内地票房超过 13 亿元，是 2019 年贺岁档票房冠军；入选豆瓣 2019 年度十佳华语片。</li><li>肖央演李维杰——这是他从喜剧演员转向正剧的关键一部；谭卓演妻子阿玉，陈冲演警察局长拉韫，两位母亲的对峙是全片最被人记住的段落。</li><li>片中「蒙太奇」这个词被直接说了出来：李维杰靠看电影学会剪辑时间，这个设定既是谜底也是主题。</li><li>剧组提前 150 天开始场景设计，共 3489 张设计图，实地堪景 27 次，动用 3869 名当地群演还原曼谷唐人街。</li><li>豆瓣 7.5 / 猫眼 9.5 / 淘票票 9.3 / IMDb 未收录：<b>本期唯一一部用票务平台评分替代海外评分的电影</b>。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/sheep_652783_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/sheep_652783_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/sheep_652783_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_1578124.jpg" alt="" loading="lazy">
+                <div class="p-name">柯汶利 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">马来西亚华裔导演，此前拍短片并入围过奥斯卡最佳实景短片。《误杀》是他的第一部长片，也是他把印度原作《误杀瞒天记》整个搬到泰国唐人街之后的版本。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1300945.jpg" alt="" loading="lazy"><span>默杀</span></div><div class="wk"><img src="assets/movies/w_1019828.jpg" alt="" loading="lazy"><span>默杀：无声之地</span></div><div class="wk"><img src="assets/movies/w_369372.jpg" alt="" loading="lazy"><span>自由人</span></div><div class="wk"><img src="assets/movies/w_1530787.jpg" alt="" loading="lazy"><span>匿杀</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_543877.jpg" alt="" loading="lazy">
+                <div class="p-name">肖央 <span class="p-role">主演（李维杰）</span></div>
+              </div>
+              <div class="p-note">中国演员、歌手（筷子兄弟）。《老男孩》《误杀》《误杀2》《人潮汹涌》。本片他演李维杰——一个靠看过的上千部电影把时间剪碎的父亲；这是他从喜剧转向正剧的关键一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_505513.jpg" alt="" loading="lazy"><span>唐人街探案2</span></div><div class="wk"><img src="assets/movies/w_899665.jpg" alt="" loading="lazy"><span>误杀2</span></div><div class="wk"><img src="assets/movies/w_752803.jpg" alt="" loading="lazy"><span>人潮汹涌</span></div><div class="wk"><img src="assets/movies/w_373200.jpg" alt="" loading="lazy"><span>唐人街探案</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_6720.jpg" alt="" loading="lazy">
+                <div class="p-name">陈冲 <span class="p-role">主演（拉韫）</span></div>
+              </div>
+              <div class="p-note">中国 / 美国演员、导演。《末代皇帝》《小花》《红玫瑰与白玫瑰》《误杀》。本片她演警察局长拉韫，一个同样是为了孩子的人；她跟谭卓那场对峙是全片最被人记住的段落。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_746.jpg" alt="" loading="lazy"><span>末代皇帝</span></div><div class="wk"><img src="assets/movies/w_9482.jpg" alt="" loading="lazy"><span>特警判官</span></div><div class="wk"><img src="assets/movies/w_539885.jpg" alt="" loading="lazy"><span>艾娃</span></div><div class="wk"><img src="assets/movies/w_19316.jpg" alt="" loading="lazy"><span>面子</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在「尸体在哪」，在李维杰到底有没有动手——前面所有的剪辑都是他做的，但那一下不是。轻微剧透：这部片把悬疑片的「诡计」拍成了父爱的一种形式：他不是在脱罪，是在把罪名挪到自己身上，好让妻子和女儿不用开口。结尾他自首那场戏是全片最有争议的一笔，也是它跟原作最大的不同——它选择把问题留在了道德这一边。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「国产类型片能把推理做到多扎实」的人；能接受中段节奏很快、部分情节靠巧合推动、结尾处理会有争议的观众。含侵犯与暴力相关情节，建议高中以上观看。内地流媒体可看。看完想继续：《误杀瞒天记》《全民目击》《心迷宫》。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-13；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>
