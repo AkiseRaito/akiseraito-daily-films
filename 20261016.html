@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情（2026-10-16 · 第 46 期）</title>
+<style>
+:root{
+  --bg:#0b0d12; --card:#14171f; --card2:#191d27; --line:#252b3a;
+  --tx:#e7e9f0; --mut:#98a1b5; --acc:#f27a9d; --acc2:#7cc4ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.78 "PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 20px 80px}
+header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+header .sub{color:var(--mut);font-size:13.5px;margin-bottom:6px;line-height:1.7}
+header .meta{color:#6f7891;font-size:12.5px;margin-top:12px;line-height:1.8}
+.pill{display:inline-block;padding:2px 10px;border:1px solid var(--line);border-radius:99px;
+  color:var(--mut);font-size:12px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;margin:26px 0 8px;font-size:13.5px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12.5px}
+.qn{color:var(--acc);width:38px}
+.qg{color:var(--mut)}
+.qr{color:var(--acc2);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px 26px 22px;margin:34px 0;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--acc),transparent)}
+.no{position:absolute;right:18px;top:10px;font-size:44px;font-weight:700;color:#1e2432;letter-spacing:-1px}
+.head{display:flex;gap:20px}
+.poster{flex:0 0 170px}
+.poster-img{width:170px;border-radius:10px;display:block;background:var(--card2)}
+.head-r{flex:1;min-width:0}
+.tagrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tag{background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.3);
+  padding:2px 10px;border-radius:99px;font-size:12px}
+.year{color:var(--mut);font-size:12.5px}
+h2{margin:0 0 10px;font-size:22px;line-height:1.35}
+h2 .en{font-size:13px;color:var(--mut);font-weight:400;display:block;margin-top:3px}
+.rates{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.rate{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--mut)}
+.rate b{color:var(--acc2);margin-right:5px;font-size:13px}
+.oneline{margin:6px 0 0;color:#cdd3e2;font-size:15px}
+.block{margin-top:20px}
+.block h3{margin:0 0 8px;font-size:14px;color:var(--acc);letter-spacing:.5px;font-weight:600}
+.block p{margin:0;color:#c8cee0}
+ul.hi{margin:0;padding-left:18px;color:#c8cee0}
+ul.hi li{margin:5px 0}
+.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stills figure{margin:0;border-radius:10px;overflow:hidden;background:var(--card2)}
+.stills img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0;padding:12px 16px;background:var(--card2);border-left:3px solid var(--acc);
+  border-radius:0 8px 8px 0;color:#d3d9ea;font-size:14.5px}
+.why p{color:#b9c0d3}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.person{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.p-top{display:flex;align-items:center;gap:10px}
+.p-ava{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 48px;display:block;background:#212734}
+.p-name{font-size:14px;font-weight:600;line-height:1.3}
+.p-role{color:var(--mut);font-size:11px;font-weight:400;margin-left:4px}
+.p-note{color:#7e879e;font-size:11.5px;line-height:1.6;margin:8px 0 0}
+.p-kn{color:var(--mut);font-size:10.5px;margin:8px 0 4px;letter-spacing:.3px}
+.p-works{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.wk{text-align:center}
+.wk img{width:100%;display:block;border-radius:4px;background:#212734;aspect-ratio:2/3;object-fit:cover}
+.wk span{display:block;font-size:9.5px;color:#b9c0d3;line-height:1.25;margin-top:3px}
+footer{margin-top:44px;color:#6f7891;font-size:12.5px;border-top:1px solid var(--line);padding-top:18px;line-height:1.8}
+.byline{display:inline-block;padding:2px 10px;margin:0 4px;border-radius:99px;
+  background:rgba(242,122,157,.14);color:var(--acc);border:1px solid rgba(242,122,157,.38);
+  font-size:12px;letter-spacing:.4px}
+@media(max-width:860px){
+  .head{flex-direction:column} .poster-img{width:150px}
+  .stills{grid-template-columns:1fr} .p-works{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>10 部片单 · 恐怖 / 科幻 / 惊悚 / 悬疑 / 剧情</h1>
+  <div class="sub">2026 年 10 月 16 日 · 第 46 期 · 已避开往期推荐过的全部 450 部</div>
+  <div>
+    <span class="pill">主题：它们有多大 · 十部把巨兽拍成灾难的电影（1990–2018）</span>
+    <span class="pill">全部 1990 年后：最早 1990，最晚 2018，按上映年份排列</span>
+    <span class="pill">类型覆盖：科幻 6 / 恐怖 5 / 惊悚 5 / 动作 4 / 冒险 4 / 喜剧 3 / 奇幻 1</span>
+    <span class="pill">海报 + 3 张镜头 + 主创头像 + 历史作品海报</span>
+    <span class="pill">轻微剧透短评</span>
+  </div>
+  <div class="meta">评分来源：豆瓣 / 烂番茄 / Metacritic / IMDb，采集于 2026-10-16，会随时间变动，仅供参考。<br>
+  这一期的筛选条件只有一条：<b>巨兽在这部片里不是背景板</b>——不是「路上顺手打了一架」那种，是它一出现，整个地方的规则就换了：城市说毁就毁，船说沉就沉，人从猎手变回猎物。<br>
+  十部落在 1990–2018，按上映年份排列。里面有<b>三条清晰的来路</b>：从地下来的（第 1 部《异形魔怪》的地底巨虫、第 3 部《八脚怪》的矿井蜘蛛）、从水里来的（第 2 部《狂蟒之灾》的亚马逊森蚺、第 10 部《巨齿鲨》的史前巨鲨）、以及从太空来的（第 4 部《普罗米修斯》、第 7 部《异星觉醒》、第 8 部《异形：契约》）；第 5、6、9 部则是<b>把巨兽搬进现代社会的三种方式</b>：一间开门营业的恐龙乐园、一座地图上不存在的岛、以及三只被改造过的动物一起走向芝加哥。<br>
+  需要说明的一处取舍：这个主题最常被提到的《侏罗纪公园》《大白鲨》《金刚》《哥斯拉》《科洛弗档案》《环太平洋》都在往期用过了，所以这一期是避开它们之后的名单，整体会偏向 B 级与现代商业两端。<br>
+  跨期重合如实写出，按 10-02 定的口径<b>只按片名去重</b>：<b>雷德利·斯科特</b>是本期唯一一位执导两部的导演——第 4 部《普罗米修斯》与第 8 部《异形：契约》相隔五年；<b>迈克尔·法斯宾德</b>同样在这两部里都出现了（同一位仿生人的前后两代）。演员方面：<b>卡瑞·伍尔</b>一人横跨两部，第 2 部《狂蟒之灾》里演摄影师、第 3 部《八脚怪》里升为女主角警长；<b>杰克·吉伦哈尔</b>（第 7 部）在往期第 40 期《后天》的主创卡片上出现过；<b>娜奥米·哈里斯</b>（第 9 部）是往期第 40 期《惊变28天》的主创之一；<b>塞缪尔·杰克逊</b>在第 6 部《金刚：骷髅岛》里演的那位上校，和他在往期第 44 期《深海狂鲨》、第 45 期《八恶人》里的运气完全不同。<b>十位导演中九位互不相同。</b><br>
+  口碑落差如实标注、不做修饰：<b>《异形魔怪》烂番茄 88%、Metacritic 65、IMDb 7.2，三项都是本期最高</b>；<b>《侏罗纪世界》豆瓣 7.8，是本期华语评分最高</b>，也是本期票房最高的一部（全球约 16.7 亿美元）；<b>《狂蟒之灾》烂番茄 41%、Metacritic 37、IMDb 4.9，三项都是本期垫底</b>，而它的豆瓣有 6.7，是本期落差最大的一部；<b>《巨齿鲨》豆瓣与 IMDb 同为 5.7，是本期这两项最低</b>，猫眼观众端却有 8 分以上。<br>
+  内地引进情况：<b>七部在内地公映过</b>（《普罗米修斯》2012-09-02、《侏罗纪世界》2015-06-10、《金刚：骷髅岛》2017-03-24、《异星觉醒》2017-05-19、《异形：契约》2017-06-16、《狂暴巨兽》2018-04-13、《巨齿鲨》2018-08-10 中美同步），其余三部未在内地院线公映，流媒体或点播可看。<br>
+  10 部片名全部为首次出现，无一与往期 450 部重复（比对去重表通过）。<br>
+  图片素材抓取自 TMDB，仅作观影参考，版权归各片方所有。</div>
+</header>
+
+<table>
+<thead><tr><th>#</th><th>片名</th><th>类型</th><th>评分 / 状态</th></tr></thead>
+<tbody>
+<tr><td class="qn">01</td><td>异形魔怪</td><td class="qg">恐怖 / 喜剧（美国 · 内华达一个叫完美镇的地方）</td><td class="qr">7.1 / 88% / 65</td></tr><tr><td class="qn">02</td><td>狂蟒之灾</td><td class="qg">惊悚 / 冒险（美国 / 巴西 · 亚马逊河上的一次拍摄）</td><td class="qr">6.7 / 41% / 37</td></tr><tr><td class="qn">03</td><td>八脚怪</td><td class="qg">恐怖 / 喜剧（美国 / 澳大利亚 · 一个矿业小镇的一夜）</td><td class="qr">6.2 / 49% / 53</td></tr><tr><td class="qn">04</td><td>普罗米修斯</td><td class="qg">科幻 / 惊悚（美国 / 英国 · 一次去找「谁造了我们」的航行）</td><td class="qr">7.7 / 73% / 64</td></tr><tr><td class="qn">05</td><td>侏罗纪世界</td><td class="qg">科幻 / 冒险（美国 · 一座真的开门营业的恐龙乐园）</td><td class="qr">7.8 / 72% / 59</td></tr><tr><td class="qn">06</td><td>金刚：骷髅岛</td><td class="qg">动作 / 奇幻（美国 / 中国 · 一座地图上没有的岛）</td><td class="qr">6.5 / 75% / 62</td></tr><tr><td class="qn">07</td><td>异星觉醒</td><td class="qg">科幻 / 恐怖（美国 · 国际空间站上的一个意外样本）</td><td class="qr">6.5 / 67% / 54</td></tr><tr><td class="qn">08</td><td>异形：契约</td><td class="qg">科幻 / 恐怖（美国 · 契约号上的两千名殖民者）</td><td class="qr">7.4 / 65% / 65</td></tr><tr><td class="qn">09</td><td>狂暴巨兽</td><td class="qg">动作 / 科幻（美国 · 三只变异动物和一座芝加哥）</td><td class="qr">6.8 / 51% / 45</td></tr><tr><td class="qn">10</td><td>巨齿鲨</td><td class="qg">动作 / 惊悚（中国 / 美国 · 马里亚纳海沟底下还有什么）</td><td class="qr">5.7 / 47% / 46</td></tr>
+</tbody>
+</table>
+
+
+  <section class="card" id="m1">
+    <div class="no">01</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/tremor_9362_poster.jpg" alt="异形魔怪 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 喜剧（美国 · 内华达一个叫完美镇的地方）</span><span class="year">1990 · 美国 · 96 分钟 · 内地未映（PG-13）</span></div>
+        <h2>异形魔怪 <span class="en">Tremors</span></h2>
+        <div class="rates"><span class="rate"><b>7.1</b>豆瓣</span><span class="rate"><b>88%</b>烂番茄</span><span class="rate"><b>65</b>Metacritic</span><span class="rate"><b>7.2</b>IMDb</span></div>
+        <p class="oneline">「这下面有东西。而且它在听。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>内华达州的完美镇一共住着十四个人。瓦伦和厄尔是镇上的杂工，修水管、通下水道，攒够了钱就想走。两人把行李装上车往镇外开，回头却看见镇上的老头死在电线杆上，半个身子埋在土里。再往前走，路基塌了。羊不见了，狗不见了，地质系来的女研究生发现地下的震动不对劲。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>罗恩·安德伍德导演，剧本由 S. S. 威尔逊与布伦特·马多克写。这是他的长片处女作，在此之前他只拍过电视电影。</li><li>成本约 1100 万美元，北美票房约 1670 万美元——上映时算不上成功，是<b>后来的录像带租赁和有线电视重播</b>把它养成 cult 经典的。</li><li>片中的巨虫叫 Graboid，全部由实体特效完成，制作公司是 Amalgamated Dynamics。导演刻意少给全景，让怪物一直停在画面边缘。</li><li>凯文·贝肯演瓦伦·麦基，弗雷德·沃德演厄尔·巴塞特——九十年代最好看的一对嘴炮搭档。迈克尔·格罗斯演持枪生存狂伯特·甘默，后来六部续集他一部没落下。</li><li>片子最初的片名差点叫「陆鲨」，因为和《周六夜现场》的知名小品撞名，才改成现在的样子。</li><li>豆瓣 7.1 / 烂番茄 88% / Metacritic 65 / IMDb 7.2：<b>本期烂番茄、Metacritic、IMDb 三项最高</b>，也是本期上映最早的一部（1990）。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/tremor_9362_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/tremor_9362_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/tremor_9362_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_33485.jpg" alt="" loading="lazy">
+                <div class="p-name">罗恩·安德伍德 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧。本片是他的长片处女作，此前只拍过电视电影。《异形魔怪》《城市乡巴佬》《穿梭阴阳间》《无敌大猩猩》。完成之后他成了九十年代最稳的轻喜剧导演之一。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_1406.jpg" alt="" loading="lazy"><span>城市乡巴佬</span></div><div class="wk"><img src="assets/movies/w_9822.jpg" alt="" loading="lazy"><span>无敌大猩猩</span></div><div class="wk"><img src="assets/movies/w_12187.jpg" alt="" loading="lazy"><span>穿梭阴阳间</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_4724.jpg" alt="" loading="lazy">
+                <div class="p-name">凯文·贝肯 <span class="p-role">主演（瓦伦·麦基）</span></div>
+              </div>
+              <div class="p-note">美国演员、音乐人。《浑身是劲》《异形魔怪》《阿波罗13号》《沉睡者》《神秘河》《X战警：第一战》。本片他演瓦伦·麦基——那个一开始想离开完美镇、最后决定留下来的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_819.jpg" alt="" loading="lazy"><span>沉睡者</span></div><div class="wk"><img src="assets/movies/w_9383.jpg" alt="" loading="lazy"><span>透明人</span></div><div class="wk"><img src="assets/movies/w_49538.jpg" alt="" loading="lazy"><span>X战警：第一战</span></div><div class="wk"><img src="assets/movies/w_322.jpg" alt="" loading="lazy"><span>神秘河</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_10430.jpg" alt="" loading="lazy">
+                <div class="p-name">弗雷德·沃德 <span class="p-role">主演（厄尔·巴塞特）</span></div>
+              </div>
+              <div class="p-note">美国演员。《逃出亚卡拉》《异形魔怪》《双龙出手》《白头神探33⅓：最后的耻辱》《崩溃》。本片他演厄尔·巴塞特，和凯文·贝肯组了九十年代最好看的一对嘴炮搭档。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_11069.jpg" alt="" loading="lazy"><span>异形魔怪2：余震</span></div><div class="wk"><img src="assets/movies/w_136400.jpg" alt="" loading="lazy"><span>双龙出手</span></div><div class="wk"><img src="assets/movies/w_10734.jpg" alt="" loading="lazy"><span>逃出亚卡拉</span></div><div class="wk"><img src="assets/movies/w_36593.jpg" alt="" loading="lazy"><span>白头神探33⅓：最后的耻辱</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在他们终于意识到这东西不是从天上来、是从脚下来——从那一刻起，「离开完美镇」这个选项失效了，走哪条路底下都有耳朵。轻微剧透：安德伍德最聪明的一处是把危机拆成地形：车不能开、房子不能待、连电线杆都不安全，于是「站在哪儿」成了全片的悬念工具。结尾伯特引爆自家军火库那段，是全片唯一一次让人类主动把规则改回来。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「低成本能把巨兽拍得多有实感」的人；能接受特效是九十年代水平、前半段节奏偏慢、怪物逻辑经不起细想的观众。PG-13，含生死画面但血浆很少，建议小学高年级以上观看。内地未映，流媒体可看。看完想继续：《八脚怪》《狂蟒之灾》《极度深寒》。</p>
+    </div>
+  </section>
+  <section class="card" id="m2">
+    <div class="no">02</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/anac_9360_poster.jpg" alt="狂蟒之灾 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">惊悚 / 冒险（美国 / 巴西 · 亚马逊河上的一次拍摄）</span><span class="year">1997 · 美国 / 巴西 · 89 分钟 · 内地未映（PG-13）</span></div>
+        <h2>狂蟒之灾 <span class="en">Anaconda</span></h2>
+        <div class="rates"><span class="rate"><b>6.7</b>豆瓣</span><span class="rate"><b>41%</b>烂番茄</span><span class="rate"><b>37</b>Metacritic</span><span class="rate"><b>4.9</b>IMDb</span></div>
+        <p class="oneline">「我们不是在拍部落的纪录片，我们是在给它送饲料。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一支七人的纪录片摄制组沿亚马逊河往上游走，要去寻找一支从没被拍到过的部落。河上遇到一艘抛锚的船，一个叫保罗·萨隆的男人上来求搭。他会说话、会掌舵，也知道部落大概在哪；但领航的人类学家很快发现，他讲的那些传说版本对不上。船越走越偏，而这个男人真正要找的东西，比部落大得多。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>路易斯·罗沙导演（这是 TMDB 站内译名），秘鲁人，长期在好莱坞拍动作片，本片是他生涯唯一一次真正卖座的电影。</li><li>成本约 4500 万美元，全球票房约 1.37 亿美元——<b>海外与碟片市场救了它</b>，北美本土连成本线都没摸到。</li><li>本片拿到 6 项金酸梅奖提名；詹妮弗·洛佩兹则凭它拿到 ALMA 拉丁媒体艺术奖最佳女主角。</li><li>乔恩·沃伊特演捕蛇人保罗·萨隆，把一个 B 级角色演成了全片最常被引用的一段台词来源，也因此拿到金酸梅提名。</li><li>片中的蛇是真蟒、机械模型与早期电脑动画混用的，大小不止一条；至今仍有影迷拿着逐帧截图讨论哪条是真蛇。</li><li>豆瓣 6.7 / 烂番茄 41% / Metacritic 37 / IMDb 4.9：<b>本期专业评价最低</b>——后三项全线垫底，而豆瓣有 6.7，落差也是本期最大。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/anac_9360_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/anac_9360_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/anac_9360_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_26648.jpg" alt="" loading="lazy">
+                <div class="p-name">路易斯·罗沙 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">秘鲁导演、编剧，长期在好莱坞拍动作片与 B 级惊悚。《炮弹专家》《双狙人》《亚马逊之火》《狂蟒之灾》。本片是他生涯唯一一次真正卖座的电影。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_2636.jpg" alt="" loading="lazy"><span>炮弹专家</span></div><div class="wk"><img src="assets/movies/w_9545.jpg" alt="" loading="lazy"><span>双狙人</span></div><div class="wk"><img src="assets/movies/w_28983.jpg" alt="" loading="lazy"><span>亚马逊之火</span></div><div class="wk"><img src="assets/movies/w_71072.jpg" alt="" loading="lazy"><span>罪恶地带</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_16866.jpg" alt="" loading="lazy">
+                <div class="p-name">詹妮弗·洛佩兹 <span class="p-role">主演（泰莉·弗洛雷斯）</span></div>
+              </div>
+              <div class="p-note">美国歌手、演员。本片是她第一次担纲商业片女主，也让她拿到 ALMA 拉丁媒体艺术奖最佳女主角。《曼哈顿女佣》《怪兽婆婆》《隔壁的男孩》《舞女大盗》。本片她演纪录片导演泰莉·弗洛雷斯。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_241251.jpg" alt="" loading="lazy"><span>隔壁的男孩</span></div><div class="wk"><img src="assets/movies/w_7303.jpg" alt="" loading="lazy"><span>曼哈顿女佣</span></div><div class="wk"><img src="assets/movies/w_2018.jpg" alt="" loading="lazy"><span>婚礼专家</span></div><div class="wk"><img src="assets/movies/w_4379.jpg" alt="" loading="lazy"><span>怪兽婆婆</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_10127.jpg" alt="" loading="lazy">
+                <div class="p-name">乔恩·沃伊特 <span class="p-role">主演（保罗·萨隆）</span></div>
+              </div>
+              <div class="p-note">美国演员。《午夜牛郎》《返乡》《亡命赛车》《盗火线》《碟中谍》《神奇动物在哪里》。本片他演捕蛇人保罗·萨隆——把一个 B 级角色演成了全片最常被引用的一段台词来源。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_954.jpg" alt="" loading="lazy"><span>碟中谍</span></div><div class="wk"><img src="assets/movies/w_259316.jpg" alt="" loading="lazy"><span>神奇动物在哪里</span></div><div class="wk"><img src="assets/movies/w_949.jpg" alt="" loading="lazy"><span>盗火线</span></div><div class="wk"><img src="assets/movies/w_10669.jpg" alt="" loading="lazy"><span>生死狂澜</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在人类学家被黄蜂蜇进喉咙——他从那一刻起躺倒了，船上再没人能反驳萨隆选的那条航道。轻微剧透：这部片最有效的一处是把控制权做成慢慢被夺走：不是抢，是每过一关，那个拿枪的人就更自然地站到了舵的位置。结尾锯木厂那场戏，是全片唯一一次让摄影机不再假装这是一次探险。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「B 级片的乐趣到底在哪」的人；能接受台词粗糙、蛇的特效经不起高清、人物决策会让你急得跺脚的观众。PG-13，含吞噬与血腥画面，建议高中以上观看。内地未映。看完想继续：《八脚怪》《巨齿鲨》《深海狂鲨》。</p>
+    </div>
+  </section>
+  <section class="card" id="m3">
+    <div class="no">03</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/eightf_8869_poster.jpg" alt="八脚怪 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">恐怖 / 喜剧（美国 / 澳大利亚 · 一个矿业小镇的一夜）</span><span class="year">2002 · 美国 / 澳大利亚 · 99 分钟 · 内地未映（PG-13）</span></div>
+        <h2>八脚怪 <span class="en">Eight Legged Freaks</span></h2>
+        <div class="rates"><span class="rate"><b>6.2</b>豆瓣</span><span class="rate"><b>49%</b>烂番茄</span><span class="rate"><b>53</b>Metacritic</span><span class="rate"><b>5.5</b>IMDb</span></div>
+        <p class="oneline">「它们不是从外面来的。它们一直在底下。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>亚利桑那的矿业小镇繁荣镇。一辆运化学原料的卡车在河桥上翻了，废料流进水里，顺着溪流流进镇上那位养蛛人的地下室。第二天，矿井里出现了一根比人还高的蜘蛛腿。最先发现的是十一岁的男孩迈克，而没人肯信他——包括他那位当警长的母亲。等全镇相信的时候，通讯已经断了。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>埃洛里·埃尔卡耶姆导演并参与编剧，新西兰人。他靠一部关于巨型昆虫的短片被制片方看中，本片是他的长片处女作。</li><li>成本约 3000 万美元，全球票房约 4590 万美元——<b>院线是亏的</b>，靠碟片和后来的电视重播才慢慢回本。</li><li>制片人是迪恩·德夫林，罗兰·艾默里奇任执行制片，走的还是《独立日》那套路子，只是规模缩到了一个小镇。</li><li>大卫·阿奎特演克里斯·麦科马克——那个本打算卖掉矿井、最后只能带着全镇人往下钻的矿业工程师。卡瑞·伍尔演警长珊姆·帕克。</li><li>斯嘉丽·约翰逊演迈克的姐姐艾希莉，那年她十七岁，是《迷失东京》之前的一次 B 级片经历。</li><li>豆瓣 6.2 / 烂番茄 49% / Metacritic 53 / IMDb 5.5：本片拿到过土星奖最佳恐怖片提名，专业评价比前一部《狂蟒之灾》明显高出一截。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/eightf_8869_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/eightf_8869_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/eightf_8869_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_56150.jpg" alt="" loading="lazy">
+                <div class="p-name">埃洛里·埃尔卡耶姆 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">新西兰导演、编剧。他靠一部关于巨型昆虫的短片被制片方看中，本片是他的长片处女作。《活死人归来4：墓地》《活死人归来5：墓穴咆哮》《嗜血蟑螂》。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_24935.jpg" alt="" loading="lazy"><span>活死人归来4：墓地</span></div><div class="wk"><img src="assets/movies/w_24939.jpg" alt="" loading="lazy"><span>活死人归来5：墓穴咆哮</span></div><div class="wk"><img src="assets/movies/w_28677.jpg" alt="" loading="lazy"><span>寻宝假期2：自然召唤</span></div><div class="wk"><img src="assets/movies/w_40249.jpg" alt="" loading="lazy"><span>嗜血蟑螂</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_15234.jpg" alt="" loading="lazy">
+                <div class="p-name">大卫·阿奎特 <span class="p-role">主演（克里斯·麦科马克）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片。《惊声尖叫》系列、《八脚怪》《一吻定江山》《杀出个黎明3》。本片他演克里斯·麦科马克——那个本打算卖掉矿井、最后只能带着全镇人往下钻的工程师。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_41446.jpg" alt="" loading="lazy"><span>惊声尖叫4</span></div><div class="wk"><img src="assets/movies/w_4234.jpg" alt="" loading="lazy"><span>惊声尖叫3</span></div><div class="wk"><img src="assets/movies/w_4232.jpg" alt="" loading="lazy"><span>惊声尖叫</span></div><div class="wk"><img src="assets/movies/w_4233.jpg" alt="" loading="lazy"><span>惊声尖叫2</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_56152.jpg" alt="" loading="lazy">
+                <div class="p-name">卡瑞·伍尔 <span class="p-role">主演（珊姆·帕克警长）</span></div>
+              </div>
+              <div class="p-note">美国演员、歌手。《八脚怪》《瘦到死》《养鬼吃人7：死魂灵》《鲨卷风2》。<b>她在这期里出现了两次</b>——第 2 部《狂蟒之灾》里演摄影师丹妮丝，第 3 部升为警长珊姆·帕克。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_9360.jpg" alt="" loading="lazy"><span>狂蟒之灾</span></div><div class="wk"><img src="assets/movies/w_17455.jpg" alt="" loading="lazy"><span>养鬼吃人7：死魂灵</span></div><div class="wk"><img src="assets/movies/w_10280.jpg" alt="" loading="lazy"><span>瘦到死</span></div><div class="wk"><img src="assets/movies/w_248504.jpg" alt="" loading="lazy"><span>鲨卷风2</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在广播里那句判断——它们不是要吃掉所有人，是在把人往矿里赶。从那一刻起，这部片从避难片变成了围猎片。轻微剧透：埃尔卡耶姆最聪明的一处是把威胁做成分布式：没有头领、没有母虫，杀掉一只又来一只，小镇上的每个人都必须同时应付自己那份。结尾引爆矿井那段，是全片唯一一次让人把「值不值」这道算术题做完。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「五十年代巨型昆虫片在九十年代末会长什么样」的人；能接受人物偏功能化、幽默密度忽高忽低、蜘蛛体型明显需要忽视物理规律的观众。PG-13，血腥不多但密集爬行画面会让恐虫者不适。内地未映。看完想继续：《异形魔怪》《狂暴巨兽》《极度深寒》。</p>
+    </div>
+  </section>
+  <section class="card" id="m4">
+    <div class="no">04</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/prom_70981_poster.jpg" alt="普罗米修斯 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 惊悚（美国 / 英国 · 一次去找「谁造了我们」的航行）</span><span class="year">2012 · 美国 / 英国 · 124 分钟 · 2012-09-02 内地上映（R 级）</span></div>
+        <h2>普罗米修斯 <span class="en">Prometheus</span></h2>
+        <div class="rates"><span class="rate"><b>7.7</b>豆瓣</span><span class="rate"><b>73%</b>烂番茄</span><span class="rate"><b>64</b>Metacritic</span><span class="rate"><b>7.0</b>IMDb</span></div>
+        <p class="oneline">「他们造了我们。那谁造了他们？」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>考古学家伊丽莎白·肖和查理·赫洛维在相隔千年的不同文明里找到了同一幅星图。两年后，他们搭乘普罗米修斯号抵达那颗星球：人工的建筑、可以呼吸的空气，还有一整艘埋在地下的飞船。他们唤醒了沉睡的工程师，也带回了一个不该被带回的东西——因为回答问题的人，从不负责回答之后发生的事。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>雷德利·斯科特自任导演兼制片，剧本由乔恩·斯派茨与达蒙·林德洛夫写。这是他继《异形》之后<b>三十二年来第一次回到自己建的那个宇宙</b>。</li><li>成本约 1.3 亿美元，全球票房约 4.03 亿美元；影片拿到奥斯卡最佳视觉效果提名。</li><li>《异形》的美术设计师 H. R. 吉格回归参与概念设计；片中那些壁画与雕像都是先做成实体再拍摄的。</li><li>劳米·拉佩斯演伊丽莎白·肖；那场她亲手取出异物的手术戏是她自己的主意，剧组准备了替身，她坚持不用。</li><li>迈克尔·法斯宾德演仿生人大卫——一个被造来服务、却在无人监督的两年里自学了语言、音色和一部老电影的人。</li><li>豆瓣 7.7 / 烂番茄 73% / Metacritic 64 / IMDb 7.0：<b>本期豆瓣第二高、IMDb 第二高</b>；它与本期第 8 部《异形：契约》是同一位导演相隔五年的两部作品。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/prom_70981_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/prom_70981_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/prom_70981_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_578.jpg" alt="" loading="lazy">
+                <div class="p-name">雷德利·斯科特 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">英国导演、制片。《异形》《银翼杀手》《末路狂花》《角斗士》《火星救援》《普罗米修斯》《异形：契约》。<b>本期第 4 部与第 8 部都是他导的</b>，两部相隔五年。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_286217.jpg" alt="" loading="lazy"><span>火星救援</span></div><div class="wk"><img src="assets/movies/w_98.jpg" alt="" loading="lazy"><span>角斗士</span></div><div class="wk"><img src="assets/movies/w_348.jpg" alt="" loading="lazy"><span>异形</span></div><div class="wk"><img src="assets/movies/w_78.jpg" alt="" loading="lazy"><span>银翼杀手</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_87722.jpg" alt="" loading="lazy">
+                <div class="p-name">劳米·拉佩斯 <span class="p-role">主演（伊丽莎白·肖）</span></div>
+              </div>
+              <div class="p-note">瑞典演员。《龙纹身的女孩》三部曲、《大侦探福尔摩斯2：诡影游戏》《猎杀星期一》《光灵》《普罗米修斯》。本片她演伊丽莎白·肖——一个用信仰去找答案、最后发现答案比问题更可怕的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_406990.jpg" alt="" loading="lazy"><span>猎杀星期一</span></div><div class="wk"><img src="assets/movies/w_58574.jpg" alt="" loading="lazy"><span>大侦探福尔摩斯2：诡影游戏</span></div><div class="wk"><img src="assets/movies/w_15472.jpg" alt="" loading="lazy"><span>龙纹身的女孩</span></div><div class="wk"><img src="assets/movies/w_400106.jpg" alt="" loading="lazy"><span>光灵</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_17288.jpg" alt="" loading="lazy">
+                <div class="p-name">迈克尔·法斯宾德 <span class="p-role">主演（仿生人大卫）</span></div>
+              </div>
+              <div class="p-note">德国 / 爱尔兰演员。《饥饿》《无耻混蛋》《X战警：第一战》《为奴十二年》《史蒂夫·乔布斯》《普罗米修斯》《异形：契约》。本片他演仿生人大卫；<b>他在这期里同样出现了两次</b>。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_126889.jpg" alt="" loading="lazy"><span>异形：契约</span></div><div class="wk"><img src="assets/movies/w_121856.jpg" alt="" loading="lazy"><span>刺客信条</span></div><div class="wk"><img src="assets/movies/w_246655.jpg" alt="" loading="lazy"><span>X战警：天启</span></div><div class="wk"><img src="assets/movies/w_49538.jpg" alt="" loading="lazy"><span>X战警：第一战</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在「需要医疗舱」这四个字——前面所有关于信仰、关于被造的意义，忽然都要让位给一件很具体的事，而舱的输入标准把一整个人群排除在外。轻微剧透：斯科特把这部片拍得像一次考古发掘：每一层答案底下都还压着一层更难的问题。结尾肖不再索要答案、而是决定去问本人那段，是全片唯一一次让人意识到好奇心在这里不是美德，是本能。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「科幻片能把造物主题推到多远」的人；能接受角色决策会让你着急、部分设定留到下一部才解释、以及 124 分钟节奏不均的观众。R 级，含手术与恐怖画面，建议成年观看。内地公映过，流媒体可看。看完想继续：《异形：契约》《异形》《银翼杀手》。</p>
+    </div>
+  </section>
+  <section class="card" id="m5">
+    <div class="no">05</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/jw_135397_poster.jpg" alt="侏罗纪世界 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 冒险（美国 · 一座真的开门营业的恐龙乐园）</span><span class="year">2015 · 美国 · 124 分钟 · 2015-06-10 内地上映（PG-13）</span></div>
+        <h2>侏罗纪世界 <span class="en">Jurassic World</span></h2>
+        <div class="rates"><span class="rate"><b>7.8</b>豆瓣</span><span class="rate"><b>72%</b>烂番茄</span><span class="rate"><b>59</b>Metacritic</span><span class="rate"><b>6.9</b>IMDb</span></div>
+        <p class="oneline">「这个乐园开了二十二年。没有新东西，人们就不来了。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>努布拉岛上的侏罗纪世界真的在营业，每天两万多名游客进场看恐龙。运营总监克莱尔为了拉升刺激度，让大家造了一头基因混编的新型掠食者。它比预期聪明：会记位置、会蹭掉自己的追踪器，也会把翼龙放出去。而克莱尔的两个外甥正在园区里，她还没来得及知道。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>科林·特雷沃罗导演并参与编剧，斯皮尔伯格任制片；<b>在此之前他只拍过一部成本不到百万的小片</b>。</li><li>成本约 1.5 亿美元，全球票房约 16.7 亿美元，是 2015 年全球票房亚军——<b>本期票房最高</b>，也是本期唯一一部十亿美元级。</li><li>故事位置直接放在《侏罗纪公园》荒废二十二年之后，1993 年那座旧乐园的遗址在片中真的出现了。</li><li>克里斯·帕拉特演驯龙员欧文·格雷迪，布莱丝·达拉斯·霍华德演运营总监克莱尔——<b>本系列第一次不再由科学家担任主角</b>。</li><li>黄荣亮是唯一从 1993 年那部回归的老演员，他演的吴博士在二十二年后站到了另一边。</li><li>豆瓣 7.8 / 烂番茄 72% / Metacritic 59 / IMDb 6.9：<b>本期豆瓣最高</b>；但 Metacritic 只有 59，华语与专业评价落差明显。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/jw_135397_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/jw_135397_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/jw_135397_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_930707.jpg" alt="" loading="lazy">
+                <div class="p-name">科林·特雷沃罗 <span class="p-role">导演 / 编剧</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧。《安全没有保障》《侏罗纪世界》《亨利之书》《侏罗纪世界3》。本片让他从一部成本不到百万的小片直接跳到当年全球票房亚军。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_507086.jpg" alt="" loading="lazy"><span>侏罗纪世界3</span></div><div class="wk"><img src="assets/movies/w_84332.jpg" alt="" loading="lazy"><span>安全没有保障</span></div><div class="wk"><img src="assets/movies/w_382614.jpg" alt="" loading="lazy"><span>亨利之书</span></div><div class="wk"><img src="assets/movies/w_630322.jpg" alt="" loading="lazy"><span>侏罗纪世界：巨石之战</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_73457.jpg" alt="" loading="lazy">
+                <div class="p-name">克里斯·帕拉特 <span class="p-role">主演（欧文·格雷迪）</span></div>
+              </div>
+              <div class="p-note">美国演员。《公园与游憩》《银河护卫队》系列、《侏罗纪世界》系列、《明日之战》。本片是他从情景喜剧转到 A 级商业片主角的那一年。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_118340.jpg" alt="" loading="lazy"><span>银河护卫队</span></div><div class="wk"><img src="assets/movies/w_283995.jpg" alt="" loading="lazy"><span>银河护卫队2</span></div><div class="wk"><img src="assets/movies/w_351286.jpg" alt="" loading="lazy"><span>侏罗纪世界2</span></div><div class="wk"><img src="assets/movies/w_502356.jpg" alt="" loading="lazy"><span>超级马力欧兄弟大电影</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_18997.jpg" alt="" loading="lazy">
+                <div class="p-name">布莱丝·达拉斯·霍华德 <span class="p-role">主演（克莱尔·迪尔林）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演，朗·霍华德的女儿。《神秘村》《相助》《侏罗纪世界》系列、《阿尔戈》。本片她演克莱尔·迪尔林——一个把乐园当业绩、最后不得不自己跑进丛林的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_351286.jpg" alt="" loading="lazy"><span>侏罗纪世界2</span></div><div class="wk"><img src="assets/movies/w_6947.jpg" alt="" loading="lazy"><span>神秘村</span></div><div class="wk"><img src="assets/movies/w_507086.jpg" alt="" loading="lazy"><span>侏罗纪世界3</span></div><div class="wk"><img src="assets/movies/w_50014.jpg" alt="" loading="lazy"><span>相助</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折不在混编龙跑了，在那句「我想看看它在实战里怎么用」——从那一刻起，这部片说的不再是管理失控，而是有人把失控当成方案在卖。轻微剧透：特雷沃罗最有效的一处是让这些动物成为角色而非特效集合：把鼻子蹭向驯龙员的那几秒，比任何一场追逐都贵。结尾霸王龙站上旧控制中心屋顶那一声长吼，是全片唯一一次让「乐园终于结束了」听起来像松了一口气。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「巨兽能被拍成多大的场面」的人；能接受人物动机偏功能化、生物设定经不起推敲、以及它本质上是一封写给 1993 年那部的情书的观众。PG-13，含追逐与吞噬画面，建议小学高年级以上在家长陪同下观看。内地公映过，流媒体可看。看完想继续：《侏罗纪公园》《金刚：骷髅岛》《环太平洋》。</p>
+    </div>
+  </section>
+  <section class="card" id="m6">
+    <div class="no">06</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/kong_293167_poster.jpg" alt="金刚：骷髅岛 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">动作 / 奇幻（美国 / 中国 · 一座地图上没有的岛）</span><span class="year">2017 · 美国 / 中国 · 118 分钟 · 2017-03-24 内地上映（PG-13）</span></div>
+        <h2>金刚：骷髅岛 <span class="en">Kong: Skull Island</span></h2>
+        <div class="rates"><span class="rate"><b>6.5</b>豆瓣</span><span class="rate"><b>75%</b>烂番茄</span><span class="rate"><b>62</b>Metacritic</span><span class="rate"><b>6.7</b>IMDb</span></div>
+        <p class="oneline">「把仪器关掉。这个地方不该出现在地图上。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>1973 年，一场战争刚刚结束。一支由军人、科学家、制图师和一名战地摄影师组成的队伍登上传闻中的骷髅岛。空中投下的地震炸弹掀开了雾，也彻底打扰了岛上那位长者。日落之前他们失去了大半队伍，而负责护送他们出来的那位上校已经决定：这场战斗不是为了回家。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>乔丹·沃格特-罗伯茨导演，此前只拍过一部独立片《夏日之王》；这是他第一次执掌 A 级大片，也是「怪兽宇宙」的第二部。</li><li>成本约 1.85 亿美元，全球票房约 5.67 亿美元；片中的金刚设定为一百英尺（约三十米），是历代银幕上最大的一版。</li><li>影片大量实景拍摄，取景地包括越南下龙湾、峰牙、夏威夷与澳大利亚；水上机动的段落几乎全是真人上阵。</li><li>汤姆·希德勒斯顿演前特种兵追踪者詹姆斯·康拉德，布丽·拉尔森演战地摄影师梅森·韦弗——<b>两年后她主演了《惊奇队长》</b>。</li><li>塞缪尔·杰克逊演帕卡德上校；<b>他在往期第 44 期《深海狂鲨》里演的那个投资方，开场不到半小时就被吃掉了</b>，本期他活到了最后三分之一。</li><li>约翰·C·赖利演一位 1944 年就坠落在岛上、从此没能离开的飞行员，片尾字幕之前那段是他全片最松弛的部分。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/kong_293167_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/kong_293167_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/kong_293167_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_236539.jpg" alt="" loading="lazy">
+                <div class="p-name">乔丹·沃格特-罗伯茨 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、编剧，从短片与广告起步。《夏日之王》《金刚：骷髅岛》。本片是他第一次执掌 A 级大片，也是「怪兽宇宙」的第二部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_156700.jpg" alt="" loading="lazy"><span>夏日之王</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_91606.jpg" alt="" loading="lazy">
+                <div class="p-name">汤姆·希德勒斯顿 <span class="p-role">主演（詹姆斯·康拉德）</span></div>
+              </div>
+              <div class="p-note">英国演员。《雷神》系列里的洛基、《复仇者联盟》《猩红山峰》《金刚：骷髅岛》《洛基》剧集。本片他演詹姆斯·康拉德——一个被雇来当追踪者的前特种兵。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_10195.jpg" alt="" loading="lazy"><span>雷神</span></div><div class="wk"><img src="assets/movies/w_284053.jpg" alt="" loading="lazy"><span>雷神3：诸神黄昏</span></div><div class="wk"><img src="assets/movies/w_76338.jpg" alt="" loading="lazy"><span>雷神2：黑暗世界</span></div><div class="wk"><img src="assets/movies/w_24428.jpg" alt="" loading="lazy"><span>复仇者联盟</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_60073.jpg" alt="" loading="lazy">
+                <div class="p-name">布丽·拉尔森 <span class="p-role">主演（梅森·韦弗）</span></div>
+              </div>
+              <div class="p-note">美国演员、导演。《房间》《龙虎少年队》《惊奇队长》《惊奇队长2》《金刚：骷髅岛》。<b>两年后她就主演了《惊奇队长》</b>；拍这片时她在骷髅岛上几乎全程泡在泥水里。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_299537.jpg" alt="" loading="lazy"><span>惊奇队长</span></div><div class="wk"><img src="assets/movies/w_264644.jpg" alt="" loading="lazy"><span>房间</span></div><div class="wk"><img src="assets/movies/w_64688.jpg" alt="" loading="lazy"><span>龙虎少年队</span></div><div class="wk"><img src="assets/movies/w_609681.jpg" alt="" loading="lazy"><span>惊奇队长2</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在当地人刻下的那句评价——他是最后的。那一刻起，这座岛的生态逻辑从「有怪物」变成了「只剩这一个」。轻微剧透：导演把这部片拍得像一场没有双方同意的和谈：每个构图都在提醒人有多大，而那位长者在多数画面里只是背景。结尾两名幸存者站在水边听见吼声那段，是全片唯一一次让「保全这次任务」这件事彻底失效。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「巨兽片能被拍得多像越战片」的人；能接受剧情偏薄、多位配角只起代号作用、以及它明显在给后面的作品铺路的观众。PG-13，含战斗与吞噬画面，建议初中以上观看。内地公映过，流媒体可看。看完想继续：《侏罗纪世界》《金刚》《环太平洋》。</p>
+    </div>
+  </section>
+  <section class="card" id="m7">
+    <div class="no">07</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/lifes_395992_poster.jpg" alt="异星觉醒 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 恐怖（美国 · 国际空间站上的一个意外样本）</span><span class="year">2017 · 美国 · 104 分钟 · 2017-05-19 内地上映（R 级）</span></div>
+        <h2>异星觉醒 <span class="en">Life</span></h2>
+        <div class="rates"><span class="rate"><b>6.5</b>豆瓣</span><span class="rate"><b>67%</b>烂番茄</span><span class="rate"><b>54</b>Metacritic</span><span class="rate"><b>6.6</b>IMDb</span></div>
+        <p class="oneline">「它不是恶意的。它只是在活。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>六名宇航员在国际空间站上等待一艘从火星返航的探测器。舱内带回的土壤样本里有一个休眠的细胞，被唤醒后它开始分裂——它的每一个单元同时充当肌肉、皮肤和大脑。<b>人类等了几十年的第一个地外生命，是被自己亲手打开瓶子放出来的。</b></p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>丹尼尔·埃斯皮诺萨导演，剧本由瑞特·里斯与保罗·韦尼克写——<b>这两个人上一部上映的作品是《死侍》</b>。</li><li>成本约 5800 万美元，全球票房约 1 亿美元；内地票房约 1.35 亿元人民币，是它最大的海外市场之一。</li><li>这个生命在全美被征集到了「卡尔文」这个名字；它的设定是全身每个部分都能独立完成感知、运动与进食。</li><li>杰克·吉伦哈尔演大卫·乔丹——在空间站待得最久、也最不想回地球的那个人；<b>他在往期第 40 期《后天》的主创卡片上出现过</b>。</li><li>丽贝卡·弗格森演隔离官米兰达·诺斯，全片唯一一个从头到尾坚持「任何情况下都不能让它接触地球」的人。</li><li>豆瓣 6.5 / 烂番茄 67% / Metacritic 54 / IMDb 6.6：上映时被大量评论拿来与《异形》比较，导演当时的回应是「我们拍的是地心引力的反面」。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/lifes_395992_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/lifes_395992_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/lifes_395992_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_125738.jpg" alt="" loading="lazy">
+                <div class="p-name">丹尼尔·埃斯皮诺萨 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">瑞典导演、编剧，智利裔。《不义之财》《藏身之所》《44号孩子》《异星觉醒》《莫比亚斯：暗夜博士》。本片是他第一次拍英语科幻片。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_526896.jpg" alt="" loading="lazy"><span>莫比亚斯：暗夜博士</span></div><div class="wk"><img src="assets/movies/w_59961.jpg" alt="" loading="lazy"><span>藏身之所</span></div><div class="wk"><img src="assets/movies/w_181283.jpg" alt="" loading="lazy"><span>44号孩子</span></div><div class="wk"><img src="assets/movies/w_29920.jpg" alt="" loading="lazy"><span>不义之财</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_131.jpg" alt="" loading="lazy">
+                <div class="p-name">杰克·吉伦哈尔 <span class="p-role">主演（大卫·乔丹）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片。《死亡幻觉》《后天》《十二宫》《源代码》《夜行者》《异星觉醒》。<b>往期第 40 期《后天》的主创卡片上也是他</b>。本片他演大卫·乔丹——在空间站待得最久、也最不想回地球的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_141.jpg" alt="" loading="lazy"><span>死亡幻觉</span></div><div class="wk"><img src="assets/movies/w_242582.jpg" alt="" loading="lazy"><span>夜行者</span></div><div class="wk"><img src="assets/movies/w_1949.jpg" alt="" loading="lazy"><span>十二宫</span></div><div class="wk"><img src="assets/movies/w_45612.jpg" alt="" loading="lazy"><span>源代码</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_933238.jpg" alt="" loading="lazy">
+                <div class="p-name">丽贝卡·弗格森 <span class="p-role">主演（米兰达·诺斯）</span></div>
+              </div>
+              <div class="p-note">瑞典演员。《马戏之王》《碟中谍5：神秘国度》《火车上的女孩》《沙丘》《沙丘2》《异星觉醒》。本片她演米兰达·诺斯——那个坚持「任何情况下都不能让它接触地球」的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_438631.jpg" alt="" loading="lazy"><span>沙丘</span></div><div class="wk"><img src="assets/movies/w_346685.jpg" alt="" loading="lazy"><span>火车上的女孩</span></div><div class="wk"><img src="assets/movies/w_693134.jpg" alt="" loading="lazy"><span>沙丘2</span></div><div class="wk"><img src="assets/movies/w_316029.jpg" alt="" loading="lazy"><span>马戏之王</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在有人松开绳子、把自己扔向舱外的那一跃——从那一刻起，「能不能活」和「能不能保住地球」不再指向同一个答案。轻微剧透：这部片最狠的一处是把密室做成两层：一层是钢铁的空间站，一层是这个生命本身，你既出不去也没法谈判。结尾两个逃生舱分向两头那段，是全片唯一一次让观看者自己决定先看哪一边。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「太空恐怖能被做到多窒息」的人；能接受船员决策偏工具人、个别物理细节经不起推敲、以及结局相当不友好的观众。R 级，含身体恐怖与死伤画面，建议成年观看。内地公映过，流媒体可看。看完想继续：《异形》《普罗米修斯》《地心引力》。</p>
+    </div>
+  </section>
+  <section class="card" id="m8">
+    <div class="no">08</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/cov_126889_poster.jpg" alt="异形：契约 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">科幻 / 恐怖（美国 · 契约号上的两千名殖民者）</span><span class="year">2017 · 美国 · 122 分钟 · 2017-06-16 内地上映（R 级）</span></div>
+        <h2>异形：契约 <span class="en">Alien: Covenant</span></h2>
+        <div class="rates"><span class="rate"><b>7.4</b>豆瓣</span><span class="rate"><b>65%</b>烂番茄</span><span class="rate"><b>65</b>Metacritic</span><span class="rate"><b>6.4</b>IMDb</span></div>
+        <p class="oneline">「我服务于更高的东西。它比你们更早。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>殖民船契约号载着两千名殖民者和一千多个胚胎，要去银河另一边建立殖民地。一次中微子冲击打坏了能量收集帆，船长当场身亡。代理船长欧朗带着剩下的船员，顺着一段被翻译出来的信号降落到了那颗星球。星球上只有一个人等着他们，那人自称是大卫，说自己是上一位科学家的仆人。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>雷德利·斯科特自任导演兼制片；<b>本期第 4 部《普罗米修斯》也是他导的</b>，两部相隔五年，中间隔着一个让影迷争论了很久的结局。</li><li>成本约 9700 万美元，全球票房约 2.409 亿美元；内地版做了约六分钟的删减，这是它在华语区口碑低于本土的主要原因之一。</li><li>迈克尔·法斯宾德一人分饰大卫与沃尔特两个仿生人，两人的对手戏是他自己对着空气演完的，另一条则由替身与后期合成完成。</li><li>凯瑟琳·沃特斯顿演丹妮尔斯·布兰森，接过这一系列女主的位置；她在片中的每一个决定都是在失去身边的人之后做出的。</li><li>影片开头那段极简的白房间戏发生在《普罗米修斯》之前：一位创始人第一次见到自己造出来的东西。</li><li>豆瓣 7.4 / 烂番茄 65% / Metacritic 65 / IMDb 6.4：<b>Metacritic 与《异形魔怪》并列本期最高（65）</b>，豆瓣则是本期第三。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/cov_126889_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/cov_126889_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/cov_126889_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_578.jpg" alt="" loading="lazy">
+                <div class="p-name">雷德利·斯科特 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">英国导演、制片。<b>本期第 4 部《普罗米修斯》也是他导的</b>：那一部留下没人回答的问题，这一部把答案放在了最难受的位置。《异形》《银翼杀手》《角斗士》《火星救援》。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_286217.jpg" alt="" loading="lazy"><span>火星救援</span></div><div class="wk"><img src="assets/movies/w_98.jpg" alt="" loading="lazy"><span>角斗士</span></div><div class="wk"><img src="assets/movies/w_348.jpg" alt="" loading="lazy"><span>异形</span></div><div class="wk"><img src="assets/movies/w_78.jpg" alt="" loading="lazy"><span>银翼杀手</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_17288.jpg" alt="" loading="lazy">
+                <div class="p-name">迈克尔·法斯宾德 <span class="p-role">主演（大卫 / 沃尔特）</span></div>
+              </div>
+              <div class="p-note">德国 / 爱尔兰演员。<b>本期第 4 部《普罗米修斯》里他演大卫</b>，这一部他同时演大卫与后来的沃尔特，两人的对手戏都是他自己对着空气演完的。《饥饿》《无耻混蛋》《为奴十二年》《史蒂夫·乔布斯》。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_121856.jpg" alt="" loading="lazy"><span>刺客信条</span></div><div class="wk"><img src="assets/movies/w_246655.jpg" alt="" loading="lazy"><span>X战警：天启</span></div><div class="wk"><img src="assets/movies/w_49538.jpg" alt="" loading="lazy"><span>X战警：第一战</span></div><div class="wk"><img src="assets/movies/w_70981.jpg" alt="" loading="lazy"><span>普罗米修斯</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_77795.jpg" alt="" loading="lazy">
+                <div class="p-name">凯瑟琳·沃特斯顿 <span class="p-role">主演（丹妮尔斯·布兰森）</span></div>
+              </div>
+              <div class="p-note">美国演员。《史蒂夫·乔布斯》《神奇动物在哪里》《神奇动物：格林德沃之罪》《90年代中期》《异形：契约》。本片她演丹妮尔斯·布兰森——接过这一系列女主接力棒的那个人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_259316.jpg" alt="" loading="lazy"><span>神奇动物在哪里</span></div><div class="wk"><img src="assets/movies/w_338952.jpg" alt="" loading="lazy"><span>神奇动物：格林德沃之罪</span></div><div class="wk"><img src="assets/movies/w_437586.jpg" alt="" loading="lazy"><span>90年代中期</span></div><div class="wk"><img src="assets/movies/w_321697.jpg" alt="" loading="lazy"><span>史蒂夫·乔布斯</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在他给的那口空气——不是刀口，是让人可以呼吸的东西。那一刻起，这部片的问题从「怎么逃」变成了「谁有资格定义下一代」。轻微剧透：斯科特把恐怖留在繁殖这件事上：回溯、孕育、破背，每一步都比上部更直接。结尾女主角进入休眠之前最后一次检查舱位那个镜头，是全片唯一一次让观众替她确认事情没有结束。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「科幻恐怖能把造物主题推到多阴冷」的人；能接受需要在《普罗米修斯》之后看才完整、内地版有删减、以及结局对系列粉丝相当不友好的观众。R 级，含大量恐怖与血腥画面，建议成年观看。内地公映过（删减版），流媒体可看。看完想继续：《普罗米修斯》《异形》《异形：夺命舰》。</p>
+    </div>
+  </section>
+  <section class="card" id="m9">
+    <div class="no">09</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/ramp_427641_poster.jpg" alt="狂暴巨兽 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">动作 / 科幻（美国 · 三只变异动物和一座芝加哥）</span><span class="year">2018 · 美国 · 108 分钟 · 2018-04-13 内地上映（PG-13）</span></div>
+        <h2>狂暴巨兽 <span class="en">Rampage</span></h2>
+        <div class="rates"><span class="rate"><b>6.8</b>豆瓣</span><span class="rate"><b>51%</b>烂番茄</span><span class="rate"><b>45</b>Metacritic</span><span class="rate"><b>6.4</b>IMDb</span></div>
+        <p class="oneline">「它不是变大了。它是被允许变大了。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>灵长类动物学家戴维斯能用手语和一头名叫乔治的白背大猩猩吵架，这段关系比他和大多数人的都好。轨道上一间私营基因实验室出事了，三支样本坠回地球：落在佛罗里达的成了鳄鱼，落在怀俄明的成了狼，而被乔治吸入的那支，让它长到了十米以上。三只同时朝芝加哥去。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>布拉德·佩顿导演兼制片，本片改编自 1986 年的同名街机游戏——<b>当年玩家操作的就是这三只怪物</b>。</li><li>成本约 1.2 亿美元，全球票房约 4.28 亿美元；内地是它最大的海外市场，北美观众给出的 CinemaScore 是 A-。</li><li>这是佩顿与道恩·强森的第三次合作，前两次是《地心历险记 2：神秘岛》与《末日崩塌》。</li><li>道恩·强森演戴维斯·奥科耶，一个把所有感情都给了猩猩的人；娜奥米·哈里斯演基因学家凯特·考德威尔——<b>她在往期第 40 期《惊变28天》的主创卡片上出现过</b>。</li><li>杰弗里·迪恩·摩根演探员拉塞尔；他更被记住的角色是《行尸走肉》里的尼根，本片顺势用了这个反差。</li><li>豆瓣 6.8 / 烂番茄 51% / Metacritic 45 / IMDb 6.4：三只怪物在这部片里是同源的，但剧情没有给任何铺垫就直接让它们同时开打。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/ramp_427641_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/ramp_427641_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/ramp_427641_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_132876.jpg" alt="" loading="lazy">
+                <div class="p-name">布拉德·佩顿 <span class="p-role">导演 / 制片</span></div>
+              </div>
+              <div class="p-note">加拿大导演、编剧、制片。《地心历险记2：神秘岛》《末日崩塌》《狂暴巨兽》《异星战境》。本片是他与道恩·强森的第三次合作。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_254128.jpg" alt="" loading="lazy"><span>末日崩塌</span></div><div class="wk"><img src="assets/movies/w_72545.jpg" alt="" loading="lazy"><span>地心历险记2：神秘岛</span></div><div class="wk"><img src="assets/movies/w_614933.jpg" alt="" loading="lazy"><span>异星战境</span></div><div class="wk"><img src="assets/movies/w_39691.jpg" alt="" loading="lazy"><span>猫狗大战2：珍珠猫复仇</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_18918.jpg" alt="" loading="lazy">
+                <div class="p-name">道恩·强森 <span class="p-role">主演（戴维斯·奥科耶）</span></div>
+              </div>
+              <div class="p-note">美国演员、制片，前职业摔角手。《速度与激情》系列、《勇敢者游戏》系列、《末日崩塌》《狂暴巨兽》。本片他演戴维斯·奥科耶——一个用手语和猩猩吵架的灵长类动物学家。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_353486.jpg" alt="" loading="lazy"><span>勇敢者游戏：决战丛林</span></div><div class="wk"><img src="assets/movies/w_512200.jpg" alt="" loading="lazy"><span>勇敢者游戏2：再战巅峰</span></div><div class="wk"><img src="assets/movies/w_254128.jpg" alt="" loading="lazy"><span>末日崩塌</span></div><div class="wk"><img src="assets/movies/w_339846.jpg" alt="" loading="lazy"><span>海滩救护队</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_2038.jpg" alt="" loading="lazy">
+                <div class="p-name">娜奥米·哈里斯 <span class="p-role">主演（凯特·考德威尔）</span></div>
+              </div>
+              <div class="p-note">英国演员。《惊变28天》《007：大破天幕杀机》《007：幽灵党》《月光男孩》《毒液2》《狂暴巨兽》。<b>往期第 40 期《惊变28天》的主创卡片上也是她</b>。本片她演基因学家凯特·考德威尔。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_170.jpg" alt="" loading="lazy"><span>惊变28天</span></div><div class="wk"><img src="assets/movies/w_37724.jpg" alt="" loading="lazy"><span>007：大破天幕杀机</span></div><div class="wk"><img src="assets/movies/w_580489.jpg" alt="" loading="lazy"><span>毒液2</span></div><div class="wk"><img src="assets/movies/w_206647.jpg" alt="" loading="lazy"><span>007：幽灵党</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在乔治把东西递回来那一刻——从那时起，这部片说的不再是「动物发狂」，而是「被改造过的一方最后帮着收拾残局」。轻微剧透：导演最聪明的一处是让这座城市成为第四个角色：每过一分钟，战场就升高一层。结尾主角站在楼顶做出的那个决定，是全片唯一一次让影片承认自己就是一部灾难片。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「爆米花大片能把楼捅得多狠」的人；能接受剧情、反派和物理全部让位于场面，以及结局基本没有代价的观众。PG-13，含砸楼与吞噬画面，建议初中以上观看。内地公映过，流媒体可看。看完想继续：《侏罗纪世界》《环太平洋》《巨齿鲨》。</p>
+    </div>
+  </section>
+  <section class="card" id="m10">
+    <div class="no">10</div>
+    <div class="head">
+      <div class="poster"><img class="poster-img" src="assets/movies/meg_345940_poster.jpg" alt="巨齿鲨 海报" loading="lazy"></div>
+      <div class="head-r">
+        <div class="tagrow"><span class="tag">动作 / 惊悚（中国 / 美国 · 马里亚纳海沟底下还有什么）</span><span class="year">2018 · 中国 / 美国 · 113 分钟 · 2018-08-10 中美同步上映（PG-13）</span></div>
+        <h2>巨齿鲨 <span class="en">The Meg</span></h2>
+        <div class="rates"><span class="rate"><b>5.7</b>豆瓣</span><span class="rate"><b>47%</b>烂番茄</span><span class="rate"><b>46</b>Metacritic</span><span class="rate"><b>5.7</b>IMDb</span></div>
+        <p class="oneline">「它不在那儿。只是从来没人真的下去看过。」</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>剧情梗概</h3>
+      <p>一处国际深海观测项目在马里亚纳海沟下探到了比已知海床更深的一层，那层水被一道硫化氢温跃层封着。作业潜艇遭到撞击，三个人困在下面。深海救援潜水员乔纳斯·泰勒五年前在同一条海沟里见过那东西，当时没人信他，他被判定为压力造成的幻觉。现在，有人打电话给他了。</p>
+    </div>
+
+    <div class="block">
+      <h3>亮点</h3>
+      <ul class="hi"><li>乔·德特杜巴导演（TMDB 站内译名），改编自史蒂夫·艾尔顿 1997 年出版的小说——<b>这本小说比电影早了二十一年</b>。</li><li>成本约 1.3 亿美元，全球票房约 5.3 亿美元；这是第一部由中国公司主控、全球同步发行的中美合拍英语片。</li><li>原著作者当年为这本书查了大量古生物资料，把巨齿鲨的体长设定在当时科学能接受的上限附近。</li><li>杰森·斯坦森演乔纳斯·泰勒——一个被行业判定为疯子、五年后又被同一个行业请回去的人。</li><li>李冰冰演海洋生物学家张苏茵，赵文瑄演她的父亲张博士，两人承担了片中大部分专业戏；<b>本片也是本期唯一一部由华语演员担任主角的好莱坞制作</b>。</li><li>豆瓣 5.7 / 烂番茄 47% / Metacritic 46 / IMDb 5.7：<b>本期豆瓣与 IMDb 最低</b>；猫眼观众端却有 8 分以上，落差明显。</li></ul>
+    </div>
+
+    <div class="stills"><figure><img src="assets/movies/meg_345940_still1.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/meg_345940_still2.jpg" alt="" loading="lazy"></figure><figure><img src="assets/movies/meg_345940_still3.jpg" alt="" loading="lazy"></figure></div>
+
+    <div class="block">
+      <h3>导演与主创 · 他们的历史作品</h3>
+      <div class="crew">
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_12962.jpg" alt="" loading="lazy">
+                <div class="p-name">乔·德特杜巴 <span class="p-role">导演</span></div>
+              </div>
+              <div class="p-note">美国导演、制片，TMDB 站内译名为「乔·德特杜巴」。《冰上轻驰》《国家宝藏》《国家宝藏：夺宝秘笈》《魔法师的学徒》《巨齿鲨》。本片是他拍过成本最高的一部。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_2059.jpg" alt="" loading="lazy"><span>国家宝藏</span></div><div class="wk"><img src="assets/movies/w_6637.jpg" alt="" loading="lazy"><span>国家宝藏：夺宝秘笈</span></div><div class="wk"><img src="assets/movies/w_27022.jpg" alt="" loading="lazy"><span>魔法师的学徒</span></div><div class="wk"><img src="assets/movies/w_864.jpg" alt="" loading="lazy"><span>冰上轻驰</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_976.jpg" alt="" loading="lazy">
+                <div class="p-name">杰森·斯坦森 <span class="p-role">主演（乔纳斯·泰勒）</span></div>
+              </div>
+              <div class="p-note">英国演员。《两杆大烟枪》《偷拐抢骗》《玩命快递》系列、《速度与激情8》《人之怒》《巨齿鲨》。本片他演乔纳斯·泰勒——一个五年前被整个行业当成疯子的人。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_107.jpg" alt="" loading="lazy"><span>偷拐抢骗</span></div><div class="wk"><img src="assets/movies/w_637649.jpg" alt="" loading="lazy"><span>人之怒</span></div><div class="wk"><img src="assets/movies/w_4108.jpg" alt="" loading="lazy"><span>玩命快递</span></div><div class="wk"><img src="assets/movies/w_337339.jpg" alt="" loading="lazy"><span>速度与激情8</span></div></div>
+            </div>
+            <div class="person">
+              <div class="p-top"><img class="p-ava" src="assets/movies/p_109432.jpg" alt="" loading="lazy">
+                <div class="p-name">李冰冰 <span class="p-role">主演（张苏茵）</span></div>
+              </div>
+              <div class="p-note">中国演员。《功夫之王》《风声》《狄仁杰之通天帝国》《生化危机5：惩罚》《变形金刚4：绝迹重生》《巨齿鲨》。本片她演海洋生物学家张苏茵，也是本部里戏份最重的中国角色。</div>
+              <div class="p-kn">代表 / 已知作品</div><div class="p-works"><div class="wk"><img src="assets/movies/w_91314.jpg" alt="" loading="lazy"><span>变形金刚4：绝迹重生</span></div><div class="wk"><img src="assets/movies/w_71679.jpg" alt="" loading="lazy"><span>生化危机5：惩罚</span></div><div class="wk"><img src="assets/movies/w_1729.jpg" alt="" loading="lazy"><span>功夫之王</span></div><div class="wk"><img src="assets/movies/w_409582.jpg" alt="" loading="lazy"><span>谜巢</span></div></div>
+            </div></div>
+    </div>
+
+    <div class="block">
+      <h3>短评（轻微剧透）</h3>
+      <blockquote>轻微剧透：真正的转折在他们决定用声呐把那东西引上来——从那一刻起，「救人」和「把自家门打开」变成了同一件事。轻微剧透：这部片最有效的一处是把深度做成压力本身：不靠鲨鱼有多凶，而靠换算「头顶还有多少海水」。结尾主角带着装具直接下水那一跃，是全片唯一一次让他不再依赖任何载具。</blockquote>
+    </div>
+
+    <div class="block why">
+      <h3>为什么值得一看</h3>
+      <p>想看「鲨鱼片还能拍多大」的人；能接受剧情和人物都偏套路、个别画面经不起细看、以及它本质上是一部大制作的 B 级片的观众。PG-13，含水下追逐与吞噬画面，深海恐惧者慎看。内地同步上映过，流媒体可看。看完想继续：《大白鲨》《深海狂鲨》《狂蟒之灾》。</p>
+    </div>
+  </section>
+
+<footer>
+  片单由小月整理 · <span class="byline">by 浩</span><br>
+  图片素材来自 TMDB，仅作观影参考，版权归各片方所有。<br>
+  评分采集时间 2026-10-16；「轻微剧透」的短评会点到关键转折，但不泄露完整结局。
+</footer>
+</div>
+</body>
+</html>
